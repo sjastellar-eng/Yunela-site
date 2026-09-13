@@ -314,6 +314,16 @@ describe('database foundation', () => {
       score: 82,
       classification: 'MATCH',
       explanation: ['synthetic test reason'],
+      profileReference: {
+        body: 60,
+        sweetness: 40,
+        freshness: 70,
+        roastDepth: 30,
+        aroma: ['floral', 'synthetic'],
+        context: 'evening',
+        familiarity: 'familiar',
+        discoveryTolerance: 'moderate',
+      },
       createdAt: now,
       outcome: 'feedback_received',
     };
@@ -324,7 +334,7 @@ describe('database foundation', () => {
     expect(row.score).toBe(82);
     expect(row.classification).toBe('MATCH');
     expect(row.outcome).toBe('feedback_received');
-    expect(row.profile_reference_json).toBe(JSON.stringify({ customerId: 'customer-test' }));
+    expect(row.profile_reference_json).toBe(JSON.stringify(entry.profileReference));
 
     expect(() => insertRecommendationHistory(db, {
       ...entry,
