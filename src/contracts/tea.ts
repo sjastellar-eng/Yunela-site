@@ -1,3 +1,5 @@
+import type { Money } from './commerce';
+
 export type PublishingState = 'draft' | 'pending_qa' | 'published' | 'archived';
 export type SupplyStatus = 'unknown' | 'available' | 'limited' | 'unavailable' | 'discontinued';
 export type ProvenanceConfidence = 'unknown' | 'low' | 'medium' | 'high' | 'verified';
@@ -38,8 +40,7 @@ export interface Tea {
   batchLot?: string;
   sensory: SensoryProfile;
   discoveryDistance: number;
-  price: number;
-  currency: string;
+  price: Money;
   packSize: number;
   inventory: number;
   supplyStatus: SupplyStatus;
