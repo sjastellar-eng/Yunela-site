@@ -29,7 +29,7 @@ export function createDefaultApiServer(databaseFile = process.env.YUNELA_DB_FILE
     feedbackService: new FeedbackService(feedbackRepository, customerRepository, teaRepository),
     recommendationService: new RecommendationApplicationService(
       new DeterministicRecommendationEngine(teaRepository),
-      { teaRepository, customerRepository, historyRepository },
+      { customerRepository, historyRepository },
     ),
   };
   return { server: createApiServer({ dependencies }), close: () => db.close() };
