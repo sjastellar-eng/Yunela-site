@@ -1,12 +1,15 @@
 import type { Tea } from '../../contracts/tea';
 import { ApplicationError } from '../errors';
-import type { TeaRepository, TeaTaxonomyReference } from '../repositories';
+import type { TeaRepository, TeaTaxonomyReference, TeaWriteInput } from '../repositories';
 import { validateTea } from '../validation';
+
+export type CreateTeaInput = TeaWriteInput;
+export type UpdateTeaInput = TeaWriteInput;
 
 export class TeaService {
   constructor(private readonly repository: TeaRepository) {}
 
-  createTea(tea: Tea, taxonomy: TeaTaxonomyReference): Tea {
+  createTea(tea: CreateTeaInput, taxonomy: TeaTaxonomyReference): Tea {
     validateTea(tea, taxonomy);
     if (this.repository.getById(tea.id)) {
       throw new ApplicationError('CONFLICT', `Tea ${tea.id} already exists`);
@@ -30,7 +33,7 @@ export class TeaService {
     return this.repository.list();
   }
 
-  updateTea(tea: Tea, taxonomy: TeaTaxonomyReference): Tea {
+  updateTea(tea: UpdateTeaInput, taxonomy: TeaTaxonomyReference): Tea {
     validateTea(tea, taxonomy);
     const updated = this.repository.update(tea, taxonomy);
     if (!updated) throw new ApplicationError('NOT_FOUND', `Tea ${tea.id} was not found`);
