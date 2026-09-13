@@ -1,15 +1,14 @@
 name: Temporary Stage B lock sync
 
 on:
-  pull_request:
-    branches: [dev/architecture-contracts]
+  push:
+    branches: [dev/domain-db-foundation]
 
 permissions:
   contents: write
 
 jobs:
   sync:
-    if: github.event.pull_request.head.ref == 'dev/domain-db-foundation'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
