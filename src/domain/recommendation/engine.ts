@@ -12,9 +12,7 @@ export interface RecommendationComponentScores {
   discoveryTolerance: number | null;
 }
 
-function clamp(value: number): number {
-  return Math.max(0, Math.min(100, value));
-}
+function clamp(value: number): number { return Math.max(0, Math.min(100, value)); }
 
 function numericMatch(preference: number | undefined, actual: number | undefined): number | null {
   if (preference === undefined || actual === undefined || !Number.isFinite(preference) || !Number.isFinite(actual)) return null;
@@ -32,11 +30,8 @@ function aromaMatch(profile: string[] | undefined, tea: string[]): number | null
 }
 
 function tasteFit(profile: FinderProfileReference, tea: Tea): number | null {
-  const parts = [
-    numericMatch(profile.sweetness, tea.sensory.sweetness),
-    numericMatch(profile.freshness, tea.sensory.freshness),
-    aromaMatch(profile.aroma, tea.sensory.aroma),
-  ].filter((value): value is number => value !== null);
+  const parts = [numericMatch(profile.sweetness, tea.sensory.sweetness), numericMatch(profile.freshness, tea.sensory.freshness), aromaMatch(profile.aroma, tea.sensory.aroma)]
+    .filter((value): value is number => value !== null);
   return parts.length ? parts.reduce((sum, value) => sum + value, 0) / parts.length : null;
 }
 
@@ -63,52 +58,32 @@ function ceilingScore(distance: number, ceiling: number): number {
   return clamp(100 - ((distance - ceiling) / (100 - ceiling)) * 100);
 }
 
-export function calculateTasteFit(profile: FinderProfileReference, tea: Tea): number | null {
-  return tasteFit(profile, tea);
-}
-
-export function calculateBodyScore(profile: FinderProfileReference, tea: Tea): number | null {
-  return numericMatch(profile.body, tea.sensory.body);
-}
-
+export function calculateTasteFit(profile: FinderProfileReference, tea: Tea): number | null { return tasteFit(profile, tea); }
+export function calculateBodyScore(profile: FinderProfileReference, tea: Tea): number | null { return numericMatch(profile.body, tea.sensory.body); }
 export function calculateRoastDepthScore(profile: FinderProfileReference, tea: Tea): number | null {
-  if (profile.roastDepth === undefined) return null;
-  return numericMatch(profile.roastDepth, (tea.sensory.roast + tea.sensory.depth) / 2);
+  return profile.roastDepth === undefined ? null : numericMatch(profile.roastDepth, (tea.sensory.roast + tea.sensory.depth) / 2);
 }
-
 export function calculateFamiliarityScore(profile: FinderProfileReference, tea: Tea): number | null {
   const ceiling = familiarityCeiling(profile.familiarity);
   return ceiling === null ? null : ceilingScore(tea.discoveryDistance, ceiling);
 }
-
-export function calculateContextScore(_profile: FinderProfileReference, _tea: Tea): number | null {
-  // Tea currently has no structured context/role attribute. Missing data is explicit, not neutral.
-  return null;
-}
-
+export function calculateContextScore(_profile: FinderProfileReference, _tea: Tea): number | null { return null; }
 export function calculateDiscoveryScore(profile: FinderProfileReference, tea: Tea): number | null {
   const ceiling = discoveryCeiling(profile.discoveryTolerance);
   return ceiling === null ? null : ceilingScore(tea.discoveryDistance, ceiling);
 }
 
 export function calculateComponentScores(profile: FinderProfileReference, tea: Tea): RecommendationComponentScores {
-  return {
-    tasteFit: calculateTasteFit(profile, tea),
-    body: calculateBodyScore(profile, tea),
-    roastDepth: calculateRoastDepthScore(profile, tea),
-    familiarityAccessibility: calculateFamiliarityScore(profile, tea),
-    context: calculateContextScore(profile, tea),
-    discoveryTolerance: calculateDiscoveryScore(profile, tea),
-  };
+  return { tasteFit: calculateTasteFit(profile, tea), body: calculateBodyScore(profile, tea), roastDepth: calculateRoastDepthScore(profile, tea), familiarityAccessibility: calculateFamiliarityScore(profile, tea), context: calculateContextScore(profile, tea), discoveryTolerance: calculateDiscoveryScore(profile, tea) };
 }
 
 export function calculateRecommendationScore(scores: RecommendationComponentScores): number | null {
-  const entries = (Object.keys(RECOMMENDATION_WEIGHTS) as Array<keyof typeof RECOMMENDATION_WEIGHTS>)
-    .map((key) => ({ weight: RECOMMENDATION_WEIGHTS[key], score: scores[key] }))
-    .filter((entry): entry is { weight: number; score: number } => entry.score !== null);
-  if (entries.length === 0) return null;
-  const totalWeight = entries.reduce((sum, entry) => sum + entry.weight, 0);
-  return clamp(entries.reduce((sum, entry) => sum + entry.score * entry.weight, 0) / totalWeight);
+  const entries = (Object.keys(RECOMMENDATION_WEIGHTS) as Array<keyof typeof RECOMMENDATION_WEIGHTS>).map((key) => ({ weight: RECOMMENDATION_WEIGHTS[key], score: scores[key] }));
+  const available = entries.filter((entry) => entry.score !== null);
+  if (available.length === 0) return null;
+  const totalWeight = available.reduce((sum, entry) => sum + entry.weight, 0);
+  const weightedSum = available.reduce((sum, entry) => sum + (entry.score ?? 0) * entry.weight, 0);
+  return clamp(weightedSum / totalWeight);
 }
 
 export function classifyRecommendationBand(score: number): RecommendationClassification | null {
@@ -126,20 +101,12 @@ function reasonForScore(label: string, score: number | null): string | null {
 }
 
 export function buildRecommendationReasons(scores: RecommendationComponentScores): string[] {
-  return [
-    reasonForScore('taste', scores.tasteFit),
-    reasonForScore('body', scores.body),
-    reasonForScore('fresh/roasted balance', scores.roastDepth),
-    reasonForScore('familiarity', scores.familiarityAccessibility),
-    reasonForScore('exploration level', scores.discoveryTolerance),
-  ].filter((reason): reason is string => reason !== null).slice(0, 3);
+  return [reasonForScore('taste', scores.tasteFit), reasonForScore('body', scores.body), reasonForScore('fresh/roasted balance', scores.roastDepth), reasonForScore('familiarity', scores.familiarityAccessibility), reasonForScore('exploration level', scores.discoveryTolerance)]
+    .filter((reason): reason is string => reason !== null).slice(0, 3);
 }
 
 export function isEligibleTea(tea: Tea): boolean {
-  return tea.publishingState === 'published'
-    && tea.inventory > 0
-    && tea.supplyStatus !== 'unavailable'
-    && tea.supplyStatus !== 'discontinued';
+  return tea.publishingState === 'published' && tea.inventory > 0 && tea.supplyStatus !== 'unavailable' && tea.supplyStatus !== 'discontinued';
 }
 
 export function scoreTea(profile: FinderProfileReference, tea: Tea): RecommendationResult | null {
@@ -148,21 +115,9 @@ export function scoreTea(profile: FinderProfileReference, tea: Tea): Recommendat
   if (score === null) return null;
   const classification = classifyRecommendationBand(score);
   if (classification === null) return null;
-  return {
-    tea: { id: tea.id, slug: tea.slug, name: tea.name },
-    classification,
-    score,
-    reasons: buildRecommendationReasons(scores),
-    algorithmVersion: RECOMMENDATION_ALGORITHM_VERSION,
-    profileReference: profile,
-    createdAt: '',
-  };
+  return { tea: { id: tea.id, slug: tea.slug, name: tea.name }, classification, score, reasons: buildRecommendationReasons(scores), algorithmVersion: RECOMMENDATION_ALGORITHM_VERSION, profileReference: profile, createdAt: '' };
 }
 
 export function recommendTeas(profile: FinderProfileReference, teas: Tea[]): RecommendationResult[] {
-  return teas
-    .filter(isEligibleTea)
-    .map((tea) => scoreTea(profile, tea))
-    .filter((result): result is RecommendationResult => result !== null)
-    .sort((a, b) => b.score - a.score || a.tea.id.localeCompare(b.tea.id));
+  return teas.filter(isEligibleTea).map((tea) => scoreTea(profile, tea)).filter((result): result is RecommendationResult => result !== null).sort((a, b) => b.score - a.score || a.tea.id.localeCompare(b.tea.id));
 }
