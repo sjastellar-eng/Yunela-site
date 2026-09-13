@@ -28,23 +28,16 @@ export class NotConfiguredRecommendationEngine implements RecommendationEngine {
 }
 
 export interface RecommendationApplicationDependencies {
-  teaRepository: TeaRepository;
   customerRepository: CustomerRepository;
   historyRepository: RecommendationHistoryRepository;
 }
 
 export class RecommendationApplicationService implements RecommendationService {
-  private readonly dependencies?: RecommendationApplicationDependencies;
-  private readonly clock: () => string;
-
   constructor(
     private readonly engine: RecommendationEngine,
-    dependencies?: RecommendationApplicationDependencies,
-    clock: () => string = () => new Date().toISOString(),
-  ) {
-    this.dependencies = dependencies;
-    this.clock = clock;
-  }
+    private readonly dependencies?: RecommendationApplicationDependencies,
+    private readonly clock: () => string = () => new Date().toISOString(),
+  ) {}
 
   async recommend(request: RecommendationRequest): Promise<RecommendationResult[]> {
     validateRecommendationRequest(request);
@@ -54,7 +47,11 @@ export class RecommendationApplicationService implements RecommendationService {
 
     const results = await this.engine.recommend(request);
     const createdAt = this.clock();
-    const stamped = results.map((result, index) => ({ ...result, createdAt, algorithmVersion: RECOMMENDATION_ALGORITHM_VERSION }));
+    const stamped = results.map((result) => ({
+      ...result,
+      createdAt,
+      algorithmVersion: RECOMMENDATION_ALGORITHM_VERSION,
+    }));
 
     for (const result of stamped) validateRecommendationResult(result);
 
