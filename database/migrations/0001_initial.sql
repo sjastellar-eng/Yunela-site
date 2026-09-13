@@ -67,6 +67,7 @@ CREATE TABLE teas (
   publishing_state TEXT NOT NULL CHECK(publishing_state IN ('draft','pending_qa','published','archived')),
   created_at TEXT NOT NULL,
   updated_at TEXT NOT NULL,
+  CHECK(style_id IS NULL OR subfamily_id IS NOT NULL),
   FOREIGN KEY(subfamily_id, family_id) REFERENCES tea_subfamilies(id, family_id) ON DELETE RESTRICT,
   FOREIGN KEY(style_id, subfamily_id) REFERENCES tea_styles(id, subfamily_id) ON DELETE RESTRICT
 );
