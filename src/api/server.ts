@@ -8,7 +8,7 @@ import { TeaProfileService } from '../application/profile/service';
 import { RecommendationApplicationService } from '../application/recommendation/service';
 import { TeaService } from '../application/tea/service';
 import type { TeaTaxonomyReference } from '../application/repositories';
-import type { Customer, Feedback, TeaProfile } from '../contracts/account';
+import type { Feedback, TeaProfile } from '../contracts/account';
 import type { RecommendationRequest } from '../contracts/recommendation';
 import type { Tea } from '../contracts/tea';
 import type { CreateTeaDto, TeaListQuery, UpdateTeaDto } from './dto';
@@ -119,18 +119,18 @@ function rejectInventory(value: Record<string, unknown>): void {
 function mapTeaWrite(value: unknown): CreateTeaDto | UpdateTeaDto {
   const body = requireObject(value);
   rejectInventory(body);
-  const taxonomy = requireObject(body.taxonomy);
-  if (typeof taxonomy.familyId !== 'string' || !taxonomy.familyId.trim()) {
+  const taxonomyValue = requireObject(body.taxonomy);
+  if (typeof taxonomyValue.familyId !== 'string' || !taxonomyValue.familyId.trim()) {
     throw new ApplicationError('VALIDATION_ERROR', 'taxonomy.familyId is required');
   }
-  if (taxonomy.subfamilyId !== undefined && typeof taxonomy.subfamilyId !== 'string') {
+  if (taxonomyValue.subfamilyId !== undefined && typeof taxonomyValue.subfamilyId !== 'string') {
     throw new ApplicationError('VALIDATION_ERROR', 'taxonomy.subfamilyId must be a string');
   }
-  if (taxonomy.styleId !== undefined && typeof taxonomy.styleId !== 'string') {
+  if (taxonomyValue.styleId !== undefined && typeof taxonomyValue.styleId !== 'string') {
     throw new ApplicationError('VALIDATION_ERROR', 'taxonomy.styleId must be a string');
   }
-  const { taxonomy: _taxonomy, ...tea } = body;
-  return { ...(tea as unknown as Tea), taxonomy: taxonomy as unknown as TeaTaxonomyReference } as CreateTeaDto;
+  const { taxonomy: _ignoredTaxonomy, ...tea } = body;
+  return { ...(tea as unknown as Tea), taxonomy: taxonomyValue as unknown as TeaTaxonomyReference } as CreateTeaDto;
 }
 
 function mapProfile(value: unknown, customerId: string): TeaProfile {
