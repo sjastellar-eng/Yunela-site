@@ -130,7 +130,7 @@ function mapTeaWrite(value: unknown): CreateTeaDto | UpdateTeaDto {
     throw new ApplicationError('VALIDATION_ERROR', 'taxonomy.styleId must be a string');
   }
   const { taxonomy: _taxonomy, ...tea } = body;
-  return { ...(tea as unknown as Tea), taxonomy: taxonomy as TeaTaxonomyReference } as CreateTeaDto;
+  return { ...(tea as unknown as Tea), taxonomy: taxonomy as unknown as TeaTaxonomyReference } as CreateTeaDto;
 }
 
 function mapProfile(value: unknown, customerId: string): TeaProfile {
