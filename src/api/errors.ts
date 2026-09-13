@@ -36,12 +36,3 @@ export function applicationErrorToHttp(error: unknown, requestId: string): { sta
     },
   };
 }
-
-export function httpValidationError(message: string, requestId: string): { status: 400; body: ApiErrorBody } {
-  return {
-    status: 400,
-    body: {
-      error: { code: 'VALIDATION_ERROR', message, requestId },
-    },
-  };
-}
