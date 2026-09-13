@@ -2,6 +2,10 @@ import Database from 'better-sqlite3';
 import type { Feedback, RecommendationHistoryEntry, TeaProfile } from '../contracts/account';
 import type { Tea } from '../contracts/tea';
 
+type TeaWriteInput = Omit<Tea, 'inventory'>;
+
+type TeaTaxonomyReference = { familyId: string; subfamilyId?: string; styleId?: string };
+
 export interface TeaLotRecord {
   id: string;
   teaId: string;
@@ -68,8 +72,8 @@ export function insertProvenance(db: Database.Database, provenance: ProvenanceRe
 
 export function insertTea(
   db: Database.Database,
-  tea: Tea,
-  taxonomy: { familyId: string; subfamilyId?: string; styleId?: string },
+  tea: TeaWriteInput,
+  taxonomy: TeaTaxonomyReference,
 ): void {
   db.prepare(`
     INSERT INTO teas (
