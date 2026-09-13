@@ -64,6 +64,10 @@ Customer-facing recommendations require `publishingState === 'published'`, posit
 
 The optional `customerId` on `RecommendationRequest` is the minimal backward-compatible addition required to associate a recommendation run with an existing customer for history persistence. Anonymous requests may still be calculated but are not persisted to customer history.
 
+Each persisted history entry now receives a UUID-backed persistence identifier independent of customer, timestamp, and result index. This prevents primary-key collisions when repeated runs occur for the same customer at the same timestamp. UUID generation is used only for persistence identity; it is not part of scoring or ranking.
+
+The persisted `profile_reference_json` now contains the exact `RecommendationRequest.profileReference` used for the engine invocation. The existing `RecommendationHistoryEntry` contract is extended only with this canonical profile reference so historical recommendations remain auditable and reproducible. No second profile model or schema migration is required because the existing database column already stores JSON.
+
 ### Explanations
 
 Explanations are deterministic templates based only on calculated component scores. They do not introduce cultural, origin, quality, or sensory claims that are absent from the Tea record, and they do not use an LLM.
@@ -75,6 +79,8 @@ Positive:
 - same structured inputs produce the same scoring and ranking;
 - the scoring logic is isolated from HTTP and persistence;
 - recommendations are explainable and versioned;
+- history records cannot collide merely because two runs share customer/timestamp/index values;
+- the exact profile reference used by a recommendation is retained for auditability;
 - existing C2 endpoint can execute the real engine without a transport redesign;
 - C4 can consume MATCH/STRETCH/WILDCARD ordering for Discovery Box selection.
 
