@@ -1,1 +1,0 @@
-Stage C3 implementation notes are captured in ADR-005 and code/tests.
