@@ -33,7 +33,8 @@ function tea(id = 'tea-1'): Tea {
 }
 
 function teaWriteInput(id = 'tea-1'): TeaWriteInput {
-  const { inventory: _inventory, ...writeInput } = tea(id);
+  const { inventory, ...writeInput } = tea(id);
+  void inventory;
   return writeInput;
 }
 
