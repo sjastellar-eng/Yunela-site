@@ -40,7 +40,8 @@ const teaWritePayload = (id: string) => ({
 });
 
 function teaInput(id: string): TeaWriteInput {
-  const { taxonomy: _taxonomy, ...tea } = teaWritePayload(id);
+  const { taxonomy: taxonomyValue, ...tea } = teaWritePayload(id);
+  void taxonomyValue;
   return tea as TeaWriteInput;
 }
 
