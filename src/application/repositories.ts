@@ -1,6 +1,9 @@
 import type { Feedback, Customer, RecommendationHistoryEntry, TeaProfile } from '../contracts/account';
 import type { Tea } from '../contracts/tea';
 
+/** Application write model for Tea. Inventory is derived from tea_lots and is never authoritative input. */
+export type TeaWriteInput = Omit<Tea, 'inventory'>;
+
 export interface TeaTaxonomyReference {
   familyId: string;
   subfamilyId?: string;
@@ -8,10 +11,10 @@ export interface TeaTaxonomyReference {
 }
 
 export interface TeaRepository {
-  create(tea: Tea, taxonomy: TeaTaxonomyReference): void;
+  create(tea: TeaWriteInput, taxonomy: TeaTaxonomyReference): void;
   getById(id: string): Tea | undefined;
   list(): Tea[];
-  update(tea: Tea, taxonomy: TeaTaxonomyReference): Tea | undefined;
+  update(tea: TeaWriteInput, taxonomy: TeaTaxonomyReference): Tea | undefined;
 }
 
 export interface CustomerRepository {
