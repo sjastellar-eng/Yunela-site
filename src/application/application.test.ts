@@ -8,7 +8,7 @@ import { CustomerService } from './customer/service';
 import { FeedbackService } from './feedback/service';
 import { TeaProfileService } from './profile/service';
 import { RecommendationApplicationService } from './recommendation/service';
-import type { CustomerRepository, FeedbackRepository, TeaProfileRepository, TeaRepository, TeaTaxonomyReference } from './repositories';
+import type { CustomerRepository, FeedbackRepository, TeaProfileRepository, TeaRepository, TeaTaxonomyReference, TeaWriteInput } from './repositories';
 import { TeaService } from './tea/service';
 
 const taxonomy: TeaTaxonomyReference = { familyId: 'family-oolong', subfamilyId: 'subfamily-roasted', styleId: 'style-test' };
@@ -32,6 +32,11 @@ function tea(id = 'tea-1'): Tea {
   };
 }
 
+function teaWriteInput(id = 'tea-1'): TeaWriteInput {
+  const { inventory: _inventory, ...writeInput } = tea(id);
+  return writeInput;
+}
+
 function customer(id = 'customer-1'): Customer {
   return { id, email: `${id}@example.invalid`, createdAt: '2026-09-13T20:00:00.000Z' };
 }
@@ -39,16 +44,17 @@ function customer(id = 'customer-1'): Customer {
 class FakeTeaRepository implements TeaRepository {
   readonly records = new Map<string, Tea>();
   failCreate = false;
-  create(value: Tea): void {
+  create(value: TeaWriteInput): void {
     if (this.failCreate) throw new ApplicationError('PERSISTENCE_ERROR', 'synthetic repository failure');
-    this.records.set(value.id, value);
+    this.records.set(value.id, { ...value, inventory: 0 });
   }
   getById(id: string): Tea | undefined { return this.records.get(id); }
   list(): Tea[] { return [...this.records.values()]; }
-  update(value: Tea): Tea | undefined {
+  update(value: TeaWriteInput): Tea | undefined {
     if (!this.records.has(value.id)) return undefined;
-    this.records.set(value.id, value);
-    return value;
+    const updated = { ...value, inventory: this.records.get(value.id)?.inventory ?? 0 };
+    this.records.set(value.id, updated);
+    return updated;
   }
 }
 
@@ -100,20 +106,36 @@ describe('C1 application services', () => {
   it('TeaService supports create, read and update without a SQLite dependency', () => {
     const repository = new FakeTeaRepository();
     const service = new TeaService(repository);
-    const created = service.createTea(tea(), taxonomy);
+    const created = service.createTea(teaWriteInput(), taxonomy);
     expect(service.getTeaById(created.id).name).toBe('Synthetic Test Tea');
     const updated = service.updateTea({ ...created, name: 'Updated Synthetic Tea' }, taxonomy);
     expect(updated.name).toBe('Updated Synthetic Tea');
     expect(service.listTeas()).toHaveLength(1);
   });
 
-  it('TeaService rejects invalid data and propagates repository failure as an application error', () => {
+  it('TeaService treats inventory as derived rather than authoritative input', () => {
     const repository = new FakeTeaRepository();
     const service = new TeaService(repository);
-    const invalidTea = { ...tea(), price: { ...tea().price, amount: -1 as Tea['price']['amount'] } };
+    const inventoryBearingObject = { ...teaWriteInput('tea-inventory'), inventory: 999 };
+    const created = service.createTea(inventoryBearingObject, taxonomy);
+    expect(created.inventory).toBe(0);
+    expect(repository.records.get('tea-inventory')?.inventory).toBe(0);
+  });
+
+  it('TeaService rejects invalid data and inconsistent taxonomy references', () => {
+    const service = new TeaService(new FakeTeaRepository());
+    const invalidTea = { ...teaWriteInput(), price: { ...tea().price, amount: -1 as Tea['price']['amount'] } };
     expect(() => service.createTea(invalidTea, taxonomy)).toThrow(ApplicationError);
+    expect(() => service.createTea(teaWriteInput('tea-family-mismatch'), { ...taxonomy, familyId: 'family-other' })).toThrowError(/tea.family must match taxonomy.familyId/);
+    expect(() => service.createTea(teaWriteInput('tea-subfamily-mismatch'), { ...taxonomy, subfamilyId: 'subfamily-other' })).toThrowError(/tea.subfamily must match taxonomy.subfamilyId/);
+    expect(() => service.createTea(teaWriteInput('tea-style-mismatch'), { ...taxonomy, styleId: 'style-other' })).toThrowError(/tea.style must match taxonomy.styleId/);
+  });
+
+  it('TeaService propagates repository failure as an application error', () => {
+    const repository = new FakeTeaRepository();
+    const service = new TeaService(repository);
     repository.failCreate = true;
-    expect(() => service.createTea(tea('tea-2'), taxonomy)).toThrowError('synthetic repository failure');
+    expect(() => service.createTea(teaWriteInput('tea-2'), taxonomy)).toThrowError('synthetic repository failure');
   });
 
   it('CustomerService supports create, read, update and not-found handling', () => {
@@ -141,7 +163,7 @@ describe('C1 application services', () => {
     const teas = new FakeTeaRepository();
     const feedbackRepository = new FakeFeedbackRepository();
     customers.create(customer());
-    teas.create(tea());
+    teas.create(teaWriteInput());
     const service = new FeedbackService(feedbackRepository, customers, teas);
     expect(service.submitFeedback(feedback())).toEqual(feedback());
     expect(service.getCustomerFeedback('customer-1')).toHaveLength(1);
