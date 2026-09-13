@@ -1,4 +1,4 @@
-import type { FinderProfileReference, RecommendationClassification, RecommendationResult } from '../../contracts/recommendation';
+import { RECOMMENDATION_WEIGHTS, type FinderProfileReference, type RecommendationClassification, type RecommendationResult } from '../../contracts/recommendation';
 import type { Tea } from '../../contracts/tea';
 
 export const RECOMMENDATION_ALGORITHM_VERSION = 'recommendation-v1';
@@ -11,15 +11,6 @@ export interface RecommendationComponentScores {
   context: number | null;
   discoveryTolerance: number | null;
 }
-
-const WEIGHTS = {
-  tasteFit: 0.5,
-  body: 0.15,
-  roastDepth: 0.1,
-  familiarityAccessibility: 0.1,
-  context: 0.05,
-  discoveryTolerance: 0.1,
-} as const;
 
 function clamp(value: number): number {
   return Math.max(0, Math.min(100, value));
@@ -68,8 +59,7 @@ function discoveryCeiling(value: string | undefined): number | null {
 }
 
 function ceilingScore(distance: number, ceiling: number): number {
-  if (distance <= ceiling) return 100;
-  if (ceiling >= 100) return 100;
+  if (distance <= ceiling || ceiling >= 100) return 100;
   return clamp(100 - ((distance - ceiling) / (100 - ceiling)) * 100);
 }
 
@@ -83,8 +73,7 @@ export function calculateBodyScore(profile: FinderProfileReference, tea: Tea): n
 
 export function calculateRoastDepthScore(profile: FinderProfileReference, tea: Tea): number | null {
   if (profile.roastDepth === undefined) return null;
-  const roastDepth = (tea.sensory.roast + tea.sensory.depth) / 2;
-  return numericMatch(profile.roastDepth, roastDepth);
+  return numericMatch(profile.roastDepth, (tea.sensory.roast + tea.sensory.depth) / 2);
 }
 
 export function calculateFamiliarityScore(profile: FinderProfileReference, tea: Tea): number | null {
@@ -114,8 +103,8 @@ export function calculateComponentScores(profile: FinderProfileReference, tea: T
 }
 
 export function calculateRecommendationScore(scores: RecommendationComponentScores): number | null {
-  const entries = (Object.keys(WEIGHTS) as Array<keyof typeof WEIGHTS>)
-    .map((key) => ({ weight: WEIGHTS[key], score: scores[key] }))
+  const entries = (Object.keys(RECOMMENDATION_WEIGHTS) as Array<keyof typeof RECOMMENDATION_WEIGHTS>)
+    .map((key) => ({ weight: RECOMMENDATION_WEIGHTS[key], score: scores[key] }))
     .filter((entry): entry is { weight: number; score: number } => entry.score !== null);
   if (entries.length === 0) return null;
   const totalWeight = entries.reduce((sum, entry) => sum + entry.weight, 0);
@@ -137,14 +126,13 @@ function reasonForScore(label: string, score: number | null): string | null {
 }
 
 export function buildRecommendationReasons(scores: RecommendationComponentScores): string[] {
-  const reasons = [
+  return [
     reasonForScore('taste', scores.tasteFit),
     reasonForScore('body', scores.body),
     reasonForScore('fresh/roasted balance', scores.roastDepth),
     reasonForScore('familiarity', scores.familiarityAccessibility),
     reasonForScore('exploration level', scores.discoveryTolerance),
-  ].filter((reason): reason is string => reason !== null);
-  return reasons.slice(0, 3);
+  ].filter((reason): reason is string => reason !== null).slice(0, 3);
 }
 
 export function isEligibleTea(tea: Tea): boolean {
