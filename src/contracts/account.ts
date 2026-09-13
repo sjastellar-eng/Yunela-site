@@ -52,5 +52,7 @@ export interface RecommendationHistoryEntry {
   classification: 'MATCH' | 'STRETCH' | 'WILDCARD';
   explanation: string[];
   createdAt: string;
+  /** Exact profile reference used for the recommendation, preserved for auditability/reproducibility. */
+  profileReference: import('./recommendation').FinderProfileReference;
   outcome?: RecommendationOutcome;
 }
