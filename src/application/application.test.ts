@@ -117,10 +117,11 @@ describe('C1 application services', () => {
   it('TeaService treats inventory as derived rather than authoritative input on create and update', () => {
     const repository = new FakeTeaRepository();
     const service = new TeaService(repository);
-    const inventoryBearingObject = { ...teaWriteInput('tea-inventory'), inventory: 999 };
+    const inventoryBearingObject = { ...teaWriteInput('tea-inventory'), inventory: 999 } as TeaWriteInput;
     const created = service.createTea(inventoryBearingObject, taxonomy);
     expect(created.inventory).toBe(0);
-    const updated = service.updateTea({ ...created, inventory: 555, name: 'Inventory Still Derived' }, taxonomy);
+    const updateInput = { ...created, inventory: 555, name: 'Inventory Still Derived' } as TeaWriteInput;
+    const updated = service.updateTea(updateInput, taxonomy);
     expect(updated.inventory).toBe(0);
     expect(repository.records.get('tea-inventory')?.inventory).toBe(0);
   });
