@@ -1,7 +1,6 @@
 export * from './auth-boundaries';
 export * from './errors';
 export * from './repositories';
-export * from './sqliteRepositories';
 export * from './validation';
 export * from './tea/service';
 export * from './customer/service';
