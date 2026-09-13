@@ -110,7 +110,8 @@ describe('C1 application services', () => {
   it('TeaService rejects invalid data and propagates repository failure as an application error', () => {
     const repository = new FakeTeaRepository();
     const service = new TeaService(repository);
-    expect(() => service.createTea({ ...tea(), price: createMoney(-1, 'USD') }, taxonomy)).toThrow(ApplicationError);
+    const invalidTea = { ...tea(), price: { ...tea().price, amount: -1 as Tea['price']['amount'] } };
+    expect(() => service.createTea(invalidTea, taxonomy)).toThrow(ApplicationError);
     repository.failCreate = true;
     expect(() => service.createTea(tea('tea-2'), taxonomy)).toThrowError('synthetic repository failure');
   });
