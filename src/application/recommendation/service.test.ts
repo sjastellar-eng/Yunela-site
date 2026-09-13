@@ -6,21 +6,11 @@ import type { CustomerRepository, RecommendationHistoryRepository, TeaRepository
 import { DeterministicRecommendationEngine, RecommendationApplicationService } from './service';
 
 const tea: Tea = {
-  id: 'tea-service',
-  slug: 'tea-service',
-  name: 'Synthetic Service Tea',
-  family: 'family-a',
-  sensory: {
-    aroma: ['floral'], sweetness: 70, body: 60, freshness: 80, roast: 20, depth: 30,
-    astringency: 20, finish: 70, floral: 80, fruity: 40, mineral: 30, earthyWoody: 10,
-  },
+  id: 'tea-service', slug: 'tea-service', name: 'Synthetic Service Tea', family: 'family-a',
+  sensory: { aroma: ['floral'], sweetness: 70, body: 60, freshness: 80, roast: 20, depth: 30, astringency: 20, finish: 70, floral: 80, fruity: 40, mineral: 30, earthyWoody: 10 },
   discoveryDistance: 20,
-  price: { amount: 1000 as Tea['price']['amount'], currency: 'USD' },
-  packSize: 50,
-  inventory: 5,
-  supplyStatus: 'available',
-  provenanceConfidence: 'verified',
-  publishingState: 'published',
+  price: { amount: 1000 as Tea['price']['amount'], currency: 'USD' }, packSize: 50, inventory: 5,
+  supplyStatus: 'available', provenanceConfidence: 'verified', publishingState: 'published',
 };
 
 class FakeTeaRepository implements TeaRepository {
@@ -45,15 +35,7 @@ class FakeHistoryRepository implements RecommendationHistoryRepository {
 
 const request: RecommendationRequest = {
   customerId: 'customer-1',
-  profileReference: {
-    body: 60,
-    sweetness: 70,
-    freshness: 80,
-    roastDepth: 25,
-    aroma: ['floral'],
-    familiarity: 'familiar',
-    discoveryTolerance: 'open',
-  },
+  profileReference: { body: 60, sweetness: 70, freshness: 80, roastDepth: 25, aroma: ['floral'], familiarity: 'familiar', discoveryTolerance: 'open' },
 };
 
 describe('RecommendationApplicationService', () => {
@@ -63,7 +45,6 @@ describe('RecommendationApplicationService', () => {
     const service = new RecommendationApplicationService(
       new DeterministicRecommendationEngine(teaRepository),
       {
-        teaRepository,
         customerRepository: new FakeCustomerRepository({ id: 'customer-1', email: 'test@example.com', createdAt: '2026-01-01T00:00:00.000Z' }),
         historyRepository,
       },
@@ -75,14 +56,7 @@ describe('RecommendationApplicationService', () => {
     expect(results[0].algorithmVersion).toBe('recommendation-v1');
     expect(results[0].createdAt).toBe('2026-01-01T00:00:00.000Z');
     expect(historyRepository.entries).toHaveLength(1);
-    expect(historyRepository.entries[0]).toMatchObject({
-      customerId: 'customer-1',
-      teaId: 'tea-service',
-      algorithmVersion: 'recommendation-v1',
-      classification: results[0].classification,
-      score: results[0].score,
-      explanation: results[0].reasons,
-    });
+    expect(historyRepository.entries[0]).toMatchObject({ customerId: 'customer-1', teaId: 'tea-service', algorithmVersion: 'recommendation-v1', classification: results[0].classification, score: results[0].score, explanation: results[0].reasons });
   });
 
   it('returns NOT_FOUND when a supplied customer does not exist', async () => {
@@ -90,7 +64,6 @@ describe('RecommendationApplicationService', () => {
     const service = new RecommendationApplicationService(
       new DeterministicRecommendationEngine(teaRepository),
       {
-        teaRepository,
         customerRepository: new FakeCustomerRepository({ id: 'other', email: 'other@example.com', createdAt: '2026-01-01T00:00:00.000Z' }),
         historyRepository: new FakeHistoryRepository(),
       },
