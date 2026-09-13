@@ -1,7 +1,6 @@
-import type { Database } from 'better-sqlite3';
+import Database from 'better-sqlite3';
 import type { Feedback, RecommendationHistoryEntry, TeaProfile } from '../contracts/account';
 import type { Tea } from '../contracts/tea';
-import type { FinderProfileReference } from '../contracts/recommendation';
 
 export interface TeaLotRecord {
   id: string;
@@ -41,7 +40,37 @@ export interface PersistedCustomer {
   createdAt: string;
 }
 
-export function insertTea(db: Database, tea: Tea, taxonomy: { familyId: string; subfamilyId?: string; styleId?: string }): void {
+export function insertSupplier(db: Database.Database, supplier: SupplierRecord): void {
+  db.prepare('INSERT INTO suppliers (id, name, created_at) VALUES (?, ?, ?)').run(
+    supplier.id,
+    supplier.name,
+    supplier.createdAt,
+  );
+}
+
+export function insertProvenance(db: Database.Database, provenance: ProvenanceRecord): void {
+  db.prepare(`
+    INSERT INTO provenance_records (
+      id, supplier_id, source_reference, province, area, region, cultivar, confidence, created_at
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `).run(
+    provenance.id,
+    provenance.supplierId ?? null,
+    provenance.sourceReference ?? null,
+    provenance.province ?? null,
+    provenance.area ?? null,
+    provenance.region ?? null,
+    provenance.cultivar ?? null,
+    provenance.confidence,
+    provenance.createdAt,
+  );
+}
+
+export function insertTea(
+  db: Database.Database,
+  tea: Tea,
+  taxonomy: { familyId: string; subfamilyId?: string; styleId?: string },
+): void {
   db.prepare(`
     INSERT INTO teas (
       id, slug, name, chinese_name, transliteration, family_id, subfamily_id, style_id,
@@ -87,8 +116,14 @@ export function insertTea(db: Database, tea: Tea, taxonomy: { familyId: string; 
   });
 }
 
-export function findTeaById(db: Database, id: string): Tea | undefined {
-  const row = db.prepare('SELECT * FROM teas WHERE id = ?').get(id) as Record<string, unknown> | undefined;
+export function findTeaById(db: Database.Database, id: string): Tea | undefined {
+  const row = db.prepare(`
+    SELECT teas.*, COALESCE(SUM(tea_lots.inventory_quantity), 0) AS inventory_quantity
+    FROM teas
+    LEFT JOIN tea_lots ON tea_lots.tea_id = teas.id
+    WHERE teas.id = ?
+    GROUP BY teas.id
+  `).get(id) as Record<string, unknown> | undefined;
   if (!row) return undefined;
 
   return {
@@ -111,16 +146,19 @@ export function findTeaById(db: Database, id: string): Tea | undefined {
     ...(row.production_date ? { productionDate: String(row.production_date) } : {}),
     sensory: JSON.parse(String(row.sensory_json)),
     discoveryDistance: Number(row.discovery_distance),
-    price: { amount: Number(row.price_amount) as Tea['price']['amount'], currency: String(row.price_currency) },
+    price: {
+      amount: Number(row.price_amount) as Tea['price']['amount'],
+      currency: String(row.price_currency),
+    },
     packSize: Number(row.pack_size_grams),
-    inventory: 0,
+    inventory: Number(row.inventory_quantity),
     supplyStatus: row.supply_status as Tea['supplyStatus'],
     provenanceConfidence: row.provenance_confidence as Tea['provenanceConfidence'],
     publishingState: row.publishing_state as Tea['publishingState'],
   };
 }
 
-export function insertTeaLot(db: Database, lot: TeaLotRecord): void {
+export function insertTeaLot(db: Database.Database, lot: TeaLotRecord): void {
   db.prepare(`
     INSERT INTO tea_lots (
       id, tea_id, supplier_id, provenance_id, lot_code, production_date,
@@ -144,7 +182,7 @@ export function insertTeaLot(db: Database, lot: TeaLotRecord): void {
   });
 }
 
-export function insertCustomer(db: Database, customer: PersistedCustomer): void {
+export function insertCustomer(db: Database.Database, customer: PersistedCustomer): void {
   db.prepare('INSERT INTO customers (id, email, created_at) VALUES (?, ?, ?)').run(
     customer.id,
     customer.email,
@@ -152,7 +190,7 @@ export function insertCustomer(db: Database, customer: PersistedCustomer): void 
   );
 }
 
-export function upsertTeaProfile(db: Database, profile: TeaProfile): void {
+export function upsertTeaProfile(db: Database.Database, profile: TeaProfile): void {
   db.prepare(`
     INSERT INTO tea_profiles (customer_id, taste_preferences_json, updated_at)
     VALUES (?, ?, ?)
@@ -169,7 +207,7 @@ export function upsertTeaProfile(db: Database, profile: TeaProfile): void {
   for (const teaId of profile.dislikedTeaIds) insert.run(profile.customerId, teaId, 'disliked');
 }
 
-export function insertFeedback(db: Database, feedback: Feedback): void {
+export function insertFeedback(db: Database.Database, feedback: Feedback): void {
   db.prepare(`
     INSERT INTO tea_feedback (id, customer_id, tea_id, value, sensory_tags_json, created_at)
     VALUES (?, ?, ?, ?, ?, ?)
@@ -183,7 +221,10 @@ export function insertFeedback(db: Database, feedback: Feedback): void {
   );
 }
 
-export function insertRecommendationHistory(db: Database, entry: RecommendationHistoryEntry): void {
+export function insertRecommendationHistory(
+  db: Database.Database,
+  entry: RecommendationHistoryEntry,
+): void {
   db.prepare(`
     INSERT INTO recommendation_history (
       id, customer_id, tea_id, algorithm_version, score, classification,
@@ -198,7 +239,7 @@ export function insertRecommendationHistory(db: Database, entry: RecommendationH
     entry.classification,
     JSON.stringify(entry.explanation),
     null,
-    JSON.stringify({} satisfies FinderProfileReference),
+    JSON.stringify({ customerId: entry.customerId }),
     entry.outcome ?? null,
     entry.createdAt,
   );
