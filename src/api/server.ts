@@ -11,7 +11,7 @@ import type { TeaTaxonomyReference } from '../application/repositories';
 import type { Customer, Feedback, TeaProfile } from '../contracts/account';
 import type { RecommendationRequest } from '../contracts/recommendation';
 import type { Tea } from '../contracts/tea';
-import type { ApiErrorBody, CreateTeaDto, TeaListQuery, UpdateTeaDto } from './dto';
+import type { CreateTeaDto, TeaListQuery, UpdateTeaDto } from './dto';
 import { applicationErrorToHttp } from './errors';
 
 const API_PREFIX = '/api/v1';
