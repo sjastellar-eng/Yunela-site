@@ -18,12 +18,8 @@ jobs:
           node-version: 22
       - name: Generate lockfile
         run: npm install --package-lock-only --ignore-scripts --no-audit --no-fund
-      - name: Commit generated lockfile
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add package-lock.json
-          git diff --cached --quiet || git commit -m "chore: add reproducible npm lockfile"
-          git fetch origin dev/architecture-contracts
-          git rebase origin/dev/architecture-contracts
-          git push origin HEAD:dev/architecture-contracts
+      - name: Upload generated lockfile
+        uses: actions/upload-artifact@v4
+        with:
+          name: yunela-package-lock
+          path: package-lock.json
