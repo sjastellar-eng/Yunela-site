@@ -1,6 +1,5 @@
 import type { Feedback, TastePreferences } from '../contracts/account';
 import type { RecommendationResult, RecommendationRequest } from '../contracts/recommendation';
-import type { Tea } from '../contracts/tea';
 import { ApplicationError } from './errors';
 import type { TeaTaxonomyReference, TeaWriteInput } from './repositories';
 
