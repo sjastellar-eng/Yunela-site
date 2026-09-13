@@ -195,6 +195,11 @@ describe('database foundation', () => {
       subfamilyId: 'subfamily-black',
       styleId: 'style-test',
     })).toThrow();
+    expect(() => insertTea(db, tea, {
+      familyId: 'family-oolong',
+      subfamilyId: null,
+      styleId: 'style-test',
+    })).toThrow();
 
     expect(() => db.prepare(
       'INSERT INTO tea_styles (id, subfamily_id, name) VALUES (?, ?, ?)',
