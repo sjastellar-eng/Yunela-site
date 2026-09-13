@@ -7,7 +7,7 @@ export interface RecommendationEngine {
 }
 
 export class NotConfiguredRecommendationEngine implements RecommendationEngine {
-  async recommend(_request: RecommendationRequest): Promise<RecommendationResult[]> {
+  async recommend(): Promise<RecommendationResult[]> {
     throw new ApplicationError('NOT_IMPLEMENTED', 'Recommendation algorithm is intentionally deferred to Stage C3');
   }
 }
