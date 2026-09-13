@@ -3,7 +3,7 @@ import { randomUUID } from 'node:crypto';
 import { createApiServer } from './server';
 import { openDatabase } from '../database/client';
 import { applyMigrations } from '../database/migrate';
-import { insertCustomer, insertTea } from '../database/repositories';
+import { insertCustomer, insertTea, insertTeaLot } from '../database/repositories';
 import { CustomerService } from '../application/customer/service';
 import { TeaService } from '../application/tea/service';
 import { TeaProfileService } from '../application/profile/service';
@@ -13,10 +13,7 @@ import { SqliteCustomerRepository, SqliteFeedbackRepository, SqliteRecommendatio
 import type { Tea } from '../contracts/tea';
 
 const servers: Array<{ close: () => void }> = [];
-
-afterEach(() => {
-  for (const item of servers.splice(0)) item.close();
-});
+afterEach(() => { for (const item of servers.splice(0)) item.close(); });
 
 function createFixture() {
   const db = openDatabase(':memory:');
@@ -27,29 +24,23 @@ function createFixture() {
   const tea: Tea = {
     id: 'tea-api', slug: 'tea-api', name: 'Synthetic API Tea', family: 'family-a',
     sensory: { aroma: ['floral'], sweetness: 70, body: 60, freshness: 80, roast: 20, depth: 30, astringency: 20, finish: 70, floral: 80, fruity: 40, mineral: 30, earthyWoody: 10 },
-    discoveryDistance: 20,
-    price: { amount: 1000 as Tea['price']['amount'], currency: 'USD' }, packSize: 50, inventory: 5,
+    discoveryDistance: 20, price: { amount: 1000 as Tea['price']['amount'], currency: 'USD' }, packSize: 50, inventory: 5,
     supplyStatus: 'available', provenanceConfidence: 'verified', publishingState: 'published',
   };
   insertTea(db, tea, { familyId: 'family-a' });
+  insertTeaLot(db, { id: 'lot-api', teaId: 'tea-api', lotCode: 'SYNTHETIC-LOT-1', inventoryQuantity: 5, supplyStatus: 'available', createdAt: '2026-01-01T00:00:00.000Z', updatedAt: '2026-01-01T00:00:00.000Z' });
 
   const teaRepository = new SqliteTeaRepository(db);
   const customerRepository = new SqliteCustomerRepository(db);
   const historyRepository = new SqliteRecommendationHistoryRepository(db);
-  const recommendationService = new RecommendationApplicationService(
-    new DeterministicRecommendationEngine(teaRepository),
-    { customerRepository, historyRepository },
-    () => '2026-01-01T00:00:00.000Z',
-  );
-  const server = createApiServer({
-    dependencies: {
-      teaService: new TeaService(teaRepository),
-      customerService: new CustomerService(customerRepository),
-      profileService: new TeaProfileService(new SqliteTeaProfileRepository(db), customerRepository),
-      feedbackService: new FeedbackService(new SqliteFeedbackRepository(db), customerRepository, teaRepository),
-      recommendationService,
-    },
-  });
+  const recommendationService = new RecommendationApplicationService(new DeterministicRecommendationEngine(teaRepository), { customerRepository, historyRepository }, () => '2026-01-01T00:00:00.000Z');
+  const server = createApiServer({ dependencies: {
+    teaService: new TeaService(teaRepository),
+    customerService: new CustomerService(customerRepository),
+    profileService: new TeaProfileService(new SqliteTeaProfileRepository(db), customerRepository),
+    feedbackService: new FeedbackService(new SqliteFeedbackRepository(db), customerRepository, teaRepository),
+    recommendationService,
+  } });
   return { db, server, customerId };
 }
 
@@ -60,16 +51,10 @@ describe('POST /api/v1/recommendations', () => {
     await new Promise<void>((resolve) => fixture.server.listen(0, '127.0.0.1', resolve));
     const address = fixture.server.address();
     if (!address || typeof address === 'string') throw new Error('server address unavailable');
-
     const response = await fetch(`http://127.0.0.1:${address.port}/api/v1/recommendations`, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json', 'x-request-id': randomUUID() },
-      body: JSON.stringify({
-        customerId: fixture.customerId,
-        profileReference: { body: 60, sweetness: 70, freshness: 80, roastDepth: 25, aroma: ['floral'], familiarity: 'familiar', discoveryTolerance: 'open' },
-      }),
+      method: 'POST', headers: { 'content-type': 'application/json', 'x-request-id': randomUUID() },
+      body: JSON.stringify({ customerId: fixture.customerId, profileReference: { body: 60, sweetness: 70, freshness: 80, roastDepth: 25, aroma: ['floral'], familiarity: 'familiar', discoveryTolerance: 'open' } }),
     });
-
     expect(response.status).toBe(200);
     const results = await response.json() as Array<Record<string, unknown>>;
     expect(results).toHaveLength(1);
