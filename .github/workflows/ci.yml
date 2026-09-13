@@ -2,9 +2,9 @@ name: YUNELA UI Validation
 
 on:
   pull_request:
-    branches: [main]
-  push:
     branches: [main, 'feat/**']
+  push:
+    branches: [main, 'feat/**', 'dev/**']
 
 jobs:
   validate:
@@ -22,5 +22,7 @@ jobs:
         run: npm run typecheck
       - name: Lint
         run: npm run lint
+      - name: Tests
+        run: npm test
       - name: Production build
         run: npm run build
