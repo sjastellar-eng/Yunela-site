@@ -9,6 +9,7 @@ import {
   isEligibleTea,
   recommendTeas,
   RECOMMENDATION_ALGORITHM_VERSION,
+  buildRecommendationReasons,
 } from './engine';
 
 const baseTea: Tea = {
@@ -55,7 +56,15 @@ describe('recommendation engine v1', () => {
     expect(calculateTasteFit(profile, baseTea)).toBe(100);
   });
 
-  it('renormalizes only available weighted components when data is missing', () => {
+  it('applies the approved weights and renormalizes only available components', () => {
+    expect(calculateRecommendationScore({
+      tasteFit: 80,
+      body: 60,
+      roastDepth: 40,
+      familiarityAccessibility: 20,
+      context: null,
+      discoveryTolerance: 100,
+    })).toBeCloseTo(65 / 0.95, 10);
     expect(calculateRecommendationScore({
       tasteFit: null,
       body: 80,
@@ -99,6 +108,22 @@ describe('recommendation engine v1', () => {
     expect(isEligibleTea({ ...baseTea, inventory: 0 })).toBe(false);
     expect(isEligibleTea({ ...baseTea, supplyStatus: 'unavailable' })).toBe(false);
     expect(isEligibleTea({ ...baseTea, supplyStatus: 'discontinued' })).toBe(false);
+  });
+
+  it('produces deterministic explanations without generated claims', () => {
+    const reasons = buildRecommendationReasons({
+      tasteFit: 90,
+      body: 70,
+      roastDepth: 60,
+      familiarityAccessibility: null,
+      context: null,
+      discoveryTolerance: null,
+    });
+    expect(reasons).toEqual([
+      'Matches your preference for taste',
+      'Close to your preference for body',
+      'A controlled discovery step for fresh/roasted balance',
+    ]);
   });
 
   it('is deterministic across repeated calculations and versioned', () => {
