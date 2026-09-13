@@ -39,7 +39,7 @@ const request: RecommendationRequest = {
 };
 
 describe('RecommendationApplicationService', () => {
-  it('executes the engine and persists recommendation history with a stable algorithm version', async () => {
+  it('executes the engine and persists recommendation history with a stable algorithm version and exact profile reference', async () => {
     const teaRepository = new FakeTeaRepository([tea]);
     const historyRepository = new FakeHistoryRepository();
     const service = new RecommendationApplicationService(
@@ -56,7 +56,28 @@ describe('RecommendationApplicationService', () => {
     expect(results[0].algorithmVersion).toBe('recommendation-v1');
     expect(results[0].createdAt).toBe('2026-01-01T00:00:00.000Z');
     expect(historyRepository.entries).toHaveLength(1);
-    expect(historyRepository.entries[0]).toMatchObject({ customerId: 'customer-1', teaId: 'tea-service', algorithmVersion: 'recommendation-v1', classification: results[0].classification, score: results[0].score, explanation: results[0].reasons });
+    expect(historyRepository.entries[0]).toMatchObject({ customerId: 'customer-1', teaId: 'tea-service', algorithmVersion: 'recommendation-v1', classification: results[0].classification, score: results[0].score, explanation: results[0].reasons, profileReference: request.profileReference });
+  });
+
+  it('uses unique history IDs for repeated runs at the same timestamp', async () => {
+    const teaRepository = new FakeTeaRepository([tea]);
+    const historyRepository = new FakeHistoryRepository();
+    const service = new RecommendationApplicationService(
+      new DeterministicRecommendationEngine(teaRepository),
+      {
+        customerRepository: new FakeCustomerRepository({ id: 'customer-1', email: 'test@example.com', createdAt: '2026-01-01T00:00:00.000Z' }),
+        historyRepository,
+      },
+      () => '2026-01-01T00:00:00.000Z',
+    );
+
+    await service.recommend(request);
+    await service.recommend(request);
+
+    expect(historyRepository.entries).toHaveLength(2);
+    expect(historyRepository.entries[0].id).not.toBe(historyRepository.entries[1].id);
+    expect(new Set(historyRepository.entries.map((entry) => entry.id)).size).toBe(2);
+    expect(historyRepository.entries.every((entry) => entry.createdAt === '2026-01-01T00:00:00.000Z')).toBe(true);
   });
 
   it('returns NOT_FOUND when a supplied customer does not exist', async () => {
