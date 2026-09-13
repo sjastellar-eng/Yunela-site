@@ -129,7 +129,8 @@ function mapTeaWrite(value: unknown): CreateTeaDto | UpdateTeaDto {
   if (taxonomyValue.styleId !== undefined && typeof taxonomyValue.styleId !== 'string') {
     throw new ApplicationError('VALIDATION_ERROR', 'taxonomy.styleId must be a string');
   }
-  const { taxonomy: _ignoredTaxonomy, ...tea } = body;
+  const { taxonomy: ignoredTaxonomy, ...tea } = body;
+  void ignoredTaxonomy;
   return { ...(tea as unknown as Tea), taxonomy: taxonomyValue as unknown as TeaTaxonomyReference } as CreateTeaDto;
 }
 
