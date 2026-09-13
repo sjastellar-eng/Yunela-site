@@ -3,7 +3,6 @@ import type { Feedback, RecommendationHistoryEntry, TeaProfile } from '../contra
 import type { Tea } from '../contracts/tea';
 
 type TeaWriteInput = Omit<Tea, 'inventory'>;
-
 type TeaTaxonomyReference = { familyId: string; subfamilyId?: string; styleId?: string };
 
 export interface TeaLotRecord {
@@ -243,7 +242,7 @@ export function insertRecommendationHistory(
     entry.classification,
     JSON.stringify(entry.explanation),
     null,
-    JSON.stringify({ customerId: entry.customerId }),
+    JSON.stringify(entry.profileReference),
     entry.outcome ?? null,
     entry.createdAt,
   );
