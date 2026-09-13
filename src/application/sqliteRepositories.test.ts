@@ -31,6 +31,12 @@ function tea(): Tea {
   };
 }
 
+function teaWriteInput(): Omit<Tea, 'inventory'> {
+  const { inventory, ...writeInput } = tea();
+  void inventory;
+  return writeInput;
+}
+
 function customer(): Customer {
   return { id: 'customer-c1', email: 'c1@example.invalid', createdAt: '2026-09-13T20:00:00.000Z' };
 }
@@ -41,15 +47,24 @@ describe('C1 SQLite repository adapters', () => {
   it('runs TeaService against the SQLite repository without changing the service', () => {
     const db = createDatabase();
     const service = new TeaService(new SqliteTeaRepository(db));
-    expect(service.createTea(tea(), { familyId: 'family-oolong', subfamilyId: 'subfamily-roasted', styleId: 'style-test' }).id).toBe('tea-c1');
+    expect(service.createTea(teaWriteInput(), { familyId: 'family-oolong', subfamilyId: 'subfamily-roasted', styleId: 'style-test' }).id).toBe('tea-c1');
     expect(service.getTeaById('tea-c1').name).toBe('Synthetic C1 Tea');
-    expect(service.updateTea({ ...tea(), name: 'Updated C1 Tea' }, { familyId: 'family-oolong', subfamilyId: 'subfamily-roasted', styleId: 'style-test' }).name).toBe('Updated C1 Tea');
+    expect(service.updateTea({ ...teaWriteInput(), name: 'Updated C1 Tea' }, { familyId: 'family-oolong', subfamilyId: 'subfamily-roasted', styleId: 'style-test' }).name).toBe('Updated C1 Tea');
+  });
+
+  it('does not persist inventory from a Tea contract-shaped input', () => {
+    const db = createDatabase();
+    const service = new TeaService(new SqliteTeaRepository(db));
+    const inventoryBearingObject = { ...teaWriteInput(), inventory: 999 };
+    const created = service.createTea(inventoryBearingObject, { familyId: 'family-oolong', subfamilyId: 'subfamily-roasted', styleId: 'style-test' });
+    expect(created.inventory).toBe(0);
+    expect(db.prepare('SELECT COUNT(*) AS count FROM tea_lots WHERE tea_id = ?').get('tea-c1')).toEqual({ count: 0 });
   });
 
   it('runs customer, profile and feedback services through repository adapters', () => {
     const db = createDatabase();
     const teaService = new TeaService(new SqliteTeaRepository(db));
-    teaService.createTea(tea(), { familyId: 'family-oolong', subfamilyId: 'subfamily-roasted', styleId: 'style-test' });
+    teaService.createTea(teaWriteInput(), { familyId: 'family-oolong', subfamilyId: 'subfamily-roasted', styleId: 'style-test' });
 
     const customerRepository = new SqliteCustomerRepository(db);
     const customerService = new CustomerService(customerRepository);
