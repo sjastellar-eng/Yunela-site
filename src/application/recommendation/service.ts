@@ -10,12 +10,9 @@ export interface RecommendationEngine {
 
 export class DeterministicRecommendationEngine implements RecommendationEngine {
   constructor(private readonly teaRepository: TeaRepository) {}
-
   async recommend(request: RecommendationRequest): Promise<RecommendationResult[]> {
     const candidates = request.candidateTeaIds?.length
-      ? request.candidateTeaIds
-        .map((id) => this.teaRepository.getById(id))
-        .filter((tea): tea is NonNullable<typeof tea> => tea !== undefined)
+      ? request.candidateTeaIds.map((id) => this.teaRepository.getById(id)).filter((tea): tea is NonNullable<typeof tea> => tea !== undefined)
       : this.teaRepository.list();
     return recommendTeas(request.profileReference, candidates);
   }
@@ -49,8 +46,8 @@ export class RecommendationApplicationService implements RecommendationService {
     const createdAt = this.clock();
     const stamped = results.map((result) => ({
       ...result,
-      createdAt,
-      algorithmVersion: RECOMMENDATION_ALGORITHM_VERSION,
+      createdAt: result.createdAt || createdAt,
+      algorithmVersion: result.algorithmVersion || RECOMMENDATION_ALGORITHM_VERSION,
     }));
 
     for (const result of stamped) validateRecommendationResult(result);
@@ -58,7 +55,7 @@ export class RecommendationApplicationService implements RecommendationService {
     if (request.customerId && this.dependencies) {
       for (const [index, result] of stamped.entries()) {
         this.dependencies.historyRepository.create({
-          id: `recommendation:${request.customerId}:${createdAt}:${index}`,
+          id: `recommendation:${request.customerId}:${result.createdAt}:${index}`,
           customerId: request.customerId,
           teaId: result.tea.id,
           algorithmVersion: result.algorithmVersion,
