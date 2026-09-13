@@ -178,7 +178,9 @@ describe('C2 HTTP API boundary', () => {
       ...jsonBody({ profileReference: { body: 50 } }),
     });
     expect(domainResponse.status).toBe(422);
-    expect((await json(domainResponse) as { error: { code: string; message: string } }).error).toEqual({ code: 'DOMAIN_RULE_VIOLATION', message: 'synthetic domain rule' });
+    const domainBody = await json(domainResponse) as { error: { code: string; message: string; requestId: string } };
+    expect(domainBody.error).toMatchObject({ code: 'DOMAIN_RULE_VIOLATION', message: 'synthetic domain rule' });
+    expect(domainBody.error.requestId).toBeTruthy();
     dependencies.recommendationService.recommend = original;
   });
 
