@@ -24,6 +24,8 @@ export interface FinderProfileReference {
 
 /** Client input contains profile/candidate data only; algorithm version is service-owned. */
 export interface RecommendationRequest {
+  /** Optional customer identity used only to persist recommendation history. */
+  customerId?: string;
   profileReference: FinderProfileReference;
   candidateTeaIds?: string[];
 }
