@@ -7,7 +7,7 @@ import { TeaProfileService } from '../application/profile/service';
 import { NotConfiguredRecommendationEngine, RecommendationApplicationService } from '../application/recommendation/service';
 import { TeaService } from '../application/tea/service';
 import { SqliteCustomerRepository, SqliteFeedbackRepository, SqliteTeaProfileRepository, SqliteTeaRepository } from '../application/sqliteRepositories';
-import type { TeaTaxonomyReference } from '../application/repositories';
+import type { TeaTaxonomyReference, TeaWriteInput } from '../application/repositories';
 import { applyMigrations } from '../database/migrate';
 import { openDatabase } from '../database/client';
 import { createApiServer, type ApiDependencies } from './server';
@@ -37,6 +37,11 @@ const teaWritePayload = (id: string) => ({
   publishingState: 'draft',
   taxonomy,
 });
+
+function teaInput(id: string): TeaWriteInput {
+  const { taxonomy: _taxonomy, ...tea } = teaWritePayload(id);
+  return tea as TeaWriteInput;
+}
 
 function createTestDependencies(db: ReturnType<typeof openDatabase>): ApiDependencies {
   const teaRepository = new SqliteTeaRepository(db);
@@ -107,7 +112,7 @@ describe('C2 HTTP API boundary', () => {
 
   it('supports GET tea list and GET tea by id', async () => {
     const { dependencies } = setupDatabase();
-    dependencies.teaService.createTea(teaWritePayload('tea-1') as never, taxonomy);
+    dependencies.teaService.createTea(teaInput('tea-1'), taxonomy);
     const base = await startApi(dependencies);
     const list = await request(base, '/api/v1/teas?page=1&pageSize=10');
     expect(list.status).toBe(200);
@@ -139,14 +144,14 @@ describe('C2 HTTP API boundary', () => {
     expect((await json(inventoryResponse) as { error: { code: string } }).error.code).toBe('VALIDATION_ERROR');
   });
 
-  it('maps tea taxonomy mismatch and not-found to stable API errors', async () => {
+  it('maps taxonomy validation and not-found to stable API errors', async () => {
     const { dependencies } = setupDatabase();
     const base = await startApi(dependencies);
     const mismatch = await request(base, '/api/v1/teas', {
       method: 'POST',
       ...jsonBody({ ...teaWritePayload('tea-4'), taxonomy: { ...taxonomy, familyId: 'family-other' } }),
     });
-    expect(mismatch.status).toBe(422);
+    expect(mismatch.status).toBe(400);
     expect((await json(mismatch) as { error: { code: string; requestId: string } }).error.code).toBe('VALIDATION_ERROR');
 
     const missing = await request(base, '/api/v1/teas/missing-tea', { headers: { 'x-request-id': 'req-missing' } });
@@ -171,13 +176,13 @@ describe('C2 HTTP API boundary', () => {
       ...jsonBody({ profileReference: { body: 50 } }),
     });
     expect(domainResponse.status).toBe(422);
-    expect((await json(domainResponse) as { error: { code: string; message: string } }).error).toEqual({ code: 'DOMAIN_RULE_VIOLATION', message: 'synthetic domain rule', });
+    expect((await json(domainResponse) as { error: { code: string; message: string } }).error).toEqual({ code: 'DOMAIN_RULE_VIOLATION', message: 'synthetic domain rule' });
     dependencies.recommendationService.recommend = original;
   });
 
   it('supports profile and feedback endpoints through application services', async () => {
     const { dependencies } = setupDatabase();
-    dependencies.teaService.createTea(teaWritePayload('tea-6') as never, taxonomy);
+    dependencies.teaService.createTea(teaInput('tea-6'), taxonomy);
     dependencies.customerService.createCustomer({ id: 'customer-1', email: 'customer@example.invalid', createdAt: new Date().toISOString() });
     const base = await startApi(dependencies);
 
