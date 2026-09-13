@@ -22,10 +22,10 @@ export interface FinderProfileReference {
   discoveryTolerance?: string;
 }
 
+/** Client input contains profile/candidate data only; algorithm version is service-owned. */
 export interface RecommendationRequest {
   profileReference: FinderProfileReference;
   candidateTeaIds?: string[];
-  algorithmVersion: string;
 }
 
 export interface RecommendationResult {
@@ -34,6 +34,7 @@ export interface RecommendationResult {
   score: number;
   reasons: string[];
   context?: string;
+  /** The version actually used by the Recommendation Service. */
   algorithmVersion: string;
   profileReference: FinderProfileReference;
   createdAt: string;
