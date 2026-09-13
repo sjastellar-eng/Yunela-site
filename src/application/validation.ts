@@ -2,7 +2,7 @@ import type { Feedback, TastePreferences } from '../contracts/account';
 import type { RecommendationResult, RecommendationRequest } from '../contracts/recommendation';
 import type { Tea } from '../contracts/tea';
 import { ApplicationError } from './errors';
-import type { TeaTaxonomyReference } from './repositories';
+import type { TeaTaxonomyReference, TeaWriteInput } from './repositories';
 
 function assertNonEmpty(value: string, field: string): void {
   if (!value.trim()) {
@@ -14,14 +14,33 @@ export function validateId(value: string, field = 'id'): void {
   assertNonEmpty(value, field);
 }
 
-export function validateTea(tea: Tea, taxonomy: TeaTaxonomyReference): void {
+export function validateTea(tea: TeaWriteInput, taxonomy: TeaTaxonomyReference): void {
   validateId(tea.id, 'tea.id');
   assertNonEmpty(tea.slug, 'tea.slug');
   assertNonEmpty(tea.name, 'tea.name');
   assertNonEmpty(taxonomy.familyId, 'taxonomy.familyId');
-  if (taxonomy.styleId && !taxonomy.subfamilyId) {
-    throw new ApplicationError('VALIDATION_ERROR', 'taxonomy.subfamilyId is required when taxonomy.styleId is provided');
+
+  if (tea.family !== taxonomy.familyId) {
+    throw new ApplicationError('VALIDATION_ERROR', 'tea.family must match taxonomy.familyId');
   }
+  if (taxonomy.subfamilyId) {
+    if (tea.subfamily !== taxonomy.subfamilyId) {
+      throw new ApplicationError('VALIDATION_ERROR', 'tea.subfamily must match taxonomy.subfamilyId');
+    }
+  } else if (tea.subfamily !== undefined) {
+    throw new ApplicationError('VALIDATION_ERROR', 'tea.subfamily cannot be provided without taxonomy.subfamilyId');
+  }
+  if (taxonomy.styleId) {
+    if (!taxonomy.subfamilyId) {
+      throw new ApplicationError('VALIDATION_ERROR', 'taxonomy.subfamilyId is required when taxonomy.styleId is provided');
+    }
+    if (tea.style !== taxonomy.styleId) {
+      throw new ApplicationError('VALIDATION_ERROR', 'tea.style must match taxonomy.styleId');
+    }
+  } else if (tea.style !== undefined) {
+    throw new ApplicationError('VALIDATION_ERROR', 'tea.style cannot be provided without taxonomy.styleId');
+  }
+
   if (!Number.isInteger(tea.price.amount) || tea.price.amount < 0) {
     throw new ApplicationError('VALIDATION_ERROR', 'tea.price.amount must be a non-negative integer minor-unit amount');
   }
@@ -30,9 +49,6 @@ export function validateTea(tea: Tea, taxonomy: TeaTaxonomyReference): void {
   }
   if (!Number.isInteger(tea.packSize) || tea.packSize <= 0) {
     throw new ApplicationError('VALIDATION_ERROR', 'tea.packSize must be a positive integer');
-  }
-  if (!Number.isInteger(tea.inventory) || tea.inventory < 0) {
-    throw new ApplicationError('VALIDATION_ERROR', 'tea.inventory must be a non-negative integer');
   }
   if (!Number.isInteger(tea.discoveryDistance) || tea.discoveryDistance < 0 || tea.discoveryDistance > 100) {
     throw new ApplicationError('VALIDATION_ERROR', 'tea.discoveryDistance must be between 0 and 100');
