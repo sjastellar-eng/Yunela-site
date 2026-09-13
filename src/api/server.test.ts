@@ -1,4 +1,5 @@
 import { afterEach, describe, expect, it } from 'vitest';
+import { readFileSync } from 'node:fs';
 import type { Server } from 'node:http';
 import { ApplicationError } from '../application/errors';
 import { CustomerService } from '../application/customer/service';
@@ -180,20 +181,29 @@ describe('C2 HTTP API boundary', () => {
     dependencies.recommendationService.recommend = original;
   });
 
-  it('supports profile and feedback endpoints through application services', async () => {
+  it('supports customer retrieval and profile create/read/update through application services', async () => {
     const { dependencies } = setupDatabase();
     dependencies.teaService.createTea(teaInput('tea-6'), taxonomy);
     dependencies.customerService.createCustomer({ id: 'customer-1', email: 'customer@example.invalid', createdAt: new Date().toISOString() });
     const base = await startApi(dependencies);
+
+    const customer = await request(base, '/api/v1/customers/customer-1');
+    expect(customer.status).toBe(200);
+    expect((await json(customer) as { id: string }).id).toBe('customer-1');
 
     const createProfile = await request(base, '/api/v1/customers/customer-1/profile', {
       method: 'POST',
       ...jsonBody({ customerId: 'customer-1', purchasedTeaIds: [], likedTeaIds: ['tea-6'], dislikedTeaIds: [], tastePreferences: { body: 60 }, feedbackIds: [], recommendationIds: [], updatedAt: new Date().toISOString() }),
     });
     expect(createProfile.status).toBe(201);
+    const patchProfile = await request(base, '/api/v1/customers/customer-1/profile', {
+      method: 'PATCH',
+      ...jsonBody({ customerId: 'customer-1', purchasedTeaIds: [], likedTeaIds: [], dislikedTeaIds: ['tea-6'], tastePreferences: { body: 40 }, feedbackIds: [], recommendationIds: [], updatedAt: new Date().toISOString() }),
+    });
+    expect(patchProfile.status).toBe(200);
     const profile = await request(base, '/api/v1/customers/customer-1/profile');
     expect(profile.status).toBe(200);
-    expect((await json(profile) as { customerId: string }).customerId).toBe('customer-1');
+    expect((await json(profile) as { dislikedTeaIds: string[] }).dislikedTeaIds).toEqual(['tea-6']);
 
     const feedback = await request(base, '/api/v1/feedback', {
       method: 'POST',
@@ -239,5 +249,11 @@ describe('C2 HTTP API boundary', () => {
     const response = await request(base, '/api/v1/teas', { method: 'DELETE' });
     expect(response.status).toBe(405);
     expect(response.headers.get('allow')).toBe('GET, POST');
+  });
+
+  it('keeps the HTTP transport independent from SQLite implementation', () => {
+    const source = readFileSync(new URL('./server.ts', import.meta.url), 'utf8');
+    expect(source).not.toContain('sqliteRepositories');
+    expect(source).not.toMatch(/\bSELECT\b|\bINSERT\b|\bUPDATE\b|\bDELETE\b/);
   });
 });
