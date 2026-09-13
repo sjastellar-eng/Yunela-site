@@ -15,7 +15,7 @@ CREATE TABLE tea_subfamilies (
 
 CREATE TABLE tea_styles (
   id TEXT PRIMARY KEY,
-  subfamily_id TEXT REFERENCES tea_subfamilies(id) ON DELETE RESTRICT,
+  subfamily_id TEXT NOT NULL REFERENCES tea_subfamilies(id) ON DELETE RESTRICT,
   name TEXT NOT NULL,
   UNIQUE(subfamily_id, name),
   UNIQUE(id, subfamily_id)
