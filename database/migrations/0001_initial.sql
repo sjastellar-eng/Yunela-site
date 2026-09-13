@@ -1,10 +1,5 @@
 PRAGMA foreign_keys = ON;
 
-CREATE TABLE schema_migrations (
-  version TEXT PRIMARY KEY,
-  applied_at TEXT NOT NULL
-);
-
 CREATE TABLE tea_families (
   id TEXT PRIMARY KEY,
   name TEXT NOT NULL UNIQUE
