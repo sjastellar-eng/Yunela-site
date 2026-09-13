@@ -197,7 +197,6 @@ describe('database foundation', () => {
     })).toThrow();
     expect(() => insertTea(db, tea, {
       familyId: 'family-oolong',
-      subfamilyId: null,
       styleId: 'style-test',
     })).toThrow();
 
