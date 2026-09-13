@@ -2,7 +2,7 @@ import type { RecommendationRequest, RecommendationResult, RecommendationService
 import { ApplicationError } from '../errors';
 import type { CustomerRepository, RecommendationHistoryRepository, TeaRepository } from '../repositories';
 import { validateRecommendationRequest, validateRecommendationResult } from '../validation';
-import { recommendTeas, RECOMMENDATION_ALGORITHM_VERSION } from '../../domain/recommendation/engine';
+import { recommendTeas } from '../../domain/recommendation/engine';
 
 export interface RecommendationEngine {
   recommend(request: RecommendationRequest): Promise<RecommendationResult[]>;
@@ -41,17 +41,10 @@ export class RecommendationApplicationService implements RecommendationService {
     if (request.customerId && this.dependencies && !this.dependencies.customerRepository.getById(request.customerId)) {
       throw new ApplicationError('NOT_FOUND', `Customer ${request.customerId} was not found`);
     }
-
     const results = await this.engine.recommend(request);
     const createdAt = this.clock();
-    const stamped = results.map((result) => ({
-      ...result,
-      createdAt: result.createdAt || createdAt,
-      algorithmVersion: result.algorithmVersion || RECOMMENDATION_ALGORITHM_VERSION,
-    }));
-
+    const stamped = results.map((result) => ({ ...result, createdAt: result.createdAt || createdAt }));
     for (const result of stamped) validateRecommendationResult(result);
-
     if (request.customerId && this.dependencies) {
       for (const [index, result] of stamped.entries()) {
         this.dependencies.historyRepository.create({
@@ -67,7 +60,6 @@ export class RecommendationApplicationService implements RecommendationService {
         });
       }
     }
-
     return stamped;
   }
 }
