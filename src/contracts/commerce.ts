@@ -42,6 +42,17 @@ export interface Cart {
   total: Money;
 }
 
+export interface ShippingDetails {
+  recipientName: string;
+  addressLine1: string;
+  addressLine2?: string;
+  city: string;
+  region?: string;
+  postalCode: string;
+  countryCode: string;
+  phone?: string;
+}
+
 export interface OrderItemSnapshot {
   sku: string;
   teaId: string;
@@ -61,7 +72,7 @@ export interface Order {
     shipping: Money;
     total: Money;
   };
-  shipping: Record<string, unknown>;
+  shipping: ShippingDetails;
   paymentStatus: PaymentStatus;
   fulfillmentStatus: FulfillmentStatus;
   status: OrderStatus;
@@ -72,6 +83,6 @@ export interface Order {
 /** Server-side commerce boundary: client input is never authoritative for price or totals. */
 export interface CreateOrderRequest {
   cartId: string;
-  shipping: Record<string, unknown>;
+  shipping: ShippingDetails;
   idempotencyKey: string;
 }
