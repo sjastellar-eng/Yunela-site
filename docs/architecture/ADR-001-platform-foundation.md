@@ -49,7 +49,12 @@ These are UX matching categories, not tea-quality ratings. The exact mathematica
 ### Commerce and money
 The server is authoritative for product availability, price, quantity, discounts, and totals. Orders store commercial snapshots. Payment state is changed only through verified server-side payment flows/webhooks with idempotency when payment is implemented.
 
+`CurrencyCode` intentionally remains a broad string at the TypeScript contract boundary. The canonical runtime boundary validates the required three-letter uppercase ISO 4217 format without introducing a complete currency registry or additional currency system at this stage. This keeps the contract simple while preventing malformed currency codes from entering the money constructor.
+
 Canonical monetary values use integer minor units plus a three-letter uppercase ISO 4217 currency code. Floating-point decimal values are not the canonical commerce representation.
+
+### Shipping contract
+The contract stage uses a minimal typed `ShippingDetails` value containing recipient name, address lines, city, optional region, postal code, country code, and optional phone. This is intentionally limited to the data shape needed to carry shipping information through an order contract. Shipping rates, carrier selection, address validation, tax calculation, checkout, and payment remain deferred.
 
 Payment implementation is explicitly deferred.
 
