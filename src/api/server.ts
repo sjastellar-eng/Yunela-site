@@ -49,7 +49,12 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 }
 
 function validatePathId(value: string, name: string): string {
-  const id = decodeURIComponent(value);
+  let id: string;
+  try {
+    id = decodeURIComponent(value);
+  } catch {
+    throw new ApplicationError('VALIDATION_ERROR', `${name} is invalid`);
+  }
   if (!id.trim() || id.length > 128) throw new ApplicationError('VALIDATION_ERROR', `${name} is invalid`);
   return id;
 }
