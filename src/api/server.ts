@@ -5,23 +5,14 @@ import { ApplicationError } from '../application/errors';
 import { CustomerService } from '../application/customer/service';
 import { FeedbackService } from '../application/feedback/service';
 import { TeaProfileService } from '../application/profile/service';
-import { NotConfiguredRecommendationEngine, RecommendationApplicationService } from '../application/recommendation/service';
+import { RecommendationApplicationService } from '../application/recommendation/service';
 import { TeaService } from '../application/tea/service';
 import type { TeaTaxonomyReference } from '../application/repositories';
-import { applyMigrations } from '../database/migrate';
-import { openDatabase } from '../database/client';
-import {
-  SqliteCustomerRepository,
-  SqliteFeedbackRepository,
-  SqliteRecommendationHistoryRepository,
-  SqliteTeaProfileRepository,
-  SqliteTeaRepository,
-} from '../application/sqliteRepositories';
 import type { Customer, Feedback, TeaProfile } from '../contracts/account';
 import type { RecommendationRequest } from '../contracts/recommendation';
 import type { Tea } from '../contracts/tea';
 import type { ApiErrorBody, CreateTeaDto, TeaListQuery, UpdateTeaDto } from './dto';
-import { applicationErrorToHttp, httpValidationError } from './errors';
+import { applicationErrorToHttp } from './errors';
 
 const API_PREFIX = '/api/v1';
 const MAX_BODY_BYTES = 1024 * 1024;
@@ -53,12 +44,6 @@ function sendJson(response: ServerResponse, status: number, body: unknown, id: s
   response.end(payload);
 }
 
-function sendEmpty(response: ServerResponse, status: number, id: string): void {
-  response.statusCode = status;
-  response.setHeader('x-request-id', id);
-  response.end();
-}
-
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
 }
@@ -88,17 +73,21 @@ async function readJson(request: IncomingMessage): Promise<unknown> {
   return new Promise((resolve, reject) => {
     let total = 0;
     const chunks: Buffer[] = [];
+    let tooLarge = false;
     request.on('data', (chunk: Buffer | string) => {
+      if (tooLarge) return;
       const buffer = Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk);
       total += buffer.length;
       if (total > MAX_BODY_BYTES) {
-        request.destroy();
+        tooLarge = true;
         reject(new ApplicationError('VALIDATION_ERROR', 'Request body is too large'));
+        request.resume();
         return;
       }
       chunks.push(buffer);
     });
     request.on('end', () => {
+      if (tooLarge) return;
       try {
         const text = Buffer.concat(chunks).toString('utf8');
         if (!text.trim()) throw new ApplicationError('VALIDATION_ERROR', 'Request body is required');
@@ -136,10 +125,7 @@ function mapTeaWrite(value: unknown): CreateTeaDto | UpdateTeaDto {
     throw new ApplicationError('VALIDATION_ERROR', 'taxonomy.styleId must be a string');
   }
   const { taxonomy: _taxonomy, ...tea } = body;
-  return {
-    ...(tea as unknown as Tea),
-    taxonomy: taxonomy as TeaTaxonomyReference,
-  } as CreateTeaDto;
+  return { ...(tea as unknown as Tea), taxonomy: taxonomy as TeaTaxonomyReference } as CreateTeaDto;
 }
 
 function mapProfile(value: unknown, customerId: string): TeaProfile {
@@ -156,10 +142,6 @@ function mapRecommendation(value: unknown): RecommendationRequest {
   return requireObject(value) as unknown as RecommendationRequest;
 }
 
-function isMethod(method: string | undefined, expected: string): boolean {
-  return method === expected;
-}
-
 function methodNotAllowed(response: ServerResponse, id: string, allow: string): void {
   response.setHeader('allow', allow);
   sendJson(response, 405, { error: { code: 'METHOD_NOT_ALLOWED', message: 'Method not allowed', requestId: id } }, id);
@@ -168,7 +150,7 @@ function methodNotAllowed(response: ServerResponse, id: string, allow: string): 
 async function route(request: IncomingMessage, response: ServerResponse, dependencies: ApiDependencies, id: string): Promise<void> {
   const url = new URL(request.url ?? '/', 'http://localhost');
   if (url.pathname === '/health') {
-    if (!isMethod(request.method, 'GET')) return methodNotAllowed(response, id, 'GET');
+    if (request.method !== 'GET') return methodNotAllowed(response, id, 'GET');
     return sendJson(response, 200, { status: 'ok', service: 'yunela-api', version: 'v1' }, id);
   }
 
@@ -176,14 +158,14 @@ async function route(request: IncomingMessage, response: ServerResponse, depende
 
   const path = url.pathname.slice(API_PREFIX.length).replace(/\/$/, '') || '/';
   if (path === '/teas') {
-    if (isMethod(request.method, 'GET')) {
+    if (request.method === 'GET') {
       const pagination = parsePagination(url);
       const all = dependencies.teaService.listTeas();
       const start = (pagination.page - 1) * pagination.pageSize;
       const items = all.slice(start, start + pagination.pageSize);
       return sendJson(response, 200, { items, ...pagination, total: all.length, hasNextPage: start + items.length < all.length }, id);
     }
-    if (isMethod(request.method, 'POST')) {
+    if (request.method === 'POST') {
       const body = mapTeaWrite(await readJson(request));
       const created = dependencies.teaService.createTea(body, body.taxonomy);
       return sendJson(response, 201, created, id);
@@ -194,8 +176,8 @@ async function route(request: IncomingMessage, response: ServerResponse, depende
   const teaMatch = path.match(/^\/teas\/([^/]+)$/);
   if (teaMatch) {
     const teaId = validatePathId(teaMatch[1], 'teaId');
-    if (isMethod(request.method, 'GET')) return sendJson(response, 200, dependencies.teaService.getTeaById(teaId), id);
-    if (isMethod(request.method, 'PATCH')) {
+    if (request.method === 'GET') return sendJson(response, 200, dependencies.teaService.getTeaById(teaId), id);
+    if (request.method === 'PATCH') {
       const body = mapTeaWrite(await readJson(request)) as UpdateTeaDto;
       if (body.id !== teaId) throw new ApplicationError('VALIDATION_ERROR', 'tea.id must match the URL tea id');
       return sendJson(response, 200, dependencies.teaService.updateTea(body, body.taxonomy), id);
@@ -206,26 +188,26 @@ async function route(request: IncomingMessage, response: ServerResponse, depende
   const customerMatch = path.match(/^\/customers\/([^/]+)$/);
   if (customerMatch) {
     const customerId = validatePathId(customerMatch[1], 'customerId');
-    if (isMethod(request.method, 'GET')) return sendJson(response, 200, dependencies.customerService.getCustomer(customerId), id);
+    if (request.method === 'GET') return sendJson(response, 200, dependencies.customerService.getCustomer(customerId), id);
     return methodNotAllowed(response, id, 'GET');
   }
 
   const profileMatch = path.match(/^\/customers\/([^/]+)\/profile$/);
   if (profileMatch) {
     const customerId = validatePathId(profileMatch[1], 'customerId');
-    if (isMethod(request.method, 'GET')) return sendJson(response, 200, dependencies.profileService.getTeaProfile(customerId), id);
-    if (isMethod(request.method, 'POST')) return sendJson(response, 201, dependencies.profileService.createTeaProfile(mapProfile(await readJson(request), customerId)), id);
-    if (isMethod(request.method, 'PATCH')) return sendJson(response, 200, dependencies.profileService.updateTeaProfile(mapProfile(await readJson(request), customerId)), id);
+    if (request.method === 'GET') return sendJson(response, 200, dependencies.profileService.getTeaProfile(customerId), id);
+    if (request.method === 'POST') return sendJson(response, 201, dependencies.profileService.createTeaProfile(mapProfile(await readJson(request), customerId)), id);
+    if (request.method === 'PATCH') return sendJson(response, 200, dependencies.profileService.updateTeaProfile(mapProfile(await readJson(request), customerId)), id);
     return methodNotAllowed(response, id, 'GET, POST, PATCH');
   }
 
   if (path === '/feedback') {
-    if (isMethod(request.method, 'POST')) return sendJson(response, 201, dependencies.feedbackService.submitFeedback(mapFeedback(await readJson(request))), id);
+    if (request.method === 'POST') return sendJson(response, 201, dependencies.feedbackService.submitFeedback(mapFeedback(await readJson(request))), id);
     return methodNotAllowed(response, id, 'POST');
   }
 
   if (path === '/recommendations') {
-    if (isMethod(request.method, 'POST')) return sendJson(response, 200, await dependencies.recommendationService.recommend(mapRecommendation(await readJson(request))), id);
+    if (request.method === 'POST') return sendJson(response, 200, await dependencies.recommendationService.recommend(mapRecommendation(await readJson(request))), id);
     return methodNotAllowed(response, id, 'POST');
   }
 
@@ -244,16 +226,4 @@ export function createApiServer(options: ApiServerOptions): Server {
       sendJson(response, mapped.status, mapped.body, id);
     });
   });
-}
-
-export function createDefaultApiServer(databaseFile = process.env.YUNELA_DB_FILE ?? ':memory:'): { server: Server; close: () => void } {
-  const db = openDatabase(databaseFile);
-  applyMigrations(db);
-  const teaService = new TeaService(new SqliteTeaRepository(db));
-  const customerService = new CustomerService(new SqliteCustomerRepository(db));
-  const profileService = new TeaProfileService(new SqliteTeaProfileRepository(db), new SqliteCustomerRepository(db));
-  const feedbackService = new FeedbackService(new SqliteFeedbackRepository(db), new SqliteCustomerRepository(db), new SqliteTeaRepository(db));
-  const recommendationService = new RecommendationApplicationService(new NotConfiguredRecommendationEngine());
-  const server = createApiServer({ dependencies: { teaService, customerService, profileService, feedbackService, recommendationService } });
-  return { server, close: () => db.close() };
 }
