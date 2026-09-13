@@ -1,3 +1,4 @@
+import { randomUUID } from 'node:crypto';
 import type { RecommendationRequest, RecommendationResult, RecommendationService } from '../../contracts/recommendation';
 import { ApplicationError } from '../errors';
 import type { CustomerRepository, RecommendationHistoryRepository, TeaRepository } from '../repositories';
@@ -46,9 +47,9 @@ export class RecommendationApplicationService implements RecommendationService {
     const stamped = results.map((result) => ({ ...result, createdAt: result.createdAt || createdAt }));
     for (const result of stamped) validateRecommendationResult(result);
     if (request.customerId && this.dependencies) {
-      for (const [index, result] of stamped.entries()) {
+      for (const result of stamped) {
         this.dependencies.historyRepository.create({
-          id: `recommendation:${request.customerId}:${result.createdAt}:${index}`,
+          id: `recommendation:${randomUUID()}`,
           customerId: request.customerId,
           teaId: result.tea.id,
           algorithmVersion: result.algorithmVersion,
@@ -56,6 +57,7 @@ export class RecommendationApplicationService implements RecommendationService {
           classification: result.classification,
           explanation: result.reasons,
           createdAt: result.createdAt,
+          profileReference: request.profileReference,
           outcome: result.outcome,
         });
       }
