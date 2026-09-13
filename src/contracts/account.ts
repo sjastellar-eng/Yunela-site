@@ -1,4 +1,21 @@
 export type TeaFeedbackValue = 'Loved it' | 'Liked it' | 'Not for me';
+export type RecommendationOutcome =
+  | 'purchased'
+  | 'feedback_received'
+  | 'second_purchase'
+  | 'unknown';
+
+/** MVP taste preferences mirror the approved Finder profile dimensions without adding new product logic. */
+export interface TastePreferences {
+  body?: number;
+  sweetness?: number;
+  freshness?: number;
+  roastDepth?: number;
+  aroma?: string[];
+  context?: string;
+  familiarity?: string;
+  discoveryTolerance?: string;
+}
 
 export interface Customer {
   id: string;
@@ -11,7 +28,7 @@ export interface TeaProfile {
   purchasedTeaIds: string[];
   likedTeaIds: string[];
   dislikedTeaIds: string[];
-  tastePreferences: Record<string, unknown>;
+  tastePreferences: TastePreferences;
   feedbackIds: string[];
   recommendationIds: string[];
   updatedAt: string;
@@ -35,5 +52,5 @@ export interface RecommendationHistoryEntry {
   classification: 'MATCH' | 'STRETCH' | 'WILDCARD';
   explanation: string[];
   createdAt: string;
-  outcome?: string;
+  outcome?: RecommendationOutcome;
 }
