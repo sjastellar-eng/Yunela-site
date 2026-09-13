@@ -9,6 +9,7 @@ import type {
   TeaProfileRepository,
   TeaRepository,
   TeaTaxonomyReference,
+  TeaWriteInput,
 } from './repositories';
 import { ApplicationError, toPersistenceError } from './errors';
 
@@ -42,7 +43,7 @@ function mapFeedback(row: Record<string, unknown>): Feedback {
 export class SqliteTeaRepository implements TeaRepository {
   constructor(private readonly db: Database.Database) {}
 
-  create(tea: Tea, taxonomy: TeaTaxonomyReference): void {
+  create(tea: TeaWriteInput, taxonomy: TeaTaxonomyReference): void {
     withPersistence(() => insertTea(this.db, tea, taxonomy));
   }
 
@@ -60,7 +61,7 @@ export class SqliteTeaRepository implements TeaRepository {
     });
   }
 
-  update(tea: Tea, taxonomy: TeaTaxonomyReference): Tea | undefined {
+  update(tea: TeaWriteInput, taxonomy: TeaTaxonomyReference): Tea | undefined {
     return withPersistence(() => {
       const result = this.db.prepare(`
         UPDATE teas SET
