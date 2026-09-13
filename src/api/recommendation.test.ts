@@ -26,17 +26,10 @@ function createFixture() {
   insertCustomer(db, { id: customerId, email: 'recommendation@example.com', createdAt: '2026-01-01T00:00:00.000Z' });
   const tea: Tea = {
     id: 'tea-api', slug: 'tea-api', name: 'Synthetic API Tea', family: 'family-a',
-    sensory: {
-      aroma: ['floral'], sweetness: 70, body: 60, freshness: 80, roast: 20, depth: 30,
-      astringency: 20, finish: 70, floral: 80, fruity: 40, mineral: 30, earthyWoody: 10,
-    },
+    sensory: { aroma: ['floral'], sweetness: 70, body: 60, freshness: 80, roast: 20, depth: 30, astringency: 20, finish: 70, floral: 80, fruity: 40, mineral: 30, earthyWoody: 10 },
     discoveryDistance: 20,
-    price: { amount: 1000 as Tea['price']['amount'], currency: 'USD' },
-    packSize: 50,
-    inventory: 5,
-    supplyStatus: 'available',
-    provenanceConfidence: 'verified',
-    publishingState: 'published',
+    price: { amount: 1000 as Tea['price']['amount'], currency: 'USD' }, packSize: 50, inventory: 5,
+    supplyStatus: 'available', provenanceConfidence: 'verified', publishingState: 'published',
   };
   insertTea(db, tea, { familyId: 'family-a' });
 
@@ -45,7 +38,7 @@ function createFixture() {
   const historyRepository = new SqliteRecommendationHistoryRepository(db);
   const recommendationService = new RecommendationApplicationService(
     new DeterministicRecommendationEngine(teaRepository),
-    { teaRepository, customerRepository, historyRepository },
+    { customerRepository, historyRepository },
     () => '2026-01-01T00:00:00.000Z',
   );
   const server = createApiServer({
@@ -73,26 +66,14 @@ describe('POST /api/v1/recommendations', () => {
       headers: { 'content-type': 'application/json', 'x-request-id': randomUUID() },
       body: JSON.stringify({
         customerId: fixture.customerId,
-        profileReference: {
-          body: 60,
-          sweetness: 70,
-          freshness: 80,
-          roastDepth: 25,
-          aroma: ['floral'],
-          familiarity: 'familiar',
-          discoveryTolerance: 'open',
-        },
+        profileReference: { body: 60, sweetness: 70, freshness: 80, roastDepth: 25, aroma: ['floral'], familiarity: 'familiar', discoveryTolerance: 'open' },
       }),
     });
 
     expect(response.status).toBe(200);
     const results = await response.json() as Array<Record<string, unknown>>;
     expect(results).toHaveLength(1);
-    expect(results[0]).toMatchObject({
-      algorithmVersion: 'recommendation-v1',
-      classification: 'MATCH',
-      tea: { id: 'tea-api' },
-    });
+    expect(results[0]).toMatchObject({ algorithmVersion: 'recommendation-v1', classification: 'MATCH', tea: { id: 'tea-api' } });
     const history = fixture.db.prepare('SELECT customer_id, tea_id, algorithm_version, score, classification FROM recommendation_history').all() as Array<Record<string, unknown>>;
     expect(history).toHaveLength(1);
     expect(history[0]).toMatchObject({ customer_id: fixture.customerId, tea_id: 'tea-api', algorithm_version: 'recommendation-v1', classification: 'MATCH' });
