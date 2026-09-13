@@ -1,7 +1,10 @@
 import Database from 'better-sqlite3';
 import type { Feedback, RecommendationHistoryEntry, TeaProfile } from '../contracts/account';
 import type { Tea } from '../contracts/tea';
-import type { TeaTaxonomyReference, TeaWriteInput } from '../application/repositories';
+
+type TeaWriteInput = Omit<Tea, 'inventory'>;
+
+type TeaTaxonomyReference = { familyId: string; subfamilyId?: string; styleId?: string };
 
 export interface TeaLotRecord {
   id: string;
