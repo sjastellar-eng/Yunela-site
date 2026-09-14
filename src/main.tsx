@@ -31,7 +31,6 @@ const sensoryTags = [
   ['More sweet', 'sweet'],
   ['More roasted', 'roasted'],
   ['More fresh', 'fresh'],
-  ['More body', 'body'],
   ['More earthy', 'earthy'],
 ] as const;
 
