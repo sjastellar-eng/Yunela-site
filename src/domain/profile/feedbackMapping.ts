@@ -1,7 +1,13 @@
 import type { Feedback, TastePreferences } from '../../contracts/account';
 import type { FinderProfileReference } from '../../contracts/recommendation';
 
-export const CANONICAL_SENSORY_TAG_MAP = {
+type CanonicalMapping =
+  | { dimension: 'aroma'; value: string }
+  | { dimension: 'freshness' }
+  | { dimension: 'sweetness' }
+  | { dimension: 'roastDepth' };
+
+export const CANONICAL_SENSORY_TAG_MAP: Record<string, CanonicalMapping> = {
   floral: { dimension: 'aroma', value: 'floral' },
   fruity: { dimension: 'aroma', value: 'fruity' },
   mineral: { dimension: 'aroma', value: 'mineral' },
@@ -12,15 +18,15 @@ export const CANONICAL_SENSORY_TAG_MAP = {
   sweet: { dimension: 'sweetness' },
   roasted: { dimension: 'roastDepth' },
   deep: { dimension: 'roastDepth' },
-} as const;
+};
 
 type NumericDimension = 'sweetness' | 'freshness' | 'roastDepth';
 
-const FEEDBACK_SIGNAL = {
+const FEEDBACK_SIGNAL: Record<Feedback['value'], number> = {
   'Loved it': 10,
   'Liked it': 5,
   'Not for me': -10,
-} as const;
+};
 
 const INITIAL_NUMERIC_PREFERENCE = 50;
 const MIN_PREFERENCE = 0;
@@ -39,9 +45,9 @@ function applyNumericSignals(preferences: TastePreferences, feedback: Feedback, 
   const signalsByDimension = new Map<NumericDimension, number[]>();
 
   for (const tag of normalizedTags) {
-    const mapping = CANONICAL_SENSORY_TAG_MAP[tag as keyof typeof CANONICAL_SENSORY_TAG_MAP];
+    const mapping = CANONICAL_SENSORY_TAG_MAP[tag];
     if (!mapping || mapping.dimension === 'aroma') continue;
-    const dimension = mapping.dimension as NumericDimension;
+    const dimension = mapping.dimension;
     const signals = signalsByDimension.get(dimension) ?? [];
     signals.push(signal);
     signalsByDimension.set(dimension, signals);
@@ -57,7 +63,7 @@ function applyNumericSignals(preferences: TastePreferences, feedback: Feedback, 
 function applyAromaSignals(preferences: TastePreferences, feedback: Feedback, normalizedTags: string[]): void {
   const mappedAromaValues: string[] = [];
   for (const tag of normalizedTags) {
-    const mapping = CANONICAL_SENSORY_TAG_MAP[tag as keyof typeof CANONICAL_SENSORY_TAG_MAP];
+    const mapping = CANONICAL_SENSORY_TAG_MAP[tag];
     if (mapping?.dimension === 'aroma') mappedAromaValues.push(mapping.value);
   }
 
