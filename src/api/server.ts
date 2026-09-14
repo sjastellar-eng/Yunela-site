@@ -193,6 +193,14 @@ async function route(request: IncomingMessage, response: ServerResponse, depende
     return methodNotAllowed(response, id, 'GET, PATCH');
   }
 
+  if (path === '/customers') {
+    if (request.method === 'POST') {
+      const created = dependencies.customerService.createAnonymousCustomer();
+      return sendJson(response, 201, { customerId: created.id }, id);
+    }
+    return methodNotAllowed(response, id, 'POST');
+  }
+
   const customerMatch = path.match(/^\/customers\/([^/]+)$/);
   if (customerMatch) {
     const customerId = validatePathId(customerMatch[1], 'customerId');
