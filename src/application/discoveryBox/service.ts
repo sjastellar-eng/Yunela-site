@@ -2,10 +2,10 @@ import { randomUUID } from 'node:crypto';
 import type { DiscoveryBox } from '../../contracts/discoveryBox';
 import { DISCOVERY_BOX_SELECTION_VERSION } from '../../contracts/discoveryBox';
 import type { RecommendationRequest } from '../../contracts/recommendation';
+import { DiscoveryBoxSelectionFailure, selectDiscoveryBoxItems } from '../../domain/discoveryBox/selectionPolicy';
 import { ApplicationError } from '../errors';
 import type { DiscoveryBoxRepository } from '../repositories';
 import type { RecommendationApplicationService } from '../recommendation/service';
-import { selectDiscoveryBoxItems } from '../../domain/discoveryBox/selectionPolicy';
 
 export interface DiscoveryBoxApplicationDependencies {
   recommendationService: RecommendationApplicationService;
@@ -22,7 +22,20 @@ export class DiscoveryBoxApplicationService {
 
   async createBox(request: RecommendationRequest): Promise<DiscoveryBox> {
     const recommendations = await this.dependencies.recommendationService.recommend(request);
-    const items = selectDiscoveryBoxItems(recommendations);
+    let items;
+    try {
+      items = selectDiscoveryBoxItems(recommendations);
+    } catch (error) {
+      if (error instanceof DiscoveryBoxSelectionFailure) {
+        throw new ApplicationError(
+          'DISCOVERY_BOX_INSUFFICIENT_CANDIDATES',
+          error.message,
+          { cause: error.details },
+        );
+      }
+      throw error;
+    }
+
     const algorithmVersions = new Set(recommendations.map((result) => result.algorithmVersion));
     if (algorithmVersions.size !== 1) {
       throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'Discovery Box requires one C3 algorithm version');
