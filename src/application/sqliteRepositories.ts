@@ -1,9 +1,11 @@
 import Database from 'better-sqlite3';
+import type { DiscoveryBox } from '../contracts/discoveryBox';
 import type { Feedback, Customer, RecommendationHistoryEntry, TeaProfile } from '../contracts/account';
 import type { Tea } from '../contracts/tea';
-import { findTeaById, insertCustomer, insertFeedback, insertRecommendationHistory, insertTea, upsertTeaProfile } from '../database/repositories';
+import { findDiscoveryBoxById, findTeaById, insertCustomer, insertDiscoveryBox, insertFeedback, insertRecommendationHistory, insertTea, upsertTeaProfile } from '../database/repositories';
 import type {
   CustomerRepository,
+  DiscoveryBoxRepository,
   FeedbackRepository,
   RecommendationHistoryRepository,
   TeaProfileRepository,
@@ -217,5 +219,17 @@ export class SqliteRecommendationHistoryRepository implements RecommendationHist
 
   create(entry: RecommendationHistoryEntry): void {
     withPersistence(() => insertRecommendationHistory(this.db, entry));
+  }
+}
+
+export class SqliteDiscoveryBoxRepository implements DiscoveryBoxRepository {
+  constructor(private readonly db: Database.Database) {}
+
+  create(box: DiscoveryBox): void {
+    withPersistence(() => insertDiscoveryBox(this.db, box));
+  }
+
+  getById(id: string): DiscoveryBox | undefined {
+    return withPersistence(() => findDiscoveryBoxById(this.db, id));
   }
 }
