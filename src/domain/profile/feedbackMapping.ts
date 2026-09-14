@@ -14,8 +14,7 @@ export const CANONICAL_SENSORY_TAG_MAP = {
   deep: { dimension: 'roastDepth' },
 } as const;
 
-const NUMERIC_DIMENSIONS = ['sweetness', 'freshness', 'roastDepth'] as const;
-type NumericDimension = (typeof NUMERIC_DIMENSIONS)[number];
+type NumericDimension = 'sweetness' | 'freshness' | 'roastDepth';
 
 const FEEDBACK_SIGNAL = {
   'Loved it': 10,
