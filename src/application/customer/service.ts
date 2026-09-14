@@ -1,10 +1,23 @@
+import { randomUUID } from 'node:crypto';
 import type { Customer } from '../../contracts/account';
 import { ApplicationError } from '../errors';
 import type { CustomerRepository } from '../repositories';
 import { validateCustomerEmail, validateId } from '../validation';
 
+const ANONYMOUS_EMAIL_DOMAIN = 'anonymous.yunela.local';
+
 export class CustomerService {
   constructor(private readonly repository: CustomerRepository) {}
+
+  createAnonymousCustomer(): Customer {
+    const id = randomUUID();
+    const customer: Customer = {
+      id,
+      email: `anonymous+${id}@${ANONYMOUS_EMAIL_DOMAIN}`,
+      createdAt: new Date().toISOString(),
+    };
+    return this.createCustomer(customer);
+  }
 
   createCustomer(customer: Customer): Customer {
     validateId(customer.id, 'customer.id');
