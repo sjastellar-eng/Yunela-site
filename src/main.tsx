@@ -1,8 +1,7 @@
 import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { ArrowRight, Check, ChevronLeft, ChevronRight, LoaderCircle, Search, ShoppingBag, UserRound, X } from 'lucide-react';
 import './styles.css';
-import { api, type DiscoveryBox, type DiscoveryBoxItem } from './api/client';
-import { ApiClientError } from './api/client';
+import { ApiClientError, api, type DiscoveryBox } from './api/client';
 import { track } from './analytics';
 import type { Feedback, TeaProfile } from './contracts/account';
 import type { FinderProfileReference, RecommendationRequest, RecommendationResult } from './contracts/recommendation';
@@ -160,7 +159,6 @@ function Finder() {
     setBusy(true); setError(''); track('finder_question_complete', { question: q.key });
     try {
       const identity = await ensureCustomerIdentity();
-      if (identity.created) track('profile_created', { source: 'anonymous_identity' });
       const profileReference = mapAnswersToProfile(answers);
       const input: RecommendationRequest = { customerId: identity.customerId, profileReference };
       sessionStorage.setItem('yunela-last-finder-profile', JSON.stringify(profileReference));
@@ -236,18 +234,22 @@ function FeedbackPanel({ tea, customerId }: { tea: Tea; customerId: string | nul
   return <section className="feedback"><div><small>HOW WAS IT?</small><h2>Your taste gets clearer with every cup.</h2>{status === 'ready' && <p role="status">Saved. YUNELA will use this feedback in your tea profile.</p>}{error && <p role="alert">{error}</p>}</div><div><div className="feedback-buttons">{(['Loved it', 'Liked it', 'Not for me'] as const).map(option => <button key={option} className={value === option ? 'selected' : ''} disabled={status === 'loading'} onClick={() => void submit(option)}>{option}{value === option && <Check size={16} />}</button>)}</div><div className="feedback-tags">{sensoryTags.map(([label, tag]) => <button key={tag} className={tags.includes(tag) ? 'selected' : ''} onClick={() => toggleTag(tag)}>{label}</button>)}</div></div></section>;
 }
 
-function Discovery() {
+function Discovery({ boxId }: { boxId?: string }) {
   const [status, setStatus] = useState<Status>('loading'); const [box, setBox] = useState<DiscoveryBox | null>(null); const [teas, setTeas] = useState<Record<string, Tea>>({}); const [error, setError] = useState('');
   const load = async () => {
     setStatus('loading'); setError('');
     try {
-      const customer = await ensureCustomerIdentity();
-      if (customer.created) track('profile_created', { source: 'anonymous_identity' });
-      const profile = await ensureProfile(customer.customerId);
-      if (profile.created) track('profile_created', { source: 'tea_profile' });
-      const finderRaw = sessionStorage.getItem('yunela-last-finder-profile');
-      const profileReference: FinderProfileReference = finderRaw ? JSON.parse(finderRaw) as FinderProfileReference : profile.profile.tastePreferences;
-      const created = await api.createDiscoveryBox({ customerId: customer.customerId, profileReference });
+      let created: DiscoveryBox;
+      if (boxId) {
+        created = await api.getDiscoveryBox(boxId);
+      } else {
+        const customer = await ensureCustomerIdentity();
+        const profile = await ensureProfile(customer.customerId);
+        if (profile.created) track('profile_created', { source: 'tea_profile' });
+        const finderRaw = sessionStorage.getItem('yunela-last-finder-profile');
+        const profileReference: FinderProfileReference = finderRaw ? JSON.parse(finderRaw) as FinderProfileReference : profile.profile.tastePreferences;
+        created = await api.createDiscoveryBox({ customerId: customer.customerId, profileReference });
+      }
       setBox(created);
       const details = await Promise.all(created.items.map(item => api.getTea(item.teaId)));
       setTeas(Object.fromEntries(details.map(tea => [tea.id, tea])));
@@ -255,8 +257,8 @@ function Discovery() {
       track('discovery_box_view', { box_id: created.id, item_count: created.items.length });
     } catch (e) { setError(e instanceof Error ? e.message : 'Please try again.'); setStatus('error'); }
   };
-  useEffect(() => { void load(); }, []);
-  if (status === 'loading') return <main><LoadingState label="Building your Discovery Box" /></main>;
+  useEffect(() => { void load(); }, [boxId]);
+  if (status === 'loading') return <main><LoadingState label="Loading your Discovery Box" /></main>;
   if (status === 'error') return <main><ErrorState message={error} onRetry={() => void load()} /></main>;
   if (!box) return <main><EmptyState title="No Discovery Box is available yet." action="Find Your Tea" onClick={() => go('#/finder')} /></main>;
   return <main><section className="pagehead"><small>DISCOVERY BOX</small><h1>Six teas. One way to discover what is yours.</h1><p>The classifications below come directly from C4. YUNELA does not recalculate the 3 / 2 / 1 selection.</p></section><div className="box"><div><b>{box.items.filter(i => i.classification === 'MATCH').length}</b><span>MATCH</span></div><div><b>{box.items.filter(i => i.classification === 'STRETCH').length}</b><span>STRETCH</span></div><div><b>{box.items.filter(i => i.classification === 'WILDCARD').length}</b><span>WILDCARD</span></div></div><section className="grid discovery-grid">{box.items.map(item => teas[item.teaId] && <ProductCard key={item.teaId} tea={teas[item.teaId]} classification={item.classification} reason={item.reasons.join(' ')} onOpen={() => { track('recommendation_block_interaction', { tea_id: item.teaId, classification: item.classification }); go(`#/tea/${item.teaId}`); }} />)}</section><section className="final"><h2>Discovery should lead somewhere.</h2><p>Your box is backed by the real C4 selection. Tell us what you liked after tasting.</p><Button onClick={() => go('#/profile')}>View Tea Profile</Button></section></main>;
@@ -264,7 +266,7 @@ function Discovery() {
 
 function Profile() {
   const [status, setStatus] = useState<Status>('loading'); const [profile, setProfile] = useState<TeaProfile | null>(null); const [error, setError] = useState('');
-  const load = async () => { setStatus('loading'); try { const identity = await ensureCustomerIdentity(); const result = await ensureProfile(identity.customerId); setProfile(result.profile); if (result.created) track('profile_created', { source: 'tea_profile' }); else track('profile_updated', { source: 'profile_view' }); setStatus('ready'); } catch (e) { setError(e instanceof Error ? e.message : 'Please try again.'); setStatus('error'); } };
+  const load = async () => { setStatus('loading'); try { const identity = await ensureCustomerIdentity(); const result = await ensureProfile(identity.customerId); setProfile(result.profile); if (result.created) track('profile_created', { source: 'tea_profile' }); setStatus('ready'); } catch (e) { setError(e instanceof Error ? e.message : 'Please try again.'); setStatus('error'); } };
   useEffect(() => { void load(); }, []);
   if (status === 'loading') return <main><LoadingState label="Loading your tea profile" /></main>;
   if (status === 'error' || !profile) return <main><ErrorState message={error} onRetry={() => void load()} /></main>;
@@ -296,7 +298,8 @@ function App() {
   else if (route === '#/recommendations' || route === '#/results') page = <Recommendations />;
   else if (route === '#/tea') page = <Catalog />;
   else if (route.startsWith('#/tea/')) page = <Product teaId={decodeURIComponent(route.slice('#/tea/'.length))} customerId={customerId} onAdd={addToCart} />;
-  else if (route === '#/discovery' || route.startsWith('#/discovery/')) page = <Discovery />;
+  else if (route === '#/discovery') page = <Discovery />;
+  else if (route.startsWith('#/discovery/')) page = <Discovery boxId={decodeURIComponent(route.slice('#/discovery/'.length))} />;
   else if (route === '#/profile') page = <Profile />;
   else if (route === '#/account') page = <Account />;
   else if (route === '#/search') page = <SearchPage />;
