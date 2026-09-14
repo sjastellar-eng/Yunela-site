@@ -2,9 +2,9 @@ name: YUNELA UI Validation
 
 on:
   pull_request:
-    branches: [main]
-  push:
     branches: [main, 'feat/**']
+  push:
+    branches: [main, 'feat/**', 'dev/**']
 
 jobs:
   validate:
@@ -15,12 +15,14 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: Typecheck
         run: npm run typecheck
       - name: Lint
         run: npm run lint
+      - name: Tests
+        run: npm test
       - name: Production build
         run: npm run build
