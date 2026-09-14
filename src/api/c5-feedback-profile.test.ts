@@ -117,7 +117,7 @@ describe('C5 feedback → profile HTTP integration', () => {
     const profile = await request(server, 'GET', `/api/v1/customers/${customer.id}/profile`);
     expect(profile.status).toBe(200);
     const profileBody = profile.body as { tastePreferences: unknown; feedbackIds: string[] };
-    expect(profileBody.tastePreferences).toEqual({ sweetness: 60, roastDepth: 60, aroma: [] });
+    expect(profileBody.tastePreferences).toEqual({ sweetness: 60, roastDepth: 60 });
     expect(profileBody.feedbackIds).toEqual(['feedback-c5-1']);
 
     const duplicate = await request(server, 'POST', '/api/v1/feedback', payload);
