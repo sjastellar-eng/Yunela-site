@@ -5,11 +5,12 @@ import { openDatabase } from '../database/client';
 import { applyMigrations } from '../database/migrate';
 import { insertCustomer, insertTea, insertTeaLot } from '../database/repositories';
 import { CustomerService } from '../application/customer/service';
+import { DiscoveryBoxApplicationService } from '../application/discoveryBox/service';
 import { TeaService } from '../application/tea/service';
 import { TeaProfileService } from '../application/profile/service';
 import { FeedbackService } from '../application/feedback/service';
 import { DeterministicRecommendationEngine, RecommendationApplicationService } from '../application/recommendation/service';
-import { SqliteCustomerRepository, SqliteFeedbackRepository, SqliteRecommendationHistoryRepository, SqliteTeaProfileRepository, SqliteTeaRepository } from '../application/sqliteRepositories';
+import { SqliteCustomerRepository, SqliteDiscoveryBoxRepository, SqliteFeedbackRepository, SqliteRecommendationHistoryRepository, SqliteTeaProfileRepository, SqliteTeaRepository } from '../application/sqliteRepositories';
 import type { Tea } from '../contracts/tea';
 
 const servers: Array<{ close: () => void }> = [];
@@ -40,6 +41,7 @@ function createFixture() {
     profileService: new TeaProfileService(new SqliteTeaProfileRepository(db), customerRepository),
     feedbackService: new FeedbackService(new SqliteFeedbackRepository(db), customerRepository, teaRepository),
     recommendationService,
+    discoveryBoxService: new DiscoveryBoxApplicationService({ recommendationService, boxRepository: new SqliteDiscoveryBoxRepository(db) }),
   } });
   return { db, server, customerId };
 }
