@@ -1,6 +1,5 @@
 import type { DiscoveryBoxItem } from '../../contracts/discoveryBox';
 import type { RecommendationResult } from '../../contracts/recommendation';
-import { ApplicationError } from '../../application/errors';
 
 const REQUIRED_COUNTS = {
   MATCH: 3,
@@ -12,6 +11,16 @@ export interface SelectionFailureDetail {
   role: keyof typeof REQUIRED_COUNTS;
   required: number;
   available: number;
+}
+
+export class DiscoveryBoxSelectionFailure extends Error {
+  readonly details: SelectionFailureDetail[];
+
+  constructor(details: SelectionFailureDetail[]) {
+    super('Discovery Box cannot be filled for all required roles');
+    this.name = 'DiscoveryBoxSelectionFailure';
+    this.details = details;
+  }
 }
 
 function uniqueAndSortedCandidates(
@@ -56,11 +65,7 @@ export function selectDiscoveryBoxItems(results: RecommendationResult[]): Discov
   }
 
   if (failures.length > 0) {
-    throw new ApplicationError(
-      'DISCOVERY_BOX_INSUFFICIENT_CANDIDATES',
-      'Discovery Box cannot be filled for all required roles',
-      { cause: failures },
-    );
+    throw new DiscoveryBoxSelectionFailure(failures);
   }
 
   return selected;
