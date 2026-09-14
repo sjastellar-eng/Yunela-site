@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState, type ReactNode } from 'react';
+import { createRoot } from 'react-dom/client';
 import { ArrowRight, Check, ChevronLeft, ChevronRight, LoaderCircle, Search, ShoppingBag, UserRound, X } from 'lucide-react';
 import './styles.css';
 import { ApiClientError, api, type DiscoveryBox } from './api/client';
