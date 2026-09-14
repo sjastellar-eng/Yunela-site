@@ -88,7 +88,7 @@ describe('Discovery Box HTTP integration', () => {
     const response = await fetch(`${base}/api/v1/discovery-boxes`, {
       method: 'POST',
       headers: { 'content-type': 'application/json', 'x-request-id': randomUUID() },
-      body: JSON.stringify({ customerId: fixtureValue.customerId, profileReference }),
+      body: JSON.stringify({ profileReference }),
     });
     expect(response.status).toBe(201);
     const box = await response.json() as Record<string, unknown>;
@@ -114,7 +114,7 @@ describe('Discovery Box HTTP integration', () => {
     const base = await start(fixtureValue.server);
     const response = await fetch(`${base}/api/v1/discovery-boxes`, {
       method: 'POST', headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ customerId: fixtureValue.customerId, profileReference: { body: 50 } }),
+      body: JSON.stringify({ profileReference: { body: 50 } }),
     });
     expect(response.status).toBe(422);
     expect((await response.json() as { error: { code: string } }).error.code).toBe('DISCOVERY_BOX_INSUFFICIENT_CANDIDATES');
