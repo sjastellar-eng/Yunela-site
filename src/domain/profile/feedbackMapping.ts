@@ -35,11 +35,7 @@ function clamp(value: number): number {
   return Math.max(MIN_PREFERENCE, Math.min(MAX_PREFERENCE, value));
 }
 
-function applyNumericSignals(
-  preferences: TastePreferences,
-  feedback: Feedback,
-  normalizedTags: string[],
-): void {
+function applyNumericSignals(preferences: TastePreferences, feedback: Feedback, normalizedTags: string[]): void {
   const signal = FEEDBACK_SIGNAL[feedback.value];
   const signalsByDimension = new Map<NumericDimension, number[]>();
 
@@ -59,42 +55,30 @@ function applyNumericSignals(
   }
 }
 
-function applyAromaSignals(
-  preferences: TastePreferences,
-  feedback: Feedback,
-  normalizedTags: string[],
-): void {
-  const mappedAromaTags = normalizedTags
-    .map((tag) => CANONICAL_SENSORY_TAG_MAP[tag as keyof typeof CANONICAL_SENSORY_TAG_MAP])
-    .filter((mapping): mapping is { readonly dimension: 'aroma'; readonly value: string } => Boolean(mapping && mapping.dimension === 'aroma'));
+function applyAromaSignals(preferences: TastePreferences, feedback: Feedback, normalizedTags: string[]): void {
+  const mappedAromaValues: string[] = [];
+  for (const tag of normalizedTags) {
+    const mapping = CANONICAL_SENSORY_TAG_MAP[tag as keyof typeof CANONICAL_SENSORY_TAG_MAP];
+    if (mapping?.dimension === 'aroma') mappedAromaValues.push(mapping.value);
+  }
 
-  if (mappedAromaTags.length === 0 && preferences.aroma === undefined) return;
+  if (mappedAromaValues.length === 0 && preferences.aroma === undefined) return;
 
   const current = new Set((preferences.aroma ?? []).map(normalizeTag).filter(Boolean));
   const isPositive = feedback.value === 'Loved it' || feedback.value === 'Liked it';
-
-  for (const mapping of mappedAromaTags) {
-    if (isPositive) current.add(mapping.value);
-    else current.delete(mapping.value);
+  for (const value of mappedAromaValues) {
+    if (isPositive) current.add(value);
+    else current.delete(value);
   }
-
   preferences.aroma = [...current].sort();
 }
 
 /** Applies exactly one stored feedback event to derived TastePreferences. */
-export function applyFeedbackToTastePreferences(
-  preferences: TastePreferences,
-  feedback: Feedback,
-): TastePreferences {
-  const next: TastePreferences = {
-    ...preferences,
-    ...(preferences.aroma ? { aroma: [...preferences.aroma] } : {}),
-  };
+export function applyFeedbackToTastePreferences(preferences: TastePreferences, feedback: Feedback): TastePreferences {
+  const next: TastePreferences = { ...preferences, ...(preferences.aroma ? { aroma: [...preferences.aroma] } : {}) };
   const normalizedTags = feedback.sensoryTags.map(normalizeTag);
-
   applyNumericSignals(next, feedback, normalizedTags);
   applyAromaSignals(next, feedback, normalizedTags);
-
   return next;
 }
 
@@ -105,11 +89,7 @@ export function rebuildTastePreferences(feedbackHistory: Feedback[]): TastePrefe
     const createdAtOrder = a.createdAt.localeCompare(b.createdAt);
     return createdAtOrder !== 0 ? createdAtOrder : a.id.localeCompare(b.id);
   });
-
-  for (const feedback of ordered) {
-    applyFeedbackToTastePreferences(preferences, feedback);
-  }
-
+  for (const feedback of ordered) applyFeedbackToTastePreferences(preferences, feedback);
   return preferences;
 }
 
