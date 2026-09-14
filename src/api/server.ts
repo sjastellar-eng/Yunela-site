@@ -16,20 +16,8 @@ import type { RecommendationRequest } from '../contracts/recommendation';
 import type { Tea } from '../contracts/tea';
 import type { CreateTeaDto, TeaListQuery, UpdateTeaDto } from './dto';
 import { applicationErrorToHttp } from './errors';
-
-const API_PREFIX = '/api/v1';
-const MAX_BODY_BYTES = 1024 * 1024;
-const MAX_PAGE_SIZE = 50;
-
-export interface ApiDependencies {
-  teaService: TeaService;
-  customerService: CustomerService;
-  profileService: TeaProfileService;
-  feedbackService: FeedbackService;
-  recommendationService: RecommendationApplicationService;
-  discoveryBoxService: DiscoveryBoxApplicationService;
-  commerce?: { cartService: CartService; orderService: OrderService; purchaseBoundary: PurchaseBoundaryService };
-}
+const API_PREFIX = '/api/v1'; const MAX_BODY_BYTES = 1024 * 1024; const MAX_PAGE_SIZE = 50;
+export interface ApiDependencies { teaService: TeaService; customerService: CustomerService; profileService: TeaProfileService; feedbackService: FeedbackService; recommendationService: RecommendationApplicationService; discoveryBoxService: DiscoveryBoxApplicationService; commerce?: { cartService: CartService; orderService: OrderService; purchaseBoundary: PurchaseBoundaryService }; }
 export interface ApiServerOptions { dependencies: ApiDependencies; }
 function requestId(request: IncomingMessage): string { const supplied = request.headers['x-request-id']; return typeof supplied === 'string' && supplied.trim() ? supplied.trim().slice(0, 128) : randomUUID(); }
 function sendJson(response: ServerResponse, status: number, body: unknown, id: string): void { const payload = JSON.stringify(body); response.statusCode = status; response.setHeader('content-type', 'application/json; charset=utf-8'); response.setHeader('x-request-id', id); response.setHeader('content-length', Buffer.byteLength(payload)); response.end(payload); }
@@ -45,14 +33,11 @@ function mapProfile(value: unknown, customerId: string): TeaProfile { const body
 function mapFeedback(value: unknown): Feedback { return requireObject(value) as unknown as Feedback; }
 function mapRecommendation(value: unknown): RecommendationRequest { return requireObject(value) as unknown as RecommendationRequest; }
 function mapCartItem(value: unknown): { sku: string; quantity: number; recommendationHistoryId?: string; discoveryBoxId?: string } { const body = requireObject(value); if (typeof body.sku !== 'string' || !body.sku.trim()) throw new ApplicationError('VALIDATION_ERROR', 'sku is required'); if (typeof body.quantity !== 'number') throw new ApplicationError('VALIDATION_ERROR', 'quantity must be a number'); if (body.recommendationHistoryId !== undefined && typeof body.recommendationHistoryId !== 'string') throw new ApplicationError('VALIDATION_ERROR', 'recommendationHistoryId must be a string'); if (body.discoveryBoxId !== undefined && typeof body.discoveryBoxId !== 'string') throw new ApplicationError('VALIDATION_ERROR', 'discoveryBoxId must be a string'); return { sku: body.sku, quantity: body.quantity, ...(body.recommendationHistoryId ? { recommendationHistoryId: body.recommendationHistoryId } : {}), ...(body.discoveryBoxId ? { discoveryBoxId: body.discoveryBoxId } : {}) }; }
-function mapOrderRequest(value: unknown): CreateOrderRequest { const body = requireObject(value); if (typeof body.cartId !== 'string' || !body.cartId.trim()) throw new ApplicationError('VALIDATION_ERROR', 'cartId is required'); if (typeof body.idempotencyKey !== 'string' || !body.idempotencyKey.trim()) throw new ApplicationError('VALIDATION_ERROR', 'idempotencyKey is required'); const shipping = requireObject(body.shipping) as CreateOrderRequest['shipping']; return { cartId: body.cartId, shipping, idempotencyKey: body.idempotencyKey }; }
+function mapOrderRequest(value: unknown): CreateOrderRequest { const body = requireObject(value); if (typeof body.cartId !== 'string' || !body.cartId.trim()) throw new ApplicationError('VALIDATION_ERROR', 'cartId is required'); if (typeof body.idempotencyKey !== 'string' || !body.idempotencyKey.trim()) throw new ApplicationError('VALIDATION_ERROR', 'idempotencyKey is required'); const shipping = requireObject(body.shipping) as unknown as CreateOrderRequest['shipping']; return { cartId: body.cartId, shipping, idempotencyKey: body.idempotencyKey }; }
 function methodNotAllowed(response: ServerResponse, id: string, allow: string): void { response.setHeader('allow', allow); sendJson(response, 405, { error: { code: 'METHOD_NOT_ALLOWED', message: 'Method not allowed', requestId: id } }, id); }
-
 async function route(request: IncomingMessage, response: ServerResponse, dependencies: ApiDependencies, id: string): Promise<void> {
-  const url = new URL(request.url ?? '/', 'http://localhost');
-  if (url.pathname === '/health') { if (request.method !== 'GET') return methodNotAllowed(response, id, 'GET'); return sendJson(response, 200, { status: 'ok', service: 'yunela-api', version: 'v1' }, id); }
-  if (!url.pathname.startsWith(API_PREFIX)) return sendJson(response, 404, { error: { code: 'NOT_FOUND', message: 'Route not found', requestId: id } }, id);
-  const path = url.pathname.slice(API_PREFIX.length).replace(/\/$/, '') || '/';
+  const url = new URL(request.url ?? '/', 'http://localhost'); if (url.pathname === '/health') { if (request.method !== 'GET') return methodNotAllowed(response, id, 'GET'); return sendJson(response, 200, { status: 'ok', service: 'yunela-api', version: 'v1' }, id); }
+  if (!url.pathname.startsWith(API_PREFIX)) return sendJson(response, 404, { error: { code: 'NOT_FOUND', message: 'Route not found', requestId: id } }, id); const path = url.pathname.slice(API_PREFIX.length).replace(/\/$/, '') || '/';
   if (path === '/teas') { if (request.method === 'GET') { const pagination = parsePagination(url); const all = dependencies.teaService.listTeas(); const start = (pagination.page - 1) * pagination.pageSize; const items = all.slice(start, start + pagination.pageSize); return sendJson(response, 200, { items, ...pagination, total: all.length, hasNextPage: start + items.length < all.length }, id); } if (request.method === 'POST') { const body = mapTeaWrite(await readJson(request)); return sendJson(response, 201, dependencies.teaService.createTea(body, body.taxonomy), id); } return methodNotAllowed(response, id, 'GET, POST'); }
   const teaMatch = path.match(/^\/teas\/([^/]+)$/); if (teaMatch) { const teaId = validatePathId(teaMatch[1], 'teaId'); if (request.method === 'GET') return sendJson(response, 200, dependencies.teaService.getTeaById(teaId), id); if (request.method === 'PATCH') { const body = mapTeaWrite(await readJson(request)) as UpdateTeaDto; if (body.id !== teaId) throw new ApplicationError('VALIDATION_ERROR', 'tea.id must match the URL tea id'); return sendJson(response, 200, dependencies.teaService.updateTea(body, body.taxonomy), id); } return methodNotAllowed(response, id, 'GET, PATCH'); }
   if (path === '/customers') { if (request.method === 'POST') { const created = dependencies.customerService.createAnonymousCustomer(); return sendJson(response, 201, { customerId: created.id }, id); } return methodNotAllowed(response, id, 'POST'); }
@@ -62,7 +47,6 @@ async function route(request: IncomingMessage, response: ServerResponse, depende
   if (path === '/recommendations') { if (request.method === 'POST') return sendJson(response, 200, await dependencies.recommendationService.recommend(mapRecommendation(await readJson(request))), id); return methodNotAllowed(response, id, 'POST'); }
   if (path === '/discovery-boxes') { if (request.method === 'POST') return sendJson(response, 201, await dependencies.discoveryBoxService.createBox(mapRecommendation(await readJson(request))), id); return methodNotAllowed(response, id, 'POST'); }
   const discoveryBoxMatch = path.match(/^\/discovery-boxes\/([^/]+)$/); if (discoveryBoxMatch) { const boxId = validatePathId(discoveryBoxMatch[1], 'discoveryBoxId'); if (request.method === 'GET') return sendJson(response, 200, dependencies.discoveryBoxService.getBox(boxId), id); return methodNotAllowed(response, id, 'GET'); }
-
   if (dependencies.commerce) {
     const customerId = requireCustomerId(request);
     if (path === '/carts') { if (request.method === 'POST') return sendJson(response, 201, dependencies.commerce.cartService.createCart(customerId), id); return methodNotAllowed(response, id, 'POST'); }
@@ -74,5 +58,4 @@ async function route(request: IncomingMessage, response: ServerResponse, depende
   }
   return sendJson(response, 404, { error: { code: 'NOT_FOUND', message: 'Route not found', requestId: id } }, id);
 }
-
 export function createApiServer(options: ApiServerOptions): Server { return createServer((request, response) => { const id = requestId(request); route(request, response, options.dependencies, id).catch((error: unknown) => { if (response.headersSent) { response.destroy(); return; } const mapped = applicationErrorToHttp(error, id); sendJson(response, mapped.status, mapped.body, id); }); }); }
