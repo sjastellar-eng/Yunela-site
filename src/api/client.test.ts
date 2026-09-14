@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { ApiClientError, api } from './client';
+import { api } from './client';
 
 afterEach(() => vi.restoreAllMocks());
 
@@ -13,7 +13,7 @@ describe('frontend API client', () => {
   it('uses the server customer id for customer-scoped profile reads', async () => {
     const fetchMock = vi.spyOn(globalThis, 'fetch').mockResolvedValue(new Response(JSON.stringify({ customerId: 'server-id', purchasedTeaIds: [], likedTeaIds: [], dislikedTeaIds: [], tastePreferences: {}, feedbackIds: [], recommendationIds: [], updatedAt: '2026-09-14T00:00:00.000Z' }), { status: 200, headers: { 'content-type': 'application/json' } }));
     await api.getProfile('server-id');
-    expect(fetchMock).toHaveBeenCalledWith('/api/v1/customers/server-id/profile', expect.objectContaining({ method: undefined }));
+    expect(fetchMock).toHaveBeenCalledWith('/api/v1/customers/server-id/profile', expect.objectContaining({ headers: { Accept: 'application/json' } }));
   });
 
   it('sends recommendation requests without calculating score or classification client-side', async () => {
@@ -26,6 +26,6 @@ describe('frontend API client', () => {
 
   it('maps structured API errors into ApiClientError', async () => {
     vi.spyOn(globalThis, 'fetch').mockResolvedValue(new Response(JSON.stringify({ error: { code: 'NOT_FOUND', message: 'Tea not found', requestId: 'req-1' } }), { status: 404, headers: { 'content-type': 'application/json' } }));
-    await expect(api.getTea('missing')).rejects.toMatchObject<ApiClientError>({ status: 404, code: 'NOT_FOUND', requestId: 'req-1', message: 'Tea not found' });
+    await expect(api.getTea('missing')).rejects.toMatchObject({ status: 404, code: 'NOT_FOUND', requestId: 'req-1', message: 'Tea not found' });
   });
 });
