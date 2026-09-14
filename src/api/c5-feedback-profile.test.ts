@@ -1,4 +1,4 @@
-import { request as httpRequest, createServer, type Server } from 'node:http';
+import { request as httpRequest, type Server } from 'node:http';
 import { afterEach, describe, expect, it } from 'vitest';
 import { createMoney } from '../contracts/commerce';
 import type { Customer, Feedback, TeaProfile } from '../contracts/account';
@@ -78,14 +78,14 @@ function buildDependencies(): ApiDependencies {
   };
 }
 
-function request(server: Server, method: string, path: string, body?: unknown): Promise<{ status: number; body: any }> {
+function request(server: Server, method: string, path: string, body?: unknown): Promise<{ status: number; body: unknown }> {
   const address = server.address();
   if (!address || typeof address === 'string') throw new Error('Server is not listening');
   return new Promise((resolve, reject) => {
     const client = httpRequest({ port: address.port, method, path, headers: body === undefined ? {} : { 'content-type': 'application/json' } }, (response) => {
       const chunks: Buffer[] = [];
       response.on('data', (chunk) => chunks.push(Buffer.from(chunk)));
-      response.on('end', () => resolve({ status: response.statusCode ?? 0, body: JSON.parse(Buffer.concat(chunks).toString('utf8')) }));
+      response.on('end', () => resolve({ status: response.statusCode ?? 0, body: JSON.parse(Buffer.concat(chunks).toString('utf8')) as unknown }));
     });
     client.on('error', reject);
     if (body !== undefined) client.write(JSON.stringify(body));
@@ -116,14 +116,15 @@ describe('C5 feedback → profile HTTP integration', () => {
 
     const profile = await request(server, 'GET', `/api/v1/customers/${customer.id}/profile`);
     expect(profile.status).toBe(200);
-    expect(profile.body.tastePreferences).toEqual({ sweetness: 60, roastDepth: 60, aroma: [] });
-    expect(profile.body.feedbackIds).toEqual(['feedback-c5-1']);
+    const profileBody = profile.body as { tastePreferences: unknown; feedbackIds: string[] };
+    expect(profileBody.tastePreferences).toEqual({ sweetness: 60, roastDepth: 60, aroma: [] });
+    expect(profileBody.feedbackIds).toEqual(['feedback-c5-1']);
 
     const duplicate = await request(server, 'POST', '/api/v1/feedback', payload);
     expect(duplicate.status).toBe(409);
 
     const profileAfterDuplicate = await request(server, 'GET', `/api/v1/customers/${customer.id}/profile`);
-    expect(profileAfterDuplicate.body.tastePreferences).toEqual(profile.body.tastePreferences);
-    expect(profileAfterDuplicate.body.feedbackIds).toEqual(['feedback-c5-1']);
+    expect((profileAfterDuplicate.body as typeof profileBody).tastePreferences).toEqual(profileBody.tastePreferences);
+    expect((profileAfterDuplicate.body as typeof profileBody).feedbackIds).toEqual(['feedback-c5-1']);
   });
 });
