@@ -3,11 +3,12 @@ import { readFileSync } from 'node:fs';
 import type { Server } from 'node:http';
 import { ApplicationError } from '../application/errors';
 import { CustomerService } from '../application/customer/service';
+import { DiscoveryBoxApplicationService } from '../application/discoveryBox/service';
 import { FeedbackService } from '../application/feedback/service';
 import { TeaProfileService } from '../application/profile/service';
 import { NotConfiguredRecommendationEngine, RecommendationApplicationService } from '../application/recommendation/service';
 import { TeaService } from '../application/tea/service';
-import { SqliteCustomerRepository, SqliteFeedbackRepository, SqliteTeaProfileRepository, SqliteTeaRepository } from '../application/sqliteRepositories';
+import { SqliteCustomerRepository, SqliteDiscoveryBoxRepository, SqliteFeedbackRepository, SqliteTeaProfileRepository, SqliteTeaRepository } from '../application/sqliteRepositories';
 import type { TeaTaxonomyReference, TeaWriteInput } from '../application/repositories';
 import { applyMigrations } from '../database/migrate';
 import { openDatabase } from '../database/client';
@@ -48,12 +49,17 @@ function teaInput(id: string): TeaWriteInput {
 function createTestDependencies(db: ReturnType<typeof openDatabase>): ApiDependencies {
   const teaRepository = new SqliteTeaRepository(db);
   const customerRepository = new SqliteCustomerRepository(db);
+  const recommendationService = new RecommendationApplicationService(new NotConfiguredRecommendationEngine());
   return {
     teaService: new TeaService(teaRepository),
     customerService: new CustomerService(customerRepository),
     profileService: new TeaProfileService(new SqliteTeaProfileRepository(db), customerRepository),
     feedbackService: new FeedbackService(new SqliteFeedbackRepository(db), customerRepository, teaRepository),
-    recommendationService: new RecommendationApplicationService(new NotConfiguredRecommendationEngine()),
+    recommendationService,
+    discoveryBoxService: new DiscoveryBoxApplicationService({
+      recommendationService,
+      boxRepository: new SqliteDiscoveryBoxRepository(db),
+    }),
   };
 }
 

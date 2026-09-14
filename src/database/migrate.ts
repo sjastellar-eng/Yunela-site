@@ -6,6 +6,10 @@ const migrations = [
     version: '0001_initial',
     file: new URL('../../database/migrations/0001_initial.sql', import.meta.url),
   },
+  {
+    version: '0002_discovery_box',
+    file: new URL('../../database/migrations/0002_discovery_box.sql', import.meta.url),
+  },
 ] as const;
 
 export function applyMigrations(db: Database.Database): void {
