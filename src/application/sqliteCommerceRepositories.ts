@@ -1,0 +1,81 @@
+import Database from 'better-sqlite3';
+import type { CommercialProduct, CommercialProductRepository } from '../contracts/catalog';
+import { createMoney } from '../contracts/commerce';
+import type { Cart, Order, OrderItemSnapshot, Purchase } from '../contracts/commerce';
+import type { CartRepository, OrderRepository, PurchaseRepository } from './commerce/repositories';
+import { ApplicationError, toPersistenceError } from './errors';
+
+function withPersistence<T>(operation: () => T): T {
+  try { return operation(); } catch (error) { throw toPersistenceError(error); }
+}
+
+function mapCartRow(db: Database.Database, row: Record<string, unknown>): Cart {
+  const items = db.prepare(`SELECT id, sku, tea_id, quantity, unit_price_amount, unit_price_currency, recommendation_history_id, discovery_box_id FROM cart_items WHERE cart_id = ? ORDER BY created_at, id`).all(String(row.id)) as Array<Record<string, unknown>>;
+  return {
+    id: String(row.id), customerId: String(row.customer_id),
+    items: items.map((item) => ({ id: String(item.id), sku: String(item.sku), ...(item.tea_id ? { teaId: String(item.tea_id) } : {}), quantity: Number(item.quantity), unitPrice: createMoney(Number(item.unit_price_amount), String(item.unit_price_currency)), ...(item.recommendation_history_id ? { recommendationHistoryId: String(item.recommendation_history_id) } : {}), ...(item.discovery_box_id ? { discoveryBoxId: String(item.discovery_box_id) } : {}) })),
+    subtotal: createMoney(0, String(row.currency)), discounts: createMoney(0, String(row.currency)), total: createMoney(0, String(row.currency)), createdAt: String(row.created_at), updatedAt: String(row.updated_at),
+  };
+}
+
+function mapOrder(db: Database.Database, row: Record<string, unknown>): Order {
+  const items = db.prepare(`SELECT id, sku, tea_id, tea_name_snapshot, quantity, unit_price_amount, unit_price_currency, line_total_amount, recommendation_history_id, discovery_box_snapshot_json FROM order_items WHERE order_id = ? ORDER BY rowid`).all(String(row.id)) as Array<Record<string, unknown>>;
+  return {
+    id: String(row.id), customerId: String(row.customer_id), status: row.status as Order['status'],
+    items: items.map((item) => ({ id: String(item.id), sku: String(item.sku), ...(item.tea_id ? { teaId: String(item.tea_id) } : {}), teaName: String(item.tea_name_snapshot), quantity: Number(item.quantity), unitPrice: createMoney(Number(item.unit_price_amount), String(item.unit_price_currency)), lineTotal: createMoney(Number(item.line_total_amount), String(item.unit_price_currency)), ...(item.recommendation_history_id ? { recommendationHistoryId: String(item.recommendation_history_id) } : {}), ...(item.discovery_box_snapshot_json ? { discoveryBoxSnapshot: JSON.parse(String(item.discovery_box_snapshot_json)) } : {}) })),
+    pricingSnapshot: { subtotal: createMoney(Number(row.subtotal_amount), String(row.currency)), discounts: createMoney(Number(row.discount_amount), String(row.currency)), shipping: createMoney(Number(row.shipping_amount), String(row.currency)), total: createMoney(Number(row.total_amount), String(row.currency)) },
+    shipping: JSON.parse(String(row.shipping_snapshot_json)), createdAt: String(row.created_at), updatedAt: String(row.updated_at),
+  };
+}
+
+export class SqliteCommercialProductRepository implements CommercialProductRepository {
+  constructor(private readonly db: Database.Database) {}
+  getBySku(sku: string): CommercialProduct | undefined {
+    return withPersistence(() => {
+      const row = this.db.prepare('SELECT sku, kind, name, price_amount, price_currency, tea_id, discovery_box_id, available FROM commercial_products WHERE sku = ?').get(sku) as Record<string, unknown> | undefined;
+      if (!row) return undefined;
+      return { sku: String(row.sku), kind: row.kind as CommercialProduct['kind'], name: String(row.name), price: createMoney(Number(row.price_amount), String(row.price_currency)), ...(row.tea_id ? { teaId: String(row.tea_id) } : {}), ...(row.discovery_box_id ? { discoveryBoxId: String(row.discovery_box_id) } : {}), available: Boolean(row.available) };
+    });
+  }
+}
+
+export class SqliteCartRepository implements CartRepository {
+  constructor(private readonly db: Database.Database) {}
+  create(cart: Cart): void { withPersistence(() => this.save(cart)); }
+  getById(id: string): Cart | undefined { return withPersistence(() => { const row = this.db.prepare('SELECT id, customer_id, currency, created_at, updated_at FROM carts WHERE id = ?').get(id) as Record<string, unknown> | undefined; return row ? mapCartRow(this.db, row) : undefined; }); }
+  getByCustomerId(customerId: string): Cart | undefined { return withPersistence(() => { const row = this.db.prepare('SELECT id, customer_id, currency, created_at, updated_at FROM carts WHERE customer_id = ? ORDER BY updated_at DESC LIMIT 1').get(customerId) as Record<string, unknown> | undefined; return row ? mapCartRow(this.db, row) : undefined; }); }
+  save(cart: Cart): void {
+    withPersistence(() => {
+      const transaction = this.db.transaction(() => {
+        this.db.prepare(`INSERT INTO carts (id, customer_id, currency, created_at, updated_at) VALUES (?, ?, ?, ?, ?) ON CONFLICT(id) DO UPDATE SET updated_at = excluded.updated_at`).run(cart.id, cart.customerId, cart.subtotal.currency, cart.createdAt, cart.updatedAt);
+        this.db.prepare('DELETE FROM cart_items WHERE cart_id = ?').run(cart.id);
+        const insert = this.db.prepare(`INSERT INTO cart_items (id, cart_id, sku, tea_id, quantity, unit_price_amount, unit_price_currency, recommendation_history_id, discovery_box_id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`);
+        for (const item of cart.items) insert.run(item.id, cart.id, item.sku, item.teaId ?? null, item.quantity, item.unitPrice.amount, item.unitPrice.currency, item.recommendationHistoryId ?? null, item.discoveryBoxId ?? null, cart.updatedAt, cart.updatedAt);
+      });
+      transaction();
+    });
+  }
+}
+
+export class SqliteOrderRepository implements OrderRepository {
+  constructor(private readonly db: Database.Database) {}
+  create(order: Order): void {
+    withPersistence(() => {
+      const transaction = this.db.transaction(() => {
+        this.db.prepare(`INSERT INTO orders (id, customer_id, status, currency, subtotal_amount, discount_amount, shipping_amount, total_amount, shipping_snapshot_json, idempotency_key, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`).run(order.id, order.customerId, order.status, order.pricingSnapshot.total.currency, order.pricingSnapshot.subtotal.amount, order.pricingSnapshot.discounts.amount, order.pricingSnapshot.shipping.amount, order.pricingSnapshot.total.amount, JSON.stringify(order.shipping), order.id, order.createdAt, order.updatedAt);
+        const insert = this.db.prepare(`INSERT INTO order_items (id, order_id, sku, tea_id, tea_name_snapshot, quantity, unit_price_amount, unit_price_currency, line_total_amount, recommendation_history_id, discovery_box_snapshot_json) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`);
+        for (const item of order.items) insert.run(item.id, order.id, item.sku, item.teaId ?? null, item.teaName, item.quantity, item.unitPrice.amount, item.unitPrice.currency, item.lineTotal.amount, item.recommendationHistoryId ?? null, item.discoveryBoxSnapshot ? JSON.stringify(item.discoveryBoxSnapshot) : null);
+      });
+      transaction();
+    });
+  }
+  getById(id: string): Order | undefined { return withPersistence(() => { const row = this.db.prepare('SELECT * FROM orders WHERE id = ?').get(id) as Record<string, unknown> | undefined; return row ? mapOrder(this.db, row) : undefined; }); }
+  getByIdempotency(customerId: string, idempotencyKey: string): Order | undefined { return withPersistence(() => { const row = this.db.prepare('SELECT * FROM orders WHERE customer_id = ? AND idempotency_key = ?').get(customerId, idempotencyKey) as Record<string, unknown> | undefined; return row ? mapOrder(this.db, row) : undefined; }); }
+  getItems(orderId: string): OrderItemSnapshot[] { const order = this.getById(orderId); if (!order) throw new ApplicationError('ORDER_NOT_FOUND', `Order ${orderId} was not found`); return order.items; }
+}
+
+export class SqlitePurchaseRepository implements PurchaseRepository {
+  constructor(private readonly db: Database.Database) {}
+  create(purchase: Purchase): void { withPersistence(() => this.db.prepare('INSERT INTO purchases (id, order_id, customer_id, amount, currency, confirmed_at) VALUES (?, ?, ?, ?, ?, ?)').run(purchase.id, purchase.orderId, purchase.customerId, purchase.amount.amount, purchase.amount.currency, purchase.confirmedAt)); }
+  getByOrderId(orderId: string): Purchase | undefined { return withPersistence(() => { const row = this.db.prepare('SELECT * FROM purchases WHERE order_id = ?').get(orderId) as Record<string, unknown> | undefined; return row ? { id: String(row.id), orderId: String(row.order_id), customerId: String(row.customer_id), amount: createMoney(Number(row.amount), String(row.currency)), confirmedAt: String(row.confirmed_at) } : undefined; }); }
+}
