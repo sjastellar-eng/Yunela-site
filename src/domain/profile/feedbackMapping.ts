@@ -1,4 +1,5 @@
 import type { Feedback, TastePreferences } from '../../contracts/account';
+import type { FinderProfileReference } from '../../contracts/recommendation';
 
 export const CANONICAL_SENSORY_TAG_MAP = {
   floral: { dimension: 'aroma', value: 'floral' },
@@ -76,10 +77,7 @@ function applyAromaSignals(
   preferences.aroma = [...current].sort();
 }
 
-/**
- * Applies exactly one stored feedback event to derived TastePreferences.
- * Unknown tags are deliberately ignored; no synonym or semantic expansion occurs.
- */
+/** Applies exactly one stored feedback event to derived TastePreferences. */
 export function applyFeedbackToTastePreferences(
   preferences: TastePreferences,
   feedback: Feedback,
@@ -96,10 +94,7 @@ export function applyFeedbackToTastePreferences(
   return next;
 }
 
-/**
- * Rebuilds the derived taste state from the complete ordered feedback history.
- * Ordering is createdAt ascending, then id ascending for deterministic replay.
- */
+/** Rebuilds derived taste state from the complete ordered feedback history. */
 export function rebuildTastePreferences(feedbackHistory: Feedback[]): TastePreferences {
   const preferences: TastePreferences = {};
   const ordered = [...feedbackHistory].sort((a, b) => {
@@ -112,4 +107,18 @@ export function rebuildTastePreferences(feedbackHistory: Feedback[]): TastePrefe
   }
 
   return preferences;
+}
+
+/** Maps only the existing FinderProfileReference fields; no new dimensions are introduced. */
+export function toFinderProfileReference(preferences: TastePreferences): FinderProfileReference {
+  return {
+    ...(preferences.body !== undefined ? { body: preferences.body } : {}),
+    ...(preferences.sweetness !== undefined ? { sweetness: preferences.sweetness } : {}),
+    ...(preferences.freshness !== undefined ? { freshness: preferences.freshness } : {}),
+    ...(preferences.roastDepth !== undefined ? { roastDepth: preferences.roastDepth } : {}),
+    ...(preferences.aroma ? { aroma: [...preferences.aroma] } : {}),
+    ...(preferences.context !== undefined ? { context: preferences.context } : {}),
+    ...(preferences.familiarity !== undefined ? { familiarity: preferences.familiarity } : {}),
+    ...(preferences.discoveryTolerance !== undefined ? { discoveryTolerance: preferences.discoveryTolerance } : {}),
+  };
 }
