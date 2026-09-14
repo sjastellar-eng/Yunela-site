@@ -83,7 +83,7 @@ describe('C5 Feedback → Tea Profile application flow', () => {
   it('projects the derived profile to the existing FinderProfileReference', () => {
     const { feedbackService } = setup();
     feedbackService.submitFeedback({ id: 'feedback-1', customerId: 'customer-c5', teaId: 'tea-c5', value: 'Liked it', sensoryTags: ['fresh', 'roasted'], createdAt: '2026-09-14T10:01:00.000Z' });
-    expect(feedbackService.getFinderProfileReference('customer-c5')).toEqual({ freshness: 55, roastDepth: 55, aroma: [] });
+    expect(feedbackService.getFinderProfileReference('customer-c5')).toEqual({ freshness: 55, roastDepth: 55 });
   });
 
   it('keeps customer and tea validation before persistence', () => {
