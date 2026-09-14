@@ -10,6 +10,7 @@ import { NotConfiguredRecommendationEngine, RecommendationApplicationService } f
 import { TeaService } from '../application/tea/service';
 import { SqliteCustomerRepository, SqliteDiscoveryBoxRepository, SqliteFeedbackRepository, SqliteTeaProfileRepository, SqliteTeaRepository } from '../application/sqliteRepositories';
 import type { TeaTaxonomyReference, TeaWriteInput } from '../application/repositories';
+import { createMoney } from '../contracts/commerce';
 import { createApiServer, type ApiDependencies } from './server';
 
 const taxonomy: TeaTaxonomyReference = {
@@ -31,7 +32,7 @@ function teaInput(id: string): TeaWriteInput {
       astringency: 20, finish: 60, floral: 40, fruity: 20, mineral: 20, earthyWoody: 50,
     },
     discoveryDistance: 20,
-    price: { amount: 1999, currency: 'USD' },
+    price: createMoney(1999, 'USD'),
     packSize: 50,
     supplyStatus: 'available',
     provenanceConfidence: 'unknown',
