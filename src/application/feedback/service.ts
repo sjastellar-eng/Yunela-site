@@ -1,6 +1,8 @@
-import type { Feedback } from '../../contracts/account';
+import type { Feedback, TeaProfile } from '../../contracts/account';
+import type { FinderProfileReference } from '../../contracts/recommendation';
+import { rebuildTastePreferences, toFinderProfileReference } from '../../domain/profile/feedbackMapping';
 import { ApplicationError } from '../errors';
-import type { CustomerRepository, FeedbackRepository, TeaRepository } from '../repositories';
+import type { CustomerRepository, FeedbackRepository, TeaProfileRepository, TeaRepository } from '../repositories';
 import { validateFeedback } from '../validation';
 
 export class FeedbackService {
@@ -8,6 +10,7 @@ export class FeedbackService {
     private readonly repository: FeedbackRepository,
     private readonly customerRepository: CustomerRepository,
     private readonly teaRepository: TeaRepository,
+    private readonly profileRepository?: TeaProfileRepository,
   ) {}
 
   submitFeedback(feedback: Feedback): Feedback {
@@ -21,9 +24,12 @@ export class FeedbackService {
     if (this.repository.listByCustomerId(feedback.customerId).some((item) => item.id === feedback.id)) {
       throw new ApplicationError('CONFLICT', `Feedback ${feedback.id} already exists`);
     }
+
     this.repository.create(feedback);
     const persisted = this.repository.listByCustomerId(feedback.customerId).find((item) => item.id === feedback.id);
     if (!persisted) throw new ApplicationError('PERSISTENCE_ERROR', `Feedback ${feedback.id} could not be read after creation`);
+
+    if (this.profileRepository) this.rebuildCustomerProfile(feedback.customerId);
     return persisted;
   }
 
@@ -41,5 +47,41 @@ export class FeedbackService {
       throw new ApplicationError('NOT_FOUND', `Tea ${teaId} was not found`);
     }
     return this.repository.listByTeaId(teaId);
+  }
+
+  rebuildCustomerProfile(customerId: string): TeaProfile {
+    if (!this.profileRepository) throw new ApplicationError('NOT_IMPLEMENTED', 'Tea profile persistence is not configured');
+    if (!this.customerRepository.getById(customerId)) {
+      throw new ApplicationError('NOT_FOUND', `Customer ${customerId} was not found`);
+    }
+
+    const existing = this.profileRepository.getByCustomerId(customerId);
+    const feedbackHistory = this.repository.listByCustomerId(customerId);
+    const tastePreferences = rebuildTastePreferences(feedbackHistory);
+    const feedbackIds = feedbackHistory.map((item) => item.id);
+    const updatedAt = feedbackHistory.length > 0
+      ? feedbackHistory[feedbackHistory.length - 1].createdAt
+      : existing?.updatedAt ?? new Date(0).toISOString();
+
+    const profile: TeaProfile = {
+      customerId,
+      purchasedTeaIds: existing?.purchasedTeaIds ?? [],
+      likedTeaIds: existing?.likedTeaIds ?? [],
+      dislikedTeaIds: existing?.dislikedTeaIds ?? [],
+      tastePreferences,
+      feedbackIds,
+      recommendationIds: existing?.recommendationIds ?? [],
+      updatedAt,
+    };
+
+    this.profileRepository.upsert(profile);
+    return profile;
+  }
+
+  getFinderProfileReference(customerId: string): FinderProfileReference {
+    if (!this.profileRepository) throw new ApplicationError('NOT_IMPLEMENTED', 'Tea profile persistence is not configured');
+    const profile = this.profileRepository.getByCustomerId(customerId);
+    if (!profile) throw new ApplicationError('NOT_FOUND', `Tea profile for customer ${customerId} was not found`);
+    return toFinderProfileReference(profile.tastePreferences);
   }
 }

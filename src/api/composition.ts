@@ -33,7 +33,7 @@ export function createDefaultApiServer(databaseFile = process.env.YUNELA_DB_FILE
     teaService: new TeaService(teaRepository),
     customerService: new CustomerService(customerRepository),
     profileService: new TeaProfileService(profileRepository, customerRepository),
-    feedbackService: new FeedbackService(feedbackRepository, customerRepository, teaRepository),
+    feedbackService: new FeedbackService(feedbackRepository, customerRepository, teaRepository, profileRepository),
     recommendationService,
     discoveryBoxService: new DiscoveryBoxApplicationService({
       recommendationService,
