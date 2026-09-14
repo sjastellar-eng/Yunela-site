@@ -1,3 +1,4 @@
+import type { DiscoveryBox } from '../contracts/discoveryBox';
 import type { Feedback, Customer, RecommendationHistoryEntry, TeaProfile } from '../contracts/account';
 import type { Tea } from '../contracts/tea';
 
@@ -36,4 +37,9 @@ export interface FeedbackRepository {
 
 export interface RecommendationHistoryRepository {
   create(entry: RecommendationHistoryEntry): void;
+}
+
+export interface DiscoveryBoxRepository {
+  create(box: DiscoveryBox): void;
+  getById(id: string): DiscoveryBox | undefined;
 }
