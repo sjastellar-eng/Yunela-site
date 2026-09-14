@@ -14,31 +14,31 @@ export interface SelectionFailureDetail {
   available: number;
 }
 
-function uniqueAndSorted(results: RecommendationResult[], role: RecommendationResult['classification']): RecommendationResult[] {
-  const seen = new Set<string>();
+function sortedCandidates(results: RecommendationResult[], role: RecommendationResult['classification']): RecommendationResult[] {
   return results
     .filter((result) => result.classification === role)
-    .filter((result) => {
-      if (seen.has(result.tea.id)) return false;
-      seen.add(result.tea.id);
-      return true;
-    })
     .sort((a, b) => b.score - a.score || a.tea.id.localeCompare(b.tea.id));
 }
 
 export function selectDiscoveryBoxItems(results: RecommendationResult[]): DiscoveryBoxItem[] {
   const failures: SelectionFailureDetail[] = [];
   const selected: DiscoveryBoxItem[] = [];
+  const selectedTeaIds = new Set<string>();
   const roles: Array<keyof typeof REQUIRED_COUNTS> = ['MATCH', 'STRETCH', 'WILDCARD'];
 
   for (const role of roles) {
-    const candidates = uniqueAndSorted(results, role);
+    const candidates = sortedCandidates(results, role);
+    const uniqueCandidates = candidates.filter((result) => {
+      if (selectedTeaIds.has(result.tea.id)) return false;
+      return true;
+    });
     const required = REQUIRED_COUNTS[role];
-    if (candidates.length < required) {
-      failures.push({ role, required, available: candidates.length });
+    if (uniqueCandidates.length < required) {
+      failures.push({ role, required, available: uniqueCandidates.length });
       continue;
     }
-    for (const result of candidates.slice(0, required)) {
+    for (const result of uniqueCandidates.slice(0, required)) {
+      selectedTeaIds.add(result.tea.id);
       selected.push({
         teaId: result.tea.id,
         classification: result.classification,
