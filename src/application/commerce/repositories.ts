@@ -1,4 +1,4 @@
-import type { Cart, CartItem, Order, OrderItemSnapshot, Purchase } from '../../contracts/commerce';
+import type { Cart, Order, OrderItemSnapshot, Purchase } from '../../contracts/commerce';
 
 export interface CartRepository {
   create(cart: Cart): void;
@@ -8,7 +8,7 @@ export interface CartRepository {
 }
 
 export interface OrderRepository {
-  create(order: Order): void;
+  create(order: Order, idempotencyKey: string): void;
   getById(id: string): Order | undefined;
   getByIdempotency(customerId: string, idempotencyKey: string): Order | undefined;
   getItems(orderId: string): OrderItemSnapshot[];
