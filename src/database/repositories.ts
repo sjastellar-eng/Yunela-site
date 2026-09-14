@@ -1,4 +1,5 @@
 import Database from 'better-sqlite3';
+import { DISCOVERY_BOX_SELECTION_VERSION } from '../contracts/discoveryBox';
 import type { DiscoveryBox } from '../contracts/discoveryBox';
 import type { Feedback, RecommendationHistoryEntry, TeaProfile } from '../contracts/account';
 import type { Tea } from '../contracts/tea';
@@ -303,7 +304,7 @@ export function findDiscoveryBoxById(db: Database.Database, id: string): Discove
     id: String(boxRow.id),
     ...(boxRow.customer_id ? { customerId: String(boxRow.customer_id) } : {}),
     algorithmVersion: String(boxRow.algorithm_version),
-    selectionVersion: String(boxRow.selection_version),
+    selectionVersion: String(boxRow.selection_version) as typeof DISCOVERY_BOX_SELECTION_VERSION,
     profileReference: JSON.parse(String(boxRow.profile_reference_json)),
     items: itemRows.map((row) => ({
       teaId: String(row.tea_id),
