@@ -64,12 +64,16 @@ function applyAromaSignals(
   feedback: Feedback,
   normalizedTags: string[],
 ): void {
+  const mappedAromaTags = normalizedTags
+    .map((tag) => CANONICAL_SENSORY_TAG_MAP[tag as keyof typeof CANONICAL_SENSORY_TAG_MAP])
+    .filter((mapping): mapping is { readonly dimension: 'aroma'; readonly value: string } => Boolean(mapping && mapping.dimension === 'aroma'));
+
+  if (mappedAromaTags.length === 0 && preferences.aroma === undefined) return;
+
   const current = new Set((preferences.aroma ?? []).map(normalizeTag).filter(Boolean));
   const isPositive = feedback.value === 'Loved it' || feedback.value === 'Liked it';
 
-  for (const tag of normalizedTags) {
-    const mapping = CANONICAL_SENSORY_TAG_MAP[tag as keyof typeof CANONICAL_SENSORY_TAG_MAP];
-    if (!mapping || mapping.dimension !== 'aroma') continue;
+  for (const mapping of mappedAromaTags) {
     if (isPositive) current.add(mapping.value);
     else current.delete(mapping.value);
   }
