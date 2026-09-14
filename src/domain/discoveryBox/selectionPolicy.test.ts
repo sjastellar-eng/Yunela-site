@@ -65,18 +65,18 @@ describe('Discovery Box selection policy', () => {
   });
 
   it('fails explicitly with structured role details without substitution', () => {
-    expect(() => selectDiscoveryBoxItems([
-      recommendation('m1', 'MATCH', 90), recommendation('m2', 'MATCH', 89),
-      recommendation('s1', 'STRETCH', 70), recommendation('w1', 'WILDCARD', 60),
-    ])).toThrowError(DiscoveryBoxSelectionFailure);
-
     try {
       selectDiscoveryBoxItems([
         recommendation('m1', 'MATCH', 90), recommendation('m2', 'MATCH', 89),
         recommendation('s1', 'STRETCH', 70), recommendation('w1', 'WILDCARD', 60),
       ]);
+      throw new Error('expected selection failure');
     } catch (error) {
-      expect(error).toMatchObject({ details: [{ role: 'MATCH', required: 3, available: 2 }] });
+      expect(error).toBeInstanceOf(DiscoveryBoxSelectionFailure);
+      expect(error).toMatchObject({ details: [
+        { role: 'MATCH', required: 3, available: 2 },
+        { role: 'STRETCH', required: 2, available: 1 },
+      ] });
     }
   });
 
