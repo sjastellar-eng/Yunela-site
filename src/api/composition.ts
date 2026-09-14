@@ -4,16 +4,12 @@ import { FeedbackService } from '../application/feedback/service';
 import { TeaProfileService } from '../application/profile/service';
 import { DeterministicRecommendationEngine, RecommendationApplicationService } from '../application/recommendation/service';
 import { TeaService } from '../application/tea/service';
-import {
-  SqliteCustomerRepository,
-  SqliteDiscoveryBoxRepository,
-  SqliteFeedbackRepository,
-  SqliteRecommendationHistoryRepository,
-  SqliteTeaProfileRepository,
-  SqliteTeaRepository,
-} from '../application/sqliteRepositories';
+import { CartService, OrderService, PurchaseBoundaryService } from '../application/commerce/service';
+import { SqliteCartRepository, SqliteCommercialProductRepository, SqliteOrderRepository, SqlitePurchaseRepository } from '../application/sqliteCommerceRepositories';
+import { SqliteCustomerRepository, SqliteDiscoveryBoxRepository, SqliteFeedbackRepository, SqliteRecommendationHistoryRepository, SqliteTeaProfileRepository, SqliteTeaRepository } from '../application/sqliteRepositories';
 import { openDatabase } from '../database/client';
 import { applyMigrations } from '../database/migrate';
+import { createAnalyticsTracker } from '../contracts/analytics';
 import { createApiServer, type ApiDependencies } from './server';
 
 export function createDefaultApiServer(databaseFile = process.env.YUNELA_DB_FILE ?? ':memory:'): { server: ReturnType<typeof createApiServer>; close: () => void } {
@@ -25,20 +21,24 @@ export function createDefaultApiServer(databaseFile = process.env.YUNELA_DB_FILE
   const feedbackRepository = new SqliteFeedbackRepository(db);
   const historyRepository = new SqliteRecommendationHistoryRepository(db);
   const discoveryBoxRepository = new SqliteDiscoveryBoxRepository(db);
-  const recommendationService = new RecommendationApplicationService(
-    new DeterministicRecommendationEngine(teaRepository),
-    { customerRepository, historyRepository },
-  );
+  const commercialProductRepository = new SqliteCommercialProductRepository(db);
+  const cartRepository = new SqliteCartRepository(db);
+  const orderRepository = new SqliteOrderRepository(db);
+  const purchaseRepository = new SqlitePurchaseRepository(db);
+  const analytics = createAnalyticsTracker(() => undefined);
+  const recommendationService = new RecommendationApplicationService(new DeterministicRecommendationEngine(teaRepository), { customerRepository, historyRepository });
   const dependencies: ApiDependencies = {
     teaService: new TeaService(teaRepository),
     customerService: new CustomerService(customerRepository),
     profileService: new TeaProfileService(profileRepository, customerRepository),
     feedbackService: new FeedbackService(feedbackRepository, customerRepository, teaRepository, profileRepository),
     recommendationService,
-    discoveryBoxService: new DiscoveryBoxApplicationService({
-      recommendationService,
-      boxRepository: discoveryBoxRepository,
-    }),
+    discoveryBoxService: new DiscoveryBoxApplicationService({ recommendationService, boxRepository: discoveryBoxRepository }),
+    commerce: {
+      cartService: new CartService(cartRepository, commercialProductRepository, teaRepository, customerRepository, discoveryBoxRepository, historyRepository, analytics),
+      orderService: new OrderService(orderRepository, cartRepository, commercialProductRepository, teaRepository, discoveryBoxRepository, customerRepository, analytics),
+      purchaseBoundary: new PurchaseBoundaryService(purchaseRepository, orderRepository, analytics),
+    },
   };
   return { server: createApiServer({ dependencies }), close: () => db.close() };
 }
