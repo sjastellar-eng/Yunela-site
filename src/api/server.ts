@@ -3,6 +3,7 @@ import { createServer, type IncomingMessage, type Server, type ServerResponse } 
 import { URL } from 'node:url';
 import { ApplicationError } from '../application/errors';
 import { CustomerService } from '../application/customer/service';
+import { DiscoveryBoxApplicationService } from '../application/discoveryBox/service';
 import { FeedbackService } from '../application/feedback/service';
 import { TeaProfileService } from '../application/profile/service';
 import { RecommendationApplicationService } from '../application/recommendation/service';
@@ -24,6 +25,7 @@ export interface ApiDependencies {
   profileService: TeaProfileService;
   feedbackService: FeedbackService;
   recommendationService: RecommendationApplicationService;
+  discoveryBoxService: DiscoveryBoxApplicationService;
 }
 
 export interface ApiServerOptions {
@@ -215,6 +217,18 @@ async function route(request: IncomingMessage, response: ServerResponse, depende
   if (path === '/recommendations') {
     if (request.method === 'POST') return sendJson(response, 200, await dependencies.recommendationService.recommend(mapRecommendation(await readJson(request))), id);
     return methodNotAllowed(response, id, 'POST');
+  }
+
+  if (path === '/discovery-boxes') {
+    if (request.method === 'POST') return sendJson(response, 201, await dependencies.discoveryBoxService.createBox(mapRecommendation(await readJson(request))), id);
+    return methodNotAllowed(response, id, 'POST');
+  }
+
+  const discoveryBoxMatch = path.match(/^\/discovery-boxes\/([^/]+)$/);
+  if (discoveryBoxMatch) {
+    const boxId = validatePathId(discoveryBoxMatch[1], 'discoveryBoxId');
+    if (request.method === 'GET') return sendJson(response, 200, dependencies.discoveryBoxService.getBox(boxId), id);
+    return methodNotAllowed(response, id, 'GET');
   }
 
   return sendJson(response, 404, { error: { code: 'NOT_FOUND', message: 'Route not found', requestId: id } }, id);
