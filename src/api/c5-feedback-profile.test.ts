@@ -1,4 +1,4 @@
-import { createServer, type Server } from 'node:http';
+import { request as httpRequest, createServer, type Server } from 'node:http';
 import { afterEach, describe, expect, it } from 'vitest';
 import { createMoney } from '../contracts/commerce';
 import type { Customer, Feedback, TeaProfile } from '../contracts/account';
@@ -52,20 +52,11 @@ class FakeFeedbackRepository implements FeedbackRepository {
 const taxonomy = { familyId: 'family-oolong', subfamilyId: 'subfamily-roasted', styleId: 'style-test' };
 const customer: Customer = { id: 'customer-c5', email: 'c5@example.invalid', createdAt: '2026-09-14T10:00:00.000Z' };
 const tea: Tea = {
-  id: 'tea-c5',
-  slug: 'tea-c5',
-  name: 'C5 Synthetic Tea',
-  family: taxonomy.familyId,
-  subfamily: taxonomy.subfamilyId,
-  style: taxonomy.styleId,
+  id: 'tea-c5', slug: 'tea-c5', name: 'C5 Synthetic Tea', family: taxonomy.familyId,
+  subfamily: taxonomy.subfamilyId, style: taxonomy.styleId,
   sensory: { aroma: ['synthetic'], sweetness: 50, body: 50, freshness: 50, roast: 50, depth: 50, astringency: 20, finish: 50, floral: 10, fruity: 10, mineral: 10, earthyWoody: 40 },
-  discoveryDistance: 20,
-  price: createMoney(1999, 'USD'),
-  packSize: 50,
-  inventory: 0,
-  supplyStatus: 'unknown',
-  provenanceConfidence: 'unknown',
-  publishingState: 'draft',
+  discoveryDistance: 20, price: createMoney(1999, 'USD'), packSize: 50, inventory: 0,
+  supplyStatus: 'unknown', provenanceConfidence: 'unknown', publishingState: 'draft',
 };
 
 function buildDependencies(): ApiDependencies {
@@ -79,15 +70,11 @@ function buildDependencies(): ApiDependencies {
   teas.create(teaWrite);
   const recommendationService = new RecommendationApplicationService({ recommend: async () => [] });
   return {
-    teaService: new TeaService(teas),
-    customerService: new CustomerService(customers),
+    teaService: new TeaService(teas), customerService: new CustomerService(customers),
     profileService: new TeaProfileService(profiles, customers),
     feedbackService: new FeedbackService(feedback, customers, teas, profiles),
     recommendationService,
-    discoveryBoxService: new DiscoveryBoxApplicationService({
-      recommendationService,
-      boxRepository: { create: () => undefined, getById: () => undefined },
-    }),
+    discoveryBoxService: new DiscoveryBoxApplicationService({ recommendationService, boxRepository: { create: () => undefined, getById: () => undefined } }),
   };
 }
 
@@ -95,10 +82,7 @@ function request(server: Server, method: string, path: string, body?: unknown): 
   const address = server.address();
   if (!address || typeof address === 'string') throw new Error('Server is not listening');
   return new Promise((resolve, reject) => {
-    const req = createServer as never;
-    void req;
-    const http = require('node:http') as typeof import('node:http');
-    const client = http.request({ port: address.port, method, path, headers: body === undefined ? {} : { 'content-type': 'application/json' } }, (response) => {
+    const client = httpRequest({ port: address.port, method, path, headers: body === undefined ? {} : { 'content-type': 'application/json' } }, (response) => {
       const chunks: Buffer[] = [];
       response.on('data', (chunk) => chunks.push(Buffer.from(chunk)));
       response.on('end', () => resolve({ status: response.statusCode ?? 0, body: JSON.parse(Buffer.concat(chunks).toString('utf8')) }));
@@ -121,14 +105,9 @@ describe('C5 feedback → profile HTTP integration', () => {
   it('persists raw feedback, updates the profile, and rejects duplicate feedback without a second mutation', async () => {
     server = createApiServer({ dependencies: buildDependencies() });
     await new Promise<void>((resolve) => server?.listen(0, '127.0.0.1', () => resolve()));
-
     const payload = {
-      id: 'feedback-c5-1',
-      customerId: customer.id,
-      teaId: tea.id,
-      value: 'Loved it',
-      sensoryTags: [' SWEET ', 'roasted', 'deep', 'vanilla'],
-      createdAt: '2026-09-14T10:01:00.000Z',
+      id: 'feedback-c5-1', customerId: customer.id, teaId: tea.id, value: 'Loved it',
+      sensoryTags: [' SWEET ', 'roasted', 'deep', 'vanilla'], createdAt: '2026-09-14T10:01:00.000Z',
     };
 
     const first = await request(server, 'POST', '/api/v1/feedback', payload);
