@@ -67,18 +67,20 @@ describe('database foundation', () => {
     applyMigrations(db);
 
     const tables = db.prepare(
-      "SELECT name FROM sqlite_master WHERE type = 'table' AND name IN ('teas','tea_lots','customers','tea_profiles','tea_feedback','recommendation_history') ORDER BY name",
+      "SELECT name FROM sqlite_master WHERE type = 'table' AND name IN ('teas','tea_lots','customers','tea_profiles','tea_feedback','recommendation_history','discovery_boxes','discovery_box_items') ORDER BY name",
     ).all() as Array<{ name: string }>;
 
     expect(tables.map(({ name }) => name)).toEqual([
       'customers',
+      'discovery_box_items',
+      'discovery_boxes',
       'recommendation_history',
       'tea_feedback',
       'tea_lots',
       'tea_profiles',
       'teas',
     ]);
-    expect(db.prepare('SELECT COUNT(*) AS count FROM schema_migrations').get()).toEqual({ count: 1 });
+    expect(db.prepare('SELECT COUNT(*) AS count FROM schema_migrations').get()).toEqual({ count: 2 });
   });
 
   it('persists Tea, taxonomy, supplier/provenance and lot inventory without flattening taxonomy', () => {
@@ -164,89 +166,24 @@ describe('database foundation', () => {
 
     db.prepare('INSERT INTO tea_families (id, name) VALUES (?, ?)').run('family-oolong', 'Synthetic Oolong Family');
     db.prepare('INSERT INTO tea_families (id, name) VALUES (?, ?)').run('family-black', 'Synthetic Black Family');
-    db.prepare('INSERT INTO tea_subfamilies (id, family_id, name) VALUES (?, ?, ?)').run(
-      'subfamily-roasted',
-      'family-oolong',
-      'Synthetic Roasted Subfamily',
-    );
-    db.prepare('INSERT INTO tea_subfamilies (id, family_id, name) VALUES (?, ?, ?)').run(
-      'subfamily-black',
-      'family-black',
-      'Synthetic Black Subfamily',
-    );
-    db.prepare('INSERT INTO tea_styles (id, subfamily_id, name) VALUES (?, ?, ?)').run(
-      'style-test',
-      'subfamily-roasted',
-      'Synthetic Style',
-    );
+    db.prepare('INSERT INTO tea_subfamilies (id, family_id, name) VALUES (?, ?, ?)').run('subfamily-roasted', 'family-oolong', 'Synthetic Roasted Subfamily');
+    db.prepare('INSERT INTO tea_subfamilies (id, family_id, name) VALUES (?, ?, ?)').run('subfamily-black', 'family-black', 'Synthetic Black Subfamily');
+    db.prepare('INSERT INTO tea_styles (id, subfamily_id, name) VALUES (?, ?, ?)').run('style-test', 'subfamily-roasted', 'Synthetic Style');
 
     expect(() => insertTea(db, tea, { familyId: 'missing-family' })).toThrow();
-    expect(() => insertTea(db, tea, {
-      familyId: 'family-oolong',
-      subfamilyId: 'missing-subfamily',
-    })).toThrow();
-    expect(() => insertTea(db, tea, {
-      familyId: 'family-black',
-      subfamilyId: 'subfamily-roasted',
-      styleId: 'style-test',
-    })).toThrow();
-    expect(() => insertTea(db, tea, {
-      familyId: 'family-oolong',
-      subfamilyId: 'subfamily-black',
-      styleId: 'style-test',
-    })).toThrow();
-    expect(() => insertTea(db, tea, {
-      familyId: 'family-oolong',
-      styleId: 'style-test',
-    })).toThrow();
+    expect(() => insertTea(db, tea, { familyId: 'family-oolong', subfamilyId: 'missing-subfamily' })).toThrow();
+    expect(() => insertTea(db, tea, { familyId: 'family-black', subfamilyId: 'subfamily-roasted', styleId: 'style-test' })).toThrow();
+    expect(() => insertTea(db, tea, { familyId: 'family-oolong', subfamilyId: 'subfamily-black', styleId: 'style-test' })).toThrow();
+    expect(() => insertTea(db, tea, { familyId: 'family-oolong', styleId: 'style-test' })).toThrow();
+    expect(() => db.prepare('INSERT INTO tea_styles (id, subfamily_id, name) VALUES (?, ?, ?)').run('style-without-subfamily', null, 'Invalid Style')).toThrow();
 
-    expect(() => db.prepare(
-      'INSERT INTO tea_styles (id, subfamily_id, name) VALUES (?, ?, ?)',
-    ).run('style-without-subfamily', null, 'Invalid Style')).toThrow();
-
-    insertTea(db, tea, {
-      familyId: 'family-oolong',
-      subfamilyId: 'subfamily-roasted',
-      styleId: 'style-test',
-    });
+    insertTea(db, tea, { familyId: 'family-oolong', subfamilyId: 'subfamily-roasted', styleId: 'style-test' });
     insertSupplier(db, { id: 'supplier-test', name: 'Synthetic Supplier', createdAt: now });
-    insertProvenance(db, {
-      id: 'provenance-test',
-      supplierId: 'supplier-test',
-      sourceReference: 'test-only',
-      confidence: 'unknown',
-      createdAt: now,
-    });
+    insertProvenance(db, { id: 'provenance-test', supplierId: 'supplier-test', sourceReference: 'test-only', confidence: 'unknown', createdAt: now });
 
-    expect(() => insertTeaLot(db, {
-      id: 'lot-missing-tea',
-      teaId: 'missing-tea',
-      lotCode: 'TEST-LOT-MISSING-TEA',
-      inventoryQuantity: 1,
-      supplyStatus: 'available',
-      createdAt: now,
-      updatedAt: now,
-    })).toThrow();
-    expect(() => insertTeaLot(db, {
-      id: 'lot-missing-supplier',
-      teaId: tea.id,
-      supplierId: 'missing-supplier',
-      lotCode: 'TEST-LOT-MISSING-SUPPLIER',
-      inventoryQuantity: 1,
-      supplyStatus: 'available',
-      createdAt: now,
-      updatedAt: now,
-    })).toThrow();
-    expect(() => insertTeaLot(db, {
-      id: 'lot-missing-provenance',
-      teaId: tea.id,
-      provenanceId: 'missing-provenance',
-      lotCode: 'TEST-LOT-MISSING-PROVENANCE',
-      inventoryQuantity: 1,
-      supplyStatus: 'available',
-      createdAt: now,
-      updatedAt: now,
-    })).toThrow();
+    expect(() => insertTeaLot(db, { id: 'lot-missing-tea', teaId: 'missing-tea', lotCode: 'TEST-LOT-MISSING-TEA', inventoryQuantity: 1, supplyStatus: 'available', createdAt: now, updatedAt: now })).toThrow();
+    expect(() => insertTeaLot(db, { id: 'lot-missing-supplier', teaId: tea.id, supplierId: 'missing-supplier', lotCode: 'TEST-LOT-MISSING-SUPPLIER', inventoryQuantity: 1, supplyStatus: 'available', createdAt: now, updatedAt: now })).toThrow();
+    expect(() => insertTeaLot(db, { id: 'lot-missing-provenance', teaId: tea.id, provenanceId: 'missing-provenance', lotCode: 'TEST-LOT-MISSING-PROVENANCE', inventoryQuantity: 1, supplyStatus: 'available', createdAt: now, updatedAt: now })).toThrow();
   });
 
   it('persists Customer, Tea Profile and Feedback relationships', () => {
@@ -258,44 +195,19 @@ describe('database foundation', () => {
     insertCustomer(db, { id: 'customer-test', email: 'test@example.invalid', createdAt: now });
 
     const profile: TeaProfile = {
-      customerId: 'customer-test',
-      purchasedTeaIds: [tea.id],
-      likedTeaIds: [tea.id],
-      dislikedTeaIds: [],
-      tastePreferences: { body: 60, sweetness: 40 },
-      feedbackIds: ['feedback-test'],
-      recommendationIds: ['recommendation-test'],
-      updatedAt: now,
+      customerId: 'customer-test', purchasedTeaIds: [tea.id], likedTeaIds: [tea.id], dislikedTeaIds: [],
+      tastePreferences: { body: 60, sweetness: 40 }, feedbackIds: ['feedback-test'], recommendationIds: ['recommendation-test'], updatedAt: now,
     };
     upsertTeaProfile(db, profile);
 
-    const feedback: Feedback = {
-      id: 'feedback-test',
-      customerId: 'customer-test',
-      teaId: tea.id,
-      value: 'Loved it',
-      sensoryTags: ['synthetic'],
-      createdAt: now,
-    };
+    const feedback: Feedback = { id: 'feedback-test', customerId: 'customer-test', teaId: tea.id, value: 'Loved it', sensoryTags: ['synthetic'], createdAt: now };
     insertFeedback(db, feedback);
 
     expect(db.prepare('SELECT preference FROM customer_tea_preferences WHERE customer_id = ? AND tea_id = ?').get('customer-test', tea.id)).toEqual({ preference: 'liked' });
     expect(db.prepare('SELECT value FROM tea_feedback WHERE id = ?').get('feedback-test')).toEqual({ value: 'Loved it' });
-
-    expect(() => upsertTeaProfile(db, {
-      ...profile,
-      customerId: 'missing-customer',
-    })).toThrow();
-    expect(() => insertFeedback(db, {
-      ...feedback,
-      id: 'feedback-missing-customer',
-      customerId: 'missing-customer',
-    })).toThrow();
-    expect(() => insertFeedback(db, {
-      ...feedback,
-      id: 'feedback-missing-tea',
-      teaId: 'missing-tea',
-    })).toThrow();
+    expect(() => upsertTeaProfile(db, { ...profile, customerId: 'missing-customer' })).toThrow();
+    expect(() => insertFeedback(db, { ...feedback, id: 'feedback-missing-customer', customerId: 'missing-customer' })).toThrow();
+    expect(() => insertFeedback(db, { ...feedback, id: 'feedback-missing-tea', teaId: 'missing-tea' })).toThrow();
   });
 
   it('persists recommendation history with algorithm version and outcome and enforces relationships', () => {
@@ -307,25 +219,9 @@ describe('database foundation', () => {
     insertCustomer(db, { id: 'customer-test', email: 'recommendation@example.invalid', createdAt: now });
 
     const entry: RecommendationHistoryEntry = {
-      id: 'recommendation-test',
-      customerId: 'customer-test',
-      teaId: tea.id,
-      algorithmVersion: 'v1-test',
-      score: 82,
-      classification: 'MATCH',
-      explanation: ['synthetic test reason'],
-      profileReference: {
-        body: 60,
-        sweetness: 40,
-        freshness: 70,
-        roastDepth: 30,
-        aroma: ['floral', 'synthetic'],
-        context: 'evening',
-        familiarity: 'familiar',
-        discoveryTolerance: 'moderate',
-      },
-      createdAt: now,
-      outcome: 'feedback_received',
+      id: 'recommendation-test', customerId: 'customer-test', teaId: tea.id, algorithmVersion: 'v1-test', score: 82, classification: 'MATCH',
+      explanation: ['synthetic test reason'], profileReference: { body: 60, sweetness: 40, freshness: 70, roastDepth: 30, aroma: ['floral', 'synthetic'], context: 'evening', familiarity: 'familiar', discoveryTolerance: 'moderate' },
+      createdAt: now, outcome: 'feedback_received',
     };
     insertRecommendationHistory(db, entry);
 
@@ -335,16 +231,7 @@ describe('database foundation', () => {
     expect(row.classification).toBe('MATCH');
     expect(row.outcome).toBe('feedback_received');
     expect(row.profile_reference_json).toBe(JSON.stringify(entry.profileReference));
-
-    expect(() => insertRecommendationHistory(db, {
-      ...entry,
-      id: 'recommendation-missing-customer',
-      customerId: 'missing-customer',
-    })).toThrow();
-    expect(() => insertRecommendationHistory(db, {
-      ...entry,
-      id: 'recommendation-missing-tea',
-      teaId: 'missing-tea',
-    })).toThrow();
+    expect(() => insertRecommendationHistory(db, { ...entry, id: 'recommendation-missing-customer', customerId: 'missing-customer' })).toThrow();
+    expect(() => insertRecommendationHistory(db, { ...entry, id: 'recommendation-missing-tea', teaId: 'missing-tea' })).toThrow();
   });
 });
