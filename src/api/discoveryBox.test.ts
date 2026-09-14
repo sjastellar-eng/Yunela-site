@@ -11,8 +11,10 @@ import { TeaService } from '../application/tea/service';
 import { SqliteCustomerRepository, SqliteDiscoveryBoxRepository, SqliteFeedbackRepository, SqliteRecommendationHistoryRepository, SqliteTeaProfileRepository, SqliteTeaRepository } from '../application/sqliteRepositories';
 import { openDatabase } from '../database/client';
 import { applyMigrations } from '../database/migrate';
+import { insertTea } from '../database/repositories';
 import type { RecommendationEngine } from '../application/recommendation/service';
 import type { RecommendationResult } from '../contracts/recommendation';
+import type { Tea } from '../contracts/tea';
 import type { ApiDependencies } from './server';
 import { createApiServer } from './server';
 
@@ -37,10 +39,31 @@ function recommendation(id: string, classification: RecommendationResult['classi
   };
 }
 
+function seedTeaRows(db: ReturnType<typeof openDatabase>, results: RecommendationResult[]): void {
+  for (const result of results) {
+    const tea: Tea = {
+      id: result.tea.id,
+      slug: result.tea.slug,
+      name: result.tea.name,
+      family: 'family-c4',
+      sensory: { aroma: ['floral'], sweetness: 50, body: 50, freshness: 50, roast: 50, depth: 50, astringency: 20, finish: 50, floral: 40, fruity: 20, mineral: 20, earthyWoody: 20 },
+      discoveryDistance: 20,
+      price: { amount: 1000 as Tea['price']['amount'], currency: 'USD' },
+      packSize: 50,
+      inventory: 0,
+      supplyStatus: 'available',
+      provenanceConfidence: 'verified',
+      publishingState: 'published',
+    };
+    insertTea(db, tea, { familyId: 'family-c4' });
+  }
+}
+
 function fixture(results: RecommendationResult[]): { db: ReturnType<typeof openDatabase>; server: Server; customerId: string } {
   const db = openDatabase(':memory:');
   applyMigrations(db);
   db.prepare('INSERT INTO tea_families (id, name) VALUES (?, ?)').run('family-c4', 'C4 Synthetic');
+  seedTeaRows(db, results);
   const customerId = 'customer-c4';
   db.prepare('INSERT INTO customers (id, email, created_at) VALUES (?, ?, ?)').run(customerId, 'c4@example.invalid', '2026-01-01T00:00:00.000Z');
 
