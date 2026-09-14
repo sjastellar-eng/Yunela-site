@@ -1,4 +1,5 @@
 import Database from 'better-sqlite3';
+import type { DiscoveryBox } from '../contracts/discoveryBox';
 import type { Feedback, RecommendationHistoryEntry, TeaProfile } from '../contracts/account';
 import type { Tea } from '../contracts/tea';
 
@@ -246,4 +247,71 @@ export function insertRecommendationHistory(
     entry.outcome ?? null,
     entry.createdAt,
   );
+}
+
+export function insertDiscoveryBox(db: Database.Database, box: DiscoveryBox): void {
+  const insertBox = db.prepare(`
+    INSERT INTO discovery_boxes (
+      id, customer_id, algorithm_version, selection_version, profile_reference_json, created_at
+    ) VALUES (?, ?, ?, ?, ?, ?)
+  `);
+  const insertItem = db.prepare(`
+    INSERT INTO discovery_box_items (
+      box_id, tea_id, classification, position, score, reasons_json
+    ) VALUES (?, ?, ?, ?, ?, ?)
+  `);
+
+  const transaction = db.transaction(() => {
+    insertBox.run(
+      box.id,
+      box.customerId ?? null,
+      box.algorithmVersion,
+      box.selectionVersion,
+      JSON.stringify(box.profileReference),
+      box.createdAt,
+    );
+    for (const item of box.items) {
+      insertItem.run(
+        box.id,
+        item.teaId,
+        item.classification,
+        item.position,
+        item.score,
+        JSON.stringify(item.reasons),
+      );
+    }
+  });
+  transaction();
+}
+
+export function findDiscoveryBoxById(db: Database.Database, id: string): DiscoveryBox | undefined {
+  const boxRow = db.prepare(`
+    SELECT id, customer_id, algorithm_version, selection_version, profile_reference_json, created_at
+    FROM discovery_boxes
+    WHERE id = ?
+  `).get(id) as Record<string, unknown> | undefined;
+  if (!boxRow) return undefined;
+
+  const itemRows = db.prepare(`
+    SELECT tea_id, classification, position, score, reasons_json
+    FROM discovery_box_items
+    WHERE box_id = ?
+    ORDER BY position ASC
+  `).all(id) as Array<Record<string, unknown>>;
+
+  return {
+    id: String(boxRow.id),
+    ...(boxRow.customer_id ? { customerId: String(boxRow.customer_id) } : {}),
+    algorithmVersion: String(boxRow.algorithm_version),
+    selectionVersion: String(boxRow.selection_version),
+    profileReference: JSON.parse(String(boxRow.profile_reference_json)),
+    items: itemRows.map((row) => ({
+      teaId: String(row.tea_id),
+      classification: row.classification as DiscoveryBox['items'][number]['classification'],
+      position: Number(row.position),
+      score: Number(row.score),
+      reasons: JSON.parse(String(row.reasons_json)) as string[],
+    })),
+    createdAt: String(boxRow.created_at),
+  };
 }
