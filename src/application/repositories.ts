@@ -7,5 +7,5 @@ export interface TeaRepository { create(tea: TeaWriteInput, taxonomy: TeaTaxonom
 export interface CustomerRepository { create(customer: Customer): void; getById(id: string): Customer | undefined; update(customer: Customer): Customer | undefined; }
 export interface TeaProfileRepository { getByCustomerId(customerId: string): TeaProfile | undefined; upsert(profile: TeaProfile): void; }
 export interface FeedbackRepository { create(feedback: Feedback): void; listByCustomerId(customerId: string): Feedback[]; listByTeaId(teaId: string): Feedback[]; }
-export interface RecommendationHistoryRepository { create(entry: RecommendationHistoryEntry): void; getById(id: string): RecommendationHistoryEntry | undefined; }
+export interface RecommendationHistoryRepository { create(entry: RecommendationHistoryEntry): void; getById?(id: string): RecommendationHistoryEntry | undefined; }
 export interface DiscoveryBoxRepository { create(box: DiscoveryBox): void; getById(id: string): DiscoveryBox | undefined; }
