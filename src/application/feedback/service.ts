@@ -10,7 +10,7 @@ export class FeedbackService {
     private readonly repository: FeedbackRepository,
     private readonly customerRepository: CustomerRepository,
     private readonly teaRepository: TeaRepository,
-    private readonly profileRepository: TeaProfileRepository,
+    private readonly profileRepository?: TeaProfileRepository,
   ) {}
 
   submitFeedback(feedback: Feedback): Feedback {
@@ -29,7 +29,7 @@ export class FeedbackService {
     const persisted = this.repository.listByCustomerId(feedback.customerId).find((item) => item.id === feedback.id);
     if (!persisted) throw new ApplicationError('PERSISTENCE_ERROR', `Feedback ${feedback.id} could not be read after creation`);
 
-    this.rebuildCustomerProfile(feedback.customerId);
+    if (this.profileRepository) this.rebuildCustomerProfile(feedback.customerId);
     return persisted;
   }
 
@@ -50,6 +50,7 @@ export class FeedbackService {
   }
 
   rebuildCustomerProfile(customerId: string): TeaProfile {
+    if (!this.profileRepository) throw new ApplicationError('NOT_IMPLEMENTED', 'Tea profile persistence is not configured');
     if (!this.customerRepository.getById(customerId)) {
       throw new ApplicationError('NOT_FOUND', `Customer ${customerId} was not found`);
     }
@@ -78,6 +79,7 @@ export class FeedbackService {
   }
 
   getFinderProfileReference(customerId: string): FinderProfileReference {
+    if (!this.profileRepository) throw new ApplicationError('NOT_IMPLEMENTED', 'Tea profile persistence is not configured');
     const profile = this.profileRepository.getByCustomerId(customerId);
     if (!profile) throw new ApplicationError('NOT_FOUND', `Tea profile for customer ${customerId} was not found`);
     return toFinderProfileReference(profile.tastePreferences);
