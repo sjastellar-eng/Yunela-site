@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
-import { ApplicationError } from '../../application/errors';
+import { readFileSync } from 'node:fs';
+import { DiscoveryBoxSelectionFailure, selectDiscoveryBoxItems } from './selectionPolicy';
 import type { RecommendationResult } from '../../contracts/recommendation';
-import { selectDiscoveryBoxItems } from './selectionPolicy';
 
 function recommendation(id: string, classification: RecommendationResult['classification'], score: number): RecommendationResult {
   return {
@@ -16,6 +16,13 @@ function recommendation(id: string, classification: RecommendationResult['classi
 }
 
 describe('Discovery Box selection policy', () => {
+  it('has no application-layer dependency', () => {
+    const source = readFileSync(new URL('./selectionPolicy.ts', import.meta.url), 'utf8');
+    expect(source).not.toMatch(/from ['"]\.\.?\/.*application\//);
+    expect(source).not.toContain('/application/');
+    expect(source).not.toContain('ApplicationError');
+  });
+
   it('selects exactly 3 MATCH, 2 STRETCH and 1 WILDCARD in deterministic order', () => {
     const results = [
       recommendation('m3', 'MATCH', 82), recommendation('m1', 'MATCH', 95), recommendation('m2', 'MATCH', 88), recommendation('m4', 'MATCH', 81),
@@ -57,11 +64,11 @@ describe('Discovery Box selection policy', () => {
     expect(new Set(items.map((item) => item.teaId)).size).toBe(6);
   });
 
-  it('fails explicitly for every missing required role without substitution', () => {
+  it('fails explicitly with structured role details without substitution', () => {
     expect(() => selectDiscoveryBoxItems([
       recommendation('m1', 'MATCH', 90), recommendation('m2', 'MATCH', 89),
       recommendation('s1', 'STRETCH', 70), recommendation('w1', 'WILDCARD', 60),
-    ])).toThrowError(ApplicationError);
+    ])).toThrowError(DiscoveryBoxSelectionFailure);
 
     try {
       selectDiscoveryBoxItems([
@@ -69,7 +76,7 @@ describe('Discovery Box selection policy', () => {
         recommendation('s1', 'STRETCH', 70), recommendation('w1', 'WILDCARD', 60),
       ]);
     } catch (error) {
-      expect(error).toMatchObject({ code: 'DISCOVERY_BOX_INSUFFICIENT_CANDIDATES' });
+      expect(error).toMatchObject({ details: [{ role: 'MATCH', required: 3, available: 2 }] });
     }
   });
 
