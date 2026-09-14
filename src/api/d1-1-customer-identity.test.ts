@@ -42,12 +42,13 @@ function teaInput(id: string): TeaWriteInput {
 function createTestDependencies(db: ReturnType<typeof openDatabase>): ApiDependencies {
   const teaRepository = new SqliteTeaRepository(db);
   const customerRepository = new SqliteCustomerRepository(db);
+  const profileRepository = new SqliteTeaProfileRepository(db);
   const recommendationService = new RecommendationApplicationService(new NotConfiguredRecommendationEngine());
   return {
     teaService: new TeaService(teaRepository),
     customerService: new CustomerService(customerRepository),
-    profileService: new TeaProfileService(new SqliteTeaProfileRepository(db), customerRepository),
-    feedbackService: new FeedbackService(new SqliteFeedbackRepository(db), customerRepository, teaRepository),
+    profileService: new TeaProfileService(profileRepository, customerRepository),
+    feedbackService: new FeedbackService(new SqliteFeedbackRepository(db), customerRepository, teaRepository, profileRepository),
     recommendationService,
     discoveryBoxService: new DiscoveryBoxApplicationService({
       recommendationService,
