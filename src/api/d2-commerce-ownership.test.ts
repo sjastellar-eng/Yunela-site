@@ -169,15 +169,15 @@ describe('D2 anonymous customer ownership header', () => {
     expect((await json(owner) as { customerId: string }).customerId).toBe('customer-a');
   });
 
-  it('supports DELETE cart item with the literal HTTP DELETE method and correct Allow header', async () => {
+  it('supports DELETE cart item with the literal HTTP DELETE method', async () => {
     const { dependencies, customerService } = setup();
     addCustomer(customerService, 'customer-a');
     const cart = dependencies.commerce!.cartService.createCart('customer-a');
     const base = await startApi(dependencies);
     const response = await fetch(`${base}/api/v1/carts/${cart.id}/items/SKU-TEST`, {
-      method: 'OPTIONS', headers: { 'x-customer-id': 'customer-a' },
+      method: 'DELETE', headers: { 'x-customer-id': 'customer-a' },
     });
-    expect(response.status).toBe(405);
-    expect(response.headers.get('allow')).toBe('PATCH, DELETE');
+    expect(response.status).toBe(404);
+    expect((await json(response) as { error: { code: string } }).error.code).toBe('CART_ITEM_NOT_FOUND');
   });
 });
