@@ -9,6 +9,7 @@ import { ApplicationError } from '../errors';
 const UAH = 'UAH'; const MONO_CCY = 980;
 const TERMINAL = new Set<PaymentAttemptState>(['SUCCEEDED', 'DECLINED', 'EXPIRED', 'FAILED', 'CANCELLED']);
 const MONO_STATUSES = new Set(['created', 'processing', 'hold', 'success', 'failure', 'reversed', 'expired']);
+const SUCCESS_ELIGIBLE = new Set<PaymentAttemptState>(['CREATED', 'INITIATED', 'REQUIRES_ACTION']);
 export class PaymentService {
   constructor(private readonly attempts: PaymentAttemptRepository, private readonly orders: OrderRepository, private readonly customers: CustomerRepository, private readonly mono: MonoPaymentAdapter, private readonly analytics: AnalyticsTracker, private readonly webhookUrl: string, private readonly redirectUrl?: string) {}
   async createPaymentAttempt(customerId: string, orderId: string, idempotencyKey: string): Promise<PaymentAttempt> {
@@ -38,8 +39,9 @@ export class PaymentService {
     if (event.status === 'failure') { this.attempts.recordTerminalOrProviderState({ id: attempt.id, state: 'DECLINED', providerStatus: event.status, providerModifiedAt: modifiedAt, eventFingerprint: fingerprint, providerReference: event.reference }); return { status: 'accepted' }; }
     if (event.status === 'reversed' || event.status === 'expired' || event.status === 'hold') return { status: 'ignored' };
     if (event.status !== 'success') { const state: PaymentAttemptState = event.status === 'created' || event.status === 'processing' ? 'REQUIRES_ACTION' : 'INITIATED'; this.attempts.recordTerminalOrProviderState({ id: attempt.id, state, providerStatus: event.status, providerModifiedAt: modifiedAt, eventFingerprint: fingerprint, providerReference: event.reference }); return { status: 'accepted' }; }
+    if (!SUCCESS_ELIGIBLE.has(attempt.state)) return { status: 'ignored' };
     const purchase: Purchase = { id: randomUUID(), orderId: order.id, customerId: order.customerId, amount: createMoney(order.pricingSnapshot.total.amount, UAH), confirmedAt: modifiedAt, paymentAttemptId: attempt.id, provider: 'MONO', providerInvoiceId: attempt.providerInvoiceId!, providerReference: event.reference! };
-    const result = this.attempts.confirmSuccess({ attemptId: attempt.id, providerStatus: event.status, providerModifiedAt: modifiedAt, eventFingerprint: fingerprint, providerReference: event.reference!, confirmedAt: modifiedAt, purchase });
+    const result = this.attempts.confirmSuccess({ attemptId: attempt.id, expectedState: attempt.state, expectedProviderModifiedAt: attempt.providerModifiedAt, providerStatus: event.status, providerModifiedAt: modifiedAt, eventFingerprint: fingerprint, providerReference: event.reference!, confirmedAt: modifiedAt, purchase });
     if (result === 'created') { this.analytics.track('purchase', { customerId: purchase.customerId, orderId: purchase.orderId, amount: purchase.amount.amount }); if (order.items.some((item) => Boolean(item.discoveryBoxSnapshot))) this.analytics.track('box_purchase', { customerId: purchase.customerId, orderId: purchase.orderId }); }
     return { status: result === 'created' ? 'accepted' : 'ignored' };
   }
