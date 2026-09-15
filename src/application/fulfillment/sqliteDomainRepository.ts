@@ -3,7 +3,7 @@ import { createMoney, type Order, type OrderItemSnapshot, type Purchase, type Sh
 import type { PaymentAttempt } from '../../contracts/payment';
 import type { FulfillmentStatus, ShipmentStatus } from '../../domain/fulfillment';
 import type { FulfillmentRecord, FulfillmentItemRecord, InventoryAllocationRecord, ShipmentRecord, FulfillmentEventRecord } from './repositories';
-import { ApplicationError, isApplicationError, toPersistenceError } from '../errors';
+import { isApplicationError, toPersistenceError } from '../errors';
 
 export interface PurchaseExecutionContext { purchase: Purchase; order: Order; paymentAttempt: PaymentAttempt; }
 export interface FulfillmentMutationRepository {
