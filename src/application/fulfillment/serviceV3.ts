@@ -1,4 +1,4 @@
-import { ApplicationError, isApplicationError } from '../errors';
+import { isApplicationError } from '../errors';
 import { FulfillmentApplicationService as BaseFulfillmentApplicationService, type ReplacementApproval, type DiscoveryBoxShortage } from './serviceV2';
 
 export type { ReplacementApproval, DiscoveryBoxShortage };
