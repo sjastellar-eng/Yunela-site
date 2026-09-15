@@ -11,6 +11,6 @@ export interface PaymentAttemptRepository {
   getByOrderAndIdempotency(orderId: string, idempotencyKey: string): PaymentAttempt | undefined;
   getByProviderInvoiceId(providerInvoiceId: string): PaymentAttempt | undefined;
   save(attempt: PaymentAttempt): void;
-  recordTerminalOrProviderState(input: { id: string; state: PaymentAttempt['state']; providerStatus: string; providerModifiedAt: string; eventFingerprint: string; providerReference?: string }): void;
-  confirmSuccess(input: { attemptId: string; providerStatus: string; providerModifiedAt: string; eventFingerprint: string; providerReference: string; confirmedAt: string; purchase: Purchase }): 'created' | 'duplicate';
+  recordTerminalOrProviderState(input: { id: string; state: PaymentAttempt['state']; providerStatus: string; providerModifiedAt: string; eventFingerprint: string; providerReference?: string }): 'updated' | 'ignored';
+  confirmSuccess(input: { attemptId: string; expectedState: PaymentAttempt['state']; expectedProviderModifiedAt?: string; providerStatus: string; providerModifiedAt: string; eventFingerprint: string; providerReference: string; confirmedAt: string; purchase: Purchase }): 'created' | 'duplicate' | 'ignored';
 }
