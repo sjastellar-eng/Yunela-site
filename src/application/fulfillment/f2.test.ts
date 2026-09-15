@@ -9,7 +9,8 @@ function fixture() {
   const db = openDatabase(); applyMigrations(db);
   const customerId=randomUUID(), orderId=randomUUID(), purchaseId=randomUUID(), attemptId=randomUUID(), teaId=randomUUID(), lotId=randomUUID(); const now=new Date().toISOString();
   db.prepare('INSERT INTO customers (id,email,created_at) VALUES (?,?,?)').run(customerId,`${customerId}@test.local`,now);
-  db.prepare(`INSERT INTO teas (id,slug,name,family_id,sensory_json,discovery_distance,price_amount,price_currency,pack_size_grams,supply_status,provenance_confidence,publishing_state,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)`).run(teaId,`tea-${teaId}`,'Test Tea','green','{}',50,100,'UAH',10,'available','verified','published',now,now);
+  db.prepare('INSERT INTO tea_families (id,name) VALUES (?,?)').run(`family-${teaId}`,'Test Family');
+  db.prepare(`INSERT INTO teas (id,slug,name,family_id,sensory_json,discovery_distance,price_amount,price_currency,pack_size_grams,supply_status,provenance_confidence,publishing_state,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)`).run(teaId,`tea-${teaId}`,'Test Tea',`family-${teaId}`,'{}',50,100,'UAH',10,'available','verified','published',now,now);
   db.prepare(`INSERT INTO tea_lots (id,tea_id,lot_code,inventory_quantity,supply_status,created_at,updated_at) VALUES (?,?,?,?,?,?,?)`).run(lotId,teaId,`LOT-${lotId}`,10,'available',now,now);
   const itemId=randomUUID(); const shipping={recipientName:'Test',addressLine1:'1 Main',city:'Dnipro',postalCode:'49000',countryCode:'UA'};
   db.prepare(`INSERT INTO orders (id,customer_id,status,currency,subtotal_amount,discount_amount,shipping_amount,total_amount,shipping_snapshot_json,idempotency_key,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)`).run(orderId,customerId,'confirmed','UAH',200,0,0,200,JSON.stringify(shipping),randomUUID(),now,now);
