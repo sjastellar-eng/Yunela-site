@@ -20,7 +20,8 @@ export type ApplicationErrorCode =
   | 'ORDER_IDEMPOTENCY_CONFLICT'
   | 'INVALID_CURRENCY'
   | 'PURCHASE_ALREADY_RECORDED'
-  | 'PURCHASE_NOT_AUTHORIZED';
+  | 'PURCHASE_NOT_AUTHORIZED'
+  | 'AUDIT_WRITE_FAILED';
 
 export class ApplicationError extends Error {
   constructor(public readonly code: ApplicationErrorCode, message: string, options?: { cause?: unknown }) {

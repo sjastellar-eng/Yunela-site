@@ -7,3 +7,4 @@ export * from './customer/service';
 export * from './profile/service';
 export * from './feedback/service';
 export * from './recommendation/service';
+export * from './fulfillment';
