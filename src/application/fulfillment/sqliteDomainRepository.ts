@@ -1,5 +1,5 @@
 import Database from 'better-sqlite3';
-import { createMoney, type Order, type Purchase, type ShippingDetails, type OrderItemSnapshot } from '../../contracts/commerce';
+import { createMoney, type Order, type Purchase, type ShippingDetails } from '../../contracts/commerce';
 import type { PaymentAttempt } from '../../contracts/payment';
 import type { FulfillmentStatus, ShipmentStatus } from '../../domain/fulfillment';
 import type { FulfillmentRecord, FulfillmentItemRecord, InventoryAllocationRecord, ShipmentRecord, FulfillmentEventRecord } from './repositories';
