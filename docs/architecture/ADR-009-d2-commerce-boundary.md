@@ -10,6 +10,11 @@ YUNELA D2 keeps commerce server-authoritative and deliberately small:
 
 Commerce consumes canonical SKU and price from a Catalog / Commercial Product boundary. It does not generate SKUs, own tea taxonomy, recalculate C3/C4/C5 logic, reserve or decrement inventory, or implement a payment provider.
 
+## Anonymous customer ownership context
+All customer-scoped D2 HTTP operations receive the anonymous ownership context through the `X-Customer-Id` request header. This value is an ownership reference, not authentication, authorization, a session, JWT, OAuth identity, password, or security token.
+
+The external D2 API does not accept customer ownership through the request body, query string, path parameters, cookies, sessions, or alternative headers. The server compares the header value with the resource owner for existing Cart and Order resources. Missing or unknown customer IDs use the existing application validation/customer error semantics and never trigger implicit customer creation.
+
 ## Runtime rules
 - UAH only; money is integer minor units.
 - D2 discounts are zero.
@@ -20,7 +25,6 @@ Commerce consumes canonical SKU and price from a Catalog / Commercial Product bo
 - Discovery Box is one commercial SKU / one CartItem / one OrderItem; its six-tea C4 composition is copied into an immutable OrderItem snapshot.
 - Order state is `created | confirmed | cancelled` and never means paid, purchased, or fulfilled.
 - Purchase has no public client endpoint and can only be recorded through the internal authoritative payment boundary.
-- `customerId` is an ownership reference, not authentication.
 - Provider-neutral analytics emits `add_to_cart`, `order_created`, and authoritative `purchase` only after successful state transitions.
 
 ## Persistence
