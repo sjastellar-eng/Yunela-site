@@ -83,7 +83,7 @@ function seedOrder(db: ReturnType<typeof openDatabase>, customerId: string, id: 
     customerId,
     status: 'created',
     items: [{
-      id: `${id}-item`, sku: 'SKU-TEST', teaId: 'tea-test', teaName: 'Test Tea', quantity: 1,
+      id: `${id}-item`, sku: 'SKU-TEST', teaName: 'Test Tea', quantity: 1,
       unitPrice: createMoney(1000, 'UAH'), lineTotal: createMoney(1000, 'UAH'),
     }],
     pricingSnapshot: {
