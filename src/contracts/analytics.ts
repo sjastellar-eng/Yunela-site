@@ -5,6 +5,7 @@ export type AnalyticsEventName =
   | 'recommendation_view'
   | 'recommendation_click'
   | 'add_to_cart'
+  | 'order_created'
   | 'purchase'
   | 'box_purchase'
   | 'tea_feedback'
