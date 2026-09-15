@@ -94,6 +94,10 @@ export interface Purchase {
   customerId: string;
   amount: Money;
   confirmedAt: string;
+  paymentAttemptId?: string;
+  provider?: 'MONO';
+  providerInvoiceId?: string;
+  providerReference?: string;
 }
 
 export interface CreateOrderRequest {
