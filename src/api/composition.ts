@@ -7,6 +7,9 @@ import { TeaService } from '../application/tea/service';
 import { CartService, OrderService, PurchaseBoundaryService } from '../application/commerce/service';
 import { SqliteCartRepository, SqliteCommercialProductRepository, SqliteOrderRepository, SqlitePurchaseRepository } from '../application/sqliteCommerceRepositories';
 import { SqliteCustomerRepository, SqliteDiscoveryBoxRepository, SqliteFeedbackRepository, SqliteRecommendationHistoryRepository, SqliteTeaProfileRepository, SqliteTeaRepository } from '../application/sqliteRepositories';
+import { SqlitePaymentAttemptRepository } from '../application/payment/sqliteRepository';
+import { PaymentService } from '../application/payment/service';
+import { MonoAcquiringAdapter } from '../application/payment/mono';
 import { openDatabase } from '../database/client';
 import { applyMigrations } from '../database/migrate';
 import { createAnalyticsTracker } from '../contracts/analytics';
@@ -25,8 +28,11 @@ export function createDefaultApiServer(databaseFile = process.env.YUNELA_DB_FILE
   const cartRepository = new SqliteCartRepository(db);
   const orderRepository = new SqliteOrderRepository(db);
   const purchaseRepository = new SqlitePurchaseRepository(db);
+  const paymentAttemptRepository = new SqlitePaymentAttemptRepository(db);
   const analytics = createAnalyticsTracker(() => undefined);
   const recommendationService = new RecommendationApplicationService(new DeterministicRecommendationEngine(teaRepository), { customerRepository, historyRepository });
+  const mono = new MonoAcquiringAdapter({ webhookUrl: process.env.MONO_WEBHOOK_URL ?? '', redirectUrl: process.env.MONO_REDIRECT_URL });
+  const paymentService = new PaymentService(paymentAttemptRepository, orderRepository, customerRepository, mono, analytics, process.env.MONO_WEBHOOK_URL ?? '', process.env.MONO_REDIRECT_URL);
   const dependencies: ApiDependencies = {
     teaService: new TeaService(teaRepository),
     customerService: new CustomerService(customerRepository),
@@ -39,6 +45,7 @@ export function createDefaultApiServer(databaseFile = process.env.YUNELA_DB_FILE
       orderService: new OrderService(orderRepository, cartRepository, commercialProductRepository, teaRepository, discoveryBoxRepository, customerRepository, analytics),
       purchaseBoundary: new PurchaseBoundaryService(purchaseRepository, orderRepository, analytics),
     },
+    paymentService,
   };
   return { server: createApiServer({ dependencies }), close: () => db.close() };
 }
