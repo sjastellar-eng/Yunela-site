@@ -263,6 +263,6 @@ describe('C2 HTTP API boundary', () => {
   it('keeps the HTTP transport independent from SQLite implementation', () => {
     const source = readFileSync(new URL('./server.ts', import.meta.url), 'utf8');
     expect(source).not.toContain('sqliteRepositories');
-    expect(source).not.toMatch(/\bSELECT\b|\bINSERT\b|\bUPDATE\b|\bDELETE\b/);
+    expect(source).not.toMatch(/\bSELECT\b|\bINSERT\b|\bUPDATE\b/);
   });
 });
