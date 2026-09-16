@@ -44,7 +44,6 @@ function mapEvent(row: Record<string, unknown>): FulfillmentEventRecord { return
 
 export class SqliteFulfillmentMutationRepository implements FulfillmentMutationRepository {
   constructor(private readonly db: Database.Database) {}
-
   transaction<T>(fn: () => T): T { return this.db.transaction(fn).immediate(); }
   getPurchaseContext(purchaseId:string): PurchaseExecutionContext|undefined { return withPersistence(()=>{const p=this.db.prepare('SELECT * FROM purchases WHERE id=?').get(purchaseId) as Record<string,unknown>|undefined;if(!p)return undefined;const orderRow=this.db.prepare('SELECT * FROM orders WHERE id=?').get(String(p.order_id)) as Record<string,unknown>|undefined;if(!orderRow)return undefined;const purchase=mapPurchase(p);const a=p.payment_attempt_id?this.db.prepare('SELECT * FROM payment_attempts WHERE id=?').get(String(p.payment_attempt_id)) as Record<string,unknown>|undefined:this.db.prepare("SELECT * FROM payment_attempts WHERE order_id=? AND state='SUCCEEDED' ORDER BY confirmed_at DESC,id DESC LIMIT 1").get(String(p.order_id)) as Record<string,unknown>|undefined;if(!a)return undefined;return {purchase,order:mapOrder(this.db,orderRow),paymentAttempt:mapAttempt(a)};}); }
   getFulfillmentByPurchaseId(purchaseId:string){return withPersistence(()=>{const r=this.db.prepare('SELECT * FROM fulfillments WHERE purchase_id=?').get(purchaseId) as Record<string,unknown>|undefined;return r?mapFulfillment(r):undefined;});}
@@ -56,15 +55,11 @@ export class SqliteFulfillmentMutationRepository implements FulfillmentMutationR
   setFulfillmentStatus(id:string,from:FulfillmentStatus,to:FulfillmentStatus,now:string){return this.db.prepare('UPDATE fulfillments SET status=?,updated_at=? WHERE id=? AND status=?').run(to,now,id,from).changes===1;}
   setFulfillmentItemAllocationStatus(id:string,status:FulfillmentItemRecord['allocationStatus'],now:string){this.db.prepare('UPDATE fulfillment_items SET allocation_status=?,updated_at=? WHERE id=?').run(status,now,id);}
   listLotsForTea(teaId:string){return (this.db.prepare("SELECT id,inventory_quantity,supply_status FROM tea_lots WHERE tea_id=? AND inventory_quantity>0 ORDER BY created_at,id").all(teaId) as Array<Record<string,unknown>>).map(r=>({id:String(r.id),inventoryQuantity:Number(r.inventory_quantity),supplyStatus:String(r.supply_status)}));}
-
-  // Legacy method name retained for the F2 repository contract. At READY it performs only an atomic reservation-availability check; it never decrements tea_lots.inventory_quantity.
   decrementLotInventory(id:string,q:number){
     if (q <= 0) return false;
     const row=this.db.prepare(`SELECT t.inventory_quantity - COALESCE((SELECT SUM(a.quantity) FROM inventory_allocations a WHERE a.tea_lot_id=t.id AND a.status='RESERVED'),0) AS available FROM tea_lots t WHERE t.id=?`).get(id) as {available:number}|undefined;
     return Boolean(row && Number(row.available) >= q);
   }
-
-  // Physical inventory decrement happens only when a RESERVED allocation becomes CONSUMED at PACKED.
   updateInventoryAllocationStatus(id:string,from:InventoryAllocationRecord['status'],to:InventoryAllocationRecord['status'],now:string){
     if (to === 'CONSUMED' && from === 'RESERVED') {
       const consumed=this.db.prepare(`UPDATE tea_lots SET inventory_quantity=inventory_quantity-(SELECT quantity FROM inventory_allocations WHERE id=? AND status='RESERVED' AND tea_lot_id=tea_lots.id),updated_at=? WHERE id=(SELECT tea_lot_id FROM inventory_allocations WHERE id=? AND status='RESERVED') AND inventory_quantity >= (SELECT quantity FROM inventory_allocations WHERE id=? AND status='RESERVED')`).run(id,now,id,id).changes===1;
@@ -73,12 +68,9 @@ export class SqliteFulfillmentMutationRepository implements FulfillmentMutationR
     const fields=to==='CONSUMED'?'consumed_at=?':to==='RELEASED'?'released_at=?':'allocated_at=?';
     return this.db.prepare(`UPDATE inventory_allocations SET status=?,${fields},updated_at=? WHERE id=? AND status=?`).run(to,now,now,id,from).changes===1;
   }
-
-  // READY reservations do not change physical stock, so releasing a reservation also does not increment inventory_quantity.
   incrementLotInventory(_id:string,_q:number){return true;}
-
   createInventoryAllocation(r:InventoryAllocationRecord){this.db.prepare('INSERT INTO inventory_allocations (id,fulfillment_item_id,tea_lot_id,quantity,status,allocated_at,consumed_at,released_at,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?,?,?)').run(r.id,r.fulfillmentItemId,r.teaLotId,r.quantity,r.status,r.allocatedAt??null,r.consumedAt??null,r.releasedAt??null,r.createdAt,r.updatedAt);}
-  createShipment(r:ShipmentRecord){this.db.prepare('INSERT INTO shipments (id,fulfillment_id,status,carrier,tracking_number,tracking_url,shipped_at,delivered_at,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?,?,?)').run(r.id,r.fulfillmentId,r.status,r.carrier??null,r.trackingNumber??null,r.trackingUrl??null,r.createdAt,r.updatedAt);}
+  createShipment(r:ShipmentRecord){this.db.prepare('INSERT INTO shipments (id,fulfillment_id,status,carrier,tracking_number,tracking_url,shipped_at,delivered_at,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?,?,?)').run(r.id,r.fulfillmentId,r.status,r.carrier??null,r.trackingNumber??null,r.trackingUrl??null,null,null,r.createdAt,r.updatedAt);}
   getShipmentByFulfillmentId(id:string){return withPersistence(()=>{const r=this.db.prepare('SELECT * FROM shipments WHERE fulfillment_id=?').get(id) as Record<string,unknown>|undefined;return r?mapShipment(r):undefined;});}
   updateShipmentStatus(id:string,from:ShipmentStatus,to:ShipmentStatus,now:string){const shipped=to==='SHIPPED'?now:null,delivered=to==='DELIVERED'?now:null;return this.db.prepare('UPDATE shipments SET status=?,shipped_at=COALESCE(?,shipped_at),delivered_at=COALESCE(?,delivered_at),updated_at=? WHERE id=? AND status=?').run(to,shipped,delivered,now,id,from).changes===1;}
   appendFulfillmentEvent(r:FulfillmentEventRecord){try{this.db.prepare('INSERT INTO fulfillment_events (id,fulfillment_id,event_type,from_status,to_status,actor,occurred_at,event_key,created_at) VALUES (?,?,?,?,?,?,?,?,?)').run(r.id,r.fulfillmentId,r.eventType,r.fromStatus??null,r.toStatus??null,r.actor,r.occurredAt,r.eventKey,r.createdAt);return true;}catch(e){if(String(e).includes('UNIQUE')){const existing=this.db.prepare('SELECT * FROM fulfillment_events WHERE event_key=?').get(r.eventKey) as Record<string,unknown>|undefined;if(existing)return true;}throw e;}}
