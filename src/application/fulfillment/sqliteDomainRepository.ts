@@ -55,20 +55,9 @@ export class SqliteFulfillmentMutationRepository implements FulfillmentMutationR
   setFulfillmentStatus(id:string,from:FulfillmentStatus,to:FulfillmentStatus,now:string){return this.db.prepare('UPDATE fulfillments SET status=?,updated_at=? WHERE id=? AND status=?').run(to,now,id,from).changes===1;}
   setFulfillmentItemAllocationStatus(id:string,status:FulfillmentItemRecord['allocationStatus'],now:string){this.db.prepare('UPDATE fulfillment_items SET allocation_status=?,updated_at=? WHERE id=?').run(status,now,id);}
   listLotsForTea(teaId:string){return (this.db.prepare("SELECT id,inventory_quantity,supply_status FROM tea_lots WHERE tea_id=? AND inventory_quantity>0 ORDER BY created_at,id").all(teaId) as Array<Record<string,unknown>>).map(r=>({id:String(r.id),inventoryQuantity:Number(r.inventory_quantity),supplyStatus:String(r.supply_status)}));}
-  decrementLotInventory(id:string,q:number){
-    if (q <= 0) return false;
-    const row=this.db.prepare(`SELECT t.inventory_quantity - COALESCE((SELECT SUM(a.quantity) FROM inventory_allocations a WHERE a.tea_lot_id=t.id AND a.status='RESERVED'),0) AS available FROM tea_lots t WHERE t.id=?`).get(id) as {available:number}|undefined;
-    return Boolean(row && Number(row.available) >= q);
-  }
-  updateInventoryAllocationStatus(id:string,from:InventoryAllocationRecord['status'],to:InventoryAllocationRecord['status'],now:string){
-    if (to === 'CONSUMED' && from === 'RESERVED') {
-      const consumed=this.db.prepare(`UPDATE tea_lots SET inventory_quantity=inventory_quantity-(SELECT quantity FROM inventory_allocations WHERE id=? AND status='RESERVED' AND tea_lot_id=tea_lots.id),updated_at=? WHERE id=(SELECT tea_lot_id FROM inventory_allocations WHERE id=? AND status='RESERVED') AND inventory_quantity >= (SELECT quantity FROM inventory_allocations WHERE id=? AND status='RESERVED')`).run(id,now,id,id).changes===1;
-      if (!consumed) return false;
-    }
-    const fields=to==='CONSUMED'?'consumed_at=?':to==='RELEASED'?'released_at=?':'allocated_at=?';
-    return this.db.prepare(`UPDATE inventory_allocations SET status=?,${fields},updated_at=? WHERE id=? AND status=?`).run(to,now,now,id,from).changes===1;
-  }
-  incrementLotInventory(_id:string,_q:number){return true;}
+  decrementLotInventory(id:string,q:number){if(q<=0)return false;const row=this.db.prepare(`SELECT t.inventory_quantity-COALESCE((SELECT SUM(a.quantity) FROM inventory_allocations a WHERE a.tea_lot_id=t.id AND a.status='RESERVED'),0) AS available FROM tea_lots t WHERE t.id=?`).get(id) as {available:number}|undefined;return Boolean(row&&Number(row.available)>=q);}
+  updateInventoryAllocationStatus(id:string,from:InventoryAllocationRecord['status'],to:InventoryAllocationRecord['status'],now:string){if(to==='CONSUMED'&&from==='RESERVED'){const consumed=this.db.prepare(`UPDATE tea_lots SET inventory_quantity=inventory_quantity-(SELECT quantity FROM inventory_allocations WHERE id=? AND status='RESERVED' AND tea_lot_id=tea_lots.id),updated_at=? WHERE id=(SELECT tea_lot_id FROM inventory_allocations WHERE id=? AND status='RESERVED') AND inventory_quantity >= (SELECT quantity FROM inventory_allocations WHERE id=? AND status='RESERVED')`).run(id,now,id,id).changes===1;if(!consumed)return false;}const fields=to==='CONSUMED'?'consumed_at=?':to==='RELEASED'?'released_at=?':'allocated_at=?';return this.db.prepare(`UPDATE inventory_allocations SET status=?,${fields},updated_at=? WHERE id=? AND status=?`).run(to,now,now,id,from).changes===1;}
+  incrementLotInventory(){return true;}
   createInventoryAllocation(r:InventoryAllocationRecord){this.db.prepare('INSERT INTO inventory_allocations (id,fulfillment_item_id,tea_lot_id,quantity,status,allocated_at,consumed_at,released_at,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?,?,?)').run(r.id,r.fulfillmentItemId,r.teaLotId,r.quantity,r.status,r.allocatedAt??null,r.consumedAt??null,r.releasedAt??null,r.createdAt,r.updatedAt);}
   createShipment(r:ShipmentRecord){this.db.prepare('INSERT INTO shipments (id,fulfillment_id,status,carrier,tracking_number,tracking_url,shipped_at,delivered_at,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?,?,?)').run(r.id,r.fulfillmentId,r.status,r.carrier??null,r.trackingNumber??null,r.trackingUrl??null,null,null,r.createdAt,r.updatedAt);}
   getShipmentByFulfillmentId(id:string){return withPersistence(()=>{const r=this.db.prepare('SELECT * FROM shipments WHERE fulfillment_id=?').get(id) as Record<string,unknown>|undefined;return r?mapShipment(r):undefined;});}
