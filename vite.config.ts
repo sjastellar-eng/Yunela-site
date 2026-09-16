@@ -13,6 +13,7 @@ export default defineConfig({
         rollupOptions: {
           input: 'src/api/f3-runtime.ts',
           external: [/^node:/, 'better-sqlite3'],
+          output: { entryFileNames: 'f3-runtime.js' },
         },
       }
     : undefined,
