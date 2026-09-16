@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && BUILD_TARGET=server vite build",
+    "build": "tsc -b && vite build && vite build --mode server",
     "start": "node dist-server/f3-runtime.js",
     "lint": "eslint .",
     "typecheck": "tsc -b --pretty false",
