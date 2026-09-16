@@ -7,6 +7,7 @@ const migrations = [
   { version: '0003_commerce', file: new URL('../../database/migrations/0003_commerce.sql', import.meta.url) },
   { version: '0004_mono_payment', file: new URL('../../database/migrations/0004_mono_payment.sql', import.meta.url) },
   { version: '0005_fulfillment_persistence', file: new URL('../../database/migrations/0005_fulfillment_persistence.sql', import.meta.url) },
+  { version: '0006_authentication', file: new URL('../../database/migrations/0006_authentication.sql', import.meta.url) },
 ] as const;
 
 export function applyMigrations(db: Database.Database): void {

@@ -25,6 +25,9 @@ const statusByCode: Record<ApplicationError['code'], number> = {
   INVALID_CURRENCY: 400,
   PURCHASE_ALREADY_RECORDED: 409,
   PURCHASE_NOT_AUTHORIZED: 403,
+  AUTHENTICATION_REQUIRED: 401,
+  INVALID_CREDENTIALS: 401,
+  FORBIDDEN: 403,
 };
 
 export function applicationErrorToHttp(error: unknown, requestId: string): { status: number; body: ApiErrorBody } {
