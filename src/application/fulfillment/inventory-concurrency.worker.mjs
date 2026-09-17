@@ -33,13 +33,18 @@ async function run() {
         service.allocateInventory(workerData.fulfillmentId, workerData.operationKey);
         return true;
       } catch (error) {
-        if (error instanceof Error && error.message.startsWith('Insufficient inventory')) return false;
+        if (error instanceof Error && (error.message.startsWith('Insufficient inventory') || error.message.startsWith('Allocation failed for tea '))) return false;
         throw error;
       }
     }
     if (workerData.operation === 'consumption') {
-      service.consumeInventory(workerData.fulfillmentId, workerData.operationKey);
-      return true;
+      try {
+        service.consumeInventory(workerData.fulfillmentId, workerData.operationKey);
+        return true;
+      } catch (error) {
+        if (error instanceof Error && (error.message.startsWith('Fulfillment cannot transition from PACKED') || error.message.startsWith('Inventory allocation changed concurrently'))) return false;
+        throw error;
+      }
     }
     if (workerData.operation === 'release') {
       service.releaseInventory(workerData.fulfillmentId, workerData.operationKey);
