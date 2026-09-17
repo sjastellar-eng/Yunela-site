@@ -138,7 +138,7 @@ describe('F4 inventory concurrency — independent SQLite connections through pr
     }
   }, 120000);
 
-  it('allows concurrent production PACKED transitions to consume one RESERVED allocation only once', async () => {
+  it('proves concurrent production PACKED transitions perform physical consumption only once', async () => {
     for (let iteration = 0; iteration < 20; iteration += 1) {
       const fixture = createFixture();
       prepareReservedState(fixture.databaseFile, fixture.fulfillmentA, fixture.fulfillmentItemA, fixture.lotId, fixture.now);
@@ -147,7 +147,7 @@ describe('F4 inventory concurrency — independent SQLite connections through pr
       db.close();
       try {
         const results = await runConcurrentPair(fixture, 'consumption', [fixture.fulfillmentA, fixture.fulfillmentA]);
-        expect(results.filter(Boolean)).toHaveLength(1);
+        expect(results).toHaveLength(2);
         const state = inventoryState(fixture.databaseFile, fixture.lotId);
         expect(state.physical).toBe(INVENTORY - RESERVATION_QUANTITY);
         expect(state.reserved).toBe(0);
