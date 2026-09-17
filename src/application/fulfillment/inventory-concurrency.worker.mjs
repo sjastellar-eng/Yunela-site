@@ -15,9 +15,9 @@ async function loadProduction() {
       vite.ssrLoadModule('/src/application/fulfillment/serviceV2.ts'),
     ]);
     return { vite, openDatabase, SqliteFulfillmentMutationRepository, FulfillmentApplicationService };
-  } catch (error) {
+  } catch {
     await vite.close();
-    throw error;
+    throw new Error('F4 production module loading failed');
   }
 }
 
@@ -48,7 +48,7 @@ async function run() {
       try {
         service.consumeInventory(workerData.fulfillmentId, workerData.operationKey);
         return false;
-      } catch (error) {
+      } catch {
         return true;
       }
     }
