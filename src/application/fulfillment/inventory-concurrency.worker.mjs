@@ -1,10 +1,11 @@
 import { createServer } from 'vite';
+import { cwd } from 'node:process';
 import { parentPort, workerData } from 'node:worker_threads';
 
 async function loadProduction() {
   const vite = await createServer({
     configFile: false,
-    root: process.cwd(),
+    root: cwd(),
     appType: 'custom',
     server: { middlewareMode: true },
   });
