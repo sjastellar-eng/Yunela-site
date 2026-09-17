@@ -81,6 +81,22 @@ async function runConcurrentPair(fixture: ReturnType<typeof createFixture>, oper
   return Promise.all([first, second]);
 }
 
+async function runSingleWorker(databaseFile: string, operation: 'reservation' | 'consumption' | 'release' | 'rollback', fulfillmentId: string, operationKey: string) {
+  const ready = new SharedArrayBuffer(4);
+  const go = new SharedArrayBuffer(4);
+  const readyView = new Int32Array(ready);
+  const goView = new Int32Array(go);
+  const result = runWorker(databaseFile, operation, fulfillmentId, ready, go, operationKey);
+  const deadline = Date.now() + 15000;
+  while (Atomics.load(readyView, 0) < 1) {
+    if (Date.now() > deadline) throw new Error('F4 single worker barrier timed out');
+    await new Promise((resolve) => setTimeout(resolve, 1));
+  }
+  Atomics.store(goView, 0, 1);
+  Atomics.notify(goView, 0, 1);
+  return result;
+}
+
 function inventoryState(databaseFile: string, lotId: string) {
   const db = openDatabase(databaseFile);
   const lot = db.prepare('SELECT inventory_quantity AS quantity FROM tea_lots WHERE id=?').get(lotId) as { quantity: number };
@@ -157,53 +173,33 @@ describe('F4 inventory concurrency — independent SQLite connections through pr
     }
   });
 
-  it('rolls back production consumption atomically after a later allocation fails, then allows an independent reservation', async () => {
+  it('rolls back the production PACKED transaction after a downstream database failure, then permits an independent reservation after release', async () => {
     const fixture = createFixture();
     try {
+      const allocationId = randomUUID();
       const db = openDatabase(fixture.databaseFile);
-      const firstAllocation = randomUUID();
-      const secondAllocation = randomUUID();
-      db.prepare('INSERT INTO inventory_allocations (id,fulfillment_item_id,tea_lot_id,quantity,status,allocated_at,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?)').run(firstAllocation, fixture.fulfillmentItemA, fixture.lotId, 3, 'RESERVED', fixture.now, fixture.now, fixture.now);
-      db.prepare('INSERT INTO inventory_allocations (id,fulfillment_item_id,tea_lot_id,quantity,status,allocated_at,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?)').run(secondAllocation, fixture.fulfillmentItemA, fixture.lotId, 3, 'RESERVED', fixture.now, fixture.now, fixture.now);
+      db.prepare('INSERT INTO inventory_allocations (id,fulfillment_item_id,tea_lot_id,quantity,status,allocated_at,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?)').run(allocationId, fixture.fulfillmentItemA, fixture.lotId, RESERVATION_QUANTITY, 'RESERVED', fixture.now, fixture.now, fixture.now);
+      db.exec("CREATE TRIGGER f4_force_packed_failure BEFORE UPDATE OF status ON fulfillments WHEN NEW.status = 'PACKED' BEGIN SELECT RAISE(ABORT, 'F4 forced downstream failure'); END;");
       db.close();
 
-      const ready = new SharedArrayBuffer(4);
-      const go = new SharedArrayBuffer(4);
-      const rolledBack = runWorker(fixture.databaseFile, 'rollback', fixture.fulfillmentA, ready, go, `rollback-${randomUUID()}`);
-      const readyView = new Int32Array(ready);
-      const goView = new Int32Array(go);
-      const deadline = Date.now() + 15000;
-      while (Atomics.load(readyView, 0) < 1) {
-        if (Date.now() > deadline) throw new Error('F4 rollback worker barrier timed out');
-        await new Promise((resolve) => setTimeout(resolve, 1));
-      }
-      Atomics.store(goView, 0, 1);
-      Atomics.notify(goView, 0, 1);
-      expect(await rolledBack).toBe(true);
+      expect(await runSingleWorker(fixture.databaseFile, 'rollback', fixture.fulfillmentA, `rollback-${randomUUID()}`)).toBe(true);
       const afterRollback = inventoryState(fixture.databaseFile, fixture.lotId);
       expect(afterRollback.physical).toBe(INVENTORY);
-      expect(afterRollback.reserved).toBe(6);
+      expect(afterRollback.reserved).toBe(RESERVATION_QUANTITY);
       expect(afterRollback.consumed).toBe(0);
       expect(afterRollback.released).toBe(0);
 
-      const ready2 = new SharedArrayBuffer(4);
-      const go2 = new SharedArrayBuffer(4);
-      const reservation = runWorker(fixture.databaseFile, 'reservation', fixture.fulfillmentB, ready2, go2, `reservation-after-rollback-${randomUUID()}`);
-      const readyView2 = new Int32Array(ready2);
-      const goView2 = new Int32Array(go2);
-      const deadline2 = Date.now() + 15000;
-      while (Atomics.load(readyView2, 0) < 1) {
-        if (Date.now() > deadline2) throw new Error('F4 follow-up worker barrier timed out');
-        await new Promise((resolve) => setTimeout(resolve, 1));
-      }
-      Atomics.store(goView2, 0, 1);
-      Atomics.notify(goView2, 0, 1);
-      expect(await reservation).toBe(false);
+      const cleanupDb = openDatabase(fixture.databaseFile);
+      cleanupDb.exec('DROP TRIGGER f4_force_packed_failure');
+      cleanupDb.close();
+      expect(await runSingleWorker(fixture.databaseFile, 'release', fixture.fulfillmentA, `release-after-rollback-${randomUUID()}`)).toBe(true);
+      expect(await runSingleWorker(fixture.databaseFile, 'reservation', fixture.fulfillmentB, `reservation-after-rollback-${randomUUID()}`)).toBe(true);
+
       const finalState = inventoryState(fixture.databaseFile, fixture.lotId);
       expect(finalState.physical).toBe(INVENTORY);
-      expect(finalState.reserved).toBe(6);
+      expect(finalState.reserved).toBe(RESERVATION_QUANTITY);
       expect(finalState.consumed).toBe(0);
-      expect(finalState.released).toBe(0);
+      expect(finalState.released).toBe(RESERVATION_QUANTITY);
     } finally {
       rmSync(fixture.directory, { recursive: true, force: true });
     }
