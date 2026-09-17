@@ -28,8 +28,13 @@ async function run() {
     const repo = new SqliteFulfillmentMutationRepository(db);
     const service = new FulfillmentApplicationService(repo);
     if (workerData.operation === 'reservation') {
-      service.allocateInventory(workerData.fulfillmentId, workerData.operationKey);
-      return true;
+      try {
+        service.allocateInventory(workerData.fulfillmentId, workerData.operationKey);
+        return true;
+      } catch (error) {
+        if (error instanceof Error && error.message.startsWith('Insufficient inventory')) return false;
+        throw error;
+      }
     }
     if (workerData.operation === 'consumption') {
       service.consumeInventory(workerData.fulfillmentId, workerData.operationKey);
