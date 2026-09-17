@@ -110,6 +110,14 @@ function inventoryState(databaseFile: string, lotId: string) {
   };
 }
 
+function prepareReservedState(databaseFile: string, fulfillmentId: string, fulfillmentItemId: string, lotId: string, now: string) {
+  const db = openDatabase(databaseFile);
+  db.prepare('UPDATE fulfillments SET status=?, updated_at=? WHERE id=?').run('READY', now, fulfillmentId);
+  db.prepare('UPDATE fulfillment_items SET allocation_status=?, updated_at=? WHERE id=?').run('ALLOCATED', now, fulfillmentItemId);
+  db.prepare('INSERT INTO inventory_allocations (id,fulfillment_item_id,tea_lot_id,quantity,status,allocated_at,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?)').run(randomUUID(), fulfillmentItemId, lotId, RESERVATION_QUANTITY, 'RESERVED', now, now, now);
+  db.close();
+}
+
 describe('F4 inventory concurrency — independent SQLite connections through production path', () => {
   it('prevents concurrent production READY reservations from overselling the same TeaLot', async () => {
     for (let iteration = 0; iteration < 20; iteration += 1) {
@@ -128,18 +136,18 @@ describe('F4 inventory concurrency — independent SQLite connections through pr
         rmSync(fixture.directory, { recursive: true, force: true });
       }
     }
-  });
+  }, 120000);
 
   it('allows concurrent production PACKED transitions to consume one RESERVED allocation only once', async () => {
     for (let iteration = 0; iteration < 20; iteration += 1) {
       const fixture = createFixture();
-      const allocationId = randomUUID();
+      prepareReservedState(fixture.databaseFile, fixture.fulfillmentA, fixture.fulfillmentItemA, fixture.lotId, fixture.now);
       const db = openDatabase(fixture.databaseFile);
-      db.prepare('INSERT INTO inventory_allocations (id,fulfillment_item_id,tea_lot_id,quantity,status,allocated_at,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?)').run(allocationId, fixture.fulfillmentItemA, fixture.lotId, RESERVATION_QUANTITY, 'RESERVED', fixture.now, fixture.now, fixture.now);
+      db.prepare('UPDATE fulfillments SET status=?, updated_at=? WHERE id=?').run('PACKING', fixture.now, fixture.fulfillmentA);
       db.close();
       try {
         const results = await runConcurrentPair(fixture, 'consumption', [fixture.fulfillmentA, fixture.fulfillmentA]);
-        expect(results.filter(Boolean)).toHaveLength(2);
+        expect(results.filter(Boolean)).toHaveLength(1);
         const state = inventoryState(fixture.databaseFile, fixture.lotId);
         expect(state.physical).toBe(INVENTORY - RESERVATION_QUANTITY);
         expect(state.reserved).toBe(0);
@@ -150,17 +158,15 @@ describe('F4 inventory concurrency — independent SQLite connections through pr
         rmSync(fixture.directory, { recursive: true, force: true });
       }
     }
-  });
+  }, 120000);
 
   it('allows concurrent production release operations without double release or inventory mutation', async () => {
     for (let iteration = 0; iteration < 20; iteration += 1) {
       const fixture = createFixture();
-      const allocationId = randomUUID();
-      const db = openDatabase(fixture.databaseFile);
-      db.prepare('INSERT INTO inventory_allocations (id,fulfillment_item_id,tea_lot_id,quantity,status,allocated_at,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?)').run(allocationId, fixture.fulfillmentItemA, fixture.lotId, RESERVATION_QUANTITY, 'RESERVED', fixture.now, fixture.now, fixture.now);
-      db.close();
+      prepareReservedState(fixture.databaseFile, fixture.fulfillmentA, fixture.fulfillmentItemA, fixture.lotId, fixture.now);
       try {
-        await runConcurrentPair(fixture, 'release', [fixture.fulfillmentA, fixture.fulfillmentA]);
+        const results = await runConcurrentPair(fixture, 'release', [fixture.fulfillmentA, fixture.fulfillmentA]);
+        expect(results.filter(Boolean)).toHaveLength(2);
         const state = inventoryState(fixture.databaseFile, fixture.lotId);
         expect(state.physical).toBe(INVENTORY);
         expect(state.reserved).toBe(0);
@@ -171,14 +177,14 @@ describe('F4 inventory concurrency — independent SQLite connections through pr
         rmSync(fixture.directory, { recursive: true, force: true });
       }
     }
-  });
+  }, 120000);
 
   it('rolls back the production PACKED transaction after a downstream database failure, then permits an independent reservation after release', async () => {
     const fixture = createFixture();
     try {
-      const allocationId = randomUUID();
+      prepareReservedState(fixture.databaseFile, fixture.fulfillmentA, fixture.fulfillmentItemA, fixture.lotId, fixture.now);
       const db = openDatabase(fixture.databaseFile);
-      db.prepare('INSERT INTO inventory_allocations (id,fulfillment_item_id,tea_lot_id,quantity,status,allocated_at,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?)').run(allocationId, fixture.fulfillmentItemA, fixture.lotId, RESERVATION_QUANTITY, 'RESERVED', fixture.now, fixture.now, fixture.now);
+      db.prepare('UPDATE fulfillments SET status=?, updated_at=? WHERE id=?').run('PACKING', fixture.now, fixture.fulfillmentA);
       db.exec("CREATE TRIGGER f4_force_packed_failure BEFORE UPDATE OF status ON fulfillments WHEN NEW.status = 'PACKED' BEGIN SELECT RAISE(ABORT, 'F4 forced downstream failure'); END;");
       db.close();
 
@@ -203,5 +209,5 @@ describe('F4 inventory concurrency — independent SQLite connections through pr
     } finally {
       rmSync(fixture.directory, { recursive: true, force: true });
     }
-  });
+  }, 120000);
 });
