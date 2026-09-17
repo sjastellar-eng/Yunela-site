@@ -21,7 +21,10 @@ export type ApplicationErrorCode =
   | 'INVALID_CURRENCY'
   | 'PURCHASE_ALREADY_RECORDED'
   | 'PURCHASE_NOT_AUTHORIZED'
-  | 'AUDIT_WRITE_FAILED';
+  | 'AUDIT_WRITE_FAILED'
+  | 'AUTHENTICATION_REQUIRED'
+  | 'INVALID_CREDENTIALS'
+  | 'FORBIDDEN';
 
 export class ApplicationError extends Error {
   constructor(public readonly code: ApplicationErrorCode, message: string, options?: { cause?: unknown }) {
