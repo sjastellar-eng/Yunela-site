@@ -1,0 +1,77 @@
+import { createServer } from 'vite';
+import { cwd } from 'node:process';
+import { parentPort, workerData } from 'node:worker_threads';
+
+async function loadProduction() {
+  const vite = await createServer({
+    configFile: false,
+    root: cwd(),
+    appType: 'custom',
+    server: { middlewareMode: true },
+  });
+  try {
+    const [{ openDatabase }, { SqliteFulfillmentMutationRepository }, { FulfillmentApplicationService }] = await Promise.all([
+      vite.ssrLoadModule('/src/database/client.ts'),
+      vite.ssrLoadModule('/src/application/fulfillment/sqliteDomainRepository.ts'),
+      vite.ssrLoadModule('/src/application/fulfillment/serviceV2.ts'),
+    ]);
+    return { vite, openDatabase, SqliteFulfillmentMutationRepository, FulfillmentApplicationService };
+  } catch {
+    await vite.close();
+    throw new Error('F4 production module loading failed');
+  }
+}
+
+async function run() {
+  const { vite, openDatabase, SqliteFulfillmentMutationRepository, FulfillmentApplicationService } = await loadProduction();
+  const db = openDatabase(workerData.databaseFile);
+  try {
+    const repo = new SqliteFulfillmentMutationRepository(db);
+    const service = new FulfillmentApplicationService(repo);
+    if (workerData.operation === 'reservation') {
+      try {
+        service.allocateInventory(workerData.fulfillmentId, workerData.operationKey);
+        return true;
+      } catch (error) {
+        if (error instanceof Error && (error.message.startsWith('Insufficient inventory') || error.message.startsWith('Allocation failed for tea '))) return false;
+        throw error;
+      }
+    }
+    if (workerData.operation === 'consumption') {
+      try {
+        service.consumeInventory(workerData.fulfillmentId, workerData.operationKey);
+        return true;
+      } catch (error) {
+        if (error instanceof Error && (error.message.startsWith('Fulfillment cannot transition from PACKED') || error.message.startsWith('Inventory allocation changed concurrently'))) return false;
+        throw error;
+      }
+    }
+    if (workerData.operation === 'release') {
+      service.releaseInventory(workerData.fulfillmentId, workerData.operationKey);
+      return true;
+    }
+    if (workerData.operation === 'rollback') {
+      try {
+        service.consumeInventory(workerData.fulfillmentId, workerData.operationKey);
+        return false;
+      } catch {
+        return true;
+      }
+    }
+    throw new Error(`Unknown F4 operation: ${workerData.operation}`);
+  } finally {
+    db.close();
+    await vite.close();
+  }
+}
+
+const ready = new Int32Array(workerData.readyBuffer);
+const go = new Int32Array(workerData.goBuffer);
+Atomics.add(ready, 0, 1);
+Atomics.notify(ready, 0);
+while (Atomics.load(go, 0) === 0) Atomics.wait(go, 0, 0);
+
+run().then(
+  (result) => parentPort.postMessage({ ok: true, result }),
+  (error) => parentPort.postMessage({ ok: false, error: error instanceof Error ? error.stack ?? error.message : String(error) }),
+);
