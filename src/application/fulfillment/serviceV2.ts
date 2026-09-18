@@ -1,9 +1,11 @@
-import { randomUUID } from 'node:crypto';\nimport { URL } from 'node:url';
+import { randomUUID } from 'node:crypto';
+import { URL } from 'node:url';
 import { ApplicationError } from '../errors';
 import type { OrderItemSnapshot } from '../../contracts/commerce';
 import { assertDiscoveryBoxComposition, assertFulfillmentTransition, FulfillmentDomainError, type FulfillmentStatus, type ShipmentStatus } from '../../domain/fulfillment';
 import type { FulfillmentRecord, FulfillmentItemRecord, ShipmentRecord, FulfillmentEventRecord, InventoryAllocationRecord } from './repositories';
-import type { FulfillmentMutationRepository } from './sqliteDomainRepository';\nimport type { AnalyticsTracker } from '../../contracts/analytics';
+import type { FulfillmentMutationRepository } from './sqliteDomainRepository';
+import type { AnalyticsTracker } from '../../contracts/analytics';
 
 export interface ReplacementApproval {
   originalTeaId: string;
@@ -36,7 +38,7 @@ function snapshotItem(item: OrderItemSnapshot) { return JSON.stringify(item); }
 function provenance(item: OrderItemSnapshot) { return JSON.stringify({ teaId: item.teaId, recommendationHistoryId: item.recommendationHistoryId, discoveryBoxSnapshot: item.discoveryBoxSnapshot }); }
 
 export class FulfillmentApplicationService {
-  constructor(private readonly repo: FulfillmentMutationRepository) {}
+  constructor(private readonly repo: FulfillmentMutationRepository, private readonly analytics?: AnalyticsTracker) {}
 
   createFulfillmentFromPurchase(purchaseId: string, operationKey = `create:${purchaseId}`): FulfillmentRecord {
     return this.repo.transaction(() => {
@@ -405,5 +407,6 @@ export class FulfillmentApplicationService {
   private appendEventRequired(event: FulfillmentEventRecord) { const result = this.repo.appendFulfillmentEvent(event); if (!result) { const existing = this.repo.listFulfillmentEvents(event.fulfillmentId).find(e => e.eventKey === event.eventKey); if (!existing) throw new ApplicationError('AUDIT_WRITE_FAILED', `Fulfillment audit event ${event.eventKey} was not persisted`); return existing; } return result; }
   private requireExecutionActor(actor: string) { if (!actor.trim() || (!actor.startsWith('YUNELA:') && !actor.startsWith('SUPPLIER:') && !actor.startsWith('SYSTEM'))) throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'Authorized execution actor required'); }
   private requireReadyActor(actor: string) { if (!actor.trim() || (!actor.startsWith('YUNELA:') && !actor.startsWith('SYSTEM'))) throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'YUNELA or SYSTEM authority required for READY'); }
-  private requireYunela(actor: string) { if (!actor.startsWith('YUNELA:') && !actor.startsWith('OPERATOR:') && !actor.startsWith('SYSTEM')) throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'YUNELA/operator-controlled operation required'); }\n  private validateTracking(input: { carrier?: string; trackingNumber?: string; trackingUrl?: string }) {\n    if (input.carrier === undefined && input.trackingNumber === undefined && input.trackingUrl === undefined) throw new ApplicationError('VALIDATION_ERROR', 'At least one tracking field is required');\n    if (input.carrier !== undefined && (!input.carrier.trim() || input.carrier.trim().length > 128)) throw new ApplicationError('VALIDATION_ERROR', 'carrier must contain 1-128 characters');\n    if (input.trackingNumber !== undefined && (!input.trackingNumber.trim() || input.trackingNumber.trim().length > 256)) throw new ApplicationError('VALIDATION_ERROR', 'trackingNumber must contain 1-256 characters');\n    if (input.trackingUrl !== undefined) { try { const url = new URL(input.trackingUrl.trim()); if (!['http:', 'https:'].includes(url.protocol)) throw new Error(); } catch { throw new ApplicationError('VALIDATION_ERROR', 'trackingUrl must be a valid HTTP(S) URL'); } }\n  }\n  private track(event: Parameters<AnalyticsTracker['track']>[0], payload: Parameters<AnalyticsTracker['track']>[1]) { this.analytics?.track(event, payload); }
+  private requireYunela(actor: string) { if (!actor.startsWith('YUNELA:') && !actor.startsWith('OPERATOR:') && !actor.startsWith('SYSTEM')) throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'YUNELA/operator-controlled operation required'); }
+  private validateTracking(input: { carrier?: string; trackingNumber?: string; trackingUrl?: string }) {\n    if (input.carrier === undefined && input.trackingNumber === undefined && input.trackingUrl === undefined) throw new ApplicationError('VALIDATION_ERROR', 'At least one tracking field is required');\n    if (input.carrier !== undefined && (!input.carrier.trim() || input.carrier.trim().length > 128)) throw new ApplicationError('VALIDATION_ERROR', 'carrier must contain 1-128 characters');\n    if (input.trackingNumber !== undefined && (!input.trackingNumber.trim() || input.trackingNumber.trim().length > 256)) throw new ApplicationError('VALIDATION_ERROR', 'trackingNumber must contain 1-256 characters');\n    if (input.trackingUrl !== undefined) { try { const url = new URL(input.trackingUrl.trim()); if (!['http:', 'https:'].includes(url.protocol)) throw new Error(); } catch { throw new ApplicationError('VALIDATION_ERROR', 'trackingUrl must be a valid HTTP(S) URL'); } }\n  }\n  private track(event: Parameters<AnalyticsTracker['track']>[0], payload: Parameters<AnalyticsTracker['track']>[1]) { this.analytics?.track(event, payload); }
 }
