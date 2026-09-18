@@ -14,6 +14,8 @@ const SECRET = 'test-secret-that-is-at-least-32-characters-long';
 type FakeFulfillment = {
   getFulfillment: (id: string) => FulfillmentRecord;
   createShipment: (...args: unknown[]) => ShipmentRecord;
+  getShipment: (id: string) => ShipmentRecord;
+  updateShipmentTracking: (...args: unknown[]) => ShipmentRecord;
   recordCustomerApproval: (id: string, approval: ReplacementApproval, operationKey: string) => ReplacementApproval;
 };
 
@@ -70,6 +72,8 @@ describe('F3 authenticated fulfillment API', () => {
     fake = {
       getFulfillment: () => ({ ...record }),
       createShipment: (id, actor, operationKey) => ({ id: 'shipment-1', fulfillmentId: String(id), status: 'CREATED', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString(), carrier: String(actor), trackingNumber: String(operationKey) }),
+      getShipment: () => ({ id: 'shipment-1', fulfillmentId: 'fulfillment-1', status: 'CREATED', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() }),
+      updateShipmentTracking: () => ({ id: 'shipment-1', fulfillmentId: 'fulfillment-1', status: 'CREATED', carrier: 'DHL', trackingNumber: 'DHL-1', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() }),
       recordCustomerApproval: (_id, approval) => { approved = approval; return approval; },
     };
     approved = undefined;
@@ -131,6 +135,33 @@ describe('F3 authenticated fulfillment API', () => {
     const created = await http(server, 'POST', '/api/v1/fulfillments/fulfillment-1/shipment', { operationKey: 'ship-1' }, operatorToken);
     expect(created.status).toBe(201);
     expect((created.body as { carrier?: string }).carrier).toBe(`OPERATOR:${auth.login('operator@example.com', 'operator-password-123').identity.id}`);
+  });
+
+  it('allows a customer to read their own Shipment', async () => {
+    const response = await http(server, 'GET', '/api/v1/fulfillments/fulfillment-1/shipment', undefined, ownerToken);
+    expect(response.status).toBe(200);
+    expect((response.body as { id?: string }).id).toBe('shipment-1');
+  });
+
+  it('denies a customer access to another customer Shipment', async () => {
+    const response = await http(server, 'GET', '/api/v1/fulfillments/fulfillment-1/shipment', undefined, otherToken);
+    expect(response.status).toBe(403);
+  });
+
+  it('rejects customer Shipment lifecycle or tracking mutation', async () => {
+    const response = await http(server, 'PATCH', '/api/v1/fulfillments/fulfillment-1/shipment/tracking', { operationKey: 'customer-track', trackingNumber: 'ATTACK' }, ownerToken);
+    expect(response.status).toBe(403);
+  });
+
+  it('rejects supplier Shipment mutation', async () => {
+    const response = await http(server, 'PATCH', '/api/v1/fulfillments/fulfillment-1/shipment/tracking', { operationKey: 'supplier-track', trackingNumber: 'ATTACK' }, supplierToken);
+    expect(response.status).toBe(403);
+  });
+
+  it('allows operator manual tracking management', async () => {
+    const response = await http(server, 'PATCH', '/api/v1/fulfillments/fulfillment-1/shipment/tracking', { operationKey: 'operator-track', carrier: 'DHL', trackingNumber: 'DHL-1' }, operatorToken);
+    expect(response.status).toBe(200);
+    expect((response.body as { trackingNumber?: string }).trackingNumber).toBe('DHL-1');
   });
 
   it('does not allow SYSTEM to authenticate through the public HTTP flow', async () => {
