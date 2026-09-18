@@ -40,15 +40,16 @@ function packed(f:ReturnType<typeof fixture>) {
   return fulfillment;
 }
 function runConcurrentCreate(databaseFile:string, fulfillmentId:string) {
-  const ready=new SharedArrayBuffer(4), go=new SharedArrayBuffer(4);
-  const workers=[0,1].map(i=>new Worker(join(process.cwd(),'src/application/fulfillment/shipment-concurrency.worker.mjs'),{workerData:{databaseFile,fulfillmentId,operationKey:'concurrent-'+i,readyBuffer:ready,goBuffer:go}}));
-  return new Promise<Array<{ok:boolean;shipmentId?:string;error?:string}>>((resolve,reject)=>{
-    const results:Array<{ok:boolean;shipmentId?:string;error?:string}>=[]; let readyCount=0;
-    for(const worker of workers){
-      worker.on('message',m=>{if(m.ready){readyCount+=1;if(readyCount===2){Atomics.store(new Int32Array(go),0,1);Atomics.notify(new Int32Array(go),0,2);}}else{results.push(m);if(results.length===2)resolve(results);}});
-      worker.on('error',reject);
-    }
-  });
+  const readyBuffer=new SharedArrayBuffer(4), goBuffer=new SharedArrayBuffer(4);
+  const ready=new Int32Array(readyBuffer), go=new Int32Array(goBuffer);
+  const workers=[0,1].map(i=>new Worker(join(process.cwd(),'src/application/fulfillment/shipment-concurrency.worker.mjs'),{workerData:{databaseFile,fulfillmentId,operationKey:'concurrent-'+i,readyBuffer,goBuffer}}));
+  while (Atomics.load(ready,0)<2) Atomics.wait(ready,0,Atomics.load(ready,0));
+  Atomics.store(go,0,1);
+  Atomics.notify(go,0,2);
+  return Promise.all(workers.map(worker=>new Promise<{ok:boolean;shipmentId?:string;error?:string}>((resolve,reject)=>{
+    worker.once('message',resolve);
+    worker.once('error',reject);
+  }))).finally(()=>workers.forEach(worker=>worker.terminate()));
 }
 
 afterEach(()=>{while(databases.length) databases.pop()?.close();});
