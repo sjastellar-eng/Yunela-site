@@ -163,6 +163,7 @@ export class FulfillmentApplicationService {
 
   createShipment(id: string, actor: string, operationKey: string, input: { carrier?: string; trackingNumber?: string; trackingUrl?: string } = {}): ShipmentRecord {
     this.requireYunela(actor);
+    this.validateTracking(input);
     const result = this.repo.transaction(() => {
       const f = this.require(id);
       if (f.status !== 'PACKED') throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'Shipment can only be created after PACKED');
