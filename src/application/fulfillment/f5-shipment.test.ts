@@ -54,7 +54,7 @@ function runConcurrentCreate(databaseFile:string, fulfillmentId:string) {
 
 afterEach(()=>{while(databases.length) databases.pop()?.close();});
 
-describe.skip('F5 Shipment application',()=>{
+describe.only('F5 Shipment application',()=>{
   it('creates Shipment only from PACKED Fulfillment',()=>{const f=fixture();const p=packed(f);const s=f.service.createShipment(p.id,'OPERATOR:f5','create');expect(s.status).toBe('CREATED');expect(f.service.getShipment(p.id).id).toBe(s.id);});
   it('rejects Shipment creation before PACKED',()=>{const f=fixture();const p=f.service.createFulfillmentFromPurchase(f.purchaseId);expect(()=>f.service.createShipment(p.id,'OPERATOR:f5','create')).toThrow(/after PACKED/);});
   it.skip('prevents duplicate Shipment creation across two independent SQLite connections',async()=>{const databaseFile=join(tmpdir(),'yunela-f5-'+randomUUID()+'.db');const f=fixture(databaseFile);try{const p=packed(f);const results=await runConcurrentCreate(databaseFile,p.id);expect(results).toHaveLength(2);expect(results.every(r=>r.ok)).toBe(true);expect(new Set(results.map(r=>r.shipmentId)).size).toBe(1);expect(f.db.prepare('SELECT COUNT(*) c FROM shipments WHERE fulfillment_id=?').get(p.id)).toEqual({c:1});}finally{rmSync(databaseFile,{force:true});}});
