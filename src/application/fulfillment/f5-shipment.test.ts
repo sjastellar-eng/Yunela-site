@@ -35,8 +35,8 @@ function fixture(filename = ':memory:') {
 function packed(f:ReturnType<typeof fixture>) {
   const fulfillment=f.service.createFulfillmentFromPurchase(f.purchaseId);
   f.service.markReady(fulfillment.id,'SYSTEM','ready');
-  f.service.startPacking(fulfillment.id,'OPERATOR:f5','packing');
-  f.service.markPacked(fulfillment.id,'OPERATOR:f5','packed');
+  f.service.startPacking(fulfillment.id,'YUNELA:f5','packing');
+  f.service.markPacked(fulfillment.id,'YUNELA:f5','packed');
   return fulfillment;
 }
 function runConcurrentCreate(databaseFile:string, fulfillmentId:string) {
