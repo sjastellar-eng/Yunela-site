@@ -5,7 +5,7 @@ import type { OrderItemSnapshot } from '../../contracts/commerce';
 import { assertDiscoveryBoxComposition, assertFulfillmentTransition, FulfillmentDomainError, type FulfillmentStatus, type ShipmentStatus } from '../../domain/fulfillment';
 import type { FulfillmentRecord, FulfillmentItemRecord, ShipmentRecord, FulfillmentEventRecord, InventoryAllocationRecord } from './repositories';
 import type { FulfillmentMutationRepository } from './sqliteDomainRepository';
-import type { AnalyticsTracker } from '../../contracts/analytics';
+import type { AnalyticsEventName, AnalyticsTracker } from '../../contracts/analytics';
 
 export interface ReplacementApproval {
   originalTeaId: string;
@@ -219,7 +219,7 @@ export class FulfillmentApplicationService {
       return { shipment: resultShipment, changed: true };
     });
     if (result.changed) {
-      const event = to === 'SHIPPED' ? 'order_shipped' : to === 'DELIVERED' ? 'order_delivered' : to === 'FAILED' ? 'delivery_failed' : to === 'RETURNED' ? 'order_returned' : undefined;
+      const event: AnalyticsEventName | undefined = to === 'SHIPPED' ? 'order_shipped' : to === 'DELIVERED' ? 'order_delivered' : to === 'FAILED' ? 'delivery_failed' : to === 'RETURNED' ? 'order_returned' : undefined;
       if (event) this.track(event, { fulfillmentId: id, shipmentId: result.shipment.id });
     }
     return result.shipment;
