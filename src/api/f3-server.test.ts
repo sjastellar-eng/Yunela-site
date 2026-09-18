@@ -102,7 +102,9 @@ describe('F3 authenticated fulfillment API', () => {
   });
 
   it('returns 401 for a forged token', async () => {
-    const token = `${ownerToken.slice(0, -1)}${ownerToken.endsWith('A') ? 'B' : 'A'}`;
+    const parts = ownerToken.split('.');
+    const forgedSignature = `${parts[2][0] === 'A' ? 'B' : 'A'}${parts[2].slice(1)}`;
+    const token = `${parts[0]}.${parts[1]}.${forgedSignature}`;
     const response = await http(server, 'GET', '/api/v1/fulfillments/fulfillment-1', undefined, token);
     expect(response.status).toBe(401);
   });
