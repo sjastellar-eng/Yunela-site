@@ -163,7 +163,7 @@ export class FulfillmentApplicationService {
 
   createShipment(id: string, actor: string, operationKey: string, input: { carrier?: string; trackingNumber?: string; trackingUrl?: string } = {}): ShipmentRecord {
     this.requireYunela(actor);
-    this.validateTracking(input);
+    this.validateTracking(input, false);
     const result = this.repo.transaction(() => {
       const f = this.require(id);
       if (f.status !== 'PACKED') throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'Shipment can only be created after PACKED');
@@ -181,7 +181,7 @@ export class FulfillmentApplicationService {
 
   updateShipmentTracking(id: string, actor: string, operationKey: string, input: { carrier?: string; trackingNumber?: string; trackingUrl?: string }): ShipmentRecord {
     this.requireYunela(actor);
-    this.validateTracking(input);
+    this.validateTracking(input, true);
     return this.repo.transaction(() => {
       const f = this.require(id);
       const shipment = this.repo.getShipmentByFulfillmentId(id);
@@ -409,8 +409,8 @@ export class FulfillmentApplicationService {
   private requireExecutionActor(actor: string) { if (!actor.trim() || (!actor.startsWith('YUNELA:') && !actor.startsWith('SUPPLIER:') && !actor.startsWith('SYSTEM'))) throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'Authorized execution actor required'); }
   private requireReadyActor(actor: string) { if (!actor.trim() || (!actor.startsWith('YUNELA:') && !actor.startsWith('SYSTEM'))) throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'YUNELA or SYSTEM authority required for READY'); }
   private requireYunela(actor: string) { if (!actor.startsWith('YUNELA:') && !actor.startsWith('OPERATOR:') && !actor.startsWith('SYSTEM')) throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'YUNELA/operator-controlled operation required'); }
-  private validateTracking(input: { carrier?: string; trackingNumber?: string; trackingUrl?: string }) {
-    if (input.carrier === undefined && input.trackingNumber === undefined && input.trackingUrl === undefined) throw new ApplicationError('VALIDATION_ERROR', 'At least one tracking field is required');
+  private validateTracking(input: { carrier?: string; trackingNumber?: string; trackingUrl?: string }, requireAny: boolean) {
+    if (requireAny && input.carrier === undefined && input.trackingNumber === undefined && input.trackingUrl === undefined) throw new ApplicationError('VALIDATION_ERROR', 'At least one tracking field is required');
     if (input.carrier !== undefined && (!input.carrier.trim() || input.carrier.trim().length > 128)) throw new ApplicationError('VALIDATION_ERROR', 'carrier must contain 1-128 characters');
     if (input.trackingNumber !== undefined && (!input.trackingNumber.trim() || input.trackingNumber.trim().length > 256)) throw new ApplicationError('VALIDATION_ERROR', 'trackingNumber must contain 1-256 characters');
     if (input.trackingUrl !== undefined) { try { const url = new URL(input.trackingUrl.trim()); if (!['http:', 'https:'].includes(url.protocol)) throw new Error(); } catch { throw new ApplicationError('VALIDATION_ERROR', 'trackingUrl must be a valid HTTP(S) URL'); } }
