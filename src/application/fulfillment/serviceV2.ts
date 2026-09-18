@@ -190,7 +190,7 @@ export class FulfillmentApplicationService {
       const ts = now();
       if (!this.repo.updateShipmentTracking(shipment.id, input, ts)) throw new ApplicationError('CONFLICT', 'Shipment changed concurrently');
       const result = this.repo.getShipmentByFulfillmentId(id)!;
-      this.appendEventRequired(this.event(id, 'SHIPMENT_TRACKING_UPDATED', f.status, f.status, actor, operationKey, ts));
+      this.appendEventRequired(this.event(id, 'SHIPMENT_TRACKING_UPDATED', f.status, f.status, actor, 'SHIPMENT_TRACKING:' + operationKey, ts));
       return result;
     });
   }
