@@ -5,15 +5,13 @@ import { parentPort, workerData } from 'node:worker_threads';
 async function run() {
   const vite = await createServer({ configFile: false, root: cwd(), appType: 'custom', server: { middlewareMode: true } });
   try {
-    const [{ openDatabase }, { applyMigrations }, { SqliteFulfillmentMutationRepository }, { FulfillmentApplicationService }] = await Promise.all([
+    const [{ openDatabase }, { SqliteFulfillmentMutationRepository }, { FulfillmentApplicationService }] = await Promise.all([
       vite.ssrLoadModule('/src/database/client.ts'),
-      vite.ssrLoadModule('/src/database/migrate.ts'),
       vite.ssrLoadModule('/src/application/fulfillment/sqliteDomainRepository.ts'),
       vite.ssrLoadModule('/src/application/fulfillment/serviceV3.ts'),
     ]);
     const db = openDatabase(workerData.databaseFile);
     try {
-      applyMigrations(db);
       const service = new FulfillmentApplicationService(new SqliteFulfillmentMutationRepository(db));
       const shipment = service.createShipment(workerData.fulfillmentId, 'OPERATOR:concurrency', workerData.operationKey);
       parentPort.postMessage({ ok: true, shipmentId: shipment.id });
