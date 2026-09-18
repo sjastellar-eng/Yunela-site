@@ -2,6 +2,7 @@ import { describe, expect, it, afterEach } from 'vitest';
 import { randomUUID } from 'node:crypto';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
+import { rmSync } from 'node:fs';
 import { Worker } from 'node:worker_threads';
 import { openDatabase } from '../../database/client';
 import { applyMigrations } from '../../database/migrate';
@@ -11,8 +12,8 @@ import type { AnalyticsEventName } from '../../contracts/analytics';
 
 const databases: Array<ReturnType<typeof openDatabase>> = [];
 
-function fixture() {
-  const db = openDatabase();
+function fixture(filename = ':memory:') {
+  const db = openDatabase(filename);
   applyMigrations(db);
   databases.push(db);
   const customerId=randomUUID(), orderId=randomUUID(), purchaseId=randomUUID(), attemptId=randomUUID(), itemId=randomUUID(), teaId=randomUUID(), lotId=randomUUID(), now=new Date().toISOString();
@@ -55,6 +56,7 @@ afterEach(()=>{while(databases.length) databases.pop()?.close();});
 describe('F5 Shipment application',()=>{
   it('creates Shipment only from PACKED Fulfillment',()=>{const f=fixture();const p=packed(f);const s=f.service.createShipment(p.id,'OPERATOR:f5','create');expect(s.status).toBe('CREATED');expect(f.service.getShipment(p.id).id).toBe(s.id);});
   it('rejects Shipment creation before PACKED',()=>{const f=fixture();const p=f.service.createFulfillmentFromPurchase(f.purchaseId);expect(()=>f.service.createShipment(p.id,'OPERATOR:f5','create')).toThrow(/after PACKED/);});
+  it('prevents duplicate Shipment creation across two independent SQLite connections',async()=>{const databaseFile=join(tmpdir(),'yunela-f5-'+randomUUID()+'.db');const f=fixture(databaseFile);try{const p=packed(f);const results=await runConcurrentCreate(databaseFile,p.id);expect(results).toHaveLength(2);expect(results.every(r=>r.ok)).toBe(true);expect(new Set(results.map(r=>r.shipmentId)).size).toBe(1);expect(f.db.prepare('SELECT COUNT(*) c FROM shipments WHERE fulfillment_id=?').get(p.id)).toEqual({c:1});}finally{rmSync(databaseFile,{force:true});}});
   it('enforces exactly one Shipment per Fulfillment',()=>{const f=fixture();const p=packed(f);const a=f.service.createShipment(p.id,'OPERATOR:f5','create-1');const b=f.service.createShipment(p.id,'OPERATOR:f5','create-2');expect(b.id).toBe(a.id);expect(f.db.prepare('SELECT COUNT(*) c FROM shipments WHERE fulfillment_id=?').get(p.id)).toEqual({c:1});});
   it('is idempotent for repeated create with the same operation key',()=>{const f=fixture();const p=packed(f);const a=f.service.createShipment(p.id,'OPERATOR:f5','same');const b=f.service.createShipment(p.id,'OPERATOR:f5','same');expect(b.id).toBe(a.id);expect(f.events.filter(e=>e.event==='shipment_created')).toHaveLength(1);});
   it('supports manual carrier and tracking data at creation with validation',()=>{const f=fixture();const p=packed(f);const s=f.service.createShipment(p.id,'OPERATOR:f5','create',{carrier:'Nova Poshta',trackingNumber:'NP123',trackingUrl:'https://example.com/track/NP123'});expect(s.carrier).toBe('Nova Poshta');expect(s.trackingNumber).toBe('NP123');expect(s.trackingUrl).toContain('https://');});
