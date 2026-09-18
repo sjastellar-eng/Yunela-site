@@ -109,39 +109,43 @@ export class FulfillmentApplicationService {
 
   markShipped(id: string, actor: string, operationKey: string): FulfillmentRecord {
     this.requireYunela(actor);
-    return this.repo.transaction(() => {
+    const result = this.repo.transaction(() => {
       const f = this.require(id);
       const key = eventKey(id, operationKey);
-      if (this.repo.listFulfillmentEvents(id).some(e => e.eventKey === key)) return f;
+      if (this.repo.listFulfillmentEvents(id).some(e => e.eventKey === key)) return { fulfillment: f, changed: false };
       domainGuard(() => assertFulfillmentTransition(f.status, 'SHIPPED'));
       const s = this.repo.getShipmentByFulfillmentId(id);
       if (!s) throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'Shipment must exist before SHIPPED');
-      if (s.status !== 'CREATED' && s.status !== 'SHIPPED') throw new ApplicationError('DOMAIN_RULE_VIOLATION', `Shipment is ${s.status}`);
+      if (s.status !== 'CREATED' && s.status !== 'SHIPPED') throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'Shipment is ' + s.status);
       const ts = now();
       if (s.status === 'CREATED' && !this.repo.updateShipmentStatus(s.id, 'CREATED', 'SHIPPED', ts)) throw new ApplicationError('CONFLICT', 'Shipment changed concurrently');
       if (!this.repo.setFulfillmentStatus(id, f.status, 'SHIPPED', ts)) throw new ApplicationError('CONFLICT', 'Fulfillment changed concurrently');
-      const result = this.require(id);
+      const fulfillment = this.require(id);
       this.appendEventRequired(this.event(id, 'STATE:PACKED->SHIPPED', f.status, 'SHIPPED', actor, operationKey, ts));
-      return result;
+      return { fulfillment, changed: true };
     });
+    if (result.changed) this.track('order_shipped', { fulfillmentId: id, shipmentId: this.getShipment(id).id });
+    return result.fulfillment;
   }
 
   markDelivered(id: string, actor: string, operationKey: string): FulfillmentRecord {
     this.requireYunela(actor);
-    return this.repo.transaction(() => {
+    const result = this.repo.transaction(() => {
       const f = this.require(id);
       const key = eventKey(id, operationKey);
-      if (this.repo.listFulfillmentEvents(id).some(e => e.eventKey === key)) return f;
+      if (this.repo.listFulfillmentEvents(id).some(e => e.eventKey === key)) return { fulfillment: f, changed: false };
       domainGuard(() => assertFulfillmentTransition(f.status, 'DELIVERED'));
       const s = this.repo.getShipmentByFulfillmentId(id);
       if (!s || s.status !== 'SHIPPED') throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'Shipment must be SHIPPED before delivery');
       const ts = now();
       if (!this.repo.updateShipmentStatus(s.id, 'SHIPPED', 'DELIVERED', ts)) throw new ApplicationError('CONFLICT', 'Shipment changed concurrently');
       if (!this.repo.setFulfillmentStatus(id, f.status, 'DELIVERED', ts)) throw new ApplicationError('CONFLICT', 'Fulfillment changed concurrently');
-      const result = this.require(id);
+      const fulfillment = this.require(id);
       this.appendEventRequired(this.event(id, 'STATE:SHIPPED->DELIVERED', f.status, 'DELIVERED', actor, operationKey, ts));
-      return result;
+      return { fulfillment, changed: true };
     });
+    if (result.changed) this.track('order_delivered', { fulfillmentId: id, shipmentId: this.getShipment(id).id });
+    return result.fulfillment;
   }
 
   markFailed(id: string, actor: string, reason: string, operationKey: string) { this.requireYunela(actor); return this.exception(id, 'FAILED', actor, reason, operationKey); }
