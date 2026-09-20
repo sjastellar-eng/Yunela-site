@@ -52,6 +52,7 @@ function runConcurrentCreate(databaseFile:string, fulfillmentId:string) {
   }))).finally(()=>workers.forEach(worker=>worker.terminate()));
 }
 
+// These workers open separate SQLite connections and execute the production service/repository path.
 function runConcurrentOperation(databaseFile:string, fulfillmentId:string, operation:{mode:'transition'|'tracking';operationKey:string;to?:'DELIVERED'|'FAILED';input?:{carrier?:string;trackingNumber?:string;trackingUrl?:string}}) {
   const readyBuffer=new SharedArrayBuffer(4), goBuffer=new SharedArrayBuffer(4);
   const ready=new Int32Array(readyBuffer), go=new Int32Array(goBuffer);
