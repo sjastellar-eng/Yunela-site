@@ -206,7 +206,7 @@ export class FulfillmentApplicationService {
       if (this.repo.listFulfillmentEvents(id).some(e => e.eventKey === key)) return { shipment: s, changed: false };
       const shipmentStatus = s.status as ShipmentStatus;
       if (shipmentStatus === to) return { shipment: s, changed: false };
-      const allowed: Record<ShipmentStatus, ShipmentStatus[]> = { CREATED: ['SHIPPED'], SHIPPED: ['DELIVERED', 'FAILED', 'LOST', 'RETURNED'], DELIVERED: ['RETURNED'], FAILED: [], LOST: [], RETURNED: [] };
+      const allowed: Record<ShipmentStatus, ShipmentStatus[]> = { CREATED: ['SHIPPED', 'FAILED'], SHIPPED: ['DELIVERED', 'FAILED', 'LOST', 'RETURNED'], DELIVERED: ['RETURNED'], FAILED: [], LOST: [], RETURNED: [] };
       if (!allowed[shipmentStatus].includes(to)) throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'Shipment cannot transition from ' + shipmentStatus + ' to ' + to);
       const fulfillmentTarget: Record<ShipmentStatus, FulfillmentStatus | undefined> = { CREATED: undefined, SHIPPED: 'SHIPPED', DELIVERED: 'DELIVERED', FAILED: 'FAILED', LOST: 'LOST', RETURNED: 'RETURNED' };
       const targetFulfillment = fulfillmentTarget[to];

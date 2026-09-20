@@ -13,8 +13,20 @@ async function run() {
     const db = openDatabase(workerData.databaseFile);
     try {
       const service = new FulfillmentApplicationService(new SqliteFulfillmentMutationRepository(db));
-      const shipment = service.createShipment(workerData.fulfillmentId, 'OPERATOR:concurrency', workerData.operationKey);
-      parentPort.postMessage({ ok: true, shipmentId: shipment.id });
+      let result;
+      if (workerData.mode === 'create') {
+        const shipment = service.createShipment(workerData.fulfillmentId, 'OPERATOR:concurrency', workerData.operationKey);
+        result = { shipmentId: shipment.id, status: shipment.status };
+      } else if (workerData.mode === 'transition') {
+        const shipment = service.transitionShipment(workerData.fulfillmentId, workerData.to, 'OPERATOR:concurrency', workerData.operationKey);
+        result = { shipmentId: shipment.id, status: shipment.status };
+      } else if (workerData.mode === 'tracking') {
+        const shipment = service.updateShipmentTracking(workerData.fulfillmentId, 'OPERATOR:concurrency', workerData.operationKey, workerData.input);
+        result = { shipmentId: shipment.id, status: shipment.status, carrier: shipment.carrier, trackingNumber: shipment.trackingNumber, trackingUrl: shipment.trackingUrl };
+      } else {
+        throw new Error('Unsupported concurrency worker mode');
+      }
+      parentPort.postMessage({ ok: true, ...result });
     } finally {
       db.close();
     }
