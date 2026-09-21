@@ -3,7 +3,7 @@ import { cwd } from 'node:process';
 import { parentPort, workerData } from 'node:worker_threads';
 
 async function run() {
-  const vite = await createServer({ configFile: false, root: cwd(), appType: 'custom', server: { middlewareMode: true } });
+  const vite = await createServer({ configFile: false, root: cwd(), appType: 'custom', server: { middlewareMode: true, hmr: false } });
   try {
     const [{ openDatabase }, { SqliteFulfillmentMutationRepository }, { FulfillmentApplicationService }] = await Promise.all([
       vite.ssrLoadModule('/src/database/client.ts'),
