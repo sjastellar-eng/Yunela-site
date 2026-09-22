@@ -67,6 +67,7 @@ function runConcurrentOperations(databaseFile:string, fulfillmentId:string, oper
 afterEach(()=>{while(databases.length) databases.pop()?.close();});
 
 // F5 validation trigger: preserve production semantics and execute CI on this branch.
+// Validation rerun trigger.
 describe('F5 Shipment application',()=>{
   it('creates Shipment only from PACKED Fulfillment',()=>{const f=fixture();const p=packed(f);const s=f.service.createShipment(p.id,'OPERATOR:f5','create');expect(s.status).toBe('CREATED');expect(f.service.getShipment(p.id).id).toBe(s.id);});
   it('rejects Shipment creation before PACKED',()=>{const f=fixture();const p=f.service.createFulfillmentFromPurchase(f.purchaseId);expect(()=>f.service.createShipment(p.id,'OPERATOR:f5','create')).toThrow(/after PACKED/);});
