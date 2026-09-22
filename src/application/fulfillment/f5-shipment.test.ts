@@ -42,7 +42,7 @@ function packed(f:ReturnType<typeof fixture>) {
 function runConcurrentCreate(databaseFile:string, fulfillmentId:string) {
   const readyBuffer=new SharedArrayBuffer(4), goBuffer=new SharedArrayBuffer(4);
   const ready=new Int32Array(readyBuffer), go=new Int32Array(goBuffer);
-  const workers=[0,1].map(i=>new Worker(join(process.cwd(),'src/application/fulfillment/shipment-concurrency.worker.mjs'),{workerData:{databaseFile,fulfillmentId,operationKey:'concurrent-'+i,readyBuffer,goBuffer}}));
+  const workers=[0,1].map(i=>new Worker(join(process.cwd(),'src/application/fulfillment/shipment-concurrency.worker.mjs'),{workerData:{databaseFile,fulfillmentId,operationKey:'concurrent-'+i,mode:'create',readyBuffer,goBuffer}}));
   while (Atomics.load(ready,0)<2) Atomics.wait(ready,0,Atomics.load(ready,0));
   Atomics.store(go,0,1);
   Atomics.notify(go,0,2);
