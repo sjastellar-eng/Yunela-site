@@ -1,6 +1,7 @@
 name: YUNELA UI Validation
 
 on:
+  workflow_dispatch:
   pull_request:
     branches: [main, 'feat/**']
   push:
