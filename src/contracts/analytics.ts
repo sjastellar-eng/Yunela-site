@@ -22,7 +22,12 @@ export type AnalyticsEventName =
   | 'next_tea_click'
   | 'discovery_box_view'
   | 'discovery_box_feedback'
-  | 'full_size_conversion';
+  | 'full_size_conversion'
+  | 'shipment_created'
+  | 'order_shipped'
+  | 'delivery_failed'
+  | 'order_delivered'
+  | 'order_returned';
 
 export type AnalyticsPayload = Record<string, string | number | boolean | null | string[]>;
 

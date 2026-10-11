@@ -1,9 +1,11 @@
 import { randomUUID } from 'node:crypto';
+import { URL } from 'node:url';
 import { ApplicationError } from '../errors';
 import type { OrderItemSnapshot } from '../../contracts/commerce';
 import { assertDiscoveryBoxComposition, assertFulfillmentTransition, FulfillmentDomainError, type FulfillmentStatus, type ShipmentStatus } from '../../domain/fulfillment';
 import type { FulfillmentRecord, FulfillmentItemRecord, ShipmentRecord, FulfillmentEventRecord, InventoryAllocationRecord } from './repositories';
 import type { FulfillmentMutationRepository } from './sqliteDomainRepository';
+import type { AnalyticsEventName, AnalyticsPayload, AnalyticsTracker } from '../../contracts/analytics';
 
 export interface ReplacementApproval {
   originalTeaId: string;
@@ -36,7 +38,7 @@ function snapshotItem(item: OrderItemSnapshot) { return JSON.stringify(item); }
 function provenance(item: OrderItemSnapshot) { return JSON.stringify({ teaId: item.teaId, recommendationHistoryId: item.recommendationHistoryId, discoveryBoxSnapshot: item.discoveryBoxSnapshot }); }
 
 export class FulfillmentApplicationService {
-  constructor(private readonly repo: FulfillmentMutationRepository) {}
+  constructor(private readonly repo: FulfillmentMutationRepository, private readonly analytics?: AnalyticsTracker) {}
 
   createFulfillmentFromPurchase(purchaseId: string, operationKey = `create:${purchaseId}`): FulfillmentRecord {
     return this.repo.transaction(() => {
@@ -109,39 +111,43 @@ export class FulfillmentApplicationService {
 
   markShipped(id: string, actor: string, operationKey: string): FulfillmentRecord {
     this.requireYunela(actor);
-    return this.repo.transaction(() => {
+    const result = this.repo.transaction(() => {
       const f = this.require(id);
       const key = eventKey(id, operationKey);
-      if (this.repo.listFulfillmentEvents(id).some(e => e.eventKey === key)) return f;
+      if (this.repo.listFulfillmentEvents(id).some(e => e.eventKey === key)) return { fulfillment: f, changed: false };
       domainGuard(() => assertFulfillmentTransition(f.status, 'SHIPPED'));
       const s = this.repo.getShipmentByFulfillmentId(id);
       if (!s) throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'Shipment must exist before SHIPPED');
-      if (s.status !== 'CREATED' && s.status !== 'SHIPPED') throw new ApplicationError('DOMAIN_RULE_VIOLATION', `Shipment is ${s.status}`);
+      if (s.status !== 'CREATED' && s.status !== 'SHIPPED') throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'Shipment is ' + s.status);
       const ts = now();
       if (s.status === 'CREATED' && !this.repo.updateShipmentStatus(s.id, 'CREATED', 'SHIPPED', ts)) throw new ApplicationError('CONFLICT', 'Shipment changed concurrently');
       if (!this.repo.setFulfillmentStatus(id, f.status, 'SHIPPED', ts)) throw new ApplicationError('CONFLICT', 'Fulfillment changed concurrently');
-      const result = this.require(id);
+      const fulfillment = this.require(id);
       this.appendEventRequired(this.event(id, 'STATE:PACKED->SHIPPED', f.status, 'SHIPPED', actor, operationKey, ts));
-      return result;
+      return { fulfillment, changed: true };
     });
+    if (result.changed) this.track('order_shipped', { fulfillmentId: id, shipmentId: this.getShipment(id).id });
+    return result.fulfillment;
   }
 
   markDelivered(id: string, actor: string, operationKey: string): FulfillmentRecord {
     this.requireYunela(actor);
-    return this.repo.transaction(() => {
+    const result = this.repo.transaction(() => {
       const f = this.require(id);
       const key = eventKey(id, operationKey);
-      if (this.repo.listFulfillmentEvents(id).some(e => e.eventKey === key)) return f;
+      if (this.repo.listFulfillmentEvents(id).some(e => e.eventKey === key)) return { fulfillment: f, changed: false };
       domainGuard(() => assertFulfillmentTransition(f.status, 'DELIVERED'));
       const s = this.repo.getShipmentByFulfillmentId(id);
       if (!s || s.status !== 'SHIPPED') throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'Shipment must be SHIPPED before delivery');
       const ts = now();
       if (!this.repo.updateShipmentStatus(s.id, 'SHIPPED', 'DELIVERED', ts)) throw new ApplicationError('CONFLICT', 'Shipment changed concurrently');
       if (!this.repo.setFulfillmentStatus(id, f.status, 'DELIVERED', ts)) throw new ApplicationError('CONFLICT', 'Fulfillment changed concurrently');
-      const result = this.require(id);
+      const fulfillment = this.require(id);
       this.appendEventRequired(this.event(id, 'STATE:SHIPPED->DELIVERED', f.status, 'DELIVERED', actor, operationKey, ts));
-      return result;
+      return { fulfillment, changed: true };
     });
+    if (result.changed) this.track('order_delivered', { fulfillmentId: id, shipmentId: this.getShipment(id).id });
+    return result.fulfillment;
   }
 
   markFailed(id: string, actor: string, reason: string, operationKey: string) { this.requireYunela(actor); return this.exception(id, 'FAILED', actor, reason, operationKey); }
@@ -149,33 +155,59 @@ export class FulfillmentApplicationService {
   cancelFulfillment(id: string, actor: string, reason: string, operationKey: string) { this.requireYunela(actor); return this.exception(id, 'CANCELLED', actor, reason, operationKey); }
   recordReturn(id: string, actor: string, reason: string, operationKey: string) { this.requireYunela(actor); return this.exception(id, 'RETURNED', actor, reason, operationKey); }
 
+  getShipment(id: string): ShipmentRecord {
+    const shipment = this.repo.getShipmentByFulfillmentId(id);
+    if (!shipment) throw new ApplicationError('NOT_FOUND', 'Shipment was not created');
+    return shipment;
+  }
+
   createShipment(id: string, actor: string, operationKey: string, input: { carrier?: string; trackingNumber?: string; trackingUrl?: string } = {}): ShipmentRecord {
     this.requireYunela(actor);
-    return this.repo.transaction(() => {
+    this.validateTracking(input, false);
+    const result = this.repo.transaction(() => {
       const f = this.require(id);
       if (f.status !== 'PACKED') throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'Shipment can only be created after PACKED');
       const existing = this.repo.getShipmentByFulfillmentId(id);
-      if (existing) return existing;
+      if (existing) return { shipment: existing, created: false };
       const ts = now();
-      const s: ShipmentRecord = { id: randomUUID(), fulfillmentId: id, status: 'CREATED', ...(input.carrier ? { carrier: input.carrier } : {}), ...(input.trackingNumber ? { trackingNumber: input.trackingNumber } : {}), ...(input.trackingUrl ? { trackingUrl: input.trackingUrl } : {}), createdAt: ts, updatedAt: ts };
+      const s: ShipmentRecord = { id: randomUUID(), fulfillmentId: id, status: 'CREATED', ...(input.carrier ? { carrier: input.carrier.trim() } : {}), ...(input.trackingNumber ? { trackingNumber: input.trackingNumber.trim() } : {}), ...(input.trackingUrl ? { trackingUrl: input.trackingUrl.trim() } : {}), createdAt: ts, updatedAt: ts };
       this.repo.createShipment(s);
       this.appendEventRequired(this.event(id, 'SHIPMENT_CREATED', f.status, f.status, actor, operationKey, ts));
-      return s;
+      return { shipment: s, created: true };
+    });
+    if (result.created) this.track('shipment_created', { fulfillmentId: id, shipmentId: result.shipment.id });
+    return result.shipment;
+  }
+
+  updateShipmentTracking(id: string, actor: string, operationKey: string, input: { carrier?: string; trackingNumber?: string; trackingUrl?: string }): ShipmentRecord {
+    this.requireYunela(actor);
+    this.validateTracking(input, true);
+    return this.repo.transaction(() => {
+      const f = this.require(id);
+      const shipment = this.repo.getShipmentByFulfillmentId(id);
+      if (!shipment) throw new ApplicationError('NOT_FOUND', 'Shipment was not created');
+      const key = eventKey(id, 'SHIPMENT_TRACKING:' + operationKey);
+      if (this.repo.listFulfillmentEvents(id).some(e => e.eventKey === key)) return shipment;
+      const ts = now();
+      if (!this.repo.updateShipmentTracking(shipment.id, input, ts)) throw new ApplicationError('CONFLICT', 'Shipment changed concurrently');
+      const result = this.repo.getShipmentByFulfillmentId(id)!;
+      this.appendEventRequired(this.event(id, 'SHIPMENT_TRACKING_UPDATED', f.status, f.status, actor, 'SHIPMENT_TRACKING:' + operationKey, ts));
+      return result;
     });
   }
 
   transitionShipment(id: string, to: ShipmentStatus, actor: string, operationKey: string): ShipmentRecord {
     this.requireYunela(actor);
-    return this.repo.transaction(() => {
+    const result = this.repo.transaction(() => {
       const f = this.require(id);
       const s = this.repo.getShipmentByFulfillmentId(id);
       if (!s) throw new ApplicationError('NOT_FOUND', 'Shipment was not created');
-      const key = eventKey(id, `SHIPMENT:${operationKey}`);
-      if (this.repo.listFulfillmentEvents(id).some(e => e.eventKey === key)) return s;
+      const key = eventKey(id, 'SHIPMENT:' + operationKey);
+      if (this.repo.listFulfillmentEvents(id).some(e => e.eventKey === key)) return { shipment: s, changed: false };
       const shipmentStatus = s.status as ShipmentStatus;
-      if (shipmentStatus === to) return s;
-      const allowed: Record<ShipmentStatus, ShipmentStatus[]> = { CREATED: ['SHIPPED'], SHIPPED: ['DELIVERED', 'FAILED', 'LOST', 'RETURNED'], DELIVERED: ['RETURNED'], FAILED: [], LOST: [], RETURNED: [] };
-      if (!allowed[shipmentStatus].includes(to)) throw new ApplicationError('DOMAIN_RULE_VIOLATION', `Shipment cannot transition from ${shipmentStatus} to ${to}`);
+      if (shipmentStatus === to) return { shipment: s, changed: false };
+      const allowed: Record<ShipmentStatus, ShipmentStatus[]> = { CREATED: ['SHIPPED', 'FAILED'], SHIPPED: ['DELIVERED', 'FAILED', 'LOST', 'RETURNED'], DELIVERED: ['RETURNED'], FAILED: [], LOST: [], RETURNED: [] };
+      if (!allowed[shipmentStatus].includes(to)) throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'Shipment cannot transition from ' + shipmentStatus + ' to ' + to);
       const fulfillmentTarget: Record<ShipmentStatus, FulfillmentStatus | undefined> = { CREATED: undefined, SHIPPED: 'SHIPPED', DELIVERED: 'DELIVERED', FAILED: 'FAILED', LOST: 'LOST', RETURNED: 'RETURNED' };
       const targetFulfillment = fulfillmentTarget[to];
       if (!targetFulfillment) throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'Shipment CREATED cannot transition without Fulfillment orchestration');
@@ -183,12 +215,16 @@ export class FulfillmentApplicationService {
       const ts = now();
       if (!this.repo.updateShipmentStatus(s.id, shipmentStatus, to, ts)) throw new ApplicationError('CONFLICT', 'Shipment changed concurrently');
       if (!this.repo.setFulfillmentStatus(id, f.status, targetFulfillment, ts)) throw new ApplicationError('CONFLICT', 'Fulfillment changed concurrently');
-      const result = this.repo.getShipmentByFulfillmentId(id)!;
-      this.appendEventRequired(this.event(id, `SHIPMENT:${shipmentStatus}->${to}`, f.status, targetFulfillment, actor, operationKey, ts));
-      return result;
+      const resultShipment = this.repo.getShipmentByFulfillmentId(id)!;
+      this.appendEventRequired(this.event(id, 'SHIPMENT:' + shipmentStatus + '->' + to, f.status, targetFulfillment, actor, operationKey, ts));
+      return { shipment: resultShipment, changed: true };
     });
+    if (result.changed) {
+      const event: AnalyticsEventName | undefined = to === 'SHIPPED' ? 'order_shipped' : to === 'DELIVERED' ? 'order_delivered' : to === 'FAILED' ? 'delivery_failed' : to === 'RETURNED' ? 'order_returned' : undefined;
+      if (event) this.track(event, { fulfillmentId: id, shipmentId: result.shipment.id });
+    }
+    return result.shipment;
   }
-
   handleDiscoveryBoxShortage(id: string, shortage: DiscoveryBoxShortage, actor: string, operationKey: string) {
     this.requireYunela(actor);
     return this.repo.transaction(() => {
@@ -372,5 +408,12 @@ export class FulfillmentApplicationService {
   private appendEventRequired(event: FulfillmentEventRecord) { const result = this.repo.appendFulfillmentEvent(event); if (!result) { const existing = this.repo.listFulfillmentEvents(event.fulfillmentId).find(e => e.eventKey === event.eventKey); if (!existing) throw new ApplicationError('AUDIT_WRITE_FAILED', `Fulfillment audit event ${event.eventKey} was not persisted`); return existing; } return result; }
   private requireExecutionActor(actor: string) { if (!actor.trim() || (!actor.startsWith('YUNELA:') && !actor.startsWith('SUPPLIER:') && !actor.startsWith('SYSTEM'))) throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'Authorized execution actor required'); }
   private requireReadyActor(actor: string) { if (!actor.trim() || (!actor.startsWith('YUNELA:') && !actor.startsWith('SYSTEM'))) throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'YUNELA or SYSTEM authority required for READY'); }
-  private requireYunela(actor: string) { if (!actor.startsWith('YUNELA:') && !actor.startsWith('SYSTEM')) throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'YUNELA-controlled operation required'); }
+  private requireYunela(actor: string) { if (!actor.startsWith('YUNELA:') && !actor.startsWith('OPERATOR:') && !actor.startsWith('SYSTEM')) throw new ApplicationError('DOMAIN_RULE_VIOLATION', 'YUNELA/operator-controlled operation required'); }
+  private validateTracking(input: { carrier?: string; trackingNumber?: string; trackingUrl?: string }, requireAny: boolean) {
+    if (requireAny && input.carrier === undefined && input.trackingNumber === undefined && input.trackingUrl === undefined) throw new ApplicationError('VALIDATION_ERROR', 'At least one tracking field is required');
+    if (input.carrier !== undefined && (!input.carrier.trim() || input.carrier.trim().length > 128)) throw new ApplicationError('VALIDATION_ERROR', 'carrier must contain 1-128 characters');
+    if (input.trackingNumber !== undefined && (!input.trackingNumber.trim() || input.trackingNumber.trim().length > 256)) throw new ApplicationError('VALIDATION_ERROR', 'trackingNumber must contain 1-256 characters');
+    if (input.trackingUrl !== undefined) { try { const url = new URL(input.trackingUrl.trim()); if (!['http:', 'https:'].includes(url.protocol)) throw new Error(); } catch { throw new ApplicationError('VALIDATION_ERROR', 'trackingUrl must be a valid HTTP(S) URL'); } }
+  }
+  private track(event: AnalyticsEventName, payload: AnalyticsPayload) { this.analytics?.track(event, payload); }
 }

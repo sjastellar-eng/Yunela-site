@@ -94,6 +94,14 @@ async function route(request: IncomingMessage, response: ServerResponse, depende
     return sendJson(response, 200, fulfillment, id);
   }
 
+  const shipmentGetMatch = path.match(/^\/fulfillments\/([^/]+)\/shipment$/);
+  if (shipmentGetMatch && request.method === 'GET') {
+    const fulfillment = dependencies.fulfillmentService.getFulfillment(pathId(shipmentGetMatch[1], 'fulfillmentId'));
+    if (actor.type === 'CUSTOMER') requireCustomerOwner(actor, fulfillment.customerId);
+    else requireType(actor, 'OPERATOR');
+    return sendJson(response, 200, dependencies.fulfillmentService.getShipment(fulfillment.id), id);
+  }
+
   if (path === '/fulfillments' && request.method === 'POST') {
     requireType(actor, 'OPERATOR');
     const body = await readJson(request);
@@ -123,6 +131,13 @@ async function route(request: IncomingMessage, response: ServerResponse, depende
     const body = await readJson(request);
     return sendJson(response, 201, dependencies.fulfillmentService.createShipment(pathId(shipmentCreateMatch[1], 'fulfillmentId'), `OPERATOR:${actor.id}`, bodyString(body, 'operationKey'), { carrier: optionalString(body, 'carrier'), trackingNumber: optionalString(body, 'trackingNumber'), trackingUrl: optionalString(body, 'trackingUrl') }), id);
   }
+  const shipmentTrackingMatch = path.match(/^\/fulfillments\/([^/]+)\/shipment\/tracking$/);
+  if (shipmentTrackingMatch && request.method === 'PATCH') {
+    requireType(actor, 'OPERATOR');
+    const body = await readJson(request);
+    return sendJson(response, 200, dependencies.fulfillmentService.updateShipmentTracking(pathId(shipmentTrackingMatch[1], 'fulfillmentId'), 'OPERATOR:' + actor.id, bodyString(body, 'operationKey'), { carrier: optionalString(body, 'carrier'), trackingNumber: optionalString(body, 'trackingNumber'), trackingUrl: optionalString(body, 'trackingUrl') }), id);
+  }
+
   const shipmentActionMatch = path.match(/^\/fulfillments\/([^/]+)\/shipment\/(shipped|delivered|failed|lost|returned)$/);
   if (shipmentActionMatch && request.method === 'POST') {
     requireType(actor, 'OPERATOR');
