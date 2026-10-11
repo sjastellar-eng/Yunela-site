@@ -6,12 +6,13 @@ import { ApplicationError } from '../application/errors';
 import { FulfillmentApplicationService, type ReplacementApproval, type DiscoveryBoxShortage } from '../application/fulfillment/service';
 import type { ShipmentStatus } from '../domain/fulfillment';
 import { CommerceAnalyticsService } from '../application/analytics/commerceService';
+import { FulfillmentAnalyticsService } from '../application/analytics/fulfillmentService';
 import { applicationErrorToHttp } from './errors';
 
 const API_PREFIX = '/api/v1';
 const MAX_BODY_BYTES = 1024 * 1024;
 
-type Dependencies = { authService: AuthenticationService; fulfillmentService: FulfillmentApplicationService; commerceAnalytics?: CommerceAnalyticsService };
+type Dependencies = { authService: AuthenticationService; fulfillmentService: FulfillmentApplicationService; commerceAnalytics?: CommerceAnalyticsService; fulfillmentAnalytics?: FulfillmentAnalyticsService };
 
 function requestId(request: IncomingMessage): string {
   const supplied = request.headers['x-request-id'];
@@ -95,6 +96,15 @@ async function route(request: IncomingMessage, response: ServerResponse, depende
     const rawLimit = url.searchParams.get('limit');
     const limit = rawLimit === null ? 10 : Number(rawLimit);
     return sendJson(response, 200, dependencies.commerceAnalytics.commerce(period, limit), id);
+  }
+
+  if (request.method === 'GET' && (path === '/analytics/fulfillment/overview' || path === '/analytics/fulfillment/timing' || path === '/analytics/fulfillment/shortages')) {
+    requireType(actor, 'OPERATOR');
+    if (!dependencies.fulfillmentAnalytics) throw new ApplicationError('NOT_FOUND', 'Fulfillment analytics is not configured');
+    const period = CommerceAnalyticsService.parsePeriod(url.searchParams.get('from'), url.searchParams.get('to'));
+    if (path === '/analytics/fulfillment/overview') return sendJson(response, 200, dependencies.fulfillmentAnalytics.overview(period), id);
+    if (path === '/analytics/fulfillment/timing') return sendJson(response, 200, dependencies.fulfillmentAnalytics.timing(period), id);
+    return sendJson(response, 200, dependencies.fulfillmentAnalytics.shortages(period), id);
   }
 
   const fulfillmentMatch = path.match(/^\/fulfillments\/([^/]+)$/);
