@@ -58,6 +58,7 @@ describe('F6.1 OPERATOR-only analytics HTTP', () => {
   it('validates dates and limit with HTTP 400', async () => {
     const token=auth.login('operator@example.com','operator-password-123').accessToken;
     expect((await get('/api/v1/analytics/overview?from=bad&to=bad',token)).status).toBe(400);
+    expect((await get('/api/v1/analytics/overview'+period+'&to=bad',token)).status).toBe(400);
     expect((await get('/api/v1/analytics/commerce'+period+'&limit=51',token)).status).toBe(400);
   });
 });

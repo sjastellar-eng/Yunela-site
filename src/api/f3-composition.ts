@@ -8,6 +8,7 @@ import { applyMigrations } from '../database/migrate';
 import { createF3ApiServer } from './f3-server';
 import { createAnalyticsTracker } from '../contracts/analytics';
 import { CommerceAnalyticsService } from '../application/analytics/commerceService';
+import { FulfillmentAnalyticsService } from '../application/analytics/fulfillmentService';
 
 export function createDefaultF3ApiServer(databaseFile = process.env.YUNELA_DB_FILE ?? ':memory:'): { server: ReturnType<typeof createF3ApiServer>; close: () => void } {
   const db = openDatabase(databaseFile);
@@ -24,7 +25,7 @@ export function createDefaultF3ApiServer(databaseFile = process.env.YUNELA_DB_FI
     provisionIfMissing(authService, 'SUPPLIER', process.env.YUNELA_SUPPLIER_EMAIL, process.env.YUNELA_SUPPLIER_PASSWORD);
   }
 
-  return { server: createF3ApiServer({ authService, fulfillmentService, commerceAnalytics: new CommerceAnalyticsService(db) }), close: () => db.close() };
+  return { server: createF3ApiServer({ authService, fulfillmentService, commerceAnalytics: new CommerceAnalyticsService(db), fulfillmentAnalytics: new FulfillmentAnalyticsService(db) }), close: () => db.close() };
 }
 
 function provisionIfMissing(auth: AuthenticationService, type: 'OPERATOR' | 'SUPPLIER', email: string, password: string): void {
