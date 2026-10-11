@@ -5,12 +5,13 @@ import { AuthenticationService, type Actor } from '../application/auth';
 import { ApplicationError } from '../application/errors';
 import { FulfillmentApplicationService, type ReplacementApproval, type DiscoveryBoxShortage } from '../application/fulfillment/service';
 import type { ShipmentStatus } from '../domain/fulfillment';
+import { CommerceAnalyticsService } from '../application/analytics/commerceService';
 import { applicationErrorToHttp } from './errors';
 
 const API_PREFIX = '/api/v1';
 const MAX_BODY_BYTES = 1024 * 1024;
 
-type Dependencies = { authService: AuthenticationService; fulfillmentService: FulfillmentApplicationService };
+type Dependencies = { authService: AuthenticationService; fulfillmentService: FulfillmentApplicationService; commerceAnalytics?: CommerceAnalyticsService };
 
 function requestId(request: IncomingMessage): string {
   const supplied = request.headers['x-request-id'];
@@ -86,6 +87,16 @@ async function route(request: IncomingMessage, response: ServerResponse, depende
   }
 
   const actor = requireAuth(request, dependencies.authService);
+  if ((path === '/analytics/overview' || path === '/analytics/commerce') && request.method === 'GET') {
+    requireType(actor, 'OPERATOR');
+    if (!dependencies.commerceAnalytics) throw new ApplicationError('NOT_FOUND', 'Analytics is not configured');
+    const period = CommerceAnalyticsService.parsePeriod(url.searchParams.get('from'), url.searchParams.get('to'));
+    if (path === '/analytics/overview') return sendJson(response, 200, dependencies.commerceAnalytics.overview(period), id);
+    const rawLimit = url.searchParams.get('limit');
+    const limit = rawLimit === null ? 10 : Number(rawLimit);
+    return sendJson(response, 200, dependencies.commerceAnalytics.commerce(period, limit), id);
+  }
+
   const fulfillmentMatch = path.match(/^\/fulfillments\/([^/]+)$/);
   if (fulfillmentMatch && request.method === 'GET') {
     const fulfillment = dependencies.fulfillmentService.getFulfillment(pathId(fulfillmentMatch[1], 'fulfillmentId'));
