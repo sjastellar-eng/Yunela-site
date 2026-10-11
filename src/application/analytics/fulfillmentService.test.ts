@@ -4,7 +4,7 @@ import { applyMigrations } from '../../database/migrate';
 import { FulfillmentAnalyticsService } from './fulfillmentService';
 
 const period = { from: '2026-10-01T00:00:00.000Z', to: '2026-11-01T00:00:00.000Z' };
-const asOf = '2026-10-10T12:00:00.000Z';
+const asOf = '2026-12-10T12:00:00.000Z';
 describe('F6.2 created-cohort read-only analytics', () => {
   let db: ReturnType<typeof openDatabase>;
   let service: FulfillmentAnalyticsService;
@@ -62,6 +62,43 @@ describe('F6.2 created-cohort read-only analytics', () => {
     event('one','s2',JSON.stringify({type:'DISCOVERY_BOX_SHORTAGE_PROPOSED',originalTeaId:'tea2'}),'PENDING','PENDING_CUSTOMER_APPROVAL','2026-10-05T02:00:00.000Z');
     event('two','bad','{broken','PENDING','PENDING','2026-10-05T03:00:00.000Z');
     expect(service.shortages(period)).toMatchObject({ shortageEvents: 2, affectedFulfillments: 1, coverage: 'REGISTERED_EVENTS_ONLY' });
+  });
+
+
+  it('marks duplicate READY or PACKED history invalid rather than missing or completed', () => {
+    fulfillment('one','PACKED');
+    event('one','r1','STATE:PENDING->READY','PENDING','READY','2026-10-05T01:00:00.000Z');
+    event('one','r2','STATE:PENDING->READY','PENDING','READY','2026-10-05T02:00:00.000Z');
+    event('one','p','STATE:PACKING->PACKED','PACKING','PACKED','2026-10-05T03:00:00.000Z');
+    expect(service.timing(period).readyToPacked).toMatchObject({ sampleSize: 0, invalidPairs: 1, missingPairs: 0 });
+  });
+
+  it('does not count conflicting active fulfillment with shipped timestamp as completed or overdue', () => {
+    fulfillment('conflict','PACKING','2026-10-01T00:00:00.000Z');
+    shipment('conflict','SHIPPED','2026-10-01T02:00:00.000Z','2026-10-02T00:00:00.000Z');
+    expect(service.overview(period)).toMatchObject({ processingBacklog: 1, completedSlaSampleSize: 0, activeSlaOverdue: 0, inconsistentCompletion: 1 });
+    expect(service.timing(period).processing).toMatchObject({ sampleSize: 0, invalidPairs: 1 });
+  });
+
+  it('rejects impossible future shipping timestamps without fabricating completion', () => {
+    fulfillment('future','SHIPPED','2026-10-01T00:00:00.000Z');
+    shipment('future','SHIPPED','2026-10-01T02:00:00.000Z','2027-01-01T00:00:00.000Z');
+    expect(service.overview(period)).toMatchObject({ completedSlaSampleSize: 0, inconsistentCompletion: 1 });
+    expect(service.timing(period).processing).toMatchObject({ sampleSize: 0, invalidPairs: 1 });
+  });
+
+  it('separates missing shipped_at on a shipped shipment from valid processing', () => {
+    fulfillment('missing','SHIPPED');
+    shipment('missing','SHIPPED');
+    expect(service.overview(period)).toMatchObject({ completedSlaSampleSize: 0, inconsistentCompletion: 1 });
+    expect(service.timing(period).processing).toMatchObject({ sampleSize: 0, invalidPairs: 1 });
+  });
+
+  it('does not accept reversed event chronology', () => {
+    fulfillment('reverse','PACKED');
+    event('reverse','r','STATE:PENDING->READY','PENDING','READY','2026-10-05T05:00:00.000Z');
+    event('reverse','p','STATE:PACKING->PACKED','PACKING','PACKED','2026-10-05T03:00:00.000Z');
+    expect(service.timing(period).readyToPacked).toMatchObject({ sampleSize: 0, invalidPairs: 1 });
   });
 
   it('reassesses prior cohorts after a later shipment and never modifies records', () => {
