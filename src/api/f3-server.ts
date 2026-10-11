@@ -88,6 +88,11 @@ async function route(request: IncomingMessage, response: ServerResponse, depende
   }
 
   const actor = requireAuth(request, dependencies.authService);
+  if (path.startsWith('/analytics/') && request.method === 'GET') {
+    if (url.searchParams.getAll('from').length > 1 || url.searchParams.getAll('to').length > 1) {
+      throw new ApplicationError('VALIDATION_ERROR', 'from and to must each appear exactly once');
+    }
+  }
   if ((path === '/analytics/overview' || path === '/analytics/commerce') && request.method === 'GET') {
     requireType(actor, 'OPERATOR');
     if (!dependencies.commerceAnalytics) throw new ApplicationError('NOT_FOUND', 'Analytics is not configured');
