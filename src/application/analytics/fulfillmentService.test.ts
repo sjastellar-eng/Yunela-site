@@ -105,7 +105,10 @@ describe('F6.2 created-cohort read-only analytics', () => {
     fulfillment('one','PACKED');
     expect(service.timing(period).processing.sampleSize).toBe(0);
     shipment('one','SHIPPED','2026-10-05T10:00:00.000Z','2026-11-03T00:00:00.000Z');
+    // F5 shipment transition atomically advances the associated Fulfillment to SHIPPED.
+    db.prepare("UPDATE fulfillments SET status = 'SHIPPED', updated_at = ? WHERE id = ?").run('2026-11-03T00:00:00.000Z', 'one');
     expect(service.timing(period).processing.sampleSize).toBe(1);
+    expect(service.overview(period)).toMatchObject({ totalFulfillments: 1, completedSlaSampleSize: 1, processingBacklog: 0, inconsistentCompletion: 0 });
     expect((db.prepare('SELECT COUNT(*) AS n FROM shipments').get() as {n:number}).n).toBe(1);
   });
 });
