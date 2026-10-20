@@ -1,4 +1,5 @@
 import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import Database from 'better-sqlite3';
 
 const migrations = [
@@ -8,6 +9,9 @@ const migrations = [
   { version: '0004_mono_payment', file: new URL('../../database/migrations/0004_mono_payment.sql', import.meta.url) },
   { version: '0005_fulfillment_persistence', file: new URL('../../database/migrations/0005_fulfillment_persistence.sql', import.meta.url) },
   { version: '0006_authentication', file: new URL('../../database/migrations/0006_authentication.sql', import.meta.url) },
+  { version: '0007_partner_store', file: new URL('../../database/migrations/0007_partner_store.sql', import.meta.url) },
+  { version: '0008_store_quote', file: new URL('../../database/migrations/0008_store_quote.sql', import.meta.url) },
+  { version: '0009_weight_commerce', file: new URL('../../database/migrations/0009_weight_commerce.sql', import.meta.url) },
 ] as const;
 
 export function applyMigrations(db: Database.Database): void {
@@ -15,7 +19,8 @@ export function applyMigrations(db: Database.Database): void {
   const hasMigration = db.prepare('SELECT 1 FROM schema_migrations WHERE version = ? LIMIT 1');
   for (const migration of migrations) {
     if (hasMigration.get(migration.version)) continue;
-    const sql = readFileSync(migration.file, 'utf8');
+    // Runtime sets an explicit directory for bundled builds; source tests retain module-relative paths.
+    const sql = readFileSync(process.env.YUNELA_MIGRATIONS_DIR ? resolve(process.env.YUNELA_MIGRATIONS_DIR, `${migration.version}.sql`) : migration.file, 'utf8');
     const apply = db.transaction(() => {
       db.exec(sql);
       db.prepare('INSERT INTO schema_migrations (version, applied_at) VALUES (?, ?)').run(migration.version, new Date().toISOString());

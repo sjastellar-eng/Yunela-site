@@ -40,6 +40,7 @@ describe('F1 fulfillment persistence', () => {
       '0004_mono_payment',
       '0005_fulfillment_persistence',
       '0006_authentication',
+      '0007_partner_store', '0008_store_quote', '0009_weight_commerce',
     ]);
     const tables = db.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name IN ('fulfillments','fulfillment_items','inventory_allocations','shipments','fulfillment_events') ORDER BY name").all() as Array<{ name: string }>;
     expect(tables.map(({ name }) => name)).toEqual(['fulfillment_events','fulfillment_items','fulfillments','inventory_allocations','shipments']);

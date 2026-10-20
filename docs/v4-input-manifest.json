@@ -1,0 +1,27 @@
+[
+  {
+    "file": "input-0.md",
+    "sha256": "08815af5aef02cda5c75648d1c7bad214369a592f5c426e29b76dd22319c4205",
+    "bytes": 23682
+  },
+  {
+    "file": "YUNELA_COMMERCIAL_CATALOG_V2(1).xlsx",
+    "sha256": "771288f949561018e57454c4e7c99fe8e56b96c2ddaf95c5aec58e48cc911434",
+    "bytes": 11385
+  },
+  {
+    "file": "YUNELA_FLEXIBLE_PRICING_V1(1).xlsx",
+    "sha256": "2cb015cd17b2970ab883015dda6e7aecaae878e7af10529756b6e5ae4db216f0",
+    "bytes": 504410
+  },
+  {
+    "file": "input-1.md",
+    "sha256": "a73af827530af4e7f09823e30d2e43fc40f1fcd18d067b23a395415cc7d5f498",
+    "bytes": 16924
+  },
+  {
+    "file": "input-2.md",
+    "sha256": "0f989deba60bfc430529c0d4945283ae2aa2287db2951e1a85771867b1fafb7b",
+    "bytes": 24415
+  }
+]

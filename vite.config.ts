@@ -5,6 +5,8 @@ export default defineConfig(({ mode }) => {
   const isServerBuild = mode === 'server';
   return {
     plugins: isServerBuild ? [] : [react()],
+    optimizeDeps: process.env.VITEST ? { noDiscovery: true, entries: [] } : undefined,
+    server: { hmr: process.env.VITEST ? false : undefined, proxy: { '/api': 'http://127.0.0.1:3000', '/health': 'http://127.0.0.1:3000' } },
     build: isServerBuild
       ? {
           ssr: true,

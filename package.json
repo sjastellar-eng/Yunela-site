@@ -9,8 +9,10 @@
     "start": "node dist-server/f3-runtime.js",
     "lint": "eslint .",
     "typecheck": "tsc -b --pretty false",
-    "test": "vitest run",
-    "preview": "vite preview"
+    "test": "node scripts/build-test-workers.mjs && vitest run",
+    "preview": "vite preview",
+    "test:browser": "node scripts/browser-e2e.mjs",
+    "test:browser:weight": "node scripts/browser-weight-e2e.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "5.0.2",
@@ -31,6 +33,7 @@
     "eslint-plugin-react-hooks": "6.1.0",
     "eslint-plugin-react-refresh": "0.4.20",
     "globals": "16.4.0",
+    "playwright": "1.62.1",
     "typescript-eslint": "8.43.0",
     "vitest": "3.2.4"
   }

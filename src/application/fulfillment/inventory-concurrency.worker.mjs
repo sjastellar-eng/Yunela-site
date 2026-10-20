@@ -1,29 +1,7 @@
-import { createServer } from 'vite';
-import { cwd } from 'node:process';
+import { openDatabase, SqliteFulfillmentMutationRepository, FulfillmentApplicationService } from '../../../artifacts/test-workers/inventory.mjs';
 import { parentPort, workerData } from 'node:worker_threads';
 
-async function loadProduction() {
-  const vite = await createServer({
-    configFile: false,
-    root: cwd(),
-    appType: 'custom',
-    server: { middlewareMode: true },
-  });
-  try {
-    const [{ openDatabase }, { SqliteFulfillmentMutationRepository }, { FulfillmentApplicationService }] = await Promise.all([
-      vite.ssrLoadModule('/src/database/client.ts'),
-      vite.ssrLoadModule('/src/application/fulfillment/sqliteDomainRepository.ts'),
-      vite.ssrLoadModule('/src/application/fulfillment/serviceV2.ts'),
-    ]);
-    return { vite, openDatabase, SqliteFulfillmentMutationRepository, FulfillmentApplicationService };
-  } catch {
-    await vite.close();
-    throw new Error('F4 production module loading failed');
-  }
-}
-
 async function run() {
-  const { vite, openDatabase, SqliteFulfillmentMutationRepository, FulfillmentApplicationService } = await loadProduction();
   const db = openDatabase(workerData.databaseFile);
   try {
     const repo = new SqliteFulfillmentMutationRepository(db);
@@ -61,7 +39,6 @@ async function run() {
     throw new Error(`Unknown F4 operation: ${workerData.operation}`);
   } finally {
     db.close();
-    await vite.close();
   }
 }
 

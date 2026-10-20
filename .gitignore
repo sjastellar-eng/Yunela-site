@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dist-server/
+/data/
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+.env
+artifacts/
+.staging.env
+
+node_modules

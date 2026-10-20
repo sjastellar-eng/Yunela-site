@@ -1,0 +1,21 @@
+services:
+  shop:
+    build:
+      context: ..
+      dockerfile: Dockerfile.staging
+    env_file: ../.staging.env
+    restart: unless-stopped
+    volumes:
+      - yunela-staging-data:/app/data
+    ports:
+      - "127.0.0.1:3000:3000"
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    stop_grace_period: 15s
+volumes:
+  yunela-staging-data:

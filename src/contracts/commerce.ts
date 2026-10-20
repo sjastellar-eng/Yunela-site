@@ -17,7 +17,12 @@ export type PaymentStatus = 'pending' | 'authorized' | 'paid' | 'failed' | 'refu
 export type FulfillmentStatus = 'unfulfilled' | 'processing' | 'fulfilled' | 'cancelled';
 export type OrderStatus = 'created' | 'confirmed' | 'cancelled';
 
+export interface CommercialLine {
+ sourceSku:string; canonicalTeaId:string; lot:string; format: 'WEIGHT'|'WHOLE'; weightGrams:number; priceVersion:string; policyVersion:string; supplierInvoiceMinor:number; landedMinor:number; perPackMinor:number; packaging:string; supplierWholeMinor:number; wholeGrams:number;
+}
 export interface CartItem {
+ commercial?: CommercialLine;
+  unavailable?: boolean;
   id: string;
   sku: string;
   teaId?: string;
@@ -66,6 +71,7 @@ export interface DiscoveryBoxSnapshot {
 }
 
 export interface OrderItemSnapshot {
+  commercial?: CommercialLine;
   id: string;
   sku: string;
   teaId?: string;
