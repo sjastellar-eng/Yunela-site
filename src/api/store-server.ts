@@ -1,3 +1,4 @@
+import {requestYunaIntent,validateYunaInput,type YunaIntentProvider} from '../application/yunaGateway';
 import { handoff,partnerPayload,cancelBeforeHandoff,refundTest } from '../application/partnerWorkflow';
 import { calculatePackage } from '../application/flexiblePricing';
 import { changeWeighted,repriceWeighted,reserveWeighted,economics } from '../application/weightedCart';
@@ -23,7 +24,7 @@ import { TestMonoAdapter } from '../application/payment/testMono';
 import { applicationErrorToHttp } from './errors';
 import type { ShippingDetails } from '../contracts/commerce';
 
-type Options = { db: Database.Database; secret: string; staticDir?: string; allowTestFixtures?: boolean; stagingAccess?: StagingAccess; requireQuote?: boolean; requireCommercialData?:boolean; syntheticOnly?:boolean; allowLegacyFixedSku?:boolean };
+type Options = { yunaProvider?:YunaIntentProvider; db: Database.Database; secret: string; staticDir?: string; allowTestFixtures?: boolean; stagingAccess?: StagingAccess; requireQuote?: boolean; requireCommercialData?:boolean; syntheticOnly?:boolean; allowLegacyFixedSku?:boolean };
 const hash = (v: string) => createHash('sha256').update(v).digest('hex');
 const fail = (message: string): never => { throw new ApplicationError('VALIDATION_ERROR',message); };
 function string(body: Record<string, unknown>, key: string, max = 200): string {
@@ -93,6 +94,13 @@ export function createStoreServer(options: Options) {
     const url = new URL(req.url ?? '/','http://localhost'), path = url.pathname;
     const send = (data: unknown, status=200) => { res.writeHead(status,{'content-type':'application/json; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff'});res.end(JSON.stringify(data,(key,value)=>!path.startsWith('/api/store/operator/')&&['supplierInvoiceMinor','landedMinor','perPackMinor','supplierWholeMinor','assessment'].includes(key)?undefined:value)); };
     if (['POST','PATCH','DELETE'].includes(req.method ?? '') && req.headers.origin && req.headers.origin !== `http://${req.headers.host}` && req.headers.origin !== `https://${req.headers.host}` && req.headers.origin !== options.stagingAccess?.origin) throw new ApplicationError('FORBIDDEN','Cross-origin mutation denied');
+    if(path==='/api/store/yuna/intent'&&req.method==='POST'){
+      customer(req);rateLimit(req);
+      if(!options.yunaProvider)return send({error:{code:'YUNA_NOT_CONFIGURED',message:'Генеративний AI не підключено. Скористайся деморежимом за правилами.'}},503);
+      let input:ReturnType<typeof validateYunaInput>;
+      try{input=validateYunaInput(await body(req,8192));}catch{return send({error:{code:'VALIDATION_ERROR',message:'Некоректний запит YUNA'}},400);}
+      try{return send(await requestYunaIntent(options.yunaProvider,input));}catch{return send({error:{code:'YUNA_UNAVAILABLE',message:'AI тимчасово недоступний. Доступний деморежим за правилами.'}},502);}
+    }
     if (path === '/health' && req.method === 'GET') return send({status:'ok',paymentMode:'offline-test',partnerDispatch:'disabled'});
     if (path === '/api/store/catalog' && req.method === 'GET') {
       const rows = db.prepare('SELECT * FROM partner_catalog WHERE test_fixture=0 OR ?=1 ORDER BY sku').all(options.allowTestFixtures ? 1:0) as ReturnType<typeof offer>[];
