@@ -43,7 +43,7 @@ if(staging && stagePassword===process.env.YUNELA_OPERATOR_PASSWORD)throw new Err
 if(staging && stageOrigin && new URL(stageOrigin).origin!==stageOrigin)throw new Error('Staging origin must have no path, query or trailing slash');
 if(staging && stageOrigin && new URL(stageOrigin).protocol!=='https:' && !/^http:\/\/(127\.0\.0\.1|localhost):\d+$/.test(stageOrigin))throw new Error('Public staging requires HTTPS');
 if(allowTestFixtures && process.env.YUNELA_WEIGHT_FIXTURES==='1' && !db.prepare('SELECT 1 FROM commercial_records WHERE source_sku=?').get(syntheticCommercial.sourceSku))importCatalog(db,[syntheticCommercial],false,'SYSTEM:synthetic');
-const { server, auth } = createStoreServer({ db, secret, requireQuote:true, allowLegacyFixedSku:process.env.YUNELA_LEGACY_FIXED_SKU_TESTS==='1', staticDir:resolve('dist'),allowTestFixtures,stagingAccess:staging?{password:stagePassword!,origin:stageOrigin!,secret}:undefined });
+const { server, auth } = createStoreServer({ db, secret, syntheticOnly:process.env.YUNELA_SYNTHETIC_ONLY==='1', requireQuote:true, allowLegacyFixedSku:process.env.YUNELA_LEGACY_FIXED_SKU_TESTS==='1', staticDir:resolve('dist'),allowTestFixtures,stagingAccess:staging?{password:stagePassword!,origin:stageOrigin!,secret}:undefined });
 if (process.env.YUNELA_OPERATOR_EMAIL && process.env.YUNELA_OPERATOR_PASSWORD) {
   const email = process.env.YUNELA_OPERATOR_EMAIL;
   const exists = db.prepare('SELECT 1 FROM auth_identities WHERE email=?').get(email.trim().toLowerCase());
