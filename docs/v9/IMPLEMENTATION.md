@@ -41,3 +41,6 @@ Use a separate Render Static Site with branch feat/yuna-storefront-v9, autoDeplo
 
 ## Remaining limits
 No generative model, verified sensory ranking, Creative V6.4 approved assets, saved account/tasting history, remote analytics or sales. Physical Android hardware is a CEO review step; automated checks emulate mobile viewports. Do not treat editorial choice as a supplier lot guarantee or commercial approval.
+
+## CDN recovery
+The first live check exposed a cached 404 for /demo-catalog.json (cf-cache-status HIT, age 119), while the exact same file with a fresh query returned HTTP 200 and 530425 bytes. Vite now computes a content digest from the catalog at build time; the frontend uses it as a query revision. Data changes update this digest automatically without source edits, and negative-cache entries for an old URL cannot hide the new catalog. Existing demo services are not touched.
