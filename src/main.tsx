@@ -4,4 +4,4 @@ import DiscoveryPrototype from './discovery-prototype';
 import './styles.css';
 import './storefront.css';
 import './storefront-v2.css';
-createRoot(document.getElementById('root')!).render(location.hash === '#/lab' ? <DiscoveryPrototype /> : <Storefront />);
+createRoot(document.getElementById('root')!).render(import.meta.env.VITE_STATIC_DEMO !== '1' && location.hash === '#/lab' ? <DiscoveryPrototype /> : <Storefront />);

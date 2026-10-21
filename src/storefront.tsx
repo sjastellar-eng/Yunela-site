@@ -7,8 +7,10 @@ type Product = {commercial?:{canonicalTeaId:string|null;lot:string|null;version:
 type View = {handoff?:{status:string;command_id:string;revision:number}|null;refund?:{status:string;amount:number}|null;order:Order;task:{status:string;tracking:string|null;branding_requested:number;branding_confirmed:number};payment:{state:string}};
 type OperatorProduct = {sku:string;name:string;retail_amount:number|null;stock:number|null;availability:string;confirmed:number;packaging:string;terms_note:string|null};
 const labels:Record<string,string>={IN_STOCK:'В наявності у партнера',PREORDER:'Під замовлення',REQUEST:'За запитом',UNAVAILABLE:'Недоступний',NEW:'Новий',QUEUED_TEST:'Тестове завдання підготовлене',PACKING:'Комплектується (тест)',SHIPPED:'Відправлено (тест)',DELIVERED:'Доставлено (тест)',CANCELLED:'Скасовано',NOT_STARTED:'Не розпочата',REQUIRES_ACTION:'Очікує тестової оплати',SUCCEEDED:'Тестова оплата успішна',DECLINED:'Тестова оплата відхилена'};
+const staticDemo=import.meta.env.VITE_STATIC_DEMO==='1';
 const money = (amount:number) => new Intl.NumberFormat('uk-UA',{style:'currency',currency:'UAH'}).format(amount/100);
 async function api<T>(path:string,token?:string,method='GET',data?:unknown):Promise<T> {
+  if(staticDemo)throw new Error('Це демонстрація інтерфейсу. Замовлення, оплата та кабінет оператора ще не підключені.');
   const response=await fetch('/api/store'+path,{method,headers:{'content-type':'application/json',...(token?{authorization:'Bearer '+token}:{})},body:data===undefined?undefined:JSON.stringify(data)});
   const result=await response.json();
   if(!response.ok)throw new Error(result.error?.message ?? `Помилка ${response.status}`);
@@ -29,7 +31,7 @@ export default function Storefront() {
   const [order,setOrder]=useState<View|null>(null),[query,setQuery]=useState(''),[filter,setFilter]=useState('ALL');
   const [category,setCategory]=useState('ALL'),[menuOpen,setMenuOpen]=useState(false),[finderChoice,setFinderChoice]=useState('');
   const catalogue=useRef<HTMLDivElement>(null);
-  const go=(next:string)=>{setPage(next);setMenuOpen(false);setError('');window.scrollTo({top:0,behavior:'instant'});};
+  const go=(next:string)=>{if(staticDemo&&['operator','status','checkout'].includes(next)){setError('Демонстрація інтерфейсу: оформлення замовлень та кабінет оператора недоступні.');setMenuOpen(false);return;}setPage(next);setMenuOpen(false);setError('');window.scrollTo({top:0,behavior:'instant'});};
   const browse=(next='ALL')=>{setCategory(next);setQuery('');setFilter('ALL');go('catalog');setMenuOpen(false);setTimeout(()=>catalogue.current?.scrollIntoView({block:'start',behavior:'instant'}),0);};
   const [weight,setWeight]=useState(100),[format,setFormat]=useState<'WEIGHT'|'WHOLE'>('WEIGHT'),[estimate,setEstimate]=useState<number|null>(null);
   const [quote,setQuote]=useState<{id:string;total:number}|null>(null);
@@ -40,14 +42,14 @@ export default function Storefront() {
   async function refresh(t:string) {
     const [catalog,c]=await Promise.all([api<{items:Product[]}>('/catalog'),api<Cart>('/cart',t)]);setProducts(catalog.items);setCart(c);
   }
-  useEffect(()=>{let alive=true;session().then(async t=>{if(!alive)return;setToken(t);await refresh(t);const id=localStorage.getItem('yunela-last-order');if(id)setOrder(await api<View>('/orders/'+encodeURIComponent(id),t));}).catch(e=>{if(alive)setError(e.message);});return()=>{alive=false;};},[]);
+  useEffect(()=>{let alive=true;if(staticDemo){fetch('/demo-catalog.json').then(r=>{if(!r.ok)throw new Error('Каталог тимчасово недоступний');return r.json();}).then(x=>{if(alive)setProducts(x.items);}).catch(e=>{if(alive)setError(e.message);});return()=>{alive=false;};}session().then(async t=>{if(!alive)return;setToken(t);await refresh(t);const id=localStorage.getItem('yunela-last-order');if(id)setOrder(await api<View>('/orders/'+encodeURIComponent(id),t));}).catch(e=>{if(alive)setError(e.message);});return()=>{alive=false;};},[]);
   async function work(operation:()=>Promise<void>) {setBusy(true);setError('');try{await operation();}catch(e){setError(e instanceof Error?e.message:'Помилка з’єднання');}finally{setBusy(false);}}
   const add=(p:Product)=>work(async()=>{setCart(await api<Cart>('/cart/items',token,'POST',{sku:p.sku,quantity:1,...(p.commercial?.testSellable?{format,weightGrams:format==='WHOLE'?p.commercial.wholeGrams:weight}:{})}));go('cart');});
   async function operatorRefresh(t:string) {const [o,p]=await Promise.all([api<{items:View[]}>('/operator/orders',t),api<{items:OperatorProduct[]}>('/operator/catalog',t)]);setOperatorOrders(o.items);setOperatorProducts(p.items);}
   const resetSession=()=>work(async()=>{localStorage.removeItem('yunela-store-token');localStorage.removeItem('yunela-last-order');setOrder(null);const t=await session();setToken(t);await refresh(t);});
   const visible=products.filter(p=>matchesCategory(p,category)&&(filter==='ALL'||p.availability===filter)&&`${productName(p)} ${p.name} ${p.sku} ${p.family}`.toLowerCase().includes(query.trim().toLowerCase())).sort((a,b)=>Number(Boolean(b.image))-Number(Boolean(a.image)));
   return <div className={'store'+(page==='catalog'?' visual-v2':'')}>
-    <div className="test-banner" role="status">ТЕСТОВИЙ МАГАЗИН · платежі офлайн · реальні замовлення партнеру не надсилаються</div>
+    <div className="test-banner" role="status">{staticDemo?'ДЕМОНСТРАЦІЯ · замовлення та оплата недоступні':'ТЕСТОВИЙ МАГАЗИН · платежі офлайн · реальні замовлення партнеру не надсилаються'}</div>
     <a className="skip-link" href="#store-content">До вмісту</a>
     <header><button className="logo" aria-label="YUNELA — головна" onClick={()=>{setCategory('ALL');setQuery('');go('catalog');}}>YUNELA</button><nav aria-label="Головна навігація" className={menuOpen?'is-open':''}><button onClick={()=>browse()}>Чай</button><button onClick={()=>go('finder')}>Знайти свій чай</button><button onClick={()=>go('about')}>Про нас</button><button onClick={()=>go('status')}>Моє замовлення</button></nav><div className="header-tools"><button aria-label="Пошук" onClick={()=>{browse();setTimeout(()=>document.getElementById('tea-search')?.focus(),0);}}><Search size={20}/></button><button className="cart-tool" onClick={()=>go('cart')} aria-label={`Кошик (${cart?.items.reduce((n,x)=>n+x.quantity,0)??0})`}><ShoppingBag size={20}/><span>{cart?.items.reduce((n,x)=>n+x.quantity,0)??0}</span></button><button className="menu-toggle" aria-label={menuOpen?'Закрити меню':'Відкрити меню'} aria-expanded={menuOpen} onClick={()=>setMenuOpen(!menuOpen)}>{menuOpen?<X size={21}/>:<Menu size={21}/>}</button></div></header>
     {error&&<div className="store-error" role="alert">{error} {error.includes('Сесію завершено')&&<button onClick={resetSession} disabled={busy}>Нова тестова сесія</button>}</div>}
