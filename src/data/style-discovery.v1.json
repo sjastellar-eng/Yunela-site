@@ -1,0 +1,737 @@
+{
+  "version": "style-discovery-v1",
+  "sourceSchema": "yunela-tea-intelligence-v2",
+  "records": {
+    "LIST-013": {
+      "tags": [
+        "floral",
+        "processing_discovery"
+      ],
+      "sourceIds": [
+        "W13",
+        "W25",
+        "W12"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-014": {
+      "tags": [
+        "yancha_exploration",
+        "texture"
+      ],
+      "sourceIds": [
+        "W12",
+        "W14",
+        "W16"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-015": {
+      "tags": [
+        "yancha_exploration",
+        "texture"
+      ],
+      "sourceIds": [
+        "W12",
+        "W14",
+        "W16"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-016": {
+      "tags": [
+        "yancha_exploration",
+        "identity_conditional"
+      ],
+      "sourceIds": [
+        "W12",
+        "W14"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-017": {
+      "tags": [
+        "yancha_exploration",
+        "texture"
+      ],
+      "sourceIds": [
+        "W12",
+        "W14",
+        "W16"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-018": {
+      "tags": [
+        "yancha_exploration",
+        "comparative_tasting"
+      ],
+      "sourceIds": [
+        "W12",
+        "W14",
+        "W15"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-019": {
+      "tags": [
+        "floral",
+        "honey_aroma_reference"
+      ],
+      "sourceIds": [
+        "W17",
+        "W12"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-020": {
+      "tags": [
+        "dancong_exploration",
+        "identity_conditional"
+      ],
+      "sourceIds": [
+        "W17",
+        "W12"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-021": {
+      "tags": [
+        "tea_blend_exploration",
+        "composition_unknown"
+      ],
+      "sourceIds": [
+        "L03",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-022": {
+      "tags": [
+        "light_oolong_exploration"
+      ],
+      "sourceIds": [
+        "L03",
+        "W12",
+        "W22",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-023": {
+      "tags": [
+        "processing_discovery",
+        "gaba_technique"
+      ],
+      "sourceIds": [
+        "W18",
+        "L03",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-024": {
+      "tags": [
+        "honey_aroma_reference",
+        "ripe_fruit_reference"
+      ],
+      "sourceIds": [
+        "W19",
+        "W26"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-001": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-002": {
+      "tags": [
+        "identity_exploration"
+      ],
+      "sourceIds": [
+        "L01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-003": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-004": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-005": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-006": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-007": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-008": {
+      "tags": [
+        "identity_exploration"
+      ],
+      "sourceIds": [
+        "L01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-009": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-010": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-011": {
+      "tags": [
+        "identity_exploration"
+      ],
+      "sourceIds": [
+        "L01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-012": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-013": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-014": {
+      "tags": [
+        "sun_drying_exploration",
+        "red_tea_exploration"
+      ],
+      "sourceIds": [
+        "L03",
+        "P014",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-015": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-016": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-017": {
+      "tags": [
+        "sheng_exploration",
+        "comparative_tasting"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-018": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-019": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-020": {
+      "tags": [
+        "sheng_exploration",
+        "comparative_tasting"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-021": {
+      "tags": [
+        "sheng_exploration",
+        "comparative_tasting"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-022": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-023": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-024": {
+      "tags": [
+        "identity_exploration"
+      ],
+      "sourceIds": [
+        "L01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-025": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-026": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-027": {
+      "tags": [
+        "sheng_exploration",
+        "comparative_tasting"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-028": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-029": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "PHOTO-030": {
+      "tags": [
+        "postfermented_exploration",
+        "rounded_style_reference"
+      ],
+      "sourceIds": [
+        "W01",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-001": {
+      "tags": [
+        "white_tea_exploration",
+        "bud_tea"
+      ],
+      "sourceIds": [
+        "W08",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-002": {
+      "tags": [
+        "white_tea_exploration"
+      ],
+      "sourceIds": [
+        "W09",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-003": {
+      "tags": [
+        "bud_tea",
+        "red_tea_exploration"
+      ],
+      "sourceIds": [
+        "W10",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-004": {
+      "tags": [
+        "red_tea_exploration",
+        "smoke_unconfirmed"
+      ],
+      "sourceIds": [
+        "W10",
+        "W11",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-005": {
+      "tags": [
+        "red_tea_exploration",
+        "intensity_reference"
+      ],
+      "sourceIds": [
+        "W11",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-006": {
+      "tags": [
+        "red_tea_exploration"
+      ],
+      "sourceIds": [
+        "W11",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-007": {
+      "tags": [
+        "red_tea_exploration"
+      ],
+      "sourceIds": [
+        "W11",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-008": {
+      "tags": [
+        "red_tea_exploration"
+      ],
+      "sourceIds": [
+        "W11",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-009": {
+      "tags": [
+        "red_tea_exploration"
+      ],
+      "sourceIds": [
+        "W11",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-010": {
+      "tags": [
+        "red_tea_exploration"
+      ],
+      "sourceIds": [
+        "W11",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-011": {
+      "tags": [
+        "sun_drying_exploration",
+        "red_tea_exploration"
+      ],
+      "sourceIds": [
+        "L03",
+        "P014",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-012": {
+      "tags": [
+        "sun_drying_exploration",
+        "red_tea_exploration"
+      ],
+      "sourceIds": [
+        "L03",
+        "P014",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-025": {
+      "tags": [
+        "green_tea_exploration",
+        "leaf_tea",
+        "identity_conditional"
+      ],
+      "sourceIds": [
+        "W21",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    },
+    "LIST-026": {
+      "tags": [
+        "green_tea_exploration",
+        "fresh_style_reference"
+      ],
+      "sourceIds": [
+        "W20",
+        "W27",
+        "E02"
+      ],
+      "scope": "GENERAL_STYLE_NOT_LOT",
+      "use": "EDITORIAL_DISCOVERY_ONLY",
+      "tastingPerformed": false
+    }
+  }
+}
