@@ -23,7 +23,7 @@ import { TestMonoAdapter } from '../application/payment/testMono';
 import { applicationErrorToHttp } from './errors';
 import type { ShippingDetails } from '../contracts/commerce';
 
-type Options = { db: Database.Database; secret: string; staticDir?: string; allowTestFixtures?: boolean; stagingAccess?: StagingAccess; requireQuote?: boolean; requireCommercialData?:boolean; allowLegacyFixedSku?:boolean };
+type Options = { db: Database.Database; secret: string; staticDir?: string; allowTestFixtures?: boolean; stagingAccess?: StagingAccess; requireQuote?: boolean; requireCommercialData?:boolean; syntheticOnly?:boolean; allowLegacyFixedSku?:boolean };
 const hash = (v: string) => createHash('sha256').update(v).digest('hex');
 const fail = (message: string): never => { throw new ApplicationError('VALIDATION_ERROR',message); };
 function string(body: Record<string, unknown>, key: string, max = 200): string {
@@ -76,6 +76,7 @@ export function createStoreServer(options: Options) {
   }
   function visible(sku: string) {
     const p = offer(db,sku);
+    if(options.syntheticOnly && (sku!=='TEST-WEIGHT' || !p.test_fixture))throw new ApplicationError('PRODUCT_UNAVAILABLE','На стенді дозволено лише TEST-WEIGHT');
     if(p.test_fixture && !getCommercial(db,sku) && options.allowLegacyFixedSku!==true)throw new ApplicationError('PRODUCT_UNAVAILABLE','Legacy fixed-SKU fixture is disabled in weighted mode');
     if (p.test_fixture && !options.allowTestFixtures) throw new ApplicationError('PRODUCT_NOT_FOUND','Товар не знайдено');
     if(options.requireCommercialData!==false && !p.test_fixture && !getCommercial(db,sku)?.approvedForTest)throw new ApplicationError('PRODUCT_UNAVAILABLE','Потрібні підтверджені комерційні дані та маса');
@@ -95,7 +96,7 @@ export function createStoreServer(options: Options) {
     if (path === '/health' && req.method === 'GET') return send({status:'ok',paymentMode:'offline-test',partnerDispatch:'disabled'});
     if (path === '/api/store/catalog' && req.method === 'GET') {
       const rows = db.prepare('SELECT * FROM partner_catalog WHERE test_fixture=0 OR ?=1 ORDER BY sku').all(options.allowTestFixtures ? 1:0) as ReturnType<typeof offer>[];
-      return send({mode:'offline-test',items:rows.filter(p=>!p.test_fixture||!!getCommercial(db,p.sku)||options.allowLegacyFixedSku===true).map(p=>({sku:p.sku,name:p.name,family:p.family,image:p.image_path,price:p.retail_amount,availability:p.availability,confirmed:Boolean(p.confirmed),stock:(()=>{const r=db.prepare('SELECT stock_grams,reserved_grams FROM commercial_records WHERE source_sku=?').get(p.sku) as {stock_grams:number|null;reserved_grams:number}|undefined;return r?r.stock_grams===null?null:Math.max(0,r.stock_grams-r.reserved_grams):p.stock===null?null:Math.max(0,p.stock-p.reserved);})(),testFixture:Boolean(p.test_fixture),commercial:(()=>{const r=getCommercial(db,p.sku);return r?{canonicalTeaId:r.canonicalTeaId,lot:r.lot,version:r.version,testSellable:allowed(r),wholeGrams:allowed(r)?r.curve!.wholeGrams:null,minGrams:getPolicy(db).minGrams,stepGrams:getPolicy(db).stepGrams}:null;})(),packaging:p.packaging,termsNote:p.terms_note}))});
+      return send({mode:'offline-test',items:rows.filter(p=>!p.test_fixture||!!getCommercial(db,p.sku)||options.allowLegacyFixedSku===true).map(p=>({sku:p.sku,name:p.name,family:p.family,image:p.image_path,price:p.retail_amount,availability:options.syntheticOnly && p.sku!=='TEST-WEIGHT'?'REQUEST':p.availability,confirmed:Boolean(p.confirmed),stock:(()=>{const r=db.prepare('SELECT stock_grams,reserved_grams FROM commercial_records WHERE source_sku=?').get(p.sku) as {stock_grams:number|null;reserved_grams:number}|undefined;return r?r.stock_grams===null?null:Math.max(0,r.stock_grams-r.reserved_grams):p.stock===null?null:Math.max(0,p.stock-p.reserved);})(),testFixture:Boolean(p.test_fixture),commercial:(()=>{const r=getCommercial(db,p.sku);return r?{canonicalTeaId:r.canonicalTeaId,lot:r.lot,version:r.version,testSellable:allowed(r)&&(!options.syntheticOnly||p.sku==='TEST-WEIGHT'),wholeGrams:allowed(r)?r.curve!.wholeGrams:null,minGrams:getPolicy(db).minGrams,stepGrams:getPolicy(db).stepGrams}:null;})(),packaging:p.packaging,termsNote:p.terms_note}))});
     }
     if (path === '/api/store/session' && req.method === 'POST') {
       rateLimit(req);
