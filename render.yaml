@@ -1,44 +1,23 @@
 services:
   - type: web
-    name: yunela-private-staging
-    runtime: node
-    plan: starter
-    region: frankfurt
+    runtime: static
+    name: yunela-demo
     repo: https://github.com/sjastellar-eng/Yunela-site
-    branch: feat/render-private-staging-v6
+    branch: feat/render-static-demo
     autoDeployTrigger: 'off'
-    numInstances: 1
-    buildCommand: npm ci --include=dev && npm run typecheck && npm run lint && npm test && npm run build
-    startCommand: node scripts/render-start.mjs
-    healthCheckPath: /
-    disk:
-      name: yunela-sqlite
-      mountPath: /var/data
-      sizeGB: 1
+    buildCommand: npm ci --ignore-scripts --include=dev && npx vite build
+    staticPublishPath: dist
     envVars:
       - key: NODE_VERSION
         value: 24.19.0
-      - key: NODE_ENV
-        value: staging
-      - key: HOST
-        value: 0.0.0.0
-      - key: YUNELA_STAGE_MODE
+      - key: VITE_STATIC_DEMO
         value: '1'
-      - key: YUNELA_SYNTHETIC_ONLY
-        value: '1'
-      - key: YUNELA_TEST_FIXTURES
-        value: '1'
-      - key: YUNELA_WEIGHT_FIXTURES
-        value: '1'
-      - key: YUNELA_LEGACY_FIXED_SKU_TESTS
-        value: '0'
-      - key: YUNELA_DB_FILE
-        value: /var/data/yunela.sqlite
-      - key: YUNELA_AUTH_SECRET
-        generateValue: true
-      - key: YUNELA_STAGE_PASSWORD
-        generateValue: true
-      - key: YUNELA_OPERATOR_EMAIL
-        value: operator@example.test
-      - key: YUNELA_OPERATOR_PASSWORD
-        generateValue: true
+      - key: SKIP_INSTALL_DEPS
+        value: 'true'
+    headers:
+      - path: /*
+        name: X-Robots-Tag
+        value: noindex, nofollow, noarchive
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
