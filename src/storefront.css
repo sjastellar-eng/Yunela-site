@@ -7,3 +7,6 @@
 
 .store-detail>div>button:first-of-type:disabled{background:#e0e4d9;color:#717b69;border-color:#c9cec0}
 .store pre{white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%;overflow:auto}.weight-workflow{border-top:1px solid #68745a55;margin-top:18px;padding-top:18px}.weight-workflow button{margin:5px;max-width:100%}
+
+.catalog-short-description{font-size:.85rem;line-height:1.5;overflow-wrap:anywhere}.catalogue-content{margin-top:2rem;border-top:1px solid #8885;padding-top:1rem;line-height:1.65;min-width:0}.catalogue-content h2{font-size:1.35rem;margin:1.5rem 0 .6rem}.catalogue-content h3{font-size:1.05rem}.catalogue-content p{max-width:70ch;white-space:pre-line}.catalogue-content details{padding:1rem 0;border-bottom:1px solid #8885}.catalogue-content summary{cursor:pointer;min-height:44px;display:flex;align-items:center}.catalogue-content dd{margin:.2rem 0 1rem;overflow-wrap:anywhere}.catalogue-content dt{font-weight:600}.catalogue-content a{overflow-wrap:anywhere;text-decoration:underline}.content-disclosure{padding:1rem;border:1px solid #8887}.brew-parameters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}.catalogue-content li{margin-bottom:.7rem}.store-detail>div{min-width:0}
+.store-detail>div>.store-placeholder{height:auto;width:100%;aspect-ratio:1;align-self:start}.store-detail{align-items:start}
