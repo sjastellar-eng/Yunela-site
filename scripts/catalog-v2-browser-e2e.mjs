@@ -12,7 +12,7 @@ const browser=await chromium.launch({executablePath:process.env.CHROME_PATH,head
 mkdirSync('artifacts/v8',{recursive:true});
 try{for(const [name,width,height]of [['mobile',390,844],['desktop',1440,1000]]){
  const context=await browser.newContext({viewport:{width,height},ignoreHTTPSErrors:!!remote});const page=await context.newPage();const errors=[],api=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(new URL(r.url()).pathname.startsWith('/api'))api.push(r.url());});
- await page.goto(url);await page.locator('#tea-search').waitFor();assert.equal(await page.locator('.store-grid article').count(),56);assert.equal(await page.locator('.product-buy button:enabled').count(),0);
+ await page.goto(url);await page.locator('#tea-search').waitFor();await page.locator('.store-grid article').nth(55).waitFor();assert.equal(await page.locator('.store-grid article').count(),56);assert.equal(await page.locator('.product-buy button:enabled').count(),0);
  await page.locator('#tea-search').fill('LIST-013');assert.equal(await page.locator('.store-grid article').count(),1);await page.locator('.product-open').click();await page.getByRole('heading',{name:'Як заварювати',exact:true}).waitFor();assert.ok((await page.locator('.catalogue-content').innerText()).includes('не підтверджені'));
  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));await page.screenshot({path:`artifacts/v8/${name}-product.png`,fullPage:true});
  await page.getByRole('button',{name:'Назад до каталогу',exact:true}).click();await page.locator('#tea-search').fill('PHOTO-014');await page.locator('.product-open').click();assert.ok((await page.locator('.store-detail').innerText()).includes('Червоний чай'));
