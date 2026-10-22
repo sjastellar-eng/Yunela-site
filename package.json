@@ -5,14 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && vite build --mode server",
+    "build": "npm run validate:images && tsc -b && vite build && vite build --mode server",
     "start": "node dist-server/f3-runtime.js",
     "lint": "eslint .",
     "typecheck": "tsc -b --pretty false",
     "test": "node scripts/build-test-workers.mjs && vitest run",
     "preview": "vite preview",
     "test:browser": "node scripts/browser-e2e.mjs",
-    "test:browser:weight": "node scripts/browser-weight-e2e.mjs"
+    "test:browser:weight": "node scripts/browser-weight-e2e.mjs",
+    "validate:images": "node scripts/check-creative-images.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "5.0.2",
