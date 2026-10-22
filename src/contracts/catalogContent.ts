@@ -8,5 +8,5 @@ export interface CatalogContentV2 {
  recipe:{grams:number|null;waterMl:number|null;temperatureC:number|null;firstInfusionSeconds:number|null;adjustment:string}|null;
  sensory:Record<string,null>;discoveryDistance:null;verifiedFields:string[];
  publishAllowed:false;salesAllowed:false;recommendationApproved:false;previewOnly:true;
- image:{kind:string;rightsStatus:string;publicationAllowed:boolean;assignmentStatus:string;alt?:string;path?:string};
+ image:{kind:string;rightsStatus:string;publicationAllowed:boolean;assignmentStatus:string;alt?:string;path?:string;sha256?:string;sourceSku?:string;productIdentityConfirmed?:boolean};
 }

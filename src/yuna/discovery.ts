@@ -13,8 +13,8 @@ export function readProfile(raw:string|null):YunaProfile|null{
 }
 export function interpretMessage(text:string,profile:YunaProfile):{profile:YunaProfile;message:string}{
  const q=text.toLocaleLowerCase('uk-UA').slice(0,600),p={...profile};
- if(/ліку|леч|тиск|давлен|вагіт|беремен|медич|сон|кофеїн/.test(q))return{profile:p,message:'Я допомагаю досліджувати чай, але не визначаю лікувальні ефекти, кофеїн чи безпечність для здоров’я. Таких перевірених даних у каталозі немає.'};
- if(/порів|сравн|відрізня|отлич/.test(q))return{profile:p,message:'Познач два чаї кнопкою «Порівняти». Я покажу їхні категорії, довідкові описи та межі даних поруч. Відмінності партій без дегустації не встановлюю.'};
+ if(/ліку|леч|тиск|давлен|вагіт|беремен|медич|сон|кофеїн/.test(q))return{profile:p,message:'Я не визначаю лікувальні властивості чи безпечність чаю для здоров’я. Можу допомогти з вибором чайного напряму.'};
+ if(/порів|сравн|відрізня|отлич/.test(q))return{profile:p,message:'Познач два чаї кнопкою «Порівняти» — зіставимо їхні описи та рецепти поруч.'};
  let understood=false;
  for(const [re,family]of [[/пуер|пуэр/,'Пуер'],[/улун/,'Улун'],[/білий|белый/,'Білий чай'],[/зелений|зелёный|зеленый/,'Зелений чай'],[/червоний|красный/,'Червоний чай']] as const)if(re.test(q)){p.family=family;understood=true;break;}
  if(/м’я|м'я|мяг|солод|слад/.test(q)){p.taste='М’який напрям';understood=true;}
@@ -23,7 +23,7 @@ export function interpretMessage(text:string,profile:YunaProfile):{profile:YunaP
  if(/не люблю гір|не люблю гор|без гір|без гор/.test(q)){p.avoidBitter=true;understood=true;}
  if(/перш|перв|новач/.test(q)){p.experience=EXPERIENCE_OPTIONS[0];understood=true;}
  if(/легк/.test(q)){p.intensity='Легка';understood=true;}else if(/насич|насыщ|виразн/.test(q)){p.intensity='Виразна';understood=true;}
- return{profile:p,message:understood?'Почула тебе. Оновила твій напрям нижче. Покажу записи для дослідження стилю — їхній смак не підтверджено дегустацією партії.':'У цьому деморежимі я розпізнаю категорії та прості вподобання, а не веду довільний AI-діалог. Спробуй «Хочу улун» або скористайся питаннями нижче.'};
+ return{profile:p,message:understood?'Гаразд, покажу кілька чаїв цього напряму. Деталі смаку партії ще не підтверджено.':'Спробуй «Хочу улун» або «Не люблю гіркоту». Або натисни «Кілька запитань» — допоможу розібратися.'};
 }
 const styles=styleData.records as Record<string,{tags:string[];sourceIds:string[];scope:string;use:string}>;
 export function discoverStyles(products:DiscoveryProduct[],p:YunaProfile,offset=0){
