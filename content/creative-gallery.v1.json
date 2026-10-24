@@ -1,0 +1,3695 @@
+{
+  "schemaVersion": "creative-gallery-v1",
+  "products": [
+    {
+      "sourceSku": "PHOTO-001",
+      "primary": "/creative/PHOTO-001.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-001",
+          "path": "/creative/PHOTO-001.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Ґу Юнь Мяо Сян». Не підтверджує поточну партію.",
+          "sha256": "2f415c3f1882a082a63ca439df5831e9833601af126960d1f175b982214daad4",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-001-primary-480.webp",
+              "width": 480,
+              "sha256": "700315d81d804132746730e85a28539e13475cda22b9cc441e48882e48be200c"
+            },
+            {
+              "path": "/creative/PHOTO-001-primary-800.webp",
+              "width": 800,
+              "sha256": "f5ae7f9d8f282a0f553f37f9e7ecf3c720506e739cee5552a5f87c704d30ff6a"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-001",
+          "path": "/creative/PHOTO-001-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-001: додатковий ракурс; не фото партії.",
+          "sha256": "a52f2b05a3539c4c177772c4368cc889772811651fe502d2d03f9ad31b580508",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-001-illustration-480.webp",
+              "width": 480,
+              "sha256": "626d27779ec8e5bf76dc565149c4413546d26d112e1691250dd5130d1f06ddfc"
+            },
+            {
+              "path": "/creative/PHOTO-001-illustration-800.webp",
+              "width": 800,
+              "sha256": "9df264015bb6ccd36a0f48ec55e266dbd8a89b0ee63db59c88238fdb9f410cf0"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-001",
+          "path": "/creative/PHOTO-001-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-001: додатковий ракурс; не фото партії.",
+          "sha256": "0a3faa27ef463e7317be72b0fc8f290c8eb66d6285ba20fb8c793e8739c67990",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-001-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "89a735617e2ff197fc082ff48e7a63e7ea09f8a5ac5c6bc197a9ed27892daaf4"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-002",
+      "primary": "/creative/PHOTO-002.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-002",
+          "path": "/creative/PHOTO-002.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: «Фей Сянь Ґун Ча». Не підтверджує поточну партію.",
+          "sha256": "d08a302f65738201a08a16b5cddf4d0f053c2caab06697eefd416d0e25555240",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-002-primary-480.webp",
+              "width": 480,
+              "sha256": "42e552c220c02eff2ebdfbb61f684364d204d18c6453b8fc821031b958184cea"
+            },
+            {
+              "path": "/creative/PHOTO-002-primary-800.webp",
+              "width": 800,
+              "sha256": "5ade8f70125f6b47961bf0f40a004eb41355f773d0abaa6fc1fb905897f0bbbf"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "UNVERIFIED",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-003",
+      "primary": "/creative/PHOTO-003.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-003",
+          "path": "/creative/PHOTO-003.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Лао Те», код 1966. Не підтверджує поточну партію.",
+          "sha256": "313709fea1e066196db537be5ddf6e70794011b4f7f2f62492b66f3bce577290",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-003-primary-480.webp",
+              "width": 480,
+              "sha256": "724a0245f57bfecb2380f4c40fad86eefe43911158e0d82e9a262ad880f4c145"
+            },
+            {
+              "path": "/creative/PHOTO-003-primary-800.webp",
+              "width": 800,
+              "sha256": "8fb13dcc11979769d09335eafc488fd9deec6537d3895f72669d1c50a0aabdcc"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-003",
+          "path": "/creative/PHOTO-003-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-003: додатковий ракурс; не фото партії.",
+          "sha256": "359d71f3fc43bd4074c7428bbe6aca14c3c8c8e564a3d9e8580131bc57a25885",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-003-illustration-480.webp",
+              "width": 480,
+              "sha256": "1c9a7d58c3885ceec50a2b96180b2d9f20c8288e0abe4a821f981205b903a697"
+            },
+            {
+              "path": "/creative/PHOTO-003-illustration-800.webp",
+              "width": 800,
+              "sha256": "72a2b3de551c1cb0a39dbc9c758d9fef63fc671d58d2e09a25d4167d22a8da90"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-003",
+          "path": "/creative/PHOTO-003-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-003: додатковий ракурс; не фото партії.",
+          "sha256": "a878e3980e5696af9ca3072f13bd85934e0a6e76cc0cbd7c851cd6e6ab47af29",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-003-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "d2cf0c3edc06b78ee0f23135a6319048552209b931fd56d2df0bc08623f04542"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-004",
+      "primary": "/creative/PHOTO-004.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-004",
+          "path": "/creative/PHOTO-004.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Му Є Чунь 001». Не підтверджує поточну партію.",
+          "sha256": "9cb8f615934d63f3801c5db93d040177b5b427648467bf7f272def00906d322d",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-004-primary-480.webp",
+              "width": 480,
+              "sha256": "54ae86888085b2bb55dfb3b11e84f1d21aa87e5dc27bdbc5f36a7747934094de"
+            },
+            {
+              "path": "/creative/PHOTO-004-primary-800.webp",
+              "width": 800,
+              "sha256": "be700b1929365419661f2e408ae34a6c67ad8b47dc84f5355e2b515ab80c3eef"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-005",
+      "primary": "/creative/PHOTO-005.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-005",
+          "path": "/creative/PHOTO-005.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Кун Цюе Інь». Не підтверджує поточну партію.",
+          "sha256": "0ad93dc91857e0ddb43602a593fc890336103dfbbd6818e95c1e83dd6782e533",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-005-primary-480.webp",
+              "width": 480,
+              "sha256": "2941c4bec9f82af056866391568c7079bb736f127c5b96067ba438ebd0639325"
+            },
+            {
+              "path": "/creative/PHOTO-005-primary-800.webp",
+              "width": 800,
+              "sha256": "256d031786e672532db282f3c1c5f502db457466405bcb54dad620b90acd063d"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-005",
+          "path": "/creative/PHOTO-005-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-005: додатковий ракурс; не фото партії.",
+          "sha256": "585eeb52476e744587749cbbae186b93f8c0ea497013ed86d367919518efabf4",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-005-illustration-480.webp",
+              "width": 480,
+              "sha256": "2d30a6043f690c5d0fcd846fcc9fd6303b61414eab59e116ce30f5e34b0b3d0f"
+            },
+            {
+              "path": "/creative/PHOTO-005-illustration-800.webp",
+              "width": 800,
+              "sha256": "b148ec1272ea7e6d0fda6399ce501aa1cd55fd55fae7de27a2165d4d7612a995"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-005",
+          "path": "/creative/PHOTO-005-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-005: додатковий ракурс; не фото партії.",
+          "sha256": "767cacca6849361e82f0f149619708a8993e45e01908b4b5f60d045ddc56beb0",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-005-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "8e700f1dcc09184cd87a481173e9234ddc4825363ecb7d78410d0012fe942b3f"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-006",
+      "primary": "/creative/PHOTO-006.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-006",
+          "path": "/creative/PHOTO-006.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Цяо Му Юань Ча». Не підтверджує поточну партію.",
+          "sha256": "38ae6839c6e772a7c7ebd39998f4f7c40d803f8082cbb6f30e041da58ab3f669",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-006-primary-480.webp",
+              "width": 480,
+              "sha256": "b396e2ac65a56e70cd784160ffdef388432fcd0c3d6a9ce0ae2dfc3baa527d68"
+            },
+            {
+              "path": "/creative/PHOTO-006-primary-800.webp",
+              "width": 800,
+              "sha256": "255f571701766d6d586905d99c11210a6c5b178a97d8acfe818880f18ec8892d"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-007",
+      "primary": "/creative/PHOTO-007.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-007",
+          "path": "/creative/PHOTO-007.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Біндао». Не підтверджує поточну партію.",
+          "sha256": "fe652e5dc5689833123399616284901a53bd0bfdf912f8776e4f69f5ef3ac881",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-007-primary-480.webp",
+              "width": 480,
+              "sha256": "ada3c4fb6a752ab44a0ce7b6d9e04f41113e6452efe2122029633d1a368e91f8"
+            },
+            {
+              "path": "/creative/PHOTO-007-primary-800.webp",
+              "width": 800,
+              "sha256": "65a431142eb4987daa4caa5c05e8cfdbcf6ac1515e778ac1c3a1ad7d994ac84a"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-008",
+      "primary": "/creative/PHOTO-008.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-008",
+          "path": "/creative/PHOTO-008.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: «Бай Чжень Цзінь Лянь». Не підтверджує поточну партію.",
+          "sha256": "01affb252709cb2d5a978b3e35236b7421aa6a76d250df04b9fa2b9e73c5fca8",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-008-primary-480.webp",
+              "width": 480,
+              "sha256": "996d672a5d92d09eb133b33a9fa1c6fc2801e95e00a2624d1cdd924d52e826e5"
+            },
+            {
+              "path": "/creative/PHOTO-008-primary-800.webp",
+              "width": 800,
+              "sha256": "6ba9be217a25195a9cd9dbd926f12254c22ede4426703c68c5129e74b5bc784a"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "UNVERIFIED",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-009",
+      "primary": "/creative/PHOTO-009.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-009",
+          "path": "/creative/PHOTO-009.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Ґунтін», маркування «Чунь Му Інь Цзі». Не підтверджує поточну партію.",
+          "sha256": "223ab2e2372a0d4907aefa557d6c5a63137397251aa94378d2ae60dd800effef",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-009-primary-480.webp",
+              "width": 480,
+              "sha256": "edf71f84c7e512cf65a5a9335cac87a2956013ff9ee5a12aef4efac933f14eeb"
+            },
+            {
+              "path": "/creative/PHOTO-009-primary-800.webp",
+              "width": 800,
+              "sha256": "7c3700287d6c977e9823f2ef2de48ba5eca7d7691b07a2cc21c1a7ddf436e945"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-009",
+          "path": "/creative/PHOTO-009-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-009: додатковий ракурс; не фото партії.",
+          "sha256": "66db59492c1abb1f71925eb12f3b884204e4abbd6f3ddadf622650c73188e049",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-009-illustration-480.webp",
+              "width": 480,
+              "sha256": "1316d4bd9688b6bf286f3714903f73d4331c1b317c5de950c86380bb06682dcc"
+            },
+            {
+              "path": "/creative/PHOTO-009-illustration-800.webp",
+              "width": 800,
+              "sha256": "86e8b4b68e7e3dc9c081864483fa00e52e5f127f893f25599cfeb1fc52928e15"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-009",
+          "path": "/creative/PHOTO-009-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-009: додатковий ракурс; не фото партії.",
+          "sha256": "02d764eb21c87ee5742b64043a5d4fde1dcc59838f33505c69edd8e366f47a42",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-009-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "d6856ef2a1a2ca11f1150434f91d31d8f13864dcd0b5ef340e1eecd1298420af"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-010",
+      "primary": "/creative/PHOTO-010.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-010",
+          "path": "/creative/PHOTO-010.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Юй Хуа Нун». Не підтверджує поточну партію.",
+          "sha256": "1fe346f4d35f498b32045f883fa642e18357c3c3740ecd0bf04bc3dfb4d360af",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-010-primary-480.webp",
+              "width": 480,
+              "sha256": "2bc00d61c21449a74f9dcb9ec5b935582c3c413cd6aa784d34cb383e436b6766"
+            },
+            {
+              "path": "/creative/PHOTO-010-primary-800.webp",
+              "width": 800,
+              "sha256": "b380a09cac69e7d9ccb429c9c9a6c75d443ecfc07fda6060e9ab2e67957f9eae"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-011",
+      "primary": "/creative/PHOTO-011.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-011",
+          "path": "/creative/PHOTO-011.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: «Ґунтін Ґун Бін». Не підтверджує поточну партію.",
+          "sha256": "772f972f54012544223b96f6e1f8f8ee451effe51a2c6771910c1bb483570653",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-011-primary-480.webp",
+              "width": 480,
+              "sha256": "dd62fb8836f3f7ccebd2ae21a6999d8f885ba7e6907c648bcd75995e073350d3"
+            },
+            {
+              "path": "/creative/PHOTO-011-primary-800.webp",
+              "width": 800,
+              "sha256": "c80ac397453a2b0f48a658b5aec4bf5b383cf547444ee92ca2744064665a001e"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "UNVERIFIED",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-012",
+      "primary": null,
+      "images": []
+    },
+    {
+      "sourceSku": "PHOTO-013",
+      "primary": "/creative/PHOTO-013.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-013",
+          "path": "/creative/PHOTO-013.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Айлаошань». Не підтверджує поточну партію.",
+          "sha256": "3e7c6f92deda5b6a5b4a1d57ce580fdc14779ca3b6effd8db9afcf03ae92bd2a",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-013-primary-480.webp",
+              "width": 480,
+              "sha256": "bb917d82051460f1f3f77656781dc040c411e2150bd02710767071d9bcddf759"
+            },
+            {
+              "path": "/creative/PHOTO-013-primary-800.webp",
+              "width": 800,
+              "sha256": "d4dabf64bc1459cdf3895a5b050bb15ce2780cd716eea3bbd609c51ff7675dcc"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-013",
+          "path": "/creative/PHOTO-013-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-013: додатковий ракурс; не фото партії.",
+          "sha256": "fc8388401ee85af34ed2920a416915965c8a670aee010527cb75a51a86ca4b91",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-013-illustration-480.webp",
+              "width": 480,
+              "sha256": "ec5deb01414602761f173d59d26b96d2aa52291260bf44d2a3895eef1287f586"
+            },
+            {
+              "path": "/creative/PHOTO-013-illustration-800.webp",
+              "width": 800,
+              "sha256": "30a0cc9f5b86f99ef47cf3e964d32b47072e086941b44a42f216091cc9a92295"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-013",
+          "path": "/creative/PHOTO-013-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-013: додатковий ракурс; не фото партії.",
+          "sha256": "47d91cc1b3dc7d18abe0848472d187d0bdb9c3f3cf1cab327ddc55f220860289",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-013-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "f04f03e83daabcb20d1b4d66f4e786a6609937b623e0b34bcc0abb0fe1a16030"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-014",
+      "primary": "/creative/PHOTO-014.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-014",
+          "path": "/creative/PHOTO-014.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Червоний чай «Шайхун Айлаошань», пресований. Не підтверджує поточну партію.",
+          "sha256": "8b0f620594881a391b432d8faed543b3640b0466f7c9214781bd64633b2b4c51",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-014-primary-480.webp",
+              "width": 480,
+              "sha256": "7831e82ae2e5896abfd0a7b0158b2c7bf9af367dc1adc01aacb7c0ea94c82c0b"
+            },
+            {
+              "path": "/creative/PHOTO-014-primary-800.webp",
+              "width": 800,
+              "sha256": "14c021afef3faafbc6348dc9ba0bfe2e18994e0f0cb369b0048838bed251eb3d"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-014",
+          "path": "/creative/PHOTO-014-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-014: додатковий ракурс; не фото партії.",
+          "sha256": "83a28a0c18e10ade8d13eed2b5fa5096d9337654d000f36b2c47dd534185b9f9",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-014-illustration-480.webp",
+              "width": 480,
+              "sha256": "05582060a8a511b4827230fde9f05e2658f34f5245f35e6a9e0b384fa860b572"
+            },
+            {
+              "path": "/creative/PHOTO-014-illustration-800.webp",
+              "width": 800,
+              "sha256": "abf14eb98becb429e05b48400fd9b4001da2c956c7264fc5a24898709af017b2"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-014",
+          "path": "/creative/PHOTO-014-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-014: додатковий ракурс; не фото партії.",
+          "sha256": "2b26c814b32b16d2ec5741690bec00d3332723e186c38cfee9c582fa5c274359",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-014-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "3b5f4b20d106f639da2f24f1e8743f341c889a6dbb28329a2a68d1f87c09ac3b"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-015",
+      "primary": "/creative/PHOTO-015.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-015",
+          "path": "/creative/PHOTO-015.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Жуй Ху Чен Сян». Не підтверджує поточну партію.",
+          "sha256": "4932cdcc671ab8e52a0a7731f92f0745710628016e1d9831ba6839fd2d70801b",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-015-primary-480.webp",
+              "width": 480,
+              "sha256": "5cbc3e47e01d29240fa8f5b93e570213ce21f4738672e7c772db8dc344f34720"
+            },
+            {
+              "path": "/creative/PHOTO-015-primary-800.webp",
+              "width": 800,
+              "sha256": "13be43aec5051c14705c36dfc5ea7fcc2ab72e4408e7299f26f49a4a06c625ad"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-016",
+      "primary": "/creative/PHOTO-016.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-016",
+          "path": "/creative/PHOTO-016.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Мен Хао Цан». Не підтверджує поточну партію.",
+          "sha256": "ad9306b8fd5d757df4da5bfbabf1763ea53d635f35d702ec4bfaec7ce3eeddaf",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-016-primary-480.webp",
+              "width": 480,
+              "sha256": "458f87f748266666f441ee2bcf1ae7424c454286330a64b9fb0ef4c8f04821d7"
+            },
+            {
+              "path": "/creative/PHOTO-016-primary-800.webp",
+              "width": 800,
+              "sha256": "d5457f55baf10a9f6cfefbd86f57ffc4e883d26794094785e690d95100daa124"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-017",
+      "primary": "/creative/PHOTO-017.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-017",
+          "path": "/creative/PHOTO-017.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шен пуер «Айлаошань». Не підтверджує поточну партію.",
+          "sha256": "916aad18ccf22618be6f72da619ef8da0d219c763c5163aa7c1d284fbe3c8ac5",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-017-primary-480.webp",
+              "width": 480,
+              "sha256": "15797aeaaa21685ceff72c28e249628943ddb1986264b7d811e0121619bbca1f"
+            },
+            {
+              "path": "/creative/PHOTO-017-primary-800.webp",
+              "width": 800,
+              "sha256": "87ee8f3a8b09f68d2c84304da2d2aca149858b2d27794f14a555d6bb924d1532"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-017",
+          "path": "/creative/PHOTO-017-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-017: додатковий ракурс; не фото партії.",
+          "sha256": "93bf3cb8188153d785fe217f922705bc6f3d4cc1249c63f7ad61d52cccabf878",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-017-illustration-480.webp",
+              "width": 480,
+              "sha256": "4576e4dec768e30836d5f2cd72113bee8faad8b67daaf68d31f8fcbcbbbbe327"
+            },
+            {
+              "path": "/creative/PHOTO-017-illustration-800.webp",
+              "width": 800,
+              "sha256": "70defbb9238b78b5016913119aaec73d7948020c5fd47eefdc1195674c06bc9d"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-017",
+          "path": "/creative/PHOTO-017-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-017: додатковий ракурс; не фото партії.",
+          "sha256": "7fe2c681c6dcd762284be577a1937b97003840138131ce723539042581b10161",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-017-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "74ec9cb53bf1d561c06aa8f922efba8c30cc6ceb4904b957abe9edbbc932e2bb"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-018",
+      "primary": "/creative/PHOTO-018.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-018",
+          "path": "/creative/PHOTO-018.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Мін Сян Жуй Ґун». Не підтверджує поточну партію.",
+          "sha256": "4cb5ecb834799042b6fd97bfa634215bcd23a8824d357cae673f43081040e69e",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-018-primary-480.webp",
+              "width": 480,
+              "sha256": "10e1de384e0e631c88b93fe73dba1f22e17d782806b2778b003554a1428763ac"
+            },
+            {
+              "path": "/creative/PHOTO-018-primary-800.webp",
+              "width": 800,
+              "sha256": "63f4ed00d055df58de6c50dc2fb2667d1cb39bbdb9e4f7c12c233c6c816810d7"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-018",
+          "path": "/creative/PHOTO-018-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-018: додатковий ракурс; не фото партії.",
+          "sha256": "b202df37374aebc3189cccde7af0b58358c69c224ad34caae697d673bcccbec8",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-018-illustration-480.webp",
+              "width": 480,
+              "sha256": "d4340597fa77bea4bfe96b0ec99cb1e68cef2e3fcc35920ac2f4b5d3bc582210"
+            },
+            {
+              "path": "/creative/PHOTO-018-illustration-800.webp",
+              "width": 800,
+              "sha256": "81e1e24928cde4029f535f3f62c4a894318aedb3238778dc0ecdd6bdd96b7660"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-018",
+          "path": "/creative/PHOTO-018-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-018: додатковий ракурс; не фото партії.",
+          "sha256": "03c34c3e39eb19774cee0b975d6327cbe46e207c72816230414efa8ccd008c1e",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-018-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "b6a8857ee4b3bb669f904c4e39719cbc75eceba2cfe9497c19e0d562c5594c4f"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-019",
+      "primary": "/creative/PHOTO-019.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-019",
+          "path": "/creative/PHOTO-019.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Їу Ґу Шу». Не підтверджує поточну партію.",
+          "sha256": "6841fa72dd57b0b1de5483939667dba3d9099d183d7dbe1302a778b083771b17",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-019-primary-480.webp",
+              "width": 480,
+              "sha256": "7f6eb354036a244013dd7cded9f6d6d0ef4348c14f89b869a3bd061494018ffa"
+            },
+            {
+              "path": "/creative/PHOTO-019-primary-800.webp",
+              "width": 800,
+              "sha256": "cb83a14d94a5fd32e39c6625e055bc2668daf13fbcb2772d34572fae2c06a822"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-019",
+          "path": "/creative/PHOTO-019-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-019: додатковий ракурс; не фото партії.",
+          "sha256": "a73df30be1d44a0911a684085a681a6e7d19ee0000186e3e709832a8407b0dcc",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-019-illustration-480.webp",
+              "width": 480,
+              "sha256": "4e0f12f1d09e7139dc5f93f5e0b3e6711079132f8618ebe08a40631d0285fbcb"
+            },
+            {
+              "path": "/creative/PHOTO-019-illustration-800.webp",
+              "width": 800,
+              "sha256": "2fd7204715929f082c98d65863752f9a216bcfd4f67f06e0cea1481516027ea0"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-019",
+          "path": "/creative/PHOTO-019-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-019: додатковий ракурс; не фото партії.",
+          "sha256": "4385fde1387b4ccbfea6b2a77a00ed1274445f98187aabd0440623af0de1dead",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-019-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "8d9dad8ee0b34b742df7928d692586262a74df670a901aee7c47677a93ccc9c2"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-020",
+      "primary": "/creative/PHOTO-020.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-020",
+          "path": "/creative/PHOTO-020.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шен пуер «Ман Фей Ґу Шу». Не підтверджує поточну партію.",
+          "sha256": "b085e6ddfab7677f8c0d1e7970645a1e0c6473f9d6e9e89527388095c2a78ce5",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-020-primary-480.webp",
+              "width": 480,
+              "sha256": "805cf27841403585736a224673c363bc863368af22036af8c5c7edf526f043ed"
+            },
+            {
+              "path": "/creative/PHOTO-020-primary-800.webp",
+              "width": 800,
+              "sha256": "3695cf958dff6efdbab58f022d6672a233992e76829449f575d1d2d7ff370573"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-020",
+          "path": "/creative/PHOTO-020-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-020: додатковий ракурс; не фото партії.",
+          "sha256": "55ec4630b54fd16f12fb1c0abe28a7254473e0322f3955dc39078503521a221d",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-020-illustration-480.webp",
+              "width": 480,
+              "sha256": "1164f4b13087f085d9e73ffcb7aa0359646b5ae91c5708685161226daabc0395"
+            },
+            {
+              "path": "/creative/PHOTO-020-illustration-800.webp",
+              "width": 800,
+              "sha256": "f56155cbe032d9681145b696834ad73a1e09c7354d5270d370e21db915a559b2"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-020",
+          "path": "/creative/PHOTO-020-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-020: додатковий ракурс; не фото партії.",
+          "sha256": "5799840ea9fab774c8c2d4c7ab871eca21abe0f1d06af025b8e695dad68bc63a",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-020-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "c2929d7dc88e26d2f6d344fde2d26274fbd43880bb88658e24df77e98f7118d9"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-021",
+      "primary": "/creative/PHOTO-021.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-021",
+          "path": "/creative/PHOTO-021.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шен пуер «Фу Я». Не підтверджує поточну партію.",
+          "sha256": "1fad769f126023c918d7b7f0fcbb71a6fb0cbeeb40d8c9d5216d856fb265c495",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-021-primary-480.webp",
+              "width": 480,
+              "sha256": "977ad8179ed32fe7e4d7cabb9c01e6cd77befe7735d59a48a949095fc1dc6bac"
+            },
+            {
+              "path": "/creative/PHOTO-021-primary-800.webp",
+              "width": 800,
+              "sha256": "90410b8e4769bae5866cfca5f6c158966b582e3a8971a02ae0210321c3b59fe5"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-021",
+          "path": "/creative/PHOTO-021-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-021: додатковий ракурс; не фото партії.",
+          "sha256": "05c04f4b0d055ffe0d8a99853b6cf85c88cdf6062383f5a116389ced1703c325",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-021-illustration-480.webp",
+              "width": 480,
+              "sha256": "8340c063632bfda7f8d0b4caa0b657363ab77aa20d668ae291cdeebf58e1a2fd"
+            },
+            {
+              "path": "/creative/PHOTO-021-illustration-800.webp",
+              "width": 800,
+              "sha256": "e80271fa2f9255a0960fde1133d3b8ff474d03a1fb67361b152d5a105c2525b4"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-021",
+          "path": "/creative/PHOTO-021-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-021: додатковий ракурс; не фото партії.",
+          "sha256": "feb105cadad5ce346c157932fe2b5596e474b2c8c08569edfd5191244f38201e",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-021-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "a647f1d599bc38e24579a0ee97b5df827b95eef32396ac70b802fb1bf2439a7c"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-022",
+      "primary": "/creative/PHOTO-022.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-022",
+          "path": "/creative/PHOTO-022.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Бо Цзінь», Platinum. Не підтверджує поточну партію.",
+          "sha256": "6831bd643ca977aee1e9d3ed943c39e8d4de962412b7bf8282857c6bbd050991",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-022-primary-480.webp",
+              "width": 480,
+              "sha256": "e5f434fe52ba260a8d51d27758ea244df51d1487dba5ef6d1b6f8b6f5e5fbbdb"
+            },
+            {
+              "path": "/creative/PHOTO-022-primary-800.webp",
+              "width": 800,
+              "sha256": "1a9524d74c4a48af9aa2690845052644cd63be003d23fca6ea6aa1e48fd4acef"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-022",
+          "path": "/creative/PHOTO-022-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-022: додатковий ракурс; не фото партії.",
+          "sha256": "5f1e0615ef1035ea6637791b870d068b62df0f3555fe68f3f75e4e3e9cb29b2c",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-022-illustration-480.webp",
+              "width": 480,
+              "sha256": "a2db6f9119d7d1f8d519f671c5dd32c4117daaa662778a4940c1dd5d3cc60dd1"
+            },
+            {
+              "path": "/creative/PHOTO-022-illustration-800.webp",
+              "width": 800,
+              "sha256": "daac14e7b50959e4f70861016526a84202ea18437d40e830139f414bcc5609ee"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-022",
+          "path": "/creative/PHOTO-022-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-022: додатковий ракурс; не фото партії.",
+          "sha256": "46ce407f5f5d69a0b4abaedfe2dbb45d5a734b2fe5cbff7f05915c65fc7f9038",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-022-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "b7f1e05f737b1d6da5d1c18746425ce7aa0326ff560854f84f4192f1014538c5"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-023",
+      "primary": "/creative/PHOTO-023.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-023",
+          "path": "/creative/PHOTO-023.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «На Ка Інь Сян». Не підтверджує поточну партію.",
+          "sha256": "720566e1e011806db96b3287d8a9f7311f077eef35a4ba32cac510203d001c36",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-023-primary-480.webp",
+              "width": 480,
+              "sha256": "c61f67713e0799849a68137a700838c091934eba98dc6ca0d19f4caaea7f0b67"
+            },
+            {
+              "path": "/creative/PHOTO-023-primary-800.webp",
+              "width": 800,
+              "sha256": "a146da712134bf0f764943c380899e31a1d1f19ef0fe7b3e925d29a8317d4acc"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-023",
+          "path": "/creative/PHOTO-023-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-023: додатковий ракурс; не фото партії.",
+          "sha256": "65b53d0603c4de4b324d09cf2eed08ed2923598f83cd4edefe0f4c9ab0ab3961",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-023-illustration-480.webp",
+              "width": 480,
+              "sha256": "a42f09f62ba77719fd5dfe9dcf1443f307d19b89e8da668224be670a1da22fd0"
+            },
+            {
+              "path": "/creative/PHOTO-023-illustration-800.webp",
+              "width": 800,
+              "sha256": "fc60236c36d010d72ffb04177bc4301909aad67660d0e16546cb4b6092df68ea"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-023",
+          "path": "/creative/PHOTO-023-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-023: додатковий ракурс; не фото партії.",
+          "sha256": "eb017b1d9e0ef18e58f98adc0397dc8a02e800875c2aad52ba4fa46d46805ebc",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-023-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "cbbd7a4bfe493323e089e0d8c2e545de569681ed3304941f1617bfb0778dab89"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-024",
+      "primary": "/creative/PHOTO-024.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-024",
+          "path": "/creative/PHOTO-024.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: «Юй Цянь Чунь». Не підтверджує поточну партію.",
+          "sha256": "ff637ca65eff75824b9747e88ea9972a02d04ac8548b52b74e5ca334493a9c7b",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-024-primary-480.webp",
+              "width": 480,
+              "sha256": "113034d1859917b33471355b3717e702d4db9a0a0043411982c2049a020020fb"
+            },
+            {
+              "path": "/creative/PHOTO-024-primary-800.webp",
+              "width": 800,
+              "sha256": "f580af79e6508765ada3903d88b3fce997e4d3c483d7dc4eed3602280122b08f"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "UNVERIFIED",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-025",
+      "primary": "/creative/PHOTO-025.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-025",
+          "path": "/creative/PHOTO-025.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Чень Шен Хао», варіант «Півень». Не підтверджує поточну партію.",
+          "sha256": "e423238aa27f200cdac775ba4a35b4cc1cc1fcd7881412a8ae975fb7a07bcdb9",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-025-primary-480.webp",
+              "width": 480,
+              "sha256": "b46f32a6ecbd5525b94a729ee27eb11f9988056cd2d5b18a3d46b2d1ba3c3718"
+            },
+            {
+              "path": "/creative/PHOTO-025-primary-800.webp",
+              "width": 800,
+              "sha256": "17dad8e262103a903a1b8706d2d423ccc5ea1ce8a53dea95a628d8ee652646f2"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-026",
+      "primary": "/creative/PHOTO-026.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-026",
+          "path": "/creative/PHOTO-026.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Сяґуань 8663». Не підтверджує поточну партію.",
+          "sha256": "2269a640278840c0ef43524593eb8faae459f9f55aa46bec3ed467a9f7e09cdf",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-026-primary-480.webp",
+              "width": 480,
+              "sha256": "4cf727712ffd6fc50d3dd2b0daebce113e7fbd5bfa038768da731eebd7e2285f"
+            },
+            {
+              "path": "/creative/PHOTO-026-primary-800.webp",
+              "width": 800,
+              "sha256": "84f6c86c8ccd617b9c92b13d292941d224feb8152bc800a2d7ee1e35719b3e32"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-026",
+          "path": "/creative/PHOTO-026-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-026: додатковий ракурс; не фото партії.",
+          "sha256": "8aa22f36782539467cabe38601d503dfa54a3a5f16c021777b4a40312c7fe5c8",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-026-illustration-480.webp",
+              "width": 480,
+              "sha256": "fc1f858f0f127e7341ae391c7226245c666643ef68600f566a432fee4a7ffe5e"
+            },
+            {
+              "path": "/creative/PHOTO-026-illustration-800.webp",
+              "width": 800,
+              "sha256": "5cc854cf59fa59ac2aa2d547f61553f4e2108e2d0c669342e1bf5005faa43449"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-026",
+          "path": "/creative/PHOTO-026-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-026: додатковий ракурс; не фото партії.",
+          "sha256": "142d619da587d3908e7b15fd3f9903208d3375a52abf1e1e14b33bb8a84f912a",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-026-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "d81511899f13254a01f9a1d0172a331f5b849a380995d2a242dc02a84d1bd087"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-027",
+      "primary": "/creative/PHOTO-027.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-027",
+          "path": "/creative/PHOTO-027.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шен пуер «Лао Бань Чжан». Не підтверджує поточну партію.",
+          "sha256": "cb714899118ebe743f6590d480ed1ec1c894a444d9246b6348725a5da44f1362",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-027-primary-480.webp",
+              "width": 480,
+              "sha256": "80afb755483c373ad04203e07d80897a5930fb69b2e62cef002fb4614f1f9919"
+            },
+            {
+              "path": "/creative/PHOTO-027-primary-800.webp",
+              "width": 800,
+              "sha256": "967a126ebe07df69af86572aed597bd7b2925ff2768ece8d9402762e6770e9e3"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-027",
+          "path": "/creative/PHOTO-027-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-027: додатковий ракурс; не фото партії.",
+          "sha256": "bedcd3219b691c5d1441a786271d14a0b9128d6c3f976736481aedd616d8194a",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-027-illustration-480.webp",
+              "width": 480,
+              "sha256": "61a7672c1799ad10c0724e709124c387db21123077dfdc0e1ab4d4045ec017fc"
+            },
+            {
+              "path": "/creative/PHOTO-027-illustration-800.webp",
+              "width": 800,
+              "sha256": "f8418cacbe6d1a54b85ee8f32792e5e3d7f04831d64faa1419381a9f95ea6ab7"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-027",
+          "path": "/creative/PHOTO-027-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-027: додатковий ракурс; не фото партії.",
+          "sha256": "b2b5b670ed2ee27c142b3671294869544a1236c5115e9d8c6b41d3c1246ee727",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-027-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "6b8f5f8f382b190404f7488705fd73daa7e4115e42010fe21662959b056ef2b4"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-028",
+      "primary": "/creative/PHOTO-028.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-028",
+          "path": "/creative/PHOTO-028.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Бан Цзє». Не підтверджує поточну партію.",
+          "sha256": "97627fc85f0f2ba7963b4a5ce18dbd3d60b2ca5005e692a0538d58cd8a176637",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-028-primary-480.webp",
+              "width": 480,
+              "sha256": "bc0e348ea3268c56ec5bbba9cfcaeb5fcf2901c4d2bd80c92024400a903d3757"
+            },
+            {
+              "path": "/creative/PHOTO-028-primary-800.webp",
+              "width": 800,
+              "sha256": "e353f80677859c20ca4857da68833b5ad37fb28bafe2fa85e177a8dee577b16a"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-028",
+          "path": "/creative/PHOTO-028-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-028: додатковий ракурс; не фото партії.",
+          "sha256": "3915ca817f05e91bc8f0cac9791715b8b9c5e5df98649f1f51fa67f07d0a89e6",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-028-illustration-480.webp",
+              "width": 480,
+              "sha256": "4d029a21f5677e9ba13b74e17e3e31a34c28b68c01352b41f6eb9a4bb24bb33a"
+            },
+            {
+              "path": "/creative/PHOTO-028-illustration-800.webp",
+              "width": 800,
+              "sha256": "55886c1a4fcc2a9f9c58e7bad1159d09825ee760aef798bfe362f11d139f3c8a"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-028",
+          "path": "/creative/PHOTO-028-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-028: додатковий ракурс; не фото партії.",
+          "sha256": "f58e3d29e279fb20d20bd1aa90b01e5ffec15d973d8ef0d5cf3d91db5733b872",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-028-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "29ebe2b63540fa5fb1330a5f901bdf228c808098f5780215985d82dc6553ba22"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-029",
+      "primary": "/creative/PHOTO-029.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-029",
+          "path": "/creative/PHOTO-029.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Лун Цзя». Не підтверджує поточну партію.",
+          "sha256": "265df55341277ada57a413bab87b78dc6d299dfe078bf34c1915645975414844",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-029-primary-480.webp",
+              "width": 480,
+              "sha256": "40dd40d8fc5b70c21dfea6dccc1f0bcc9fb5ec9cfc3d1e2b67b0c84742566342"
+            },
+            {
+              "path": "/creative/PHOTO-029-primary-800.webp",
+              "width": 800,
+              "sha256": "522864d73a98c506e09e28f404512cd7e237a4a099f7eafc75d3a6d53a316248"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        },
+        {
+          "sourceSku": "PHOTO-029",
+          "path": "/creative/PHOTO-029-illustration.webp",
+          "role": "illustration",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-029: додатковий ракурс; не фото партії.",
+          "sha256": "64221a38aad65b9b31f7606ad02798aee6f5333c0e0d26fa7e6f1415fdda991d",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-029-illustration-480.webp",
+              "width": 480,
+              "sha256": "e1a49d654c91814c68385cfb74f8ad3c32c1efdf86ace4eef419960c3e5b9c57"
+            },
+            {
+              "path": "/creative/PHOTO-029-illustration-800.webp",
+              "width": 800,
+              "sha256": "e9c3e54d7d47f7cf7f7015e5de01db6a5d8a46b11077acd003b67321d8e7e91b"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "PHOTO-029",
+          "path": "/creative/PHOTO-029-illustration-texture.webp",
+          "role": "illustration_texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю PHOTO-029: додатковий ракурс; не фото партії.",
+          "sha256": "a44e9bbba1eb31098824bfdc65630746b402813851dae1494a097df54f08a681",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-029-illustration-texture-480.webp",
+              "width": 480,
+              "sha256": "2f76c975332564963556e538b63df0409a0b93b21286e997d47a79605e41bf44"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-030",
+      "primary": "/creative/PHOTO-030.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-030",
+          "path": "/creative/PHOTO-030.webp",
+          "role": "primary",
+          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Чень Шен Хао», варіант «Собака». Не підтверджує поточну партію.",
+          "sha256": "c72480c7592e2ca0110c28355688f88681d8cd01da10b78f573695b1a0fd099d",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-030-primary-480.webp",
+              "width": 480,
+              "sha256": "a4fda1bb39bcc4875858c671c20a725c139243310f80d1efdcfef52a7dd2de5e"
+            },
+            {
+              "path": "/creative/PHOTO-030-primary-800.webp",
+              "width": 800,
+              "sha256": "072c64c08724a93e81692446b8770f49476baa0b7d97e54de9c524e9db3561cb"
+            }
+          ],
+          "documentary": true,
+          "matchConfidence": "PRODUCT MATCH",
+          "supplierAuthorized": true,
+          "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-001",
+      "primary": "/creative/LIST-001.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-001",
+          "path": "/creative/LIST-001.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Байхао Іньчжень. Не є документальною фотографією партії постачальника.",
+          "sha256": "40a909305c5548ed45fdf33d914be7ef233fe887ce96f2f88fd5588a5ce1165c",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-001-primary-480.webp",
+              "width": 480,
+              "sha256": "8adc36fffb97213ed459a74cf15be2a73effc9731f403cda84dca0c795b65d92"
+            },
+            {
+              "path": "/creative/LIST-001-primary-800.webp",
+              "width": 800,
+              "sha256": "4a62c8f4543bf13dd0349e87f63873fc5bfaa7f0afc52b3822eac3860e96bb92"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        },
+        {
+          "sourceSku": "LIST-001",
+          "path": "/creative/LIST-001-secondary.webp",
+          "role": "secondary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-001: додатковий ракурс; не фото партії.",
+          "sha256": "06fd569562dd3fbc3f746e628a3515e42b272c004af2a68e497a9da7848ecfd0",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-001-secondary-480.webp",
+              "width": 480,
+              "sha256": "b2c55fb0575e735b940a7eca6072eef69c53aeaa6fbce192a5a1830a3015b7df"
+            },
+            {
+              "path": "/creative/LIST-001-secondary-800.webp",
+              "width": 800,
+              "sha256": "271cfc878ac7449f0ec6c1824168a5c2e3dc0af5a0ccf7b099d471b0d2247135"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        },
+        {
+          "sourceSku": "LIST-001",
+          "path": "/creative/LIST-001-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-001: додатковий ракурс; не фото партії.",
+          "sha256": "35c48712f8e01eb14b684799005bed337611ae07cc70d48069b8743ba2e14cad",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-001-texture-480.webp",
+              "width": 480,
+              "sha256": "550043954484b1b4fcfb2eaed0fa3c706ff5eee89f5f299938b39fca0d2a7b0a"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-002",
+      "primary": "/creative/LIST-002.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-002",
+          "path": "/creative/LIST-002.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Місячне сяйво. Не є документальною фотографією партії постачальника.",
+          "sha256": "471b57d2c3cd57489025f5e1d585dd239c3cbbba6525a40f2f792c6d8419395c",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-002-primary-480.webp",
+              "width": 480,
+              "sha256": "3465651459b5fca060295797ca1313ea5cc4dd2d1c49a08d9a97d6d866ef7355"
+            },
+            {
+              "path": "/creative/LIST-002-primary-800.webp",
+              "width": 800,
+              "sha256": "78f49e95d1e2d2af902a873805cadbff1d311471c78c423f174e3395c181308b"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-002",
+          "path": "/creative/LIST-002-secondary.webp",
+          "role": "secondary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-002: додатковий ракурс; не фото партії.",
+          "sha256": "09bc4ac235096d3a137c49f3f0cb28658a2976258d28da3b0484a74048a66617",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-002-secondary-480.webp",
+              "width": 480,
+              "sha256": "61ed324d0b1c072c839fd56e51063eff36b697b287285f3f23beaf0916ecfe6d"
+            },
+            {
+              "path": "/creative/LIST-002-secondary-800.webp",
+              "width": 800,
+              "sha256": "e5e211489bc2a6e0990a590dbf39782bf750c250257bf66a8b44b1dad10a09d2"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-002",
+          "path": "/creative/LIST-002-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-002: додатковий ракурс; не фото партії.",
+          "sha256": "799d3ae87bed90691611884ca38d7e148d7f6fd036f19baf765bddb04bd91db5",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-002-texture-480.webp",
+              "width": 480,
+              "sha256": "021c87b7792f0785dd5b3fe69f644af0572b6c41c5a3d70611b076a1e49036f3"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-003",
+      "primary": "/creative/LIST-003.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-003",
+          "path": "/creative/LIST-003.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Цзінь Цзюнь Мей. Не є документальною фотографією партії постачальника.",
+          "sha256": "9f6356f780f2f0cc172b5b409a2aed3a66b3cd4b239161e3943ba4e91d3d6084",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-003-primary-480.webp",
+              "width": 480,
+              "sha256": "b4a5f21c12934cd44ea12bec3438a87e5e4309a2ba80febb524901a1606e7338"
+            },
+            {
+              "path": "/creative/LIST-003-primary-800.webp",
+              "width": 800,
+              "sha256": "5b2402ac8e495b008374dc24582ba311e3467a894b43d9ab41aaeda0a0edc214"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        },
+        {
+          "sourceSku": "LIST-003",
+          "path": "/creative/LIST-003-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-003: додатковий ракурс; не фото партії.",
+          "sha256": "d783dd25ca61ac095c1db55a16fed4c9bea5cc21bbfd43b40ffd5ec4489ac829",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-003-texture-480.webp",
+              "width": 480,
+              "sha256": "bf7f9998332cd20a25d8b4a9414a78633a44b96a06ef11d2ffad5ed29fa786a9"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-004",
+      "primary": "/creative/LIST-004.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-004",
+          "path": "/creative/LIST-004.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Чжен Шань Сяо Чжун. Не є документальною фотографією партії постачальника.",
+          "sha256": "b798c1c137633dece4cc691c712cff480ee9d829b5a583a6945e90e52d09c417",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-004-primary-480.webp",
+              "width": 480,
+              "sha256": "bd2444506908c8d4162ef5f213ab36909156f3f3d40ff987306948c12cd09ebc"
+            },
+            {
+              "path": "/creative/LIST-004-primary-800.webp",
+              "width": 800,
+              "sha256": "5b6e50ec32721cfae0403c7efbc3f9158157221feca53a8c9b893e4b4339733a"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        },
+        {
+          "sourceSku": "LIST-004",
+          "path": "/creative/LIST-004-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-004: додатковий ракурс; не фото партії.",
+          "sha256": "7f30df300245d2f6a1f5d62b03489d633ec470ad305d773b39e9e04b0d23bc32",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-004-texture-480.webp",
+              "width": 480,
+              "sha256": "23ca147c0a4e94db15ae726242025a18cc9d8876b41e99b9b1a19e6e07eb0268"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-005",
+      "primary": "/creative/LIST-005.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-005",
+          "path": "/creative/LIST-005.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Дянь Хун. Не є документальною фотографією партії постачальника.",
+          "sha256": "f45d5319245cffc2c9a8810c5534145e5b3d5e4604820f38d4b9ed6718daa3a5",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-005-primary-480.webp",
+              "width": 480,
+              "sha256": "86cdff2fd96fdfddac11130e9552bcc8b17856c37efa04425b7856bbae085f5d"
+            },
+            {
+              "path": "/creative/LIST-005-primary-800.webp",
+              "width": 800,
+              "sha256": "412a1f8c2dba11ef71e9063f4a1daad8ceab81e6f68bd837c49a38bb123849da"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        },
+        {
+          "sourceSku": "LIST-005",
+          "path": "/creative/LIST-005-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-005: додатковий ракурс; не фото партії.",
+          "sha256": "fb97e6c214a25f64ecc6d5c8b2311f4217ccb6bb5a22fbdfec085e80c34955f9",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-005-texture-480.webp",
+              "width": 480,
+              "sha256": "a1764352e346ed2421a5b4036fd5454438bf980a35cc42f0d04d55a00b8418d0"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-006",
+      "primary": "/creative/LIST-006.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-006",
+          "path": "/creative/LIST-006.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Соснові голки. Не є документальною фотографією партії постачальника.",
+          "sha256": "4a9f082b0d06d17fd4ee36d38ea5a5a5c763816fdd8a70706eeb9fb9f7fc77b0",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-006-primary-480.webp",
+              "width": 480,
+              "sha256": "69cdff2e6e76f43e21fc2365298a863c8d501a2e4e2359974e12300b7347cb88"
+            },
+            {
+              "path": "/creative/LIST-006-primary-800.webp",
+              "width": 800,
+              "sha256": "d30971ff8da8224783d3845890b9979fa59398f32819c3f82f09253947ca5140"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-006",
+          "path": "/creative/LIST-006-secondary.webp",
+          "role": "secondary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-006: додатковий ракурс; не фото партії.",
+          "sha256": "909a71130c8c2caa499c21823df11d1a3cb281e2ade49e8cab0fbacb694e31af",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-006-secondary-480.webp",
+              "width": 480,
+              "sha256": "745f6a2818fcbf113db2d15da26f18e5e36f5406d5a98bf9f406d620018ddcbb"
+            },
+            {
+              "path": "/creative/LIST-006-secondary-800.webp",
+              "width": 800,
+              "sha256": "9a17622ca632d0dd66a61ee449a031749c9e4075f886e0e28313446ec7bf3c5e"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-006",
+          "path": "/creative/LIST-006-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-006: додатковий ракурс; не фото партії.",
+          "sha256": "158001589b50d5aadaa3c8c64a4d326f31cfc4354e03807e71828e80cd0a338c",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-006-texture-480.webp",
+              "width": 480,
+              "sha256": "4e363f2873ae2c038b0acd257e994f29532ab37b364cd944350de07ecf1c1b25"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-007",
+      "primary": "/creative/LIST-007.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-007",
+          "path": "/creative/LIST-007.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Золоті голки. Не є документальною фотографією партії постачальника.",
+          "sha256": "a986809d5309a4f7ed2ba9358c3278e9f27211e88feb42ad4595ec41f320d44e",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-007-primary-480.webp",
+              "width": 480,
+              "sha256": "78d1c31adf7842098f06800d0f97a3f3960c5c9639bab8a588cc3acb058b7259"
+            },
+            {
+              "path": "/creative/LIST-007-primary-800.webp",
+              "width": 800,
+              "sha256": "17dfb94abe2c0cd6082c7258f75bd71d9f2cab305b3c95d42aa595a954948d67"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        },
+        {
+          "sourceSku": "LIST-007",
+          "path": "/creative/LIST-007-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-007: додатковий ракурс; не фото партії.",
+          "sha256": "9b9001ff1575aa69d4a331a66bfa5ec2da9ac84f142f1880acfab754c124cc48",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-007-texture-480.webp",
+              "width": 480,
+              "sha256": "19dba08314b437446bf4a284e89a089175caf212d0cc04ac78d97d1e5fe9b7af"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-008",
+      "primary": "/creative/LIST-008.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-008",
+          "path": "/creative/LIST-008.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Золотий ворс Айлао. Не є документальною фотографією партії постачальника.",
+          "sha256": "573e5b076ca7b7e239737460a1fee43a0f067c685f7c8936d3643fecddd0da2c",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-008-primary-480.webp",
+              "width": 480,
+              "sha256": "ce16e2d05d00e972b46243974acade3b18a4854dc503000a489a6444ab9a0b43"
+            },
+            {
+              "path": "/creative/LIST-008-primary-800.webp",
+              "width": 800,
+              "sha256": "60b58028909401c1c9011b32c48f8b4b48eaefd24cb97473f2fdae3722167643"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-008",
+          "path": "/creative/LIST-008-secondary.webp",
+          "role": "secondary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-008: додатковий ракурс; не фото партії.",
+          "sha256": "8e806f9b8bdc95d710b380057a111bd49edbf076b5c033238bd6104af4eb66eb",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-008-secondary-480.webp",
+              "width": 480,
+              "sha256": "83e84f1066ff0c4c772c929913eb152515ecf4e8861224ac0ae68e19579d96c8"
+            },
+            {
+              "path": "/creative/LIST-008-secondary-800.webp",
+              "width": 800,
+              "sha256": "06513b64787209d1256747e8cd9eaae544de32fbcd4cd8a78fa1b87385b883df"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-008",
+          "path": "/creative/LIST-008-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-008: додатковий ракурс; не фото партії.",
+          "sha256": "54094cddbd893b0d6f85794dbcb4149612df252e9183c2d3bc95e1ecaae7f616",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-008-texture-480.webp",
+              "width": 480,
+              "sha256": "0c83ad4911e71837c1efe3c32462e4c228080aafc02d29d657e92dc88156d9a3"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-009",
+      "primary": "/creative/LIST-009.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-009",
+          "path": "/creative/LIST-009.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Золотий равлик. Не є документальною фотографією партії постачальника.",
+          "sha256": "bf26d97c5393b643bb85b17989983bf9038844de639fb52438917beaf33d05c6",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-009-primary-480.webp",
+              "width": 480,
+              "sha256": "a1cb1499baa93f984279f41adc04a95fbe5284cafdb48a919f1e4dd31ded4218"
+            },
+            {
+              "path": "/creative/LIST-009-primary-800.webp",
+              "width": 800,
+              "sha256": "29dfa4d5fc9cfd0ddee760575085d64f7597e09062579c552636139925235f27"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        },
+        {
+          "sourceSku": "LIST-009",
+          "path": "/creative/LIST-009-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-009: додатковий ракурс; не фото партії.",
+          "sha256": "1a5460f4140214b3bce32e0b8179d362970b184aca50dba9c9bee00df4b3849e",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-009-texture-480.webp",
+              "width": 480,
+              "sha256": "a77b8a10cd35991dfc39c53544979df0ce5a3246ea906b57a6c49cc335c588ca"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-010",
+      "primary": "/creative/LIST-010.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-010",
+          "path": "/creative/LIST-010.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Є Шен Хун Ча. Не є документальною фотографією партії постачальника.",
+          "sha256": "8accb9e26a6f7e95726d24ddf0e0497fcb238aad36149c74707981b45f54df73",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-010-primary-480.webp",
+              "width": 480,
+              "sha256": "7a9846872e6c2f349a88c8301835149188dae7ddcd8047e2ebb6a2ce1c3d3495"
+            },
+            {
+              "path": "/creative/LIST-010-primary-800.webp",
+              "width": 800,
+              "sha256": "c0a05cbd9e90f27f1c07455563065a23eaba7bfa2238bdf1e0f323bf95ec01a9"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-010",
+          "path": "/creative/LIST-010-secondary.webp",
+          "role": "secondary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-010: додатковий ракурс; не фото партії.",
+          "sha256": "f573c092527c8e9fad087b113fe55c0f954d90e567aae02afc781826cb8c2970",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-010-secondary-480.webp",
+              "width": 480,
+              "sha256": "79cad966af8abf03955654eea3fb72d77078123875e957e77aff8a14928e2d96"
+            },
+            {
+              "path": "/creative/LIST-010-secondary-800.webp",
+              "width": 800,
+              "sha256": "f8c146884c12e04503124cc227ebc22a8db8784ceb850906c9d824ab7a2000bb"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-010",
+          "path": "/creative/LIST-010-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-010: додатковий ракурс; не фото партії.",
+          "sha256": "fa6d327bc55ec4c142efbde4a17a93af5366162fef0d8336530f1dcd45fd4c9a",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-010-texture-480.webp",
+              "width": 480,
+              "sha256": "b94d130242f1be96dd832f800e1689758cc8ceb17fd4c309d15e2fdd648ba516"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-011",
+      "primary": "/creative/LIST-011.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-011",
+          "path": "/creative/LIST-011.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Шайхун. Не є документальною фотографією партії постачальника.",
+          "sha256": "9255dc636e8d5efdfae5887d5960b215585bbf31952b56375d183b77e41e49db",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-011-primary-480.webp",
+              "width": 480,
+              "sha256": "b294472dbbb795b9ff21a2a8a084667accedcc5183531cd00851094e81e5da97"
+            },
+            {
+              "path": "/creative/LIST-011-primary-800.webp",
+              "width": 800,
+              "sha256": "728beafdabb75dcd877893f331c3db75651794b29d3f70939329b03a53a3b5be"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        },
+        {
+          "sourceSku": "LIST-011",
+          "path": "/creative/LIST-011-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-011: додатковий ракурс; не фото партії.",
+          "sha256": "23f0b0b095ee7dc890758751efb3a120f90c3c9fec22ce84d008a104ef3b3633",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-011-texture-480.webp",
+              "width": 480,
+              "sha256": "d15ed93d488ba9ac901be17d51a7c4bb9f956de114045791578369d1bc1f72fb"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-012",
+      "primary": "/creative/LIST-012.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-012",
+          "path": "/creative/LIST-012.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Шайхун Айлао. Не є документальною фотографією партії постачальника.",
+          "sha256": "7c4d2fc39abda66abdefddb9d0ea6319f978c9bbdd9669dffb007499b76c69cb",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-012-primary-480.webp",
+              "width": 480,
+              "sha256": "21e77de5720902046fde0cbfe5eeeb4b6210ada1da6c4b3fa7d5eb1e6346d6f0"
+            },
+            {
+              "path": "/creative/LIST-012-primary-800.webp",
+              "width": 800,
+              "sha256": "0b96729cf07bb373800e73f17b7e0de005ca8ebb1cc3633330e18ada81281a20"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        },
+        {
+          "sourceSku": "LIST-012",
+          "path": "/creative/LIST-012-secondary.webp",
+          "role": "secondary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-012: додатковий ракурс; не фото партії.",
+          "sha256": "0f2f8725953ea97823b2f285a0b4d100fca31da7e011b09ea6121c9bdb25a2be",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-012-secondary-480.webp",
+              "width": 480,
+              "sha256": "b5013dffe8bb637a15f458531def54bc3623cdc75086cbdaa20ded1503dfdd26"
+            },
+            {
+              "path": "/creative/LIST-012-secondary-800.webp",
+              "width": 800,
+              "sha256": "8423c05481374ea4f5f85c2af2dea591f068b88aa350711729672446a7671ab1"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        },
+        {
+          "sourceSku": "LIST-012",
+          "path": "/creative/LIST-012-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-012: додатковий ракурс; не фото партії.",
+          "sha256": "cdf09be396d69a9465a6243985365dbfc32b096d7dbe8dd8e52c283874c98796",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-012-texture-480.webp",
+              "width": 480,
+              "sha256": "eef6528786d09119ec0135999df644fba1dbd12ac1eb578d66fc8e94f9818d01"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-013",
+      "primary": "/creative/LIST-013.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-013",
+          "path": "/creative/LIST-013.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: ТГ Мао Ча (скорочення постачальника). Не є документальною фотографією партії постачальника.",
+          "sha256": "9b704382aad617dc2379663fe896aeea81acddd31a00f9d7786a632646c97b08",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-013-primary-480.webp",
+              "width": 480,
+              "sha256": "216d84c4219aa1875ad7cc91f075955d29333668de500821a957b5adc843c7a0"
+            },
+            {
+              "path": "/creative/LIST-013-primary-800.webp",
+              "width": 800,
+              "sha256": "dec6d28b900633335e15c95be6c6a21b68756987e06ed3979703d21a82d71401"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-013",
+          "path": "/creative/LIST-013-secondary.webp",
+          "role": "secondary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-013: додатковий ракурс; не фото партії.",
+          "sha256": "500fd7716bc74ba6071afccf642df455ac751f310a851930e6919a3d64eb9fe5",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-013-secondary-480.webp",
+              "width": 480,
+              "sha256": "fab81a7a21dc9ec0eb18922e9a54eff48e5a9be4922369ec4b769e3f6514ed11"
+            },
+            {
+              "path": "/creative/LIST-013-secondary-800.webp",
+              "width": 800,
+              "sha256": "7f49b090cc995d18264021c8a1f1f79956f79dc5ff5af0180645f83ec5d352d7"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-013",
+          "path": "/creative/LIST-013-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-013: додатковий ракурс; не фото партії.",
+          "sha256": "28a8b3895bf8b22a812c9f93e1f1713ed68836a6b03b982fc290ea0cfc5c7f7a",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-013-texture-480.webp",
+              "width": 480,
+              "sha256": "d936a39bfb5fe8ce3241dd6f9db38445bf1de4fcafe6a528c73ad334b34ac131"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-014",
+      "primary": "/creative/LIST-014.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-014",
+          "path": "/creative/LIST-014.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Шуй Сянь. Не є документальною фотографією партії постачальника.",
+          "sha256": "967f5fca0608ad1dcf773fc7de8a80be707d339d6b63a3a7eb1715fb222d61a4",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-014-primary-480.webp",
+              "width": 480,
+              "sha256": "1152386d6970a6a30edde80a3f089ab1c860c2931973b0b674ddaccaabe67084"
+            },
+            {
+              "path": "/creative/LIST-014-primary-800.webp",
+              "width": 800,
+              "sha256": "b4b11746f1891f005f3c1a3004c7445d60d4f2e9723cbad885bd52664c8c320e"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-014",
+          "path": "/creative/LIST-014-secondary.webp",
+          "role": "secondary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-014: додатковий ракурс; не фото партії.",
+          "sha256": "2ef7e909e3bbf4a7b1c7d6ce20adcc76034d07b630654b36ba79887338d200e2",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-014-secondary-480.webp",
+              "width": 480,
+              "sha256": "2119583fde068ee6b0d594844a28d091e8ddab5e2a309d18b42db5b4d9445211"
+            },
+            {
+              "path": "/creative/LIST-014-secondary-800.webp",
+              "width": 800,
+              "sha256": "f9f25e3c6b46a9f2f0b30b1d2c99a6957ba1f3051bdc7d1984fba083c8939ac2"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-014",
+          "path": "/creative/LIST-014-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-014: додатковий ракурс; не фото партії.",
+          "sha256": "23a5cfb1561b1221e7f13d97a266b4b84781c1da8071c29bbd01e441834922ed",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-014-texture-480.webp",
+              "width": 480,
+              "sha256": "7ea3b052f155f152124a0bc04d158bcf3ce17873f8afb1a9292a766166f5ce3c"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-015",
+      "primary": "/creative/LIST-015.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-015",
+          "path": "/creative/LIST-015.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Шуй Сянь. Не є документальною фотографією партії постачальника.",
+          "sha256": "b4988d6b83afb2f503c996b74250cbe7fc991f48151e93fae557c0e84ed7bc00",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-015-primary-480.webp",
+              "width": 480,
+              "sha256": "18ec335883d01f9aab7b8693cdad2465a007ca65a0af58635a982bd13f0fb58e"
+            },
+            {
+              "path": "/creative/LIST-015-primary-800.webp",
+              "width": 800,
+              "sha256": "b9d196dfe0573515fba8031cb1fc0c847c6dd137b457f0f5066cef90763c9bec"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-015",
+          "path": "/creative/LIST-015-secondary.webp",
+          "role": "secondary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-015: додатковий ракурс; не фото партії.",
+          "sha256": "eaec8989cdb5f98854e8d72af5a68142c02a34439778e0fd1cbdab37a7117e24",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-015-secondary-480.webp",
+              "width": 480,
+              "sha256": "f84ff501522c50256a80f5ec352fc8ec43f9e6133efedbf78a777ba07cc8f71b"
+            },
+            {
+              "path": "/creative/LIST-015-secondary-800.webp",
+              "width": 800,
+              "sha256": "e719dd1a1c7008b4939ea188f6399ca2b223517f6cd1ec83783c38da798356f4"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-015",
+          "path": "/creative/LIST-015-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-015: додатковий ракурс; не фото партії.",
+          "sha256": "fc69e958f597652763ed98c5f17f1b8f2b91bff990164e43db253d4cd17d1538",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-015-texture-480.webp",
+              "width": 480,
+              "sha256": "88dce50aee06f5d4f0991d7cd3d6be10ec8cd5cad1d7b80dc860566c809a0d03"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-016",
+      "primary": "/creative/LIST-016.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-016",
+          "path": "/creative/LIST-016.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: ДХП (скорочення постачальника). Не є документальною фотографією партії постачальника.",
+          "sha256": "26c9db7e961a40af7fe0961b61a0c530baf39fdaccf81f0289508893221ab1c7",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-016-primary-480.webp",
+              "width": 480,
+              "sha256": "fde2f24f997cebdb0e20e3e5d24271928726132e123750ea6c41887e1c8c9e8d"
+            },
+            {
+              "path": "/creative/LIST-016-primary-800.webp",
+              "width": 800,
+              "sha256": "679974c3ef55a909d3fa00dd22fcf12f62cdb6ffeac056dc9cd526f3795b66fa"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        },
+        {
+          "sourceSku": "LIST-016",
+          "path": "/creative/LIST-016-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-016: додатковий ракурс; не фото партії.",
+          "sha256": "38069572e8ccae493cf2e807bd5de459540772ae1675aaa9d10b77172567ad76",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-016-texture-480.webp",
+              "width": 480,
+              "sha256": "b34bd3afc66bee4e460ea39c24c1bd965b8730418c3537cbe7530e06dee0a269"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-017",
+      "primary": "/creative/LIST-017.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-017",
+          "path": "/creative/LIST-017.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Шуй Сянь. Не є документальною фотографією партії постачальника.",
+          "sha256": "2ec4eb195b1fee72ffdc6c5fdd136d6cb46c7aa7dbc0e904f5861f3fdb7e9f16",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-017-primary-480.webp",
+              "width": 480,
+              "sha256": "143fcd3964ac396e58de095171d0feec725da6be9eacfc9532f107d7af758975"
+            },
+            {
+              "path": "/creative/LIST-017-primary-800.webp",
+              "width": 800,
+              "sha256": "7a500feec7539494a14b7afdd5702fadec162cd8e96f8c1320380a9fb3c2ed48"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-017",
+          "path": "/creative/LIST-017-secondary.webp",
+          "role": "secondary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-017: додатковий ракурс; не фото партії.",
+          "sha256": "7c4553cd2f114cffd4f9bbb5c40bef4ee1947399f3eec753185a604e8bb9ef77",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-017-secondary-480.webp",
+              "width": 480,
+              "sha256": "27fd80fb919891dfbbde7f454c9a90d23fb4c17a37f26bf5d166ad774d4789de"
+            },
+            {
+              "path": "/creative/LIST-017-secondary-800.webp",
+              "width": 800,
+              "sha256": "486249a05695b831b3d038281678ee9204ccf234b40dbbd1c98d0f8455d29f61"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-017",
+          "path": "/creative/LIST-017-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-017: додатковий ракурс; не фото партії.",
+          "sha256": "d2e849d440b9848ff457e3997c1adc80a42a9f704cb72bc74b57a735292f2e93",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-017-texture-480.webp",
+              "width": 480,
+              "sha256": "312247e0f6e3f445e3880843ba2c2db999a1e7f3deccaca431c5bbc6538dd1b7"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-018",
+      "primary": "/creative/LIST-018.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-018",
+          "path": "/creative/LIST-018.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Шуй Цзінь Ґуй. Не є документальною фотографією партії постачальника.",
+          "sha256": "f5f05ec154706868b84172f5e57e1dea536e6921fed368e40f97522a8918ab66",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-018-primary-480.webp",
+              "width": 480,
+              "sha256": "a1a177f40fdb36d5c7a9032dd2a4dc05a50395c50524b32496115e3027708a9a"
+            },
+            {
+              "path": "/creative/LIST-018-primary-800.webp",
+              "width": 800,
+              "sha256": "0473acb80fd204f64690c30afb25f7dd81558357cffa95852a709a6af3a0e4b6"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        },
+        {
+          "sourceSku": "LIST-018",
+          "path": "/creative/LIST-018-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-018: додатковий ракурс; не фото партії.",
+          "sha256": "2f3cb236d4a5e2adf6693ba3c0a991668bfcb70721b2cfbae8243d5f037c5a13",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-018-texture-480.webp",
+              "width": 480,
+              "sha256": "d790de2365ce796d6150f4a42d00d18f80205e212facbae450aae6adaeb97243"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-019",
+      "primary": "/creative/LIST-019.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-019",
+          "path": "/creative/LIST-019.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Мі Лань Сян Дань Цун. Не є документальною фотографією партії постачальника.",
+          "sha256": "134cfb553302e096e29b414765e35bfdedee87e577b85b792face608c3675e03",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-019-primary-480.webp",
+              "width": 480,
+              "sha256": "2e95a331cf9dcd31b5b9128be12d6f6343fc7337b90742d9c16444eface9b137"
+            },
+            {
+              "path": "/creative/LIST-019-primary-800.webp",
+              "width": 800,
+              "sha256": "b6939a81e8e63678e881fed2383b1754c77f641aadf320b26b93acdee187f506"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        },
+        {
+          "sourceSku": "LIST-019",
+          "path": "/creative/LIST-019-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-019: додатковий ракурс; не фото партії.",
+          "sha256": "6944527b256f29be5efceeb76558d5669a2996952743a62c2f0d3a04b0557329",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-019-texture-480.webp",
+              "width": 480,
+              "sha256": "99f95dac77fa6db210419ac13b2eb72fe47cbeffb92d5ca0d9d8f5cda96942d4"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-020",
+      "primary": "/creative/LIST-020.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-020",
+          "path": "/creative/LIST-020.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Дань Цун «Мін даль» (назву уточнити). Не є документальною фотографією партії постачальника.",
+          "sha256": "d3465d8ce3b50deea775043fc3ad18f57c801f588b95a9f5b83281fb58f60a82",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-020-primary-480.webp",
+              "width": 480,
+              "sha256": "5c3162234e31e726bd24e284153399b4812bd233ea8dd499621c27f646befaf1"
+            },
+            {
+              "path": "/creative/LIST-020-primary-800.webp",
+              "width": 800,
+              "sha256": "16b1e02e9bc580e0c4921d8ef728c1133a2dad349d0e7088ccd0d57403514249"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-020",
+          "path": "/creative/LIST-020-secondary.webp",
+          "role": "secondary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-020: додатковий ракурс; не фото партії.",
+          "sha256": "8932c10722a43cd2788c4077cfedf21281e6ef72858c013c41e890a0d9ad1b5f",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-020-secondary-480.webp",
+              "width": 480,
+              "sha256": "58679a180953525f23e5496f73a2c873c2e6edddee556189f94dcb493704b837"
+            },
+            {
+              "path": "/creative/LIST-020-secondary-800.webp",
+              "width": 800,
+              "sha256": "f86fb39323767d8c717d3ade836a78cc72573ae09e0243167d95a8dfc0a5711d"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-020",
+          "path": "/creative/LIST-020-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-020: додатковий ракурс; не фото партії.",
+          "sha256": "16f83175cab86e0cc9c9be171d89ed4744f4b4943d776cfe1a9f28ebbd93cb9b",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-020-texture-480.webp",
+              "width": 480,
+              "sha256": "51a82a2f6c96fba3580e5c4014ca582ee566ed4db4b5979b02757233794aa916"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-021",
+      "primary": "/creative/LIST-021.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-021",
+          "path": "/creative/LIST-021.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Женьшеневий улун. Не є документальною фотографією партії постачальника.",
+          "sha256": "32da1a398778f010c06bc8c727dba0e480b5cb92bb11c94b54332213b0a129b2",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-021-primary-480.webp",
+              "width": 480,
+              "sha256": "efde4810925e6534ee00b1007f81a720930186bec3927f5f80d55bff73ae3214"
+            },
+            {
+              "path": "/creative/LIST-021-primary-800.webp",
+              "width": 800,
+              "sha256": "fe65e73715faee57308c207de20d250483294e14d691fdead4d2847e2dceb81e"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-021",
+          "path": "/creative/LIST-021-secondary.webp",
+          "role": "secondary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-021: додатковий ракурс; не фото партії.",
+          "sha256": "7a97a82bf674d3922759a469f4407f84e6f9b1af13fff4d1d5ba3d5ec17ae469",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-021-secondary-480.webp",
+              "width": 480,
+              "sha256": "82630157b7dd447939ee9393d8573e400c0e38c2ff079cdc739082a970546a9c"
+            },
+            {
+              "path": "/creative/LIST-021-secondary-800.webp",
+              "width": 800,
+              "sha256": "823a4002ad133d7ebd702fa139a8fd23d32ec3dd5ee97d0fe2e8c00a52407440"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-021",
+          "path": "/creative/LIST-021-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-021: додатковий ракурс; не фото партії.",
+          "sha256": "cbec8acf81e6fcdc28bb304cc64524451ef1492426dc5d31e97131dc4ed7c05a",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-021-texture-480.webp",
+              "width": 480,
+              "sha256": "27843005f3b6a22fa48566be0e820bd173061d724e2f11365cde8330abcd358d"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-022",
+      "primary": "/creative/LIST-022.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-022",
+          "path": "/creative/LIST-022.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Високогірний світлий улун. Не є документальною фотографією партії постачальника.",
+          "sha256": "856a4c8abc5cdf4bb0cd657d05d33deb7e463bbcb0e9b8b77020c7ecd42994fd",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-022-primary-480.webp",
+              "width": 480,
+              "sha256": "a37347b5859e0cd35cb9e08503eb079ebbe6b775683d93dcc853884038ebd8e6"
+            },
+            {
+              "path": "/creative/LIST-022-primary-800.webp",
+              "width": 800,
+              "sha256": "f17c061eccca7dfcabb4e00061157fab71fa858b4890b455af854a79f2f49190"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-022",
+          "path": "/creative/LIST-022-secondary.webp",
+          "role": "secondary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-022: додатковий ракурс; не фото партії.",
+          "sha256": "b873130e72459c0ecd232692fcbc944aab7ec9be079ce252015e02bc1e7cc0a6",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-022-secondary-480.webp",
+              "width": 480,
+              "sha256": "1f9e840d43b617108f34930e830d82e33ae7b7072a727af915d1c1d49619b5b5"
+            },
+            {
+              "path": "/creative/LIST-022-secondary-800.webp",
+              "width": 800,
+              "sha256": "cc5da197a9dc6ef81bad11f955125ac3612063e275bf875ec2863fb1cfe8ccb6"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-022",
+          "path": "/creative/LIST-022-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-022: додатковий ракурс; не фото партії.",
+          "sha256": "20886df472f17e2d72f48ba06226060505d3de0def6316a632971bfaa72b4f22",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-022-texture-480.webp",
+              "width": 480,
+              "sha256": "310e9b2ced6698db4d4d3200a232e227cb2109ffb1c63e463f91ee0b399fda79"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-023",
+      "primary": "/creative/LIST-023.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-023",
+          "path": "/creative/LIST-023.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: ҐАБА (тип обробки уточнити). Не є документальною фотографією партії постачальника.",
+          "sha256": "db17edd38fbf7674e04e330d3168bd5e88527aff674fd43cd758aecb657d4a58",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-023-primary-480.webp",
+              "width": 480,
+              "sha256": "a37409169b466795271b1b3f112cc6950bc3ea60821829bbfab2279c2c7f5210"
+            },
+            {
+              "path": "/creative/LIST-023-primary-800.webp",
+              "width": 800,
+              "sha256": "b18f92d35b6bfa3e3dc44c993c3637ffe90feb582ca6286951cd85bda8dad250"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-023",
+          "path": "/creative/LIST-023-secondary.webp",
+          "role": "secondary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-023: додатковий ракурс; не фото партії.",
+          "sha256": "530b2f3d9f75b955434a6c54747f9214a64e9794cd779cc880f3889ef1f0f678",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-023-secondary-480.webp",
+              "width": 480,
+              "sha256": "94be062f41b1852d14942a680267242f84b0ca53b39c5f4a4999c95d815d0a2d"
+            },
+            {
+              "path": "/creative/LIST-023-secondary-800.webp",
+              "width": 800,
+              "sha256": "bcffff5160b53b6bc14194fc790fc01f101fd0e2d89e570535699e30ab1d5377"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        },
+        {
+          "sourceSku": "LIST-023",
+          "path": "/creative/LIST-023-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-023: додатковий ракурс; не фото партії.",
+          "sha256": "0e5f32f882170a32868d27c6ca86df885cecd7608a3b372a04b8c3073f7288ca",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-023-texture-480.webp",
+              "width": 480,
+              "sha256": "0d1f86b8dcf8314b66b705683c35b588171b15f088c942dc99784ab6d44246ae"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; IDENTITY UNCONFIRMED"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-024",
+      "primary": "/creative/LIST-024.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-024",
+          "path": "/creative/LIST-024.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Дун Фан Мей Жень. Не є документальною фотографією партії постачальника.",
+          "sha256": "88374c88c5d646ffc99088b6010e9761a7b19f508b0c90600545ee877d3d9774",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-024-primary-480.webp",
+              "width": 480,
+              "sha256": "26ae38905faa491bf46c4a13961f8c2b697b4a8368bc4f3d18deb650ed58d720"
+            },
+            {
+              "path": "/creative/LIST-024-primary-800.webp",
+              "width": 800,
+              "sha256": "933710396dac21492b1190ac2e6770b4b6859aed78b0d99469b659af5cd76965"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        },
+        {
+          "sourceSku": "LIST-024",
+          "path": "/creative/LIST-024-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-024: додатковий ракурс; не фото партії.",
+          "sha256": "b52cafde7061cf4b6754b973168fed1bdf90508d5c08ef92da687e5d2aabab82",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-024-texture-480.webp",
+              "width": 480,
+              "sha256": "710789742ecaf0486fd3dcde2414e35db7ad44dd0b0989bd7534214ccd4d5af1"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-025",
+      "primary": "/creative/LIST-025.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-025",
+          "path": "/creative/LIST-025.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Люань Гуапянь (назву підтвердити). Не є документальною фотографією партії постачальника.",
+          "sha256": "f756b455e5c06ab0700fdbc794bd547991fdbd1d47337f3dd96173f96fff9100",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-025-primary-480.webp",
+              "width": 480,
+              "sha256": "3f042f259a89dd518e6db3a878874df4fc61334d61ee80b2d24170d56a9eb3e9"
+            },
+            {
+              "path": "/creative/LIST-025-primary-800.webp",
+              "width": 800,
+              "sha256": "3584df5ad870656c01726c6e03c02af1e0c0c54be966ddd9af9de8a224a56426"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        },
+        {
+          "sourceSku": "LIST-025",
+          "path": "/creative/LIST-025-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-025: додатковий ракурс; не фото партії.",
+          "sha256": "876ea443f291f2698b1e831beaedfdecb7ee985c7ba297a4712d19c04ff16187",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-025-texture-480.webp",
+              "width": 480,
+              "sha256": "ee35a31b618a14be61364de0ca5d62ceb3a5a3c5c6894102dd0753c5535a3d2d"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-026",
+      "primary": "/creative/LIST-026.webp",
+      "images": [
+        {
+          "sourceSku": "LIST-026",
+          "path": "/creative/LIST-026.webp",
+          "role": "primary",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Художня AI-візуалізація: Білочунь. Не є документальною фотографією партії постачальника.",
+          "sha256": "83cd2b4ba2d8c0b64c76af928c4e52bbdd4d0a93257604bab2e253b7bd72573e",
+          "width": 1200,
+          "height": 1200,
+          "variants": [
+            {
+              "path": "/creative/LIST-026-primary-480.webp",
+              "width": 480,
+              "sha256": "3f5aac4bf217d73dab6290c735f2674b1a268581812d6e1f3c7dae2a58451106"
+            },
+            {
+              "path": "/creative/LIST-026-primary-800.webp",
+              "width": 800,
+              "sha256": "a7dc225dba5f26c0c751291ae610d953e46335abaad00cc33f170f08b986cae3"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        },
+        {
+          "sourceSku": "LIST-026",
+          "path": "/creative/LIST-026-texture.webp",
+          "role": "texture",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "AI-ілюстрація чаю LIST-026: додатковий ракурс; не фото партії.",
+          "sha256": "3802df90dc8fadc2bbc1bd6184101d9507d20bdf79d3853f849cda32002af961",
+          "width": 777,
+          "height": 777,
+          "variants": [
+            {
+              "path": "/creative/LIST-026-texture-480.webp",
+              "width": 480,
+              "sha256": "c10385d53367b780f5734175c1f30d4ef9697ba67376bc13de4d24d15527577d"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "AI ILLUSTRATION; TYPE REFERENCE"
+        }
+      ]
+    }
+  ]
+}
