@@ -628,8 +628,41 @@
     },
     {
       "sourceSku": "PHOTO-012",
-      "primary": null,
-      "images": []
+      "primary": "/creative/PHOTO-012.webp",
+      "images": [
+        {
+          "sourceSku": "PHOTO-012",
+          "path": "/creative/PHOTO-012.webp",
+          "kind": "ILLUSTRATIVE",
+          "rightsStatus": "COMMERCIAL_USE_APPROVED",
+          "assignmentStatus": "APPROVED_FOR_SKU",
+          "publicationAllowed": true,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Лао Тун Чжи 9978». Не підтверджує поточну партію.",
+          "sha256": "fd05f599d962f8f696f49b94b30c5e37a4feb8aafb4f88ef21f7a5e0a1706ba4",
+          "rightsEvidenceId": "CEO_PHOTO_012_PERMISSION_2026_10_25",
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "THIRD PARTY REFERENCE",
+          "originalSha256": "e0cc7b2fa377e828cc71d4caed5e7b4bb9eea817e0994683caf6f5adc033eb12",
+          "role": "primary",
+          "width": 1254,
+          "height": 1254,
+          "variants": [
+            {
+              "path": "/creative/PHOTO-012-primary-480.webp",
+              "width": 480,
+              "sha256": "5afdaa20acd511b8699aea6b8ee8b0a3afa6cfca943f432d2c01d45cec4ffcbc"
+            },
+            {
+              "path": "/creative/PHOTO-012-primary-800.webp",
+              "width": 800,
+              "sha256": "d5e7c80d8bb568794f73b62cf0812996584cd7025da702556cd7afb9758dc1ef"
+            }
+          ],
+          "documentary": false,
+          "matchConfidence": "PRODUCT MATCH"
+        }
+      ]
     },
     {
       "sourceSku": "PHOTO-013",

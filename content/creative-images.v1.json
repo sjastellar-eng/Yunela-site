@@ -179,13 +179,18 @@
     },
     {
       "sourceSku": "PHOTO-012",
-      "path": null,
-      "kind": null,
-      "rightsStatus": "UNKNOWN",
-      "assignmentStatus": "UNASSIGNED",
-      "publicationAllowed": false,
-      "alt": null,
-      "sha256": null
+      "path": "/creative/PHOTO-012.webp",
+      "kind": "ILLUSTRATIVE",
+      "rightsStatus": "COMMERCIAL_USE_APPROVED",
+      "assignmentStatus": "APPROVED_FOR_SKU",
+      "publicationAllowed": true,
+      "alt": "Заводська упаковка на білому фоні: Шу пуер «Лао Тун Чжи 9978». Не підтверджує поточну партію.",
+      "sha256": "fd05f599d962f8f696f49b94b30c5e37a4feb8aafb4f88ef21f7a5e0a1706ba4",
+      "rightsEvidenceId": "CEO_PHOTO_012_PERMISSION_2026_10_25",
+      "rightsEvidenceLevel": "REPORTED_BY_CEO",
+      "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+      "underlyingOrigin": "THIRD PARTY REFERENCE",
+      "originalSha256": "e0cc7b2fa377e828cc71d4caed5e7b4bb9eea817e0994683caf6f5adc033eb12"
     },
     {
       "sourceSku": "PHOTO-013",

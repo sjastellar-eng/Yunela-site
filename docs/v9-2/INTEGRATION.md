@@ -1,22 +1,23 @@
 # V9.2 Creative V8.4 integration
 
-Baseline PR #26: 20974f23adff0f09f6532e02a5d168478b09c966. Reviewed Creative PR #27: 23f45fc5dc82063b220baa9a6cc021352019ed1a. Its diff contains 26 LIST images and asset documentation/manifest; no application code. No merge is performed; this independent branch selectively imports verified asset bytes from the supplied ZIPs.
+Baseline PR #26: 20974f23adff0f09f6532e02a5d168478b09c966. Creative PR #27: 23f45fc5dc82063b220baa9a6cc021352019ed1a. PR #28 stays Draft and unmerged.
 
-## Rights decision
-CEO stated “Разрешение есть” on 2026-10-23 at 18:06:37 UTC in the project conversation. This is recorded as REPORTED_BY_CEO, not an independently examined supplier contract. The V9.2 directive authorizes applying the supplier's permission only to its own supplied photographs.
+## Rights and provenance
 
-29 PHOTO primaries have underlyingOrigin=SUPPLIER PHOTO, wrappedProduct=true and original PHOTO-input provenance. Their derived public registry uses SUPPLIER_PRODUCT_PHOTO, supplierAuthorized=true and evidence id CEO_SUPPLIER_PERMISSION_2026_10_23. This does not verify current lot identity or authorize sales. Original UNVERIFIED identity confidence for PHOTO-002/008/011/024 remains unchanged. None is relabeled VERIFIED_PRODUCT_PHOTO.
+CEO reported supplier permission on 2026-10-23 at 18:06:37 UTC. On 2026-10-25 CEO explicitly instructed publication of the missing puer PHOTO-012 and stated permission exists. That specific permission is recorded as CEO_PHOTO_012_PERMISSION_2026_10_25, REPORTED_BY_CEO. Its underlying source remains THIRD PARTY REFERENCE; this does not turn it into supplier-owned photography or independently reviewed legal evidence. The archived original wrapper photo for Lao Tong Zhi 9978 was recovered from repository history, then edited to match the other white-background packshots. No unwrapped cake substitutes for a wrapped primary.
 
-PHOTO-012 remains BLOCKED: the Creative primary derives from THIRD PARTY REFERENCE at daochai.ru. Supplier permission does not cover this separate photographer. Provide an authorized supplier-owned wrapper photograph or the rights holder's permission. No AI unwrapped cake or secondary is promoted to primary.
+All 30 PHOTO primaries have white-background edits and remain ILLUSTRATIVE, documentary=false; source hashes and processing are recorded in WHITE_BACKGROUND_RETOUCH.json. Identity uncertainty for PHOTO-002/008/011/024 remains unchanged. No current batch is verified. LIST primary bytes remain the supplied Creative exports, with ILLUSTRATIVE metadata. Visible AI badges were removed at CEO request.
 
 ## Integration
-56 stable sourceSku; 55 permitted primaries (26 LIST illustrations + 29 real supplier wrappers); 129 master/gallery images and 344 supplied master/adaptive WebP files. All images are byte-for-byte Creative exports, not regenerated or cropped by Developer. LIST and AI secondary images remain ILLUSTRATIVE and visibly labeled. Additional frames retain the Creative gallery order.
 
-Catalog, search, detail, existing cart UI and YUNA use one primary resolver. Selecting a gallery thumbnail never changes the primary. Missing/blocked/invalid primary metadata fails closed. Responsive variants use checksum-versioned URLs, supplied dimensions, alt text, lazy loading, contain framing and neutral error states. The gallery uses accessible thumbnail buttons.
+56 stable sourceSku, 56 permitted primaries, 130 master/gallery images and 347 master/adaptive WebP files. Catalog, search, detail, cart and YUNA share one fixed primary resolver. Gallery selections never change primary. Responsive assets have checksum-versioned URLs, supplied dimensions, alt text, lazy loading and neutral error states.
 
-Only explicitly approved files enter public/creative. QA/SOURCES, raw reference URLs, internal records and the private full ZIP remain outside public resources. Legacy public/catalog image duplicates are removed from this branch so PHOTO-012 cannot bypass its rights gate. Earlier deployments/history remain intact.
+Loose-leaf LIST images now fill their rectangular containers with object-fit:cover and zero padding, so the original photographic background reaches the edge without a gray frame or geometric distortion. This applies consistently to catalog, search, detail, thumbnails, cart and YUNA. Wrapped PHOTO primaries retain contain framing to show complete packaging on white.
 
-Source catalog names, category (including PHOTO-014 pressed red tea), confidence, sourceSku, prices, sales/payment flags and business rules are unchanged. No main merge or live commerce is authorized.
+Only approved assets enter public/creative. QA/SOURCES and private references remain excluded. Product names, sourceSku, categories (including pressed red tea PHOTO-014), prices, recommendation rules and commerce flags are unchanged. No merge, payments or real order acceptance is authorized.
 
-## Reproduction
-Use scripts/import-creative-v84.py with --public, --full and the explicit --ceo-supplier-permission flag. Then run npm ci, npm run validate:images, npm run typecheck, npm run lint, npm test and VITE_STATIC_DEMO=1 npm run build. Run existing V9.1 browser regression and V9.2 gallery tests with CHROME_PATH pointing to a local Chromium executable. Final test/deployment evidence belongs to the final PR report; a partial asset checkpoint is not an accepted or deployed build.
+## Validation
+
+Run npm run validate:images, npm run typecheck, npm run lint, npm test, VITE_STATIC_DEMO=1 npm run build. Image validation checks every master and responsive file, assignment, rights, hashes, WebP signature, size, duplicate paths and fixed-primary linkage. Browser acceptance checks all 56 SKU and 130 gallery frames at mobile and desktop sizes; actual run results are recorded in the PR report.
+
+The original import script reproduces the initial supplied package integration; subsequent CEO retouches and PHOTO-012 permission are documented overrides in the current registry, not a new export of that original package.
