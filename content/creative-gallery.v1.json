@@ -9,31 +9,34 @@
           "sourceSku": "PHOTO-001",
           "path": "/creative/PHOTO-001.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Ґу Юнь Мяо Сян». Не підтверджує поточну партію.",
-          "sha256": "2f415c3f1882a082a63ca439df5831e9833601af126960d1f175b982214daad4",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Ґу Юнь Мяо Сян». Не підтверджує поточну партію.",
+          "sha256": "763f7675d9a9042988d10ce3f7ee0e3b5e5b2e524c80335ffff036987d45dede",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-001-primary-480.webp",
               "width": 480,
-              "sha256": "700315d81d804132746730e85a28539e13475cda22b9cc441e48882e48be200c"
+              "sha256": "dc2070c1091fd83d62eff33286551c8ecb0d99ed510c4238d80bc293b07a51f0"
             },
             {
               "path": "/creative/PHOTO-001-primary-800.webp",
               "width": 800,
-              "sha256": "f5ae7f9d8f282a0f553f37f9e7ecf3c720506e739cee5552a5f87c704d30ff6a"
+              "sha256": "d81bfb989d8a2ae934f16e53e8924ab0f23f32e82ebd351612e82c1cbf477856"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "2f415c3f1882a082a63ca439df5831e9833601af126960d1f175b982214daad4"
         },
         {
           "sourceSku": "PHOTO-001",
@@ -94,31 +97,34 @@
           "sourceSku": "PHOTO-002",
           "path": "/creative/PHOTO-002.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: «Фей Сянь Ґун Ча». Не підтверджує поточну партію.",
-          "sha256": "d08a302f65738201a08a16b5cddf4d0f053c2caab06697eefd416d0e25555240",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: «Фей Сянь Ґун Ча». Не підтверджує поточну партію.",
+          "sha256": "1cc6798e6ddc5d479de8d2851958374eb7082b8e288b9feb9dfbf84ae9a2dd09",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-002-primary-480.webp",
               "width": 480,
-              "sha256": "42e552c220c02eff2ebdfbb61f684364d204d18c6453b8fc821031b958184cea"
+              "sha256": "b31c0c7d2d157dc8fcb6ee16685867cc5948b0854292e8c84bc67686a0c32e4b"
             },
             {
               "path": "/creative/PHOTO-002-primary-800.webp",
               "width": 800,
-              "sha256": "5ade8f70125f6b47961bf0f40a004eb41355f773d0abaa6fc1fb905897f0bbbf"
+              "sha256": "515b255f2135aad9d69fbb773700636be416734d6395456d1bb01f65d1ee3d72"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "UNVERIFIED",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "d08a302f65738201a08a16b5cddf4d0f053c2caab06697eefd416d0e25555240"
         }
       ]
     },
@@ -130,31 +136,34 @@
           "sourceSku": "PHOTO-003",
           "path": "/creative/PHOTO-003.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Лао Те», код 1966. Не підтверджує поточну партію.",
-          "sha256": "313709fea1e066196db537be5ddf6e70794011b4f7f2f62492b66f3bce577290",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Лао Те», код 1966. Не підтверджує поточну партію.",
+          "sha256": "df35d989ed3f93aeee9fe4314a63144963e3a28fb4c911249f3d54f0451868d6",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-003-primary-480.webp",
               "width": 480,
-              "sha256": "724a0245f57bfecb2380f4c40fad86eefe43911158e0d82e9a262ad880f4c145"
+              "sha256": "3e51819d6cee179b19f4c33354e6988f2144b5fb099ad0fe1e8aec14ca152698"
             },
             {
               "path": "/creative/PHOTO-003-primary-800.webp",
               "width": 800,
-              "sha256": "8fb13dcc11979769d09335eafc488fd9deec6537d3895f72669d1c50a0aabdcc"
+              "sha256": "8032e406cf7f5b8114c14214532129854d89789e0836d8693539ed587ec7c86c"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "313709fea1e066196db537be5ddf6e70794011b4f7f2f62492b66f3bce577290"
         },
         {
           "sourceSku": "PHOTO-003",
@@ -215,31 +224,34 @@
           "sourceSku": "PHOTO-004",
           "path": "/creative/PHOTO-004.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Му Є Чунь 001». Не підтверджує поточну партію.",
-          "sha256": "9cb8f615934d63f3801c5db93d040177b5b427648467bf7f272def00906d322d",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Му Є Чунь 001». Не підтверджує поточну партію.",
+          "sha256": "732190705822cf5fbeebc24a9e9e2ace4783b347e75894eb2017cc711c0df39b",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-004-primary-480.webp",
               "width": 480,
-              "sha256": "54ae86888085b2bb55dfb3b11e84f1d21aa87e5dc27bdbc5f36a7747934094de"
+              "sha256": "50037643b5fececfbf0743d634066e223791579b6799df1f91b0cf475cf170d2"
             },
             {
               "path": "/creative/PHOTO-004-primary-800.webp",
               "width": 800,
-              "sha256": "be700b1929365419661f2e408ae34a6c67ad8b47dc84f5355e2b515ab80c3eef"
+              "sha256": "93d288797faa3d859bcd70de01c872991a3f290d312c0f5dd1991d68a7e5f5ef"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "9cb8f615934d63f3801c5db93d040177b5b427648467bf7f272def00906d322d"
         }
       ]
     },
@@ -251,31 +263,34 @@
           "sourceSku": "PHOTO-005",
           "path": "/creative/PHOTO-005.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Кун Цюе Інь». Не підтверджує поточну партію.",
-          "sha256": "0ad93dc91857e0ddb43602a593fc890336103dfbbd6818e95c1e83dd6782e533",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Кун Цюе Інь». Не підтверджує поточну партію.",
+          "sha256": "dfd8c1cc1d66982eaf9f0e90c1b323659488b58b7668a0ac6d2c38c33c8cd764",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-005-primary-480.webp",
               "width": 480,
-              "sha256": "2941c4bec9f82af056866391568c7079bb736f127c5b96067ba438ebd0639325"
+              "sha256": "ec93436f65585cea08b3d475c588ca8487f436177a318f353663a7cd9ceb8324"
             },
             {
               "path": "/creative/PHOTO-005-primary-800.webp",
               "width": 800,
-              "sha256": "256d031786e672532db282f3c1c5f502db457466405bcb54dad620b90acd063d"
+              "sha256": "de993e0602886c50eb3dc7f40df8b24fed5965d593f94390862380a910eae526"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "0ad93dc91857e0ddb43602a593fc890336103dfbbd6818e95c1e83dd6782e533"
         },
         {
           "sourceSku": "PHOTO-005",
@@ -336,31 +351,34 @@
           "sourceSku": "PHOTO-006",
           "path": "/creative/PHOTO-006.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Цяо Му Юань Ча». Не підтверджує поточну партію.",
-          "sha256": "38ae6839c6e772a7c7ebd39998f4f7c40d803f8082cbb6f30e041da58ab3f669",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Цяо Му Юань Ча». Не підтверджує поточну партію.",
+          "sha256": "0a4a8d1dc9b2fc7a901cf57b0d15bfeb6067dc1cfadcbbe156c910cd4e3cb08e",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-006-primary-480.webp",
               "width": 480,
-              "sha256": "b396e2ac65a56e70cd784160ffdef388432fcd0c3d6a9ce0ae2dfc3baa527d68"
+              "sha256": "6fdbb3f47296e144a679651411e55fe04000174b32489ec29fbae390efc3d855"
             },
             {
               "path": "/creative/PHOTO-006-primary-800.webp",
               "width": 800,
-              "sha256": "255f571701766d6d586905d99c11210a6c5b178a97d8acfe818880f18ec8892d"
+              "sha256": "f38da56eca00901255759ca99459f5696e518366a44b004227763707dabd9f9a"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "38ae6839c6e772a7c7ebd39998f4f7c40d803f8082cbb6f30e041da58ab3f669"
         }
       ]
     },
@@ -372,31 +390,34 @@
           "sourceSku": "PHOTO-007",
           "path": "/creative/PHOTO-007.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Біндао». Не підтверджує поточну партію.",
-          "sha256": "fe652e5dc5689833123399616284901a53bd0bfdf912f8776e4f69f5ef3ac881",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Біндао». Не підтверджує поточну партію.",
+          "sha256": "ddcb2f5a1c5e1089748bdd48741a2078618bfbaebd19c1d4be74548632086fde",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-007-primary-480.webp",
               "width": 480,
-              "sha256": "ada3c4fb6a752ab44a0ce7b6d9e04f41113e6452efe2122029633d1a368e91f8"
+              "sha256": "0ad1b0b5d221c3a6e761d55a68ab580d78efcab57b65e3ac3856c57fb42e1796"
             },
             {
               "path": "/creative/PHOTO-007-primary-800.webp",
               "width": 800,
-              "sha256": "65a431142eb4987daa4caa5c05e8cfdbcf6ac1515e778ac1c3a1ad7d994ac84a"
+              "sha256": "c508fcef3df1812b139b69ee856d0a3bc9705518620e6e0693905604d4f0cd9e"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "fe652e5dc5689833123399616284901a53bd0bfdf912f8776e4f69f5ef3ac881"
         }
       ]
     },
@@ -408,31 +429,34 @@
           "sourceSku": "PHOTO-008",
           "path": "/creative/PHOTO-008.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: «Бай Чжень Цзінь Лянь». Не підтверджує поточну партію.",
-          "sha256": "01affb252709cb2d5a978b3e35236b7421aa6a76d250df04b9fa2b9e73c5fca8",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: «Бай Чжень Цзінь Лянь». Не підтверджує поточну партію.",
+          "sha256": "0758ca319b811affb7951a0ec0127ba1083e8d7fd9522d2757c0cf5a2160e829",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-008-primary-480.webp",
               "width": 480,
-              "sha256": "996d672a5d92d09eb133b33a9fa1c6fc2801e95e00a2624d1cdd924d52e826e5"
+              "sha256": "f5ec52a84a93e26ccbd98730e5ddbeb23e710ed6d7b37d9310a854809a3405ee"
             },
             {
               "path": "/creative/PHOTO-008-primary-800.webp",
               "width": 800,
-              "sha256": "6ba9be217a25195a9cd9dbd926f12254c22ede4426703c68c5129e74b5bc784a"
+              "sha256": "ed551adeeebac5745233adbc36587580e2a05014bb1a7c1ce30ea8707729ac59"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "UNVERIFIED",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "01affb252709cb2d5a978b3e35236b7421aa6a76d250df04b9fa2b9e73c5fca8"
         }
       ]
     },
@@ -444,31 +468,34 @@
           "sourceSku": "PHOTO-009",
           "path": "/creative/PHOTO-009.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Ґунтін», маркування «Чунь Му Інь Цзі». Не підтверджує поточну партію.",
-          "sha256": "223ab2e2372a0d4907aefa557d6c5a63137397251aa94378d2ae60dd800effef",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Ґунтін», маркування «Чунь Му Інь Цзі». Не підтверджує поточну партію.",
+          "sha256": "5a8c1223fa75485e2299c553bacaba83f39df73940e4f3cb18d19b0cf1ef5be3",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-009-primary-480.webp",
               "width": 480,
-              "sha256": "edf71f84c7e512cf65a5a9335cac87a2956013ff9ee5a12aef4efac933f14eeb"
+              "sha256": "346794a78c0662ef9e8dec242557779e087fd1ee25e8e01ce2dd56ce8f4c863d"
             },
             {
               "path": "/creative/PHOTO-009-primary-800.webp",
               "width": 800,
-              "sha256": "7c3700287d6c977e9823f2ef2de48ba5eca7d7691b07a2cc21c1a7ddf436e945"
+              "sha256": "83448fe3d348d7b0515e4caa1e613e15159d6ae738d685885c21f671b9360fb0"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "223ab2e2372a0d4907aefa557d6c5a63137397251aa94378d2ae60dd800effef"
         },
         {
           "sourceSku": "PHOTO-009",
@@ -529,31 +556,34 @@
           "sourceSku": "PHOTO-010",
           "path": "/creative/PHOTO-010.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Юй Хуа Нун». Не підтверджує поточну партію.",
-          "sha256": "1fe346f4d35f498b32045f883fa642e18357c3c3740ecd0bf04bc3dfb4d360af",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Юй Хуа Нун». Не підтверджує поточну партію.",
+          "sha256": "38708dfbdb73e10642d3387b24639f2d1279fd2c297772856c65267237740aee",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-010-primary-480.webp",
               "width": 480,
-              "sha256": "2bc00d61c21449a74f9dcb9ec5b935582c3c413cd6aa784d34cb383e436b6766"
+              "sha256": "93ae72ccfa3fe75f3a9a99f92558338a91765c08bb2b97e59c56707bac8cbd6b"
             },
             {
               "path": "/creative/PHOTO-010-primary-800.webp",
               "width": 800,
-              "sha256": "b380a09cac69e7d9ccb429c9c9a6c75d443ecfc07fda6060e9ab2e67957f9eae"
+              "sha256": "7343d244901415a4b671554c1fa178caa622218c6e6e0e6334ffd183499c39f2"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "1fe346f4d35f498b32045f883fa642e18357c3c3740ecd0bf04bc3dfb4d360af"
         }
       ]
     },
@@ -565,31 +595,34 @@
           "sourceSku": "PHOTO-011",
           "path": "/creative/PHOTO-011.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: «Ґунтін Ґун Бін». Не підтверджує поточну партію.",
-          "sha256": "772f972f54012544223b96f6e1f8f8ee451effe51a2c6771910c1bb483570653",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: «Ґунтін Ґун Бін». Не підтверджує поточну партію.",
+          "sha256": "dc774ae73e3a59f2b9cc9d0983d8de191c54d95ea99ce2de9104aa089dad2f56",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-011-primary-480.webp",
               "width": 480,
-              "sha256": "dd62fb8836f3f7ccebd2ae21a6999d8f885ba7e6907c648bcd75995e073350d3"
+              "sha256": "fc04d1ff3f2f7051a5896b3eab3d5a34e3644184313ab5e581f7062ad3eb7406"
             },
             {
               "path": "/creative/PHOTO-011-primary-800.webp",
               "width": 800,
-              "sha256": "c80ac397453a2b0f48a658b5aec4bf5b383cf547444ee92ca2744064665a001e"
+              "sha256": "54c3311340065d7c70a788588ba0d8774c9f24f8294637d805e6b246dae8c643"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "UNVERIFIED",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "772f972f54012544223b96f6e1f8f8ee451effe51a2c6771910c1bb483570653"
         }
       ]
     },
@@ -606,31 +639,34 @@
           "sourceSku": "PHOTO-013",
           "path": "/creative/PHOTO-013.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Айлаошань». Не підтверджує поточну партію.",
-          "sha256": "3e7c6f92deda5b6a5b4a1d57ce580fdc14779ca3b6effd8db9afcf03ae92bd2a",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Айлаошань». Не підтверджує поточну партію.",
+          "sha256": "9c1491ee605d30f43f7842cba6db2488690e740449ad8b0a906fc3853a37a655",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-013-primary-480.webp",
               "width": 480,
-              "sha256": "bb917d82051460f1f3f77656781dc040c411e2150bd02710767071d9bcddf759"
+              "sha256": "cde6e2086a478f642cd24d880b6a8e0d7ae1c6d5b97dcbd3d1a624481473be5c"
             },
             {
               "path": "/creative/PHOTO-013-primary-800.webp",
               "width": 800,
-              "sha256": "d4dabf64bc1459cdf3895a5b050bb15ce2780cd716eea3bbd609c51ff7675dcc"
+              "sha256": "dfb6105818ced00bcd04a2003789e2548af97112763a221a9264bff638c39373"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "3e7c6f92deda5b6a5b4a1d57ce580fdc14779ca3b6effd8db9afcf03ae92bd2a"
         },
         {
           "sourceSku": "PHOTO-013",
@@ -691,31 +727,34 @@
           "sourceSku": "PHOTO-014",
           "path": "/creative/PHOTO-014.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Червоний чай «Шайхун Айлаошань», пресований. Не підтверджує поточну партію.",
-          "sha256": "8b0f620594881a391b432d8faed543b3640b0466f7c9214781bd64633b2b4c51",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Червоний чай «Шайхун Айлаошань», пресований. Не підтверджує поточну партію.",
+          "sha256": "e9dd975ac68e5d56f2308f8ecc025f2e0709c2f70cff980ecc9bc0db0f8f8b02",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-014-primary-480.webp",
               "width": 480,
-              "sha256": "7831e82ae2e5896abfd0a7b0158b2c7bf9af367dc1adc01aacb7c0ea94c82c0b"
+              "sha256": "40667da552644dacaed012fea9baa04aecddcf097608d2170b69b0b6a00455d8"
             },
             {
               "path": "/creative/PHOTO-014-primary-800.webp",
               "width": 800,
-              "sha256": "14c021afef3faafbc6348dc9ba0bfe2e18994e0f0cb369b0048838bed251eb3d"
+              "sha256": "678954191ef21078533a150b7145c475088b00931e9b131780b01ab9c89bba14"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "8b0f620594881a391b432d8faed543b3640b0466f7c9214781bd64633b2b4c51"
         },
         {
           "sourceSku": "PHOTO-014",
@@ -776,31 +815,34 @@
           "sourceSku": "PHOTO-015",
           "path": "/creative/PHOTO-015.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Жуй Ху Чен Сян». Не підтверджує поточну партію.",
-          "sha256": "4932cdcc671ab8e52a0a7731f92f0745710628016e1d9831ba6839fd2d70801b",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Жуй Ху Чен Сян». Не підтверджує поточну партію.",
+          "sha256": "9247fa955df2d68aa4d5715923c6af33d007af97e369ae80262d6179ade67edf",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-015-primary-480.webp",
               "width": 480,
-              "sha256": "5cbc3e47e01d29240fa8f5b93e570213ce21f4738672e7c772db8dc344f34720"
+              "sha256": "d439abd7538b1834c091703b85900e0bd64680d555455df9f14b37006a6c9b36"
             },
             {
               "path": "/creative/PHOTO-015-primary-800.webp",
               "width": 800,
-              "sha256": "13be43aec5051c14705c36dfc5ea7fcc2ab72e4408e7299f26f49a4a06c625ad"
+              "sha256": "a914c8310113cd35f0de01d2d708ec5d71b3ae60eaeaeda7073ad1ce80df47ef"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "4932cdcc671ab8e52a0a7731f92f0745710628016e1d9831ba6839fd2d70801b"
         }
       ]
     },
@@ -812,31 +854,34 @@
           "sourceSku": "PHOTO-016",
           "path": "/creative/PHOTO-016.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Мен Хао Цан». Не підтверджує поточну партію.",
-          "sha256": "ad9306b8fd5d757df4da5bfbabf1763ea53d635f35d702ec4bfaec7ce3eeddaf",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Мен Хао Цан». Не підтверджує поточну партію.",
+          "sha256": "e23bfe62e53c2f996e3cae4e4abf3551775c9c09a90130d09b12f01dce623657",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-016-primary-480.webp",
               "width": 480,
-              "sha256": "458f87f748266666f441ee2bcf1ae7424c454286330a64b9fb0ef4c8f04821d7"
+              "sha256": "3b8eea8ed302d8e72133b1c7945f50af63d4341180871933c3c1767d7fff5380"
             },
             {
               "path": "/creative/PHOTO-016-primary-800.webp",
               "width": 800,
-              "sha256": "d5457f55baf10a9f6cfefbd86f57ffc4e883d26794094785e690d95100daa124"
+              "sha256": "45665b2a985c7021429bbffc4bd10ac67e198abde31d68a00f275134720af8d1"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "ad9306b8fd5d757df4da5bfbabf1763ea53d635f35d702ec4bfaec7ce3eeddaf"
         }
       ]
     },
@@ -848,31 +893,34 @@
           "sourceSku": "PHOTO-017",
           "path": "/creative/PHOTO-017.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шен пуер «Айлаошань». Не підтверджує поточну партію.",
-          "sha256": "916aad18ccf22618be6f72da619ef8da0d219c763c5163aa7c1d284fbe3c8ac5",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шен пуер «Айлаошань». Не підтверджує поточну партію.",
+          "sha256": "2086be96e60303a6a3b717f557bd1a7e74bef6540bd3f1189468701b176a1c5d",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-017-primary-480.webp",
               "width": 480,
-              "sha256": "15797aeaaa21685ceff72c28e249628943ddb1986264b7d811e0121619bbca1f"
+              "sha256": "8d7bc3645e0abc9213480fe867f0eecf7876870eac6e01277c9efa966d72dcdf"
             },
             {
               "path": "/creative/PHOTO-017-primary-800.webp",
               "width": 800,
-              "sha256": "87ee8f3a8b09f68d2c84304da2d2aca149858b2d27794f14a555d6bb924d1532"
+              "sha256": "40d284ad9080bba7600abf53c61dc7b19c62ee0f4f73f62d3bda426f26553d76"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "916aad18ccf22618be6f72da619ef8da0d219c763c5163aa7c1d284fbe3c8ac5"
         },
         {
           "sourceSku": "PHOTO-017",
@@ -933,31 +981,34 @@
           "sourceSku": "PHOTO-018",
           "path": "/creative/PHOTO-018.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Мін Сян Жуй Ґун». Не підтверджує поточну партію.",
-          "sha256": "4cb5ecb834799042b6fd97bfa634215bcd23a8824d357cae673f43081040e69e",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Мін Сян Жуй Ґун». Не підтверджує поточну партію.",
+          "sha256": "62c0747f0e23dc39c336a9b66e0d1942fc1ba00dd0798bac1d88055fff03ba4f",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-018-primary-480.webp",
               "width": 480,
-              "sha256": "10e1de384e0e631c88b93fe73dba1f22e17d782806b2778b003554a1428763ac"
+              "sha256": "b6bd64ad485382e39463d1fbdacaffaf669ab6281cbf8f503b0d2497a40ade25"
             },
             {
               "path": "/creative/PHOTO-018-primary-800.webp",
               "width": 800,
-              "sha256": "63f4ed00d055df58de6c50dc2fb2667d1cb39bbdb9e4f7c12c233c6c816810d7"
+              "sha256": "d5b14dd43f3ffc318ce6c737b32e2b3597d5fe35bd311296561e90ed9c8680dc"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "4cb5ecb834799042b6fd97bfa634215bcd23a8824d357cae673f43081040e69e"
         },
         {
           "sourceSku": "PHOTO-018",
@@ -1018,31 +1069,34 @@
           "sourceSku": "PHOTO-019",
           "path": "/creative/PHOTO-019.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Їу Ґу Шу». Не підтверджує поточну партію.",
-          "sha256": "6841fa72dd57b0b1de5483939667dba3d9099d183d7dbe1302a778b083771b17",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Їу Ґу Шу». Не підтверджує поточну партію.",
+          "sha256": "1e645521afeb44e498dec7c5cf41413d8080b4fba25e4d4f2e7376b4d927c878",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-019-primary-480.webp",
               "width": 480,
-              "sha256": "7f6eb354036a244013dd7cded9f6d6d0ef4348c14f89b869a3bd061494018ffa"
+              "sha256": "2762bb5ddec13d3448dd2d4846566aa4473308753c68acfc12dac24ca3c009c3"
             },
             {
               "path": "/creative/PHOTO-019-primary-800.webp",
               "width": 800,
-              "sha256": "cb83a14d94a5fd32e39c6625e055bc2668daf13fbcb2772d34572fae2c06a822"
+              "sha256": "b929d8d84a5e890901fbbb3edd5165c0f3c310a7c3f78170d60ca3a2156ce4a3"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "6841fa72dd57b0b1de5483939667dba3d9099d183d7dbe1302a778b083771b17"
         },
         {
           "sourceSku": "PHOTO-019",
@@ -1103,31 +1157,34 @@
           "sourceSku": "PHOTO-020",
           "path": "/creative/PHOTO-020.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шен пуер «Ман Фей Ґу Шу». Не підтверджує поточну партію.",
-          "sha256": "b085e6ddfab7677f8c0d1e7970645a1e0c6473f9d6e9e89527388095c2a78ce5",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шен пуер «Ман Фей Ґу Шу». Не підтверджує поточну партію.",
+          "sha256": "edb990baac5f3497a46f837fe7d1fc75c9b18261818b86ef61fffec42b420c8d",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-020-primary-480.webp",
               "width": 480,
-              "sha256": "805cf27841403585736a224673c363bc863368af22036af8c5c7edf526f043ed"
+              "sha256": "6b0a044adde4ce05ee4ba8f6c72f4629067d473abaa7b98dc56ef2b7c7b7f0e9"
             },
             {
               "path": "/creative/PHOTO-020-primary-800.webp",
               "width": 800,
-              "sha256": "3695cf958dff6efdbab58f022d6672a233992e76829449f575d1d2d7ff370573"
+              "sha256": "a883961b134e38d3151739b9457f54a7b8bd8e2cbd86a455d4d08ddb279d8f57"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "b085e6ddfab7677f8c0d1e7970645a1e0c6473f9d6e9e89527388095c2a78ce5"
         },
         {
           "sourceSku": "PHOTO-020",
@@ -1188,31 +1245,34 @@
           "sourceSku": "PHOTO-021",
           "path": "/creative/PHOTO-021.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шен пуер «Фу Я». Не підтверджує поточну партію.",
-          "sha256": "1fad769f126023c918d7b7f0fcbb71a6fb0cbeeb40d8c9d5216d856fb265c495",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шен пуер «Фу Я». Не підтверджує поточну партію.",
+          "sha256": "6a91a905b73b006b701e5d8d18d384afc1db17785661a428624173c324e140d0",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-021-primary-480.webp",
               "width": 480,
-              "sha256": "977ad8179ed32fe7e4d7cabb9c01e6cd77befe7735d59a48a949095fc1dc6bac"
+              "sha256": "0f2ce39a2215175e21f678621afcc1e3695f802d9f8398490296b68dcbf93658"
             },
             {
               "path": "/creative/PHOTO-021-primary-800.webp",
               "width": 800,
-              "sha256": "90410b8e4769bae5866cfca5f6c158966b582e3a8971a02ae0210321c3b59fe5"
+              "sha256": "b10d279e0d8853b18eda2ed3b7cb4745f2185d8a2a10c148f0561a473a7ef5da"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "1fad769f126023c918d7b7f0fcbb71a6fb0cbeeb40d8c9d5216d856fb265c495"
         },
         {
           "sourceSku": "PHOTO-021",
@@ -1273,31 +1333,34 @@
           "sourceSku": "PHOTO-022",
           "path": "/creative/PHOTO-022.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Бо Цзінь», Platinum. Не підтверджує поточну партію.",
-          "sha256": "6831bd643ca977aee1e9d3ed943c39e8d4de962412b7bf8282857c6bbd050991",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Бо Цзінь», Platinum. Не підтверджує поточну партію.",
+          "sha256": "9f62a9c77d5407c971295eea383f96cf30a3953b1909bf76cfa0b2d04a731c83",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-022-primary-480.webp",
               "width": 480,
-              "sha256": "e5f434fe52ba260a8d51d27758ea244df51d1487dba5ef6d1b6f8b6f5e5fbbdb"
+              "sha256": "a00fcd7e14c39b45a43a6d217375dff175e3d2485783697356c1845dd53d49c8"
             },
             {
               "path": "/creative/PHOTO-022-primary-800.webp",
               "width": 800,
-              "sha256": "1a9524d74c4a48af9aa2690845052644cd63be003d23fca6ea6aa1e48fd4acef"
+              "sha256": "935d1c457737de13c68be0ad5a46249df7fe6a28e785727ba665a5ca1989df1b"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "6831bd643ca977aee1e9d3ed943c39e8d4de962412b7bf8282857c6bbd050991"
         },
         {
           "sourceSku": "PHOTO-022",
@@ -1358,31 +1421,34 @@
           "sourceSku": "PHOTO-023",
           "path": "/creative/PHOTO-023.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «На Ка Інь Сян». Не підтверджує поточну партію.",
-          "sha256": "720566e1e011806db96b3287d8a9f7311f077eef35a4ba32cac510203d001c36",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «На Ка Інь Сян». Не підтверджує поточну партію.",
+          "sha256": "2c46948720f1964d5ecbf49e709c49d742a78a47c116d257dcd51b35ca7c1c02",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-023-primary-480.webp",
               "width": 480,
-              "sha256": "c61f67713e0799849a68137a700838c091934eba98dc6ca0d19f4caaea7f0b67"
+              "sha256": "a4a2aa3da8679d95c0a07232648403ae946689834f3f593bef7a1589c38be81c"
             },
             {
               "path": "/creative/PHOTO-023-primary-800.webp",
               "width": 800,
-              "sha256": "a146da712134bf0f764943c380899e31a1d1f19ef0fe7b3e925d29a8317d4acc"
+              "sha256": "a6c1a0f9632a6d620c93823e1f70dea664de2b3f1f1574efcc1c9799d724d95a"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "720566e1e011806db96b3287d8a9f7311f077eef35a4ba32cac510203d001c36"
         },
         {
           "sourceSku": "PHOTO-023",
@@ -1443,31 +1509,34 @@
           "sourceSku": "PHOTO-024",
           "path": "/creative/PHOTO-024.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: «Юй Цянь Чунь». Не підтверджує поточну партію.",
-          "sha256": "ff637ca65eff75824b9747e88ea9972a02d04ac8548b52b74e5ca334493a9c7b",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: «Юй Цянь Чунь». Не підтверджує поточну партію.",
+          "sha256": "68fe8f1a2fe9b01ee98798378cbbad9f06add0def30e3d4c06d6baf5498dda70",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-024-primary-480.webp",
               "width": 480,
-              "sha256": "113034d1859917b33471355b3717e702d4db9a0a0043411982c2049a020020fb"
+              "sha256": "bc098fabb98ef05fccc12a709369c18ddf964946aff660d10faf5085cc0a13a3"
             },
             {
               "path": "/creative/PHOTO-024-primary-800.webp",
               "width": 800,
-              "sha256": "f580af79e6508765ada3903d88b3fce997e4d3c483d7dc4eed3602280122b08f"
+              "sha256": "d7693e339369b7ed2c0ba40a9bd181d84936bdb6672b1467448972bab36471c7"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "UNVERIFIED",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "ff637ca65eff75824b9747e88ea9972a02d04ac8548b52b74e5ca334493a9c7b"
         }
       ]
     },
@@ -1479,31 +1548,34 @@
           "sourceSku": "PHOTO-025",
           "path": "/creative/PHOTO-025.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Чень Шен Хао», варіант «Півень». Не підтверджує поточну партію.",
-          "sha256": "e423238aa27f200cdac775ba4a35b4cc1cc1fcd7881412a8ae975fb7a07bcdb9",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Чень Шен Хао», варіант «Півень». Не підтверджує поточну партію.",
+          "sha256": "9b63fa01ba173e47c5bbddc195bd42f880cacc23752d3fdf9aefe109965bdb22",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-025-primary-480.webp",
               "width": 480,
-              "sha256": "b46f32a6ecbd5525b94a729ee27eb11f9988056cd2d5b18a3d46b2d1ba3c3718"
+              "sha256": "0653a3e03357b1b78a70452e084a5fa37550e2092ad6bc0e75d4edb715a59b50"
             },
             {
               "path": "/creative/PHOTO-025-primary-800.webp",
               "width": 800,
-              "sha256": "17dad8e262103a903a1b8706d2d423ccc5ea1ce8a53dea95a628d8ee652646f2"
+              "sha256": "36c0a8ae4fe01cacbfc427afebeb9d6d98faed64d5c3a383555413bc42d8bbd5"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "e423238aa27f200cdac775ba4a35b4cc1cc1fcd7881412a8ae975fb7a07bcdb9"
         }
       ]
     },
@@ -1515,31 +1587,34 @@
           "sourceSku": "PHOTO-026",
           "path": "/creative/PHOTO-026.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Сяґуань 8663». Не підтверджує поточну партію.",
-          "sha256": "2269a640278840c0ef43524593eb8faae459f9f55aa46bec3ed467a9f7e09cdf",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Сяґуань 8663». Не підтверджує поточну партію.",
+          "sha256": "6343ecce2008f74f475dc1eea15b855e139915284d2fd285d7baf1810b05469d",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-026-primary-480.webp",
               "width": 480,
-              "sha256": "4cf727712ffd6fc50d3dd2b0daebce113e7fbd5bfa038768da731eebd7e2285f"
+              "sha256": "bbe11db947f5083fabb5f4e2c9376c4ae14fb8eb7b2223cef03713806b835d2a"
             },
             {
               "path": "/creative/PHOTO-026-primary-800.webp",
               "width": 800,
-              "sha256": "84f6c86c8ccd617b9c92b13d292941d224feb8152bc800a2d7ee1e35719b3e32"
+              "sha256": "aa69edf1f69547d074078ce19cb18b8af4111378130d634b896dcb9331597833"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "2269a640278840c0ef43524593eb8faae459f9f55aa46bec3ed467a9f7e09cdf"
         },
         {
           "sourceSku": "PHOTO-026",
@@ -1600,31 +1675,34 @@
           "sourceSku": "PHOTO-027",
           "path": "/creative/PHOTO-027.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шен пуер «Лао Бань Чжан». Не підтверджує поточну партію.",
-          "sha256": "cb714899118ebe743f6590d480ed1ec1c894a444d9246b6348725a5da44f1362",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шен пуер «Лао Бань Чжан». Не підтверджує поточну партію.",
+          "sha256": "6fd00866f644b2fd66255c49a411859ab9eaa0092e8862599536ad0c3c91fd89",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-027-primary-480.webp",
               "width": 480,
-              "sha256": "80afb755483c373ad04203e07d80897a5930fb69b2e62cef002fb4614f1f9919"
+              "sha256": "66014486f92165b0496c0eff93729927415e26c294fbf1cd1a64fa3f5b435238"
             },
             {
               "path": "/creative/PHOTO-027-primary-800.webp",
               "width": 800,
-              "sha256": "967a126ebe07df69af86572aed597bd7b2925ff2768ece8d9402762e6770e9e3"
+              "sha256": "1dabd6641d91a5761bc471266999f9ae6508162e858377ee741b5815d43b58d6"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "cb714899118ebe743f6590d480ed1ec1c894a444d9246b6348725a5da44f1362"
         },
         {
           "sourceSku": "PHOTO-027",
@@ -1685,31 +1763,34 @@
           "sourceSku": "PHOTO-028",
           "path": "/creative/PHOTO-028.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Бан Цзє». Не підтверджує поточну партію.",
-          "sha256": "97627fc85f0f2ba7963b4a5ce18dbd3d60b2ca5005e692a0538d58cd8a176637",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Бан Цзє». Не підтверджує поточну партію.",
+          "sha256": "b1715c014071508625995d205212a6e072effdeb73152ee900fe38831533ae1f",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-028-primary-480.webp",
               "width": 480,
-              "sha256": "bc0e348ea3268c56ec5bbba9cfcaeb5fcf2901c4d2bd80c92024400a903d3757"
+              "sha256": "697d75c85d6c03eca2d8992f80b647a05c9c5a1bfb17cfbf7e1fa21c7e1f2b90"
             },
             {
               "path": "/creative/PHOTO-028-primary-800.webp",
               "width": 800,
-              "sha256": "e353f80677859c20ca4857da68833b5ad37fb28bafe2fa85e177a8dee577b16a"
+              "sha256": "d16ed0fd5b9c3a47e4cb338e9d0211a6d6d96455e79b1fd211ccd4d34dc1956f"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "97627fc85f0f2ba7963b4a5ce18dbd3d60b2ca5005e692a0538d58cd8a176637"
         },
         {
           "sourceSku": "PHOTO-028",
@@ -1770,31 +1851,34 @@
           "sourceSku": "PHOTO-029",
           "path": "/creative/PHOTO-029.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Лун Цзя». Не підтверджує поточну партію.",
-          "sha256": "265df55341277ada57a413bab87b78dc6d299dfe078bf34c1915645975414844",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Лун Цзя». Не підтверджує поточну партію.",
+          "sha256": "056ece24650f24cfdcf98aadd60358d69cf288b08b015c3403a942473e65a85a",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-029-primary-480.webp",
               "width": 480,
-              "sha256": "40dd40d8fc5b70c21dfea6dccc1f0bcc9fb5ec9cfc3d1e2b67b0c84742566342"
+              "sha256": "476a24c327f6f93d89d6971b1a52337fee130da4e40971b5561bd269cd0741a9"
             },
             {
               "path": "/creative/PHOTO-029-primary-800.webp",
               "width": 800,
-              "sha256": "522864d73a98c506e09e28f404512cd7e237a4a099f7eafc75d3a6d53a316248"
+              "sha256": "6b3ba74a1769422ea1669393eef142ef2a06d8fc48f7a957c27fe56e486da78b"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "265df55341277ada57a413bab87b78dc6d299dfe078bf34c1915645975414844"
         },
         {
           "sourceSku": "PHOTO-029",
@@ -1855,31 +1939,34 @@
           "sourceSku": "PHOTO-030",
           "path": "/creative/PHOTO-030.webp",
           "role": "primary",
-          "kind": "SUPPLIER_PRODUCT_PHOTO",
+          "kind": "ILLUSTRATIVE",
           "rightsStatus": "COMMERCIAL_USE_APPROVED",
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
-          "alt": "Оригінальне фото заводської упаковки: Шу пуер «Чень Шен Хао», варіант «Собака». Не підтверджує поточну партію.",
-          "sha256": "c72480c7592e2ca0110c28355688f88681d8cd01da10b78f573695b1a0fd099d",
-          "width": 1200,
-          "height": 1200,
+          "alt": "Заводська упаковка на білому фоні: Шу пуер «Чень Шен Хао», варіант «Собака». Не підтверджує поточну партію.",
+          "sha256": "da4a90780b5f9be8a8f486794d33100a38b48e492b66b92f14072a537fc4679f",
+          "width": 1254,
+          "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-030-primary-480.webp",
               "width": 480,
-              "sha256": "a4fda1bb39bcc4875858c671c20a725c139243310f80d1efdcfef52a7dd2de5e"
+              "sha256": "5bbdf5be19ab68d2fd927e2072c7e0ddebefccf30cc8a9ce82a776558ed220a1"
             },
             {
               "path": "/creative/PHOTO-030-primary-800.webp",
               "width": 800,
-              "sha256": "072c64c08724a93e81692446b8770f49476baa0b7d97e54de9c524e9db3561cb"
+              "sha256": "de51977515b3dadf52b5158495f7c9abc2cdf2b1263e0fd7603f5f566e579f7a"
             }
           ],
-          "documentary": true,
+          "documentary": false,
           "matchConfidence": "PRODUCT MATCH",
           "supplierAuthorized": true,
           "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
-          "rightsEvidenceLevel": "REPORTED_BY_CEO"
+          "rightsEvidenceLevel": "REPORTED_BY_CEO",
+          "processing": "AI_ASSISTED_WHITE_BACKGROUND_RETOUCH",
+          "underlyingOrigin": "SUPPLIER PHOTO",
+          "originalSha256": "c72480c7592e2ca0110c28355688f88681d8cd01da10b78f573695b1a0fd099d"
         }
       ]
     },
