@@ -1,0 +1,465 @@
+{
+  "result": "PASS",
+  "commit": "cbab997b42bab081f4c6c7f55972c00a21a1ef8d",
+  "browser": "156.0.8078.47",
+  "results": [
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-001",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-001-primary-480.webp?v=bd589b1992bfdcff",
+        "width": 475,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-001-primary-800.webp?v=bbe6cb3a6f2acdf3",
+        "width": 720,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 3
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-002",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-002-primary-480.webp?v=f09fd2876d3537f9",
+        "width": 475,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-002-primary-800.webp?v=4f149cbba1b609f5",
+        "width": 720,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 3
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-003",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-003-primary-480.webp?v=19424c31f5e51a0a",
+        "width": 475,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-003-primary-800.webp?v=9cd0cceb5e355905",
+        "width": 720,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 2
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-004",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-004-primary-480.webp?v=09a225122aadcb41",
+        "width": 475,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-004-primary-800.webp?v=9a0e67d17bbf94da",
+        "width": 720,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 2
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-005",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-005-primary-480.webp?v=5948dd13b79bed2d",
+        "width": 475,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-005-primary-800.webp?v=8eb8e1e74a298761",
+        "width": 720,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 2
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-006",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-006-primary-480.webp?v=7097a441c94f4c9f",
+        "width": 475,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-006-primary-800.webp?v=e3d78455b01369c9",
+        "width": 720,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 3
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-014",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-014-primary-480.webp?v=b20a36b65f432c27",
+        "width": 475,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-014-primary-800.webp?v=0d1314dfc2fc4b52",
+        "width": 720,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 3
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-016",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-016-primary-480.webp?v=4af9501926c3e339",
+        "width": 475,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-016-primary-800.webp?v=78ff36f29fd1e24e",
+        "width": 720,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 2
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "PHOTO-001",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/PHOTO-001-primary-480.webp?v=427b3a7db01fd5f7",
+        "width": 475,
+        "fit": "contain",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/PHOTO-001-primary-800.webp?v=1227ec1ebe199f1f",
+        "width": 720,
+        "fit": "contain",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 3
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "PHOTO-008",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/PHOTO-008-primary-480.webp?v=f03e9ecde3340f4e",
+        "width": 475,
+        "fit": "contain",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/PHOTO-008-primary-800.webp?v=c719f52df121f635",
+        "width": 720,
+        "fit": "contain",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 1
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "PHOTO-010",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/PHOTO-010-primary-480.webp?v=484daea5039bc909",
+        "width": 475,
+        "fit": "contain",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/PHOTO-010-primary-800.webp?v=d1d7173ca615243c",
+        "width": 720,
+        "fit": "contain",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 1
+    },
+    {
+      "viewport": 1440,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "httpErrors": [],
+      "commerceApiRequests": [],
+      "catalogCount": 56
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-001",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-001-primary-480.webp?v=bd589b1992bfdcff",
+        "width": 389,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-001-primary-480.webp?v=bd589b1992bfdcff",
+        "width": 389,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 3
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-002",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-002-primary-480.webp?v=f09fd2876d3537f9",
+        "width": 389,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-002-primary-480.webp?v=f09fd2876d3537f9",
+        "width": 389,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 3
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-003",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-003-primary-480.webp?v=19424c31f5e51a0a",
+        "width": 389,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-003-primary-480.webp?v=19424c31f5e51a0a",
+        "width": 389,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 2
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-004",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-004-primary-480.webp?v=09a225122aadcb41",
+        "width": 389,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-004-primary-480.webp?v=09a225122aadcb41",
+        "width": 389,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 2
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-005",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-005-primary-480.webp?v=5948dd13b79bed2d",
+        "width": 389,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-005-primary-480.webp?v=5948dd13b79bed2d",
+        "width": 389,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 2
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-006",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-006-primary-480.webp?v=7097a441c94f4c9f",
+        "width": 389,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-006-primary-480.webp?v=7097a441c94f4c9f",
+        "width": 389,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 3
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-014",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-014-primary-480.webp?v=b20a36b65f432c27",
+        "width": 389,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-014-primary-480.webp?v=b20a36b65f432c27",
+        "width": 389,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 3
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-016",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-016-primary-480.webp?v=4af9501926c3e339",
+        "width": 389,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/LIST-016-primary-480.webp?v=4af9501926c3e339",
+        "width": 389,
+        "fit": "cover",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 2
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "PHOTO-001",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/PHOTO-001-primary-480.webp?v=427b3a7db01fd5f7",
+        "width": 389,
+        "fit": "contain",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/PHOTO-001-primary-480.webp?v=427b3a7db01fd5f7",
+        "width": 389,
+        "fit": "contain",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 3
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "PHOTO-008",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/PHOTO-008-primary-480.webp?v=f03e9ecde3340f4e",
+        "width": 389,
+        "fit": "contain",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/PHOTO-008-primary-480.webp?v=f03e9ecde3340f4e",
+        "width": 389,
+        "fit": "contain",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 1
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "PHOTO-010",
+      "result": "PASS",
+      "card": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/PHOTO-010-primary-480.webp?v=484daea5039bc909",
+        "width": 389,
+        "fit": "contain",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "src": "https://yunela-v92-demo.onrender.com/creative/PHOTO-010-primary-480.webp?v=484daea5039bc909",
+        "width": 389,
+        "fit": "contain",
+        "bg": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 1
+    },
+    {
+      "viewport": 390,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "httpErrors": [],
+      "commerceApiRequests": [],
+      "catalogCount": 56
+    }
+  ]
+}
