@@ -2016,19 +2016,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Байхао Іньчжень. Не є документальною фотографією партії постачальника.",
-          "sha256": "40a909305c5548ed45fdf33d914be7ef233fe887ce96f2f88fd5588a5ce1165c",
+          "sha256": "cd1c3d7bb7162d62b702e2b5d32ee7a87a57519aedadb12a3b4264553ad9a06f",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-001-primary-480.webp",
               "width": 480,
-              "sha256": "8adc36fffb97213ed459a74cf15be2a73effc9731f403cda84dca0c795b65d92"
+              "sha256": "bd589b1992bfdcffd99ca7cb6ca5a93e4f891f63b45eb927fee84603bc2222d2"
             },
             {
               "path": "/creative/LIST-001-primary-800.webp",
               "width": 800,
-              "sha256": "4a62c8f4543bf13dd0349e87f63873fc5bfaa7f0afc52b3822eac3860e96bb92"
+              "sha256": "bbe6cb3a6f2acdf360dd7c04305dec7e373b15f14cff8ed40be7a6067287faa7"
             }
           ],
           "documentary": false,
@@ -2098,19 +2098,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Місячне сяйво. Не є документальною фотографією партії постачальника.",
-          "sha256": "471b57d2c3cd57489025f5e1d585dd239c3cbbba6525a40f2f792c6d8419395c",
+          "sha256": "a4c02e1339936d57bec660d54b90ae1975bb52340892ed076c7bd4c6a00c8390",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-002-primary-480.webp",
               "width": 480,
-              "sha256": "3465651459b5fca060295797ca1313ea5cc4dd2d1c49a08d9a97d6d866ef7355"
+              "sha256": "f09fd2876d3537f919d16380d0d9e19596c9f3e52b5cb178123dabcf12dd225e"
             },
             {
               "path": "/creative/LIST-002-primary-800.webp",
               "width": 800,
-              "sha256": "78f49e95d1e2d2af902a873805cadbff1d311471c78c423f174e3395c181308b"
+              "sha256": "4f149cbba1b609f5b6d0f463f844ab92aa4e9e58979fc49188f9e23009c496f6"
             }
           ],
           "documentary": false,
@@ -2180,19 +2180,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Цзінь Цзюнь Мей. Не є документальною фотографією партії постачальника.",
-          "sha256": "9f6356f780f2f0cc172b5b409a2aed3a66b3cd4b239161e3943ba4e91d3d6084",
+          "sha256": "2634dd52668a821603fa34e2e02683aa7e1ff45825c2e603d36a7c6c84a4d6aa",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-003-primary-480.webp",
               "width": 480,
-              "sha256": "b4a5f21c12934cd44ea12bec3438a87e5e4309a2ba80febb524901a1606e7338"
+              "sha256": "19424c31f5e51a0a395249c78f5a9de4aaf93a5cdc08f4fb08548dabfbf06ee8"
             },
             {
               "path": "/creative/LIST-003-primary-800.webp",
               "width": 800,
-              "sha256": "5b2402ac8e495b008374dc24582ba311e3467a894b43d9ab41aaeda0a0edc214"
+              "sha256": "9cd0cceb5e355905c87923e8d494fd4ce0d6c809514b3f8f705117ff48537a42"
             }
           ],
           "documentary": false,
@@ -2235,19 +2235,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Чжен Шань Сяо Чжун. Не є документальною фотографією партії постачальника.",
-          "sha256": "b798c1c137633dece4cc691c712cff480ee9d829b5a583a6945e90e52d09c417",
+          "sha256": "ea0f33f876b6e73a965a9e87c052cf92ec14dc4e639456e2cc3d5688467879af",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-004-primary-480.webp",
               "width": 480,
-              "sha256": "bd2444506908c8d4162ef5f213ab36909156f3f3d40ff987306948c12cd09ebc"
+              "sha256": "09a225122aadcb4142e76b695caa31ec69316b560d265c0a737ee9016805313d"
             },
             {
               "path": "/creative/LIST-004-primary-800.webp",
               "width": 800,
-              "sha256": "5b6e50ec32721cfae0403c7efbc3f9158157221feca53a8c9b893e4b4339733a"
+              "sha256": "9a0e67d17bbf94dae7add637e9a95e0c683c1e7d6647d2aa954e76f11c6c2fcb"
             }
           ],
           "documentary": false,
@@ -2290,19 +2290,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Дянь Хун. Не є документальною фотографією партії постачальника.",
-          "sha256": "f45d5319245cffc2c9a8810c5534145e5b3d5e4604820f38d4b9ed6718daa3a5",
+          "sha256": "1e385d95a35d2d2c53272f0e6377aa64e3c7a3a8c5ae2d1b2bed7d8f61a69ec8",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-005-primary-480.webp",
               "width": 480,
-              "sha256": "86cdff2fd96fdfddac11130e9552bcc8b17856c37efa04425b7856bbae085f5d"
+              "sha256": "5948dd13b79bed2dbeca0ca62983af31e28e28817058af9decf2583ef7fbb4db"
             },
             {
               "path": "/creative/LIST-005-primary-800.webp",
               "width": 800,
-              "sha256": "412a1f8c2dba11ef71e9063f4a1daad8ceab81e6f68bd837c49a38bb123849da"
+              "sha256": "8eb8e1e74a298761678e0223be9fcbe3eacf603fb4cbfaacf2ad5ce5bd495412"
             }
           ],
           "documentary": false,
