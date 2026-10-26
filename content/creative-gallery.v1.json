@@ -14,19 +14,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Заводська упаковка на білому фоні: Шу пуер «Ґу Юнь Мяо Сян». Не підтверджує поточну партію.",
-          "sha256": "763f7675d9a9042988d10ce3f7ee0e3b5e5b2e524c80335ffff036987d45dede",
+          "sha256": "f8d89e0644f37e3f014cafcb06f3ecadff24593a34feb03c2c36261a2b6bb8be",
           "width": 1254,
           "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-001-primary-480.webp",
               "width": 480,
-              "sha256": "dc2070c1091fd83d62eff33286551c8ecb0d99ed510c4238d80bc293b07a51f0"
+              "sha256": "427b3a7db01fd5f7d426ea9bbf163e1ae4fe757d4af52a8ca420639c37f60fcc"
             },
             {
               "path": "/creative/PHOTO-001-primary-800.webp",
               "width": 800,
-              "sha256": "d81bfb989d8a2ae934f16e53e8924ab0f23f32e82ebd351612e82c1cbf477856"
+              "sha256": "1227ec1ebe199f1f2bf5a8bd80745b7c7116bfb6d352722e9567cdbac9b39f4f"
             }
           ],
           "documentary": false,
@@ -434,19 +434,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Заводська упаковка на білому фоні: «Бай Чжень Цзінь Лянь». Не підтверджує поточну партію.",
-          "sha256": "0758ca319b811affb7951a0ec0127ba1083e8d7fd9522d2757c0cf5a2160e829",
+          "sha256": "6f981754ffe27d7999af4a0769d6e1ad9e6ebf618dcc24a614ede625d70eb452",
           "width": 1254,
           "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-008-primary-480.webp",
               "width": 480,
-              "sha256": "f5ec52a84a93e26ccbd98730e5ddbeb23e710ed6d7b37d9310a854809a3405ee"
+              "sha256": "f03e9ecde3340f4e87a165d541126c384581ab4d19e2015775ed6c92a6f8ff28"
             },
             {
               "path": "/creative/PHOTO-008-primary-800.webp",
               "width": 800,
-              "sha256": "ed551adeeebac5745233adbc36587580e2a05014bb1a7c1ce30ea8707729ac59"
+              "sha256": "c719f52df121f635690046cf76d2881c9986c5d882061dd5b6b13743008ece51"
             }
           ],
           "documentary": false,
@@ -561,19 +561,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Заводська упаковка на білому фоні: Шу пуер «Юй Хуа Нун». Не підтверджує поточну партію.",
-          "sha256": "38708dfbdb73e10642d3387b24639f2d1279fd2c297772856c65267237740aee",
+          "sha256": "78e9314b55558dbfde48d396d3a79bbb72b2313daeb2fcb60601dfbf35ed9348",
           "width": 1254,
           "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-010-primary-480.webp",
               "width": 480,
-              "sha256": "93ae72ccfa3fe75f3a9a99f92558338a91765c08bb2b97e59c56707bac8cbd6b"
+              "sha256": "484daea5039bc9097861362e54891ab516da88f8a96214821d78b476b55a9593"
             },
             {
               "path": "/creative/PHOTO-010-primary-800.webp",
               "width": 800,
-              "sha256": "7343d244901415a4b671554c1fa178caa622218c6e6e0e6334ffd183499c39f2"
+              "sha256": "d1d7173ca615243cdbb4257d8d72fcfffa1626166170468cccdda6b93fd18ccb"
             }
           ],
           "documentary": false,
@@ -2345,19 +2345,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Соснові голки. Не є документальною фотографією партії постачальника.",
-          "sha256": "4a9f082b0d06d17fd4ee36d38ea5a5a5c763816fdd8a70706eeb9fb9f7fc77b0",
+          "sha256": "61b082d120fa07607adb4b4fd8c9aa8ad279d306cf0861353f5cb8f9059d34b3",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-006-primary-480.webp",
               "width": 480,
-              "sha256": "69cdff2e6e76f43e21fc2365298a863c8d501a2e4e2359974e12300b7347cb88"
+              "sha256": "7097a441c94f4c9faba2f4af036220e776904778249fe59de1e460962329614b"
             },
             {
               "path": "/creative/LIST-006-primary-800.webp",
               "width": 800,
-              "sha256": "d30971ff8da8224783d3845890b9979fa59398f32819c3f82f09253947ca5140"
+              "sha256": "e3d78455b01369c97e632b60465759fa64b17813938dd8d7f48076ad32f9de35"
             }
           ],
           "documentary": false,
@@ -2920,19 +2920,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Шуй Сянь. Не є документальною фотографією партії постачальника.",
-          "sha256": "967f5fca0608ad1dcf773fc7de8a80be707d339d6b63a3a7eb1715fb222d61a4",
+          "sha256": "55ec091bba5f5413a3b03f30c1f086daf461ad4dd8180313846b952053263b00",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-014-primary-480.webp",
               "width": 480,
-              "sha256": "1152386d6970a6a30edde80a3f089ab1c860c2931973b0b674ddaccaabe67084"
+              "sha256": "b20a36b65f432c27e2f4c190e9edf83a0662df2f3350fa3b5e35e2c456764bbe"
             },
             {
               "path": "/creative/LIST-014-primary-800.webp",
               "width": 800,
-              "sha256": "b4b11746f1891f005f3c1a3004c7445d60d4f2e9723cbad885bd52664c8c320e"
+              "sha256": "0d1314dfc2fc4b52b823972224bfbb57d9fd74dff98497974c8a45fe300c5698"
             }
           ],
           "documentary": false,
@@ -3084,19 +3084,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: ДХП (скорочення постачальника). Не є документальною фотографією партії постачальника.",
-          "sha256": "26c9db7e961a40af7fe0961b61a0c530baf39fdaccf81f0289508893221ab1c7",
+          "sha256": "14d057283410fd9bb99d83334f79dc19f314099320f97e8ab01e5e5ab2983cf9",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-016-primary-480.webp",
               "width": 480,
-              "sha256": "fde2f24f997cebdb0e20e3e5d24271928726132e123750ea6c41887e1c8c9e8d"
+              "sha256": "4af9501926c3e3395c352f2ccfc1fea12f25cf6cfbf300f79fc8133f0e975766"
             },
             {
               "path": "/creative/LIST-016-primary-800.webp",
               "width": 800,
-              "sha256": "679974c3ef55a909d3fa00dd22fcf12f62cdb6ffeac056dc9cd526f3795b66fa"
+              "sha256": "78ff36f29fd1e24e0bbf9c36f1195927b881f3c60c8d75c396abbc519d535590"
             }
           ],
           "documentary": false,

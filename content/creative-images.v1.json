@@ -9,7 +9,7 @@
       "assignmentStatus": "APPROVED_FOR_SKU",
       "publicationAllowed": true,
       "alt": "Заводська упаковка на білому фоні: Шу пуер «Ґу Юнь Мяо Сян». Не підтверджує поточну партію.",
-      "sha256": "763f7675d9a9042988d10ce3f7ee0e3b5e5b2e524c80335ffff036987d45dede",
+      "sha256": "f8d89e0644f37e3f014cafcb06f3ecadff24593a34feb03c2c36261a2b6bb8be",
       "supplierAuthorized": true,
       "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
       "rightsEvidenceLevel": "REPORTED_BY_CEO",
@@ -121,7 +121,7 @@
       "assignmentStatus": "APPROVED_FOR_SKU",
       "publicationAllowed": true,
       "alt": "Заводська упаковка на білому фоні: «Бай Чжень Цзінь Лянь». Не підтверджує поточну партію.",
-      "sha256": "0758ca319b811affb7951a0ec0127ba1083e8d7fd9522d2757c0cf5a2160e829",
+      "sha256": "6f981754ffe27d7999af4a0769d6e1ad9e6ebf618dcc24a614ede625d70eb452",
       "supplierAuthorized": true,
       "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
       "rightsEvidenceLevel": "REPORTED_BY_CEO",
@@ -153,7 +153,7 @@
       "assignmentStatus": "APPROVED_FOR_SKU",
       "publicationAllowed": true,
       "alt": "Заводська упаковка на білому фоні: Шу пуер «Юй Хуа Нун». Не підтверджує поточну партію.",
-      "sha256": "38708dfbdb73e10642d3387b24639f2d1279fd2c297772856c65267237740aee",
+      "sha256": "78e9314b55558dbfde48d396d3a79bbb72b2313daeb2fcb60601dfbf35ed9348",
       "supplierAuthorized": true,
       "rightsEvidenceId": "CEO_SUPPLIER_PERMISSION_2026_10_23",
       "rightsEvidenceLevel": "REPORTED_BY_CEO",
@@ -538,7 +538,7 @@
       "assignmentStatus": "APPROVED_FOR_SKU",
       "publicationAllowed": true,
       "alt": "Художня AI-візуалізація: Соснові голки. Не є документальною фотографією партії постачальника.",
-      "sha256": "4a9f082b0d06d17fd4ee36d38ea5a5a5c763816fdd8a70706eeb9fb9f7fc77b0"
+      "sha256": "61b082d120fa07607adb4b4fd8c9aa8ad279d306cf0861353f5cb8f9059d34b3"
     },
     {
       "sourceSku": "LIST-007",
@@ -618,7 +618,7 @@
       "assignmentStatus": "APPROVED_FOR_SKU",
       "publicationAllowed": true,
       "alt": "Художня AI-візуалізація: Шуй Сянь. Не є документальною фотографією партії постачальника.",
-      "sha256": "967f5fca0608ad1dcf773fc7de8a80be707d339d6b63a3a7eb1715fb222d61a4"
+      "sha256": "55ec091bba5f5413a3b03f30c1f086daf461ad4dd8180313846b952053263b00"
     },
     {
       "sourceSku": "LIST-015",
@@ -638,7 +638,7 @@
       "assignmentStatus": "APPROVED_FOR_SKU",
       "publicationAllowed": true,
       "alt": "Художня AI-візуалізація: ДХП (скорочення постачальника). Не є документальною фотографією партії постачальника.",
-      "sha256": "26c9db7e961a40af7fe0961b61a0c530baf39fdaccf81f0289508893221ab1c7"
+      "sha256": "14d057283410fd9bb99d83334f79dc19f314099320f97e8ab01e5e5ab2983cf9"
     },
     {
       "sourceSku": "LIST-017",
