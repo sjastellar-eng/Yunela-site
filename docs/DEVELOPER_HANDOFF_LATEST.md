@@ -1,24 +1,27 @@
-# Developer handoff — Micro-task 07A
+# Micro-task08 — LIST batch02 checkpoint
 
-Date: 2026-10-26 (Europe/Kyiv)
-Branch: fix/list-background-batch-01
-HEAD before: 87955d66b4966cff242e9123ade376a98f58d186
-HEAD after: recovery commit containing this checkpoint (git rev-parse HEAD).
+Date:2026-10-27 Europe/Kyiv
+Branch:fix/list-background-batch-02
+HEAD before:cbab997b42bab081f4c6c7f55972c00a21a1ef8d
+HEAD after:commit containing this checkpoint (git rev-parse HEAD).
 
-Lost f87aab9 unavailable in GitHub/local reflog/worktrees/artifacts. Reproduced
-ONLY LIST-001..005 from immutable staging using unchanged approved pilot
-recolour(). q95 LIST-001, q92 LIST-002..005, method6; master/480/800.
-15 exports total 1869850 bytes, same as prior approved total and per-SKU totals.
-Old per-file hashes unavailable: byte identity NOT claimed. New hashes recorded.
+Only LIST-007..011 primary+480/800 backgrounds corrected by unchanged approved
+pilot recolour(). q92/q95 compared; all5 selectedq92 method6. Output2255900bytes,
+vs2502686 original (-9.86%), q95candidate2706642. Subject/scale/composition
+preserved; dark/contrasted pixels protected before encoding; continuous shadows.
+No conspicuous visual damage in light/dark edge/detail review. Lossy output and
+subtle light-edge correction are not pixel identity. Corners within2RGB levels.
 
-Two manifests: only 15 relevant hashes changed; all other data/order identical.
-Other 51 SKU including prior six pilot, CSS/UI/catalog/YUNA unchanged.
-260 tests /38 files PASS; ESLint PASS; image validator and full production
-frontend/server TypeScript build PASS. Crop visual inspection PASS; prior
-approved low-resolution montage compared; no new browser acceptance claimed.
+Only15WebP and corresponding hashes changed; other51SKU/all secondary assets,
+CSS/catalog/YUNA/business logic/sourceSku/order unchanged. Broad741deae excluded.
+260tests/38files PASS; TypeScript/ESLint/image validator56primary347exports and
+production frontend/server build PASS, repeated after environment restoration.
+Earlier local ba0bf22 lost to automated cleanup before branch creation; exact
+prior totals reproduced but per-file byte identity not claimed. This checkpoint
+must be remotely persisted before completion. GitHub API commit metadata may
+produce another SHA; full file tree is verified identical to tested local tree.
 
-Report/evidence: docs/list-batch-01-recovery/README.md, PROCESSING.json,
-QA_RESULTS.json and BEFORE_AFTER.jpg. Script recover-list-batch-01.py.
-This recovery will be persisted to dedicated GitHub branch, not Render branch.
-Staging remains 87955d6. No merge or deploy. Broad 741deae worktree preserved.
-Next step: STOP; CEO review and separate authorization for staging publication.
+Evidence:docs/list-background-batch-02/README.md,PROCESSING.json,QA_RESULTS.json,
+BEFORE_AFTER.jpg and5 LIST-007..011-details.jpg. Script process-list-batch-02.py.
+Staging precondition: Render current live cbab997; all15 batch01 hashes checked.
+No merge/deploy; staging remains cbab997. Next step STOP for CEO visual review.

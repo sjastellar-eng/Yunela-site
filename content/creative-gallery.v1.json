@@ -2427,19 +2427,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Золоті голки. Не є документальною фотографією партії постачальника.",
-          "sha256": "a986809d5309a4f7ed2ba9358c3278e9f27211e88feb42ad4595ec41f320d44e",
+          "sha256": "ad3f45fde8d88cc474a01c4b43dff2f8e5be77478fef1a72a07cc8f5da4b6e98",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-007-primary-480.webp",
               "width": 480,
-              "sha256": "78d1c31adf7842098f06800d0f97a3f3960c5c9639bab8a588cc3acb058b7259"
+              "sha256": "d3f6bb45c9eda3513f2a1b21ab2232cef055769f376590fe458072e2f6cd7e60"
             },
             {
               "path": "/creative/LIST-007-primary-800.webp",
               "width": 800,
-              "sha256": "17dfb94abe2c0cd6082c7258f75bd71d9f2cab305b3c95d42aa595a954948d67"
+              "sha256": "4f09b0f7cee24ed3fa10223f8733c46e678c4a2f449382e758a77fa2ea901693"
             }
           ],
           "documentary": false,
@@ -2482,19 +2482,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Золотий ворс Айлао. Не є документальною фотографією партії постачальника.",
-          "sha256": "573e5b076ca7b7e239737460a1fee43a0f067c685f7c8936d3643fecddd0da2c",
+          "sha256": "741ff059400d68b272f367ffc427f87be551dd291f6aefb3c3d21ed48e940c71",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-008-primary-480.webp",
               "width": 480,
-              "sha256": "ce16e2d05d00e972b46243974acade3b18a4854dc503000a489a6444ab9a0b43"
+              "sha256": "b7122a3173dcb0fe713eefb8032a6d640be6976c9fabe84f39412f55a3b7d6e1"
             },
             {
               "path": "/creative/LIST-008-primary-800.webp",
               "width": 800,
-              "sha256": "60b58028909401c1c9011b32c48f8b4b48eaefd24cb97473f2fdae3722167643"
+              "sha256": "b48fee517e227a7dee479a9068aeb88ae1542cb1f6376ea9f4db6c3ba2cf1575"
             }
           ],
           "documentary": false,
@@ -2564,19 +2564,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Золотий равлик. Не є документальною фотографією партії постачальника.",
-          "sha256": "bf26d97c5393b643bb85b17989983bf9038844de639fb52438917beaf33d05c6",
+          "sha256": "1ba86485205a3014306607b6b00e09e77fcb6f0b186deebfec164232ce7059b4",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-009-primary-480.webp",
               "width": 480,
-              "sha256": "a1cb1499baa93f984279f41adc04a95fbe5284cafdb48a919f1e4dd31ded4218"
+              "sha256": "5c1d76d68e2f5c94cd3bffd9780d15436008fe5f19482bbe720e14c4e15b64fa"
             },
             {
               "path": "/creative/LIST-009-primary-800.webp",
               "width": 800,
-              "sha256": "29dfa4d5fc9cfd0ddee760575085d64f7597e09062579c552636139925235f27"
+              "sha256": "0d89ed34c9eebe23d5b60349f6773c44f56d5fb3695c93d083540d76af48e873"
             }
           ],
           "documentary": false,
@@ -2619,19 +2619,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Є Шен Хун Ча. Не є документальною фотографією партії постачальника.",
-          "sha256": "8accb9e26a6f7e95726d24ddf0e0497fcb238aad36149c74707981b45f54df73",
+          "sha256": "fedc6b275d59ad3ef99ee5d839ab534a7e1b52139f0858fde2173ab2cd4f8ac3",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-010-primary-480.webp",
               "width": 480,
-              "sha256": "7a9846872e6c2f349a88c8301835149188dae7ddcd8047e2ebb6a2ce1c3d3495"
+              "sha256": "2f45053419d680db63836d7606c7cc93b0e7344076586323e872c25ce032c1a7"
             },
             {
               "path": "/creative/LIST-010-primary-800.webp",
               "width": 800,
-              "sha256": "c0a05cbd9e90f27f1c07455563065a23eaba7bfa2238bdf1e0f323bf95ec01a9"
+              "sha256": "0d29114d38a31146cc3176389f1e74f54821dea64377b83ee91c52bf51d90098"
             }
           ],
           "documentary": false,
@@ -2701,19 +2701,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Шайхун. Не є документальною фотографією партії постачальника.",
-          "sha256": "9255dc636e8d5efdfae5887d5960b215585bbf31952b56375d183b77e41e49db",
+          "sha256": "ea16c2757122ed1c2b924cf62b431de75e381e5a2954c8fa57990edeea9585e3",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-011-primary-480.webp",
               "width": 480,
-              "sha256": "b294472dbbb795b9ff21a2a8a084667accedcc5183531cd00851094e81e5da97"
+              "sha256": "269626689644a03d64ae0854167ccb1860fa17f8c12703489701c5f13a5462a0"
             },
             {
               "path": "/creative/LIST-011-primary-800.webp",
               "width": 800,
-              "sha256": "728beafdabb75dcd877893f331c3db75651794b29d3f70939329b03a53a3b5be"
+              "sha256": "32bec453609bf42e93c49d7ec92071403bece8ddcf62ffe04cbb6b44fc06093a"
             }
           ],
           "documentary": false,
