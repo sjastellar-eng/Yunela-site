@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-27 Europe/Kyiv",
+  "result": "PASS",
+  "deploymentSha": "f6ddcb149b7cc9b0b57f1d5a107b52f028f25020",
+  "baselineSha": "0e04f80246441745077e788a357328c7a1848085",
+  "stagingBranch": "feat/creative-gallery-v9-2",
+  "renderDeploy": "dep-dbgghk0m7kps73dbjtcg",
+  "renderStatus": "LIVE",
+  "ciRun": 40577962354,
+  "ciConclusion": "success",
+  "tests": "260tests/38files PASS",
+  "typeScript": "PASS via tsc -b in full production build",
+  "eslint": "PASS app and QA harness",
+  "imageValidation": "56primary/347files PASS",
+  "productionBuild": "frontend/server and static-demo PASS",
+  "browser": {
+    "viewports": [
+      390,
+      1440
+    ],
+    "skuPerViewport": 19,
+    "galleryFramesPerViewport": 46,
+    "errors": 0,
+    "targetSku": [
+      "LIST-012",
+      "LIST-013",
+      "LIST-014",
+      "LIST-015",
+      "LIST-016"
+    ],
+    "priorApprovedSku": 16
+  },
+  "https": "57primary/master/480/800 SHA-256 exact across19SKU; JS/CSS exact local static-demo; noindex; normal TLS",
+  "preserved": "LIST-014/016 byte-identical including manifest records; all previous16 approvedSKU preserved; all other53SKU records/assets unchanged",
+  "changes": "Only9WebP LIST-012/013/015 and matching hash fields; approved offline script/docs. No CSS/catalog/YUNA/business changes."
+}

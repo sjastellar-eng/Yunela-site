@@ -1,0 +1,413 @@
+{
+  "result": "PASS",
+  "commit": "f6ddcb149b7cc9b0b57f1d5a107b52f028f25020",
+  "normalTLSVerification": true,
+  "noindex": true,
+  "bundleMatches": [
+    "/assets/index-BVQjVGqu.js",
+    "/assets/index-DEcHUhqX.css"
+  ],
+  "checkedAssets": 57,
+  "scope": "All19 approved/changed SKU primary+480/800; other assets unchanged by Git diff",
+  "records": [
+    {
+      "sourceSku": "PHOTO-001",
+      "path": "/creative/PHOTO-001.webp",
+      "status": 200,
+      "bytes": 297414,
+      "sha256": "f8d89e0644f37e3f014cafcb06f3ecadff24593a34feb03c2c36261a2b6bb8be"
+    },
+    {
+      "sourceSku": "PHOTO-001",
+      "path": "/creative/PHOTO-001-primary-480.webp",
+      "status": 200,
+      "bytes": 69996,
+      "sha256": "427b3a7db01fd5f7d426ea9bbf163e1ae4fe757d4af52a8ca420639c37f60fcc"
+    },
+    {
+      "sourceSku": "PHOTO-001",
+      "path": "/creative/PHOTO-001-primary-800.webp",
+      "status": 200,
+      "bytes": 166538,
+      "sha256": "1227ec1ebe199f1f2bf5a8bd80745b7c7116bfb6d352722e9567cdbac9b39f4f"
+    },
+    {
+      "sourceSku": "PHOTO-008",
+      "path": "/creative/PHOTO-008.webp",
+      "status": 200,
+      "bytes": 257146,
+      "sha256": "6f981754ffe27d7999af4a0769d6e1ad9e6ebf618dcc24a614ede625d70eb452"
+    },
+    {
+      "sourceSku": "PHOTO-008",
+      "path": "/creative/PHOTO-008-primary-480.webp",
+      "status": 200,
+      "bytes": 52314,
+      "sha256": "f03e9ecde3340f4e87a165d541126c384581ab4d19e2015775ed6c92a6f8ff28"
+    },
+    {
+      "sourceSku": "PHOTO-008",
+      "path": "/creative/PHOTO-008-primary-800.webp",
+      "status": 200,
+      "bytes": 130768,
+      "sha256": "c719f52df121f635690046cf76d2881c9986c5d882061dd5b6b13743008ece51"
+    },
+    {
+      "sourceSku": "PHOTO-010",
+      "path": "/creative/PHOTO-010.webp",
+      "status": 200,
+      "bytes": 225840,
+      "sha256": "78e9314b55558dbfde48d396d3a79bbb72b2313daeb2fcb60601dfbf35ed9348"
+    },
+    {
+      "sourceSku": "PHOTO-010",
+      "path": "/creative/PHOTO-010-primary-480.webp",
+      "status": 200,
+      "bytes": 43598,
+      "sha256": "484daea5039bc9097861362e54891ab516da88f8a96214821d78b476b55a9593"
+    },
+    {
+      "sourceSku": "PHOTO-010",
+      "path": "/creative/PHOTO-010-primary-800.webp",
+      "status": 200,
+      "bytes": 108976,
+      "sha256": "d1d7173ca615243cdbb4257d8d72fcfffa1626166170468cccdda6b93fd18ccb"
+    },
+    {
+      "sourceSku": "LIST-001",
+      "path": "/creative/LIST-001.webp",
+      "status": 200,
+      "bytes": 193490,
+      "sha256": "cd1c3d7bb7162d62b702e2b5d32ee7a87a57519aedadb12a3b4264553ad9a06f"
+    },
+    {
+      "sourceSku": "LIST-001",
+      "path": "/creative/LIST-001-primary-480.webp",
+      "status": 200,
+      "bytes": 44890,
+      "sha256": "bd589b1992bfdcffd99ca7cb6ca5a93e4f891f63b45eb927fee84603bc2222d2"
+    },
+    {
+      "sourceSku": "LIST-001",
+      "path": "/creative/LIST-001-primary-800.webp",
+      "status": 200,
+      "bytes": 107000,
+      "sha256": "bbe6cb3a6f2acdf360dd7c04305dec7e373b15f14cff8ed40be7a6067287faa7"
+    },
+    {
+      "sourceSku": "LIST-002",
+      "path": "/creative/LIST-002.webp",
+      "status": 200,
+      "bytes": 198666,
+      "sha256": "a4c02e1339936d57bec660d54b90ae1975bb52340892ed076c7bd4c6a00c8390"
+    },
+    {
+      "sourceSku": "LIST-002",
+      "path": "/creative/LIST-002-primary-480.webp",
+      "status": 200,
+      "bytes": 41770,
+      "sha256": "f09fd2876d3537f919d16380d0d9e19596c9f3e52b5cb178123dabcf12dd225e"
+    },
+    {
+      "sourceSku": "LIST-002",
+      "path": "/creative/LIST-002-primary-800.webp",
+      "status": 200,
+      "bytes": 102284,
+      "sha256": "4f149cbba1b609f5b6d0f463f844ab92aa4e9e58979fc49188f9e23009c496f6"
+    },
+    {
+      "sourceSku": "LIST-003",
+      "path": "/creative/LIST-003.webp",
+      "status": 200,
+      "bytes": 234170,
+      "sha256": "2634dd52668a821603fa34e2e02683aa7e1ff45825c2e603d36a7c6c84a4d6aa"
+    },
+    {
+      "sourceSku": "LIST-003",
+      "path": "/creative/LIST-003-primary-480.webp",
+      "status": 200,
+      "bytes": 54698,
+      "sha256": "19424c31f5e51a0a395249c78f5a9de4aaf93a5cdc08f4fb08548dabfbf06ee8"
+    },
+    {
+      "sourceSku": "LIST-003",
+      "path": "/creative/LIST-003-primary-800.webp",
+      "status": 200,
+      "bytes": 128078,
+      "sha256": "9cd0cceb5e355905c87923e8d494fd4ce0d6c809514b3f8f705117ff48537a42"
+    },
+    {
+      "sourceSku": "LIST-004",
+      "path": "/creative/LIST-004.webp",
+      "status": 200,
+      "bytes": 211942,
+      "sha256": "ea0f33f876b6e73a965a9e87c052cf92ec14dc4e639456e2cc3d5688467879af"
+    },
+    {
+      "sourceSku": "LIST-004",
+      "path": "/creative/LIST-004-primary-480.webp",
+      "status": 200,
+      "bytes": 46788,
+      "sha256": "09a225122aadcb4142e76b695caa31ec69316b560d265c0a737ee9016805313d"
+    },
+    {
+      "sourceSku": "LIST-004",
+      "path": "/creative/LIST-004-primary-800.webp",
+      "status": 200,
+      "bytes": 111502,
+      "sha256": "9a0e67d17bbf94dae7add637e9a95e0c683c1e7d6647d2aa954e76f11c6c2fcb"
+    },
+    {
+      "sourceSku": "LIST-005",
+      "path": "/creative/LIST-005.webp",
+      "status": 200,
+      "bytes": 225214,
+      "sha256": "1e385d95a35d2d2c53272f0e6377aa64e3c7a3a8c5ae2d1b2bed7d8f61a69ec8"
+    },
+    {
+      "sourceSku": "LIST-005",
+      "path": "/creative/LIST-005-primary-480.webp",
+      "status": 200,
+      "bytes": 49812,
+      "sha256": "5948dd13b79bed2dbeca0ca62983af31e28e28817058af9decf2583ef7fbb4db"
+    },
+    {
+      "sourceSku": "LIST-005",
+      "path": "/creative/LIST-005-primary-800.webp",
+      "status": 200,
+      "bytes": 119546,
+      "sha256": "8eb8e1e74a298761678e0223be9fcbe3eacf603fb4cbfaacf2ad5ce5bd495412"
+    },
+    {
+      "sourceSku": "LIST-006",
+      "path": "/creative/LIST-006.webp",
+      "status": 200,
+      "bytes": 376348,
+      "sha256": "61b082d120fa07607adb4b4fd8c9aa8ad279d306cf0861353f5cb8f9059d34b3"
+    },
+    {
+      "sourceSku": "LIST-006",
+      "path": "/creative/LIST-006-primary-480.webp",
+      "status": 200,
+      "bytes": 85758,
+      "sha256": "7097a441c94f4c9faba2f4af036220e776904778249fe59de1e460962329614b"
+    },
+    {
+      "sourceSku": "LIST-006",
+      "path": "/creative/LIST-006-primary-800.webp",
+      "status": 200,
+      "bytes": 213368,
+      "sha256": "e3d78455b01369c97e632b60465759fa64b17813938dd8d7f48076ad32f9de35"
+    },
+    {
+      "sourceSku": "LIST-007",
+      "path": "/creative/LIST-007.webp",
+      "status": 200,
+      "bytes": 241144,
+      "sha256": "ad3f45fde8d88cc474a01c4b43dff2f8e5be77478fef1a72a07cc8f5da4b6e98"
+    },
+    {
+      "sourceSku": "LIST-007",
+      "path": "/creative/LIST-007-primary-480.webp",
+      "status": 200,
+      "bytes": 49230,
+      "sha256": "d3f6bb45c9eda3513f2a1b21ab2232cef055769f376590fe458072e2f6cd7e60"
+    },
+    {
+      "sourceSku": "LIST-007",
+      "path": "/creative/LIST-007-primary-800.webp",
+      "status": 200,
+      "bytes": 121412,
+      "sha256": "4f09b0f7cee24ed3fa10223f8733c46e678c4a2f449382e758a77fa2ea901693"
+    },
+    {
+      "sourceSku": "LIST-008",
+      "path": "/creative/LIST-008.webp",
+      "status": 200,
+      "bytes": 286880,
+      "sha256": "741ff059400d68b272f367ffc427f87be551dd291f6aefb3c3d21ed48e940c71"
+    },
+    {
+      "sourceSku": "LIST-008",
+      "path": "/creative/LIST-008-primary-480.webp",
+      "status": 200,
+      "bytes": 63806,
+      "sha256": "b7122a3173dcb0fe713eefb8032a6d640be6976c9fabe84f39412f55a3b7d6e1"
+    },
+    {
+      "sourceSku": "LIST-008",
+      "path": "/creative/LIST-008-primary-800.webp",
+      "status": 200,
+      "bytes": 149790,
+      "sha256": "b48fee517e227a7dee479a9068aeb88ae1542cb1f6376ea9f4db6c3ba2cf1575"
+    },
+    {
+      "sourceSku": "LIST-009",
+      "path": "/creative/LIST-009.webp",
+      "status": 200,
+      "bytes": 214572,
+      "sha256": "1ba86485205a3014306607b6b00e09e77fcb6f0b186deebfec164232ce7059b4"
+    },
+    {
+      "sourceSku": "LIST-009",
+      "path": "/creative/LIST-009-primary-480.webp",
+      "status": 200,
+      "bytes": 46818,
+      "sha256": "5c1d76d68e2f5c94cd3bffd9780d15436008fe5f19482bbe720e14c4e15b64fa"
+    },
+    {
+      "sourceSku": "LIST-009",
+      "path": "/creative/LIST-009-primary-800.webp",
+      "status": 200,
+      "bytes": 111542,
+      "sha256": "0d89ed34c9eebe23d5b60349f6773c44f56d5fb3695c93d083540d76af48e873"
+    },
+    {
+      "sourceSku": "LIST-010",
+      "path": "/creative/LIST-010.webp",
+      "status": 200,
+      "bytes": 262478,
+      "sha256": "fedc6b275d59ad3ef99ee5d839ab534a7e1b52139f0858fde2173ab2cd4f8ac3"
+    },
+    {
+      "sourceSku": "LIST-010",
+      "path": "/creative/LIST-010-primary-480.webp",
+      "status": 200,
+      "bytes": 59236,
+      "sha256": "2f45053419d680db63836d7606c7cc93b0e7344076586323e872c25ce032c1a7"
+    },
+    {
+      "sourceSku": "LIST-010",
+      "path": "/creative/LIST-010-primary-800.webp",
+      "status": 200,
+      "bytes": 136722,
+      "sha256": "0d29114d38a31146cc3176389f1e74f54821dea64377b83ee91c52bf51d90098"
+    },
+    {
+      "sourceSku": "LIST-011",
+      "path": "/creative/LIST-011.webp",
+      "status": 200,
+      "bytes": 296002,
+      "sha256": "ea16c2757122ed1c2b924cf62b431de75e381e5a2954c8fa57990edeea9585e3"
+    },
+    {
+      "sourceSku": "LIST-011",
+      "path": "/creative/LIST-011-primary-480.webp",
+      "status": 200,
+      "bytes": 63872,
+      "sha256": "269626689644a03d64ae0854167ccb1860fa17f8c12703489701c5f13a5462a0"
+    },
+    {
+      "sourceSku": "LIST-011",
+      "path": "/creative/LIST-011-primary-800.webp",
+      "status": 200,
+      "bytes": 152396,
+      "sha256": "32bec453609bf42e93c49d7ec92071403bece8ddcf62ffe04cbb6b44fc06093a"
+    },
+    {
+      "sourceSku": "LIST-012",
+      "path": "/creative/LIST-012.webp",
+      "status": 200,
+      "bytes": 249106,
+      "sha256": "fe7da07f4f22cda4bf08bf909db70d6334ff98e1d849c5fa2b2624a08845511a"
+    },
+    {
+      "sourceSku": "LIST-012",
+      "path": "/creative/LIST-012-primary-480.webp",
+      "status": 200,
+      "bytes": 55274,
+      "sha256": "f7a432a98249cad1061c12db04a082a25e7409662d0b99c1b16465b628075c74"
+    },
+    {
+      "sourceSku": "LIST-012",
+      "path": "/creative/LIST-012-primary-800.webp",
+      "status": 200,
+      "bytes": 130776,
+      "sha256": "8d0bdd91e1a5610ae529108485f6dce6ccc31312f54ea20924ff5c83ce594282"
+    },
+    {
+      "sourceSku": "LIST-013",
+      "path": "/creative/LIST-013.webp",
+      "status": 200,
+      "bytes": 254470,
+      "sha256": "f57542d9a541f86e86faf99c2d3ced82d72d998f5fd89f4cd2de3e671a8df478"
+    },
+    {
+      "sourceSku": "LIST-013",
+      "path": "/creative/LIST-013-primary-480.webp",
+      "status": 200,
+      "bytes": 51538,
+      "sha256": "3844018384974e76832ea9707e128fae2339f1f61ca237fa60a035ed095aa121"
+    },
+    {
+      "sourceSku": "LIST-013",
+      "path": "/creative/LIST-013-primary-800.webp",
+      "status": 200,
+      "bytes": 130688,
+      "sha256": "79a80cf590bded05828b1d3d87feec36b38f8733301793e53823abaf4273c79b"
+    },
+    {
+      "sourceSku": "LIST-014",
+      "path": "/creative/LIST-014.webp",
+      "status": 200,
+      "bytes": 340780,
+      "sha256": "55ec091bba5f5413a3b03f30c1f086daf461ad4dd8180313846b952053263b00"
+    },
+    {
+      "sourceSku": "LIST-014",
+      "path": "/creative/LIST-014-primary-480.webp",
+      "status": 200,
+      "bytes": 79632,
+      "sha256": "b20a36b65f432c27e2f4c190e9edf83a0662df2f3350fa3b5e35e2c456764bbe"
+    },
+    {
+      "sourceSku": "LIST-014",
+      "path": "/creative/LIST-014-primary-800.webp",
+      "status": 200,
+      "bytes": 192346,
+      "sha256": "0d1314dfc2fc4b52b823972224bfbb57d9fd74dff98497974c8a45fe300c5698"
+    },
+    {
+      "sourceSku": "LIST-015",
+      "path": "/creative/LIST-015.webp",
+      "status": 200,
+      "bytes": 302414,
+      "sha256": "e2a98d3533db5a8f3571f27c9c515e64069880ea27c1f4ea500575959e56398c"
+    },
+    {
+      "sourceSku": "LIST-015",
+      "path": "/creative/LIST-015-primary-480.webp",
+      "status": 200,
+      "bytes": 65568,
+      "sha256": "1e4c43a6de4da6f6579890e9c550c936bf09bb450ced83f1308d74b6d1364bab"
+    },
+    {
+      "sourceSku": "LIST-015",
+      "path": "/creative/LIST-015-primary-800.webp",
+      "status": 200,
+      "bytes": 159178,
+      "sha256": "575c8cfcb8fe2ae3bf49b41c3461b64a179c2f260b1fa449583bbe3bb9f4dd54"
+    },
+    {
+      "sourceSku": "LIST-016",
+      "path": "/creative/LIST-016.webp",
+      "status": 200,
+      "bytes": 411514,
+      "sha256": "14d057283410fd9bb99d83334f79dc19f314099320f97e8ab01e5e5ab2983cf9"
+    },
+    {
+      "sourceSku": "LIST-016",
+      "path": "/creative/LIST-016-primary-480.webp",
+      "status": 200,
+      "bytes": 91672,
+      "sha256": "4af9501926c3e3395c352f2ccfc1fea12f25cf6cfbf300f79fc8133f0e975766"
+    },
+    {
+      "sourceSku": "LIST-016",
+      "path": "/creative/LIST-016-primary-800.webp",
+      "status": 200,
+      "bytes": 226074,
+      "sha256": "78ff36f29fd1e24e0bbf9c36f1195927b881f3c60c8d75c396abbc519d535590"
+    }
+  ]
+}

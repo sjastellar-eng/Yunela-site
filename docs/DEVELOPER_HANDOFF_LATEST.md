@@ -1,33 +1,33 @@
-# Developer checkpoint — Micro-task10 LIST batch03
+# Developer checkpoint — Micro-task11 staging QA
 
 Date:2026-10-27 Europe/Kyiv
-Branch:fix/list-background-batch-03
-HEAD before:0e04f80246441745077e788a357328c7a1848085
-HEAD after:commit containing this checkpoint (git rev-parse HEAD).
+QA branch:qa/list-batch-03-staging-11
+HEAD before / deployed SHA:f6ddcb149b7cc9b0b57f1d5a107b52f028f25020
+HEAD after:QA-only commit containing this checkpoint (git rev-parse HEAD).
 
-Audited LIST-012..016. LIST-014/016 already approved pilot; masters/480/800
-identical to87955d6 accepted bytes, all6public staging files hash-verified.
-Corners251/249/245 match accepted standard with +1red WebP quantization.
-Preserved without any image or manifest-record changes.
+Verified approved source and existing LIVE baseline0e04f802. Staging branch
+feat/creative-gallery-v9-2 fast-forwarded to f6ddcb1 with expected-SHA lease;
+no merge/conflicts/main changes. Existing Render static service
+srv-dbej0rjncjis73edf2h0, deploy dep-dbgghk0m7kps73dbjtcg LIVE at f6ddcb1.
+URL:https://yunela-v92-demo.onrender.com . Auto-deploy remains off.
 
-Processed ONLY LIST-012/013/015 primary+480/800 (9files) via unchanged pilot
-recolour() from immutable0e04f802. q92/q95 compared; selectedq92/method6.
-Target#FAF9F5; source continuous shadows/protected dark/contrasted pixels
-preserved before encoding. No generation/global grade/scale/repositioning.
-1552894->1399012bytes; q95candidate1670740. Min foreground SSIM0.994505.
-All sourceSku/order/non-hash manifest data, other53SKU/all secondary assets,
-CSS/catalog/YUNA/business logic unchanged. Only corresponding hashes updated.
+Only9WebP LIST-012/013/015 master480/800 and matching hash fields changed from
+baseline plus approved offline script/docs. q92/method6, #FAF9F5 preserved.
+Other53SKU/all secondary/texture/non-hash fields/sourceSku/gallery order/CSS/
+catalog/YUNA/business logic unchanged. LIST-014/016 asset bytes and manifest
+records NOT modified. All16previously approvedSKU preserved.
 
-260tests/38files PASS; TypeScript/ESLint/image validator56primary347files and
-production frontend/server build PASS. Hash/decode/dimension/scope checks PASS.
-Full/crop/q92-q95/responsive comparisons visually reviewed; no conspicuous new
-halos, colour shift, leaf damage or unnatural shadows. Lossy pixel identity
-not claimed; light subject edges may receive subtle background correction.
+260tests/38files PASS; TypeScript, ESLint, validator56primary347files and full
+production frontend/server + static-demo builds PASS. CI SUCCESS40577962354.
+Public browser390/1440:19SKU and46frames each, correct primary/order, retained
+search/no overflow; zero JS/console/network/HTTP/commerceAPI errors. Visual
+catalog/detail checks PASS.57public primary/adaptive hashes exact including
+all previous16SKU; public JS/CSS exact build, noindex preserved, normal TLS.
 
-Evidence docs/list-background-batch-03/{README.md,INPUT_AUDIT.json,
-INPUT_OVERVIEW.jpg,PROCESSING.json,QA_RESULTS.json,BEFORE_AFTER.jpg,
-LIST-012/013/015-details.jpg,RESPONSIVE_DETAILS.jpg}.
-Script scripts/process-list-batch-03.py. Remote persistence mandatory before
-completion; verify full tree against local and branch/commit accessible.
-Staging verified LIVE0e04f802 and remains unchanged. No merge/deploy.
-Next step STOP for CEO visual review; no more SKU without instruction.
+Evidence docs/staging-list-batch-03/{REPORT.md,SUMMARY.json,BROWSER_RESULTS.json,
+HTTPS_RESULTS.json,check-browser.mjs,4desktop/mobile catalog/detail contactJPGs}.
+QA evidence commit must be remotely persisted separately; do NOT deploy it.
+Known unchanged sizes issue:filtered650px desktop card requests480px (33vw).
+Mobile results are viewport/touch emulation, not physical-device testing.
+No new defects, paid resources or commerce activation. Next step STOP after11;
+do not process next SKU batch or redesign without CEO task. Staging=f6ddcb1.
