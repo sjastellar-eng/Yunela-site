@@ -1,27 +1,33 @@
-# Micro-task08 — LIST batch02 checkpoint
+# Developer checkpoint — Micro-task10 LIST batch03
 
 Date:2026-10-27 Europe/Kyiv
-Branch:fix/list-background-batch-02
-HEAD before:cbab997b42bab081f4c6c7f55972c00a21a1ef8d
+Branch:fix/list-background-batch-03
+HEAD before:0e04f80246441745077e788a357328c7a1848085
 HEAD after:commit containing this checkpoint (git rev-parse HEAD).
 
-Only LIST-007..011 primary+480/800 backgrounds corrected by unchanged approved
-pilot recolour(). q92/q95 compared; all5 selectedq92 method6. Output2255900bytes,
-vs2502686 original (-9.86%), q95candidate2706642. Subject/scale/composition
-preserved; dark/contrasted pixels protected before encoding; continuous shadows.
-No conspicuous visual damage in light/dark edge/detail review. Lossy output and
-subtle light-edge correction are not pixel identity. Corners within2RGB levels.
+Audited LIST-012..016. LIST-014/016 already approved pilot; masters/480/800
+identical to87955d6 accepted bytes, all6public staging files hash-verified.
+Corners251/249/245 match accepted standard with +1red WebP quantization.
+Preserved without any image or manifest-record changes.
 
-Only15WebP and corresponding hashes changed; other51SKU/all secondary assets,
-CSS/catalog/YUNA/business logic/sourceSku/order unchanged. Broad741deae excluded.
-260tests/38files PASS; TypeScript/ESLint/image validator56primary347exports and
-production frontend/server build PASS, repeated after environment restoration.
-Earlier local ba0bf22 lost to automated cleanup before branch creation; exact
-prior totals reproduced but per-file byte identity not claimed. This checkpoint
-must be remotely persisted before completion. GitHub API commit metadata may
-produce another SHA; full file tree is verified identical to tested local tree.
+Processed ONLY LIST-012/013/015 primary+480/800 (9files) via unchanged pilot
+recolour() from immutable0e04f802. q92/q95 compared; selectedq92/method6.
+Target#FAF9F5; source continuous shadows/protected dark/contrasted pixels
+preserved before encoding. No generation/global grade/scale/repositioning.
+1552894->1399012bytes; q95candidate1670740. Min foreground SSIM0.994505.
+All sourceSku/order/non-hash manifest data, other53SKU/all secondary assets,
+CSS/catalog/YUNA/business logic unchanged. Only corresponding hashes updated.
 
-Evidence:docs/list-background-batch-02/README.md,PROCESSING.json,QA_RESULTS.json,
-BEFORE_AFTER.jpg and5 LIST-007..011-details.jpg. Script process-list-batch-02.py.
-Staging precondition: Render current live cbab997; all15 batch01 hashes checked.
-No merge/deploy; staging remains cbab997. Next step STOP for CEO visual review.
+260tests/38files PASS; TypeScript/ESLint/image validator56primary347files and
+production frontend/server build PASS. Hash/decode/dimension/scope checks PASS.
+Full/crop/q92-q95/responsive comparisons visually reviewed; no conspicuous new
+halos, colour shift, leaf damage or unnatural shadows. Lossy pixel identity
+not claimed; light subject edges may receive subtle background correction.
+
+Evidence docs/list-background-batch-03/{README.md,INPUT_AUDIT.json,
+INPUT_OVERVIEW.jpg,PROCESSING.json,QA_RESULTS.json,BEFORE_AFTER.jpg,
+LIST-012/013/015-details.jpg,RESPONSIVE_DETAILS.jpg}.
+Script scripts/process-list-batch-03.py. Remote persistence mandatory before
+completion; verify full tree against local and branch/commit accessible.
+Staging verified LIVE0e04f802 and remains unchanged. No merge/deploy.
+Next step STOP for CEO visual review; no more SKU without instruction.

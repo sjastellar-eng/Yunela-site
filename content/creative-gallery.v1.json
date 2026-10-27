@@ -2756,19 +2756,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Шайхун Айлао. Не є документальною фотографією партії постачальника.",
-          "sha256": "7c4d2fc39abda66abdefddb9d0ea6319f978c9bbdd9669dffb007499b76c69cb",
+          "sha256": "fe7da07f4f22cda4bf08bf909db70d6334ff98e1d849c5fa2b2624a08845511a",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-012-primary-480.webp",
               "width": 480,
-              "sha256": "21e77de5720902046fde0cbfe5eeeb4b6210ada1da6c4b3fa7d5eb1e6346d6f0"
+              "sha256": "f7a432a98249cad1061c12db04a082a25e7409662d0b99c1b16465b628075c74"
             },
             {
               "path": "/creative/LIST-012-primary-800.webp",
               "width": 800,
-              "sha256": "0b96729cf07bb373800e73f17b7e0de005ca8ebb1cc3633330e18ada81281a20"
+              "sha256": "8d0bdd91e1a5610ae529108485f6dce6ccc31312f54ea20924ff5c83ce594282"
             }
           ],
           "documentary": false,
@@ -2838,19 +2838,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: ТГ Мао Ча (скорочення постачальника). Не є документальною фотографією партії постачальника.",
-          "sha256": "9b704382aad617dc2379663fe896aeea81acddd31a00f9d7786a632646c97b08",
+          "sha256": "f57542d9a541f86e86faf99c2d3ced82d72d998f5fd89f4cd2de3e671a8df478",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-013-primary-480.webp",
               "width": 480,
-              "sha256": "216d84c4219aa1875ad7cc91f075955d29333668de500821a957b5adc843c7a0"
+              "sha256": "3844018384974e76832ea9707e128fae2339f1f61ca237fa60a035ed095aa121"
             },
             {
               "path": "/creative/LIST-013-primary-800.webp",
               "width": 800,
-              "sha256": "dec6d28b900633335e15c95be6c6a21b68756987e06ed3979703d21a82d71401"
+              "sha256": "79a80cf590bded05828b1d3d87feec36b38f8733301793e53823abaf4273c79b"
             }
           ],
           "documentary": false,
@@ -3002,19 +3002,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Шуй Сянь. Не є документальною фотографією партії постачальника.",
-          "sha256": "b4988d6b83afb2f503c996b74250cbe7fc991f48151e93fae557c0e84ed7bc00",
+          "sha256": "e2a98d3533db5a8f3571f27c9c515e64069880ea27c1f4ea500575959e56398c",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-015-primary-480.webp",
               "width": 480,
-              "sha256": "18ec335883d01f9aab7b8693cdad2465a007ca65a0af58635a982bd13f0fb58e"
+              "sha256": "1e4c43a6de4da6f6579890e9c550c936bf09bb450ced83f1308d74b6d1364bab"
             },
             {
               "path": "/creative/LIST-015-primary-800.webp",
               "width": 800,
-              "sha256": "b9d196dfe0573515fba8031cb1fc0c847c6dd137b457f0f5066cef90763c9bec"
+              "sha256": "575c8cfcb8fe2ae3bf49b41c3461b64a179c2f260b1fa449583bbe3bb9f4dd54"
             }
           ],
           "documentary": false,
