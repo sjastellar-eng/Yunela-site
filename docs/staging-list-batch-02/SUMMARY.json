@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-27 Europe/Kyiv",
+  "result": "PASS",
+  "deploymentSha": "0e04f80246441745077e788a357328c7a1848085",
+  "baselineSha": "cbab997b42bab081f4c6c7f55972c00a21a1ef8d",
+  "stagingBranch": "feat/creative-gallery-v9-2",
+  "renderDeploy": "dep-dbg8a6l9el5s73c6r5f0",
+  "renderStatus": "live",
+  "ciRun": 40493279252,
+  "ciConclusion": "success",
+  "tests": "260 /38 files PASS",
+  "typeScript": "PASS via production tsc -b",
+  "eslint": "PASS including QA harness",
+  "imageValidation": "56primary /347files PASS",
+  "productionBuild": "frontend/server PASS; static-demo build PASS",
+  "browser": {
+    "widths": [
+      390,
+      1440
+    ],
+    "skuPerViewport": 16,
+    "galleryFramesPerViewport": 37,
+    "newSku": 5,
+    "previousSku": 11,
+    "errors": 0
+  },
+  "scope": "Only approved15WebP, associated SHA fields, offline processing/evidence. Other51SKU all secondary/texture and all non-hash manifest data unchanged. No CSS/catalog/YUNA/business edits.",
+  "https": "All347 image hashes exact, bundle JS/CSS exact, noindex preserved, normal TLS"
+}

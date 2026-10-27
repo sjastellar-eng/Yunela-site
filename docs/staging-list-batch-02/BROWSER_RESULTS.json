@@ -1,0 +1,635 @@
+{
+  "commit": "0e04f80246441745077e788a357328c7a1848085",
+  "result": "PASS",
+  "browser": "156.0.8078.47",
+  "results": [
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-007",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-007-primary-480.webp?v=d3f6bb45c9eda351",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-007-primary-480.webp?v=d3f6bb45c9eda351",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 2,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-008",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-008-primary-480.webp?v=b7122a3173dcb0fe",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-008-primary-480.webp?v=b7122a3173dcb0fe",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 3,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-009",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-009-primary-480.webp?v=5c1d76d68e2f5c94",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-009-primary-480.webp?v=5c1d76d68e2f5c94",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 2,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-010",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-010-primary-480.webp?v=2f45053419d680db",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-010-primary-480.webp?v=2f45053419d680db",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 3,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-011",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-011-primary-480.webp?v=269626689644a03d",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-011-primary-480.webp?v=269626689644a03d",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 2,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-001",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-001-primary-480.webp?v=bd589b1992bfdcff",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-001-primary-480.webp?v=bd589b1992bfdcff",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 3,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-002",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-002-primary-480.webp?v=f09fd2876d3537f9",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-002-primary-480.webp?v=f09fd2876d3537f9",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 3,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-003",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-003-primary-480.webp?v=19424c31f5e51a0a",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-003-primary-480.webp?v=19424c31f5e51a0a",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 2,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-004",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-004-primary-480.webp?v=09a225122aadcb41",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-004-primary-480.webp?v=09a225122aadcb41",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 2,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-005",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-005-primary-480.webp?v=5948dd13b79bed2d",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-005-primary-480.webp?v=5948dd13b79bed2d",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 2,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-006",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-006-primary-480.webp?v=7097a441c94f4c9f",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-006-primary-480.webp?v=7097a441c94f4c9f",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 3,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-014",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-014-primary-480.webp?v=b20a36b65f432c27",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-014-primary-480.webp?v=b20a36b65f432c27",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 3,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "LIST-016",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-016-primary-480.webp?v=4af9501926c3e339",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-016-primary-480.webp?v=4af9501926c3e339",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 2,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "PHOTO-001",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/PHOTO-001-primary-480.webp?v=427b3a7db01fd5f7",
+        "fit": "contain",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/PHOTO-001-primary-480.webp?v=427b3a7db01fd5f7",
+        "fit": "contain",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 3,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "PHOTO-008",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/PHOTO-008-primary-480.webp?v=f03e9ecde3340f4e",
+        "fit": "contain",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/PHOTO-008-primary-480.webp?v=f03e9ecde3340f4e",
+        "fit": "contain",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 1,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 390,
+      "sourceSku": "PHOTO-010",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/PHOTO-010-primary-480.webp?v=484daea5039bc909",
+        "fit": "contain",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/PHOTO-010-primary-480.webp?v=484daea5039bc909",
+        "fit": "contain",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 350
+      },
+      "galleryFrames": 1,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 390,
+      "result": "PASS",
+      "catalogCount": 56,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "httpErrors": [],
+      "commerceApiRequests": []
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-007",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-007-primary-480.webp?v=d3f6bb45c9eda351",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-007-primary-800.webp?v=4f09b0f7cee24ed3",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 2,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-008",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-008-primary-480.webp?v=b7122a3173dcb0fe",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-008-primary-800.webp?v=b48fee517e227a7d",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 3,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-009",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-009-primary-480.webp?v=5c1d76d68e2f5c94",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-009-primary-800.webp?v=0d89ed34c9eebe23",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 2,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-010",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-010-primary-480.webp?v=2f45053419d680db",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-010-primary-800.webp?v=0d29114d38a31146",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 3,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-011",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-011-primary-480.webp?v=269626689644a03d",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-011-primary-800.webp?v=32bec453609bf42e",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 2,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-001",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-001-primary-480.webp?v=bd589b1992bfdcff",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-001-primary-800.webp?v=bbe6cb3a6f2acdf3",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 3,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-002",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-002-primary-480.webp?v=f09fd2876d3537f9",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-002-primary-800.webp?v=4f149cbba1b609f5",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 3,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-003",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-003-primary-480.webp?v=19424c31f5e51a0a",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-003-primary-800.webp?v=9cd0cceb5e355905",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 2,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-004",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-004-primary-480.webp?v=09a225122aadcb41",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-004-primary-800.webp?v=9a0e67d17bbf94da",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 2,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-005",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-005-primary-480.webp?v=5948dd13b79bed2d",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-005-primary-800.webp?v=8eb8e1e74a298761",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 2,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-006",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-006-primary-480.webp?v=7097a441c94f4c9f",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-006-primary-800.webp?v=e3d78455b01369c9",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 3,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-014",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-014-primary-480.webp?v=b20a36b65f432c27",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-014-primary-800.webp?v=0d1314dfc2fc4b52",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 3,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "LIST-016",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-016-primary-480.webp?v=4af9501926c3e339",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/LIST-016-primary-800.webp?v=78ff36f29fd1e24e",
+        "fit": "cover",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 2,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "PHOTO-001",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/PHOTO-001-primary-480.webp?v=427b3a7db01fd5f7",
+        "fit": "contain",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/PHOTO-001-primary-800.webp?v=1227ec1ebe199f1f",
+        "fit": "contain",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 3,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "PHOTO-008",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/PHOTO-008-primary-480.webp?v=f03e9ecde3340f4e",
+        "fit": "contain",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/PHOTO-008-primary-800.webp?v=c719f52df121f635",
+        "fit": "contain",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 1,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 1440,
+      "sourceSku": "PHOTO-010",
+      "result": "PASS",
+      "catalog": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/PHOTO-010-primary-480.webp?v=484daea5039bc909",
+        "fit": "contain",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 650
+      },
+      "detail": {
+        "currentSrc": "https://yunela-v92-demo.onrender.com/creative/PHOTO-010-primary-800.webp?v=d1d7173ca615243c",
+        "fit": "contain",
+        "background": "rgb(250, 249, 245)",
+        "renderWidth": 553
+      },
+      "galleryFrames": 1,
+      "primaryRestored": true
+    },
+    {
+      "viewport": 1440,
+      "result": "PASS",
+      "catalogCount": 56,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "httpErrors": [],
+      "commerceApiRequests": []
+    }
+  ]
+}

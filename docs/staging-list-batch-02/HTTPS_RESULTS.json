@@ -1,0 +1,2442 @@
+{
+  "result": "PASS",
+  "commit": "0e04f80246441745077e788a357328c7a1848085",
+  "normalTLSVerification": true,
+  "noindex": true,
+  "bundleMatches": [
+    "/assets/index-Ng3y5kXG.js",
+    "/assets/index-DEcHUhqX.css"
+  ],
+  "checkedAssets": 347,
+  "records": [
+    {
+      "sourceSku": "PHOTO-001",
+      "path": "/creative/PHOTO-001.webp",
+      "status": 200,
+      "bytes": 297414,
+      "sha256": "f8d89e0644f37e3f014cafcb06f3ecadff24593a34feb03c2c36261a2b6bb8be"
+    },
+    {
+      "sourceSku": "PHOTO-001",
+      "path": "/creative/PHOTO-001-primary-480.webp",
+      "status": 200,
+      "bytes": 69996,
+      "sha256": "427b3a7db01fd5f7d426ea9bbf163e1ae4fe757d4af52a8ca420639c37f60fcc"
+    },
+    {
+      "sourceSku": "PHOTO-001",
+      "path": "/creative/PHOTO-001-primary-800.webp",
+      "status": 200,
+      "bytes": 166538,
+      "sha256": "1227ec1ebe199f1f2bf5a8bd80745b7c7116bfb6d352722e9567cdbac9b39f4f"
+    },
+    {
+      "sourceSku": "PHOTO-001",
+      "path": "/creative/PHOTO-001-illustration.webp",
+      "status": 200,
+      "bytes": 534672,
+      "sha256": "a52f2b05a3539c4c177772c4368cc889772811651fe502d2d03f9ad31b580508"
+    },
+    {
+      "sourceSku": "PHOTO-001",
+      "path": "/creative/PHOTO-001-illustration-480.webp",
+      "status": 200,
+      "bytes": 87808,
+      "sha256": "626d27779ec8e5bf76dc565149c4413546d26d112e1691250dd5130d1f06ddfc"
+    },
+    {
+      "sourceSku": "PHOTO-001",
+      "path": "/creative/PHOTO-001-illustration-800.webp",
+      "status": 200,
+      "bytes": 233868,
+      "sha256": "9df264015bb6ccd36a0f48ec55e266dbd8a89b0ee63db59c88238fdb9f410cf0"
+    },
+    {
+      "sourceSku": "PHOTO-001",
+      "path": "/creative/PHOTO-001-illustration-texture.webp",
+      "status": 200,
+      "bytes": 338342,
+      "sha256": "0a3faa27ef463e7317be72b0fc8f290c8eb66d6285ba20fb8c793e8739c67990"
+    },
+    {
+      "sourceSku": "PHOTO-001",
+      "path": "/creative/PHOTO-001-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 127384,
+      "sha256": "89a735617e2ff197fc082ff48e7a63e7ea09f8a5ac5c6bc197a9ed27892daaf4"
+    },
+    {
+      "sourceSku": "PHOTO-002",
+      "path": "/creative/PHOTO-002.webp",
+      "status": 200,
+      "bytes": 281476,
+      "sha256": "1cc6798e6ddc5d479de8d2851958374eb7082b8e288b9feb9dfbf84ae9a2dd09"
+    },
+    {
+      "sourceSku": "PHOTO-002",
+      "path": "/creative/PHOTO-002-primary-480.webp",
+      "status": 200,
+      "bytes": 53468,
+      "sha256": "b31c0c7d2d157dc8fcb6ee16685867cc5948b0854292e8c84bc67686a0c32e4b"
+    },
+    {
+      "sourceSku": "PHOTO-002",
+      "path": "/creative/PHOTO-002-primary-800.webp",
+      "status": 200,
+      "bytes": 128214,
+      "sha256": "515b255f2135aad9d69fbb773700636be416734d6395456d1bb01f65d1ee3d72"
+    },
+    {
+      "sourceSku": "PHOTO-003",
+      "path": "/creative/PHOTO-003.webp",
+      "status": 200,
+      "bytes": 281046,
+      "sha256": "df35d989ed3f93aeee9fe4314a63144963e3a28fb4c911249f3d54f0451868d6"
+    },
+    {
+      "sourceSku": "PHOTO-003",
+      "path": "/creative/PHOTO-003-primary-480.webp",
+      "status": 200,
+      "bytes": 61046,
+      "sha256": "3e51819d6cee179b19f4c33354e6988f2144b5fb099ad0fe1e8aec14ca152698"
+    },
+    {
+      "sourceSku": "PHOTO-003",
+      "path": "/creative/PHOTO-003-primary-800.webp",
+      "status": 200,
+      "bytes": 142508,
+      "sha256": "8032e406cf7f5b8114c14214532129854d89789e0836d8693539ed587ec7c86c"
+    },
+    {
+      "sourceSku": "PHOTO-003",
+      "path": "/creative/PHOTO-003-illustration.webp",
+      "status": 200,
+      "bytes": 348010,
+      "sha256": "359d71f3fc43bd4074c7428bbe6aca14c3c8c8e564a3d9e8580131bc57a25885"
+    },
+    {
+      "sourceSku": "PHOTO-003",
+      "path": "/creative/PHOTO-003-illustration-480.webp",
+      "status": 200,
+      "bytes": 63228,
+      "sha256": "1c9a7d58c3885ceec50a2b96180b2d9f20c8288e0abe4a821f981205b903a697"
+    },
+    {
+      "sourceSku": "PHOTO-003",
+      "path": "/creative/PHOTO-003-illustration-800.webp",
+      "status": 200,
+      "bytes": 161378,
+      "sha256": "72a2b3de551c1cb0a39dbc9c758d9fef63fc671d58d2e09a25d4167d22a8da90"
+    },
+    {
+      "sourceSku": "PHOTO-003",
+      "path": "/creative/PHOTO-003-illustration-texture.webp",
+      "status": 200,
+      "bytes": 247118,
+      "sha256": "a878e3980e5696af9ca3072f13bd85934e0a6e76cc0cbd7c851cd6e6ab47af29"
+    },
+    {
+      "sourceSku": "PHOTO-003",
+      "path": "/creative/PHOTO-003-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 99644,
+      "sha256": "d2cf0c3edc06b78ee0f23135a6319048552209b931fd56d2df0bc08623f04542"
+    },
+    {
+      "sourceSku": "PHOTO-004",
+      "path": "/creative/PHOTO-004.webp",
+      "status": 200,
+      "bytes": 250764,
+      "sha256": "732190705822cf5fbeebc24a9e9e2ace4783b347e75894eb2017cc711c0df39b"
+    },
+    {
+      "sourceSku": "PHOTO-004",
+      "path": "/creative/PHOTO-004-primary-480.webp",
+      "status": 200,
+      "bytes": 43006,
+      "sha256": "50037643b5fececfbf0743d634066e223791579b6799df1f91b0cf475cf170d2"
+    },
+    {
+      "sourceSku": "PHOTO-004",
+      "path": "/creative/PHOTO-004-primary-800.webp",
+      "status": 200,
+      "bytes": 111302,
+      "sha256": "93d288797faa3d859bcd70de01c872991a3f290d312c0f5dd1991d68a7e5f5ef"
+    },
+    {
+      "sourceSku": "PHOTO-005",
+      "path": "/creative/PHOTO-005.webp",
+      "status": 200,
+      "bytes": 330234,
+      "sha256": "dfd8c1cc1d66982eaf9f0e90c1b323659488b58b7668a0ac6d2c38c33c8cd764"
+    },
+    {
+      "sourceSku": "PHOTO-005",
+      "path": "/creative/PHOTO-005-primary-480.webp",
+      "status": 200,
+      "bytes": 64978,
+      "sha256": "ec93436f65585cea08b3d475c588ca8487f436177a318f353663a7cd9ceb8324"
+    },
+    {
+      "sourceSku": "PHOTO-005",
+      "path": "/creative/PHOTO-005-primary-800.webp",
+      "status": 200,
+      "bytes": 159534,
+      "sha256": "de993e0602886c50eb3dc7f40df8b24fed5965d593f94390862380a910eae526"
+    },
+    {
+      "sourceSku": "PHOTO-005",
+      "path": "/creative/PHOTO-005-illustration.webp",
+      "status": 200,
+      "bytes": 485318,
+      "sha256": "585eeb52476e744587749cbbae186b93f8c0ea497013ed86d367919518efabf4"
+    },
+    {
+      "sourceSku": "PHOTO-005",
+      "path": "/creative/PHOTO-005-illustration-480.webp",
+      "status": 200,
+      "bytes": 80440,
+      "sha256": "2d30a6043f690c5d0fcd846fcc9fd6303b61414eab59e116ce30f5e34b0b3d0f"
+    },
+    {
+      "sourceSku": "PHOTO-005",
+      "path": "/creative/PHOTO-005-illustration-800.webp",
+      "status": 200,
+      "bytes": 208098,
+      "sha256": "b148ec1272ea7e6d0fda6399ce501aa1cd55fd55fae7de27a2165d4d7612a995"
+    },
+    {
+      "sourceSku": "PHOTO-005",
+      "path": "/creative/PHOTO-005-illustration-texture.webp",
+      "status": 200,
+      "bytes": 316042,
+      "sha256": "767cacca6849361e82f0f149619708a8993e45e01908b4b5f60d045ddc56beb0"
+    },
+    {
+      "sourceSku": "PHOTO-005",
+      "path": "/creative/PHOTO-005-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 127136,
+      "sha256": "8e700f1dcc09184cd87a481173e9234ddc4825363ecb7d78410d0012fe942b3f"
+    },
+    {
+      "sourceSku": "PHOTO-006",
+      "path": "/creative/PHOTO-006.webp",
+      "status": 200,
+      "bytes": 219510,
+      "sha256": "0a4a8d1dc9b2fc7a901cf57b0d15bfeb6067dc1cfadcbbe156c910cd4e3cb08e"
+    },
+    {
+      "sourceSku": "PHOTO-006",
+      "path": "/creative/PHOTO-006-primary-480.webp",
+      "status": 200,
+      "bytes": 47508,
+      "sha256": "6fdbb3f47296e144a679651411e55fe04000174b32489ec29fbae390efc3d855"
+    },
+    {
+      "sourceSku": "PHOTO-006",
+      "path": "/creative/PHOTO-006-primary-800.webp",
+      "status": 200,
+      "bytes": 104298,
+      "sha256": "f38da56eca00901255759ca99459f5696e518366a44b004227763707dabd9f9a"
+    },
+    {
+      "sourceSku": "PHOTO-007",
+      "path": "/creative/PHOTO-007.webp",
+      "status": 200,
+      "bytes": 244842,
+      "sha256": "ddcb2f5a1c5e1089748bdd48741a2078618bfbaebd19c1d4be74548632086fde"
+    },
+    {
+      "sourceSku": "PHOTO-007",
+      "path": "/creative/PHOTO-007-primary-480.webp",
+      "status": 200,
+      "bytes": 43910,
+      "sha256": "0ad1b0b5d221c3a6e761d55a68ab580d78efcab57b65e3ac3856c57fb42e1796"
+    },
+    {
+      "sourceSku": "PHOTO-007",
+      "path": "/creative/PHOTO-007-primary-800.webp",
+      "status": 200,
+      "bytes": 109118,
+      "sha256": "c508fcef3df1812b139b69ee856d0a3bc9705518620e6e0693905604d4f0cd9e"
+    },
+    {
+      "sourceSku": "PHOTO-008",
+      "path": "/creative/PHOTO-008.webp",
+      "status": 200,
+      "bytes": 257146,
+      "sha256": "6f981754ffe27d7999af4a0769d6e1ad9e6ebf618dcc24a614ede625d70eb452"
+    },
+    {
+      "sourceSku": "PHOTO-008",
+      "path": "/creative/PHOTO-008-primary-480.webp",
+      "status": 200,
+      "bytes": 52314,
+      "sha256": "f03e9ecde3340f4e87a165d541126c384581ab4d19e2015775ed6c92a6f8ff28"
+    },
+    {
+      "sourceSku": "PHOTO-008",
+      "path": "/creative/PHOTO-008-primary-800.webp",
+      "status": 200,
+      "bytes": 130768,
+      "sha256": "c719f52df121f635690046cf76d2881c9986c5d882061dd5b6b13743008ece51"
+    },
+    {
+      "sourceSku": "PHOTO-009",
+      "path": "/creative/PHOTO-009.webp",
+      "status": 200,
+      "bytes": 204870,
+      "sha256": "5a8c1223fa75485e2299c553bacaba83f39df73940e4f3cb18d19b0cf1ef5be3"
+    },
+    {
+      "sourceSku": "PHOTO-009",
+      "path": "/creative/PHOTO-009-primary-480.webp",
+      "status": 200,
+      "bytes": 37508,
+      "sha256": "346794a78c0662ef9e8dec242557779e087fd1ee25e8e01ce2dd56ce8f4c863d"
+    },
+    {
+      "sourceSku": "PHOTO-009",
+      "path": "/creative/PHOTO-009-primary-800.webp",
+      "status": 200,
+      "bytes": 93516,
+      "sha256": "83448fe3d348d7b0515e4caa1e613e15159d6ae738d685885c21f671b9360fb0"
+    },
+    {
+      "sourceSku": "PHOTO-009",
+      "path": "/creative/PHOTO-009-illustration.webp",
+      "status": 200,
+      "bytes": 497970,
+      "sha256": "66db59492c1abb1f71925eb12f3b884204e4abbd6f3ddadf622650c73188e049"
+    },
+    {
+      "sourceSku": "PHOTO-009",
+      "path": "/creative/PHOTO-009-illustration-480.webp",
+      "status": 200,
+      "bytes": 83734,
+      "sha256": "1316d4bd9688b6bf286f3714903f73d4331c1b317c5de950c86380bb06682dcc"
+    },
+    {
+      "sourceSku": "PHOTO-009",
+      "path": "/creative/PHOTO-009-illustration-800.webp",
+      "status": 200,
+      "bytes": 220724,
+      "sha256": "86e8b4b68e7e3dc9c081864483fa00e52e5f127f893f25599cfeb1fc52928e15"
+    },
+    {
+      "sourceSku": "PHOTO-009",
+      "path": "/creative/PHOTO-009-illustration-texture.webp",
+      "status": 200,
+      "bytes": 329860,
+      "sha256": "02d764eb21c87ee5742b64043a5d4fde1dcc59838f33505c69edd8e366f47a42"
+    },
+    {
+      "sourceSku": "PHOTO-009",
+      "path": "/creative/PHOTO-009-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 129220,
+      "sha256": "d6856ef2a1a2ca11f1150434f91d31d8f13864dcd0b5ef340e1eecd1298420af"
+    },
+    {
+      "sourceSku": "PHOTO-010",
+      "path": "/creative/PHOTO-010.webp",
+      "status": 200,
+      "bytes": 225840,
+      "sha256": "78e9314b55558dbfde48d396d3a79bbb72b2313daeb2fcb60601dfbf35ed9348"
+    },
+    {
+      "sourceSku": "PHOTO-010",
+      "path": "/creative/PHOTO-010-primary-480.webp",
+      "status": 200,
+      "bytes": 43598,
+      "sha256": "484daea5039bc9097861362e54891ab516da88f8a96214821d78b476b55a9593"
+    },
+    {
+      "sourceSku": "PHOTO-010",
+      "path": "/creative/PHOTO-010-primary-800.webp",
+      "status": 200,
+      "bytes": 108976,
+      "sha256": "d1d7173ca615243cdbb4257d8d72fcfffa1626166170468cccdda6b93fd18ccb"
+    },
+    {
+      "sourceSku": "PHOTO-011",
+      "path": "/creative/PHOTO-011.webp",
+      "status": 200,
+      "bytes": 236806,
+      "sha256": "dc774ae73e3a59f2b9cc9d0983d8de191c54d95ea99ce2de9104aa089dad2f56"
+    },
+    {
+      "sourceSku": "PHOTO-011",
+      "path": "/creative/PHOTO-011-primary-480.webp",
+      "status": 200,
+      "bytes": 51622,
+      "sha256": "fc04d1ff3f2f7051a5896b3eab3d5a34e3644184313ab5e581f7062ad3eb7406"
+    },
+    {
+      "sourceSku": "PHOTO-011",
+      "path": "/creative/PHOTO-011-primary-800.webp",
+      "status": 200,
+      "bytes": 119586,
+      "sha256": "54c3311340065d7c70a788588ba0d8774c9f24f8294637d805e6b246dae8c643"
+    },
+    {
+      "sourceSku": "PHOTO-012",
+      "path": "/creative/PHOTO-012.webp",
+      "status": 200,
+      "bytes": 259836,
+      "sha256": "fd05f599d962f8f696f49b94b30c5e37a4feb8aafb4f88ef21f7a5e0a1706ba4"
+    },
+    {
+      "sourceSku": "PHOTO-012",
+      "path": "/creative/PHOTO-012-primary-480.webp",
+      "status": 200,
+      "bytes": 61800,
+      "sha256": "5afdaa20acd511b8699aea6b8ee8b0a3afa6cfca943f432d2c01d45cec4ffcbc"
+    },
+    {
+      "sourceSku": "PHOTO-012",
+      "path": "/creative/PHOTO-012-primary-800.webp",
+      "status": 200,
+      "bytes": 136862,
+      "sha256": "d5e7c80d8bb568794f73b62cf0812996584cd7025da702556cd7afb9758dc1ef"
+    },
+    {
+      "sourceSku": "PHOTO-013",
+      "path": "/creative/PHOTO-013.webp",
+      "status": 200,
+      "bytes": 182770,
+      "sha256": "9c1491ee605d30f43f7842cba6db2488690e740449ad8b0a906fc3853a37a655"
+    },
+    {
+      "sourceSku": "PHOTO-013",
+      "path": "/creative/PHOTO-013-primary-480.webp",
+      "status": 200,
+      "bytes": 31192,
+      "sha256": "cde6e2086a478f642cd24d880b6a8e0d7ae1c6d5b97dcbd3d1a624481473be5c"
+    },
+    {
+      "sourceSku": "PHOTO-013",
+      "path": "/creative/PHOTO-013-primary-800.webp",
+      "status": 200,
+      "bytes": 80680,
+      "sha256": "dfb6105818ced00bcd04a2003789e2548af97112763a221a9264bff638c39373"
+    },
+    {
+      "sourceSku": "PHOTO-013",
+      "path": "/creative/PHOTO-013-illustration.webp",
+      "status": 200,
+      "bytes": 425690,
+      "sha256": "fc8388401ee85af34ed2920a416915965c8a670aee010527cb75a51a86ca4b91"
+    },
+    {
+      "sourceSku": "PHOTO-013",
+      "path": "/creative/PHOTO-013-illustration-480.webp",
+      "status": 200,
+      "bytes": 78412,
+      "sha256": "ec5deb01414602761f173d59d26b96d2aa52291260bf44d2a3895eef1287f586"
+    },
+    {
+      "sourceSku": "PHOTO-013",
+      "path": "/creative/PHOTO-013-illustration-800.webp",
+      "status": 200,
+      "bytes": 192166,
+      "sha256": "30a0cc9f5b86f99ef47cf3e964d32b47072e086941b44a42f216091cc9a92295"
+    },
+    {
+      "sourceSku": "PHOTO-013",
+      "path": "/creative/PHOTO-013-illustration-texture.webp",
+      "status": 200,
+      "bytes": 266124,
+      "sha256": "47d91cc1b3dc7d18abe0848472d187d0bdb9c3f3cf1cab327ddc55f220860289"
+    },
+    {
+      "sourceSku": "PHOTO-013",
+      "path": "/creative/PHOTO-013-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 104626,
+      "sha256": "f04f03e83daabcb20d1b4d66f4e786a6609937b623e0b34bcc0abb0fe1a16030"
+    },
+    {
+      "sourceSku": "PHOTO-014",
+      "path": "/creative/PHOTO-014.webp",
+      "status": 200,
+      "bytes": 200100,
+      "sha256": "e9dd975ac68e5d56f2308f8ecc025f2e0709c2f70cff980ecc9bc0db0f8f8b02"
+    },
+    {
+      "sourceSku": "PHOTO-014",
+      "path": "/creative/PHOTO-014-primary-480.webp",
+      "status": 200,
+      "bytes": 34490,
+      "sha256": "40667da552644dacaed012fea9baa04aecddcf097608d2170b69b0b6a00455d8"
+    },
+    {
+      "sourceSku": "PHOTO-014",
+      "path": "/creative/PHOTO-014-primary-800.webp",
+      "status": 200,
+      "bytes": 87278,
+      "sha256": "678954191ef21078533a150b7145c475088b00931e9b131780b01ab9c89bba14"
+    },
+    {
+      "sourceSku": "PHOTO-014",
+      "path": "/creative/PHOTO-014-illustration.webp",
+      "status": 200,
+      "bytes": 359216,
+      "sha256": "83a28a0c18e10ade8d13eed2b5fa5096d9337654d000f36b2c47dd534185b9f9"
+    },
+    {
+      "sourceSku": "PHOTO-014",
+      "path": "/creative/PHOTO-014-illustration-480.webp",
+      "status": 200,
+      "bytes": 69380,
+      "sha256": "05582060a8a511b4827230fde9f05e2658f34f5245f35e6a9e0b384fa860b572"
+    },
+    {
+      "sourceSku": "PHOTO-014",
+      "path": "/creative/PHOTO-014-illustration-800.webp",
+      "status": 200,
+      "bytes": 167974,
+      "sha256": "abf14eb98becb429e05b48400fd9b4001da2c956c7264fc5a24898709af017b2"
+    },
+    {
+      "sourceSku": "PHOTO-014",
+      "path": "/creative/PHOTO-014-illustration-texture.webp",
+      "status": 200,
+      "bytes": 253254,
+      "sha256": "2b26c814b32b16d2ec5741690bec00d3332723e186c38cfee9c582fa5c274359"
+    },
+    {
+      "sourceSku": "PHOTO-014",
+      "path": "/creative/PHOTO-014-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 106116,
+      "sha256": "3b5f4b20d106f639da2f24f1e8743f341c889a6dbb28329a2a68d1f87c09ac3b"
+    },
+    {
+      "sourceSku": "PHOTO-015",
+      "path": "/creative/PHOTO-015.webp",
+      "status": 200,
+      "bytes": 300834,
+      "sha256": "9247fa955df2d68aa4d5715923c6af33d007af97e369ae80262d6179ade67edf"
+    },
+    {
+      "sourceSku": "PHOTO-015",
+      "path": "/creative/PHOTO-015-primary-480.webp",
+      "status": 200,
+      "bytes": 56494,
+      "sha256": "d439abd7538b1834c091703b85900e0bd64680d555455df9f14b37006a6c9b36"
+    },
+    {
+      "sourceSku": "PHOTO-015",
+      "path": "/creative/PHOTO-015-primary-800.webp",
+      "status": 200,
+      "bytes": 142536,
+      "sha256": "a914c8310113cd35f0de01d2d708ec5d71b3ae60eaeaeda7073ad1ce80df47ef"
+    },
+    {
+      "sourceSku": "PHOTO-016",
+      "path": "/creative/PHOTO-016.webp",
+      "status": 200,
+      "bytes": 259530,
+      "sha256": "e23bfe62e53c2f996e3cae4e4abf3551775c9c09a90130d09b12f01dce623657"
+    },
+    {
+      "sourceSku": "PHOTO-016",
+      "path": "/creative/PHOTO-016-primary-480.webp",
+      "status": 200,
+      "bytes": 52258,
+      "sha256": "3b8eea8ed302d8e72133b1c7945f50af63d4341180871933c3c1767d7fff5380"
+    },
+    {
+      "sourceSku": "PHOTO-016",
+      "path": "/creative/PHOTO-016-primary-800.webp",
+      "status": 200,
+      "bytes": 125060,
+      "sha256": "45665b2a985c7021429bbffc4bd10ac67e198abde31d68a00f275134720af8d1"
+    },
+    {
+      "sourceSku": "PHOTO-017",
+      "path": "/creative/PHOTO-017.webp",
+      "status": 200,
+      "bytes": 210128,
+      "sha256": "2086be96e60303a6a3b717f557bd1a7e74bef6540bd3f1189468701b176a1c5d"
+    },
+    {
+      "sourceSku": "PHOTO-017",
+      "path": "/creative/PHOTO-017-primary-480.webp",
+      "status": 200,
+      "bytes": 35990,
+      "sha256": "8d7bc3645e0abc9213480fe867f0eecf7876870eac6e01277c9efa966d72dcdf"
+    },
+    {
+      "sourceSku": "PHOTO-017",
+      "path": "/creative/PHOTO-017-primary-800.webp",
+      "status": 200,
+      "bytes": 92206,
+      "sha256": "40d284ad9080bba7600abf53c61dc7b19c62ee0f4f73f62d3bda426f26553d76"
+    },
+    {
+      "sourceSku": "PHOTO-017",
+      "path": "/creative/PHOTO-017-illustration.webp",
+      "status": 200,
+      "bytes": 445700,
+      "sha256": "93bf3cb8188153d785fe217f922705bc6f3d4cc1249c63f7ad61d52cccabf878"
+    },
+    {
+      "sourceSku": "PHOTO-017",
+      "path": "/creative/PHOTO-017-illustration-480.webp",
+      "status": 200,
+      "bytes": 79434,
+      "sha256": "4576e4dec768e30836d5f2cd72113bee8faad8b67daaf68d31f8fcbcbbbbe327"
+    },
+    {
+      "sourceSku": "PHOTO-017",
+      "path": "/creative/PHOTO-017-illustration-800.webp",
+      "status": 200,
+      "bytes": 195454,
+      "sha256": "70defbb9238b78b5016913119aaec73d7948020c5fd47eefdc1195674c06bc9d"
+    },
+    {
+      "sourceSku": "PHOTO-017",
+      "path": "/creative/PHOTO-017-illustration-texture.webp",
+      "status": 200,
+      "bytes": 293752,
+      "sha256": "7fe2c681c6dcd762284be577a1937b97003840138131ce723539042581b10161"
+    },
+    {
+      "sourceSku": "PHOTO-017",
+      "path": "/creative/PHOTO-017-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 120586,
+      "sha256": "74ec9cb53bf1d561c06aa8f922efba8c30cc6ceb4904b957abe9edbbc932e2bb"
+    },
+    {
+      "sourceSku": "PHOTO-018",
+      "path": "/creative/PHOTO-018.webp",
+      "status": 200,
+      "bytes": 242632,
+      "sha256": "62c0747f0e23dc39c336a9b66e0d1942fc1ba00dd0798bac1d88055fff03ba4f"
+    },
+    {
+      "sourceSku": "PHOTO-018",
+      "path": "/creative/PHOTO-018-primary-480.webp",
+      "status": 200,
+      "bytes": 46324,
+      "sha256": "b6bd64ad485382e39463d1fbdacaffaf669ab6281cbf8f503b0d2497a40ade25"
+    },
+    {
+      "sourceSku": "PHOTO-018",
+      "path": "/creative/PHOTO-018-primary-800.webp",
+      "status": 200,
+      "bytes": 114304,
+      "sha256": "d5b14dd43f3ffc318ce6c737b32e2b3597d5fe35bd311296561e90ed9c8680dc"
+    },
+    {
+      "sourceSku": "PHOTO-018",
+      "path": "/creative/PHOTO-018-illustration.webp",
+      "status": 200,
+      "bytes": 503558,
+      "sha256": "b202df37374aebc3189cccde7af0b58358c69c224ad34caae697d673bcccbec8"
+    },
+    {
+      "sourceSku": "PHOTO-018",
+      "path": "/creative/PHOTO-018-illustration-480.webp",
+      "status": 200,
+      "bytes": 82714,
+      "sha256": "d4340597fa77bea4bfe96b0ec99cb1e68cef2e3fcc35920ac2f4b5d3bc582210"
+    },
+    {
+      "sourceSku": "PHOTO-018",
+      "path": "/creative/PHOTO-018-illustration-800.webp",
+      "status": 200,
+      "bytes": 222678,
+      "sha256": "81e1e24928cde4029f535f3f62c4a894318aedb3238778dc0ecdd6bdd96b7660"
+    },
+    {
+      "sourceSku": "PHOTO-018",
+      "path": "/creative/PHOTO-018-illustration-texture.webp",
+      "status": 200,
+      "bytes": 336906,
+      "sha256": "03c34c3e39eb19774cee0b975d6327cbe46e207c72816230414efa8ccd008c1e"
+    },
+    {
+      "sourceSku": "PHOTO-018",
+      "path": "/creative/PHOTO-018-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 132322,
+      "sha256": "b6a8857ee4b3bb669f904c4e39719cbc75eceba2cfe9497c19e0d562c5594c4f"
+    },
+    {
+      "sourceSku": "PHOTO-019",
+      "path": "/creative/PHOTO-019.webp",
+      "status": 200,
+      "bytes": 222338,
+      "sha256": "1e645521afeb44e498dec7c5cf41413d8080b4fba25e4d4f2e7376b4d927c878"
+    },
+    {
+      "sourceSku": "PHOTO-019",
+      "path": "/creative/PHOTO-019-primary-480.webp",
+      "status": 200,
+      "bytes": 40222,
+      "sha256": "2762bb5ddec13d3448dd2d4846566aa4473308753c68acfc12dac24ca3c009c3"
+    },
+    {
+      "sourceSku": "PHOTO-019",
+      "path": "/creative/PHOTO-019-primary-800.webp",
+      "status": 200,
+      "bytes": 102614,
+      "sha256": "b929d8d84a5e890901fbbb3edd5165c0f3c310a7c3f78170d60ca3a2156ce4a3"
+    },
+    {
+      "sourceSku": "PHOTO-019",
+      "path": "/creative/PHOTO-019-illustration.webp",
+      "status": 200,
+      "bytes": 404024,
+      "sha256": "a73df30be1d44a0911a684085a681a6e7d19ee0000186e3e709832a8407b0dcc"
+    },
+    {
+      "sourceSku": "PHOTO-019",
+      "path": "/creative/PHOTO-019-illustration-480.webp",
+      "status": 200,
+      "bytes": 70202,
+      "sha256": "4e0f12f1d09e7139dc5f93f5e0b3e6711079132f8618ebe08a40631d0285fbcb"
+    },
+    {
+      "sourceSku": "PHOTO-019",
+      "path": "/creative/PHOTO-019-illustration-800.webp",
+      "status": 200,
+      "bytes": 181314,
+      "sha256": "2fd7204715929f082c98d65863752f9a216bcfd4f67f06e0cea1481516027ea0"
+    },
+    {
+      "sourceSku": "PHOTO-019",
+      "path": "/creative/PHOTO-019-illustration-texture.webp",
+      "status": 200,
+      "bytes": 256192,
+      "sha256": "4385fde1387b4ccbfea6b2a77a00ed1274445f98187aabd0440623af0de1dead"
+    },
+    {
+      "sourceSku": "PHOTO-019",
+      "path": "/creative/PHOTO-019-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 96416,
+      "sha256": "8d9dad8ee0b34b742df7928d692586262a74df670a901aee7c47677a93ccc9c2"
+    },
+    {
+      "sourceSku": "PHOTO-020",
+      "path": "/creative/PHOTO-020.webp",
+      "status": 200,
+      "bytes": 254104,
+      "sha256": "edb990baac5f3497a46f837fe7d1fc75c9b18261818b86ef61fffec42b420c8d"
+    },
+    {
+      "sourceSku": "PHOTO-020",
+      "path": "/creative/PHOTO-020-primary-480.webp",
+      "status": 200,
+      "bytes": 50040,
+      "sha256": "6b0a044adde4ce05ee4ba8f6c72f4629067d473abaa7b98dc56ef2b7c7b7f0e9"
+    },
+    {
+      "sourceSku": "PHOTO-020",
+      "path": "/creative/PHOTO-020-primary-800.webp",
+      "status": 200,
+      "bytes": 119406,
+      "sha256": "a883961b134e38d3151739b9457f54a7b8bd8e2cbd86a455d4d08ddb279d8f57"
+    },
+    {
+      "sourceSku": "PHOTO-020",
+      "path": "/creative/PHOTO-020-illustration.webp",
+      "status": 200,
+      "bytes": 365774,
+      "sha256": "55ec4630b54fd16f12fb1c0abe28a7254473e0322f3955dc39078503521a221d"
+    },
+    {
+      "sourceSku": "PHOTO-020",
+      "path": "/creative/PHOTO-020-illustration-480.webp",
+      "status": 200,
+      "bytes": 64908,
+      "sha256": "1164f4b13087f085d9e73ffcb7aa0359646b5ae91c5708685161226daabc0395"
+    },
+    {
+      "sourceSku": "PHOTO-020",
+      "path": "/creative/PHOTO-020-illustration-800.webp",
+      "status": 200,
+      "bytes": 164424,
+      "sha256": "f56155cbe032d9681145b696834ad73a1e09c7354d5270d370e21db915a559b2"
+    },
+    {
+      "sourceSku": "PHOTO-020",
+      "path": "/creative/PHOTO-020-illustration-texture.webp",
+      "status": 200,
+      "bytes": 269816,
+      "sha256": "5799840ea9fab774c8c2d4c7ab871eca21abe0f1d06af025b8e695dad68bc63a"
+    },
+    {
+      "sourceSku": "PHOTO-020",
+      "path": "/creative/PHOTO-020-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 111430,
+      "sha256": "c2929d7dc88e26d2f6d344fde2d26274fbd43880bb88658e24df77e98f7118d9"
+    },
+    {
+      "sourceSku": "PHOTO-021",
+      "path": "/creative/PHOTO-021.webp",
+      "status": 200,
+      "bytes": 221722,
+      "sha256": "6a91a905b73b006b701e5d8d18d384afc1db17785661a428624173c324e140d0"
+    },
+    {
+      "sourceSku": "PHOTO-021",
+      "path": "/creative/PHOTO-021-primary-480.webp",
+      "status": 200,
+      "bytes": 48374,
+      "sha256": "0f2ce39a2215175e21f678621afcc1e3695f802d9f8398490296b68dcbf93658"
+    },
+    {
+      "sourceSku": "PHOTO-021",
+      "path": "/creative/PHOTO-021-primary-800.webp",
+      "status": 200,
+      "bytes": 109596,
+      "sha256": "b10d279e0d8853b18eda2ed3b7cb4745f2185d8a2a10c148f0561a473a7ef5da"
+    },
+    {
+      "sourceSku": "PHOTO-021",
+      "path": "/creative/PHOTO-021-illustration.webp",
+      "status": 200,
+      "bytes": 334906,
+      "sha256": "05c04f4b0d055ffe0d8a99853b6cf85c88cdf6062383f5a116389ced1703c325"
+    },
+    {
+      "sourceSku": "PHOTO-021",
+      "path": "/creative/PHOTO-021-illustration-480.webp",
+      "status": 200,
+      "bytes": 54706,
+      "sha256": "8340c063632bfda7f8d0b4caa0b657363ab77aa20d668ae291cdeebf58e1a2fd"
+    },
+    {
+      "sourceSku": "PHOTO-021",
+      "path": "/creative/PHOTO-021-illustration-800.webp",
+      "status": 200,
+      "bytes": 147828,
+      "sha256": "e80271fa2f9255a0960fde1133d3b8ff474d03a1fb67361b152d5a105c2525b4"
+    },
+    {
+      "sourceSku": "PHOTO-021",
+      "path": "/creative/PHOTO-021-illustration-texture.webp",
+      "status": 200,
+      "bytes": 249286,
+      "sha256": "feb105cadad5ce346c157932fe2b5596e474b2c8c08569edfd5191244f38201e"
+    },
+    {
+      "sourceSku": "PHOTO-021",
+      "path": "/creative/PHOTO-021-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 97644,
+      "sha256": "a647f1d599bc38e24579a0ee97b5df827b95eef32396ac70b802fb1bf2439a7c"
+    },
+    {
+      "sourceSku": "PHOTO-022",
+      "path": "/creative/PHOTO-022.webp",
+      "status": 200,
+      "bytes": 247086,
+      "sha256": "9f62a9c77d5407c971295eea383f96cf30a3953b1909bf76cfa0b2d04a731c83"
+    },
+    {
+      "sourceSku": "PHOTO-022",
+      "path": "/creative/PHOTO-022-primary-480.webp",
+      "status": 200,
+      "bytes": 33236,
+      "sha256": "a00fcd7e14c39b45a43a6d217375dff175e3d2485783697356c1845dd53d49c8"
+    },
+    {
+      "sourceSku": "PHOTO-022",
+      "path": "/creative/PHOTO-022-primary-800.webp",
+      "status": 200,
+      "bytes": 101496,
+      "sha256": "935d1c457737de13c68be0ad5a46249df7fe6a28e785727ba665a5ca1989df1b"
+    },
+    {
+      "sourceSku": "PHOTO-022",
+      "path": "/creative/PHOTO-022-illustration.webp",
+      "status": 200,
+      "bytes": 492692,
+      "sha256": "5f1e0615ef1035ea6637791b870d068b62df0f3555fe68f3f75e4e3e9cb29b2c"
+    },
+    {
+      "sourceSku": "PHOTO-022",
+      "path": "/creative/PHOTO-022-illustration-480.webp",
+      "status": 200,
+      "bytes": 77326,
+      "sha256": "a2db6f9119d7d1f8d519f671c5dd32c4117daaa662778a4940c1dd5d3cc60dd1"
+    },
+    {
+      "sourceSku": "PHOTO-022",
+      "path": "/creative/PHOTO-022-illustration-800.webp",
+      "status": 200,
+      "bytes": 211150,
+      "sha256": "daac14e7b50959e4f70861016526a84202ea18437d40e830139f414bcc5609ee"
+    },
+    {
+      "sourceSku": "PHOTO-022",
+      "path": "/creative/PHOTO-022-illustration-texture.webp",
+      "status": 200,
+      "bytes": 334120,
+      "sha256": "46ce407f5f5d69a0b4abaedfe2dbb45d5a734b2fe5cbff7f05915c65fc7f9038"
+    },
+    {
+      "sourceSku": "PHOTO-022",
+      "path": "/creative/PHOTO-022-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 128488,
+      "sha256": "b7f1e05f737b1d6da5d1c18746425ce7aa0326ff560854f84f4192f1014538c5"
+    },
+    {
+      "sourceSku": "PHOTO-023",
+      "path": "/creative/PHOTO-023.webp",
+      "status": 200,
+      "bytes": 256146,
+      "sha256": "2c46948720f1964d5ecbf49e709c49d742a78a47c116d257dcd51b35ca7c1c02"
+    },
+    {
+      "sourceSku": "PHOTO-023",
+      "path": "/creative/PHOTO-023-primary-480.webp",
+      "status": 200,
+      "bytes": 54194,
+      "sha256": "a4a2aa3da8679d95c0a07232648403ae946689834f3f593bef7a1589c38be81c"
+    },
+    {
+      "sourceSku": "PHOTO-023",
+      "path": "/creative/PHOTO-023-primary-800.webp",
+      "status": 200,
+      "bytes": 126710,
+      "sha256": "a6c1a0f9632a6d620c93823e1f70dea664de2b3f1f1574efcc1c9799d724d95a"
+    },
+    {
+      "sourceSku": "PHOTO-023",
+      "path": "/creative/PHOTO-023-illustration.webp",
+      "status": 200,
+      "bytes": 302584,
+      "sha256": "65b53d0603c4de4b324d09cf2eed08ed2923598f83cd4edefe0f4c9ab0ab3961"
+    },
+    {
+      "sourceSku": "PHOTO-023",
+      "path": "/creative/PHOTO-023-illustration-480.webp",
+      "status": 200,
+      "bytes": 51938,
+      "sha256": "a42f09f62ba77719fd5dfe9dcf1443f307d19b89e8da668224be670a1da22fd0"
+    },
+    {
+      "sourceSku": "PHOTO-023",
+      "path": "/creative/PHOTO-023-illustration-800.webp",
+      "status": 200,
+      "bytes": 133630,
+      "sha256": "fc60236c36d010d72ffb04177bc4301909aad67660d0e16546cb4b6092df68ea"
+    },
+    {
+      "sourceSku": "PHOTO-023",
+      "path": "/creative/PHOTO-023-illustration-texture.webp",
+      "status": 200,
+      "bytes": 239666,
+      "sha256": "eb017b1d9e0ef18e58f98adc0397dc8a02e800875c2aad52ba4fa46d46805ebc"
+    },
+    {
+      "sourceSku": "PHOTO-023",
+      "path": "/creative/PHOTO-023-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 92534,
+      "sha256": "cbbd7a4bfe493323e089e0d8c2e545de569681ed3304941f1617bfb0778dab89"
+    },
+    {
+      "sourceSku": "PHOTO-024",
+      "path": "/creative/PHOTO-024.webp",
+      "status": 200,
+      "bytes": 237248,
+      "sha256": "68fe8f1a2fe9b01ee98798378cbbad9f06add0def30e3d4c06d6baf5498dda70"
+    },
+    {
+      "sourceSku": "PHOTO-024",
+      "path": "/creative/PHOTO-024-primary-480.webp",
+      "status": 200,
+      "bytes": 51118,
+      "sha256": "bc098fabb98ef05fccc12a709369c18ddf964946aff660d10faf5085cc0a13a3"
+    },
+    {
+      "sourceSku": "PHOTO-024",
+      "path": "/creative/PHOTO-024-primary-800.webp",
+      "status": 200,
+      "bytes": 117486,
+      "sha256": "d7693e339369b7ed2c0ba40a9bd181d84936bdb6672b1467448972bab36471c7"
+    },
+    {
+      "sourceSku": "PHOTO-025",
+      "path": "/creative/PHOTO-025.webp",
+      "status": 200,
+      "bytes": 264390,
+      "sha256": "9b63fa01ba173e47c5bbddc195bd42f880cacc23752d3fdf9aefe109965bdb22"
+    },
+    {
+      "sourceSku": "PHOTO-025",
+      "path": "/creative/PHOTO-025-primary-480.webp",
+      "status": 200,
+      "bytes": 51002,
+      "sha256": "0653a3e03357b1b78a70452e084a5fa37550e2092ad6bc0e75d4edb715a59b50"
+    },
+    {
+      "sourceSku": "PHOTO-025",
+      "path": "/creative/PHOTO-025-primary-800.webp",
+      "status": 200,
+      "bytes": 125328,
+      "sha256": "36c0a8ae4fe01cacbfc427afebeb9d6d98faed64d5c3a383555413bc42d8bbd5"
+    },
+    {
+      "sourceSku": "PHOTO-026",
+      "path": "/creative/PHOTO-026.webp",
+      "status": 200,
+      "bytes": 206004,
+      "sha256": "6343ecce2008f74f475dc1eea15b855e139915284d2fd285d7baf1810b05469d"
+    },
+    {
+      "sourceSku": "PHOTO-026",
+      "path": "/creative/PHOTO-026-primary-480.webp",
+      "status": 200,
+      "bytes": 36682,
+      "sha256": "bbe11db947f5083fabb5f4e2c9376c4ae14fb8eb7b2223cef03713806b835d2a"
+    },
+    {
+      "sourceSku": "PHOTO-026",
+      "path": "/creative/PHOTO-026-primary-800.webp",
+      "status": 200,
+      "bytes": 92074,
+      "sha256": "aa69edf1f69547d074078ce19cb18b8af4111378130d634b896dcb9331597833"
+    },
+    {
+      "sourceSku": "PHOTO-026",
+      "path": "/creative/PHOTO-026-illustration.webp",
+      "status": 200,
+      "bytes": 380824,
+      "sha256": "8aa22f36782539467cabe38601d503dfa54a3a5f16c021777b4a40312c7fe5c8"
+    },
+    {
+      "sourceSku": "PHOTO-026",
+      "path": "/creative/PHOTO-026-illustration-480.webp",
+      "status": 200,
+      "bytes": 63850,
+      "sha256": "fc1f858f0f127e7341ae391c7226245c666643ef68600f566a432fee4a7ffe5e"
+    },
+    {
+      "sourceSku": "PHOTO-026",
+      "path": "/creative/PHOTO-026-illustration-800.webp",
+      "status": 200,
+      "bytes": 165364,
+      "sha256": "5cc854cf59fa59ac2aa2d547f61553f4e2108e2d0c669342e1bf5005faa43449"
+    },
+    {
+      "sourceSku": "PHOTO-026",
+      "path": "/creative/PHOTO-026-illustration-texture.webp",
+      "status": 200,
+      "bytes": 274300,
+      "sha256": "142d619da587d3908e7b15fd3f9903208d3375a52abf1e1e14b33bb8a84f912a"
+    },
+    {
+      "sourceSku": "PHOTO-026",
+      "path": "/creative/PHOTO-026-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 110832,
+      "sha256": "d81511899f13254a01f9a1d0172a331f5b849a380995d2a242dc02a84d1bd087"
+    },
+    {
+      "sourceSku": "PHOTO-027",
+      "path": "/creative/PHOTO-027.webp",
+      "status": 200,
+      "bytes": 249190,
+      "sha256": "6fd00866f644b2fd66255c49a411859ab9eaa0092e8862599536ad0c3c91fd89"
+    },
+    {
+      "sourceSku": "PHOTO-027",
+      "path": "/creative/PHOTO-027-primary-480.webp",
+      "status": 200,
+      "bytes": 50830,
+      "sha256": "66014486f92165b0496c0eff93729927415e26c294fbf1cd1a64fa3f5b435238"
+    },
+    {
+      "sourceSku": "PHOTO-027",
+      "path": "/creative/PHOTO-027-primary-800.webp",
+      "status": 200,
+      "bytes": 123396,
+      "sha256": "1dabd6641d91a5761bc471266999f9ae6508162e858377ee741b5815d43b58d6"
+    },
+    {
+      "sourceSku": "PHOTO-027",
+      "path": "/creative/PHOTO-027-illustration.webp",
+      "status": 200,
+      "bytes": 399548,
+      "sha256": "bedcd3219b691c5d1441a786271d14a0b9128d6c3f976736481aedd616d8194a"
+    },
+    {
+      "sourceSku": "PHOTO-027",
+      "path": "/creative/PHOTO-027-illustration-480.webp",
+      "status": 200,
+      "bytes": 68522,
+      "sha256": "61a7672c1799ad10c0724e709124c387db21123077dfdc0e1ab4d4045ec017fc"
+    },
+    {
+      "sourceSku": "PHOTO-027",
+      "path": "/creative/PHOTO-027-illustration-800.webp",
+      "status": 200,
+      "bytes": 173760,
+      "sha256": "f8418cacbe6d1a54b85ee8f32792e5e3d7f04831d64faa1419381a9f95ea6ab7"
+    },
+    {
+      "sourceSku": "PHOTO-027",
+      "path": "/creative/PHOTO-027-illustration-texture.webp",
+      "status": 200,
+      "bytes": 277026,
+      "sha256": "b2b5b670ed2ee27c142b3671294869544a1236c5115e9d8c6b41d3c1246ee727"
+    },
+    {
+      "sourceSku": "PHOTO-027",
+      "path": "/creative/PHOTO-027-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 112006,
+      "sha256": "6b8f5f8f382b190404f7488705fd73daa7e4115e42010fe21662959b056ef2b4"
+    },
+    {
+      "sourceSku": "PHOTO-028",
+      "path": "/creative/PHOTO-028.webp",
+      "status": 200,
+      "bytes": 258554,
+      "sha256": "b1715c014071508625995d205212a6e072effdeb73152ee900fe38831533ae1f"
+    },
+    {
+      "sourceSku": "PHOTO-028",
+      "path": "/creative/PHOTO-028-primary-480.webp",
+      "status": 200,
+      "bytes": 48878,
+      "sha256": "697d75c85d6c03eca2d8992f80b647a05c9c5a1bfb17cfbf7e1fa21c7e1f2b90"
+    },
+    {
+      "sourceSku": "PHOTO-028",
+      "path": "/creative/PHOTO-028-primary-800.webp",
+      "status": 200,
+      "bytes": 123780,
+      "sha256": "d16ed0fd5b9c3a47e4cb338e9d0211a6d6d96455e79b1fd211ccd4d34dc1956f"
+    },
+    {
+      "sourceSku": "PHOTO-028",
+      "path": "/creative/PHOTO-028-illustration.webp",
+      "status": 200,
+      "bytes": 435988,
+      "sha256": "3915ca817f05e91bc8f0cac9791715b8b9c5e5df98649f1f51fa67f07d0a89e6"
+    },
+    {
+      "sourceSku": "PHOTO-028",
+      "path": "/creative/PHOTO-028-illustration-480.webp",
+      "status": 200,
+      "bytes": 69390,
+      "sha256": "4d029a21f5677e9ba13b74e17e3e31a34c28b68c01352b41f6eb9a4bb24bb33a"
+    },
+    {
+      "sourceSku": "PHOTO-028",
+      "path": "/creative/PHOTO-028-illustration-800.webp",
+      "status": 200,
+      "bytes": 183810,
+      "sha256": "55886c1a4fcc2a9f9c58e7bad1159d09825ee760aef798bfe362f11d139f3c8a"
+    },
+    {
+      "sourceSku": "PHOTO-028",
+      "path": "/creative/PHOTO-028-illustration-texture.webp",
+      "status": 200,
+      "bytes": 307014,
+      "sha256": "f58e3d29e279fb20d20bd1aa90b01e5ffec15d973d8ef0d5cf3d91db5733b872"
+    },
+    {
+      "sourceSku": "PHOTO-028",
+      "path": "/creative/PHOTO-028-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 117122,
+      "sha256": "29ebe2b63540fa5fb1330a5f901bdf228c808098f5780215985d82dc6553ba22"
+    },
+    {
+      "sourceSku": "PHOTO-029",
+      "path": "/creative/PHOTO-029.webp",
+      "status": 200,
+      "bytes": 291270,
+      "sha256": "056ece24650f24cfdcf98aadd60358d69cf288b08b015c3403a942473e65a85a"
+    },
+    {
+      "sourceSku": "PHOTO-029",
+      "path": "/creative/PHOTO-029-primary-480.webp",
+      "status": 200,
+      "bytes": 57174,
+      "sha256": "476a24c327f6f93d89d6971b1a52337fee130da4e40971b5561bd269cd0741a9"
+    },
+    {
+      "sourceSku": "PHOTO-029",
+      "path": "/creative/PHOTO-029-primary-800.webp",
+      "status": 200,
+      "bytes": 142762,
+      "sha256": "6b3ba74a1769422ea1669393eef142ef2a06d8fc48f7a957c27fe56e486da78b"
+    },
+    {
+      "sourceSku": "PHOTO-029",
+      "path": "/creative/PHOTO-029-illustration.webp",
+      "status": 200,
+      "bytes": 520260,
+      "sha256": "64221a38aad65b9b31f7606ad02798aee6f5333c0e0d26fa7e6f1415fdda991d"
+    },
+    {
+      "sourceSku": "PHOTO-029",
+      "path": "/creative/PHOTO-029-illustration-480.webp",
+      "status": 200,
+      "bytes": 76048,
+      "sha256": "e1a49d654c91814c68385cfb74f8ad3c32c1efdf86ace4eef419960c3e5b9c57"
+    },
+    {
+      "sourceSku": "PHOTO-029",
+      "path": "/creative/PHOTO-029-illustration-800.webp",
+      "status": 200,
+      "bytes": 214248,
+      "sha256": "e9c3e54d7d47f7cf7f7015e5de01db6a5d8a46b11077acd003b67321d8e7e91b"
+    },
+    {
+      "sourceSku": "PHOTO-029",
+      "path": "/creative/PHOTO-029-illustration-texture.webp",
+      "status": 200,
+      "bytes": 350440,
+      "sha256": "a44e9bbba1eb31098824bfdc65630746b402813851dae1494a097df54f08a681"
+    },
+    {
+      "sourceSku": "PHOTO-029",
+      "path": "/creative/PHOTO-029-illustration-texture-480.webp",
+      "status": 200,
+      "bytes": 135578,
+      "sha256": "2f76c975332564963556e538b63df0409a0b93b21286e997d47a79605e41bf44"
+    },
+    {
+      "sourceSku": "PHOTO-030",
+      "path": "/creative/PHOTO-030.webp",
+      "status": 200,
+      "bytes": 224060,
+      "sha256": "da4a90780b5f9be8a8f486794d33100a38b48e492b66b92f14072a537fc4679f"
+    },
+    {
+      "sourceSku": "PHOTO-030",
+      "path": "/creative/PHOTO-030-primary-480.webp",
+      "status": 200,
+      "bytes": 45036,
+      "sha256": "5bbdf5be19ab68d2fd927e2072c7e0ddebefccf30cc8a9ce82a776558ed220a1"
+    },
+    {
+      "sourceSku": "PHOTO-030",
+      "path": "/creative/PHOTO-030-primary-800.webp",
+      "status": 200,
+      "bytes": 104942,
+      "sha256": "de51977515b3dadf52b5158495f7c9abc2cdf2b1263e0fd7603f5f566e579f7a"
+    },
+    {
+      "sourceSku": "LIST-001",
+      "path": "/creative/LIST-001.webp",
+      "status": 200,
+      "bytes": 193490,
+      "sha256": "cd1c3d7bb7162d62b702e2b5d32ee7a87a57519aedadb12a3b4264553ad9a06f"
+    },
+    {
+      "sourceSku": "LIST-001",
+      "path": "/creative/LIST-001-primary-480.webp",
+      "status": 200,
+      "bytes": 44890,
+      "sha256": "bd589b1992bfdcffd99ca7cb6ca5a93e4f891f63b45eb927fee84603bc2222d2"
+    },
+    {
+      "sourceSku": "LIST-001",
+      "path": "/creative/LIST-001-primary-800.webp",
+      "status": 200,
+      "bytes": 107000,
+      "sha256": "bbe6cb3a6f2acdf360dd7c04305dec7e373b15f14cff8ed40be7a6067287faa7"
+    },
+    {
+      "sourceSku": "LIST-001",
+      "path": "/creative/LIST-001-secondary.webp",
+      "status": 200,
+      "bytes": 175720,
+      "sha256": "06fd569562dd3fbc3f746e628a3515e42b272c004af2a68e497a9da7848ecfd0"
+    },
+    {
+      "sourceSku": "LIST-001",
+      "path": "/creative/LIST-001-secondary-480.webp",
+      "status": 200,
+      "bytes": 33620,
+      "sha256": "b2c55fb0575e735b940a7eca6072eef69c53aeaa6fbce192a5a1830a3015b7df"
+    },
+    {
+      "sourceSku": "LIST-001",
+      "path": "/creative/LIST-001-secondary-800.webp",
+      "status": 200,
+      "bytes": 75734,
+      "sha256": "271cfc878ac7449f0ec6c1824168a5c2e3dc0af5a0ccf7b099d471b0d2247135"
+    },
+    {
+      "sourceSku": "LIST-001",
+      "path": "/creative/LIST-001-texture.webp",
+      "status": 200,
+      "bytes": 172620,
+      "sha256": "35c48712f8e01eb14b684799005bed337611ae07cc70d48069b8743ba2e14cad"
+    },
+    {
+      "sourceSku": "LIST-001",
+      "path": "/creative/LIST-001-texture-480.webp",
+      "status": 200,
+      "bytes": 67702,
+      "sha256": "550043954484b1b4fcfb2eaed0fa3c706ff5eee89f5f299938b39fca0d2a7b0a"
+    },
+    {
+      "sourceSku": "LIST-002",
+      "path": "/creative/LIST-002.webp",
+      "status": 200,
+      "bytes": 198666,
+      "sha256": "a4c02e1339936d57bec660d54b90ae1975bb52340892ed076c7bd4c6a00c8390"
+    },
+    {
+      "sourceSku": "LIST-002",
+      "path": "/creative/LIST-002-primary-480.webp",
+      "status": 200,
+      "bytes": 41770,
+      "sha256": "f09fd2876d3537f919d16380d0d9e19596c9f3e52b5cb178123dabcf12dd225e"
+    },
+    {
+      "sourceSku": "LIST-002",
+      "path": "/creative/LIST-002-primary-800.webp",
+      "status": 200,
+      "bytes": 102284,
+      "sha256": "4f149cbba1b609f5b6d0f463f844ab92aa4e9e58979fc49188f9e23009c496f6"
+    },
+    {
+      "sourceSku": "LIST-002",
+      "path": "/creative/LIST-002-secondary.webp",
+      "status": 200,
+      "bytes": 179970,
+      "sha256": "09bc4ac235096d3a137c49f3f0cb28658a2976258d28da3b0484a74048a66617"
+    },
+    {
+      "sourceSku": "LIST-002",
+      "path": "/creative/LIST-002-secondary-480.webp",
+      "status": 200,
+      "bytes": 36738,
+      "sha256": "61ed324d0b1c072c839fd56e51063eff36b697b287285f3f23beaf0916ecfe6d"
+    },
+    {
+      "sourceSku": "LIST-002",
+      "path": "/creative/LIST-002-secondary-800.webp",
+      "status": 200,
+      "bytes": 80248,
+      "sha256": "e5e211489bc2a6e0990a590dbf39782bf750c250257bf66a8b44b1dad10a09d2"
+    },
+    {
+      "sourceSku": "LIST-002",
+      "path": "/creative/LIST-002-texture.webp",
+      "status": 200,
+      "bytes": 207348,
+      "sha256": "799d3ae87bed90691611884ca38d7e148d7f6fd036f19baf765bddb04bd91db5"
+    },
+    {
+      "sourceSku": "LIST-002",
+      "path": "/creative/LIST-002-texture-480.webp",
+      "status": 200,
+      "bytes": 80840,
+      "sha256": "021c87b7792f0785dd5b3fe69f644af0572b6c41c5a3d70611b076a1e49036f3"
+    },
+    {
+      "sourceSku": "LIST-003",
+      "path": "/creative/LIST-003.webp",
+      "status": 200,
+      "bytes": 234170,
+      "sha256": "2634dd52668a821603fa34e2e02683aa7e1ff45825c2e603d36a7c6c84a4d6aa"
+    },
+    {
+      "sourceSku": "LIST-003",
+      "path": "/creative/LIST-003-primary-480.webp",
+      "status": 200,
+      "bytes": 54698,
+      "sha256": "19424c31f5e51a0a395249c78f5a9de4aaf93a5cdc08f4fb08548dabfbf06ee8"
+    },
+    {
+      "sourceSku": "LIST-003",
+      "path": "/creative/LIST-003-primary-800.webp",
+      "status": 200,
+      "bytes": 128078,
+      "sha256": "9cd0cceb5e355905c87923e8d494fd4ce0d6c809514b3f8f705117ff48537a42"
+    },
+    {
+      "sourceSku": "LIST-003",
+      "path": "/creative/LIST-003-texture.webp",
+      "status": 200,
+      "bytes": 250266,
+      "sha256": "d783dd25ca61ac095c1db55a16fed4c9bea5cc21bbfd43b40ffd5ec4489ac829"
+    },
+    {
+      "sourceSku": "LIST-003",
+      "path": "/creative/LIST-003-texture-480.webp",
+      "status": 200,
+      "bytes": 103954,
+      "sha256": "bf7f9998332cd20a25d8b4a9414a78633a44b96a06ef11d2ffad5ed29fa786a9"
+    },
+    {
+      "sourceSku": "LIST-004",
+      "path": "/creative/LIST-004.webp",
+      "status": 200,
+      "bytes": 211942,
+      "sha256": "ea0f33f876b6e73a965a9e87c052cf92ec14dc4e639456e2cc3d5688467879af"
+    },
+    {
+      "sourceSku": "LIST-004",
+      "path": "/creative/LIST-004-primary-480.webp",
+      "status": 200,
+      "bytes": 46788,
+      "sha256": "09a225122aadcb4142e76b695caa31ec69316b560d265c0a737ee9016805313d"
+    },
+    {
+      "sourceSku": "LIST-004",
+      "path": "/creative/LIST-004-primary-800.webp",
+      "status": 200,
+      "bytes": 111502,
+      "sha256": "9a0e67d17bbf94dae7add637e9a95e0c683c1e7d6647d2aa954e76f11c6c2fcb"
+    },
+    {
+      "sourceSku": "LIST-004",
+      "path": "/creative/LIST-004-texture.webp",
+      "status": 200,
+      "bytes": 220278,
+      "sha256": "7f30df300245d2f6a1f5d62b03489d633ec470ad305d773b39e9e04b0d23bc32"
+    },
+    {
+      "sourceSku": "LIST-004",
+      "path": "/creative/LIST-004-texture-480.webp",
+      "status": 200,
+      "bytes": 91056,
+      "sha256": "23ca147c0a4e94db15ae726242025a18cc9d8876b41e99b9b1a19e6e07eb0268"
+    },
+    {
+      "sourceSku": "LIST-005",
+      "path": "/creative/LIST-005.webp",
+      "status": 200,
+      "bytes": 225214,
+      "sha256": "1e385d95a35d2d2c53272f0e6377aa64e3c7a3a8c5ae2d1b2bed7d8f61a69ec8"
+    },
+    {
+      "sourceSku": "LIST-005",
+      "path": "/creative/LIST-005-primary-480.webp",
+      "status": 200,
+      "bytes": 49812,
+      "sha256": "5948dd13b79bed2dbeca0ca62983af31e28e28817058af9decf2583ef7fbb4db"
+    },
+    {
+      "sourceSku": "LIST-005",
+      "path": "/creative/LIST-005-primary-800.webp",
+      "status": 200,
+      "bytes": 119546,
+      "sha256": "8eb8e1e74a298761678e0223be9fcbe3eacf603fb4cbfaacf2ad5ce5bd495412"
+    },
+    {
+      "sourceSku": "LIST-005",
+      "path": "/creative/LIST-005-texture.webp",
+      "status": 200,
+      "bytes": 224774,
+      "sha256": "fb97e6c214a25f64ecc6d5c8b2311f4217ccb6bb5a22fbdfec085e80c34955f9"
+    },
+    {
+      "sourceSku": "LIST-005",
+      "path": "/creative/LIST-005-texture-480.webp",
+      "status": 200,
+      "bytes": 93674,
+      "sha256": "a1764352e346ed2421a5b4036fd5454438bf980a35cc42f0d04d55a00b8418d0"
+    },
+    {
+      "sourceSku": "LIST-006",
+      "path": "/creative/LIST-006.webp",
+      "status": 200,
+      "bytes": 376348,
+      "sha256": "61b082d120fa07607adb4b4fd8c9aa8ad279d306cf0861353f5cb8f9059d34b3"
+    },
+    {
+      "sourceSku": "LIST-006",
+      "path": "/creative/LIST-006-primary-480.webp",
+      "status": 200,
+      "bytes": 85758,
+      "sha256": "7097a441c94f4c9faba2f4af036220e776904778249fe59de1e460962329614b"
+    },
+    {
+      "sourceSku": "LIST-006",
+      "path": "/creative/LIST-006-primary-800.webp",
+      "status": 200,
+      "bytes": 213368,
+      "sha256": "e3d78455b01369c97e632b60465759fa64b17813938dd8d7f48076ad32f9de35"
+    },
+    {
+      "sourceSku": "LIST-006",
+      "path": "/creative/LIST-006-secondary.webp",
+      "status": 200,
+      "bytes": 339386,
+      "sha256": "909a71130c8c2caa499c21823df11d1a3cb281e2ade49e8cab0fbacb694e31af"
+    },
+    {
+      "sourceSku": "LIST-006",
+      "path": "/creative/LIST-006-secondary-480.webp",
+      "status": 200,
+      "bytes": 61098,
+      "sha256": "745f6a2818fcbf113db2d15da26f18e5e36f5406d5a98bf9f406d620018ddcbb"
+    },
+    {
+      "sourceSku": "LIST-006",
+      "path": "/creative/LIST-006-secondary-800.webp",
+      "status": 200,
+      "bytes": 147280,
+      "sha256": "9a17622ca632d0dd66a61ee449a031749c9e4075f886e0e28313446ec7bf3c5e"
+    },
+    {
+      "sourceSku": "LIST-006",
+      "path": "/creative/LIST-006-texture.webp",
+      "status": 200,
+      "bytes": 260104,
+      "sha256": "158001589b50d5aadaa3c8c64a4d326f31cfc4354e03807e71828e80cd0a338c"
+    },
+    {
+      "sourceSku": "LIST-006",
+      "path": "/creative/LIST-006-texture-480.webp",
+      "status": 200,
+      "bytes": 102698,
+      "sha256": "4e363f2873ae2c038b0acd257e994f29532ab37b364cd944350de07ecf1c1b25"
+    },
+    {
+      "sourceSku": "LIST-007",
+      "path": "/creative/LIST-007.webp",
+      "status": 200,
+      "bytes": 241144,
+      "sha256": "ad3f45fde8d88cc474a01c4b43dff2f8e5be77478fef1a72a07cc8f5da4b6e98"
+    },
+    {
+      "sourceSku": "LIST-007",
+      "path": "/creative/LIST-007-primary-480.webp",
+      "status": 200,
+      "bytes": 49230,
+      "sha256": "d3f6bb45c9eda3513f2a1b21ab2232cef055769f376590fe458072e2f6cd7e60"
+    },
+    {
+      "sourceSku": "LIST-007",
+      "path": "/creative/LIST-007-primary-800.webp",
+      "status": 200,
+      "bytes": 121412,
+      "sha256": "4f09b0f7cee24ed3fa10223f8733c46e678c4a2f449382e758a77fa2ea901693"
+    },
+    {
+      "sourceSku": "LIST-007",
+      "path": "/creative/LIST-007-texture.webp",
+      "status": 200,
+      "bytes": 258484,
+      "sha256": "9b9001ff1575aa69d4a331a66bfa5ec2da9ac84f142f1880acfab754c124cc48"
+    },
+    {
+      "sourceSku": "LIST-007",
+      "path": "/creative/LIST-007-texture-480.webp",
+      "status": 200,
+      "bytes": 96332,
+      "sha256": "19dba08314b437446bf4a284e89a089175caf212d0cc04ac78d97d1e5fe9b7af"
+    },
+    {
+      "sourceSku": "LIST-008",
+      "path": "/creative/LIST-008.webp",
+      "status": 200,
+      "bytes": 286880,
+      "sha256": "741ff059400d68b272f367ffc427f87be551dd291f6aefb3c3d21ed48e940c71"
+    },
+    {
+      "sourceSku": "LIST-008",
+      "path": "/creative/LIST-008-primary-480.webp",
+      "status": 200,
+      "bytes": 63806,
+      "sha256": "b7122a3173dcb0fe713eefb8032a6d640be6976c9fabe84f39412f55a3b7d6e1"
+    },
+    {
+      "sourceSku": "LIST-008",
+      "path": "/creative/LIST-008-primary-800.webp",
+      "status": 200,
+      "bytes": 149790,
+      "sha256": "b48fee517e227a7dee479a9068aeb88ae1542cb1f6376ea9f4db6c3ba2cf1575"
+    },
+    {
+      "sourceSku": "LIST-008",
+      "path": "/creative/LIST-008-secondary.webp",
+      "status": 200,
+      "bytes": 279776,
+      "sha256": "8e806f9b8bdc95d710b380057a111bd49edbf076b5c033238bd6104af4eb66eb"
+    },
+    {
+      "sourceSku": "LIST-008",
+      "path": "/creative/LIST-008-secondary-480.webp",
+      "status": 200,
+      "bytes": 53896,
+      "sha256": "83e84f1066ff0c4c772c929913eb152515ecf4e8861224ac0ae68e19579d96c8"
+    },
+    {
+      "sourceSku": "LIST-008",
+      "path": "/creative/LIST-008-secondary-800.webp",
+      "status": 200,
+      "bytes": 128308,
+      "sha256": "06513b64787209d1256747e8cd9eaae544de32fbcd4cd8a78fa1b87385b883df"
+    },
+    {
+      "sourceSku": "LIST-008",
+      "path": "/creative/LIST-008-texture.webp",
+      "status": 200,
+      "bytes": 231620,
+      "sha256": "54094cddbd893b0d6f85794dbcb4149612df252e9183c2d3bc95e1ecaae7f616"
+    },
+    {
+      "sourceSku": "LIST-008",
+      "path": "/creative/LIST-008-texture-480.webp",
+      "status": 200,
+      "bytes": 93902,
+      "sha256": "0c83ad4911e71837c1efe3c32462e4c228080aafc02d29d657e92dc88156d9a3"
+    },
+    {
+      "sourceSku": "LIST-009",
+      "path": "/creative/LIST-009.webp",
+      "status": 200,
+      "bytes": 214572,
+      "sha256": "1ba86485205a3014306607b6b00e09e77fcb6f0b186deebfec164232ce7059b4"
+    },
+    {
+      "sourceSku": "LIST-009",
+      "path": "/creative/LIST-009-primary-480.webp",
+      "status": 200,
+      "bytes": 46818,
+      "sha256": "5c1d76d68e2f5c94cd3bffd9780d15436008fe5f19482bbe720e14c4e15b64fa"
+    },
+    {
+      "sourceSku": "LIST-009",
+      "path": "/creative/LIST-009-primary-800.webp",
+      "status": 200,
+      "bytes": 111542,
+      "sha256": "0d89ed34c9eebe23d5b60349f6773c44f56d5fb3695c93d083540d76af48e873"
+    },
+    {
+      "sourceSku": "LIST-009",
+      "path": "/creative/LIST-009-texture.webp",
+      "status": 200,
+      "bytes": 228994,
+      "sha256": "1a5460f4140214b3bce32e0b8179d362970b184aca50dba9c9bee00df4b3849e"
+    },
+    {
+      "sourceSku": "LIST-009",
+      "path": "/creative/LIST-009-texture-480.webp",
+      "status": 200,
+      "bytes": 92868,
+      "sha256": "a77b8a10cd35991dfc39c53544979df0ce5a3246ea906b57a6c49cc335c588ca"
+    },
+    {
+      "sourceSku": "LIST-010",
+      "path": "/creative/LIST-010.webp",
+      "status": 200,
+      "bytes": 262478,
+      "sha256": "fedc6b275d59ad3ef99ee5d839ab534a7e1b52139f0858fde2173ab2cd4f8ac3"
+    },
+    {
+      "sourceSku": "LIST-010",
+      "path": "/creative/LIST-010-primary-480.webp",
+      "status": 200,
+      "bytes": 59236,
+      "sha256": "2f45053419d680db63836d7606c7cc93b0e7344076586323e872c25ce032c1a7"
+    },
+    {
+      "sourceSku": "LIST-010",
+      "path": "/creative/LIST-010-primary-800.webp",
+      "status": 200,
+      "bytes": 136722,
+      "sha256": "0d29114d38a31146cc3176389f1e74f54821dea64377b83ee91c52bf51d90098"
+    },
+    {
+      "sourceSku": "LIST-010",
+      "path": "/creative/LIST-010-secondary.webp",
+      "status": 200,
+      "bytes": 279674,
+      "sha256": "f573c092527c8e9fad087b113fe55c0f954d90e567aae02afc781826cb8c2970"
+    },
+    {
+      "sourceSku": "LIST-010",
+      "path": "/creative/LIST-010-secondary-480.webp",
+      "status": 200,
+      "bytes": 51614,
+      "sha256": "79cad966af8abf03955654eea3fb72d77078123875e957e77aff8a14928e2d96"
+    },
+    {
+      "sourceSku": "LIST-010",
+      "path": "/creative/LIST-010-secondary-800.webp",
+      "status": 200,
+      "bytes": 122982,
+      "sha256": "f8c146884c12e04503124cc227ebc22a8db8784ceb850906c9d824ab7a2000bb"
+    },
+    {
+      "sourceSku": "LIST-010",
+      "path": "/creative/LIST-010-texture.webp",
+      "status": 200,
+      "bytes": 270232,
+      "sha256": "fa6d327bc55ec4c142efbde4a17a93af5366162fef0d8336530f1dcd45fd4c9a"
+    },
+    {
+      "sourceSku": "LIST-010",
+      "path": "/creative/LIST-010-texture-480.webp",
+      "status": 200,
+      "bytes": 108708,
+      "sha256": "b94d130242f1be96dd832f800e1689758cc8ceb17fd4c309d15e2fdd648ba516"
+    },
+    {
+      "sourceSku": "LIST-011",
+      "path": "/creative/LIST-011.webp",
+      "status": 200,
+      "bytes": 296002,
+      "sha256": "ea16c2757122ed1c2b924cf62b431de75e381e5a2954c8fa57990edeea9585e3"
+    },
+    {
+      "sourceSku": "LIST-011",
+      "path": "/creative/LIST-011-primary-480.webp",
+      "status": 200,
+      "bytes": 63872,
+      "sha256": "269626689644a03d64ae0854167ccb1860fa17f8c12703489701c5f13a5462a0"
+    },
+    {
+      "sourceSku": "LIST-011",
+      "path": "/creative/LIST-011-primary-800.webp",
+      "status": 200,
+      "bytes": 152396,
+      "sha256": "32bec453609bf42e93c49d7ec92071403bece8ddcf62ffe04cbb6b44fc06093a"
+    },
+    {
+      "sourceSku": "LIST-011",
+      "path": "/creative/LIST-011-texture.webp",
+      "status": 200,
+      "bytes": 291270,
+      "sha256": "23f0b0b095ee7dc890758751efb3a120f90c3c9fec22ce84d008a104ef3b3633"
+    },
+    {
+      "sourceSku": "LIST-011",
+      "path": "/creative/LIST-011-texture-480.webp",
+      "status": 200,
+      "bytes": 118774,
+      "sha256": "d15ed93d488ba9ac901be17d51a7c4bb9f956de114045791578369d1bc1f72fb"
+    },
+    {
+      "sourceSku": "LIST-012",
+      "path": "/creative/LIST-012.webp",
+      "status": 200,
+      "bytes": 293278,
+      "sha256": "7c4d2fc39abda66abdefddb9d0ea6319f978c9bbdd9669dffb007499b76c69cb"
+    },
+    {
+      "sourceSku": "LIST-012",
+      "path": "/creative/LIST-012-primary-480.webp",
+      "status": 200,
+      "bytes": 55582,
+      "sha256": "21e77de5720902046fde0cbfe5eeeb4b6210ada1da6c4b3fa7d5eb1e6346d6f0"
+    },
+    {
+      "sourceSku": "LIST-012",
+      "path": "/creative/LIST-012-primary-800.webp",
+      "status": 200,
+      "bytes": 133494,
+      "sha256": "0b96729cf07bb373800e73f17b7e0de005ca8ebb1cc3633330e18ada81281a20"
+    },
+    {
+      "sourceSku": "LIST-012",
+      "path": "/creative/LIST-012-secondary.webp",
+      "status": 200,
+      "bytes": 206994,
+      "sha256": "0f2f8725953ea97823b2f285a0b4d100fca31da7e011b09ea6121c9bdb25a2be"
+    },
+    {
+      "sourceSku": "LIST-012",
+      "path": "/creative/LIST-012-secondary-480.webp",
+      "status": 200,
+      "bytes": 39436,
+      "sha256": "b5013dffe8bb637a15f458531def54bc3623cdc75086cbdaa20ded1503dfdd26"
+    },
+    {
+      "sourceSku": "LIST-012",
+      "path": "/creative/LIST-012-secondary-800.webp",
+      "status": 200,
+      "bytes": 92486,
+      "sha256": "8423c05481374ea4f5f85c2af2dea591f068b88aa350711729672446a7671ab1"
+    },
+    {
+      "sourceSku": "LIST-012",
+      "path": "/creative/LIST-012-texture.webp",
+      "status": 200,
+      "bytes": 269488,
+      "sha256": "cdf09be396d69a9465a6243985365dbfc32b096d7dbe8dd8e52c283874c98796"
+    },
+    {
+      "sourceSku": "LIST-012",
+      "path": "/creative/LIST-012-texture-480.webp",
+      "status": 200,
+      "bytes": 112044,
+      "sha256": "eef6528786d09119ec0135999df644fba1dbd12ac1eb578d66fc8e94f9818d01"
+    },
+    {
+      "sourceSku": "LIST-013",
+      "path": "/creative/LIST-013.webp",
+      "status": 200,
+      "bytes": 296630,
+      "sha256": "9b704382aad617dc2379663fe896aeea81acddd31a00f9d7786a632646c97b08"
+    },
+    {
+      "sourceSku": "LIST-013",
+      "path": "/creative/LIST-013-primary-480.webp",
+      "status": 200,
+      "bytes": 52530,
+      "sha256": "216d84c4219aa1875ad7cc91f075955d29333668de500821a957b5adc843c7a0"
+    },
+    {
+      "sourceSku": "LIST-013",
+      "path": "/creative/LIST-013-primary-800.webp",
+      "status": 200,
+      "bytes": 130156,
+      "sha256": "dec6d28b900633335e15c95be6c6a21b68756987e06ed3979703d21a82d71401"
+    },
+    {
+      "sourceSku": "LIST-013",
+      "path": "/creative/LIST-013-secondary.webp",
+      "status": 200,
+      "bytes": 283138,
+      "sha256": "500fd7716bc74ba6071afccf642df455ac751f310a851930e6919a3d64eb9fe5"
+    },
+    {
+      "sourceSku": "LIST-013",
+      "path": "/creative/LIST-013-secondary-480.webp",
+      "status": 200,
+      "bytes": 49898,
+      "sha256": "fab81a7a21dc9ec0eb18922e9a54eff48e5a9be4922369ec4b769e3f6514ed11"
+    },
+    {
+      "sourceSku": "LIST-013",
+      "path": "/creative/LIST-013-secondary-800.webp",
+      "status": 200,
+      "bytes": 124470,
+      "sha256": "7f49b090cc995d18264021c8a1f1f79956f79dc5ff5af0180645f83ec5d352d7"
+    },
+    {
+      "sourceSku": "LIST-013",
+      "path": "/creative/LIST-013-texture.webp",
+      "status": 200,
+      "bytes": 248564,
+      "sha256": "28a8b3895bf8b22a812c9f93e1f1713ed68836a6b03b982fc290ea0cfc5c7f7a"
+    },
+    {
+      "sourceSku": "LIST-013",
+      "path": "/creative/LIST-013-texture-480.webp",
+      "status": 200,
+      "bytes": 98030,
+      "sha256": "d936a39bfb5fe8ce3241dd6f9db38445bf1de4fcafe6a528c73ad334b34ac131"
+    },
+    {
+      "sourceSku": "LIST-014",
+      "path": "/creative/LIST-014.webp",
+      "status": 200,
+      "bytes": 340780,
+      "sha256": "55ec091bba5f5413a3b03f30c1f086daf461ad4dd8180313846b952053263b00"
+    },
+    {
+      "sourceSku": "LIST-014",
+      "path": "/creative/LIST-014-primary-480.webp",
+      "status": 200,
+      "bytes": 79632,
+      "sha256": "b20a36b65f432c27e2f4c190e9edf83a0662df2f3350fa3b5e35e2c456764bbe"
+    },
+    {
+      "sourceSku": "LIST-014",
+      "path": "/creative/LIST-014-primary-800.webp",
+      "status": 200,
+      "bytes": 192346,
+      "sha256": "0d1314dfc2fc4b52b823972224bfbb57d9fd74dff98497974c8a45fe300c5698"
+    },
+    {
+      "sourceSku": "LIST-014",
+      "path": "/creative/LIST-014-secondary.webp",
+      "status": 200,
+      "bytes": 274736,
+      "sha256": "2ef7e909e3bbf4a7b1c7d6ce20adcc76034d07b630654b36ba79887338d200e2"
+    },
+    {
+      "sourceSku": "LIST-014",
+      "path": "/creative/LIST-014-secondary-480.webp",
+      "status": 200,
+      "bytes": 48636,
+      "sha256": "2119583fde068ee6b0d594844a28d091e8ddab5e2a309d18b42db5b4d9445211"
+    },
+    {
+      "sourceSku": "LIST-014",
+      "path": "/creative/LIST-014-secondary-800.webp",
+      "status": 200,
+      "bytes": 119330,
+      "sha256": "f9f25e3c6b46a9f2f0b30b1d2c99a6957ba1f3051bdc7d1984fba083c8939ac2"
+    },
+    {
+      "sourceSku": "LIST-014",
+      "path": "/creative/LIST-014-texture.webp",
+      "status": 200,
+      "bytes": 232880,
+      "sha256": "23a5cfb1561b1221e7f13d97a266b4b84781c1da8071c29bbd01e441834922ed"
+    },
+    {
+      "sourceSku": "LIST-014",
+      "path": "/creative/LIST-014-texture-480.webp",
+      "status": 200,
+      "bytes": 94274,
+      "sha256": "7ea3b052f155f152124a0bc04d158bcf3ce17873f8afb1a9292a766166f5ce3c"
+    },
+    {
+      "sourceSku": "LIST-015",
+      "path": "/creative/LIST-015.webp",
+      "status": 200,
+      "bytes": 363072,
+      "sha256": "b4988d6b83afb2f503c996b74250cbe7fc991f48151e93fae557c0e84ed7bc00"
+    },
+    {
+      "sourceSku": "LIST-015",
+      "path": "/creative/LIST-015-primary-480.webp",
+      "status": 200,
+      "bytes": 66370,
+      "sha256": "18ec335883d01f9aab7b8693cdad2465a007ca65a0af58635a982bd13f0fb58e"
+    },
+    {
+      "sourceSku": "LIST-015",
+      "path": "/creative/LIST-015-primary-800.webp",
+      "status": 200,
+      "bytes": 161782,
+      "sha256": "b9d196dfe0573515fba8031cb1fc0c847c6dd137b457f0f5066cef90763c9bec"
+    },
+    {
+      "sourceSku": "LIST-015",
+      "path": "/creative/LIST-015-secondary.webp",
+      "status": 200,
+      "bytes": 223952,
+      "sha256": "eaec8989cdb5f98854e8d72af5a68142c02a34439778e0fd1cbdab37a7117e24"
+    },
+    {
+      "sourceSku": "LIST-015",
+      "path": "/creative/LIST-015-secondary-480.webp",
+      "status": 200,
+      "bytes": 40868,
+      "sha256": "f84ff501522c50256a80f5ec352fc8ec43f9e6133efedbf78a777ba07cc8f71b"
+    },
+    {
+      "sourceSku": "LIST-015",
+      "path": "/creative/LIST-015-secondary-800.webp",
+      "status": 200,
+      "bytes": 97910,
+      "sha256": "e719dd1a1c7008b4939ea188f6399ca2b223517f6cd1ec83783c38da798356f4"
+    },
+    {
+      "sourceSku": "LIST-015",
+      "path": "/creative/LIST-015-texture.webp",
+      "status": 200,
+      "bytes": 289194,
+      "sha256": "fc69e958f597652763ed98c5f17f1b8f2b91bff990164e43db253d4cd17d1538"
+    },
+    {
+      "sourceSku": "LIST-015",
+      "path": "/creative/LIST-015-texture-480.webp",
+      "status": 200,
+      "bytes": 115980,
+      "sha256": "88dce50aee06f5d4f0991d7cd3d6be10ec8cd5cad1d7b80dc860566c809a0d03"
+    },
+    {
+      "sourceSku": "LIST-016",
+      "path": "/creative/LIST-016.webp",
+      "status": 200,
+      "bytes": 411514,
+      "sha256": "14d057283410fd9bb99d83334f79dc19f314099320f97e8ab01e5e5ab2983cf9"
+    },
+    {
+      "sourceSku": "LIST-016",
+      "path": "/creative/LIST-016-primary-480.webp",
+      "status": 200,
+      "bytes": 91672,
+      "sha256": "4af9501926c3e3395c352f2ccfc1fea12f25cf6cfbf300f79fc8133f0e975766"
+    },
+    {
+      "sourceSku": "LIST-016",
+      "path": "/creative/LIST-016-primary-800.webp",
+      "status": 200,
+      "bytes": 226074,
+      "sha256": "78ff36f29fd1e24e0bbf9c36f1195927b881f3c60c8d75c396abbc519d535590"
+    },
+    {
+      "sourceSku": "LIST-016",
+      "path": "/creative/LIST-016-texture.webp",
+      "status": 200,
+      "bytes": 294074,
+      "sha256": "38069572e8ccae493cf2e807bd5de459540772ae1675aaa9d10b77172567ad76"
+    },
+    {
+      "sourceSku": "LIST-016",
+      "path": "/creative/LIST-016-texture-480.webp",
+      "status": 200,
+      "bytes": 114844,
+      "sha256": "b34bd3afc66bee4e460ea39c24c1bd965b8730418c3537cbe7530e06dee0a269"
+    },
+    {
+      "sourceSku": "LIST-017",
+      "path": "/creative/LIST-017.webp",
+      "status": 200,
+      "bytes": 329614,
+      "sha256": "2ec4eb195b1fee72ffdc6c5fdd136d6cb46c7aa7dbc0e904f5861f3fdb7e9f16"
+    },
+    {
+      "sourceSku": "LIST-017",
+      "path": "/creative/LIST-017-primary-480.webp",
+      "status": 200,
+      "bytes": 56208,
+      "sha256": "143fcd3964ac396e58de095171d0feec725da6be9eacfc9532f107d7af758975"
+    },
+    {
+      "sourceSku": "LIST-017",
+      "path": "/creative/LIST-017-primary-800.webp",
+      "status": 200,
+      "bytes": 137614,
+      "sha256": "7a500feec7539494a14b7afdd5702fadec162cd8e96f8c1320380a9fb3c2ed48"
+    },
+    {
+      "sourceSku": "LIST-017",
+      "path": "/creative/LIST-017-secondary.webp",
+      "status": 200,
+      "bytes": 297944,
+      "sha256": "7c4553cd2f114cffd4f9bbb5c40bef4ee1947399f3eec753185a604e8bb9ef77"
+    },
+    {
+      "sourceSku": "LIST-017",
+      "path": "/creative/LIST-017-secondary-480.webp",
+      "status": 200,
+      "bytes": 53562,
+      "sha256": "27fd80fb919891dfbbde7f454c9a90d23fb4c17a37f26bf5d166ad774d4789de"
+    },
+    {
+      "sourceSku": "LIST-017",
+      "path": "/creative/LIST-017-secondary-800.webp",
+      "status": 200,
+      "bytes": 130314,
+      "sha256": "486249a05695b831b3d038281678ee9204ccf234b40dbbd1c98d0f8455d29f61"
+    },
+    {
+      "sourceSku": "LIST-017",
+      "path": "/creative/LIST-017-texture.webp",
+      "status": 200,
+      "bytes": 269702,
+      "sha256": "d2e849d440b9848ff457e3997c1adc80a42a9f704cb72bc74b57a735292f2e93"
+    },
+    {
+      "sourceSku": "LIST-017",
+      "path": "/creative/LIST-017-texture-480.webp",
+      "status": 200,
+      "bytes": 101470,
+      "sha256": "312247e0f6e3f445e3880843ba2c2db999a1e7f3deccaca431c5bbc6538dd1b7"
+    },
+    {
+      "sourceSku": "LIST-018",
+      "path": "/creative/LIST-018.webp",
+      "status": 200,
+      "bytes": 319746,
+      "sha256": "f5f05ec154706868b84172f5e57e1dea536e6921fed368e40f97522a8918ab66"
+    },
+    {
+      "sourceSku": "LIST-018",
+      "path": "/creative/LIST-018-primary-480.webp",
+      "status": 200,
+      "bytes": 59418,
+      "sha256": "a1a177f40fdb36d5c7a9032dd2a4dc05a50395c50524b32496115e3027708a9a"
+    },
+    {
+      "sourceSku": "LIST-018",
+      "path": "/creative/LIST-018-primary-800.webp",
+      "status": 200,
+      "bytes": 141958,
+      "sha256": "0473acb80fd204f64690c30afb25f7dd81558357cffa95852a709a6af3a0e4b6"
+    },
+    {
+      "sourceSku": "LIST-018",
+      "path": "/creative/LIST-018-texture.webp",
+      "status": 200,
+      "bytes": 276340,
+      "sha256": "2f3cb236d4a5e2adf6693ba3c0a991668bfcb70721b2cfbae8243d5f037c5a13"
+    },
+    {
+      "sourceSku": "LIST-018",
+      "path": "/creative/LIST-018-texture-480.webp",
+      "status": 200,
+      "bytes": 112876,
+      "sha256": "d790de2365ce796d6150f4a42d00d18f80205e212facbae450aae6adaeb97243"
+    },
+    {
+      "sourceSku": "LIST-019",
+      "path": "/creative/LIST-019.webp",
+      "status": 200,
+      "bytes": 345502,
+      "sha256": "134cfb553302e096e29b414765e35bfdedee87e577b85b792face608c3675e03"
+    },
+    {
+      "sourceSku": "LIST-019",
+      "path": "/creative/LIST-019-primary-480.webp",
+      "status": 200,
+      "bytes": 62854,
+      "sha256": "2e95a331cf9dcd31b5b9128be12d6f6343fc7337b90742d9c16444eface9b137"
+    },
+    {
+      "sourceSku": "LIST-019",
+      "path": "/creative/LIST-019-primary-800.webp",
+      "status": 200,
+      "bytes": 147798,
+      "sha256": "b6939a81e8e63678e881fed2383b1754c77f641aadf320b26b93acdee187f506"
+    },
+    {
+      "sourceSku": "LIST-019",
+      "path": "/creative/LIST-019-texture.webp",
+      "status": 200,
+      "bytes": 266040,
+      "sha256": "6944527b256f29be5efceeb76558d5669a2996952743a62c2f0d3a04b0557329"
+    },
+    {
+      "sourceSku": "LIST-019",
+      "path": "/creative/LIST-019-texture-480.webp",
+      "status": 200,
+      "bytes": 105466,
+      "sha256": "99f95dac77fa6db210419ac13b2eb72fe47cbeffb92d5ca0d9d8f5cda96942d4"
+    },
+    {
+      "sourceSku": "LIST-020",
+      "path": "/creative/LIST-020.webp",
+      "status": 200,
+      "bytes": 281728,
+      "sha256": "d3465d8ce3b50deea775043fc3ad18f57c801f588b95a9f5b83281fb58f60a82"
+    },
+    {
+      "sourceSku": "LIST-020",
+      "path": "/creative/LIST-020-primary-480.webp",
+      "status": 200,
+      "bytes": 54430,
+      "sha256": "5c3162234e31e726bd24e284153399b4812bd233ea8dd499621c27f646befaf1"
+    },
+    {
+      "sourceSku": "LIST-020",
+      "path": "/creative/LIST-020-primary-800.webp",
+      "status": 200,
+      "bytes": 126256,
+      "sha256": "16b1e02e9bc580e0c4921d8ef728c1133a2dad349d0e7088ccd0d57403514249"
+    },
+    {
+      "sourceSku": "LIST-020",
+      "path": "/creative/LIST-020-secondary.webp",
+      "status": 200,
+      "bytes": 267936,
+      "sha256": "8932c10722a43cd2788c4077cfedf21281e6ef72858c013c41e890a0d9ad1b5f"
+    },
+    {
+      "sourceSku": "LIST-020",
+      "path": "/creative/LIST-020-secondary-480.webp",
+      "status": 200,
+      "bytes": 48972,
+      "sha256": "58679a180953525f23e5496f73a2c873c2e6edddee556189f94dcb493704b837"
+    },
+    {
+      "sourceSku": "LIST-020",
+      "path": "/creative/LIST-020-secondary-800.webp",
+      "status": 200,
+      "bytes": 115434,
+      "sha256": "f86fb39323767d8c717d3ade836a78cc72573ae09e0243167d95a8dfc0a5711d"
+    },
+    {
+      "sourceSku": "LIST-020",
+      "path": "/creative/LIST-020-texture.webp",
+      "status": 200,
+      "bytes": 234052,
+      "sha256": "16f83175cab86e0cc9c9be171d89ed4744f4b4943d776cfe1a9f28ebbd93cb9b"
+    },
+    {
+      "sourceSku": "LIST-020",
+      "path": "/creative/LIST-020-texture-480.webp",
+      "status": 200,
+      "bytes": 95504,
+      "sha256": "51a82a2f6c96fba3580e5c4014ca582ee566ed4db4b5979b02757233794aa916"
+    },
+    {
+      "sourceSku": "LIST-021",
+      "path": "/creative/LIST-021.webp",
+      "status": 200,
+      "bytes": 328404,
+      "sha256": "32da1a398778f010c06bc8c727dba0e480b5cb92bb11c94b54332213b0a129b2"
+    },
+    {
+      "sourceSku": "LIST-021",
+      "path": "/creative/LIST-021-primary-480.webp",
+      "status": 200,
+      "bytes": 52690,
+      "sha256": "efde4810925e6534ee00b1007f81a720930186bec3927f5f80d55bff73ae3214"
+    },
+    {
+      "sourceSku": "LIST-021",
+      "path": "/creative/LIST-021-primary-800.webp",
+      "status": 200,
+      "bytes": 137386,
+      "sha256": "fe65e73715faee57308c207de20d250483294e14d691fdead4d2847e2dceb81e"
+    },
+    {
+      "sourceSku": "LIST-021",
+      "path": "/creative/LIST-021-secondary.webp",
+      "status": 200,
+      "bytes": 252320,
+      "sha256": "7a97a82bf674d3922759a469f4407f84e6f9b1af13fff4d1d5ba3d5ec17ae469"
+    },
+    {
+      "sourceSku": "LIST-021",
+      "path": "/creative/LIST-021-secondary-480.webp",
+      "status": 200,
+      "bytes": 41110,
+      "sha256": "82630157b7dd447939ee9393d8573e400c0e38c2ff079cdc739082a970546a9c"
+    },
+    {
+      "sourceSku": "LIST-021",
+      "path": "/creative/LIST-021-secondary-800.webp",
+      "status": 200,
+      "bytes": 103604,
+      "sha256": "823a4002ad133d7ebd702fa139a8fd23d32ec3dd5ee97d0fe2e8c00a52407440"
+    },
+    {
+      "sourceSku": "LIST-021",
+      "path": "/creative/LIST-021-texture.webp",
+      "status": 200,
+      "bytes": 274956,
+      "sha256": "cbec8acf81e6fcdc28bb304cc64524451ef1492426dc5d31e97131dc4ed7c05a"
+    },
+    {
+      "sourceSku": "LIST-021",
+      "path": "/creative/LIST-021-texture-480.webp",
+      "status": 200,
+      "bytes": 103766,
+      "sha256": "27843005f3b6a22fa48566be0e820bd173061d724e2f11365cde8330abcd358d"
+    },
+    {
+      "sourceSku": "LIST-022",
+      "path": "/creative/LIST-022.webp",
+      "status": 200,
+      "bytes": 278588,
+      "sha256": "856a4c8abc5cdf4bb0cd657d05d33deb7e463bbcb0e9b8b77020c7ecd42994fd"
+    },
+    {
+      "sourceSku": "LIST-022",
+      "path": "/creative/LIST-022-primary-480.webp",
+      "status": 200,
+      "bytes": 52434,
+      "sha256": "a37347b5859e0cd35cb9e08503eb079ebbe6b775683d93dcc853884038ebd8e6"
+    },
+    {
+      "sourceSku": "LIST-022",
+      "path": "/creative/LIST-022-primary-800.webp",
+      "status": 200,
+      "bytes": 126440,
+      "sha256": "f17c061eccca7dfcabb4e00061157fab71fa858b4890b455af854a79f2f49190"
+    },
+    {
+      "sourceSku": "LIST-022",
+      "path": "/creative/LIST-022-secondary.webp",
+      "status": 200,
+      "bytes": 269014,
+      "sha256": "b873130e72459c0ecd232692fcbc944aab7ec9be079ce252015e02bc1e7cc0a6"
+    },
+    {
+      "sourceSku": "LIST-022",
+      "path": "/creative/LIST-022-secondary-480.webp",
+      "status": 200,
+      "bytes": 49444,
+      "sha256": "1f9e840d43b617108f34930e830d82e33ae7b7072a727af915d1c1d49619b5b5"
+    },
+    {
+      "sourceSku": "LIST-022",
+      "path": "/creative/LIST-022-secondary-800.webp",
+      "status": 200,
+      "bytes": 121034,
+      "sha256": "cc5da197a9dc6ef81bad11f955125ac3612063e275bf875ec2863fb1cfe8ccb6"
+    },
+    {
+      "sourceSku": "LIST-022",
+      "path": "/creative/LIST-022-texture.webp",
+      "status": 200,
+      "bytes": 249880,
+      "sha256": "20886df472f17e2d72f48ba06226060505d3de0def6316a632971bfaa72b4f22"
+    },
+    {
+      "sourceSku": "LIST-022",
+      "path": "/creative/LIST-022-texture-480.webp",
+      "status": 200,
+      "bytes": 99560,
+      "sha256": "310e9b2ced6698db4d4d3200a232e227cb2109ffb1c63e463f91ee0b399fda79"
+    },
+    {
+      "sourceSku": "LIST-023",
+      "path": "/creative/LIST-023.webp",
+      "status": 200,
+      "bytes": 308782,
+      "sha256": "db17edd38fbf7674e04e330d3168bd5e88527aff674fd43cd758aecb657d4a58"
+    },
+    {
+      "sourceSku": "LIST-023",
+      "path": "/creative/LIST-023-primary-480.webp",
+      "status": 200,
+      "bytes": 55950,
+      "sha256": "a37409169b466795271b1b3f112cc6950bc3ea60821829bbfab2279c2c7f5210"
+    },
+    {
+      "sourceSku": "LIST-023",
+      "path": "/creative/LIST-023-primary-800.webp",
+      "status": 200,
+      "bytes": 137378,
+      "sha256": "b18f92d35b6bfa3e3dc44c993c3637ffe90feb582ca6286951cd85bda8dad250"
+    },
+    {
+      "sourceSku": "LIST-023",
+      "path": "/creative/LIST-023-secondary.webp",
+      "status": 200,
+      "bytes": 271782,
+      "sha256": "530b2f3d9f75b955434a6c54747f9214a64e9794cd779cc880f3889ef1f0f678"
+    },
+    {
+      "sourceSku": "LIST-023",
+      "path": "/creative/LIST-023-secondary-480.webp",
+      "status": 200,
+      "bytes": 47458,
+      "sha256": "94be062f41b1852d14942a680267242f84b0ca53b39c5f4a4999c95d815d0a2d"
+    },
+    {
+      "sourceSku": "LIST-023",
+      "path": "/creative/LIST-023-secondary-800.webp",
+      "status": 200,
+      "bytes": 118906,
+      "sha256": "bcffff5160b53b6bc14194fc790fc01f101fd0e2d89e570535699e30ab1d5377"
+    },
+    {
+      "sourceSku": "LIST-023",
+      "path": "/creative/LIST-023-texture.webp",
+      "status": 200,
+      "bytes": 247946,
+      "sha256": "0e5f32f882170a32868d27c6ca86df885cecd7608a3b372a04b8c3073f7288ca"
+    },
+    {
+      "sourceSku": "LIST-023",
+      "path": "/creative/LIST-023-texture-480.webp",
+      "status": 200,
+      "bytes": 101402,
+      "sha256": "0d1f86b8dcf8314b66b705683c35b588171b15f088c942dc99784ab6d44246ae"
+    },
+    {
+      "sourceSku": "LIST-024",
+      "path": "/creative/LIST-024.webp",
+      "status": 200,
+      "bytes": 404488,
+      "sha256": "88374c88c5d646ffc99088b6010e9761a7b19f508b0c90600545ee877d3d9774"
+    },
+    {
+      "sourceSku": "LIST-024",
+      "path": "/creative/LIST-024-primary-480.webp",
+      "status": 200,
+      "bytes": 73144,
+      "sha256": "26ae38905faa491bf46c4a13961f8c2b697b4a8368bc4f3d18deb650ed58d720"
+    },
+    {
+      "sourceSku": "LIST-024",
+      "path": "/creative/LIST-024-primary-800.webp",
+      "status": 200,
+      "bytes": 181290,
+      "sha256": "933710396dac21492b1190ac2e6770b4b6859aed78b0d99469b659af5cd76965"
+    },
+    {
+      "sourceSku": "LIST-024",
+      "path": "/creative/LIST-024-texture.webp",
+      "status": 200,
+      "bytes": 338122,
+      "sha256": "b52cafde7061cf4b6754b973168fed1bdf90508d5c08ef92da687e5d2aabab82"
+    },
+    {
+      "sourceSku": "LIST-024",
+      "path": "/creative/LIST-024-texture-480.webp",
+      "status": 200,
+      "bytes": 131572,
+      "sha256": "710789742ecaf0486fd3dcde2414e35db7ad44dd0b0989bd7534214ccd4d5af1"
+    },
+    {
+      "sourceSku": "LIST-025",
+      "path": "/creative/LIST-025.webp",
+      "status": 200,
+      "bytes": 334152,
+      "sha256": "f756b455e5c06ab0700fdbc794bd547991fdbd1d47337f3dd96173f96fff9100"
+    },
+    {
+      "sourceSku": "LIST-025",
+      "path": "/creative/LIST-025-primary-480.webp",
+      "status": 200,
+      "bytes": 58590,
+      "sha256": "3f042f259a89dd518e6db3a878874df4fc61334d61ee80b2d24170d56a9eb3e9"
+    },
+    {
+      "sourceSku": "LIST-025",
+      "path": "/creative/LIST-025-primary-800.webp",
+      "status": 200,
+      "bytes": 144670,
+      "sha256": "3584df5ad870656c01726c6e03c02af1e0c0c54be966ddd9af9de8a224a56426"
+    },
+    {
+      "sourceSku": "LIST-025",
+      "path": "/creative/LIST-025-texture.webp",
+      "status": 200,
+      "bytes": 274324,
+      "sha256": "876ea443f291f2698b1e831beaedfdecb7ee985c7ba297a4712d19c04ff16187"
+    },
+    {
+      "sourceSku": "LIST-025",
+      "path": "/creative/LIST-025-texture-480.webp",
+      "status": 200,
+      "bytes": 113018,
+      "sha256": "ee35a31b618a14be61364de0ca5d62ceb3a5a3c5c6894102dd0753c5535a3d2d"
+    },
+    {
+      "sourceSku": "LIST-026",
+      "path": "/creative/LIST-026.webp",
+      "status": 200,
+      "bytes": 341546,
+      "sha256": "83cd2b4ba2d8c0b64c76af928c4e52bbdd4d0a93257604bab2e253b7bd72573e"
+    },
+    {
+      "sourceSku": "LIST-026",
+      "path": "/creative/LIST-026-primary-480.webp",
+      "status": 200,
+      "bytes": 65194,
+      "sha256": "3f5aac4bf217d73dab6290c735f2674b1a268581812d6e1f3c7dae2a58451106"
+    },
+    {
+      "sourceSku": "LIST-026",
+      "path": "/creative/LIST-026-primary-800.webp",
+      "status": 200,
+      "bytes": 152984,
+      "sha256": "a7dc225dba5f26c0c751291ae610d953e46335abaad00cc33f170f08b986cae3"
+    },
+    {
+      "sourceSku": "LIST-026",
+      "path": "/creative/LIST-026-texture.webp",
+      "status": 200,
+      "bytes": 267020,
+      "sha256": "3802df90dc8fadc2bbc1bd6184101d9507d20bdf79d3853f849cda32002af961"
+    },
+    {
+      "sourceSku": "LIST-026",
+      "path": "/creative/LIST-026-texture-480.webp",
+      "status": 200,
+      "bytes": 106476,
+      "sha256": "c10385d53367b780f5734175c1f30d4ef9697ba67376bc13de4d24d15527577d"
+    }
+  ]
+}
