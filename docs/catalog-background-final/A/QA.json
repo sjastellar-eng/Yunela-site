@@ -1,0 +1,9 @@
+{
+  "checkpoint": "A",
+  "status": "PASS",
+  "visual": "Five full comparisons and five enlarged q92/q95 panels reviewed; no conspicuous new halos, leaf damage, colour shifts or shadow damage. q92/method6 selected for all five.",
+  "imageValidation": "56 products / 347 files PASS",
+  "catalogTests": "9/9 PASS",
+  "scope": "24 accepted SKU and all other creative assets/non-hash data preserved; SCOPE_QA.json PASS",
+  "staging": "unchanged; no deploy"
+}

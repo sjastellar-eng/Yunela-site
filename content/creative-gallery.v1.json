@@ -3495,19 +3495,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Високогірний світлий улун. Не є документальною фотографією партії постачальника.",
-          "sha256": "856a4c8abc5cdf4bb0cd657d05d33deb7e463bbcb0e9b8b77020c7ecd42994fd",
+          "sha256": "a63f5944c9857f52c8e5946e8e6092b7fcb4343a25bef32963afb03256a64167",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-022-primary-480.webp",
               "width": 480,
-              "sha256": "a37347b5859e0cd35cb9e08503eb079ebbe6b775683d93dcc853884038ebd8e6"
+              "sha256": "aaa9556b3440a1117bc0e2c1e58338d1f8d3d7df2705ffe5b5534557948ad11a"
             },
             {
               "path": "/creative/LIST-022-primary-800.webp",
               "width": 800,
-              "sha256": "f17c061eccca7dfcabb4e00061157fab71fa858b4890b455af854a79f2f49190"
+              "sha256": "e69787ebb5bc2d36becc9017178acd1e79c7cd56ba8679c8c6aeef8e796f0cf7"
             }
           ],
           "documentary": false,
@@ -3577,19 +3577,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: ҐАБА (тип обробки уточнити). Не є документальною фотографією партії постачальника.",
-          "sha256": "db17edd38fbf7674e04e330d3168bd5e88527aff674fd43cd758aecb657d4a58",
+          "sha256": "4d77f50f2b9667bca5387e3413c9be3dba6155899b2658d02251e6d180eebaf3",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-023-primary-480.webp",
               "width": 480,
-              "sha256": "a37409169b466795271b1b3f112cc6950bc3ea60821829bbfab2279c2c7f5210"
+              "sha256": "33f6b078ebaacb313ad0b07c5c10ffe6d48f32f7918e800fd0cc007c1b66469f"
             },
             {
               "path": "/creative/LIST-023-primary-800.webp",
               "width": 800,
-              "sha256": "b18f92d35b6bfa3e3dc44c993c3637ffe90feb582ca6286951cd85bda8dad250"
+              "sha256": "e34d1250e62ddde6087a16b99e530df1527db1707b59417d369de5e4f43abeb7"
             }
           ],
           "documentary": false,
@@ -3659,19 +3659,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Дун Фан Мей Жень. Не є документальною фотографією партії постачальника.",
-          "sha256": "88374c88c5d646ffc99088b6010e9761a7b19f508b0c90600545ee877d3d9774",
+          "sha256": "e4716923e4cbefc3de9be25d396e34fbb04eb75f74cf56305c6f1f621182fcc8",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-024-primary-480.webp",
               "width": 480,
-              "sha256": "26ae38905faa491bf46c4a13961f8c2b697b4a8368bc4f3d18deb650ed58d720"
+              "sha256": "74956650214a6a348c5d788af33eec738917f963fd497e83627bb513e972a463"
             },
             {
               "path": "/creative/LIST-024-primary-800.webp",
               "width": 800,
-              "sha256": "933710396dac21492b1190ac2e6770b4b6859aed78b0d99469b659af5cd76965"
+              "sha256": "68a3a0acc55279a51619b5b251df1cb3427ff15d2f4551ff0343fe5e14398aee"
             }
           ],
           "documentary": false,
@@ -3714,19 +3714,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Люань Гуапянь (назву підтвердити). Не є документальною фотографією партії постачальника.",
-          "sha256": "f756b455e5c06ab0700fdbc794bd547991fdbd1d47337f3dd96173f96fff9100",
+          "sha256": "196bf169077515e2c5a92aa878603ca7a4f722a2ca3ce03cff03191f115a6eb0",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-025-primary-480.webp",
               "width": 480,
-              "sha256": "3f042f259a89dd518e6db3a878874df4fc61334d61ee80b2d24170d56a9eb3e9"
+              "sha256": "6b369eb3f2b7c878f3fb6076f43ddd70dca6c43fbb23e60329642e32656a2e37"
             },
             {
               "path": "/creative/LIST-025-primary-800.webp",
               "width": 800,
-              "sha256": "3584df5ad870656c01726c6e03c02af1e0c0c54be966ddd9af9de8a224a56426"
+              "sha256": "30226fa7600a988f54ed8ee710bdce8f0fff3eacb87ad9d4392293c3fb380403"
             }
           ],
           "documentary": false,
@@ -3769,19 +3769,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Білочунь. Не є документальною фотографією партії постачальника.",
-          "sha256": "83cd2b4ba2d8c0b64c76af928c4e52bbdd4d0a93257604bab2e253b7bd72573e",
+          "sha256": "dc7d241185dd56ac20e2863c51d13bf26a9b744d4941865e03c4c4eaa5707e95",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-026-primary-480.webp",
               "width": 480,
-              "sha256": "3f5aac4bf217d73dab6290c735f2674b1a268581812d6e1f3c7dae2a58451106"
+              "sha256": "66a34beca92e01db46a9b543b580f5074d6389cf0fc230b7031cf34c8eba8f25"
             },
             {
               "path": "/creative/LIST-026-primary-800.webp",
               "width": 800,
-              "sha256": "a7dc225dba5f26c0c751291ae610d953e46335abaad00cc33f170f08b986cae3"
+              "sha256": "f5a282660ae5c45e392c17c6f01fcb60ca60af426193dd4185c7a6de6f52ee0f"
             }
           ],
           "documentary": false,
