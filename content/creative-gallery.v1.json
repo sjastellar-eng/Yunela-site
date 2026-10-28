@@ -3139,19 +3139,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Шуй Сянь. Не є документальною фотографією партії постачальника.",
-          "sha256": "2ec4eb195b1fee72ffdc6c5fdd136d6cb46c7aa7dbc0e904f5861f3fdb7e9f16",
+          "sha256": "e54b3947766a35e60fcc0bdc886f35e6c345562bcd76d60ea1ac8961dc04f71b",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-017-primary-480.webp",
               "width": 480,
-              "sha256": "143fcd3964ac396e58de095171d0feec725da6be9eacfc9532f107d7af758975"
+              "sha256": "910865b959f416aaff7c3d132e8c2663e955645f0bd7e528c27a5be346908077"
             },
             {
               "path": "/creative/LIST-017-primary-800.webp",
               "width": 800,
-              "sha256": "7a500feec7539494a14b7afdd5702fadec162cd8e96f8c1320380a9fb3c2ed48"
+              "sha256": "3df3c9cd8ca6f9e0acc9bfa0cd9b3fc04aaeb9d9d79564fbee699e5565fcf493"
             }
           ],
           "documentary": false,
@@ -3221,19 +3221,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Шуй Цзінь Ґуй. Не є документальною фотографією партії постачальника.",
-          "sha256": "f5f05ec154706868b84172f5e57e1dea536e6921fed368e40f97522a8918ab66",
+          "sha256": "7de66c9ce76f058a406e72736d26bbdfa67739215dcf5374104f89f028459051",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-018-primary-480.webp",
               "width": 480,
-              "sha256": "a1a177f40fdb36d5c7a9032dd2a4dc05a50395c50524b32496115e3027708a9a"
+              "sha256": "2aaa5bce1a37469d8ca226aa8bccb6a9d84b33d02e0128cac582bfcf716eb93b"
             },
             {
               "path": "/creative/LIST-018-primary-800.webp",
               "width": 800,
-              "sha256": "0473acb80fd204f64690c30afb25f7dd81558357cffa95852a709a6af3a0e4b6"
+              "sha256": "9342d020d44866c22568d050fccba0cdfe80b07bf59fe7e54f492d5381d21917"
             }
           ],
           "documentary": false,
@@ -3276,19 +3276,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Мі Лань Сян Дань Цун. Не є документальною фотографією партії постачальника.",
-          "sha256": "134cfb553302e096e29b414765e35bfdedee87e577b85b792face608c3675e03",
+          "sha256": "419a5b08e007528569d63f817766607aa496b69b216ab849b14c88e136d34fd4",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-019-primary-480.webp",
               "width": 480,
-              "sha256": "2e95a331cf9dcd31b5b9128be12d6f6343fc7337b90742d9c16444eface9b137"
+              "sha256": "0c14ba1f50d411a4644f697a5d274859de23f26b97e546790511b3890f10533c"
             },
             {
               "path": "/creative/LIST-019-primary-800.webp",
               "width": 800,
-              "sha256": "b6939a81e8e63678e881fed2383b1754c77f641aadf320b26b93acdee187f506"
+              "sha256": "369af2d158116a7b74136346e6d4ef5f56ce1aceb42ad5827895e2178065128b"
             }
           ],
           "documentary": false,
@@ -3331,19 +3331,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Дань Цун «Мін даль» (назву уточнити). Не є документальною фотографією партії постачальника.",
-          "sha256": "d3465d8ce3b50deea775043fc3ad18f57c801f588b95a9f5b83281fb58f60a82",
+          "sha256": "efff4a038d0a24c9147851abb25a23f9353f681a8429dbbcc53f918757576c7b",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-020-primary-480.webp",
               "width": 480,
-              "sha256": "5c3162234e31e726bd24e284153399b4812bd233ea8dd499621c27f646befaf1"
+              "sha256": "b17bbb3b7360f45011e1cf7fb99aef4745d420b916c61ac55c90000496254f88"
             },
             {
               "path": "/creative/LIST-020-primary-800.webp",
               "width": 800,
-              "sha256": "16b1e02e9bc580e0c4921d8ef728c1133a2dad349d0e7088ccd0d57403514249"
+              "sha256": "8850904a3a1006800deeb08164a1bdd02c3a78306eaec4709c760ce0df86c5f6"
             }
           ],
           "documentary": false,
@@ -3413,19 +3413,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Художня AI-візуалізація: Женьшеневий улун. Не є документальною фотографією партії постачальника.",
-          "sha256": "32da1a398778f010c06bc8c727dba0e480b5cb92bb11c94b54332213b0a129b2",
+          "sha256": "0eb22b125419661206b8482e3963777c2eada5eb62035cd69469dda5c75776ac",
           "width": 1200,
           "height": 1200,
           "variants": [
             {
               "path": "/creative/LIST-021-primary-480.webp",
               "width": 480,
-              "sha256": "efde4810925e6534ee00b1007f81a720930186bec3927f5f80d55bff73ae3214"
+              "sha256": "4ba6bb58cdb5e73aa58bdcd8cd45e285fbb3e638c1b2fe45226832a6d3a09851"
             },
             {
               "path": "/creative/LIST-021-primary-800.webp",
               "width": 800,
-              "sha256": "fe65e73715faee57308c207de20d250483294e14d691fdead4d2847e2dceb81e"
+              "sha256": "0f2bf6a6d5cb2f8fdf463da6a0797edbd2fc9589d13a80c6fa41847f32918826"
             }
           ],
           "documentary": false,
