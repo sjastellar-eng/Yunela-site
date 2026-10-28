@@ -1,0 +1,1738 @@
+{
+  "base": "f6ddcb149b7cc9b0b57f1d5a107b52f028f25020",
+  "source": "3e87ade2d073332c6e181fae8d755f5d40a4780d",
+  "scope": "PASS",
+  "targetImages": 15,
+  "otherSku": 51,
+  "previousSku": [
+    "LIST-001",
+    "LIST-002",
+    "LIST-003",
+    "LIST-004",
+    "LIST-005",
+    "LIST-006",
+    "LIST-007",
+    "LIST-008",
+    "LIST-009",
+    "LIST-010",
+    "LIST-011",
+    "LIST-012",
+    "LIST-013",
+    "LIST-014",
+    "LIST-015",
+    "LIST-016",
+    "PHOTO-001",
+    "PHOTO-008",
+    "PHOTO-010"
+  ],
+  "nonHashManifestData": "identical",
+  "preservedCreativeFiles": 332,
+  "liveAssets": [
+    {
+      "sku": "PHOTO-001",
+      "path": "/creative/PHOTO-001.webp",
+      "sha256": "f8d89e0644f37e3f014cafcb06f3ecadff24593a34feb03c2c36261a2b6bb8be",
+      "bytes": 297414,
+      "size": [
+        1254,
+        1254
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "PHOTO-001",
+      "path": "/creative/PHOTO-001-primary-480.webp",
+      "sha256": "427b3a7db01fd5f7d426ea9bbf163e1ae4fe757d4af52a8ca420639c37f60fcc",
+      "bytes": 69996,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "PHOTO-001",
+      "path": "/creative/PHOTO-001-primary-800.webp",
+      "sha256": "1227ec1ebe199f1f2bf5a8bd80745b7c7116bfb6d352722e9567cdbac9b39f4f",
+      "bytes": 166538,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "PHOTO-001",
+      "path": "/creative/PHOTO-001-illustration.webp",
+      "sha256": "a52f2b05a3539c4c177772c4368cc889772811651fe502d2d03f9ad31b580508",
+      "bytes": 534672,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "PHOTO-001",
+      "path": "/creative/PHOTO-001-illustration-480.webp",
+      "sha256": "626d27779ec8e5bf76dc565149c4413546d26d112e1691250dd5130d1f06ddfc",
+      "bytes": 87808,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "PHOTO-001",
+      "path": "/creative/PHOTO-001-illustration-800.webp",
+      "sha256": "9df264015bb6ccd36a0f48ec55e266dbd8a89b0ee63db59c88238fdb9f410cf0",
+      "bytes": 233868,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "PHOTO-001",
+      "path": "/creative/PHOTO-001-illustration-texture.webp",
+      "sha256": "0a3faa27ef463e7317be72b0fc8f290c8eb66d6285ba20fb8c793e8739c67990",
+      "bytes": 338342,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "PHOTO-001",
+      "path": "/creative/PHOTO-001-illustration-texture-480.webp",
+      "sha256": "89a735617e2ff197fc082ff48e7a63e7ea09f8a5ac5c6bc197a9ed27892daaf4",
+      "bytes": 127384,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "PHOTO-008",
+      "path": "/creative/PHOTO-008.webp",
+      "sha256": "6f981754ffe27d7999af4a0769d6e1ad9e6ebf618dcc24a614ede625d70eb452",
+      "bytes": 257146,
+      "size": [
+        1254,
+        1254
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "PHOTO-008",
+      "path": "/creative/PHOTO-008-primary-480.webp",
+      "sha256": "f03e9ecde3340f4e87a165d541126c384581ab4d19e2015775ed6c92a6f8ff28",
+      "bytes": 52314,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "PHOTO-008",
+      "path": "/creative/PHOTO-008-primary-800.webp",
+      "sha256": "c719f52df121f635690046cf76d2881c9986c5d882061dd5b6b13743008ece51",
+      "bytes": 130768,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "PHOTO-010",
+      "path": "/creative/PHOTO-010.webp",
+      "sha256": "78e9314b55558dbfde48d396d3a79bbb72b2313daeb2fcb60601dfbf35ed9348",
+      "bytes": 225840,
+      "size": [
+        1254,
+        1254
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "PHOTO-010",
+      "path": "/creative/PHOTO-010-primary-480.webp",
+      "sha256": "484daea5039bc9097861362e54891ab516da88f8a96214821d78b476b55a9593",
+      "bytes": 43598,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "PHOTO-010",
+      "path": "/creative/PHOTO-010-primary-800.webp",
+      "sha256": "d1d7173ca615243cdbb4257d8d72fcfffa1626166170468cccdda6b93fd18ccb",
+      "bytes": 108976,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-001",
+      "path": "/creative/LIST-001.webp",
+      "sha256": "cd1c3d7bb7162d62b702e2b5d32ee7a87a57519aedadb12a3b4264553ad9a06f",
+      "bytes": 193490,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-001",
+      "path": "/creative/LIST-001-primary-480.webp",
+      "sha256": "bd589b1992bfdcffd99ca7cb6ca5a93e4f891f63b45eb927fee84603bc2222d2",
+      "bytes": 44890,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-001",
+      "path": "/creative/LIST-001-primary-800.webp",
+      "sha256": "bbe6cb3a6f2acdf360dd7c04305dec7e373b15f14cff8ed40be7a6067287faa7",
+      "bytes": 107000,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-001",
+      "path": "/creative/LIST-001-secondary.webp",
+      "sha256": "06fd569562dd3fbc3f746e628a3515e42b272c004af2a68e497a9da7848ecfd0",
+      "bytes": 175720,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-001",
+      "path": "/creative/LIST-001-secondary-480.webp",
+      "sha256": "b2c55fb0575e735b940a7eca6072eef69c53aeaa6fbce192a5a1830a3015b7df",
+      "bytes": 33620,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-001",
+      "path": "/creative/LIST-001-secondary-800.webp",
+      "sha256": "271cfc878ac7449f0ec6c1824168a5c2e3dc0af5a0ccf7b099d471b0d2247135",
+      "bytes": 75734,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-001",
+      "path": "/creative/LIST-001-texture.webp",
+      "sha256": "35c48712f8e01eb14b684799005bed337611ae07cc70d48069b8743ba2e14cad",
+      "bytes": 172620,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-001",
+      "path": "/creative/LIST-001-texture-480.webp",
+      "sha256": "550043954484b1b4fcfb2eaed0fa3c706ff5eee89f5f299938b39fca0d2a7b0a",
+      "bytes": 67702,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-002",
+      "path": "/creative/LIST-002.webp",
+      "sha256": "a4c02e1339936d57bec660d54b90ae1975bb52340892ed076c7bd4c6a00c8390",
+      "bytes": 198666,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-002",
+      "path": "/creative/LIST-002-primary-480.webp",
+      "sha256": "f09fd2876d3537f919d16380d0d9e19596c9f3e52b5cb178123dabcf12dd225e",
+      "bytes": 41770,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-002",
+      "path": "/creative/LIST-002-primary-800.webp",
+      "sha256": "4f149cbba1b609f5b6d0f463f844ab92aa4e9e58979fc49188f9e23009c496f6",
+      "bytes": 102284,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-002",
+      "path": "/creative/LIST-002-secondary.webp",
+      "sha256": "09bc4ac235096d3a137c49f3f0cb28658a2976258d28da3b0484a74048a66617",
+      "bytes": 179970,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-002",
+      "path": "/creative/LIST-002-secondary-480.webp",
+      "sha256": "61ed324d0b1c072c839fd56e51063eff36b697b287285f3f23beaf0916ecfe6d",
+      "bytes": 36738,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-002",
+      "path": "/creative/LIST-002-secondary-800.webp",
+      "sha256": "e5e211489bc2a6e0990a590dbf39782bf750c250257bf66a8b44b1dad10a09d2",
+      "bytes": 80248,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-002",
+      "path": "/creative/LIST-002-texture.webp",
+      "sha256": "799d3ae87bed90691611884ca38d7e148d7f6fd036f19baf765bddb04bd91db5",
+      "bytes": 207348,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-002",
+      "path": "/creative/LIST-002-texture-480.webp",
+      "sha256": "021c87b7792f0785dd5b3fe69f644af0572b6c41c5a3d70611b076a1e49036f3",
+      "bytes": 80840,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-003",
+      "path": "/creative/LIST-003.webp",
+      "sha256": "2634dd52668a821603fa34e2e02683aa7e1ff45825c2e603d36a7c6c84a4d6aa",
+      "bytes": 234170,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-003",
+      "path": "/creative/LIST-003-primary-480.webp",
+      "sha256": "19424c31f5e51a0a395249c78f5a9de4aaf93a5cdc08f4fb08548dabfbf06ee8",
+      "bytes": 54698,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-003",
+      "path": "/creative/LIST-003-primary-800.webp",
+      "sha256": "9cd0cceb5e355905c87923e8d494fd4ce0d6c809514b3f8f705117ff48537a42",
+      "bytes": 128078,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-003",
+      "path": "/creative/LIST-003-texture.webp",
+      "sha256": "d783dd25ca61ac095c1db55a16fed4c9bea5cc21bbfd43b40ffd5ec4489ac829",
+      "bytes": 250266,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-003",
+      "path": "/creative/LIST-003-texture-480.webp",
+      "sha256": "bf7f9998332cd20a25d8b4a9414a78633a44b96a06ef11d2ffad5ed29fa786a9",
+      "bytes": 103954,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-004",
+      "path": "/creative/LIST-004.webp",
+      "sha256": "ea0f33f876b6e73a965a9e87c052cf92ec14dc4e639456e2cc3d5688467879af",
+      "bytes": 211942,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-004",
+      "path": "/creative/LIST-004-primary-480.webp",
+      "sha256": "09a225122aadcb4142e76b695caa31ec69316b560d265c0a737ee9016805313d",
+      "bytes": 46788,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-004",
+      "path": "/creative/LIST-004-primary-800.webp",
+      "sha256": "9a0e67d17bbf94dae7add637e9a95e0c683c1e7d6647d2aa954e76f11c6c2fcb",
+      "bytes": 111502,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-004",
+      "path": "/creative/LIST-004-texture.webp",
+      "sha256": "7f30df300245d2f6a1f5d62b03489d633ec470ad305d773b39e9e04b0d23bc32",
+      "bytes": 220278,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-004",
+      "path": "/creative/LIST-004-texture-480.webp",
+      "sha256": "23ca147c0a4e94db15ae726242025a18cc9d8876b41e99b9b1a19e6e07eb0268",
+      "bytes": 91056,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-005",
+      "path": "/creative/LIST-005.webp",
+      "sha256": "1e385d95a35d2d2c53272f0e6377aa64e3c7a3a8c5ae2d1b2bed7d8f61a69ec8",
+      "bytes": 225214,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-005",
+      "path": "/creative/LIST-005-primary-480.webp",
+      "sha256": "5948dd13b79bed2dbeca0ca62983af31e28e28817058af9decf2583ef7fbb4db",
+      "bytes": 49812,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-005",
+      "path": "/creative/LIST-005-primary-800.webp",
+      "sha256": "8eb8e1e74a298761678e0223be9fcbe3eacf603fb4cbfaacf2ad5ce5bd495412",
+      "bytes": 119546,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-005",
+      "path": "/creative/LIST-005-texture.webp",
+      "sha256": "fb97e6c214a25f64ecc6d5c8b2311f4217ccb6bb5a22fbdfec085e80c34955f9",
+      "bytes": 224774,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-005",
+      "path": "/creative/LIST-005-texture-480.webp",
+      "sha256": "a1764352e346ed2421a5b4036fd5454438bf980a35cc42f0d04d55a00b8418d0",
+      "bytes": 93674,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-006",
+      "path": "/creative/LIST-006.webp",
+      "sha256": "61b082d120fa07607adb4b4fd8c9aa8ad279d306cf0861353f5cb8f9059d34b3",
+      "bytes": 376348,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-006",
+      "path": "/creative/LIST-006-primary-480.webp",
+      "sha256": "7097a441c94f4c9faba2f4af036220e776904778249fe59de1e460962329614b",
+      "bytes": 85758,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-006",
+      "path": "/creative/LIST-006-primary-800.webp",
+      "sha256": "e3d78455b01369c97e632b60465759fa64b17813938dd8d7f48076ad32f9de35",
+      "bytes": 213368,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-006",
+      "path": "/creative/LIST-006-secondary.webp",
+      "sha256": "909a71130c8c2caa499c21823df11d1a3cb281e2ade49e8cab0fbacb694e31af",
+      "bytes": 339386,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-006",
+      "path": "/creative/LIST-006-secondary-480.webp",
+      "sha256": "745f6a2818fcbf113db2d15da26f18e5e36f5406d5a98bf9f406d620018ddcbb",
+      "bytes": 61098,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-006",
+      "path": "/creative/LIST-006-secondary-800.webp",
+      "sha256": "9a17622ca632d0dd66a61ee449a031749c9e4075f886e0e28313446ec7bf3c5e",
+      "bytes": 147280,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-006",
+      "path": "/creative/LIST-006-texture.webp",
+      "sha256": "158001589b50d5aadaa3c8c64a4d326f31cfc4354e03807e71828e80cd0a338c",
+      "bytes": 260104,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-006",
+      "path": "/creative/LIST-006-texture-480.webp",
+      "sha256": "4e363f2873ae2c038b0acd257e994f29532ab37b364cd944350de07ecf1c1b25",
+      "bytes": 102698,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-007",
+      "path": "/creative/LIST-007.webp",
+      "sha256": "ad3f45fde8d88cc474a01c4b43dff2f8e5be77478fef1a72a07cc8f5da4b6e98",
+      "bytes": 241144,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-007",
+      "path": "/creative/LIST-007-primary-480.webp",
+      "sha256": "d3f6bb45c9eda3513f2a1b21ab2232cef055769f376590fe458072e2f6cd7e60",
+      "bytes": 49230,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-007",
+      "path": "/creative/LIST-007-primary-800.webp",
+      "sha256": "4f09b0f7cee24ed3fa10223f8733c46e678c4a2f449382e758a77fa2ea901693",
+      "bytes": 121412,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-007",
+      "path": "/creative/LIST-007-texture.webp",
+      "sha256": "9b9001ff1575aa69d4a331a66bfa5ec2da9ac84f142f1880acfab754c124cc48",
+      "bytes": 258484,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-007",
+      "path": "/creative/LIST-007-texture-480.webp",
+      "sha256": "19dba08314b437446bf4a284e89a089175caf212d0cc04ac78d97d1e5fe9b7af",
+      "bytes": 96332,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-008",
+      "path": "/creative/LIST-008.webp",
+      "sha256": "741ff059400d68b272f367ffc427f87be551dd291f6aefb3c3d21ed48e940c71",
+      "bytes": 286880,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-008",
+      "path": "/creative/LIST-008-primary-480.webp",
+      "sha256": "b7122a3173dcb0fe713eefb8032a6d640be6976c9fabe84f39412f55a3b7d6e1",
+      "bytes": 63806,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-008",
+      "path": "/creative/LIST-008-primary-800.webp",
+      "sha256": "b48fee517e227a7dee479a9068aeb88ae1542cb1f6376ea9f4db6c3ba2cf1575",
+      "bytes": 149790,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-008",
+      "path": "/creative/LIST-008-secondary.webp",
+      "sha256": "8e806f9b8bdc95d710b380057a111bd49edbf076b5c033238bd6104af4eb66eb",
+      "bytes": 279776,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-008",
+      "path": "/creative/LIST-008-secondary-480.webp",
+      "sha256": "83e84f1066ff0c4c772c929913eb152515ecf4e8861224ac0ae68e19579d96c8",
+      "bytes": 53896,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-008",
+      "path": "/creative/LIST-008-secondary-800.webp",
+      "sha256": "06513b64787209d1256747e8cd9eaae544de32fbcd4cd8a78fa1b87385b883df",
+      "bytes": 128308,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-008",
+      "path": "/creative/LIST-008-texture.webp",
+      "sha256": "54094cddbd893b0d6f85794dbcb4149612df252e9183c2d3bc95e1ecaae7f616",
+      "bytes": 231620,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-008",
+      "path": "/creative/LIST-008-texture-480.webp",
+      "sha256": "0c83ad4911e71837c1efe3c32462e4c228080aafc02d29d657e92dc88156d9a3",
+      "bytes": 93902,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-009",
+      "path": "/creative/LIST-009.webp",
+      "sha256": "1ba86485205a3014306607b6b00e09e77fcb6f0b186deebfec164232ce7059b4",
+      "bytes": 214572,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-009",
+      "path": "/creative/LIST-009-primary-480.webp",
+      "sha256": "5c1d76d68e2f5c94cd3bffd9780d15436008fe5f19482bbe720e14c4e15b64fa",
+      "bytes": 46818,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-009",
+      "path": "/creative/LIST-009-primary-800.webp",
+      "sha256": "0d89ed34c9eebe23d5b60349f6773c44f56d5fb3695c93d083540d76af48e873",
+      "bytes": 111542,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-009",
+      "path": "/creative/LIST-009-texture.webp",
+      "sha256": "1a5460f4140214b3bce32e0b8179d362970b184aca50dba9c9bee00df4b3849e",
+      "bytes": 228994,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-009",
+      "path": "/creative/LIST-009-texture-480.webp",
+      "sha256": "a77b8a10cd35991dfc39c53544979df0ce5a3246ea906b57a6c49cc335c588ca",
+      "bytes": 92868,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-010",
+      "path": "/creative/LIST-010.webp",
+      "sha256": "fedc6b275d59ad3ef99ee5d839ab534a7e1b52139f0858fde2173ab2cd4f8ac3",
+      "bytes": 262478,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-010",
+      "path": "/creative/LIST-010-primary-480.webp",
+      "sha256": "2f45053419d680db63836d7606c7cc93b0e7344076586323e872c25ce032c1a7",
+      "bytes": 59236,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-010",
+      "path": "/creative/LIST-010-primary-800.webp",
+      "sha256": "0d29114d38a31146cc3176389f1e74f54821dea64377b83ee91c52bf51d90098",
+      "bytes": 136722,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-010",
+      "path": "/creative/LIST-010-secondary.webp",
+      "sha256": "f573c092527c8e9fad087b113fe55c0f954d90e567aae02afc781826cb8c2970",
+      "bytes": 279674,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-010",
+      "path": "/creative/LIST-010-secondary-480.webp",
+      "sha256": "79cad966af8abf03955654eea3fb72d77078123875e957e77aff8a14928e2d96",
+      "bytes": 51614,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-010",
+      "path": "/creative/LIST-010-secondary-800.webp",
+      "sha256": "f8c146884c12e04503124cc227ebc22a8db8784ceb850906c9d824ab7a2000bb",
+      "bytes": 122982,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-010",
+      "path": "/creative/LIST-010-texture.webp",
+      "sha256": "fa6d327bc55ec4c142efbde4a17a93af5366162fef0d8336530f1dcd45fd4c9a",
+      "bytes": 270232,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-010",
+      "path": "/creative/LIST-010-texture-480.webp",
+      "sha256": "b94d130242f1be96dd832f800e1689758cc8ceb17fd4c309d15e2fdd648ba516",
+      "bytes": 108708,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-011",
+      "path": "/creative/LIST-011.webp",
+      "sha256": "ea16c2757122ed1c2b924cf62b431de75e381e5a2954c8fa57990edeea9585e3",
+      "bytes": 296002,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-011",
+      "path": "/creative/LIST-011-primary-480.webp",
+      "sha256": "269626689644a03d64ae0854167ccb1860fa17f8c12703489701c5f13a5462a0",
+      "bytes": 63872,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-011",
+      "path": "/creative/LIST-011-primary-800.webp",
+      "sha256": "32bec453609bf42e93c49d7ec92071403bece8ddcf62ffe04cbb6b44fc06093a",
+      "bytes": 152396,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-011",
+      "path": "/creative/LIST-011-texture.webp",
+      "sha256": "23f0b0b095ee7dc890758751efb3a120f90c3c9fec22ce84d008a104ef3b3633",
+      "bytes": 291270,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-011",
+      "path": "/creative/LIST-011-texture-480.webp",
+      "sha256": "d15ed93d488ba9ac901be17d51a7c4bb9f956de114045791578369d1bc1f72fb",
+      "bytes": 118774,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-012",
+      "path": "/creative/LIST-012.webp",
+      "sha256": "fe7da07f4f22cda4bf08bf909db70d6334ff98e1d849c5fa2b2624a08845511a",
+      "bytes": 249106,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-012",
+      "path": "/creative/LIST-012-primary-480.webp",
+      "sha256": "f7a432a98249cad1061c12db04a082a25e7409662d0b99c1b16465b628075c74",
+      "bytes": 55274,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-012",
+      "path": "/creative/LIST-012-primary-800.webp",
+      "sha256": "8d0bdd91e1a5610ae529108485f6dce6ccc31312f54ea20924ff5c83ce594282",
+      "bytes": 130776,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-012",
+      "path": "/creative/LIST-012-secondary.webp",
+      "sha256": "0f2f8725953ea97823b2f285a0b4d100fca31da7e011b09ea6121c9bdb25a2be",
+      "bytes": 206994,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-012",
+      "path": "/creative/LIST-012-secondary-480.webp",
+      "sha256": "b5013dffe8bb637a15f458531def54bc3623cdc75086cbdaa20ded1503dfdd26",
+      "bytes": 39436,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-012",
+      "path": "/creative/LIST-012-secondary-800.webp",
+      "sha256": "8423c05481374ea4f5f85c2af2dea591f068b88aa350711729672446a7671ab1",
+      "bytes": 92486,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-012",
+      "path": "/creative/LIST-012-texture.webp",
+      "sha256": "cdf09be396d69a9465a6243985365dbfc32b096d7dbe8dd8e52c283874c98796",
+      "bytes": 269488,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-012",
+      "path": "/creative/LIST-012-texture-480.webp",
+      "sha256": "eef6528786d09119ec0135999df644fba1dbd12ac1eb578d66fc8e94f9818d01",
+      "bytes": 112044,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-013",
+      "path": "/creative/LIST-013.webp",
+      "sha256": "f57542d9a541f86e86faf99c2d3ced82d72d998f5fd89f4cd2de3e671a8df478",
+      "bytes": 254470,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-013",
+      "path": "/creative/LIST-013-primary-480.webp",
+      "sha256": "3844018384974e76832ea9707e128fae2339f1f61ca237fa60a035ed095aa121",
+      "bytes": 51538,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-013",
+      "path": "/creative/LIST-013-primary-800.webp",
+      "sha256": "79a80cf590bded05828b1d3d87feec36b38f8733301793e53823abaf4273c79b",
+      "bytes": 130688,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-013",
+      "path": "/creative/LIST-013-secondary.webp",
+      "sha256": "500fd7716bc74ba6071afccf642df455ac751f310a851930e6919a3d64eb9fe5",
+      "bytes": 283138,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-013",
+      "path": "/creative/LIST-013-secondary-480.webp",
+      "sha256": "fab81a7a21dc9ec0eb18922e9a54eff48e5a9be4922369ec4b769e3f6514ed11",
+      "bytes": 49898,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-013",
+      "path": "/creative/LIST-013-secondary-800.webp",
+      "sha256": "7f49b090cc995d18264021c8a1f1f79956f79dc5ff5af0180645f83ec5d352d7",
+      "bytes": 124470,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-013",
+      "path": "/creative/LIST-013-texture.webp",
+      "sha256": "28a8b3895bf8b22a812c9f93e1f1713ed68836a6b03b982fc290ea0cfc5c7f7a",
+      "bytes": 248564,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-013",
+      "path": "/creative/LIST-013-texture-480.webp",
+      "sha256": "d936a39bfb5fe8ce3241dd6f9db38445bf1de4fcafe6a528c73ad334b34ac131",
+      "bytes": 98030,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-014",
+      "path": "/creative/LIST-014.webp",
+      "sha256": "55ec091bba5f5413a3b03f30c1f086daf461ad4dd8180313846b952053263b00",
+      "bytes": 340780,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-014",
+      "path": "/creative/LIST-014-primary-480.webp",
+      "sha256": "b20a36b65f432c27e2f4c190e9edf83a0662df2f3350fa3b5e35e2c456764bbe",
+      "bytes": 79632,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-014",
+      "path": "/creative/LIST-014-primary-800.webp",
+      "sha256": "0d1314dfc2fc4b52b823972224bfbb57d9fd74dff98497974c8a45fe300c5698",
+      "bytes": 192346,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-014",
+      "path": "/creative/LIST-014-secondary.webp",
+      "sha256": "2ef7e909e3bbf4a7b1c7d6ce20adcc76034d07b630654b36ba79887338d200e2",
+      "bytes": 274736,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-014",
+      "path": "/creative/LIST-014-secondary-480.webp",
+      "sha256": "2119583fde068ee6b0d594844a28d091e8ddab5e2a309d18b42db5b4d9445211",
+      "bytes": 48636,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-014",
+      "path": "/creative/LIST-014-secondary-800.webp",
+      "sha256": "f9f25e3c6b46a9f2f0b30b1d2c99a6957ba1f3051bdc7d1984fba083c8939ac2",
+      "bytes": 119330,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-014",
+      "path": "/creative/LIST-014-texture.webp",
+      "sha256": "23a5cfb1561b1221e7f13d97a266b4b84781c1da8071c29bbd01e441834922ed",
+      "bytes": 232880,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-014",
+      "path": "/creative/LIST-014-texture-480.webp",
+      "sha256": "7ea3b052f155f152124a0bc04d158bcf3ce17873f8afb1a9292a766166f5ce3c",
+      "bytes": 94274,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-015",
+      "path": "/creative/LIST-015.webp",
+      "sha256": "e2a98d3533db5a8f3571f27c9c515e64069880ea27c1f4ea500575959e56398c",
+      "bytes": 302414,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-015",
+      "path": "/creative/LIST-015-primary-480.webp",
+      "sha256": "1e4c43a6de4da6f6579890e9c550c936bf09bb450ced83f1308d74b6d1364bab",
+      "bytes": 65568,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-015",
+      "path": "/creative/LIST-015-primary-800.webp",
+      "sha256": "575c8cfcb8fe2ae3bf49b41c3461b64a179c2f260b1fa449583bbe3bb9f4dd54",
+      "bytes": 159178,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-015",
+      "path": "/creative/LIST-015-secondary.webp",
+      "sha256": "eaec8989cdb5f98854e8d72af5a68142c02a34439778e0fd1cbdab37a7117e24",
+      "bytes": 223952,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-015",
+      "path": "/creative/LIST-015-secondary-480.webp",
+      "sha256": "f84ff501522c50256a80f5ec352fc8ec43f9e6133efedbf78a777ba07cc8f71b",
+      "bytes": 40868,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-015",
+      "path": "/creative/LIST-015-secondary-800.webp",
+      "sha256": "e719dd1a1c7008b4939ea188f6399ca2b223517f6cd1ec83783c38da798356f4",
+      "bytes": 97910,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-015",
+      "path": "/creative/LIST-015-texture.webp",
+      "sha256": "fc69e958f597652763ed98c5f17f1b8f2b91bff990164e43db253d4cd17d1538",
+      "bytes": 289194,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-015",
+      "path": "/creative/LIST-015-texture-480.webp",
+      "sha256": "88dce50aee06f5d4f0991d7cd3d6be10ec8cd5cad1d7b80dc860566c809a0d03",
+      "bytes": 115980,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-016",
+      "path": "/creative/LIST-016.webp",
+      "sha256": "14d057283410fd9bb99d83334f79dc19f314099320f97e8ab01e5e5ab2983cf9",
+      "bytes": 411514,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-016",
+      "path": "/creative/LIST-016-primary-480.webp",
+      "sha256": "4af9501926c3e3395c352f2ccfc1fea12f25cf6cfbf300f79fc8133f0e975766",
+      "bytes": 91672,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-016",
+      "path": "/creative/LIST-016-primary-800.webp",
+      "sha256": "78ff36f29fd1e24e0bbf9c36f1195927b881f3c60c8d75c396abbc519d535590",
+      "bytes": 226074,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-016",
+      "path": "/creative/LIST-016-texture.webp",
+      "sha256": "38069572e8ccae493cf2e807bd5de459540772ae1675aaa9d10b77172567ad76",
+      "bytes": 294074,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-016",
+      "path": "/creative/LIST-016-texture-480.webp",
+      "sha256": "b34bd3afc66bee4e460ea39c24c1bd965b8730418c3537cbe7530e06dee0a269",
+      "bytes": 114844,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-017",
+      "path": "/creative/LIST-017.webp",
+      "sha256": "e54b3947766a35e60fcc0bdc886f35e6c345562bcd76d60ea1ac8961dc04f71b",
+      "bytes": 276604,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-017",
+      "path": "/creative/LIST-017-primary-480.webp",
+      "sha256": "910865b959f416aaff7c3d132e8c2663e955645f0bd7e528c27a5be346908077",
+      "bytes": 55982,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-017",
+      "path": "/creative/LIST-017-primary-800.webp",
+      "sha256": "3df3c9cd8ca6f9e0acc9bfa0cd9b3fc04aaeb9d9d79564fbee699e5565fcf493",
+      "bytes": 135844,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-017",
+      "path": "/creative/LIST-017-secondary.webp",
+      "sha256": "7c4553cd2f114cffd4f9bbb5c40bef4ee1947399f3eec753185a604e8bb9ef77",
+      "bytes": 297944,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-017",
+      "path": "/creative/LIST-017-secondary-480.webp",
+      "sha256": "27fd80fb919891dfbbde7f454c9a90d23fb4c17a37f26bf5d166ad774d4789de",
+      "bytes": 53562,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-017",
+      "path": "/creative/LIST-017-secondary-800.webp",
+      "sha256": "486249a05695b831b3d038281678ee9204ccf234b40dbbd1c98d0f8455d29f61",
+      "bytes": 130314,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-017",
+      "path": "/creative/LIST-017-texture.webp",
+      "sha256": "d2e849d440b9848ff457e3997c1adc80a42a9f704cb72bc74b57a735292f2e93",
+      "bytes": 269702,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-017",
+      "path": "/creative/LIST-017-texture-480.webp",
+      "sha256": "312247e0f6e3f445e3880843ba2c2db999a1e7f3deccaca431c5bbc6538dd1b7",
+      "bytes": 101470,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-018",
+      "path": "/creative/LIST-018.webp",
+      "sha256": "7de66c9ce76f058a406e72736d26bbdfa67739215dcf5374104f89f028459051",
+      "bytes": 270564,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-018",
+      "path": "/creative/LIST-018-primary-480.webp",
+      "sha256": "2aaa5bce1a37469d8ca226aa8bccb6a9d84b33d02e0128cac582bfcf716eb93b",
+      "bytes": 58186,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-018",
+      "path": "/creative/LIST-018-primary-800.webp",
+      "sha256": "9342d020d44866c22568d050fccba0cdfe80b07bf59fe7e54f492d5381d21917",
+      "bytes": 140746,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-018",
+      "path": "/creative/LIST-018-texture.webp",
+      "sha256": "2f3cb236d4a5e2adf6693ba3c0a991668bfcb70721b2cfbae8243d5f037c5a13",
+      "bytes": 276340,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-018",
+      "path": "/creative/LIST-018-texture-480.webp",
+      "sha256": "d790de2365ce796d6150f4a42d00d18f80205e212facbae450aae6adaeb97243",
+      "bytes": 112876,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-019",
+      "path": "/creative/LIST-019.webp",
+      "sha256": "419a5b08e007528569d63f817766607aa496b69b216ab849b14c88e136d34fd4",
+      "bytes": 291924,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-019",
+      "path": "/creative/LIST-019-primary-480.webp",
+      "sha256": "0c14ba1f50d411a4644f697a5d274859de23f26b97e546790511b3890f10533c",
+      "bytes": 61656,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-019",
+      "path": "/creative/LIST-019-primary-800.webp",
+      "sha256": "369af2d158116a7b74136346e6d4ef5f56ce1aceb42ad5827895e2178065128b",
+      "bytes": 147960,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-019",
+      "path": "/creative/LIST-019-texture.webp",
+      "sha256": "6944527b256f29be5efceeb76558d5669a2996952743a62c2f0d3a04b0557329",
+      "bytes": 266040,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-019",
+      "path": "/creative/LIST-019-texture-480.webp",
+      "sha256": "99f95dac77fa6db210419ac13b2eb72fe47cbeffb92d5ca0d9d8f5cda96942d4",
+      "bytes": 105466,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-020",
+      "path": "/creative/LIST-020.webp",
+      "sha256": "efff4a038d0a24c9147851abb25a23f9353f681a8429dbbcc53f918757576c7b",
+      "bytes": 240524,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-020",
+      "path": "/creative/LIST-020-primary-480.webp",
+      "sha256": "b17bbb3b7360f45011e1cf7fb99aef4745d420b916c61ac55c90000496254f88",
+      "bytes": 53528,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-020",
+      "path": "/creative/LIST-020-primary-800.webp",
+      "sha256": "8850904a3a1006800deeb08164a1bdd02c3a78306eaec4709c760ce0df86c5f6",
+      "bytes": 124188,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-020",
+      "path": "/creative/LIST-020-secondary.webp",
+      "sha256": "8932c10722a43cd2788c4077cfedf21281e6ef72858c013c41e890a0d9ad1b5f",
+      "bytes": 267936,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-020",
+      "path": "/creative/LIST-020-secondary-480.webp",
+      "sha256": "58679a180953525f23e5496f73a2c873c2e6edddee556189f94dcb493704b837",
+      "bytes": 48972,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-020",
+      "path": "/creative/LIST-020-secondary-800.webp",
+      "sha256": "f86fb39323767d8c717d3ade836a78cc72573ae09e0243167d95a8dfc0a5711d",
+      "bytes": 115434,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-020",
+      "path": "/creative/LIST-020-texture.webp",
+      "sha256": "16f83175cab86e0cc9c9be171d89ed4744f4b4943d776cfe1a9f28ebbd93cb9b",
+      "bytes": 234052,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-020",
+      "path": "/creative/LIST-020-texture-480.webp",
+      "sha256": "51a82a2f6c96fba3580e5c4014ca582ee566ed4db4b5979b02757233794aa916",
+      "bytes": 95504,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-021",
+      "path": "/creative/LIST-021.webp",
+      "sha256": "0eb22b125419661206b8482e3963777c2eada5eb62035cd69469dda5c75776ac",
+      "bytes": 274400,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-021",
+      "path": "/creative/LIST-021-primary-480.webp",
+      "sha256": "4ba6bb58cdb5e73aa58bdcd8cd45e285fbb3e638c1b2fe45226832a6d3a09851",
+      "bytes": 52026,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-021",
+      "path": "/creative/LIST-021-primary-800.webp",
+      "sha256": "0f2bf6a6d5cb2f8fdf463da6a0797edbd2fc9589d13a80c6fa41847f32918826",
+      "bytes": 135564,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-021",
+      "path": "/creative/LIST-021-secondary.webp",
+      "sha256": "7a97a82bf674d3922759a469f4407f84e6f9b1af13fff4d1d5ba3d5ec17ae469",
+      "bytes": 252320,
+      "size": [
+        1200,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-021",
+      "path": "/creative/LIST-021-secondary-480.webp",
+      "sha256": "82630157b7dd447939ee9393d8573e400c0e38c2ff079cdc739082a970546a9c",
+      "bytes": 41110,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-021",
+      "path": "/creative/LIST-021-secondary-800.webp",
+      "sha256": "823a4002ad133d7ebd702fa139a8fd23d32ec3dd5ee97d0fe2e8c00a52407440",
+      "bytes": 103604,
+      "size": [
+        800,
+        800
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-021",
+      "path": "/creative/LIST-021-texture.webp",
+      "sha256": "cbec8acf81e6fcdc28bb304cc64524451ef1492426dc5d31e97131dc4ed7c05a",
+      "bytes": 274956,
+      "size": [
+        777,
+        777
+      ],
+      "status": "PASS"
+    },
+    {
+      "sku": "LIST-021",
+      "path": "/creative/LIST-021-texture-480.webp",
+      "sha256": "27843005f3b6a22fa48566be0e820bd173061d724e2f11365cde8330abcd358d",
+      "bytes": 103766,
+      "size": [
+        480,
+        480
+      ],
+      "status": "PASS"
+    }
+  ],
+  "liveAssetsCount": 155
+}

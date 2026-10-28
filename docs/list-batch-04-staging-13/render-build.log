@@ -1,0 +1,71 @@
+2026-10-28T22:10:35.011993146Z [34m[1m==>(B[m [1mDownloading cache...(B[m
+2026-10-28T22:10:35.038619985Z [34m[1m==>(B[m [1mCloning from https://github.com/sjastellar-eng/Yunela-site(B[m
+2026-10-28T22:10:43.720033197Z [34;1m==>[0;22m [1mDownloaded and extracted 97 MiB cache in 8s.[22m
+2026-10-28T22:10:49.816178489Z [34m[1m==>(B[m [1mChecking out commit 3e87ade2d073332c6e181fae8d755f5d40a4780d in branch feat/creative-gallery-v9-2(B[m
+2026-10-28T22:10:51.975463029Z [34m[1m==>(B[m [1mInstalling dependencies with npm...(B[m
+2026-10-28T22:10:52.046147762Z [34;1m==>[0;22m [1mUsing Node.js version 24.22.1 (default)[22m
+2026-10-28T22:10:52.046161448Z [34;1m==>[0;22m [1mDocs on specifying a Node.js version: https://render.com/docs/node-version[22m
+2026-10-28T22:10:53.110642774Z 
+2026-10-28T22:10:53.110669048Z up to date, audited 245 packages in 982ms
+2026-10-28T22:10:53.110678673Z 
+2026-10-28T22:10:53.110767327Z 60 packages are looking for funding
+2026-10-28T22:10:53.110803507Z   run `npm fund` for details
+2026-10-28T22:10:53.172393697Z 
+2026-10-28T22:10:53.172415166Z 9 vulnerabilities (1 moderate, 6 high, 2 critical)
+2026-10-28T22:10:53.172418257Z 
+2026-10-28T22:10:53.172419727Z To address issues that do not require attention, run:
+2026-10-28T22:10:53.172421227Z   npm audit fix
+2026-10-28T22:10:53.172422575Z 
+2026-10-28T22:10:53.172424261Z To address all issues, run:
+2026-10-28T22:10:53.172426067Z   npm audit fix --force
+2026-10-28T22:10:53.172427292Z 
+2026-10-28T22:10:53.17242869Z Run `npm audit` for details.
+2026-10-28T22:10:54.004777591Z 
+2026-10-28T22:10:54.004818572Z up to date, audited 245 packages in 720ms
+2026-10-28T22:10:54.004821585Z 
+2026-10-28T22:10:54.004897167Z 60 packages are looking for funding
+2026-10-28T22:10:54.004961551Z   run `npm fund` for details
+2026-10-28T22:10:54.067168211Z 
+2026-10-28T22:10:54.067184063Z 9 vulnerabilities (1 moderate, 6 high, 2 critical)
+2026-10-28T22:10:54.067185654Z 
+2026-10-28T22:10:54.067187029Z To address issues that do not require attention, run:
+2026-10-28T22:10:54.067188512Z   npm audit fix
+2026-10-28T22:10:54.067189776Z 
+2026-10-28T22:10:54.067191859Z To address all issues, run:
+2026-10-28T22:10:54.067193692Z   npm audit fix --force
+2026-10-28T22:10:54.067194976Z 
+2026-10-28T22:10:54.067196269Z Run `npm audit` for details.
+2026-10-28T22:10:54.132225685Z [34m[1m==>(B[m [1mRunning build command 'npm ci --ignore-scripts --include=dev && npm run validate:images && npx vite build'...(B[m
+2026-10-28T22:10:57.687224649Z 
+2026-10-28T22:10:57.687249256Z added 244 packages, and audited 245 packages in 3s
+2026-10-28T22:10:57.687257906Z 
+2026-10-28T22:10:57.687318576Z 60 packages are looking for funding
+2026-10-28T22:10:57.687374755Z   run `npm fund` for details
+2026-10-28T22:10:57.754295709Z 
+2026-10-28T22:10:57.754314416Z 9 vulnerabilities (1 moderate, 6 high, 2 critical)
+2026-10-28T22:10:57.754315874Z 
+2026-10-28T22:10:57.754317448Z To address issues that do not require attention, run:
+2026-10-28T22:10:57.754319078Z   npm audit fix
+2026-10-28T22:10:57.754320227Z 
+2026-10-28T22:10:57.754322039Z To address all issues, run:
+2026-10-28T22:10:57.75433565Z   npm audit fix --force
+2026-10-28T22:10:57.754337029Z 
+2026-10-28T22:10:57.754338356Z Run `npm audit` for details.
+2026-10-28T22:10:57.912981385Z 
+2026-10-28T22:10:57.913001396Z > yunela-site@0.2.1 validate:images
+2026-10-28T22:10:57.913003298Z > node scripts/check-creative-images.mjs
+2026-10-28T22:10:57.913004584Z 
+2026-10-28T22:10:57.993961058Z {"status":"PASS","catalog":56,"creativeImages":56,"pending":0}
+2026-10-28T22:10:58.097063285Z {"status":"PASS","galleryProducts":56,"masterAndResponsiveFiles":347}
+2026-10-28T22:10:58.583732873Z vite v7.1.5 building for production...
+2026-10-28T22:10:58.648782493Z transforming...
+2026-10-28T22:11:00.296206067Z ✓ 1691 modules transformed.
+2026-10-28T22:11:00.483106668Z rendering chunks...
+2026-10-28T22:11:00.49284382Z computing gzip size...
+2026-10-28T22:11:00.505539602Z dist/index.html                   0.52 kB │ gzip:   0.34 kB
+2026-10-28T22:11:00.505559457Z dist/assets/index-DEcHUhqX.css   68.28 kB │ gzip:  13.89 kB
+2026-10-28T22:11:00.505564585Z dist/assets/index-BR1C0nCw.js   418.04 kB │ gzip: 108.73 kB
+2026-10-28T22:11:00.505834463Z ✓ built in 1.89s
+2026-10-28T22:11:01.767177871Z [34m[1m==>(B[m [1mUploading build...(B[m
+2026-10-28T22:11:04.334610016Z [32m[1m==>(B[m [1mYour site is live 🎉(B[m
+

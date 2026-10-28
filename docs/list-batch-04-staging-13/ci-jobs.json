@@ -1,0 +1,121 @@
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 123131607619,
+      "run_id": 40777832523,
+      "workflow_name": "YUNELA UI Validation",
+      "head_branch": "feat/creative-gallery-v9-2",
+      "run_url": "https://api.github.com/repos/sjastellar-eng/Yunela-site/actions/runs/40777832523",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOUZI-qs8AAAAcqzc6Qw",
+      "head_sha": "3e87ade2d073332c6e181fae8d755f5d40a4780d",
+      "url": "https://api.github.com/repos/sjastellar-eng/Yunela-site/actions/jobs/123131607619",
+      "html_url": "https://github.com/sjastellar-eng/Yunela-site/actions/runs/40777832523/job/123131607619",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-28T22:10:03Z",
+      "started_at": "2026-10-28T22:10:05Z",
+      "completed_at": "2026-10-28T22:11:02Z",
+      "name": "validate",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-28T22:10:06Z",
+          "completed_at": "2026-10-28T22:10:06Z"
+        },
+        {
+          "name": "Checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-28T22:10:06Z",
+          "completed_at": "2026-10-28T22:10:16Z"
+        },
+        {
+          "name": "Setup Node",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-28T22:10:16Z",
+          "completed_at": "2026-10-28T22:10:17Z"
+        },
+        {
+          "name": "Install dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-28T22:10:17Z",
+          "completed_at": "2026-10-28T22:10:27Z"
+        },
+        {
+          "name": "Typecheck",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-28T22:10:27Z",
+          "completed_at": "2026-10-28T22:10:33Z"
+        },
+        {
+          "name": "Lint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-28T22:10:33Z",
+          "completed_at": "2026-10-28T22:10:37Z"
+        },
+        {
+          "name": "Tests",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-28T22:10:37Z",
+          "completed_at": "2026-10-28T22:10:52Z"
+        },
+        {
+          "name": "Production build",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-28T22:10:52Z",
+          "completed_at": "2026-10-28T22:11:00Z"
+        },
+        {
+          "name": "Post Setup Node",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-10-28T22:11:00Z",
+          "completed_at": "2026-10-28T22:11:00Z"
+        },
+        {
+          "name": "Post Checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-10-28T22:11:00Z",
+          "completed_at": "2026-10-28T22:11:01Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-10-28T22:11:01Z",
+          "completed_at": "2026-10-28T22:11:01Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/sjastellar-eng/Yunela-site/check-runs/123131607619",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000537,
+      "runner_name": "GitHub Actions 1000000537",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

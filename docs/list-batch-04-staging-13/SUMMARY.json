@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-29 Europe/Kyiv",
+  "publishedCommit": "3e87ade2d073332c6e181fae8d755f5d40a4780d",
+  "previousStagingCommit": "f6ddcb149b7cc9b0b57f1d5a107b52f028f25020",
+  "sourceBranch": "fix/list-background-batch-04",
+  "stagingBranch": "feat/creative-gallery-v9-2",
+  "stagingUrl": "https://yunela-v92-demo.onrender.com",
+  "renderService": "srv-dbej0rjncjis73edf2h0",
+  "renderDeploy": "dep-dbh75kei0phs73b1rqgg",
+  "renderStatus": "live",
+  "ciRun": "https://github.com/sjastellar-eng/Yunela-site/actions/runs/40777832523",
+  "ci": "completed/success",
+  "tests": {
+    "files": 38,
+    "passed": 260,
+    "failed": 0
+  },
+  "typeScript": "PASS",
+  "eslint": "PASS",
+  "imageValidation": "56 products / 347 master and responsive files PASS",
+  "productionBuild": "frontend and server PASS; Render static production build PASS",
+  "visualReview": "Source BEFORE/AFTER, five individual enlarged detail comparisons, all responsive comparisons inspected before deploy. Live catalog, product and all 13 gallery positions at each of 1440/390 px pass. No conspicuous new halos, contour damage, subject colour shift, lost contact shadows or scale changes. Visual acceptance is observational; lossy pixels are not identical.",
+  "liveAssets": 155,
+  "otherCreativeFilesUnchanged": 332,
+  "otherSkuUnchanged": 51,
+  "previousProcessedSkuUnchanged": 19,
+  "browser": "Chrome Headless Shell 134; desktop 1440x1000/mobile viewport 390x844, DPR1",
+  "browserErrors": 0,
+  "consoleErrors": 0,
+  "failedRequests": 0,
+  "httpErrors": 0,
+  "apiRequests": 0,
+  "horizontalOverflow": false,
+  "restrictions": "No CSS/catalog/business logic changes; no main merge; no orders/payments enabled; no resources or paid plans created.",
+  "githubPersistence": "Staging ref fast-forwarded through authenticated GitHub connector with expected SHA lease and force=false after shell git push failed for missing credentials. Remote source/staging SHA verified using git ls-remote. QA evidence saved on separate qa/list-batch-04-staging-13 branch.",
+  "issues": [
+    "Render npm audit reports 9 existing dependency vulnerabilities: 1 moderate, 6 high, 2 critical. package.json and lock are identical to previous staging. No dependency fixes in this image-only scope.",
+    "Local npm native installation hit header ownership extraction error; resolved with local headers and dependency rebuild. Full Chrome local launch hit process-singleton socket restriction; official Chrome Headless Shell completed QA. No project dependency changes."
+  ]
+}

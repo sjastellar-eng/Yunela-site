@@ -1,0 +1,304 @@
+﻿2026-10-28T22:10:06.3710643Z Current runner version: '2.338.0'
+2026-10-28T22:10:06.3746671Z ##[group]Runner Image Provisioner
+2026-10-28T22:10:06.3748153Z Hosted Compute Agent
+2026-10-28T22:10:06.3749153Z Version: 20261021.618
+2026-10-28T22:10:06.3750363Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-28T22:10:06.3751939Z Build Date: 2026-10-21T00:45:21Z
+2026-10-28T22:10:06.3753200Z Worker ID: {d0d5b424-e1bf-4183-a7f7-8310b7916305}
+2026-10-28T22:10:06.3754485Z Region: eastus
+2026-10-28T22:10:06.3755496Z Cloud: Azure
+2026-10-28T22:10:06.3756558Z ##[endgroup]
+2026-10-28T22:10:06.3758827Z ##[group]Operating System
+2026-10-28T22:10:06.3760021Z Ubuntu
+2026-10-28T22:10:06.3760904Z 24.04.5
+2026-10-28T22:10:06.3762088Z LTS
+2026-10-28T22:10:06.3763305Z ##[endgroup]
+2026-10-28T22:10:06.3764238Z ##[group]Runner Image
+2026-10-28T22:10:06.3765275Z Image: ubuntu-24.04
+2026-10-28T22:10:06.3766364Z Version: 20261025.353.1
+2026-10-28T22:10:06.3768577Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-28T22:10:06.3771672Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+2026-10-28T22:10:06.3774136Z ##[endgroup]
+2026-10-28T22:10:06.3776206Z ##[group]GITHUB_TOKEN Permissions
+2026-10-28T22:10:06.3779425Z Contents: read
+2026-10-28T22:10:06.3780466Z Metadata: read
+2026-10-28T22:10:06.3781779Z Packages: read
+2026-10-28T22:10:06.3782727Z ##[endgroup]
+2026-10-28T22:10:06.3785921Z Secret source: Actions
+2026-10-28T22:10:06.3787688Z Cache mode: write
+2026-10-28T22:10:06.3789257Z Prepare workflow directory
+2026-10-28T22:10:06.4279639Z Prepare all required actions
+2026-10-28T22:10:06.4351816Z Getting action download info
+2026-10-28T22:10:06.6249025Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-28T22:10:06.7212852Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-10-28T22:10:06.9179479Z Complete job name: validate
+2026-10-28T22:10:07.0083397Z ##[group]Run actions/checkout@v4
+2026-10-28T22:10:07.0084303Z with:
+2026-10-28T22:10:07.0084788Z   repository: sjastellar-eng/Yunela-site
+2026-10-28T22:10:07.0088700Z   token: ***
+2026-10-28T22:10:07.0089148Z   ssh-strict: true
+2026-10-28T22:10:07.0089608Z   ssh-user: git
+2026-10-28T22:10:07.0090075Z   persist-credentials: true
+2026-10-28T22:10:07.0090578Z   clean: true
+2026-10-28T22:10:07.0091037Z   sparse-checkout-cone-mode: true
+2026-10-28T22:10:07.0091781Z   fetch-depth: 1
+2026-10-28T22:10:07.0092241Z   fetch-tags: false
+2026-10-28T22:10:07.0092701Z   show-progress: true
+2026-10-28T22:10:07.0093160Z   lfs: false
+2026-10-28T22:10:07.0093587Z   submodules: false
+2026-10-28T22:10:07.0094114Z   set-safe-directory: true
+2026-10-28T22:10:07.0094698Z   allow-unsafe-pr-checkout: false
+2026-10-28T22:10:07.0095486Z ##[endgroup]
+2026-10-28T22:10:07.3222233Z Syncing repository: sjastellar-eng/Yunela-site
+2026-10-28T22:10:07.3224593Z ##[group]Getting Git version info
+2026-10-28T22:10:07.3225813Z Working directory is '/home/runner/work/Yunela-site/Yunela-site'
+2026-10-28T22:10:07.3227652Z [command]/usr/bin/git version
+2026-10-28T22:10:07.3333735Z git version 2.56.0
+2026-10-28T22:10:07.3361208Z ##[endgroup]
+2026-10-28T22:10:07.3400299Z Temporarily overriding HOME='/home/runner/work/_temp/0c2467f6-8633-48e4-9aa5-c8af4a9d5c52' before making global git config changes
+2026-10-28T22:10:07.3402873Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-28T22:10:07.3406713Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Yunela-site/Yunela-site
+2026-10-28T22:10:07.3470015Z Deleting the contents of '/home/runner/work/Yunela-site/Yunela-site'
+2026-10-28T22:10:07.3474570Z ##[group]Initializing the repository
+2026-10-28T22:10:07.3480851Z [command]/usr/bin/git init /home/runner/work/Yunela-site/Yunela-site
+2026-10-28T22:10:07.3625876Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-28T22:10:07.3628117Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-28T22:10:07.3632046Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-28T22:10:07.3633879Z hint: call:
+2026-10-28T22:10:07.3634770Z hint:
+2026-10-28T22:10:07.3635787Z hint: 	git config --global init.defaultBranch <name>
+2026-10-28T22:10:07.3637232Z hint:
+2026-10-28T22:10:07.3638264Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-28T22:10:07.3640604Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-28T22:10:07.3642633Z hint:
+2026-10-28T22:10:07.3643720Z hint: 	git branch -m <name>
+2026-10-28T22:10:07.3645129Z hint:
+2026-10-28T22:10:07.3646949Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-28T22:10:07.3649718Z Initialized empty Git repository in /home/runner/work/Yunela-site/Yunela-site/.git/
+2026-10-28T22:10:07.3663753Z [command]/usr/bin/git remote add origin https://github.com/sjastellar-eng/Yunela-site
+2026-10-28T22:10:07.3728532Z ##[endgroup]
+2026-10-28T22:10:07.3730544Z ##[group]Disabling automatic garbage collection
+2026-10-28T22:10:07.3732386Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-28T22:10:07.3762805Z ##[endgroup]
+2026-10-28T22:10:07.3764830Z ##[group]Setting up auth
+2026-10-28T22:10:07.3771214Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-28T22:10:07.3816818Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-28T22:10:07.4370493Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-28T22:10:07.4434544Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-28T22:10:07.4709756Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-28T22:10:07.4760854Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-28T22:10:07.5013111Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-28T22:10:07.5066741Z ##[endgroup]
+2026-10-28T22:10:07.5067868Z ##[group]Fetching the repository
+2026-10-28T22:10:07.5079764Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +3e87ade2d073332c6e181fae8d755f5d40a4780d:refs/remotes/origin/feat/creative-gallery-v9-2
+2026-10-28T22:10:16.7625694Z From https://github.com/sjastellar-eng/Yunela-site
+2026-10-28T22:10:16.7628206Z  * [new ref]         3e87ade2d073332c6e181fae8d755f5d40a4780d -> origin/feat/creative-gallery-v9-2
+2026-10-28T22:10:16.7633626Z ##[endgroup]
+2026-10-28T22:10:16.7635303Z ##[group]Determining the checkout info
+2026-10-28T22:10:16.7637109Z ##[endgroup]
+2026-10-28T22:10:16.7642597Z [command]/usr/bin/git sparse-checkout disable
+2026-10-28T22:10:16.7716293Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-28T22:10:16.7767950Z ##[group]Checking out the ref
+2026-10-28T22:10:16.7770979Z [command]/usr/bin/git checkout --progress --force -B feat/creative-gallery-v9-2 refs/remotes/origin/feat/creative-gallery-v9-2
+2026-10-28T22:10:16.9613814Z Switched to a new branch 'feat/creative-gallery-v9-2'
+2026-10-28T22:10:16.9621758Z branch 'feat/creative-gallery-v9-2' set up to track 'origin/feat/creative-gallery-v9-2'.
+2026-10-28T22:10:16.9648039Z ##[endgroup]
+2026-10-28T22:10:16.9703614Z [command]/usr/bin/git log -1 --format=%H
+2026-10-28T22:10:16.9739165Z 3e87ade2d073332c6e181fae8d755f5d40a4780d
+2026-10-28T22:10:17.0154388Z ##[group]Run actions/setup-node@v4
+2026-10-28T22:10:17.0155577Z with:
+2026-10-28T22:10:17.0156379Z   node-version: 22
+2026-10-28T22:10:17.0157273Z   always-auth: false
+2026-10-28T22:10:17.0158491Z   check-latest: false
+2026-10-28T22:10:17.0169176Z   token: ***
+2026-10-28T22:10:17.0169989Z ##[endgroup]
+2026-10-28T22:10:17.1720069Z Found in cache @ /opt/hostedtoolcache/node/22.23.4/x64
+2026-10-28T22:10:17.1724603Z (node:2389) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-28T22:10:17.1729236Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-28T22:10:17.1733398Z ##[group]Environment details
+2026-10-28T22:10:17.6249600Z node: v22.23.4
+2026-10-28T22:10:17.6250068Z npm: 10.9.9
+2026-10-28T22:10:17.6250459Z yarn: 1.22.22
+2026-10-28T22:10:17.6251156Z ##[endgroup]
+2026-10-28T22:10:17.6481032Z ##[group]Run npm ci
+2026-10-28T22:10:17.6481864Z [36;1mnpm ci[0m
+2026-10-28T22:10:17.6514807Z shell: /usr/bin/bash -e {0}
+2026-10-28T22:10:17.6515108Z ##[endgroup]
+2026-10-28T22:10:19.8837749Z npm warn deprecated @babel/plugin-proposal-private-methods@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-methods instead.
+2026-10-28T22:10:22.2590504Z npm warn deprecated eslint@9.35.0: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+2026-10-28T22:10:27.4525375Z 
+2026-10-28T22:10:27.4526480Z added 244 packages, and audited 245 packages in 10s
+2026-10-28T22:10:27.4526975Z 
+2026-10-28T22:10:27.4527275Z 60 packages are looking for funding
+2026-10-28T22:10:27.4527824Z   run `npm fund` for details
+2026-10-28T22:10:27.5228520Z 
+2026-10-28T22:10:27.5229464Z 9 vulnerabilities (1 moderate, 6 high, 2 critical)
+2026-10-28T22:10:27.5229940Z 
+2026-10-28T22:10:27.5230415Z To address issues that do not require attention, run:
+2026-10-28T22:10:27.5230992Z   npm audit fix
+2026-10-28T22:10:27.5231225Z 
+2026-10-28T22:10:27.5231634Z To address all issues, run:
+2026-10-28T22:10:27.5232099Z   npm audit fix --force
+2026-10-28T22:10:27.5232382Z 
+2026-10-28T22:10:27.5232649Z Run `npm audit` for details.
+2026-10-28T22:10:27.5943566Z ##[group]Run npm run typecheck
+2026-10-28T22:10:27.5944077Z [36;1mnpm run typecheck[0m
+2026-10-28T22:10:27.5970612Z shell: /usr/bin/bash -e {0}
+2026-10-28T22:10:27.5970963Z ##[endgroup]
+2026-10-28T22:10:27.6983482Z 
+2026-10-28T22:10:27.6984162Z > yunela-site@0.2.1 typecheck
+2026-10-28T22:10:27.6984852Z > tsc -b --pretty false
+2026-10-28T22:10:27.6985161Z 
+2026-10-28T22:10:33.6135942Z ##[group]Run npm run lint
+2026-10-28T22:10:33.6136246Z [36;1mnpm run lint[0m
+2026-10-28T22:10:33.6156746Z shell: /usr/bin/bash -e {0}
+2026-10-28T22:10:33.6157009Z ##[endgroup]
+2026-10-28T22:10:33.7144384Z 
+2026-10-28T22:10:33.7145063Z > yunela-site@0.2.1 lint
+2026-10-28T22:10:33.7145645Z > eslint .
+2026-10-28T22:10:33.7145875Z 
+2026-10-28T22:10:37.7437249Z ##[group]Run npm test
+2026-10-28T22:10:37.7437525Z [36;1mnpm test[0m
+2026-10-28T22:10:37.7457918Z shell: /usr/bin/bash -e {0}
+2026-10-28T22:10:37.7458178Z ##[endgroup]
+2026-10-28T22:10:37.8451590Z 
+2026-10-28T22:10:37.8452455Z > yunela-site@0.2.1 test
+2026-10-28T22:10:37.8453205Z > node scripts/build-test-workers.mjs && vitest run
+2026-10-28T22:10:37.8453659Z 
+2026-10-28T22:10:38.6037598Z 
+2026-10-28T22:10:38.6039558Z [1m[46m RUN [49m[22m [36mv3.2.4 [39m[90m/home/runner/work/Yunela-site/Yunela-site[39m
+2026-10-28T22:10:38.6040232Z 
+2026-10-28T22:10:39.1483874Z  [32m✓[39m src/application/payment/service.test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 17[2mms[22m[39m
+2026-10-28T22:10:39.4835665Z [90mstderr[2m | src/application/fulfillment/f5-shipment.test.ts[2m > [22m[2mF5 Shipment application[2m > [22m[2mprevents duplicate Shipment creation across two independent SQLite connections
+2026-10-28T22:10:39.4837937Z [22m[39mF5 concurrent create worker diagnostics
+2026-10-28T22:10:39.4838696Z {
+2026-10-28T22:10:39.4839188Z   "worker": "A",
+2026-10-28T22:10:39.4839750Z   "ok": true,
+2026-10-28T22:10:39.4840442Z   "shipmentId": "7eb4d79d-b376-485c-b773-3b76bf4fc9f2"
+2026-10-28T22:10:39.4841260Z }
+2026-10-28T22:10:39.4842608Z {
+2026-10-28T22:10:39.4843142Z   "worker": "B",
+2026-10-28T22:10:39.4843576Z   "ok": true,
+2026-10-28T22:10:39.4844577Z   "shipmentId": "7eb4d79d-b376-485c-b773-3b76bf4fc9f2"
+2026-10-28T22:10:39.4845269Z }
+2026-10-28T22:10:39.4845831Z F5 concurrent create database diagnostics {
+2026-10-28T22:10:39.4846457Z   "shipmentRowCount": 1,
+2026-10-28T22:10:39.4846923Z   "shipmentIds": [
+2026-10-28T22:10:39.4847421Z     "7eb4d79d-b376-485c-b773-3b76bf4fc9f2"
+2026-10-28T22:10:39.4847930Z   ]
+2026-10-28T22:10:39.4848266Z }
+2026-10-28T22:10:39.4848453Z 
+2026-10-28T22:10:39.5273754Z  [32m✓[39m src/application/fulfillment/f2.test.ts [2m([22m[2m14 tests[22m[2m)[22m[32m 279[2mms[22m[39m
+2026-10-28T22:10:40.3584004Z  [32m✓[39m src/application/fulfillment/f5-shipment.test.ts [2m([22m[2m34 tests[22m[2m)[22m[33m 1104[2mms[22m[39m
+2026-10-28T22:10:40.4643644Z  [32m✓[39m src/api/server.test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 286[2mms[22m[39m
+2026-10-28T22:10:41.1313876Z  [32m✓[39m src/application/fulfillment/f2-corrections.test.ts [2m([22m[2m12 tests[22m[2m)[22m[32m 233[2mms[22m[39m
+2026-10-28T22:10:42.6104009Z  [32m✓[39m src/api/weight-store.test.ts [2m([22m[2m10 tests[22m[2m)[22m[33m 1493[2mms[22m[39m
+2026-10-28T22:10:42.6133956Z    [33m[2m✓[22m[39m V4 test-only flexible storefront[2m > [22mdry-runs 56 blocked candidates, imports idempotently, retains aliases and refuses mutable versions or incomplete approvals [33m 375[2mms[22m[39m
+2026-10-28T22:10:44.4262585Z  [32m✓[39m src/api/store-server.test.ts [2m([22m[2m10 tests[22m[2m)[22m[33m 1408[2mms[22m[39m
+2026-10-28T22:10:44.9063441Z  [32m✓[39m src/database/database.test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 90[2mms[22m[39m
+2026-10-28T22:10:45.2893897Z  [32m✓[39m src/application/application.test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 32[2mms[22m[39m
+2026-10-28T22:10:45.7623844Z  [32m✓[39m src/application/fulfillment/persistence.test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 102[2mms[22m[39m
+2026-10-28T22:10:46.3093429Z  [32m✓[39m src/api/discoveryBox.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 130[2mms[22m[39m
+2026-10-28T22:10:46.9213595Z  [32m✓[39m src/api/d2-commerce-ownership.test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 189[2mms[22m[39m
+2026-10-28T22:10:47.4430442Z  [32m✓[39m src/api/d1-1-customer-identity.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 161[2mms[22m[39m
+2026-10-28T22:10:47.8043020Z  [32m✓[39m src/application/commerce/service.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+2026-10-28T22:10:48.1563661Z  [32m✓[39m src/application/fulfillment/inventory-semantics.test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 39[2mms[22m[39m
+2026-10-28T22:10:48.2113503Z  [32m✓[39m src/application/fulfillment/inventory-concurrency.test.ts [2m([22m[2m4 tests[22m[2m)[22m[33m 8656[2mms[22m[39m
+2026-10-28T22:10:48.2122149Z    [33m[2m✓[22m[39m F4 inventory concurrency — independent SQLite connections through production path[2m > [22mprevents concurrent production READY reservations from overselling the same TeaLot [33m 2860[2mms[22m[39m
+2026-10-28T22:10:48.2126219Z    [33m[2m✓[22m[39m F4 inventory concurrency — independent SQLite connections through production path[2m > [22mproves concurrent production PACKED transitions perform physical consumption only once [33m 2633[2mms[22m[39m
+2026-10-28T22:10:48.2143124Z    [33m[2m✓[22m[39m F4 inventory concurrency — independent SQLite connections through production path[2m > [22mallows concurrent production release operations without double release or inventory mutation [33m 2866[2mms[22m[39m
+2026-10-28T22:10:48.5623926Z  [32m✓[39m src/application/c5-feedback-profile.test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 23[2mms[22m[39m
+2026-10-28T22:10:48.5922907Z  [32m✓[39m src/api/c5-feedback-profile.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 39[2mms[22m[39m
+2026-10-28T22:10:49.0011027Z  [32m✓[39m src/api/recommendation.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 89[2mms[22m[39m
+2026-10-28T22:10:49.0013836Z  [32m✓[39m src/application/sqliteRepositories.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 58[2mms[22m[39m
+2026-10-28T22:10:49.3052419Z  [32m✓[39m src/api/f3-server.test.ts [2m([22m[2m16 tests[22m[2m)[22m[33m 7690[2mms[22m[39m
+2026-10-28T22:10:49.3054431Z    [33m[2m✓[22m[39m F3 authenticated fulfillment API[2m > [22mreturns 401 without authentication [33m 464[2mms[22m[39m
+2026-10-28T22:10:49.3056421Z    [33m[2m✓[22m[39m F3 authenticated fulfillment API[2m > [22mreturns 401 for an expired token [33m 511[2mms[22m[39m
+2026-10-28T22:10:49.3058242Z    [33m[2m✓[22m[39m F3 authenticated fulfillment API[2m > [22mreturns 401 for a forged token [33m 482[2mms[22m[39m
+2026-10-28T22:10:49.3060065Z    [33m[2m✓[22m[39m F3 authenticated fulfillment API[2m > [22mreturns 401 for invalid credentials [33m 481[2mms[22m[39m
+2026-10-28T22:10:49.3062488Z    [33m[2m✓[22m[39m F3 authenticated fulfillment API[2m > [22mresolves customer actor from the bearer token and enforces ownership [33m 473[2mms[22m[39m
+2026-10-28T22:10:49.3075282Z    [33m[2m✓[22m[39m F3 authenticated fulfillment API[2m > [22mrejects customer from lifecycle operations [33m 443[2mms[22m[39m
+2026-10-28T22:10:49.3077324Z    [33m[2m✓[22m[39m F3 authenticated fulfillment API[2m > [22mrejects supplier from lifecycle operations [33m 451[2mms[22m[39m
+2026-10-28T22:10:49.3079501Z    [33m[2m✓[22m[39m F3 authenticated fulfillment API[2m > [22mrejects supplier from shipment creation and permits operator [33m 534[2mms[22m[39m
+2026-10-28T22:10:49.3081965Z    [33m[2m✓[22m[39m F3 authenticated fulfillment API[2m > [22mallows a customer to read their own Shipment [33m 455[2mms[22m[39m
+2026-10-28T22:10:49.3084022Z    [33m[2m✓[22m[39m F3 authenticated fulfillment API[2m > [22mdenies a customer access to another customer Shipment [33m 440[2mms[22m[39m
+2026-10-28T22:10:49.3086125Z    [33m[2m✓[22m[39m F3 authenticated fulfillment API[2m > [22mrejects customer Shipment lifecycle or tracking mutation [33m 468[2mms[22m[39m
+2026-10-28T22:10:49.3088166Z    [33m[2m✓[22m[39m F3 authenticated fulfillment API[2m > [22mrejects supplier Shipment mutation [33m 450[2mms[22m[39m
+2026-10-28T22:10:49.3090046Z    [33m[2m✓[22m[39m F3 authenticated fulfillment API[2m > [22mallows operator manual tracking management [33m 483[2mms[22m[39m
+2026-10-28T22:10:49.3092423Z    [33m[2m✓[22m[39m F3 authenticated fulfillment API[2m > [22mdoes not allow SYSTEM to authenticate through the public HTTP flow [33m 616[2mms[22m[39m
+2026-10-28T22:10:49.3095025Z    [33m[2m✓[22m[39m F3 authenticated fulfillment API[2m > [22mnever accepts customerId or actor identity from the approval body [33m 476[2mms[22m[39m
+2026-10-28T22:10:49.3097312Z    [33m[2m✓[22m[39m F3 authenticated fulfillment API[2m > [22mdoes not treat the fulfillment URL id as customer identity [33m 459[2mms[22m[39m
+2026-10-28T22:10:49.3479506Z  [32m✓[39m src/application/recommendation/service.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+2026-10-28T22:10:49.4647180Z  [32m✓[39m src/application/analytics/commerceService.test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 112[2mms[22m[39m
+2026-10-28T22:10:49.6698346Z  [32m✓[39m src/domain/recommendation/engine.test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 17[2mms[22m[39m
+2026-10-28T22:10:49.8803610Z  [32m✓[39m src/domain/discoveryBox/selectionPolicy.test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 21[2mms[22m[39m
+2026-10-28T22:10:50.1514691Z  [32m✓[39m src/catalog/catalog.test.tsx [2m([22m[2m9 tests[22m[2m)[22m[32m 48[2mms[22m[39m
+2026-10-28T22:10:50.2609997Z  [32m✓[39m src/domain/profile/feedbackMapping.test.ts [2m([22m[2m13 tests[22m[2m)[22m[32m 24[2mms[22m[39m
+2026-10-28T22:10:50.5301691Z  [32m✓[39m src/yuna/discovery.test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 39[2mms[22m[39m
+2026-10-28T22:10:50.7447366Z  [32m✓[39m src/api/staging-access.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 156[2mms[22m[39m
+2026-10-28T22:10:50.9203585Z  [32m✓[39m src/application/discoveryBox/service.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 8[2mms[22m[39m
+2026-10-28T22:10:51.1084387Z  [32m✓[39m src/api/f6-commerce.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 971[2mms[22m[39m
+2026-10-28T22:10:51.1113265Z    [33m[2m✓[22m[39m F6.1 OPERATOR-only analytics HTTP[2m > [22mrequires authorization and denies customer and supplier [33m 415[2mms[22m[39m
+2026-10-28T22:10:51.3920030Z  [32m✓[39m src/application/sommelierReadiness.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 38[2mms[22m[39m
+2026-10-28T22:10:51.4388867Z  [32m✓[39m src/api/yuna.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 241[2mms[22m[39m
+2026-10-28T22:10:51.5780521Z  [32m✓[39m src/contracts/contracts.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 7[2mms[22m[39m
+2026-10-28T22:10:51.7733859Z  [32m✓[39m scripts/creative-contract.test.mjs [2m([22m[2m1 test[22m[2m)[22m[32m 14[2mms[22m[39m
+2026-10-28T22:10:51.7966765Z  [32m✓[39m src/application/yunaGateway.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 20[2mms[22m[39m
+2026-10-28T22:10:52.0493551Z  [32m✓[39m src/application/flexiblePricing.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 58[2mms[22m[39m
+2026-10-28T22:10:52.1019367Z  [32m✓[39m scripts/catalog-v2-import.test.mjs [2m([22m[2m7 tests[22m[2m)[22m[32m 7[2mms[22m[39m
+2026-10-28T22:10:52.1199030Z 
+2026-10-28T22:10:52.1206112Z [2m Test Files [22m [1m[32m38 passed[39m[22m[90m (38)[39m
+2026-10-28T22:10:52.1223254Z [2m      Tests [22m [1m[32m260 passed[39m[22m[90m (260)[39m
+2026-10-28T22:10:52.1224566Z [2m   Start at [22m 22:10:38
+2026-10-28T22:10:52.1226276Z [2m   Duration [22m 13.51s[2m (transform 1.49s, setup 0ms, collect 3.88s, tests 23.92s, environment 13ms, prepare 4.48s)[22m
+2026-10-28T22:10:52.1227418Z 
+2026-10-28T22:10:52.2671011Z ##[group]Run npm run build
+2026-10-28T22:10:52.2671649Z [36;1mnpm run build[0m
+2026-10-28T22:10:52.2691252Z shell: /usr/bin/bash -e {0}
+2026-10-28T22:10:52.2691809Z ##[endgroup]
+2026-10-28T22:10:52.3678068Z 
+2026-10-28T22:10:52.3678534Z > yunela-site@0.2.1 build
+2026-10-28T22:10:52.3679481Z > npm run validate:images && tsc -b && vite build && vite build --mode server
+2026-10-28T22:10:52.3680061Z 
+2026-10-28T22:10:52.4651073Z 
+2026-10-28T22:10:52.4651916Z > yunela-site@0.2.1 validate:images
+2026-10-28T22:10:52.4652639Z > node scripts/check-creative-images.mjs
+2026-10-28T22:10:52.4652922Z 
+2026-10-28T22:10:52.5423264Z {"status":"PASS","catalog":56,"creativeImages":56,"pending":0}
+2026-10-28T22:10:52.6174612Z {"status":"PASS","galleryProducts":56,"masterAndResponsiveFiles":347}
+2026-10-28T22:10:57.8786144Z [36mvite v7.1.5 [32mbuilding for production...[36m[39m
+2026-10-28T22:10:57.9500185Z transforming...
+2026-10-28T22:10:59.8289954Z [32m✓[39m 1691 modules transformed.
+2026-10-28T22:11:00.0702368Z rendering chunks...
+2026-10-28T22:11:00.0786184Z computing gzip size...
+2026-10-28T22:11:00.0910556Z [2mdist/[22m[32mindex.html                 [39m[1m[2m  0.52 kB[22m[1m[22m[2m │ gzip:   0.34 kB[22m
+2026-10-28T22:11:00.0912237Z [2mdist/[22m[2massets/[22m[35mindex-DEcHUhqX.css  [39m[1m[2m 68.28 kB[22m[1m[22m[2m │ gzip:  13.89 kB[22m
+2026-10-28T22:11:00.0913192Z [2mdist/[22m[2massets/[22m[36mindex-BA3sSsWy.js   [39m[1m[2m440.22 kB[22m[1m[22m[2m │ gzip: 114.75 kB[22m
+2026-10-28T22:11:00.0914269Z [32m✓ built in 2.18s[39m
+2026-10-28T22:11:00.3123814Z [36mvite v7.1.5 [32mbuilding SSR bundle for server...[36m[39m
+2026-10-28T22:11:00.3463128Z transforming...
+2026-10-28T22:11:00.6158460Z [32m✓[39m 29 modules transformed.
+2026-10-28T22:11:00.7282402Z rendering chunks...
+2026-10-28T22:11:00.7315250Z [2mdist-server/[22m[36mf3-runtime.js  [39m[1m[2m135.97 kB[22m[1m[22m
+2026-10-28T22:11:00.7316031Z [32m✓ built in 408ms[39m
+2026-10-28T22:11:00.7635871Z Post job cleanup.
+2026-10-28T22:11:00.8927548Z (node:3630) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-28T22:11:00.8928719Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-28T22:11:00.9114251Z Post job cleanup.
+2026-10-28T22:11:01.0051840Z [command]/usr/bin/git version
+2026-10-28T22:11:01.0102740Z git version 2.56.0
+2026-10-28T22:11:01.0147537Z Temporarily overriding HOME='/home/runner/work/_temp/5fe7b0fe-cef2-4245-b5dc-a2390a50de5f' before making global git config changes
+2026-10-28T22:11:01.0149771Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-28T22:11:01.0153950Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Yunela-site/Yunela-site
+2026-10-28T22:11:01.0201983Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-28T22:11:01.0252650Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-28T22:11:01.0522873Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-28T22:11:01.0556191Z http.https://github.com/.extraheader
+2026-10-28T22:11:01.0589283Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-28T22:11:01.0645890Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-28T22:11:01.1027652Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-28T22:11:01.1132171Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-28T22:11:01.1553044Z Cleaning up orphan processes
+2026-10-28T22:11:01.1966240Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+
+

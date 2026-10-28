@@ -1,0 +1,400 @@
+{
+  "browser": "134.0.6998.35",
+  "phase": "before",
+  "report": [
+    {
+      "width": 1440,
+      "checks": [
+        {
+          "sku": "LIST-017",
+          "status": "PASS",
+          "galleryImages": [
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-017-primary-800.webp?v=7a500feec7539494",
+              "naturalWidth": 720,
+              "naturalHeight": 720,
+              "srcset": "/creative/LIST-017-primary-480.webp?v=143fcd3964ac396e 480w, /creative/LIST-017-primary-800.webp?v=7a500feec7539494 800w, /creative/LIST-017.webp?v=2ec4eb195b1fee72 1200w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 553.390625,
+                "height": 489.59375
+              },
+              "role": "primary"
+            },
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-017-secondary-800.webp?v=486249a05695b831",
+              "naturalWidth": 720,
+              "naturalHeight": 720,
+              "srcset": "/creative/LIST-017-secondary-480.webp?v=27fd80fb919891df 480w, /creative/LIST-017-secondary-800.webp?v=486249a05695b831 800w, /creative/LIST-017-secondary.webp?v=7c4553cd2f114cff 1200w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 553.390625,
+                "height": 489.59375
+              },
+              "role": "secondary"
+            },
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-017-texture.webp?v=d2e849d440b9848f",
+              "naturalWidth": 720,
+              "naturalHeight": 720,
+              "srcset": "/creative/LIST-017-texture-480.webp?v=312247e0f6e3f445 480w, /creative/LIST-017-texture.webp?v=d2e849d440b9848f 777w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 553.390625,
+                "height": 489.59375
+              },
+              "role": "texture"
+            }
+          ]
+        },
+        {
+          "sku": "LIST-018",
+          "status": "PASS",
+          "galleryImages": [
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-018-primary-800.webp?v=0473acb80fd204f6",
+              "naturalWidth": 720,
+              "naturalHeight": 720,
+              "srcset": "/creative/LIST-018-primary-480.webp?v=a1a177f40fdb36d5 480w, /creative/LIST-018-primary-800.webp?v=0473acb80fd204f6 800w, /creative/LIST-018.webp?v=f5f05ec154706868 1200w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 553.390625,
+                "height": 489.59375
+              },
+              "role": "primary"
+            },
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-018-texture.webp?v=2f3cb236d4a5e2ad",
+              "naturalWidth": 720,
+              "naturalHeight": 720,
+              "srcset": "/creative/LIST-018-texture-480.webp?v=d790de2365ce796d 480w, /creative/LIST-018-texture.webp?v=2f3cb236d4a5e2ad 777w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 553.390625,
+                "height": 489.59375
+              },
+              "role": "texture"
+            }
+          ]
+        },
+        {
+          "sku": "LIST-019",
+          "status": "PASS",
+          "galleryImages": [
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-019-primary-800.webp?v=b6939a81e8e63678",
+              "naturalWidth": 720,
+              "naturalHeight": 720,
+              "srcset": "/creative/LIST-019-primary-480.webp?v=2e95a331cf9dcd31 480w, /creative/LIST-019-primary-800.webp?v=b6939a81e8e63678 800w, /creative/LIST-019.webp?v=134cfb553302e096 1200w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 553.390625,
+                "height": 489.59375
+              },
+              "role": "primary"
+            },
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-019-texture.webp?v=6944527b256f29be",
+              "naturalWidth": 720,
+              "naturalHeight": 720,
+              "srcset": "/creative/LIST-019-texture-480.webp?v=99f95dac77fa6db2 480w, /creative/LIST-019-texture.webp?v=6944527b256f29be 777w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 553.390625,
+                "height": 489.59375
+              },
+              "role": "texture"
+            }
+          ]
+        },
+        {
+          "sku": "LIST-020",
+          "status": "PASS",
+          "galleryImages": [
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-020-primary-800.webp?v=16b1e02e9bc580e0",
+              "naturalWidth": 720,
+              "naturalHeight": 720,
+              "srcset": "/creative/LIST-020-primary-480.webp?v=5c3162234e31e726 480w, /creative/LIST-020-primary-800.webp?v=16b1e02e9bc580e0 800w, /creative/LIST-020.webp?v=d3465d8ce3b50dee 1200w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 553.390625,
+                "height": 489.59375
+              },
+              "role": "primary"
+            },
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-020-secondary-800.webp?v=f86fb39323767d8c",
+              "naturalWidth": 720,
+              "naturalHeight": 720,
+              "srcset": "/creative/LIST-020-secondary-480.webp?v=58679a180953525f 480w, /creative/LIST-020-secondary-800.webp?v=f86fb39323767d8c 800w, /creative/LIST-020-secondary.webp?v=8932c10722a43cd2 1200w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 553.390625,
+                "height": 489.59375
+              },
+              "role": "secondary"
+            },
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-020-texture.webp?v=16f83175cab86e0c",
+              "naturalWidth": 720,
+              "naturalHeight": 720,
+              "srcset": "/creative/LIST-020-texture-480.webp?v=51a82a2f6c96fba3 480w, /creative/LIST-020-texture.webp?v=16f83175cab86e0c 777w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 553.390625,
+                "height": 489.59375
+              },
+              "role": "texture"
+            }
+          ]
+        },
+        {
+          "sku": "LIST-021",
+          "status": "PASS",
+          "galleryImages": [
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-021-primary-800.webp?v=fe65e73715faee57",
+              "naturalWidth": 720,
+              "naturalHeight": 720,
+              "srcset": "/creative/LIST-021-primary-480.webp?v=efde4810925e6534 480w, /creative/LIST-021-primary-800.webp?v=fe65e73715faee57 800w, /creative/LIST-021.webp?v=32da1a398778f010 1200w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 553.390625,
+                "height": 489.59375
+              },
+              "role": "primary"
+            },
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-021-secondary-800.webp?v=823a4002ad133d7e",
+              "naturalWidth": 720,
+              "naturalHeight": 720,
+              "srcset": "/creative/LIST-021-secondary-480.webp?v=82630157b7dd4479 480w, /creative/LIST-021-secondary-800.webp?v=823a4002ad133d7e 800w, /creative/LIST-021-secondary.webp?v=7a97a82bf674d392 1200w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 553.390625,
+                "height": 489.59375
+              },
+              "role": "secondary"
+            },
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-021-texture.webp?v=cbec8acf81e6fcdc",
+              "naturalWidth": 720,
+              "naturalHeight": 720,
+              "srcset": "/creative/LIST-021-texture-480.webp?v=27843005f3b6a22f 480w, /creative/LIST-021-texture.webp?v=cbec8acf81e6fcdc 777w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 553.390625,
+                "height": 489.59375
+              },
+              "role": "texture"
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "consoleErrors": [],
+      "failed": [],
+      "badResponses": [],
+      "api": [],
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "checks": [
+        {
+          "sku": "LIST-017",
+          "status": "PASS",
+          "galleryImages": [
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-017-primary-480.webp?v=143fcd3964ac396e",
+              "naturalWidth": 389,
+              "naturalHeight": 389,
+              "srcset": "/creative/LIST-017-primary-480.webp?v=143fcd3964ac396e 480w, /creative/LIST-017-primary-800.webp?v=7a500feec7539494 800w, /creative/LIST-017.webp?v=2ec4eb195b1fee72 1200w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 350,
+                "height": 260
+              },
+              "role": "primary"
+            },
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-017-secondary-480.webp?v=27fd80fb919891df",
+              "naturalWidth": 389,
+              "naturalHeight": 389,
+              "srcset": "/creative/LIST-017-secondary-480.webp?v=27fd80fb919891df 480w, /creative/LIST-017-secondary-800.webp?v=486249a05695b831 800w, /creative/LIST-017-secondary.webp?v=7c4553cd2f114cff 1200w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 350,
+                "height": 260
+              },
+              "role": "secondary"
+            },
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-017-texture-480.webp?v=312247e0f6e3f445",
+              "naturalWidth": 389,
+              "naturalHeight": 389,
+              "srcset": "/creative/LIST-017-texture-480.webp?v=312247e0f6e3f445 480w, /creative/LIST-017-texture.webp?v=d2e849d440b9848f 777w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 350,
+                "height": 260
+              },
+              "role": "texture"
+            }
+          ]
+        },
+        {
+          "sku": "LIST-018",
+          "status": "PASS",
+          "galleryImages": [
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-018-primary-480.webp?v=a1a177f40fdb36d5",
+              "naturalWidth": 389,
+              "naturalHeight": 389,
+              "srcset": "/creative/LIST-018-primary-480.webp?v=a1a177f40fdb36d5 480w, /creative/LIST-018-primary-800.webp?v=0473acb80fd204f6 800w, /creative/LIST-018.webp?v=f5f05ec154706868 1200w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 350,
+                "height": 260
+              },
+              "role": "primary"
+            },
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-018-texture-480.webp?v=d790de2365ce796d",
+              "naturalWidth": 389,
+              "naturalHeight": 389,
+              "srcset": "/creative/LIST-018-texture-480.webp?v=d790de2365ce796d 480w, /creative/LIST-018-texture.webp?v=2f3cb236d4a5e2ad 777w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 350,
+                "height": 260
+              },
+              "role": "texture"
+            }
+          ]
+        },
+        {
+          "sku": "LIST-019",
+          "status": "PASS",
+          "galleryImages": [
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-019-primary-480.webp?v=2e95a331cf9dcd31",
+              "naturalWidth": 389,
+              "naturalHeight": 389,
+              "srcset": "/creative/LIST-019-primary-480.webp?v=2e95a331cf9dcd31 480w, /creative/LIST-019-primary-800.webp?v=b6939a81e8e63678 800w, /creative/LIST-019.webp?v=134cfb553302e096 1200w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 350,
+                "height": 260
+              },
+              "role": "primary"
+            },
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-019-texture-480.webp?v=99f95dac77fa6db2",
+              "naturalWidth": 389,
+              "naturalHeight": 389,
+              "srcset": "/creative/LIST-019-texture-480.webp?v=99f95dac77fa6db2 480w, /creative/LIST-019-texture.webp?v=6944527b256f29be 777w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 350,
+                "height": 260
+              },
+              "role": "texture"
+            }
+          ]
+        },
+        {
+          "sku": "LIST-020",
+          "status": "PASS",
+          "galleryImages": [
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-020-primary-480.webp?v=5c3162234e31e726",
+              "naturalWidth": 389,
+              "naturalHeight": 389,
+              "srcset": "/creative/LIST-020-primary-480.webp?v=5c3162234e31e726 480w, /creative/LIST-020-primary-800.webp?v=16b1e02e9bc580e0 800w, /creative/LIST-020.webp?v=d3465d8ce3b50dee 1200w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 350,
+                "height": 260
+              },
+              "role": "primary"
+            },
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-020-secondary-480.webp?v=58679a180953525f",
+              "naturalWidth": 389,
+              "naturalHeight": 389,
+              "srcset": "/creative/LIST-020-secondary-480.webp?v=58679a180953525f 480w, /creative/LIST-020-secondary-800.webp?v=f86fb39323767d8c 800w, /creative/LIST-020-secondary.webp?v=8932c10722a43cd2 1200w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 350,
+                "height": 260
+              },
+              "role": "secondary"
+            },
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-020-texture-480.webp?v=51a82a2f6c96fba3",
+              "naturalWidth": 389,
+              "naturalHeight": 389,
+              "srcset": "/creative/LIST-020-texture-480.webp?v=51a82a2f6c96fba3 480w, /creative/LIST-020-texture.webp?v=16f83175cab86e0c 777w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 350,
+                "height": 260
+              },
+              "role": "texture"
+            }
+          ]
+        },
+        {
+          "sku": "LIST-021",
+          "status": "PASS",
+          "galleryImages": [
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-021-primary-480.webp?v=efde4810925e6534",
+              "naturalWidth": 389,
+              "naturalHeight": 389,
+              "srcset": "/creative/LIST-021-primary-480.webp?v=efde4810925e6534 480w, /creative/LIST-021-primary-800.webp?v=fe65e73715faee57 800w, /creative/LIST-021.webp?v=32da1a398778f010 1200w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 350,
+                "height": 260
+              },
+              "role": "primary"
+            },
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-021-secondary-480.webp?v=82630157b7dd4479",
+              "naturalWidth": 389,
+              "naturalHeight": 389,
+              "srcset": "/creative/LIST-021-secondary-480.webp?v=82630157b7dd4479 480w, /creative/LIST-021-secondary-800.webp?v=823a4002ad133d7e 800w, /creative/LIST-021-secondary.webp?v=7a97a82bf674d392 1200w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 350,
+                "height": 260
+              },
+              "role": "secondary"
+            },
+            {
+              "src": "https://yunela-v92-demo.onrender.com/creative/LIST-021-texture-480.webp?v=27843005f3b6a22f",
+              "naturalWidth": 389,
+              "naturalHeight": 389,
+              "srcset": "/creative/LIST-021-texture-480.webp?v=27843005f3b6a22f 480w, /creative/LIST-021-texture.webp?v=cbec8acf81e6fcdc 777w",
+              "sizes": "(max-width: 700px) 100vw, 50vw",
+              "rect": {
+                "width": 350,
+                "height": 260
+              },
+              "role": "texture"
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "consoleErrors": [],
+      "failed": [],
+      "badResponses": [],
+      "api": [],
+      "status": "PASS"
+    }
+  ]
+}
