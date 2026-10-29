@@ -65,3 +65,7 @@ Final automated checks: **264 tests / 40 files PASS**, TypeScript PASS, ESLint P
 5. Existing Node static handler serves WebP/JSON/text with proper MIME under nosniff. This fixes the server variant; Render static hosting already served these correctly.
 
 Server fixes are in Git/source but **not running on a static Render service**. Publishing this bundle does not make a backend available. Next task must close infrastructure and business gates described in LAUNCH_BLOCKERS.
+
+## Post-deployment verification
+
+Published **592756bd1c9bb124574388bb1d9c2bcc14004e73**, Render **dep-dbhpqmg8v5cc73944i4g LIVE** at 2026-10-29 21:24:43 Europe/Kyiv. Browser reloaded home, catalog and PHOTO-010 detail; order/operator guard and noindex remain. See HANDOFF and evidence/task15. Bundle is `/assets/index-D0BJhH3y.js`. Full public order remains BLOCKED. This section is a docs-only follow-up, not a second deploy.

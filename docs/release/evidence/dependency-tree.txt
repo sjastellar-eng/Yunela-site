@@ -22,4 +22,3 @@ yunela-site@0.2.1 /workspace/scratch/02acefd4a264/yunela-task15
   ├─┬ vite-node@3.2.4
   │ └── vite@7.3.7 deduped
   └── vite@7.3.7 deduped
-
