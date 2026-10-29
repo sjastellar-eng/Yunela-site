@@ -21,3 +21,7 @@ Next: Task16 protected offline-test server staging, storage/runtime approval and
 - Fresh screenshots: [home](evidence/task15/yunela-task15-live-home-20261029.jpg), [order/operator guard](evidence/task15/yunela-task15-live-guard-20261029.jpg), [PHOTO-010](evidence/task15/yunela-task15-live-card-20261029.jpg). Actual viewport1363×936; exact390/1440 remains BLOCKED.
 - Server code is saved but not executed by static Render. No public full-order success is claimed. No commercial actions performed.
 - This post-live evidence is a documentation-only follow-up: no redeploy required; branch HEAD may be newer than the published code SHA above.
+
+## Task17 — Yuna portrait, 2026-10-30 Kyiv
+
+Static staging published commit3ea70d9bb04bbf82f2eb2431df6373cafddf3949 (dep-dbhsvdek1f9s73e4sj8g LIVE). Supplied source and optimized circular avatars saved; home entry, header entry and dialogue speaker updated. Existing finder navigation preserved. Main URL verified current bundle index-CdHn5gKo.js; noindex retained. See TASK_17_QA.md and evidence/task17 for390/1440 CSS frame results, four screenshots and explicit desktop capture limitation. All required code/build/image checks pass. Task16 remains **PAUSED by user**; this work does not enable backend, orders, payments or sales. No change to existing launch blockers. Documentation-only HEAD may be newer than live code SHA; no redeploy needed.
