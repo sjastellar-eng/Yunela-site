@@ -1,0 +1,1204 @@
+{
+  "base": "3e87ade2d073332c6e181fae8d755f5d40a4780d",
+  "checkpoint": "A",
+  "pillow": "12.3.0",
+  "libwebp": "1.6.0",
+  "records": [
+    {
+      "sourceSku": "LIST-022",
+      "status": "UPDATED",
+      "sourceSha256": "856a4c8abc5cdf4bb0cd657d05d33deb7e463bbcb0e9b8b77020c7ecd42994fd",
+      "protectedPixels": 390065,
+      "protectedLightPixels": 0,
+      "protectedPreEncodeExact": true,
+      "sourceBackgroundRGB": [
+        254,
+        251,
+        246
+      ],
+      "exports": [
+        {
+          "path": "/creative/LIST-022.webp",
+          "size": [
+            1200,
+            1200
+          ],
+          "beforeBytes": 278588,
+          "sourceSha256": "856a4c8abc5cdf4bb0cd657d05d33deb7e463bbcb0e9b8b77020c7ecd42994fd",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 239326,
+              "sha256": "a63f5944c9857f52c8e5946e8e6092b7fcb4343a25bef32963afb03256a64167",
+              "foregroundSSIM": 0.9951601138621822,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 285990,
+              "sha256": "f16a1aac21b94fbd4e01b175117e8e972f5fad23235054d6a51b968620aa1bb9",
+              "foregroundSSIM": 0.9978591203918736,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 239326,
+          "sha256": "a63f5944c9857f52c8e5946e8e6092b7fcb4343a25bef32963afb03256a64167",
+          "foregroundSSIM": 0.9951601138621822
+        },
+        {
+          "path": "/creative/LIST-022-primary-480.webp",
+          "size": [
+            480,
+            480
+          ],
+          "beforeBytes": 52434,
+          "sourceSha256": "a37347b5859e0cd35cb9e08503eb079ebbe6b775683d93dcc853884038ebd8e6",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 51686,
+              "sha256": "aaa9556b3440a1117bc0e2c1e58338d1f8d3d7df2705ffe5b5534557948ad11a",
+              "foregroundSSIM": 0.9967481885302384,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 60824,
+              "sha256": "1e9290ef0f75c910f1390756d7c1c556e2b6ab700aa7639d899f92d3d1702b4b",
+              "foregroundSSIM": 0.9981473585702502,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  249,
+                  250,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 51686,
+          "sha256": "aaa9556b3440a1117bc0e2c1e58338d1f8d3d7df2705ffe5b5534557948ad11a",
+          "foregroundSSIM": 0.9967481885302384
+        },
+        {
+          "path": "/creative/LIST-022-primary-800.webp",
+          "size": [
+            800,
+            800
+          ],
+          "beforeBytes": 126440,
+          "sourceSha256": "f17c061eccca7dfcabb4e00061157fab71fa858b4890b455af854a79f2f49190",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 124654,
+              "sha256": "e69787ebb5bc2d36becc9017178acd1e79c7cd56ba8679c8c6aeef8e796f0cf7",
+              "foregroundSSIM": 0.9952928918028011,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 150982,
+              "sha256": "6853fbf49b16af9b08db81fdb3b24e648b989e75c9339be5af27eff37043d9ac",
+              "foregroundSSIM": 0.9972610982277377,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 124654,
+          "sha256": "e69787ebb5bc2d36becc9017178acd1e79c7cd56ba8679c8c6aeef8e796f0cf7",
+          "foregroundSSIM": 0.9952928918028011
+        }
+      ],
+      "selectedQuality": 92
+    },
+    {
+      "sourceSku": "LIST-023",
+      "status": "UPDATED",
+      "sourceSha256": "db17edd38fbf7674e04e330d3168bd5e88527aff674fd43cd758aecb657d4a58",
+      "protectedPixels": 422554,
+      "protectedLightPixels": 0,
+      "protectedPreEncodeExact": true,
+      "sourceBackgroundRGB": [
+        250,
+        245,
+        238
+      ],
+      "exports": [
+        {
+          "path": "/creative/LIST-023.webp",
+          "size": [
+            1200,
+            1200
+          ],
+          "beforeBytes": 308782,
+          "sourceSha256": "db17edd38fbf7674e04e330d3168bd5e88527aff674fd43cd758aecb657d4a58",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 262218,
+              "sha256": "4d77f50f2b9667bca5387e3413c9be3dba6155899b2658d02251e6d180eebaf3",
+              "foregroundSSIM": 0.9957919330281945,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 310614,
+              "sha256": "06376ca6d7679077066f676a156a7378c9d89f62d1c62e91e5deb5c2a8053d0c",
+              "foregroundSSIM": 0.9978540608881606,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 262218,
+          "sha256": "4d77f50f2b9667bca5387e3413c9be3dba6155899b2658d02251e6d180eebaf3",
+          "foregroundSSIM": 0.9957919330281945
+        },
+        {
+          "path": "/creative/LIST-023-primary-480.webp",
+          "size": [
+            480,
+            480
+          ],
+          "beforeBytes": 55950,
+          "sourceSha256": "a37409169b466795271b1b3f112cc6950bc3ea60821829bbfab2279c2c7f5210",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 55202,
+              "sha256": "33f6b078ebaacb313ad0b07c5c10ffe6d48f32f7918e800fd0cc007c1b66469f",
+              "foregroundSSIM": 0.9964822072392234,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 66492,
+              "sha256": "395440287edacbff6b2fb1558c98332581cba409e7eb6486d245a5ba9e212404",
+              "foregroundSSIM": 0.9980544452341201,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 55202,
+          "sha256": "33f6b078ebaacb313ad0b07c5c10ffe6d48f32f7918e800fd0cc007c1b66469f",
+          "foregroundSSIM": 0.9964822072392234
+        },
+        {
+          "path": "/creative/LIST-023-primary-800.webp",
+          "size": [
+            800,
+            800
+          ],
+          "beforeBytes": 137378,
+          "sourceSha256": "b18f92d35b6bfa3e3dc44c993c3637ffe90feb582ca6286951cd85bda8dad250",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 137052,
+              "sha256": "e34d1250e62ddde6087a16b99e530df1527db1707b59417d369de5e4f43abeb7",
+              "foregroundSSIM": 0.9953116164695575,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 164916,
+              "sha256": "26ca3d284b7256030a667fcc9f81a1097c9203dcc00c53f023141971694890d2",
+              "foregroundSSIM": 0.9973271121725676,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 137052,
+          "sha256": "e34d1250e62ddde6087a16b99e530df1527db1707b59417d369de5e4f43abeb7",
+          "foregroundSSIM": 0.9953116164695575
+        }
+      ],
+      "selectedQuality": 92
+    },
+    {
+      "sourceSku": "LIST-024",
+      "status": "UPDATED",
+      "sourceSha256": "88374c88c5d646ffc99088b6010e9761a7b19f508b0c90600545ee877d3d9774",
+      "protectedPixels": 551378,
+      "protectedLightPixels": 0,
+      "protectedPreEncodeExact": true,
+      "sourceBackgroundRGB": [
+        254,
+        251,
+        243
+      ],
+      "exports": [
+        {
+          "path": "/creative/LIST-024.webp",
+          "size": [
+            1200,
+            1200
+          ],
+          "beforeBytes": 404488,
+          "sourceSha256": "88374c88c5d646ffc99088b6010e9761a7b19f508b0c90600545ee877d3d9774",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 343712,
+              "sha256": "e4716923e4cbefc3de9be25d396e34fbb04eb75f74cf56305c6f1f621182fcc8",
+              "foregroundSSIM": 0.9957389789352571,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 406652,
+              "sha256": "84465328ce7142d168a944c9aee0e77b0e4b16d5c26d27fc8dd870f8114cae49",
+              "foregroundSSIM": 0.998276676683994,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 343712,
+          "sha256": "e4716923e4cbefc3de9be25d396e34fbb04eb75f74cf56305c6f1f621182fcc8",
+          "foregroundSSIM": 0.9957389789352571
+        },
+        {
+          "path": "/creative/LIST-024-primary-480.webp",
+          "size": [
+            480,
+            480
+          ],
+          "beforeBytes": 73144,
+          "sourceSha256": "26ae38905faa491bf46c4a13961f8c2b697b4a8368bc4f3d18deb650ed58d720",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 71778,
+              "sha256": "74956650214a6a348c5d788af33eec738917f963fd497e83627bb513e972a463",
+              "foregroundSSIM": 0.9972513714469389,
+              "cornerRGB": [
+                [
+                  252,
+                  250,
+                  246
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 84274,
+              "sha256": "cdb72bad1bb35aad1b520bf77962cf15335f5c77b4816199fca457b6f90ccbbc",
+              "foregroundSSIM": 0.9985161927410074,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 71778,
+          "sha256": "74956650214a6a348c5d788af33eec738917f963fd497e83627bb513e972a463",
+          "foregroundSSIM": 0.9972513714469389
+        },
+        {
+          "path": "/creative/LIST-024-primary-800.webp",
+          "size": [
+            800,
+            800
+          ],
+          "beforeBytes": 181290,
+          "sourceSha256": "933710396dac21492b1190ac2e6770b4b6859aed78b0d99469b659af5cd76965",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 177248,
+              "sha256": "68a3a0acc55279a51619b5b251df1cb3427ff15d2f4551ff0343fe5e14398aee",
+              "foregroundSSIM": 0.9960690419100936,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 211342,
+              "sha256": "bd4185e89f6a92ba235f4eb52d4768eaf9c41a2f244379e9b6dc0d2287daa72c",
+              "foregroundSSIM": 0.9977443490301325,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 177248,
+          "sha256": "68a3a0acc55279a51619b5b251df1cb3427ff15d2f4551ff0343fe5e14398aee",
+          "foregroundSSIM": 0.9960690419100936
+        }
+      ],
+      "selectedQuality": 92
+    },
+    {
+      "sourceSku": "LIST-025",
+      "status": "UPDATED",
+      "sourceSha256": "f756b455e5c06ab0700fdbc794bd547991fdbd1d47337f3dd96173f96fff9100",
+      "protectedPixels": 549057,
+      "protectedLightPixels": 0,
+      "protectedPreEncodeExact": true,
+      "sourceBackgroundRGB": [
+        250,
+        245,
+        238
+      ],
+      "exports": [
+        {
+          "path": "/creative/LIST-025.webp",
+          "size": [
+            1200,
+            1200
+          ],
+          "beforeBytes": 334152,
+          "sourceSha256": "f756b455e5c06ab0700fdbc794bd547991fdbd1d47337f3dd96173f96fff9100",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 280100,
+              "sha256": "196bf169077515e2c5a92aa878603ca7a4f722a2ca3ce03cff03191f115a6eb0",
+              "foregroundSSIM": 0.9957317915437293,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 331886,
+              "sha256": "ff54ad99f57c92022a8d3bc4c09b29710b322822d66fd5b118ea0a3b8f2cffb2",
+              "foregroundSSIM": 0.9981628154170488,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 280100,
+          "sha256": "196bf169077515e2c5a92aa878603ca7a4f722a2ca3ce03cff03191f115a6eb0",
+          "foregroundSSIM": 0.9957317915437293
+        },
+        {
+          "path": "/creative/LIST-025-primary-480.webp",
+          "size": [
+            480,
+            480
+          ],
+          "beforeBytes": 58590,
+          "sourceSha256": "3f042f259a89dd518e6db3a878874df4fc61334d61ee80b2d24170d56a9eb3e9",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 57826,
+              "sha256": "6b369eb3f2b7c878f3fb6076f43ddd70dca6c43fbb23e60329642e32656a2e37",
+              "foregroundSSIM": 0.9968061792895683,
+              "cornerRGB": [
+                [
+                  252,
+                  250,
+                  246
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 69348,
+              "sha256": "78fe3732778dfc0fcf8b9dd3caa79212b5a70ad4da26ba427596f24ea0d6f5a3",
+              "foregroundSSIM": 0.9982074983767579,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 57826,
+          "sha256": "6b369eb3f2b7c878f3fb6076f43ddd70dca6c43fbb23e60329642e32656a2e37",
+          "foregroundSSIM": 0.9968061792895683
+        },
+        {
+          "path": "/creative/LIST-025-primary-800.webp",
+          "size": [
+            800,
+            800
+          ],
+          "beforeBytes": 144670,
+          "sourceSha256": "3584df5ad870656c01726c6e03c02af1e0c0c54be966ddd9af9de8a224a56426",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 142554,
+              "sha256": "30226fa7600a988f54ed8ee710bdce8f0fff3eacb87ad9d4392293c3fb380403",
+              "foregroundSSIM": 0.9954909505431783,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 172658,
+              "sha256": "a24af78423378484ddb032861d007f7cd9a499733229d42aa928b6d971129c57",
+              "foregroundSSIM": 0.997551732813233,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 142554,
+          "sha256": "30226fa7600a988f54ed8ee710bdce8f0fff3eacb87ad9d4392293c3fb380403",
+          "foregroundSSIM": 0.9954909505431783
+        }
+      ],
+      "selectedQuality": 92
+    },
+    {
+      "sourceSku": "LIST-026",
+      "status": "UPDATED",
+      "sourceSha256": "83cd2b4ba2d8c0b64c76af928c4e52bbdd4d0a93257604bab2e253b7bd72573e",
+      "protectedPixels": 484895,
+      "protectedLightPixels": 0,
+      "protectedPreEncodeExact": true,
+      "sourceBackgroundRGB": [
+        251,
+        248,
+        242
+      ],
+      "exports": [
+        {
+          "path": "/creative/LIST-026.webp",
+          "size": [
+            1200,
+            1200
+          ],
+          "beforeBytes": 341546,
+          "sourceSha256": "83cd2b4ba2d8c0b64c76af928c4e52bbdd4d0a93257604bab2e253b7bd72573e",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 290998,
+              "sha256": "dc7d241185dd56ac20e2863c51d13bf26a9b744d4941865e03c4c4eaa5707e95",
+              "foregroundSSIM": 0.9961255841888451,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 344632,
+              "sha256": "9aaaf20685cd0ceaf834fc546be9626df9cda2f22d657d9a22c2645ce2e10d85",
+              "foregroundSSIM": 0.9983062546767755,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 290998,
+          "sha256": "dc7d241185dd56ac20e2863c51d13bf26a9b744d4941865e03c4c4eaa5707e95",
+          "foregroundSSIM": 0.9961255841888451
+        },
+        {
+          "path": "/creative/LIST-026-primary-480.webp",
+          "size": [
+            480,
+            480
+          ],
+          "beforeBytes": 65194,
+          "sourceSha256": "3f5aac4bf217d73dab6290c735f2674b1a268581812d6e1f3c7dae2a58451106",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 64756,
+              "sha256": "66a34beca92e01db46a9b543b580f5074d6389cf0fc230b7031cf34c8eba8f25",
+              "foregroundSSIM": 0.9975958296212226,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 76762,
+              "sha256": "947d2d9ff428abecf0ecd66883869af74dbe61b0e7a487c95ec50beb92827652",
+              "foregroundSSIM": 0.9986510418445365,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 64756,
+          "sha256": "66a34beca92e01db46a9b543b580f5074d6389cf0fc230b7031cf34c8eba8f25",
+          "foregroundSSIM": 0.9975958296212226
+        },
+        {
+          "path": "/creative/LIST-026-primary-800.webp",
+          "size": [
+            800,
+            800
+          ],
+          "beforeBytes": 152984,
+          "sourceSha256": "a7dc225dba5f26c0c751291ae610d953e46335abaad00cc33f170f08b986cae3",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 152270,
+              "sha256": "f5a282660ae5c45e392c17c6f01fcb60ca60af426193dd4185c7a6de6f52ee0f",
+              "foregroundSSIM": 0.9962399734782298,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 184792,
+              "sha256": "a99ded92ba7c70c68caf9c5a75600015f6fceef413dab2626f8fd3a7385738ae",
+              "foregroundSSIM": 0.9979236814501605,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 152270,
+          "sha256": "f5a282660ae5c45e392c17c6f01fcb60ca60af426193dd4185c7a6de6f52ee0f",
+          "foregroundSSIM": 0.9962399734782298
+        }
+      ],
+      "selectedQuality": 92
+    }
+  ],
+  "task": "Micro-task 14A",
+  "baseCommit": "3e87ade2d073332c6e181fae8d755f5d40a4780d",
+  "reusedVerifiedImageCommit": "c678edf328a7035465d453ab96d51bb0f7e8f6da",
+  "scope": "Only LIST-022–026 primary/480/800; no PHOTO edits; no re-encoding during extraction",
+  "selectedQuality": 92,
+  "method": 6
+}

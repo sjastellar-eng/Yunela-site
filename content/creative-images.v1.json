@@ -698,7 +698,7 @@
       "assignmentStatus": "APPROVED_FOR_SKU",
       "publicationAllowed": true,
       "alt": "Художня AI-візуалізація: Високогірний світлий улун. Не є документальною фотографією партії постачальника.",
-      "sha256": "856a4c8abc5cdf4bb0cd657d05d33deb7e463bbcb0e9b8b77020c7ecd42994fd"
+      "sha256": "a63f5944c9857f52c8e5946e8e6092b7fcb4343a25bef32963afb03256a64167"
     },
     {
       "sourceSku": "LIST-023",
@@ -708,7 +708,7 @@
       "assignmentStatus": "APPROVED_FOR_SKU",
       "publicationAllowed": true,
       "alt": "Художня AI-візуалізація: ҐАБА (тип обробки уточнити). Не є документальною фотографією партії постачальника.",
-      "sha256": "db17edd38fbf7674e04e330d3168bd5e88527aff674fd43cd758aecb657d4a58"
+      "sha256": "4d77f50f2b9667bca5387e3413c9be3dba6155899b2658d02251e6d180eebaf3"
     },
     {
       "sourceSku": "LIST-024",
@@ -718,7 +718,7 @@
       "assignmentStatus": "APPROVED_FOR_SKU",
       "publicationAllowed": true,
       "alt": "Художня AI-візуалізація: Дун Фан Мей Жень. Не є документальною фотографією партії постачальника.",
-      "sha256": "88374c88c5d646ffc99088b6010e9761a7b19f508b0c90600545ee877d3d9774"
+      "sha256": "e4716923e4cbefc3de9be25d396e34fbb04eb75f74cf56305c6f1f621182fcc8"
     },
     {
       "sourceSku": "LIST-025",
@@ -728,7 +728,7 @@
       "assignmentStatus": "APPROVED_FOR_SKU",
       "publicationAllowed": true,
       "alt": "Художня AI-візуалізація: Люань Гуапянь (назву підтвердити). Не є документальною фотографією партії постачальника.",
-      "sha256": "f756b455e5c06ab0700fdbc794bd547991fdbd1d47337f3dd96173f96fff9100"
+      "sha256": "196bf169077515e2c5a92aa878603ca7a4f722a2ca3ce03cff03191f115a6eb0"
     },
     {
       "sourceSku": "LIST-026",
@@ -738,7 +738,7 @@
       "assignmentStatus": "APPROVED_FOR_SKU",
       "publicationAllowed": true,
       "alt": "Художня AI-візуалізація: Білочунь. Не є документальною фотографією партії постачальника.",
-      "sha256": "83cd2b4ba2d8c0b64c76af928c4e52bbdd4d0a93257604bab2e253b7bd72573e"
+      "sha256": "dc7d241185dd56ac20e2863c51d13bf26a9b744d4941865e03c4c4eaa5707e95"
     }
   ]
 }
