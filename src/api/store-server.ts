@@ -234,7 +234,7 @@ export function createStoreServer(options: Options) {
       const root=resolve(options.staticDir), file=resolve(root,'.'+decodeURIComponent(path==='/'?'/index.html':path));
       if(file!==root && !file.startsWith(root+sep))throw new ApplicationError('FORBIDDEN','Невірний шлях');
       if(existsSync(file) && extname(file)) {
-        const types:Record<string,string>={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'text/css','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml'};
+        const types:Record<string,string>={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'text/css','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml','.webp':'image/webp','.json':'application/json; charset=utf-8','.txt':'text/plain; charset=utf-8'};
         res.writeHead(200,{'content-type':types[extname(file)]??'application/octet-stream','x-content-type-options':'nosniff'});res.end(readFileSync(file));return;
       }
     }

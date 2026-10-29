@@ -3,7 +3,20 @@ import type { Order } from '../contracts/commerce';
 import { ApplicationError } from './errors';
 import { taskEvent } from './partnerStore';
 const conflict=(s:string):never=>{throw new ApplicationError('CONFLICT',s);};
-export function partnerPayload(o:Order){return {simulationOnly:true,dispatchEnabled:false,order_id:o.id,rev:1,command_id:o.id+':1:FULFILL',payment_release:o.status==='confirmed'?'RELEASED_BY_YUNELA':'NOT_RELEASED',issued_at:o.createdAt,shipping:o.shipping,carrier:'UNKNOWN',shipping_payer:'UNKNOWN',operator_contact:'UNKNOWN',exception_instruction:'STOP; contact YUNELA, no substitution',items:o.items.map(i=>({line_id:i.id,sourceSku:i.commercial?.sourceSku??i.sku,supplier_sku:i.commercial?.sourceSku??null,lot:i.commercial?.lot??null,requested_net_g:i.commercial?.weightGrams??null,package_count:i.quantity,unit_count:i.commercial?.format==='WHOLE'?i.quantity:null,packaging_version:i.commercial?.packaging??null,supplier_price_version:i.commercial?.priceVersion??null,supplier_cost_basis:i.commercial?{whole_minor:i.commercial.supplierWholeMinor,whole_grams:i.commercial.wholeGrams,currency:'UAH'}:null}))};}
+export function partnerPayload(o:Order){const payload={simulationOnly:true,dispatchEnabled:false,order_id:o.id,rev:1,command_id:o.id+':1:FULFILL',payment_release:o.status==='confirmed'?'RELEASED_BY_YUNELA':'NOT_RELEASED',issued_at:o.createdAt,shipping:o.shipping,carrier:'UNKNOWN',shipping_payer:'CUSTOMER',handoff_channel:'TELEGRAM',supplier_settlement:'AFTER_PACKED_BEFORE_DISPATCH',return_shipping_payer_on_noncollection:'YUNELA',cod_recipient:'YUNELA_REQUIRES_CONFIGURATION',cod_enabled:false,operator_contact:'UNKNOWN',exception_instruction:'STOP; contact YUNELA, no substitution',items:o.items.map(i=>({line_id:i.id,sourceSku:i.commercial?.sourceSku??i.sku,name:i.teaName??null,supplier_sku:i.commercial?.sourceSku??null,lot:i.commercial?.lot??null,requested_net_g:i.commercial?.weightGrams??null,package_count:i.quantity,unit_count:i.commercial?.format==='WHOLE'?i.quantity:null,packaging_version:i.commercial?.packaging??null,supplier_price_version:i.commercial?.priceVersion??null,supplier_cost_basis:i.commercial?{whole_minor:i.commercial.supplierWholeMinor,whole_grams:i.commercial.wholeGrams,currency:'UAH'}:null}))};
+ return {...payload,telegram_draft:[
+  'TEST — DO NOT SEND / НЕ ВІДПРАВЛЯТИ',
+  `NEW ${o.id} / r1`,
+  `Оплата клієнта: ${payload.payment_release} (офлайн-симуляція).`,
+  ...payload.items.map(i=>`${i.sourceSku} ${i.name??'UNKNOWN NAME'}; ${i.unit_count!==null?'WHOLE':'WEIGHT'} ${i.requested_net_g??'UNKNOWN'} г × ${i.package_count}; lot/ref ${i.lot??'UNKNOWN'}; packaging ${i.packaging_version??'UNKNOWN'}`),
+  `Отримувач: ${o.shipping.recipientName}, ${o.shipping.phone}; ${o.shipping.city}, ${o.shipping.addressLine1}.`,
+  'Доставку оплачує покупець перевізнику; перевізник/оголошена вартість/запитана дата/контакт оператора: УТОЧНИТИ.',
+  'Розрахунок із постачальником: після PACKED, до відправки. Зазвичай відправка наступного дня, без гарантованого SLA.',
+  'Зворотна доставка при невикупі: YUNELA. Аванс/COD не підключені; одержувач COD потребує налаштування YUNELA.',
+  'Потрібен ACK r1 із підтвердженням товару/партії та строку. Розбіжність: STOP, без заміни.',
+  'НЕ ГОТОВО ДО ВІДПРАВКИ: заповнити відсутні поля; симуляція не підтверджує банківську оплату.',
+ ].join('\n')};
+}
 export function handoff(db:Database.Database,order:Order,b:Record<string,unknown>,actor:string){return db.transaction(()=>{
  const action=String(b.action),existing=db.prepare('SELECT * FROM partner_handoffs WHERE order_id=?').get(order.id) as {status:string;command_id:string;revision:number;payload_json:string}|undefined;
  if(action==='PREPARE_TEST'){if(existing)return existing;if(order.status!=='confirmed')return conflict('Спочатку підтверджена тестова оплата');const p=partnerPayload(order);if(p.items.some(i=>!i.lot||!i.requested_net_g||!i.packaging_version))return conflict('Немає партії, маси або пакування');db.prepare("INSERT INTO partner_handoffs(order_id,command_id,status,revision,payload_json,updated_at) VALUES(?,?,'PREPARED',1,?,?)").run(order.id,p.command_id,JSON.stringify(p),new Date().toISOString());taskEvent(db,order.id,actor,'PREPARED_TEST');return {status:'PREPARED',command_id:p.command_id,revision:1};}

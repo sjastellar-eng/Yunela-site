@@ -1,0 +1,92 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> yunela-site@0.2.1 test
+> node scripts/build-test-workers.mjs && vitest run
+
+
+ RUN  v3.2.7 /workspace/scratch/02acefd4a264/yunela-task15
+
+stderr | src/application/fulfillment/f5-shipment.test.ts > F5 Shipment application > prevents duplicate Shipment creation across two independent SQLite connections
+F5 concurrent create worker diagnostics
+{
+  "worker": "A",
+  "ok": true,
+  "shipmentId": "1fa616d8-a444-46ea-a98b-9a340a9293d1"
+}
+{
+  "worker": "B",
+  "ok": true,
+  "shipmentId": "1fa616d8-a444-46ea-a98b-9a340a9293d1"
+}
+F5 concurrent create database diagnostics {
+  "shipmentRowCount": 1,
+  "shipmentIds": [
+    "1fa616d8-a444-46ea-a98b-9a340a9293d1"
+  ]
+}
+
+ ✓ src/api/server.test.ts (10 tests) 275ms
+ ✓ src/api/f6-commerce.test.ts (3 tests) 760ms
+   ✓ F6.1 OPERATOR-only analytics HTTP > requires authorization and denies customer and supplier  344ms
+ ✓ src/application/fulfillment/f5-shipment.test.ts (34 tests) 950ms
+ ✓ src/application/fulfillment/f2.test.ts (14 tests) 229ms
+ ✓ src/api/task15-order.test.ts (2 tests) 149ms
+ ✓ src/api/yuna.test.ts (4 tests) 180ms
+ ✓ src/api/store-server.test.ts (10 tests) 1294ms
+ ✓ src/api/d1-1-customer-identity.test.ts (4 tests) 156ms
+ ✓ src/api/weight-store.test.ts (10 tests) 1303ms
+ ✓ src/api/d2-commerce-ownership.test.ts (6 tests) 139ms
+ ✓ src/api/staging-access.test.ts (3 tests) 91ms
+ ✓ src/application/analytics/commerceService.test.ts (6 tests) 61ms
+ ✓ src/application/fulfillment/f2-corrections.test.ts (12 tests) 166ms
+ ✓ src/api/discoveryBox.test.ts (4 tests) 120ms
+ ✓ src/application/fulfillment/persistence.test.ts (6 tests) 67ms
+ ✓ src/database/database.test.ts (6 tests) 90ms
+ ✓ src/api/recommendation.test.ts (1 test) 64ms
+ ✓ src/api/c5-feedback-profile.test.ts (1 test) 41ms
+ ✓ src/application/sqliteRepositories.test.ts (3 tests) 49ms
+ ✓ src/application/fulfillment/inventory-semantics.test.ts (2 tests) 34ms
+ ✓ src/domain/profile/feedbackMapping.test.ts (13 tests) 16ms
+ ✓ src/application/flexiblePricing.test.ts (3 tests) 37ms
+ ✓ src/application/c5-feedback-profile.test.ts (6 tests) 14ms
+ ✓ src/catalog/catalog.test.tsx (9 tests) 37ms
+ ✓ src/yuna/discovery.test.ts (10 tests) 21ms
+ ✓ src/domain/discoveryBox/selectionPolicy.test.ts (7 tests) 17ms
+ ✓ src/application/yunaGateway.test.ts (3 tests) 17ms
+ ✓ src/application/commerce/service.test.ts (3 tests) 9ms
+ ✓ src/application/payment/service.test.ts (10 tests) 15ms
+ ✓ src/application/sommelierReadiness.test.ts (5 tests) 23ms
+ ✓ scripts/creative-contract.test.mjs (1 test) 5ms
+ ✓ src/application/application.test.ts (8 tests) 12ms
+ ✓ src/application/storeRequest.test.ts (2 tests) 12ms
+ ✓ src/application/recommendation/service.test.ts (3 tests) 7ms
+ ✓ src/domain/recommendation/engine.test.ts (8 tests) 8ms
+ ✓ scripts/catalog-v2-import.test.mjs (7 tests) 6ms
+ ✓ src/application/discoveryBox/service.test.ts (1 test) 6ms
+ ✓ src/contracts/contracts.test.ts (4 tests) 6ms
+ ✓ src/api/f3-server.test.ts (16 tests) 5673ms
+   ✓ F3 authenticated fulfillment API > returns 401 without authentication  476ms
+   ✓ F3 authenticated fulfillment API > returns 401 for an expired token  457ms
+   ✓ F3 authenticated fulfillment API > returns 401 for a forged token  337ms
+   ✓ F3 authenticated fulfillment API > returns 401 for invalid credentials  382ms
+   ✓ F3 authenticated fulfillment API > resolves customer actor from the bearer token and enforces ownership  309ms
+   ✓ F3 authenticated fulfillment API > rejects customer from lifecycle operations  312ms
+   ✓ F3 authenticated fulfillment API > rejects supplier from lifecycle operations  349ms
+   ✓ F3 authenticated fulfillment API > rejects supplier from shipment creation and permits operator  376ms
+   ✓ F3 authenticated fulfillment API > allows a customer to read their own Shipment  344ms
+   ✓ F3 authenticated fulfillment API > denies a customer access to another customer Shipment  337ms
+   ✓ F3 authenticated fulfillment API > rejects customer Shipment lifecycle or tracking mutation  313ms
+   ✓ F3 authenticated fulfillment API > rejects supplier Shipment mutation  318ms
+   ✓ F3 authenticated fulfillment API > allows operator manual tracking management  307ms
+   ✓ F3 authenticated fulfillment API > does not allow SYSTEM to authenticate through the public HTTP flow  434ms
+   ✓ F3 authenticated fulfillment API > never accepts customerId or actor identity from the approval body  319ms
+ ✓ src/application/fulfillment/inventory-concurrency.test.ts (4 tests) 7445ms
+   ✓ F4 inventory concurrency — independent SQLite connections through production path > prevents concurrent production READY reservations from overselling the same TeaLot  3147ms
+   ✓ F4 inventory concurrency — independent SQLite connections through production path > proves concurrent production PACKED transitions perform physical consumption only once  2299ms
+   ✓ F4 inventory concurrency — independent SQLite connections through production path > allows concurrent production release operations without double release or inventory mutation  1791ms
+
+ Test Files  40 passed (40)
+      Tests  264 passed (264)
+   Start at  21:19:25
+   Duration  7.97s (transform 2.51s, setup 0ms, collect 5.50s, tests 19.60s, environment 9ms, prepare 3.22s)
+

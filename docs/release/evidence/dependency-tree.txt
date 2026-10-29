@@ -1,0 +1,25 @@
+yunela-site@0.2.1 /workspace/scratch/02acefd4a264/yunela-task15
+├─┬ @vitejs/plugin-react@5.0.2
+│ └── vite@7.3.7 deduped
+├─┬ eslint-plugin-react-hooks@6.1.1
+│ ├─┬ zod-validation-error@3.5.4
+│ │ └── zod@3.25.76 deduped
+│ └── zod@3.25.76
+├─┬ eslint@9.35.0
+│ └─┬ minimatch@3.1.5
+│   └── brace-expansion@1.1.21
+├─┬ typescript-eslint@8.43.0
+│ └─┬ @typescript-eslint/typescript-estree@8.43.0
+│   └─┬ minimatch@9.0.9
+│     └── brace-expansion@2.1.7
+├─┬ vite@7.3.7
+│ └─┬ postcss@8.5.28
+│   └── source-map-js@1.2.2
+└─┬ vitest@3.2.7
+  ├─┬ @vitest/mocker@3.2.7
+  │ └── vite@7.3.7 deduped
+  ├── tinypool@1.1.1
+  ├─┬ vite-node@3.2.4
+  │ └── vite@7.3.7 deduped
+  └── vite@7.3.7 deduped
+
