@@ -102,19 +102,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Заводська упаковка на білому фоні: «Фей Сянь Ґун Ча». Не підтверджує поточну партію.",
-          "sha256": "1cc6798e6ddc5d479de8d2851958374eb7082b8e288b9feb9dfbf84ae9a2dd09",
+          "sha256": "196051cb71617e5e5463c2474a51b4d7dece078e788c6637fc0a7f55b08e63a5",
           "width": 1254,
           "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-002-primary-480.webp",
               "width": 480,
-              "sha256": "b31c0c7d2d157dc8fcb6ee16685867cc5948b0854292e8c84bc67686a0c32e4b"
+              "sha256": "9924548ae290e08f41e0da6fe8fafa6b3de92727e1f8b679a020315747ad9f2e"
             },
             {
               "path": "/creative/PHOTO-002-primary-800.webp",
               "width": 800,
-              "sha256": "515b255f2135aad9d69fbb773700636be416734d6395456d1bb01f65d1ee3d72"
+              "sha256": "19fd1e801a13c5f99b006e330bbe6e5915ab12906f60a179c3931704d0b30de3"
             }
           ],
           "documentary": false,
@@ -141,19 +141,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Заводська упаковка на білому фоні: Шу пуер «Лао Те», код 1966. Не підтверджує поточну партію.",
-          "sha256": "df35d989ed3f93aeee9fe4314a63144963e3a28fb4c911249f3d54f0451868d6",
+          "sha256": "ad2d78eb46117be19dd6fc5a76765b5d7b0befa2e79a81e49cbb1be8bc0d3945",
           "width": 1254,
           "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-003-primary-480.webp",
               "width": 480,
-              "sha256": "3e51819d6cee179b19f4c33354e6988f2144b5fb099ad0fe1e8aec14ca152698"
+              "sha256": "6beb18aeb3db375169c0e1eca3222e172563ef20dfd290c16454ced1c45551be"
             },
             {
               "path": "/creative/PHOTO-003-primary-800.webp",
               "width": 800,
-              "sha256": "8032e406cf7f5b8114c14214532129854d89789e0836d8693539ed587ec7c86c"
+              "sha256": "28dd30a519184637f4c157e810b3094f0f2ef66186658fb1c04bced07363e344"
             }
           ],
           "documentary": false,
@@ -229,19 +229,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Заводська упаковка на білому фоні: Шу пуер «Му Є Чунь 001». Не підтверджує поточну партію.",
-          "sha256": "732190705822cf5fbeebc24a9e9e2ace4783b347e75894eb2017cc711c0df39b",
+          "sha256": "6ec53b9dd5baf21dc29901816a946241a3d2c6da1a43cbc8315225d97de1ba8c",
           "width": 1254,
           "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-004-primary-480.webp",
               "width": 480,
-              "sha256": "50037643b5fececfbf0743d634066e223791579b6799df1f91b0cf475cf170d2"
+              "sha256": "3d493e6e0c32ebf0d2f46157ec337cd9f7deca83cc22579e0b522a88ce6b5488"
             },
             {
               "path": "/creative/PHOTO-004-primary-800.webp",
               "width": 800,
-              "sha256": "93d288797faa3d859bcd70de01c872991a3f290d312c0f5dd1991d68a7e5f5ef"
+              "sha256": "cb48b3646b543ab7764a7994b1ec5e863275e1d5024e9c17468bdad81ac43443"
             }
           ],
           "documentary": false,
@@ -268,19 +268,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Заводська упаковка на білому фоні: Шу пуер «Кун Цюе Інь». Не підтверджує поточну партію.",
-          "sha256": "dfd8c1cc1d66982eaf9f0e90c1b323659488b58b7668a0ac6d2c38c33c8cd764",
+          "sha256": "0c8528d1d02c55bba02ccc1a1a965bd43320ec8b833aa03c860f75f0eb7a7086",
           "width": 1254,
           "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-005-primary-480.webp",
               "width": 480,
-              "sha256": "ec93436f65585cea08b3d475c588ca8487f436177a318f353663a7cd9ceb8324"
+              "sha256": "36dce864b0ce50ed741ebbf084a68d35c2a5a876d8b463670e33b272c347d2cb"
             },
             {
               "path": "/creative/PHOTO-005-primary-800.webp",
               "width": 800,
-              "sha256": "de993e0602886c50eb3dc7f40df8b24fed5965d593f94390862380a910eae526"
+              "sha256": "6df61b7014e36a97fe53d7ae7d34967bf0be274961de3c53271702cbae88096f"
             }
           ],
           "documentary": false,
@@ -356,19 +356,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Заводська упаковка на білому фоні: Шу пуер «Цяо Му Юань Ча». Не підтверджує поточну партію.",
-          "sha256": "0a4a8d1dc9b2fc7a901cf57b0d15bfeb6067dc1cfadcbbe156c910cd4e3cb08e",
+          "sha256": "7c0c4d2065de7422f92714c8440db0fc8d676c0deee806d67203bbde1cede307",
           "width": 1254,
           "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-006-primary-480.webp",
               "width": 480,
-              "sha256": "6fdbb3f47296e144a679651411e55fe04000174b32489ec29fbae390efc3d855"
+              "sha256": "e05d121b853f69229ebead6e3c041c6331cdb77269ce0debb30772459be383cd"
             },
             {
               "path": "/creative/PHOTO-006-primary-800.webp",
               "width": 800,
-              "sha256": "f38da56eca00901255759ca99459f5696e518366a44b004227763707dabd9f9a"
+              "sha256": "608ed3e536d8ecc0c0e78f150ac8f45e77cee36d1207827b1c82e70b25f72cb9"
             }
           ],
           "documentary": false,
@@ -395,19 +395,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Заводська упаковка на білому фоні: Шу пуер «Біндао». Не підтверджує поточну партію.",
-          "sha256": "ddcb2f5a1c5e1089748bdd48741a2078618bfbaebd19c1d4be74548632086fde",
+          "sha256": "a2df9343a40ea791e0db1f7969557437415847999ffd2c0d7db8e61ac4f75bf4",
           "width": 1254,
           "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-007-primary-480.webp",
               "width": 480,
-              "sha256": "0ad1b0b5d221c3a6e761d55a68ab580d78efcab57b65e3ac3856c57fb42e1796"
+              "sha256": "5603f496674f0c9fff4f6322e75e2a0d7ccc51dec35c936678e50e9d7268612a"
             },
             {
               "path": "/creative/PHOTO-007-primary-800.webp",
               "width": 800,
-              "sha256": "c508fcef3df1812b139b69ee856d0a3bc9705518620e6e0693905604d4f0cd9e"
+              "sha256": "721bf1c4ad3512aa49bd2fc7a5b2a9d3c8b071a3b9edfc9c70c6ae7d55aa88e6"
             }
           ],
           "documentary": false,
@@ -473,19 +473,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Заводська упаковка на білому фоні: Шу пуер «Ґунтін», маркування «Чунь Му Інь Цзі». Не підтверджує поточну партію.",
-          "sha256": "5a8c1223fa75485e2299c553bacaba83f39df73940e4f3cb18d19b0cf1ef5be3",
+          "sha256": "5b000b4606ec87591133b38a3253d8337ed39e07b265a9cad26b65bb1847dd86",
           "width": 1254,
           "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-009-primary-480.webp",
               "width": 480,
-              "sha256": "346794a78c0662ef9e8dec242557779e087fd1ee25e8e01ce2dd56ce8f4c863d"
+              "sha256": "37896da903f8db102d0827aefbd2ce2edd77bab097f8bb9531dc82288d6e33dc"
             },
             {
               "path": "/creative/PHOTO-009-primary-800.webp",
               "width": 800,
-              "sha256": "83448fe3d348d7b0515e4caa1e613e15159d6ae738d685885c21f671b9360fb0"
+              "sha256": "bcfd3f37988be87fc21802f919de575045b5f06f0ae775a5cb2bf24851790f55"
             }
           ],
           "documentary": false,
@@ -600,19 +600,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Заводська упаковка на білому фоні: «Ґунтін Ґун Бін». Не підтверджує поточну партію.",
-          "sha256": "dc774ae73e3a59f2b9cc9d0983d8de191c54d95ea99ce2de9104aa089dad2f56",
+          "sha256": "31d57b7d38a332164758ac01b7d46219ffa41fe89188c213dc6dc21053e0394e",
           "width": 1254,
           "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-011-primary-480.webp",
               "width": 480,
-              "sha256": "fc04d1ff3f2f7051a5896b3eab3d5a34e3644184313ab5e581f7062ad3eb7406"
+              "sha256": "3d0d2c1b84cb50095bcf47a6c9e35b15a2430c80bfd2b2bd84c95ce51d238376"
             },
             {
               "path": "/creative/PHOTO-011-primary-800.webp",
               "width": 800,
-              "sha256": "54c3311340065d7c70a788588ba0d8774c9f24f8294637d805e6b246dae8c643"
+              "sha256": "9a578f09583a54b96f30c98c1b67126aaefbf3d9930f4f322a86cb8f13bf24a8"
             }
           ],
           "documentary": false,

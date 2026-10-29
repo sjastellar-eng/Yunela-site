@@ -1,0 +1,2616 @@
+{
+  "base": "3e87ade2d073332c6e181fae8d755f5d40a4780d",
+  "checkpoint": "B",
+  "pillow": "12.3.0",
+  "libwebp": "1.6.0",
+  "records": [
+    {
+      "sourceSku": "PHOTO-002",
+      "status": "UPDATED",
+      "sourceSha256": "1cc6798e6ddc5d479de8d2851958374eb7082b8e288b9feb9dfbf84ae9a2dd09",
+      "protectedPixels": 691624,
+      "protectedLightPixels": 156318,
+      "protectedPreEncodeExact": true,
+      "sourceBackgroundRGB": [
+        254,
+        254,
+        254
+      ],
+      "exports": [
+        {
+          "path": "/creative/PHOTO-002.webp",
+          "size": [
+            1254,
+            1254
+          ],
+          "beforeBytes": 281476,
+          "sourceSha256": "1cc6798e6ddc5d479de8d2851958374eb7082b8e288b9feb9dfbf84ae9a2dd09",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 238042,
+              "sha256": "66de5a5f67dd3af84fefb1c482b46ffca30f9e4782b291bc312109f6f6ae7764",
+              "foregroundSSIM": 0.9883183142409763,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 285868,
+              "sha256": "196051cb71617e5e5463c2474a51b4d7dece078e788c6637fc0a7f55b08e63a5",
+              "foregroundSSIM": 0.9958817035674766,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 333810,
+              "sha256": "0cedb665c9ba4f4372ef48fa9305332c42e641738f2f6c95ecff2c74841a78b7",
+              "foregroundSSIM": 0.996596353302907,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 95,
+          "method": 6,
+          "afterBytes": 285868,
+          "sha256": "196051cb71617e5e5463c2474a51b4d7dece078e788c6637fc0a7f55b08e63a5",
+          "foregroundSSIM": 0.9958817035674766
+        },
+        {
+          "path": "/creative/PHOTO-002-primary-480.webp",
+          "size": [
+            480,
+            480
+          ],
+          "beforeBytes": 53468,
+          "sourceSha256": "b31c0c7d2d157dc8fcb6ee16685867cc5948b0854292e8c84bc67686a0c32e4b",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 46352,
+              "sha256": "1a44c6f2cfc389564847312e5ddd9eb933a08b4dc0aa607718387d86a5569694",
+              "foregroundSSIM": 0.9873337424068218,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 55992,
+              "sha256": "9924548ae290e08f41e0da6fe8fafa6b3de92727e1f8b679a020315747ad9f2e",
+              "foregroundSSIM": 0.9927242039461529,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 68546,
+              "sha256": "ba98af80676a349f8f81aa2c79490091150ccd9e5013117d08f7e1e48061e1a2",
+              "foregroundSSIM": 0.995671578264155,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 95,
+          "method": 6,
+          "afterBytes": 55992,
+          "sha256": "9924548ae290e08f41e0da6fe8fafa6b3de92727e1f8b679a020315747ad9f2e",
+          "foregroundSSIM": 0.9927242039461529
+        },
+        {
+          "path": "/creative/PHOTO-002-primary-800.webp",
+          "size": [
+            800,
+            800
+          ],
+          "beforeBytes": 128214,
+          "sourceSha256": "515b255f2135aad9d69fbb773700636be416734d6395456d1bb01f65d1ee3d72",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 110226,
+              "sha256": "748106c0ab9bcc06dd3dbed6b9cccc729c0a299f0806c57b566e987de0f3d4ac",
+              "foregroundSSIM": 0.9844023245151509,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 135594,
+              "sha256": "19fd1e801a13c5f99b006e330bbe6e5915ab12906f60a179c3931704d0b30de3",
+              "foregroundSSIM": 0.9911742158765414,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 172324,
+              "sha256": "4d17d2ec2322fc12a46acd705d8617047f53537e733455d296f45dc4a478b4eb",
+              "foregroundSSIM": 0.9952194919470778,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 95,
+          "method": 6,
+          "afterBytes": 135594,
+          "sha256": "19fd1e801a13c5f99b006e330bbe6e5915ab12906f60a179c3931704d0b30de3",
+          "foregroundSSIM": 0.9911742158765414
+        }
+      ],
+      "selectedQuality": 95
+    },
+    {
+      "sourceSku": "PHOTO-003",
+      "status": "UPDATED",
+      "sourceSha256": "df35d989ed3f93aeee9fe4314a63144963e3a28fb4c911249f3d54f0451868d6",
+      "protectedPixels": 772081,
+      "protectedLightPixels": 17595,
+      "protectedPreEncodeExact": true,
+      "sourceBackgroundRGB": [
+        254,
+        254,
+        254
+      ],
+      "exports": [
+        {
+          "path": "/creative/PHOTO-003.webp",
+          "size": [
+            1254,
+            1254
+          ],
+          "beforeBytes": 281046,
+          "sourceSha256": "df35d989ed3f93aeee9fe4314a63144963e3a28fb4c911249f3d54f0451868d6",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 250116,
+              "sha256": "e787823496a3e1eef97fd4f8a662ceb6a4bafc69d04892bfebfd104339d4da95",
+              "foregroundSSIM": 0.9938097642786061,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 280804,
+              "sha256": "ad2d78eb46117be19dd6fc5a76765b5d7b0befa2e79a81e49cbb1be8bc0d3945",
+              "foregroundSSIM": 0.9964605096943776,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 342324,
+              "sha256": "95e807b2cfeed46cb610b1cc9eff85b52ab82291fdcca4c9124f3182c674f6d8",
+              "foregroundSSIM": 0.9972290466705651,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 95,
+          "method": 6,
+          "afterBytes": 280804,
+          "sha256": "ad2d78eb46117be19dd6fc5a76765b5d7b0befa2e79a81e49cbb1be8bc0d3945",
+          "foregroundSSIM": 0.9964605096943776
+        },
+        {
+          "path": "/creative/PHOTO-003-primary-480.webp",
+          "size": [
+            480,
+            480
+          ],
+          "beforeBytes": 61046,
+          "sourceSha256": "3e51819d6cee179b19f4c33354e6988f2144b5fb099ad0fe1e8aec14ca152698",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 54040,
+              "sha256": "b8332b905cccab81026c09edb70fd030af2e323d3cb3dceb636b8dc941e54f36",
+              "foregroundSSIM": 0.9887715936940447,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 64536,
+              "sha256": "6beb18aeb3db375169c0e1eca3222e172563ef20dfd290c16454ced1c45551be",
+              "foregroundSSIM": 0.9922791751430858,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 78798,
+              "sha256": "df8c0973249bee326ed0b719fddb9d8f3b963ef624a42247abfda174cb5e1891",
+              "foregroundSSIM": 0.9948224928425312,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 95,
+          "method": 6,
+          "afterBytes": 64536,
+          "sha256": "6beb18aeb3db375169c0e1eca3222e172563ef20dfd290c16454ced1c45551be",
+          "foregroundSSIM": 0.9922791751430858
+        },
+        {
+          "path": "/creative/PHOTO-003-primary-800.webp",
+          "size": [
+            800,
+            800
+          ],
+          "beforeBytes": 142508,
+          "sourceSha256": "8032e406cf7f5b8114c14214532129854d89789e0836d8693539ed587ec7c86c",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 123172,
+              "sha256": "e0712156cf7b2cfeecae46bd11d9d3b0b2f52c5af8e88d75ba20fc97ac56159d",
+              "foregroundSSIM": 0.9875809348869294,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 149968,
+              "sha256": "28dd30a519184637f4c157e810b3094f0f2ef66186658fb1c04bced07363e344",
+              "foregroundSSIM": 0.9915896299422959,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 185864,
+              "sha256": "d8b3ad9dacd18fd8c6f0b736a4fc3c4f03e56bbdf545d29d431911a8500cdba5",
+              "foregroundSSIM": 0.9945110834483802,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 95,
+          "method": 6,
+          "afterBytes": 149968,
+          "sha256": "28dd30a519184637f4c157e810b3094f0f2ef66186658fb1c04bced07363e344",
+          "foregroundSSIM": 0.9915896299422959
+        }
+      ],
+      "selectedQuality": 95
+    },
+    {
+      "sourceSku": "PHOTO-004",
+      "status": "UPDATED",
+      "sourceSha256": "732190705822cf5fbeebc24a9e9e2ace4783b347e75894eb2017cc711c0df39b",
+      "protectedPixels": 716805,
+      "protectedLightPixels": 23479,
+      "protectedPreEncodeExact": true,
+      "sourceBackgroundRGB": [
+        254,
+        254,
+        254
+      ],
+      "exports": [
+        {
+          "path": "/creative/PHOTO-004.webp",
+          "size": [
+            1254,
+            1254
+          ],
+          "beforeBytes": 250764,
+          "sourceSha256": "732190705822cf5fbeebc24a9e9e2ace4783b347e75894eb2017cc711c0df39b",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 206506,
+              "sha256": "6687ccd5d82407ebfd9c88481a3ff594dff58fb382ff596c1b7ec0db145eec94",
+              "foregroundSSIM": 0.9833926894343485,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 247712,
+              "sha256": "6ec53b9dd5baf21dc29901816a946241a3d2c6da1a43cbc8315225d97de1ba8c",
+              "foregroundSSIM": 0.9947617722438136,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 297742,
+              "sha256": "15b31ddfe86588b43e0fd1b851a4eb32c54554bf83e9ee4f2f0811354a3fc247",
+              "foregroundSSIM": 0.9948971890767109,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 95,
+          "method": 6,
+          "afterBytes": 247712,
+          "sha256": "6ec53b9dd5baf21dc29901816a946241a3d2c6da1a43cbc8315225d97de1ba8c",
+          "foregroundSSIM": 0.9947617722438136
+        },
+        {
+          "path": "/creative/PHOTO-004-primary-480.webp",
+          "size": [
+            480,
+            480
+          ],
+          "beforeBytes": 43006,
+          "sourceSha256": "50037643b5fececfbf0743d634066e223791579b6799df1f91b0cf475cf170d2",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 38576,
+              "sha256": "425dc5fd95f714fa705d64e31fa7e736ce0b4df456703efd4d9555d7af11d678",
+              "foregroundSSIM": 0.9837285235875378,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 46692,
+              "sha256": "6c298acc22e7b49fdf832a6c9c4e6bc0425bf686f3e256661c063fbe229a7b44",
+              "foregroundSSIM": 0.9888488530865969,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 60060,
+              "sha256": "3d493e6e0c32ebf0d2f46157ec337cd9f7deca83cc22579e0b522a88ce6b5488",
+              "foregroundSSIM": 0.9931526736673161,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 98,
+          "method": 6,
+          "afterBytes": 60060,
+          "sha256": "3d493e6e0c32ebf0d2f46157ec337cd9f7deca83cc22579e0b522a88ce6b5488",
+          "foregroundSSIM": 0.9931526736673161
+        },
+        {
+          "path": "/creative/PHOTO-004-primary-800.webp",
+          "size": [
+            800,
+            800
+          ],
+          "beforeBytes": 111302,
+          "sourceSha256": "93d288797faa3d859bcd70de01c872991a3f290d312c0f5dd1991d68a7e5f5ef",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 88826,
+              "sha256": "11dc38530da8eed96cf1fbbed40ca9cbbc472a4b89e29007e4f291234b348ee8",
+              "foregroundSSIM": 0.9778898815267882,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 116136,
+              "sha256": "e57c1c483fc4fdb08c9610b2c85635c6858a0faf26e132a25ddcc8e9d4e5c73c",
+              "foregroundSSIM": 0.9880072705325844,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 150836,
+              "sha256": "cb48b3646b543ab7764a7994b1ec5e863275e1d5024e9c17468bdad81ac43443",
+              "foregroundSSIM": 0.9928659190162014,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 98,
+          "method": 6,
+          "afterBytes": 150836,
+          "sha256": "cb48b3646b543ab7764a7994b1ec5e863275e1d5024e9c17468bdad81ac43443",
+          "foregroundSSIM": 0.9928659190162014
+        }
+      ],
+      "selectedQuality": {
+        "1254": 95,
+        "480": 98,
+        "800": 98
+      }
+    },
+    {
+      "sourceSku": "PHOTO-005",
+      "status": "UPDATED",
+      "sourceSha256": "dfd8c1cc1d66982eaf9f0e90c1b323659488b58b7668a0ac6d2c38c33c8cd764",
+      "protectedPixels": 702023,
+      "protectedLightPixels": 20623,
+      "protectedPreEncodeExact": true,
+      "sourceBackgroundRGB": [
+        254,
+        254,
+        254
+      ],
+      "exports": [
+        {
+          "path": "/creative/PHOTO-005.webp",
+          "size": [
+            1254,
+            1254
+          ],
+          "beforeBytes": 330234,
+          "sourceSha256": "dfd8c1cc1d66982eaf9f0e90c1b323659488b58b7668a0ac6d2c38c33c8cd764",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 285848,
+              "sha256": "0c8528d1d02c55bba02ccc1a1a965bd43320ec8b833aa03c860f75f0eb7a7086",
+              "foregroundSSIM": 0.9952422893050357,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 328860,
+              "sha256": "086f5d23ebbf4ce28f17af4fd8e97523134f2240fb7d43ec13cb305959e8b0fd",
+              "foregroundSSIM": 0.9979332939772945,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 382356,
+              "sha256": "85a18399a9f5174b7c530961757af182bc9e193ed3182811a1e54fd0d386939d",
+              "foregroundSSIM": 0.9979188516686912,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 285848,
+          "sha256": "0c8528d1d02c55bba02ccc1a1a965bd43320ec8b833aa03c860f75f0eb7a7086",
+          "foregroundSSIM": 0.9952422893050357
+        },
+        {
+          "path": "/creative/PHOTO-005-primary-480.webp",
+          "size": [
+            480,
+            480
+          ],
+          "beforeBytes": 64978,
+          "sourceSha256": "ec93436f65585cea08b3d475c588ca8487f436177a318f353663a7cd9ceb8324",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 58868,
+              "sha256": "36dce864b0ce50ed741ebbf084a68d35c2a5a876d8b463670e33b272c347d2cb",
+              "foregroundSSIM": 0.9929675214786016,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 67016,
+              "sha256": "e743da8d231045ba9b7eb891b047e8b8e3d43f63620c3a6a72e673428b5ceeb9",
+              "foregroundSSIM": 0.994269614066188,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 78586,
+              "sha256": "7a99245afc62a53501466ba22769dbd96607a1ab8d1200db3104cf7433e18243",
+              "foregroundSSIM": 0.9951163677183502,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 58868,
+          "sha256": "36dce864b0ce50ed741ebbf084a68d35c2a5a876d8b463670e33b272c347d2cb",
+          "foregroundSSIM": 0.9929675214786016
+        },
+        {
+          "path": "/creative/PHOTO-005-primary-800.webp",
+          "size": [
+            800,
+            800
+          ],
+          "beforeBytes": 159534,
+          "sourceSha256": "de993e0602886c50eb3dc7f40df8b24fed5965d593f94390862380a910eae526",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 139772,
+              "sha256": "6df61b7014e36a97fe53d7ae7d34967bf0be274961de3c53271702cbae88096f",
+              "foregroundSSIM": 0.9932929979253687,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 161802,
+              "sha256": "0e166046af312bd377bd5f7341b698dba6e770290cbe254a327e29ecd9160a06",
+              "foregroundSSIM": 0.9947242188167833,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 195872,
+              "sha256": "eecfd10f6583aab633b338c9cc9c05e14adf891d1024c270c5c95ae398fcca6a",
+              "foregroundSSIM": 0.995887422387661,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 139772,
+          "sha256": "6df61b7014e36a97fe53d7ae7d34967bf0be274961de3c53271702cbae88096f",
+          "foregroundSSIM": 0.9932929979253687
+        }
+      ],
+      "selectedQuality": 92
+    },
+    {
+      "sourceSku": "PHOTO-006",
+      "status": "UPDATED",
+      "sourceSha256": "0a4a8d1dc9b2fc7a901cf57b0d15bfeb6067dc1cfadcbbe156c910cd4e3cb08e",
+      "protectedPixels": 703015,
+      "protectedLightPixels": 414298,
+      "protectedPreEncodeExact": true,
+      "sourceBackgroundRGB": [
+        254,
+        254,
+        254
+      ],
+      "exports": [
+        {
+          "path": "/creative/PHOTO-006.webp",
+          "size": [
+            1254,
+            1254
+          ],
+          "beforeBytes": 219510,
+          "sourceSha256": "0a4a8d1dc9b2fc7a901cf57b0d15bfeb6067dc1cfadcbbe156c910cd4e3cb08e",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 183618,
+              "sha256": "2da84dedd076f4429858b747747d831ed8ef32184d572391d58ba0c016b69f7f",
+              "foregroundSSIM": 0.9901960935535398,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 219616,
+              "sha256": "7c0c4d2065de7422f92714c8440db0fc8d676c0deee806d67203bbde1cede307",
+              "foregroundSSIM": 0.9962298571569725,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 263876,
+              "sha256": "286e9f7c58cb03e205056597da76a31c5b9099a0afbdaec0e52bb8edeb2a1aa7",
+              "foregroundSSIM": 0.9967243939443274,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 95,
+          "method": 6,
+          "afterBytes": 219616,
+          "sha256": "7c0c4d2065de7422f92714c8440db0fc8d676c0deee806d67203bbde1cede307",
+          "foregroundSSIM": 0.9962298571569725
+        },
+        {
+          "path": "/creative/PHOTO-006-primary-480.webp",
+          "size": [
+            480,
+            480
+          ],
+          "beforeBytes": 47508,
+          "sourceSha256": "6fdbb3f47296e144a679651411e55fe04000174b32489ec29fbae390efc3d855",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 40732,
+              "sha256": "735b7ab5b60da7f6f4a8fbf3905843697f6d3e39b5db17700ebb11134f362656",
+              "foregroundSSIM": 0.991460874490913,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 50348,
+              "sha256": "e05d121b853f69229ebead6e3c041c6331cdb77269ce0debb30772459be383cd",
+              "foregroundSSIM": 0.995063798597196,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 62240,
+              "sha256": "1c1253baed770559f828347884f75718ff802682cbd726661b89f883a6b70236",
+              "foregroundSSIM": 0.9968760283282416,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 95,
+          "method": 6,
+          "afterBytes": 50348,
+          "sha256": "e05d121b853f69229ebead6e3c041c6331cdb77269ce0debb30772459be383cd",
+          "foregroundSSIM": 0.995063798597196
+        },
+        {
+          "path": "/creative/PHOTO-006-primary-800.webp",
+          "size": [
+            800,
+            800
+          ],
+          "beforeBytes": 104298,
+          "sourceSha256": "f38da56eca00901255759ca99459f5696e518366a44b004227763707dabd9f9a",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 92296,
+              "sha256": "650b5178d8f95910a4aca34b54586ffe770605ac01d0eeaa7029532c0cfe90e5",
+              "foregroundSSIM": 0.9882141887130702,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 111398,
+              "sha256": "608ed3e536d8ecc0c0e78f150ac8f45e77cee36d1207827b1c82e70b25f72cb9",
+              "foregroundSSIM": 0.9925339326988659,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 144068,
+              "sha256": "c51b44cc1e913c4f3c536f424a24356ea01795177232fd7ca756d9fdcae45e02",
+              "foregroundSSIM": 0.99558755352766,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 95,
+          "method": 6,
+          "afterBytes": 111398,
+          "sha256": "608ed3e536d8ecc0c0e78f150ac8f45e77cee36d1207827b1c82e70b25f72cb9",
+          "foregroundSSIM": 0.9925339326988659
+        }
+      ],
+      "selectedQuality": 95
+    },
+    {
+      "sourceSku": "PHOTO-007",
+      "status": "UPDATED",
+      "sourceSha256": "ddcb2f5a1c5e1089748bdd48741a2078618bfbaebd19c1d4be74548632086fde",
+      "protectedPixels": 682945,
+      "protectedLightPixels": 36033,
+      "protectedPreEncodeExact": true,
+      "sourceBackgroundRGB": [
+        254,
+        254,
+        254
+      ],
+      "exports": [
+        {
+          "path": "/creative/PHOTO-007.webp",
+          "size": [
+            1254,
+            1254
+          ],
+          "beforeBytes": 244842,
+          "sourceSha256": "ddcb2f5a1c5e1089748bdd48741a2078618bfbaebd19c1d4be74548632086fde",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 202890,
+              "sha256": "668cc560e09426db728c78f75aeb292a4b8f3cb8f072badaa2c4b018e83ffedc",
+              "foregroundSSIM": 0.9886752657549004,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 241660,
+              "sha256": "a2df9343a40ea791e0db1f7969557437415847999ffd2c0d7db8e61ac4f75bf4",
+              "foregroundSSIM": 0.9954651583442631,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 284120,
+              "sha256": "dbe1309ee7833005b350e8e8a85eb388a3cfee149e012d977a2807c8d985f302",
+              "foregroundSSIM": 0.9956624650148487,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 95,
+          "method": 6,
+          "afterBytes": 241660,
+          "sha256": "a2df9343a40ea791e0db1f7969557437415847999ffd2c0d7db8e61ac4f75bf4",
+          "foregroundSSIM": 0.9954651583442631
+        },
+        {
+          "path": "/creative/PHOTO-007-primary-480.webp",
+          "size": [
+            480,
+            480
+          ],
+          "beforeBytes": 43910,
+          "sourceSha256": "0ad1b0b5d221c3a6e761d55a68ab580d78efcab57b65e3ac3856c57fb42e1796",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 38524,
+              "sha256": "28d7045d9d351584150a6565128f7dd46adddac7b14b5640d9707fa8e482b40f",
+              "foregroundSSIM": 0.9843932816853252,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 48792,
+              "sha256": "5603f496674f0c9fff4f6322e75e2a0d7ccc51dec35c936678e50e9d7268612a",
+              "foregroundSSIM": 0.9908055284876066,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 60968,
+              "sha256": "6d030e2e6c62b95547b95f06d6575c2d5cab1fba343f41ad22c413045692aef3",
+              "foregroundSSIM": 0.9948148854282494,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 95,
+          "method": 6,
+          "afterBytes": 48792,
+          "sha256": "5603f496674f0c9fff4f6322e75e2a0d7ccc51dec35c936678e50e9d7268612a",
+          "foregroundSSIM": 0.9908055284876066
+        },
+        {
+          "path": "/creative/PHOTO-007-primary-800.webp",
+          "size": [
+            800,
+            800
+          ],
+          "beforeBytes": 109118,
+          "sourceSha256": "c508fcef3df1812b139b69ee856d0a3bc9705518620e6e0693905604d4f0cd9e",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 92246,
+              "sha256": "791ae47e1f5a58b093388c527d008192de07ccc77921d5ac7a5b4dd41b4ee447",
+              "foregroundSSIM": 0.9808539136212777,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 118274,
+              "sha256": "fe0e1a3f5a29dd10583b0f4d30292ee24f4174619033aa3bf566c01bae9efed6",
+              "foregroundSSIM": 0.9892482759265496,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 147584,
+              "sha256": "721bf1c4ad3512aa49bd2fc7a5b2a9d3c8b071a3b9edfc9c70c6ae7d55aa88e6",
+              "foregroundSSIM": 0.9936072314578103,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 98,
+          "method": 6,
+          "afterBytes": 147584,
+          "sha256": "721bf1c4ad3512aa49bd2fc7a5b2a9d3c8b071a3b9edfc9c70c6ae7d55aa88e6",
+          "foregroundSSIM": 0.9936072314578103
+        }
+      ],
+      "selectedQuality": {
+        "1254": 95,
+        "480": 95,
+        "800": 98
+      }
+    },
+    {
+      "sourceSku": "PHOTO-009",
+      "status": "UPDATED",
+      "sourceSha256": "5a8c1223fa75485e2299c553bacaba83f39df73940e4f3cb18d19b0cf1ef5be3",
+      "protectedPixels": 633417,
+      "protectedLightPixels": 380069,
+      "protectedPreEncodeExact": true,
+      "sourceBackgroundRGB": [
+        254,
+        254,
+        254
+      ],
+      "exports": [
+        {
+          "path": "/creative/PHOTO-009.webp",
+          "size": [
+            1254,
+            1254
+          ],
+          "beforeBytes": 204870,
+          "sourceSha256": "5a8c1223fa75485e2299c553bacaba83f39df73940e4f3cb18d19b0cf1ef5be3",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 168062,
+              "sha256": "874ea4086097a3acd02aac86489bca6b271e99b6fc867402e0c5ee3173de02ac",
+              "foregroundSSIM": 0.9901663224285217,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 203044,
+              "sha256": "5b000b4606ec87591133b38a3253d8337ed39e07b265a9cad26b65bb1847dd86",
+              "foregroundSSIM": 0.995741866790306,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 242408,
+              "sha256": "2d29a680ebe23b57240067df951aab57db7db13221415e11d1f8cbd8e46ca5cd",
+              "foregroundSSIM": 0.9963228856543634,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 95,
+          "method": 6,
+          "afterBytes": 203044,
+          "sha256": "5b000b4606ec87591133b38a3253d8337ed39e07b265a9cad26b65bb1847dd86",
+          "foregroundSSIM": 0.995741866790306
+        },
+        {
+          "path": "/creative/PHOTO-009-primary-480.webp",
+          "size": [
+            480,
+            480
+          ],
+          "beforeBytes": 37508,
+          "sourceSha256": "346794a78c0662ef9e8dec242557779e087fd1ee25e8e01ce2dd56ce8f4c863d",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 32278,
+              "sha256": "bd2713fed4de1146ced05a4273c57a7b7728236b9b836bad9c56be1f56fdfb84",
+              "foregroundSSIM": 0.9858055933209199,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 40086,
+              "sha256": "37896da903f8db102d0827aefbd2ce2edd77bab097f8bb9531dc82288d6e33dc",
+              "foregroundSSIM": 0.9915682277585021,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 50974,
+              "sha256": "a78aedeaebe49431001a8faf5764b8e0324700d00164b6cd23c749a1a894285f",
+              "foregroundSSIM": 0.9946094642425255,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 95,
+          "method": 6,
+          "afterBytes": 40086,
+          "sha256": "37896da903f8db102d0827aefbd2ce2edd77bab097f8bb9531dc82288d6e33dc",
+          "foregroundSSIM": 0.9915682277585021
+        },
+        {
+          "path": "/creative/PHOTO-009-primary-800.webp",
+          "size": [
+            800,
+            800
+          ],
+          "beforeBytes": 93516,
+          "sourceSha256": "83448fe3d348d7b0515e4caa1e613e15159d6ae738d685885c21f671b9360fb0",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 75730,
+              "sha256": "7b91e20a01bc54c58a5dca1ee93b9bffdfbe710bd5fdc292aae29dd8d789a936",
+              "foregroundSSIM": 0.9851275733346714,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 98380,
+              "sha256": "bcfd3f37988be87fc21802f919de575045b5f06f0ae775a5cb2bf24851790f55",
+              "foregroundSSIM": 0.9913928147945539,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 125366,
+              "sha256": "18997d15885bf7537ceb422d39ad556c48338da3170b15eeec2a6655d270186b",
+              "foregroundSSIM": 0.9946044824161272,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 95,
+          "method": 6,
+          "afterBytes": 98380,
+          "sha256": "bcfd3f37988be87fc21802f919de575045b5f06f0ae775a5cb2bf24851790f55",
+          "foregroundSSIM": 0.9913928147945539
+        }
+      ],
+      "selectedQuality": 95
+    },
+    {
+      "sourceSku": "PHOTO-011",
+      "status": "UPDATED",
+      "sourceSha256": "dc774ae73e3a59f2b9cc9d0983d8de191c54d95ea99ce2de9104aa089dad2f56",
+      "protectedPixels": 703790,
+      "protectedLightPixels": 483053,
+      "protectedPreEncodeExact": true,
+      "sourceBackgroundRGB": [
+        254,
+        254,
+        254
+      ],
+      "exports": [
+        {
+          "path": "/creative/PHOTO-011.webp",
+          "size": [
+            1254,
+            1254
+          ],
+          "beforeBytes": 236806,
+          "sourceSha256": "dc774ae73e3a59f2b9cc9d0983d8de191c54d95ea99ce2de9104aa089dad2f56",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 196290,
+              "sha256": "31d57b7d38a332164758ac01b7d46219ffa41fe89188c213dc6dc21053e0394e",
+              "foregroundSSIM": 0.9963648541923903,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 230654,
+              "sha256": "8ee44a4296d37a937ea66c5343212eb31e65b9eb29e103fbe265413dc89c3b18",
+              "foregroundSSIM": 0.9980122447414419,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 275776,
+              "sha256": "13a4601f9e01217559c4221d4c38fe3184fc7194d81e8764735ccf837d4f6204",
+              "foregroundSSIM": 0.9982690449803817,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 196290,
+          "sha256": "31d57b7d38a332164758ac01b7d46219ffa41fe89188c213dc6dc21053e0394e",
+          "foregroundSSIM": 0.9963648541923903
+        },
+        {
+          "path": "/creative/PHOTO-011-primary-480.webp",
+          "size": [
+            480,
+            480
+          ],
+          "beforeBytes": 51622,
+          "sourceSha256": "fc04d1ff3f2f7051a5896b3eab3d5a34e3644184313ab5e581f7062ad3eb7406",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 45856,
+              "sha256": "3d0d2c1b84cb50095bcf47a6c9e35b15a2430c80bfd2b2bd84c95ce51d238376",
+              "foregroundSSIM": 0.9946602115678339,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 53616,
+              "sha256": "b8787820ae2ce5b366a8f103f5453fc5044ff739338e06c9435c98a07a443383",
+              "foregroundSSIM": 0.9956189271345705,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 64634,
+              "sha256": "74caa726382c680ed21ba8bc35033822d66e7ea804de4b56018fc3c130c685cc",
+              "foregroundSSIM": 0.9961630819556923,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 45856,
+          "sha256": "3d0d2c1b84cb50095bcf47a6c9e35b15a2430c80bfd2b2bd84c95ce51d238376",
+          "foregroundSSIM": 0.9946602115678339
+        },
+        {
+          "path": "/creative/PHOTO-011-primary-800.webp",
+          "size": [
+            800,
+            800
+          ],
+          "beforeBytes": 119586,
+          "sourceSha256": "54c3311340065d7c70a788588ba0d8774c9f24f8294637d805e6b246dae8c643",
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 103084,
+              "sha256": "9a578f09583a54b96f30c98c1b67126aaefbf3d9930f4f322a86cb8f13bf24a8",
+              "foregroundSSIM": 0.9948211631985916,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 95,
+              "bytes": 124382,
+              "sha256": "035d7cec5b7fc732ee299c06a686e24f858eeb79615d8875456cb14ef7e0829a",
+              "foregroundSSIM": 0.9961220741871708,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            },
+            {
+              "quality": 98,
+              "bytes": 154568,
+              "sha256": "88cb46430347e16ea80c1905ae85d81c224ec6672a34c4f343167bb808915d96",
+              "foregroundSSIM": 0.9969053119241054,
+              "cornerRGB": [
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ],
+                [
+                  251,
+                  249,
+                  245
+                ]
+              ],
+              "backgroundPass": true
+            }
+          ],
+          "selectedQuality": 92,
+          "method": 6,
+          "afterBytes": 103084,
+          "sha256": "9a578f09583a54b96f30c98c1b67126aaefbf3d9930f4f322a86cb8f13bf24a8",
+          "foregroundSSIM": 0.9948211631985916
+        }
+      ],
+      "selectedQuality": 92
+    }
+  ]
+}

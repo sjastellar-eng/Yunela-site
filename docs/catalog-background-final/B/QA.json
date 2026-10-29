@@ -1,0 +1,9 @@
+{
+  "checkpoint": "B",
+  "status": "PASS",
+  "visual": "Eight full before/after comparisons, eight enlarged q92/q95/q98 panels, pale wrapper masks and sixteen responsive comparison rows reviewed. No conspicuous new halos, print damage, colour shift, clipped rim/stand or shadow damage. Per-export selected quality in SELECTED.json.",
+  "imageValidation": "56 products / 347 files PASS",
+  "catalogTests": "9/9 PASS",
+  "scope": "24 accepted SKU, all non-primary assets and non-hash data preserved",
+  "staging": "unchanged; no deploy"
+}

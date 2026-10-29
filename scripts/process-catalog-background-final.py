@@ -178,15 +178,17 @@ def apply(group,selections):
     for row,r in enumerate(report['records']):
         sku=r['sourceSku'];product=next(p for p in gallery['products'] if p['sourceSku']==sku);asset=product['images'][0]
         if r['status']=='CANDIDATES':
-            q=chosen[sku];assert q in (92,95,98)
+            selection=chosen[sku]
             for entry,export in zip([asset,*asset['variants']],r['exports']):
+                q=selection[str(export['size'][0])] if isinstance(selection,dict) else selection
+                assert q in (92,95,98)
                 expected=next(c for c in export['candidates'] if c['quality']==q)
                 data=(CACHE/sku/f'{Path(entry["path"]).stem}-q{q}.webp').read_bytes()
                 assert sha(data)==expected['sha256'] and expected['foregroundSSIM']>.99 and expected['backgroundPass']
                 (ROOT/'public'/entry['path'].lstrip('/')).write_bytes(data);entry['sha256']=sha(data)
                 export.update({'selectedQuality':q,'method':6,'afterBytes':len(data),'sha256':sha(data),'foregroundSSIM':expected['foregroundSSIM']})
             next(a for a in primary['images'] if a['sourceSku']==sku)['sha256']=asset['sha256']
-            r['status']='UPDATED';r['selectedQuality']=q
+            r['status']='UPDATED';r['selectedQuality']=selection
         before=decode(old('public'+asset['path']));after=Image.open(ROOT/'public'/asset['path'].lstrip('/')).convert('RGB')
         for col,im in enumerate([before,after]):
             thumb=im.copy();thumb.thumbnail((295,295));x=col*300;y=row*330
