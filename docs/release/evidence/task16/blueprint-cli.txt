@@ -1,0 +1,1 @@
+Error: failed to create client: run `render login` to authenticate

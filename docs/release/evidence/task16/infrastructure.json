@@ -1,0 +1,38 @@
+{
+  "checkedDate": "2026-10-30 Europe/Kyiv",
+  "workspaceId": "tea-d3r4s556ubrc738e1j5g",
+  "yunelaServices": [
+    {
+      "id": "srv-dbej0rjncjis73edf2h0",
+      "type": "static_site",
+      "diskCapable": false
+    },
+    {
+      "id": "srv-dbcufv6i0phs7383164g",
+      "type": "static_site",
+      "diskCapable": false
+    },
+    {
+      "id": "srv-dbchobektt5c73cvaq1g",
+      "type": "static_site",
+      "diskCapable": false
+    },
+    {
+      "id": "srv-dbccitcs728c73enf3tg",
+      "type": "static_site",
+      "diskCapable": false
+    },
+    {
+      "id": "srv-dbc90o8n74is73fp4g7g",
+      "type": "static_site",
+      "diskCapable": false
+    }
+  ],
+  "suitableExistingYunelaServer": false,
+  "otherProjectServicesReused": false,
+  "resourcesCreated": false,
+  "plansChanged": false,
+  "staticLiveSha": "592756bd1c9bb124574388bb1d9c2bcc14004e73",
+  "staticDeployId": "dep-dbhpqmg8v5cc73944i4g",
+  "remoteServerOrder": "BLOCKED"
+}

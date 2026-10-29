@@ -1,10 +1,10 @@
-# Launch blockers — 2026-10-29
+# Launch blockers — updated 2026-10-30
 
 **NO COMMERCIAL GO.** Passing isolated tests does not authorize sales.
 
 | ID | Priority | Impact | Required action | Owner |
 |---|---|---|---|---|
-| L15-01 | P0 | Current static staging cannot save/test orders or expose operator API | Separate task: approve and deploy existing offline-test Node/SQLite runtime with protected access and durable test storage; select free/approved existing infrastructure without silently creating paid resources. Retest full browser path there. | CEO + Developer |
+| L15-01 | P0 | Current static staging cannot save/test orders or expose operator API | Task16 prepared staging/render-server.yaml and fail-closed mounted-disk entrypoint. No suitable existing YUNELA server found in confirmed workspace. CEO: authorize separate0.5c-512mb service +1GB disk, USD7.25/month base excluding taxes/overages, or identify a suitable existing resource. Then deploy and retest full browser order plus restart/redeploy retention. | CEO + Developer |
 | L15-02 | P0 | Real catalog is intentionally non-purchasable, prices not publication-approved | Explicit SKU/price publication and sales decisions after CFO/Operations gates. Preserve PHOTO-010/012/026 working 1749/1679/1479, do not reopen confirmed whole procurement currency/availability globally. | CEO + CFO |
 | L15-03 | P0 if COD included | Advance/COD is approved only for design; no implementation/recipient | Decide advance rule (150/200/300 not chosen), refusal/refund/offset rules and contracted YUNELA recipient, fees/cash availability; implement test ledger for total/advance/remainder with no double subtraction. Full prepayment may be scoped separately by explicit CEO decision. | CEO + CFO + Operations + Developer |
 | L15-04 | P0 | Supplier draft lacks carrier, declared value, requested date, operator contact; no verified settlement-before-dispatch gate | Complete operational order fields and reviewed Telegram draft; implement or explicitly control PACKED → settlement evidence → physical carrier handoff. Assign recipient and ACK operator. No automatic send authorized. | Operations + Finance + Developer |
@@ -16,3 +16,7 @@
 | L15-10 | P1 before final catalog signoff | Original external Product V5 master not resolved here | Retrieve master and explicitly compare names/sourceSku/statuses to repository content. CFO mapping is secondary evidence; avoid replacing later decisions with V1/V2 fixtures. | Product + QA |
 
 Next assignment: **TASK 16 — protected offline-test server staging and full browser order acceptance**, with explicit approved storage/runtime constraints, then targeted payment-design decisions. No redesign or image work needed. No commercial launch, real payment, supplier send or shipment is authorized by Task15.
+
+## Task16 status
+
+**BLOCKED**, criterion not met: no published server URL/TEST-ID or remote restart/redeploy proof. Config/code/runbook saved in fix/task-16-server-staging;268 local tests and current JSON-schema validation pass. Exact390/1440 browser checks remain BLOCKED. Render CLI semantic validation additionally requires its own authentication. No paid resource or plan change was made; static demo remains on592756b. See TASK_16_QA.md and ../../staging/TASK_16_RUNBOOK.md.

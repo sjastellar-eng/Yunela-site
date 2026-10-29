@@ -21,3 +21,11 @@ Next: Task16 protected offline-test server staging, storage/runtime approval and
 - Fresh screenshots: [home](evidence/task15/yunela-task15-live-home-20261029.jpg), [order/operator guard](evidence/task15/yunela-task15-live-guard-20261029.jpg), [PHOTO-010](evidence/task15/yunela-task15-live-card-20261029.jpg). Actual viewport1363×936; exact390/1440 remains BLOCKED.
 - Server code is saved but not executed by static Render. No public full-order success is claimed. No commercial actions performed.
 - This post-live evidence is a documentation-only follow-up: no redeploy required; branch HEAD may be newer than the published code SHA above.
+
+## Task16 checkpoint — 2026-10-30 Europe/Kyiv
+
+Task16 is **BLOCKED by infrastructure spending boundary**, not complete. No server URL, published server commit or browser-created TEST-ID exists. Static demo unchanged: https://yunela-v92-demo.onrender.com/, LIVE592756bd1c9bb124574388bb1d9c2bcc14004e73.
+
+Prepared on fix/task-16-server-staging from remote bb1734e: separate staging/render-server.yaml, mount/gate/secrets preflight, readonly TEST-order snapshot evidence and staging/TASK_16_RUNBOOK.md.268 tests/42 files, TypeScript, ESLint, image validator56/347 and server/client build PASS. Official current JSON-schema validation PASS; Render CLI semantic validation BLOCKED by CLI login. No images, pricing/deposit policy, visual design or static Render configuration changed. No new deployment or commercial action.
+
+Required CEO decision: approve dedicated Render0.5c-512mb USD7/month +1GB disk USD0.25/month = USD7.25/month incremental base (taxes/usage overages and existing workspace fees excluded), or supply a suitable existing YUNELA persistent server. Paid resources were not created. After approval follow runbook, save actual server URL/deployed SHA/TEST-ID, verify operator/export and repeat actual390/1440px checks plus restart and redeploy persistence. Local tests do not substitute for these results.

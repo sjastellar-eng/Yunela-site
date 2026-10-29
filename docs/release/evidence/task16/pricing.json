@@ -1,0 +1,19 @@
+{
+  "checkedDate": "2026-10-30 Europe/Kyiv",
+  "source": "https://render.com/pricing",
+  "verification": "Live official HTML retrieved; $7/month, 512MB, 0.5c-512mb and SSD $0.25/GB/month found in rendered HTML text",
+  "service": {
+    "type": "web",
+    "plan": "0.5c-512mb",
+    "monthlyUsd": 7
+  },
+  "disk": {
+    "sizeGB": 1,
+    "mountPath": "/var/data",
+    "monthlyUsd": 0.25
+  },
+  "fullMonthIncrementalBaseUsd": 7.25,
+  "excluded": "taxes, usage overages, any existing workspace subscription; no workspace upgrade proposed",
+  "approval": "NOT APPROVED; resources NOT CREATED",
+  "diskDocumentation": "https://render.com/docs/disks"
+}

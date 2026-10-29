@@ -1,10 +1,9 @@
-// Render staging only: fail closed, never infer a commercial production mode.
-if (process.env.RENDER !== 'true') throw new Error('This entrypoint requires Render');
-if (process.env.YUNELA_STAGE_MODE !== '1') throw new Error('Staging gate must be enabled');
-if (process.env.YUNELA_SYNTHETIC_ONLY !== '1') throw new Error('Synthetic-only policy must be enabled');
-if (process.env.YUNELA_LEGACY_FIXED_SKU_TESTS === '1') throw new Error('Legacy fixture must remain disabled');
-if (process.env.YUNELA_DB_FILE !== '/var/data/yunela.sqlite') throw new Error('Use the persistent disk at /var/data');
-process.env.YUNELA_PUBLIC_ORIGIN ||= process.env.RENDER_EXTERNAL_URL;
-if (!process.env.YUNELA_PUBLIC_ORIGIN?.startsWith('https://')) throw new Error('HTTPS origin required');
+// Render staging only. Validate the actual mount before opening/migrating SQLite.
+import {readFileSync} from 'node:fs';
+import {validateRenderStaging} from './render-staging-preflight.mjs';
+const checked=validateRenderStaging(process.env,readFileSync('/proc/self/mountinfo','utf8'));
+process.env.YUNELA_PUBLIC_ORIGIN=checked.origin;
 process.env.NODE_ENV = 'staging';
+process.umask(0o077);
+console.log('Render staging preflight: offline-test gates and /var/data mount verified');
 await import('../dist-server/f3-runtime.js');

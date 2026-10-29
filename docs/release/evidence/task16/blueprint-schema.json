@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "check": "local official JSON Schema, not remote Render semantic validation or resource creation",
+  "schemaUrl": "https://render.com/schema/render.yaml.json",
+  "schemaSha256": "8a3fb8da6b4f55fe686fbefa790e011d3dd7895f013f355953c572a21ab6494a",
+  "blueprint": "staging/render-server.yaml",
+  "blueprintSha256": "4ce2e4470ec3691ae91545d3a0f36b8df915c2e90a21a283d42e1003538d8478",
+  "checkedDate": "2026-10-30 Europe/Kyiv"
+}
