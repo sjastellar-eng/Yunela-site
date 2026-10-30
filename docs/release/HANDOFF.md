@@ -41,3 +41,11 @@ New static navigation,3-slide rail, evidence-bound tea groups, teaware/gift prep
 ## Task19 — visual polish, 2026-10-30 Kyiv
 
 Task18 structure retained; tighter catalog rhythm, stable-height banners, original topic SVG covers, teaware/gift art panels, practical article callouts and related-story/current-tea links, compact brand/help ending. Catalog/image/commerce/Yuna source assets unchanged.272tests, TypeScript, ESLint, image validation56/347 and client/server builds PASS before publication. See TASK_19_QA.md; live SHA and screenshot evidence will follow actual deployment. Task16 remains PAUSED. No commercial go or paid resources.
+
+### Task19 verified live — 2026-10-30 Kyiv
+
+- Published code **31e5c8b490f08182435278dabb6b105ec23662d2**, tree986071ddf10ab8476db7ba5c939b688109d84916; Render **dep-dbi88agae00c73bgfab0 LIVE13:49:29Kyiv**. Existing static URL https://yunela-v92-demo.onrender.com/. Bundle index-BWIKrdAW.js / index-74xgXqux.css; noindex/nofollow/noarchive retained.
+- Stable banners; compact2/4-column catalog; teaware/gift SVG graphics and honest preparation;3 topical journal covers,720px reading measure, practical callouts/related articles/existing teas; brand/help ending. Existing catalog, commerce, logo and Yuna source assets unchanged.
+-272tests/41files PASS; TypeScript, ESLint, images56/347, client/server production builds PASS. Exact390/1440 CSS iframe layout and key flows checked on final published build. Evidence and before/after comparisons: TASK_19_QA.md / evidence/task19. Full native1440 screenshot, real touch, reduced-motion emulation and full network trace remain BLOCKED by available browser API; do not claim native device acceptance.
+- Task16 **PAUSED**; no backend, payments, sales, supplier messages or paid resources. Commercial prices/packaging remain unpublished by the existing static gate. Supplier/CEO inputs unchanged: TASK_18_CONTENT_MAP.md and LAUNCH_BLOCKERS.md.
+- This final QA/evidence commit changes documentation only; branch HEAD can be newer than published code SHA. No further deploy required.
