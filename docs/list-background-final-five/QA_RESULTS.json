@@ -1,0 +1,73 @@
+{
+  "task": "14A",
+  "status": "READY_FOR_CEO_VISUAL_ACCEPTANCE",
+  "baseCommit": "3e87ade2d073332c6e181fae8d755f5d40a4780d",
+  "branch": "fix/list-background-final-five",
+  "sku": [
+    "LIST-022",
+    "LIST-023",
+    "LIST-024",
+    "LIST-025",
+    "LIST-026"
+  ],
+  "tests": {
+    "files": 38,
+    "passed": 260,
+    "failed": 0
+  },
+  "typeScript": "PASS",
+  "eslint": "PASS",
+  "imageValidation": "56 products / 347 files PASS",
+  "productionBuild": "VITE_STATIC_DEMO=1 frontend and server PASS",
+  "scope": "PASS: only15 WebP and corresponding SHA fields; all51 other SKU, every PHOTO/secondary/texture, non-hash manifest data, CSS/design/catalog/business logic/package manifests/lock unchanged",
+  "visual": "Five full BEFORE/AFTER comparisons, five enlarged native-coordinate source/corrected/q92/q95 panels and 480/800 responsive details reviewed. No conspicuous new halos, leaf morphology damage, colour shifts, shadow damage, clipping or compression defects. Visual judgement does not imply lossless pixel identity.",
+  "selectedQuality": 92,
+  "method": 6,
+  "targetRGB": [
+    250,
+    249,
+    245
+  ],
+  "beforeBytes": 2715630,
+  "afterBytes": 2451380,
+  "q95Bytes": 2922164,
+  "savingPercent": 9.73,
+  "rows": [
+    {
+      "sourceSku": "LIST-022",
+      "beforeBytes": 457462,
+      "afterBytes": 415666,
+      "q95Bytes": 497796
+    },
+    {
+      "sourceSku": "LIST-023",
+      "beforeBytes": 502110,
+      "afterBytes": 454472,
+      "q95Bytes": 542022
+    },
+    {
+      "sourceSku": "LIST-024",
+      "beforeBytes": 658922,
+      "afterBytes": 592738,
+      "q95Bytes": 702268
+    },
+    {
+      "sourceSku": "LIST-025",
+      "beforeBytes": 537412,
+      "afterBytes": 480480,
+      "q95Bytes": 573892
+    },
+    {
+      "sourceSku": "LIST-026",
+      "beforeBytes": 559724,
+      "afterBytes": 508024,
+      "q95Bytes": 606186
+    }
+  ],
+  "sourceReuse": "Verified outputs reused from checkpoint A c678edf328a7035465d453ab96d51bb0f7e8f6da without another encode. Its parent/source was the same current staging base. No Task14 PHOTO commits included in this branch.",
+  "cancelledTask14": "Cancelled; experimental remote fix/catalog-background-final remained9183447 and dirty PHOTO worktree excluded. No additional PHOTO commit, merge, deploy or cleanup performed.",
+  "issues": [],
+  "deployment": "NOT PERFORMED",
+  "merge": "NOT PERFORMED",
+  "dependencies": "NOT MODIFIED"
+}

@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-27 Europe/Kyiv",
+  "baseCommit": "0e04f80246441745077e788a357328c7a1848085",
+  "rows": [
+    {
+      "sourceSku": "LIST-012",
+      "beforeBytes": 482354,
+      "q92Bytes": 435156,
+      "q95Bytes": 520542
+    },
+    {
+      "sourceSku": "LIST-013",
+      "beforeBytes": 479316,
+      "q92Bytes": 436696,
+      "q95Bytes": 518106
+    },
+    {
+      "sourceSku": "LIST-015",
+      "beforeBytes": 591224,
+      "q92Bytes": 527160,
+      "q95Bytes": 632092
+    }
+  ],
+  "beforeBytes": 1552894,
+  "afterBytes": 1399012,
+  "q95Bytes": 1670740,
+  "minimumForegroundSSIM": 0.994505411853048,
+  "selectedQuality": 92,
+  "method": 6,
+  "preservedPilotSku": [
+    "LIST-014",
+    "LIST-016"
+  ],
+  "preservedStatus": "All6 primary/responsive files identical to accepted87955d6 pilot and actual staging; unchanged after new processing",
+  "tests": "260tests /38files PASS",
+  "typeScript": "PASS via tsc -b full production build",
+  "eslint": "PASS",
+  "imageValidation": "56primary /347files PASS",
+  "productionBuild": "frontend/server PASS",
+  "scope": "Only9 selected WebP plus corresponding hashes; all other53SKU, every secondary/texture, all non-hash manifest data/sourceSku/gallery order unchanged",
+  "staging": "LIVE0e04f802 unchanged; no merge/deploy",
+  "savingPercent": 9.91
+}

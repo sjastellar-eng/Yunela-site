@@ -1,0 +1,572 @@
+{
+  "base": "3e87ade2d073332c6e181fae8d755f5d40a4780d",
+  "targetHex": "#FAF9F5",
+  "rows": [
+    {
+      "sourceSku": "LIST-022",
+      "status": "PENDING",
+      "sourceFormat": "WEBP",
+      "sourceSize": [
+        1200,
+        1200
+      ],
+      "primaryFiles": [
+        {
+          "path": "/creative/LIST-022.webp",
+          "sha256": "856a4c8abc5cdf4bb0cd657d05d33deb7e463bbcb0e9b8b77020c7ecd42994fd",
+          "bytes": 278588,
+          "size": [
+            1200,
+            1200
+          ],
+          "cornerRGB": [
+            [
+              253,
+              251,
+              247
+            ],
+            [
+              254,
+              249,
+              246
+            ],
+            [
+              254,
+              253,
+              249
+            ],
+            [
+              251,
+              248,
+              242
+            ]
+          ],
+          "alreadyCompliant": false
+        },
+        {
+          "path": "/creative/LIST-022-primary-480.webp",
+          "sha256": "a37347b5859e0cd35cb9e08503eb079ebbe6b775683d93dcc853884038ebd8e6",
+          "bytes": 52434,
+          "size": [
+            480,
+            480
+          ],
+          "cornerRGB": [
+            [
+              254,
+              253,
+              249
+            ],
+            [
+              254,
+              249,
+              246
+            ],
+            [
+              253,
+              251,
+              247
+            ],
+            [
+              254,
+              250,
+              244
+            ]
+          ],
+          "alreadyCompliant": false
+        },
+        {
+          "path": "/creative/LIST-022-primary-800.webp",
+          "sha256": "f17c061eccca7dfcabb4e00061157fab71fa858b4890b455af854a79f2f49190",
+          "bytes": 126440,
+          "size": [
+            800,
+            800
+          ],
+          "cornerRGB": [
+            [
+              253,
+              251,
+              249
+            ],
+            [
+              254,
+              249,
+              246
+            ],
+            [
+              253,
+              251,
+              247
+            ],
+            [
+              254,
+              250,
+              244
+            ]
+          ],
+          "alreadyCompliant": false
+        }
+      ],
+      "rightsStatus": "COMMERCIAL_USE_APPROVED",
+      "assignmentStatus": "APPROVED_FOR_SKU",
+      "publicationAllowed": true,
+      "rightsEvidenceId": null,
+      "rightsEvidenceLevel": null,
+      "underlyingOrigin": null
+    },
+    {
+      "sourceSku": "LIST-023",
+      "status": "PENDING",
+      "sourceFormat": "WEBP",
+      "sourceSize": [
+        1200,
+        1200
+      ],
+      "primaryFiles": [
+        {
+          "path": "/creative/LIST-023.webp",
+          "sha256": "db17edd38fbf7674e04e330d3168bd5e88527aff674fd43cd758aecb657d4a58",
+          "bytes": 308782,
+          "size": [
+            1200,
+            1200
+          ],
+          "cornerRGB": [
+            [
+              252,
+              249,
+              243
+            ],
+            [
+              249,
+              244,
+              234
+            ],
+            [
+              252,
+              249,
+              241
+            ],
+            [
+              248,
+              243,
+              233
+            ]
+          ],
+          "alreadyCompliant": false
+        },
+        {
+          "path": "/creative/LIST-023-primary-480.webp",
+          "sha256": "a37409169b466795271b1b3f112cc6950bc3ea60821829bbfab2279c2c7f5210",
+          "bytes": 55950,
+          "size": [
+            480,
+            480
+          ],
+          "cornerRGB": [
+            [
+              252,
+              249,
+              243
+            ],
+            [
+              249,
+              244,
+              236
+            ],
+            [
+              251,
+              248,
+              240
+            ],
+            [
+              249,
+              244,
+              236
+            ]
+          ],
+          "alreadyCompliant": false
+        },
+        {
+          "path": "/creative/LIST-023-primary-800.webp",
+          "sha256": "b18f92d35b6bfa3e3dc44c993c3637ffe90feb582ca6286951cd85bda8dad250",
+          "bytes": 137378,
+          "size": [
+            800,
+            800
+          ],
+          "cornerRGB": [
+            [
+              252,
+              249,
+              243
+            ],
+            [
+              249,
+              244,
+              236
+            ],
+            [
+              252,
+              249,
+              241
+            ],
+            [
+              249,
+              244,
+              234
+            ]
+          ],
+          "alreadyCompliant": false
+        }
+      ],
+      "rightsStatus": "COMMERCIAL_USE_APPROVED",
+      "assignmentStatus": "APPROVED_FOR_SKU",
+      "publicationAllowed": true,
+      "rightsEvidenceId": null,
+      "rightsEvidenceLevel": null,
+      "underlyingOrigin": null
+    },
+    {
+      "sourceSku": "LIST-024",
+      "status": "PENDING",
+      "sourceFormat": "WEBP",
+      "sourceSize": [
+        1200,
+        1200
+      ],
+      "primaryFiles": [
+        {
+          "path": "/creative/LIST-024.webp",
+          "sha256": "88374c88c5d646ffc99088b6010e9761a7b19f508b0c90600545ee877d3d9774",
+          "bytes": 404488,
+          "size": [
+            1200,
+            1200
+          ],
+          "cornerRGB": [
+            [
+              253,
+              252,
+              245
+            ],
+            [
+              254,
+              250,
+              242
+            ],
+            [
+              253,
+              252,
+              245
+            ],
+            [
+              253,
+              252,
+              245
+            ]
+          ],
+          "alreadyCompliant": false
+        },
+        {
+          "path": "/creative/LIST-024-primary-480.webp",
+          "sha256": "26ae38905faa491bf46c4a13961f8c2b697b4a8368bc4f3d18deb650ed58d720",
+          "bytes": 73144,
+          "size": [
+            480,
+            480
+          ],
+          "cornerRGB": [
+            [
+              253,
+              252,
+              245
+            ],
+            [
+              254,
+              250,
+              242
+            ],
+            [
+              253,
+              252,
+              245
+            ],
+            [
+              253,
+              252,
+              245
+            ]
+          ],
+          "alreadyCompliant": false
+        },
+        {
+          "path": "/creative/LIST-024-primary-800.webp",
+          "sha256": "933710396dac21492b1190ac2e6770b4b6859aed78b0d99469b659af5cd76965",
+          "bytes": 181290,
+          "size": [
+            800,
+            800
+          ],
+          "cornerRGB": [
+            [
+              253,
+              252,
+              245
+            ],
+            [
+              254,
+              250,
+              242
+            ],
+            [
+              253,
+              252,
+              245
+            ],
+            [
+              253,
+              252,
+              245
+            ]
+          ],
+          "alreadyCompliant": false
+        }
+      ],
+      "rightsStatus": "COMMERCIAL_USE_APPROVED",
+      "assignmentStatus": "APPROVED_FOR_SKU",
+      "publicationAllowed": true,
+      "rightsEvidenceId": null,
+      "rightsEvidenceLevel": null,
+      "underlyingOrigin": null
+    },
+    {
+      "sourceSku": "LIST-025",
+      "status": "PENDING",
+      "sourceFormat": "WEBP",
+      "sourceSize": [
+        1200,
+        1200
+      ],
+      "primaryFiles": [
+        {
+          "path": "/creative/LIST-025.webp",
+          "sha256": "f756b455e5c06ab0700fdbc794bd547991fdbd1d47337f3dd96173f96fff9100",
+          "bytes": 334152,
+          "size": [
+            1200,
+            1200
+          ],
+          "cornerRGB": [
+            [
+              251,
+              248,
+              240
+            ],
+            [
+              250,
+              242,
+              233
+            ],
+            [
+              251,
+              248,
+              242
+            ],
+            [
+              247,
+              241,
+              234
+            ]
+          ],
+          "alreadyCompliant": false
+        },
+        {
+          "path": "/creative/LIST-025-primary-480.webp",
+          "sha256": "3f042f259a89dd518e6db3a878874df4fc61334d61ee80b2d24170d56a9eb3e9",
+          "bytes": 58590,
+          "size": [
+            480,
+            480
+          ],
+          "cornerRGB": [
+            [
+              253,
+              247,
+              240
+            ],
+            [
+              248,
+              243,
+              233
+            ],
+            [
+              251,
+              248,
+              240
+            ],
+            [
+              249,
+              244,
+              236
+            ]
+          ],
+          "alreadyCompliant": false
+        },
+        {
+          "path": "/creative/LIST-025-primary-800.webp",
+          "sha256": "3584df5ad870656c01726c6e03c02af1e0c0c54be966ddd9af9de8a224a56426",
+          "bytes": 144670,
+          "size": [
+            800,
+            800
+          ],
+          "cornerRGB": [
+            [
+              251,
+              248,
+              242
+            ],
+            [
+              248,
+              243,
+              233
+            ],
+            [
+              251,
+              248,
+              240
+            ],
+            [
+              248,
+              242,
+              235
+            ]
+          ],
+          "alreadyCompliant": false
+        }
+      ],
+      "rightsStatus": "COMMERCIAL_USE_APPROVED",
+      "assignmentStatus": "APPROVED_FOR_SKU",
+      "publicationAllowed": true,
+      "rightsEvidenceId": null,
+      "rightsEvidenceLevel": null,
+      "underlyingOrigin": null
+    },
+    {
+      "sourceSku": "LIST-026",
+      "status": "PENDING",
+      "sourceFormat": "WEBP",
+      "sourceSize": [
+        1200,
+        1200
+      ],
+      "primaryFiles": [
+        {
+          "path": "/creative/LIST-026.webp",
+          "sha256": "83cd2b4ba2d8c0b64c76af928c4e52bbdd4d0a93257604bab2e253b7bd72573e",
+          "bytes": 341546,
+          "size": [
+            1200,
+            1200
+          ],
+          "cornerRGB": [
+            [
+              252,
+              249,
+              243
+            ],
+            [
+              250,
+              247,
+              239
+            ],
+            [
+              252,
+              249,
+              243
+            ],
+            [
+              247,
+              243,
+              235
+            ]
+          ],
+          "alreadyCompliant": false
+        },
+        {
+          "path": "/creative/LIST-026-primary-480.webp",
+          "sha256": "3f5aac4bf217d73dab6290c735f2674b1a268581812d6e1f3c7dae2a58451106",
+          "bytes": 65194,
+          "size": [
+            480,
+            480
+          ],
+          "cornerRGB": [
+            [
+              252,
+              249,
+              243
+            ],
+            [
+              250,
+              247,
+              239
+            ],
+            [
+              252,
+              249,
+              243
+            ],
+            [
+              250,
+              246,
+              241
+            ]
+          ],
+          "alreadyCompliant": false
+        },
+        {
+          "path": "/creative/LIST-026-primary-800.webp",
+          "sha256": "a7dc225dba5f26c0c751291ae610d953e46335abaad00cc33f170f08b986cae3",
+          "bytes": 152984,
+          "size": [
+            800,
+            800
+          ],
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              250,
+              247,
+              239
+            ],
+            [
+              252,
+              249,
+              243
+            ],
+            [
+              249,
+              245,
+              240
+            ]
+          ],
+          "alreadyCompliant": false
+        }
+      ],
+      "rightsStatus": "COMMERCIAL_USE_APPROVED",
+      "assignmentStatus": "APPROVED_FOR_SKU",
+      "publicationAllowed": true,
+      "rightsEvidenceId": null,
+      "rightsEvidenceLevel": null,
+      "underlyingOrigin": null
+    }
+  ],
+  "task": "Micro-task 14A"
+}

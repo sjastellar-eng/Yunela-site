@@ -1,0 +1,17 @@
+.store.experience-v9 .yuna-avatar{display:block;width:var(--yuna-avatar-size,48px);height:var(--yuna-avatar-size,48px);aspect-ratio:1;border-radius:50%;object-fit:cover;flex:none;transform:none}
+.store.experience-v9 .yuna-avatar-entry{display:flex;flex:none;flex-direction:column;gap:18px;border:0;background:transparent;color:inherit;padding:10px;max-width:100%;border-radius:12px}
+.store.experience-v9 .yuna-avatar-entry:hover{background:transparent;color:inherit}
+.store.experience-v9 .yuna-avatar-entry .yuna-avatar{--yuna-avatar-size:280px;box-shadow:0 0 0 1px #ffffff24,0 16px 44px #0003}
+.store.experience-v9 .yuna-avatar-caption{flex:none;font-size:13px;line-height:1.5;letter-spacing:.02em;text-align:center}
+.store.experience-v9 .yuna-avatar-entry~span{margin-top:12px}
+.store.experience-v9 header .yuna-nav-entry{gap:9px}
+.store.experience-v9 .yuna-nav-entry .yuna-avatar{--yuna-avatar-size:32px}
+.store.experience-v9 .yuna-speaker .yuna-avatar{--yuna-avatar-size:48px}
+.store.experience-v9 .yuna-speaker small{line-height:1.5;letter-spacing:.02em}
+@media(max-width:700px){
+ .store.experience-v9 .yuna-avatar-entry .yuna-avatar{--yuna-avatar-size:176px}
+ .store.experience-v9 .yuna-avatar-entry{gap:12px}
+ .store.experience-v9 .yuna-avatar-caption{font-size:12px;max-width:220px}
+}
+
+.store.experience-v9 header .logo{display:flex;align-items:center;gap:9px}.store.experience-v9 header .logo img{display:block;flex:none;width:30px;height:36px}

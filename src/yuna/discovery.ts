@@ -13,6 +13,7 @@ export function readProfile(raw:string|null):YunaProfile|null{
 }
 export function interpretMessage(text:string,profile:YunaProfile):{profile:YunaProfile;message:string}{
  const q=text.toLocaleLowerCase('uk-UA').slice(0,600),p={...profile};
+ if(/хто ти|як тебе звати|кто ты|как тебя зовут|your name/.test(q))return{profile:p,message:'Я YUN — Юнь, чайний експерт YUNELA. Допоможу дослідити чайні стилі, порівняти описи та знайти рецепт заварювання. Працюю за правилами; підтверджені відомості про конкретну партію уточнюємо.'};
  if(/ліку|леч|тиск|давлен|вагіт|беремен|медич|сон|кофеїн/.test(q))return{profile:p,message:'Я не визначаю лікувальні властивості чи безпечність чаю для здоров’я. Можу допомогти з вибором чайного напряму.'};
  if(/порів|сравн|відрізня|отлич/.test(q))return{profile:p,message:'Познач два чаї кнопкою «Порівняти» — зіставимо їхні описи та рецепти поруч.'};
  let understood=false;

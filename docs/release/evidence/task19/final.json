@@ -1,0 +1,169 @@
+{
+  "commit": "31e5c8b490f08182435278dabb6b105ec23662d2",
+  "date": "2026-10-30",
+  "observations": [
+    {
+      "name": "390-product",
+      "brokenImages": [],
+      "scrollWidth": 375,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/tea/%D0%A3%D0%BB%D1%83%D0%BD%D0%B8",
+      "width": 390
+    },
+    {
+      "name": "390-menu",
+      "brokenImages": [],
+      "scrollWidth": 375,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/tea/ALL",
+      "width": 390
+    },
+    {
+      "name": "390-teaware",
+      "brokenImages": [],
+      "scrollWidth": 375,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/teaware",
+      "width": 390
+    },
+    {
+      "name": "390-gifts",
+      "brokenImages": [],
+      "scrollWidth": 375,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/gifts",
+      "width": 390
+    },
+    {
+      "name": "390-journal",
+      "brokenImages": [],
+      "scrollWidth": 375,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/journal",
+      "width": 390
+    },
+    {
+      "name": "390-article",
+      "brokenImages": [],
+      "scrollWidth": 375,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/journal/first-tea",
+      "width": 390
+    },
+    {
+      "name": "390-yuna",
+      "brokenImages": [],
+      "scrollWidth": 375,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/finder",
+      "width": 390
+    },
+    {
+      "name": "390-banner3",
+      "brokenImages": [],
+      "scrollWidth": 375,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/catalog",
+      "width": 390
+    },
+    {
+      "name": "1440-home",
+      "brokenImages": [],
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html",
+      "width": 1440
+    },
+    {
+      "name": "1440-catalog",
+      "brokenImages": [],
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/tea/ALL",
+      "width": 1440
+    },
+    {
+      "name": "1440-teaware",
+      "brokenImages": [],
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/teaware",
+      "width": 1440
+    },
+    {
+      "name": "1440-gifts",
+      "brokenImages": [],
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/gifts",
+      "width": 1440
+    },
+    {
+      "name": "1440-journal",
+      "brokenImages": [],
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/journal",
+      "width": 1440
+    },
+    {
+      "name": "1440-article",
+      "brokenImages": [],
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/journal/gongfu",
+      "width": 1440
+    },
+    {
+      "name": "1440-product",
+      "brokenImages": [],
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/tea/ALL",
+      "width": 1440
+    },
+    {
+      "name": "1440-yuna",
+      "brokenImages": [],
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/finder",
+      "width": 1440
+    },
+    {
+      "name": "1440-banner2",
+      "brokenImages": [],
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/catalog",
+      "width": 1440
+    },
+    {
+      "name": "1440-banner3",
+      "brokenImages": [],
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/catalog",
+      "width": 1440
+    },
+    {
+      "name": "1440-home-lower",
+      "brokenImages": [],
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/catalog",
+      "width": 1440
+    },
+    {
+      "name": "390-catalog",
+      "brokenImages": [],
+      "scrollWidth": 375,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/tea/ALL",
+      "width": 390
+    },
+    {
+      "name": "390-home-lower",
+      "brokenImages": [],
+      "scrollWidth": 375,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/tea/ALL",
+      "width": 390
+    },
+    {
+      "name": "1440-article-teaware",
+      "brokenImages": [],
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/journal/teaware-start",
+      "width": 1440
+    }
+  ],
+  "limitations": [
+    "Full 1440px native screenshot: Page.captureScreenshot timed out",
+    "No physical touch or reduced-motion emulation API"
+  ],
+  "consoleErrors": [],
+  "notes": [
+    "Repeated captures retain the final observation for each screenshot name.",
+    "Screenshots saved on published 31e5c8b; desktop is the visible portion of actual1440 CSS layout."
+  ]
+}

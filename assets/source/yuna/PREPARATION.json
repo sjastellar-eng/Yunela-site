@@ -1,0 +1,28 @@
+{
+  "source": "portrait-original.png",
+  "sourceSha256": "c9a7db8f9e18c3a9438aea3692048c4f141d39fd34856c1b73cd3301e39f2d0d",
+  "sourceSize": [
+    1536,
+    1404
+  ],
+  "cropBox": [
+    205,
+    180,
+    565,
+    540
+  ],
+  "panel": "large upper-left portrait",
+  "processing": "deterministic crop, circular alpha, Lanczos resize, WebP q90/method6; no generation, retouch, face change or color adjustment",
+  "outputs": [
+    {
+      "path": "public/yuna/avatar-320.webp",
+      "bytes": 25368,
+      "sha256": "ead1c8384346628278d9344b445035bc6f0433fe0e0c9cab7d76614dcc871bd5"
+    },
+    {
+      "path": "public/yuna/avatar-160.webp",
+      "bytes": 10392,
+      "sha256": "d6459bdf940ea1e7de21b468f34f13498569ca5e04d6bb3b9a608a0904bcf4c7"
+    }
+  ]
+}

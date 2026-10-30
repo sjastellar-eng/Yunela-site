@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-28 Europe/Kyiv",
+  "baseCommit": "f6ddcb149b7cc9b0b57f1d5a107b52f028f25020",
+  "rows": [
+    {
+      "sourceSku": "LIST-017",
+      "beforeBytes": 523436,
+      "q92Bytes": 468430,
+      "q95Bytes": 569454,
+      "selectedQuality": 92,
+      "afterBytes": 468430
+    },
+    {
+      "sourceSku": "LIST-018",
+      "beforeBytes": 521122,
+      "q92Bytes": 469496,
+      "q95Bytes": 564330,
+      "selectedQuality": 92,
+      "afterBytes": 469496
+    },
+    {
+      "sourceSku": "LIST-019",
+      "beforeBytes": 556154,
+      "q92Bytes": 501540,
+      "q95Bytes": 604220,
+      "selectedQuality": 92,
+      "afterBytes": 501540
+    },
+    {
+      "sourceSku": "LIST-020",
+      "beforeBytes": 462414,
+      "q92Bytes": 418240,
+      "q95Bytes": 507290,
+      "selectedQuality": 92,
+      "afterBytes": 418240
+    },
+    {
+      "sourceSku": "LIST-021",
+      "beforeBytes": 518480,
+      "q92Bytes": 461990,
+      "q95Bytes": 553662,
+      "selectedQuality": 92,
+      "afterBytes": 461990
+    }
+  ],
+  "beforeBytes": 2581606,
+  "afterBytes": 2319696,
+  "q95Bytes": 2798956,
+  "minimumForegroundSSIM": 0.9941664124333263,
+  "method": 6,
+  "selectedQualityBySku": {
+    "LIST-017": 92,
+    "LIST-018": 92,
+    "LIST-019": 92,
+    "LIST-020": 92,
+    "LIST-021": 92
+  },
+  "tests": "260tests/38files PASS",
+  "typeScript": "PASS via tsc -b full production build",
+  "eslint": "PASS",
+  "imageValidation": "56primary/347files PASS",
+  "productionBuild": "frontend/server PASS",
+  "scope": "Only15 selected primary+480/800 WebP and corresponding SHA fields; other51SKU, every secondary/texture, all non-hash fields/sourceSku/gallery order unchanged",
+  "staging": "Verified current LIVE f6ddcb1; unchanged; no merge/deploy",
+  "savingPercent": 10.15
+}

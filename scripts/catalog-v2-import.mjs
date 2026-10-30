@@ -17,7 +17,8 @@ const list=v=>v?v.split(';').map(s=>s.trim()).filter(Boolean):[];
 function unique(rows,key){const map=new Map();for(const r of rows){if(map.has(r[key]))throw Error('Duplicate '+key+': '+r[key]);map.set(r[key],r);}return map;}
 export function validateImageManifest(manifest,skuSet,publicDir){
  const bySku=unique(manifest.images,'sourceSku');for(const [sku,img]of bySku){if(!skuSet.has(sku))throw Error('Unknown image SKU');if(img.path===null){if(img.publicationAllowed!==false)throw Error('Empty image cannot be approved');continue;}
- if(!/^\/creative\/(?:LIST|PHOTO)-\d{3}[A-Za-z0-9_-]*\.(?:webp|png|jpg)$/.test(img.path)||!['COMMERCIAL_USE_APPROVED'].includes(img.rightsStatus)||img.assignmentStatus!=='APPROVED_FOR_SKU'||img.publicationAllowed!==true||!['EDITORIAL_ILLUSTRATION','ILLUSTRATIVE','VERIFIED_PRODUCT_PHOTO'].includes(img.kind)||!img.alt?.trim())throw Error('Image rights/assignment/path not approved');
+ if(!/^\/creative\/(?:LIST|PHOTO)-\d{3}[A-Za-z0-9_-]*\.(?:webp|png|jpg)$/.test(img.path)||!['COMMERCIAL_USE_APPROVED'].includes(img.rightsStatus)||img.assignmentStatus!=='APPROVED_FOR_SKU'||img.publicationAllowed!==true||!['EDITORIAL_ILLUSTRATION','ILLUSTRATIVE','VERIFIED_PRODUCT_PHOTO','SUPPLIER_PRODUCT_PHOTO'].includes(img.kind)||!img.alt?.trim())throw Error('Image rights/assignment/path not approved');
+ if(img.kind==='SUPPLIER_PRODUCT_PHOTO'&&(img.supplierAuthorized!==true||img.rightsEvidenceId!=='CEO_SUPPLIER_PERMISSION_2026_10_23'))throw Error('Supplier authorization missing');
  if(img.kind==='VERIFIED_PRODUCT_PHOTO'&&img.productIdentityConfirmed!==true)throw Error('Product photo identity unconfirmed');
  if(!new RegExp('^/creative/'+sku+'(?:[-_][A-Za-z0-9_-]+)?\\.(?:webp|png|jpg)$').test(img.path))throw Error('Image filename must match sourceSku');
  const file=resolve(publicDir,'.'+img.path);if(!existsSync(file)||digest(readFileSync(file))!==img.sha256)throw Error('Image file/checksum mismatch');
