@@ -1,0 +1,29 @@
+{
+  "baselineTree": "5bf0133059a18cb1cba300bb4815a4e10a09d723",
+  "immutablePaths": [
+    "public/creative",
+    "public/catalog",
+    "public/yuna",
+    "assets/source/yuna",
+    "src/data",
+    "src/application",
+    "src/api",
+    "package.json",
+    "package-lock.json",
+    "render.yaml",
+    "public/demo-catalog.json"
+  ],
+  "unchanged": true,
+  "task16": "paused; not merged",
+  "paidResourcesCreated": false,
+  "catalogCount": 56,
+  "families": {
+    "PUER": 25,
+    "UNKNOWN": 4,
+    "Червоний чай": 11,
+    "Білий": 2,
+    "Улуни": 12,
+    "Зелений": 2
+  },
+  "publishedCommit": "7cc3019a121863540532c7e034c9a85ab74a8256"
+}

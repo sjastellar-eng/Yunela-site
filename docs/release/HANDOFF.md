@@ -29,3 +29,11 @@ Static staging published commit3ea70d9bb04bbf82f2eb2431df6373cafddf3949 (dep-dbh
 ## Task18 — navigation / editorial expansion, 2026-10-30 Kyiv
 
 New static navigation,3-slide rail, evidence-bound tea groups, teaware/gift preparation overviews and3 editable Ukrainian journal articles. Task17 portrait assets unchanged. Content status map and supplier input list: TASK_18_CONTENT_MAP.md. Sources: TASK_18_EDITORIAL_SOURCES.md. TypeScript/ESLint/images271tests and client/server builds PASS before publication; live SHA/browser evidence will be appended after acceptance. Task16 remains PAUSED. Static demo orders remain unavailable. No paid resources or commercial actions.
+
+### Task18 verified live
+
+- Live SHA **7cc3019a121863540532c7e034c9a85ab74a8256**, deploy **dep-dbi75h6tlv9c739252dg** LIVE2026-10-30 12:35:15Kyiv. Main URL serves index-HfbLf5tq.js / index-DCDXEG6-.css, noindex retained.
+-5 primary +4 secondary links,3-banner rail,12→24 pagination, declared shu/shen/light-oolong filters, one justified first-tea collection, preparation-only teaware/gifts,3 article routes, explained related teas. Yuna portrait/source and catalog/commerce inputs unchanged.
+-271/271 full tests,26 targeted, TypeScript, ESLint, images56/347 and client/server builds PASS. Browser CSS frame390/1440 layout PASS, screenshots and explicit native1440/touch limits in TASK_18_QA.md.
+-Task16 remains PAUSED. Static checkout remains unavailable; no commercial go. Next frontend content step needs supplier SKU/materials/volumes/photos/rights/stock/prices and set compositions, plus official contacts and approved return/payment details. Full checklist: TASK_18_CONTENT_MAP.md. Articles/sources: content/journal/*.json and TASK_18_EDITORIAL_SOURCES.md.
+-This evidence-only follow-up advances HEAD after the deployed code SHA; no extra deploy required.
