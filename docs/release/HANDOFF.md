@@ -64,3 +64,7 @@ Original category SVG illustrations for8 teaware directions,10 accessory explana
 ## YUN replacement — 2026-10-30 Kyiv
 
 Current static branch feat/creative-gallery-v9-2 continued from487b92a; Task19 supplement preserved. YUN / Юнь replaces active Yuna persona, portrait and two-leaf emblem supplied-reference derivatives. Internal identifiers/history retained. See YUN_REPLACEMENT_QA.md. Tea data/commerce/noindex unchanged; Task16 PAUSED. Live commit and browser evidence recorded only after verified deployment.
+
+### YUN verified LIVE
+
+Published a7d3dce137635e8c74841f14a30a0dedbe598ad8 /Render dep-dbid6guc6qcc73davb1g LIVE19:26:53Kyiv30.10.2026. Current static URL unchanged.275full tests plus21final targeted, builds/ESLint/images PASS. Published390/1440CSS frame home/finder PASS without overflow; portrait/logo loaded; greeting/identity/oolong flow correct; old visible persona mentions absent, noindex retained. Screenshot native-width limitation and intentional remaining technical/historical YUNA: YUN_REPLACEMENT_QA.md. Task19 supplement preserved; Task16 PAUSED; no commercial changes. Documentation-only follow-up may be newer than published code.
