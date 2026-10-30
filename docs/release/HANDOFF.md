@@ -25,3 +25,7 @@ Next: Task16 protected offline-test server staging, storage/runtime approval and
 ## Task17 — Yuna portrait, 2026-10-30 Kyiv
 
 Static staging published commit3ea70d9bb04bbf82f2eb2431df6373cafddf3949 (dep-dbhsvdek1f9s73e4sj8g LIVE). Supplied source and optimized circular avatars saved; home entry, header entry and dialogue speaker updated. Existing finder navigation preserved. Main URL verified current bundle index-CdHn5gKo.js; noindex retained. See TASK_17_QA.md and evidence/task17 for390/1440 CSS frame results, four screenshots and explicit desktop capture limitation. All required code/build/image checks pass. Task16 remains **PAUSED by user**; this work does not enable backend, orders, payments or sales. No change to existing launch blockers. Documentation-only HEAD may be newer than live code SHA; no redeploy needed.
+
+## Task18 — navigation / editorial expansion, 2026-10-30 Kyiv
+
+New static navigation,3-slide rail, evidence-bound tea groups, teaware/gift preparation overviews and3 editable Ukrainian journal articles. Task17 portrait assets unchanged. Content status map and supplier input list: TASK_18_CONTENT_MAP.md. Sources: TASK_18_EDITORIAL_SOURCES.md. TypeScript/ESLint/images271tests and client/server builds PASS before publication; live SHA/browser evidence will be appended after acceptance. Task16 remains PAUSED. Static demo orders remain unavailable. No paid resources or commercial actions.
