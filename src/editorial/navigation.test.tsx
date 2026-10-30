@@ -18,3 +18,17 @@ describe('honest editorial pages',()=>{
  it('has three independent articles with deep links, useful sections and source IDs',()=>{expect(articles).toHaveLength(3);for(const a of articles){expect(a.sections.length).toBeGreaterThanOrEqual(4);expect(a.sourceIds.length).toBeGreaterThan(0);expect(renderToStaticMarkup(<JournalArticle slug={a.slug}/>)).toContain(a.title);}});
  it('never markets imaginary teaware or gift inventory',()=>{for(const html of [renderToStaticMarkup(<PreparingTeaware/>),renderToStaticMarkup(<PreparingGifts/>)]){expect(html).toContain('Готуємо колекцію');expect(html).not.toContain('До кошика');expect(html).not.toContain('₴');expect(html).not.toContain('грн');}});
 });
+
+describe('Task19 article reading paths',()=>{
+ it('links each article to two existing source records, two other stories and one original practical paragraph',()=>{
+  for(const a of articles){
+   const html=renderToStaticMarkup(<JournalArticle slug={a.slug} products={items} onOpen={()=>{}}/>);
+   expect(html).toContain('СПРОБУЙ НА ПРАКТИЦІ');
+   expect(html.match(/class="article-tip"/g)).toHaveLength(1);
+   for(const other of articles.filter(x=>x.slug!==a.slug))expect(html).toContain(`href="#/journal/${other.slug}"`);
+   expect(html).toContain('Чаї до теми статті');
+   expect(html).not.toContain('До кошика');
+   expect(html).not.toContain('₴');
+  }
+ });
+});

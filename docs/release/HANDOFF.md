@@ -37,3 +37,7 @@ New static navigation,3-slide rail, evidence-bound tea groups, teaware/gift prep
 -271/271 full tests,26 targeted, TypeScript, ESLint, images56/347 and client/server builds PASS. Browser CSS frame390/1440 layout PASS, screenshots and explicit native1440/touch limits in TASK_18_QA.md.
 -Task16 remains PAUSED. Static checkout remains unavailable; no commercial go. Next frontend content step needs supplier SKU/materials/volumes/photos/rights/stock/prices and set compositions, plus official contacts and approved return/payment details. Full checklist: TASK_18_CONTENT_MAP.md. Articles/sources: content/journal/*.json and TASK_18_EDITORIAL_SOURCES.md.
 -This evidence-only follow-up advances HEAD after the deployed code SHA; no extra deploy required.
+
+## Task19 — visual polish, 2026-10-30 Kyiv
+
+Task18 structure retained; tighter catalog rhythm, stable-height banners, original topic SVG covers, teaware/gift art panels, practical article callouts and related-story/current-tea links, compact brand/help ending. Catalog/image/commerce/Yuna source assets unchanged.272tests, TypeScript, ESLint, image validation56/347 and client/server builds PASS before publication. See TASK_19_QA.md; live SHA and screenshot evidence will follow actual deployment. Task16 remains PAUSED. No commercial go or paid resources.

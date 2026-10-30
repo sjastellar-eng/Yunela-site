@@ -11,3 +11,5 @@ createRoot(document.getElementById('root')!).render(import.meta.env.VITE_STATIC_
 import './catalog/gallery.css';
 
 import './editorial/editorial.css';
+
+import './editorial/visual-polish.css';

@@ -1,0 +1,27 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> yunela-site@0.2.1 build
+> npm run validate:images && tsc -b && vite build && vite build --mode server
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> yunela-site@0.2.1 validate:images
+> node scripts/check-creative-images.mjs
+
+{"status":"PASS","catalog":56,"creativeImages":56,"pending":0}
+{"status":"PASS","galleryProducts":56,"masterAndResponsiveFiles":347}
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 1705 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.52 kB │ gzip:   0.34 kB
+dist/assets/index-Ddw2Wz5a.css  109.48 kB │ gzip:  20.98 kB
+dist/assets/index-Co9Y5r-h.js   444.08 kB │ gzip: 117.40 kB
+✓ built in 1.97s
+vite v7.3.7 building ssr environment for server...
+transforming...
+✓ 29 modules transformed.
+rendering chunks...
+dist-server/f3-runtime.js  138.27 kB
+✓ built in 519ms
