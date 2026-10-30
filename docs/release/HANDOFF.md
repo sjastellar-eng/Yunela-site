@@ -53,3 +53,10 @@ Task18 structure retained; tighter catalog rhythm, stable-height banners, origin
 ## Task19 supplement — staged teaware / sets,2026-10-30 Kyiv
 
 Original category SVG illustrations for8 teaware directions,10 accessory explanations and4 set directions. Individual engraving chabani clearly a concept with no orders. All overview/preparing; no confirmed orderable/own-stock goods. Existing tea-first home/catalog/image/commerce data unchanged. Private blank procurement form and publication criteria: docs/sourcing.275tests, TypeScript/ESLint/images/build PASS. Final live SHA and390/1440 acceptance to follow. Task16 PAUSED; no paid resources/payments.
+
+### Task19 supplement verified LIVE
+
+- Code **a75483efbea3d815b3e5cff026f31077b6d88df1** /tree eb6949565684107dfd9e19b7f631ba16714f971e. Deploy **dep-dbibteec6qcc73d7qesg LIVE17:59:21Kyiv30.10.2026**. Same static https://yunela-v92-demo.onrender.com/; bundle index-D2KCmJ-K.js /index-Dqey5btB.css; noindex retained.
+-8 teaware +10 accessory +4 set overviews illustrated with original category SVG. All preparing;0 confirmed orderable and0 own-stock goods. Engraved chabani clearly concept/no orders. Tea-first home and all catalog/business/source images unchanged.
+-275/275 tests42files, TypeScript, ESLint, images56/347 and static client/server build PASS. Published390/1440 CSS frames PASS/no overflow;12 screenshots and explicit native1440 capture limitation: TASK_19_SUPPLEMENT_QA.md.
+-Blank procurement fields/workflow in docs/sourcing; not shipped infrontend. Need verified seller/model/characteristics/contents/cost/date/photo rights before concrete goods. Task16 PAUSED; no paid resources/backend/payments. Final evidence-only HEAD newer than code SHA needs no redeploy.
