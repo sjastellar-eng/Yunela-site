@@ -71,3 +71,5 @@
  .store.experience-v9 .journal-article{padding:28px 22px 55px!important}.journal-article h1{font-size:33px!important}.journal-article p{font-size:15px;line-height:1.9}.journal-article .article-intro{font-size:17px;padding-left:17px}.journal-article h2{font-size:25px}.journal-article nav{gap:8px}.journal-article section{margin:32px 0}.journal-article>small{font-size:9px}.store.experience-v9 footer .footer-links{gap:0 18px!important}.footer-links a{font-size:11px;line-height:1.5}
 }
 @media(prefers-reduced-motion:reduce){.banner-track{scroll-behavior:auto}.store.experience-v9 .editorial-banner *,.store.experience-v9 .home-directions *{animation:none!important;transition:none!important}}
+/* Existing generic content-page rules must not stretch compact home modules. */
+.store.experience-v9 main>section.banner-rail,.store.experience-v9 main>section.editorial-discovery,.store.experience-v9 main>section.home-directions,.store.experience-v9 main>section.home-journal{max-width:none!important;margin:0!important;min-height:0!important}
