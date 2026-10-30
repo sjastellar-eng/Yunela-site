@@ -98,7 +98,7 @@ export function createStoreServer(options: Options) {
       customer(req);rateLimit(req);
       if(!options.yunaProvider)return send({error:{code:'YUNA_NOT_CONFIGURED',message:'Генеративний AI не підключено. Скористайся деморежимом за правилами.'}},503);
       let input:ReturnType<typeof validateYunaInput>;
-      try{input=validateYunaInput(await body(req,8192));}catch{return send({error:{code:'VALIDATION_ERROR',message:'Некоректний запит YUNA'}},400);}
+      try{input=validateYunaInput(await body(req,8192));}catch{return send({error:{code:'VALIDATION_ERROR',message:'Некоректний запит YUN'}},400);}
       try{return send(await requestYunaIntent(options.yunaProvider,input));}catch{return send({error:{code:'YUNA_UNAVAILABLE',message:'AI тимчасово недоступний. Доступний деморежим за правилами.'}},502);}
     }
     if (path === '/health' && req.method === 'GET') return send({status:'ok',paymentMode:'offline-test',partnerDispatch:'disabled'});

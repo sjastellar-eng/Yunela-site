@@ -60,3 +60,7 @@ Original category SVG illustrations for8 teaware directions,10 accessory explana
 -8 teaware +10 accessory +4 set overviews illustrated with original category SVG. All preparing;0 confirmed orderable and0 own-stock goods. Engraved chabani clearly concept/no orders. Tea-first home and all catalog/business/source images unchanged.
 -275/275 tests42files, TypeScript, ESLint, images56/347 and static client/server build PASS. Published390/1440 CSS frames PASS/no overflow;12 screenshots and explicit native1440 capture limitation: TASK_19_SUPPLEMENT_QA.md.
 -Blank procurement fields/workflow in docs/sourcing; not shipped infrontend. Need verified seller/model/characteristics/contents/cost/date/photo rights before concrete goods. Task16 PAUSED; no paid resources/backend/payments. Final evidence-only HEAD newer than code SHA needs no redeploy.
+
+## YUN replacement — 2026-10-30 Kyiv
+
+Current static branch feat/creative-gallery-v9-2 continued from487b92a; Task19 supplement preserved. YUN / Юнь replaces active Yuna persona, portrait and two-leaf emblem supplied-reference derivatives. Internal identifiers/history retained. See YUN_REPLACEMENT_QA.md. Tea data/commerce/noindex unchanged; Task16 PAUSED. Live commit and browser evidence recorded only after verified deployment.

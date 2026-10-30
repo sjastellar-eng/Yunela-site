@@ -13,3 +13,5 @@
  .store.experience-v9 .yuna-avatar-entry{gap:12px}
  .store.experience-v9 .yuna-avatar-caption{font-size:12px;max-width:220px}
 }
+
+.store.experience-v9 header .logo{display:flex;align-items:center;gap:9px}.store.experience-v9 header .logo img{display:block;flex:none;width:30px;height:36px}
