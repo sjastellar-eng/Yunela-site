@@ -49,3 +49,7 @@ Task18 structure retained; tighter catalog rhythm, stable-height banners, origin
 -272tests/41files PASS; TypeScript, ESLint, images56/347, client/server production builds PASS. Exact390/1440 CSS iframe layout and key flows checked on final published build. Evidence and before/after comparisons: TASK_19_QA.md / evidence/task19. Full native1440 screenshot, real touch, reduced-motion emulation and full network trace remain BLOCKED by available browser API; do not claim native device acceptance.
 - Task16 **PAUSED**; no backend, payments, sales, supplier messages or paid resources. Commercial prices/packaging remain unpublished by the existing static gate. Supplier/CEO inputs unchanged: TASK_18_CONTENT_MAP.md and LAUNCH_BLOCKERS.md.
 - This final QA/evidence commit changes documentation only; branch HEAD can be newer than published code SHA. No further deploy required.
+
+## Task19 supplement — staged teaware / sets,2026-10-30 Kyiv
+
+Original category SVG illustrations for8 teaware directions,10 accessory explanations and4 set directions. Individual engraving chabani clearly a concept with no orders. All overview/preparing; no confirmed orderable/own-stock goods. Existing tea-first home/catalog/image/commerce data unchanged. Private blank procurement form and publication criteria: docs/sourcing.275tests, TypeScript/ESLint/images/build PASS. Final live SHA and390/1440 acceptance to follow. Task16 PAUSED; no paid resources/payments.

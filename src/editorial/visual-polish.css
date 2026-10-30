@@ -126,3 +126,21 @@
  .product-preview-status{font-size:10px;padding:6px 10px}.store.experience-v9 .product-intro h1{font-size:32px;line-height:1.18}.store.experience-v9 .product-page .preview-note{font-size:11px}
 }
 @media(prefers-reduced-motion:reduce){.store.experience-v9 .editorial-banner *,.store.experience-v9 .teaware-directions details,.store.experience-v9 header nav.is-open,.store.experience-v9 button,.store.experience-v9 a svg,.store.experience-v9 .banner-dots span{animation:none!important;transition:none!important;scroll-behavior:auto!important}.store.experience-v9 button:active,.store.experience-v9 a:hover>span>svg,.store.experience-v9 button:hover>svg:last-child{transform:none}}
+
+/* Task19 supplement: original category illustrations, never sale-item photos. */
+.category-visual{margin:0;background:#e4e9d7;color:#43533c;border-radius:8px;overflow:hidden;flex-shrink:0}
+.category-art{display:block;width:100%;height:auto}
+.category-visual figcaption{font-size:9px;line-height:1.4;text-align:center;padding:0 7px 10px;color:#516047}
+.overview-label{display:block;font-size:9px;letter-spacing:.08em;color:#65745c;margin:0 0 12px}
+.teaware-directions article{display:grid;grid-template-columns:126px minmax(0,1fr);gap:22px;align-items:start}
+.teaware-directions .category-copy{min-width:0}.teaware-directions .category-visual .category-art{height:100px}
+.teaware-directions article:nth-child(3n)>.category-visual,.gift-directions article:nth-child(2n)>.category-visual{background:#efd9c9;color:#825438}
+.teaware-directions article:last-child{grid-column:1/-1}.accessory-overviews{display:grid;grid-template-columns:1fr 1fr;gap:18px 25px;padding:14px 0}
+.accessory-overview{display:grid;grid-template-columns:76px minmax(0,1fr);gap:14px;align-items:start}.accessory-overview>.category-art{background:#e4e9d7;color:#43533c;border-radius:6px}
+.store.experience-v9 .accessory-overview h3{font-size:15px;line-height:1.4;margin:0 0 7px}.teaware-directions .accessory-overview p{font-size:12px;margin:0;line-height:1.6}
+.engraving-concept{margin:20px 0;padding:18px;background:#eee2d5;border-radius:6px}.engraving-concept h3{font-size:19px;line-height:1.35;margin:12px 0}.engraving-concept small{font-size:10px;line-height:1.5;display:block}.engraving-concept p{margin-bottom:12px}.engraving-concept>.category-art{max-width:190px;margin:0 auto;color:#825438}
+.gift-directions .category-visual{margin-bottom:20px}.gift-directions .category-visual>.category-art{height:125px}.gift-directions .category-visual figcaption{font-size:9px}.gift-directions .overview-label{margin-bottom:10px}
+@media(max-width:700px){
+ .teaware-directions article{grid-template-columns:92px minmax(0,1fr);gap:16px}.teaware-directions .category-visual .category-art{height:78px}.category-visual figcaption{font-size:8px;padding:0 4px 8px}.teaware-directions h2{font-size:21px}.teaware-directions p{font-size:13px}.overview-label{font-size:8px;margin-bottom:9px}
+ .teaware-directions article:last-child{grid-template-columns:1fr}.teaware-directions article:last-child>.category-visual{width:110px}.accessory-overviews{grid-template-columns:1fr;gap:20px}.accessory-overview{grid-template-columns:72px minmax(0,1fr);gap:14px}.engraving-concept{padding:15px;margin-left:-108px;margin-top:22px}.engraving-concept h3{font-size:20px}.engraving-concept>.category-art{max-width:170px}.gift-directions .category-visual>.category-art{height:100px}.gift-directions .overview-label{font-size:8px}
+}
