@@ -5,14 +5,23 @@ const offers: Partial<Record<string, Offer>> = prices;
 const currency = new Intl.NumberFormat('uk-UA', {
   style: 'currency',
   currency: 'UAH',
-  maximumFractionDigits: 0,
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 2,
 });
 
-export function previewPrice(sku: string): string | null {
-  const offer = offers[sku];
-  if (!offer) return null;
+export function previewOffer(sku: string) {
+  return offers[sku];
+}
 
-  const quantity = offer.grams === null ? 'цілий млинець' : `${offer.grams} г`;
-  const price = offer.retailUah === null ? 'Ціну уточнюємо' : currency.format(offer.retailUah);
-  return `${price} · ${quantity}`;
+export function weightPrice(retailUah: number, packageGrams: number, grams: number) {
+  return currency.format(Math.round(retailUah * grams * 100 / packageGrams) / 100);
+}
+
+export function previewPrice(sku: string): string | null {
+  const offer = previewOffer(sku);
+  if (!offer || offer.retailUah === null) return null;
+
+  return offer.grams === null
+    ? `${currency.format(offer.retailUah)} · цілий млинець`
+    : `${weightPrice(offer.retailUah, offer.grams, 100)} / 100 г`;
 }
