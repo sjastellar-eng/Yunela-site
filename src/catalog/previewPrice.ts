@@ -6,7 +6,7 @@ const currency = new Intl.NumberFormat('uk-UA', {
   style: 'currency',
   currency: 'UAH',
   minimumFractionDigits: 0,
-  maximumFractionDigits: 2,
+  maximumFractionDigits: 0,
 });
 
 export function previewOffer(sku: string) {
@@ -14,7 +14,8 @@ export function previewOffer(sku: string) {
 }
 
 export function weightPrice(retailUah: number, packageGrams: number, grams: number) {
-  return currency.format(Math.round(retailUah * grams * 100 / packageGrams) / 100);
+  const pricePer100Grams = Math.ceil((retailUah * 100 - 9 * packageGrams) / (10 * packageGrams)) * 10 + 9;
+  return currency.format(Math.ceil(pricePer100Grams * grams / 100));
 }
 
 export function previewPrice(sku: string): string | null {
