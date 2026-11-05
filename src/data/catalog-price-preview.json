@@ -1,0 +1,226 @@
+{
+  "PHOTO-001": {
+    "grams": 357,
+    "retailUah": 2159
+  },
+  "PHOTO-002": {
+    "grams": null,
+    "retailUah": 7379
+  },
+  "PHOTO-003": {
+    "grams": 357,
+    "retailUah": 2159
+  },
+  "PHOTO-004": {
+    "grams": 400,
+    "retailUah": 2349
+  },
+  "PHOTO-005": {
+    "grams": 357,
+    "retailUah": 1129
+  },
+  "PHOTO-006": {
+    "grams": 357,
+    "retailUah": 1769
+  },
+  "PHOTO-007": {
+    "grams": 357,
+    "retailUah": 4239
+  },
+  "PHOTO-008": {
+    "grams": 357,
+    "retailUah": 2159
+  },
+  "PHOTO-009": {
+    "grams": 400,
+    "retailUah": 2159
+  },
+  "PHOTO-010": {
+    "grams": 357,
+    "retailUah": 1869
+  },
+  "PHOTO-011": {
+    "grams": 400,
+    "retailUah": 2159
+  },
+  "PHOTO-012": {
+    "grams": 357,
+    "retailUah": 1679
+  },
+  "PHOTO-013": {
+    "grams": 357,
+    "retailUah": 1309
+  },
+  "PHOTO-014": {
+    "grams": 357,
+    "retailUah": 1309
+  },
+  "PHOTO-015": {
+    "grams": 357,
+    "retailUah": 3509
+  },
+  "PHOTO-016": {
+    "grams": 357,
+    "retailUah": 3049
+  },
+  "PHOTO-017": {
+    "grams": 357,
+    "retailUah": 1309
+  },
+  "PHOTO-018": {
+    "grams": 357,
+    "retailUah": 2159
+  },
+  "PHOTO-019": {
+    "grams": 400,
+    "retailUah": 1969
+  },
+  "PHOTO-020": {
+    "grams": 500,
+    "retailUah": 4599
+  },
+  "PHOTO-021": {
+    "grams": 357,
+    "retailUah": 2849
+  },
+  "PHOTO-022": {
+    "grams": 357,
+    "retailUah": 2849
+  },
+  "PHOTO-023": {
+    "grams": 357,
+    "retailUah": 2159
+  },
+  "PHOTO-024": {
+    "grams": null,
+    "retailUah": 4239
+  },
+  "PHOTO-025": {
+    "grams": 500,
+    "retailUah": 4419
+  },
+  "PHOTO-026": {
+    "grams": 357,
+    "retailUah": 1479
+  },
+  "PHOTO-027": {
+    "grams": 357,
+    "retailUah": null
+  },
+  "PHOTO-028": {
+    "grams": 357,
+    "retailUah": 3649
+  },
+  "PHOTO-029": {
+    "grams": 357,
+    "retailUah": 1579
+  },
+  "PHOTO-030": {
+    "grams": 500,
+    "retailUah": 4419
+  },
+  "LIST-001": {
+    "grams": 250,
+    "retailUah": 1479
+  },
+  "LIST-002": {
+    "grams": 500,
+    "retailUah": 1969
+  },
+  "LIST-003": {
+    "grams": 1000,
+    "retailUah": 3899
+  },
+  "LIST-004": {
+    "grams": 1000,
+    "retailUah": 3899
+  },
+  "LIST-005": {
+    "grams": 1000,
+    "retailUah": 3899
+  },
+  "LIST-006": {
+    "grams": 1000,
+    "retailUah": 3899
+  },
+  "LIST-007": {
+    "grams": 250,
+    "retailUah": 1479
+  },
+  "LIST-008": {
+    "grams": 250,
+    "retailUah": 1479
+  },
+  "LIST-009": {
+    "grams": 250,
+    "retailUah": 1969
+  },
+  "LIST-010": {
+    "grams": 250,
+    "retailUah": 1389
+  },
+  "LIST-011": {
+    "grams": 250,
+    "retailUah": 999
+  },
+  "LIST-012": {
+    "grams": 357,
+    "retailUah": 1309
+  },
+  "LIST-013": {
+    "grams": 250,
+    "retailUah": 999
+  },
+  "LIST-014": {
+    "grams": 500,
+    "retailUah": 1479
+  },
+  "LIST-015": {
+    "grams": 900,
+    "retailUah": 2929
+  },
+  "LIST-016": {
+    "grams": 250,
+    "retailUah": 709
+  },
+  "LIST-017": {
+    "grams": 110,
+    "retailUah": 519
+  },
+  "LIST-018": {
+    "grams": 500,
+    "retailUah": 2929
+  },
+  "LIST-019": {
+    "grams": 250,
+    "retailUah": 999
+  },
+  "LIST-020": {
+    "grams": 250,
+    "retailUah": 1969
+  },
+  "LIST-021": {
+    "grams": 250,
+    "retailUah": 709
+  },
+  "LIST-022": {
+    "grams": 150,
+    "retailUah": 609
+  },
+  "LIST-023": {
+    "grams": 50,
+    "retailUah": 609
+  },
+  "LIST-024": {
+    "grams": 250,
+    "retailUah": 2349
+  },
+  "LIST-025": {
+    "grams": 250,
+    "retailUah": 999
+  },
+  "LIST-026": {
+    "grams": 500,
+    "retailUah": 1969
+  }
+}
