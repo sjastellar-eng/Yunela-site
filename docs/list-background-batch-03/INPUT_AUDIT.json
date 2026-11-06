@@ -1,0 +1,267 @@
+{
+  "baseCommit": "0e04f802",
+  "records": [
+    {
+      "sourceSku": "LIST-012",
+      "path": "/creative/LIST-012.webp",
+      "format": "WEBP",
+      "mode": "RGB",
+      "size": [
+        1200,
+        1200
+      ],
+      "cornerRGB": [
+        [
+          252,
+          250,
+          246
+        ],
+        [
+          249,
+          245,
+          240
+        ],
+        [
+          251,
+          248,
+          242
+        ],
+        [
+          243,
+          239,
+          234
+        ]
+      ],
+      "action": "PROCESS",
+      "exports": [
+        {
+          "path": "/creative/LIST-012.webp",
+          "sha256": "7c4d2fc39abda66abdefddb9d0ea6319f978c9bbdd9669dffb007499b76c69cb",
+          "bytes": 293278
+        },
+        {
+          "path": "/creative/LIST-012-primary-480.webp",
+          "sha256": "21e77de5720902046fde0cbfe5eeeb4b6210ada1da6c4b3fa7d5eb1e6346d6f0",
+          "bytes": 55582
+        },
+        {
+          "path": "/creative/LIST-012-primary-800.webp",
+          "sha256": "0b96729cf07bb373800e73f17b7e0de005ca8ebb1cc3633330e18ada81281a20",
+          "bytes": 133494
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-013",
+      "path": "/creative/LIST-013.webp",
+      "format": "WEBP",
+      "mode": "RGB",
+      "size": [
+        1200,
+        1200
+      ],
+      "cornerRGB": [
+        [
+          250,
+          246,
+          241
+        ],
+        [
+          242,
+          237,
+          227
+        ],
+        [
+          250,
+          248,
+          244
+        ],
+        [
+          243,
+          240,
+          232
+        ]
+      ],
+      "action": "PROCESS",
+      "exports": [
+        {
+          "path": "/creative/LIST-013.webp",
+          "sha256": "9b704382aad617dc2379663fe896aeea81acddd31a00f9d7786a632646c97b08",
+          "bytes": 296630
+        },
+        {
+          "path": "/creative/LIST-013-primary-480.webp",
+          "sha256": "216d84c4219aa1875ad7cc91f075955d29333668de500821a957b5adc843c7a0",
+          "bytes": 52530
+        },
+        {
+          "path": "/creative/LIST-013-primary-800.webp",
+          "sha256": "dec6d28b900633335e15c95be6c6a21b68756987e06ed3979703d21a82d71401",
+          "bytes": 130156
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-014",
+      "path": "/creative/LIST-014.webp",
+      "format": "WEBP",
+      "mode": "RGB",
+      "size": [
+        1200,
+        1200
+      ],
+      "cornerRGB": [
+        [
+          251,
+          249,
+          245
+        ],
+        [
+          251,
+          249,
+          245
+        ],
+        [
+          251,
+          249,
+          245
+        ],
+        [
+          251,
+          249,
+          245
+        ]
+      ],
+      "action": "VERIFY_AND_PRESERVE",
+      "exports": [
+        {
+          "path": "/creative/LIST-014.webp",
+          "sha256": "55ec091bba5f5413a3b03f30c1f086daf461ad4dd8180313846b952053263b00",
+          "bytes": 340780,
+          "identicalToApprovedPilot": true,
+          "publicHashMatches": true
+        },
+        {
+          "path": "/creative/LIST-014-primary-480.webp",
+          "sha256": "b20a36b65f432c27e2f4c190e9edf83a0662df2f3350fa3b5e35e2c456764bbe",
+          "bytes": 79632,
+          "identicalToApprovedPilot": true,
+          "publicHashMatches": true
+        },
+        {
+          "path": "/creative/LIST-014-primary-800.webp",
+          "sha256": "0d1314dfc2fc4b52b823972224bfbb57d9fd74dff98497974c8a45fe300c5698",
+          "bytes": 192346,
+          "identicalToApprovedPilot": true,
+          "publicHashMatches": true
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-015",
+      "path": "/creative/LIST-015.webp",
+      "format": "WEBP",
+      "mode": "RGB",
+      "size": [
+        1200,
+        1200
+      ],
+      "cornerRGB": [
+        [
+          253,
+          251,
+          247
+        ],
+        [
+          248,
+          243,
+          233
+        ],
+        [
+          252,
+          252,
+          247
+        ],
+        [
+          248,
+          242,
+          235
+        ]
+      ],
+      "action": "PROCESS",
+      "exports": [
+        {
+          "path": "/creative/LIST-015.webp",
+          "sha256": "b4988d6b83afb2f503c996b74250cbe7fc991f48151e93fae557c0e84ed7bc00",
+          "bytes": 363072
+        },
+        {
+          "path": "/creative/LIST-015-primary-480.webp",
+          "sha256": "18ec335883d01f9aab7b8693cdad2465a007ca65a0af58635a982bd13f0fb58e",
+          "bytes": 66370
+        },
+        {
+          "path": "/creative/LIST-015-primary-800.webp",
+          "sha256": "b9d196dfe0573515fba8031cb1fc0c847c6dd137b457f0f5066cef90763c9bec",
+          "bytes": 161782
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-016",
+      "path": "/creative/LIST-016.webp",
+      "format": "WEBP",
+      "mode": "RGB",
+      "size": [
+        1200,
+        1200
+      ],
+      "cornerRGB": [
+        [
+          251,
+          249,
+          245
+        ],
+        [
+          251,
+          249,
+          245
+        ],
+        [
+          251,
+          249,
+          245
+        ],
+        [
+          251,
+          249,
+          245
+        ]
+      ],
+      "action": "VERIFY_AND_PRESERVE",
+      "exports": [
+        {
+          "path": "/creative/LIST-016.webp",
+          "sha256": "14d057283410fd9bb99d83334f79dc19f314099320f97e8ab01e5e5ab2983cf9",
+          "bytes": 411514,
+          "identicalToApprovedPilot": true,
+          "publicHashMatches": true
+        },
+        {
+          "path": "/creative/LIST-016-primary-480.webp",
+          "sha256": "4af9501926c3e3395c352f2ccfc1fea12f25cf6cfbf300f79fc8133f0e975766",
+          "bytes": 91672,
+          "identicalToApprovedPilot": true,
+          "publicHashMatches": true
+        },
+        {
+          "path": "/creative/LIST-016-primary-800.webp",
+          "sha256": "78ff36f29fd1e24e0bbf9c36f1195927b881f3c60c8d75c396abbc519d535590",
+          "bytes": 226074,
+          "identicalToApprovedPilot": true,
+          "publicHashMatches": true
+        }
+      ]
+    }
+  ]
+}

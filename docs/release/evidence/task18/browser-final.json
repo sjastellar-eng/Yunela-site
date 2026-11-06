@@ -1,0 +1,160 @@
+{
+  "commit": "7cc3019a121863540532c7e034c9a85ab74a8256",
+  "states": [
+    {
+      "discoveryHeight": 357.125,
+      "height": 844,
+      "scrollWidth": 375,
+      "state": "390-home",
+      "visibleImages": [
+        {
+          "loaded": true,
+          "src": "/editorial/tea-object-v2.webp"
+        },
+        {
+          "loaded": true,
+          "src": "/yuna/avatar-160.webp"
+        }
+      ],
+      "width": 390
+    },
+    {
+      "scrollWidth": 375,
+      "state": "390-teaware",
+      "width": 390
+    },
+    {
+      "concepts": 3,
+      "directions": 4,
+      "scrollWidth": 375,
+      "state": "390-gifts",
+      "width": 390
+    },
+    {
+      "articles": 3,
+      "scrollWidth": 375,
+      "state": "390-journal",
+      "width": 390
+    },
+    {
+      "hash": "#/journal/first-tea",
+      "scrollWidth": 375,
+      "state": "390-article",
+      "width": 390
+    },
+    {
+      "image": {
+        "bottom": 359.5,
+        "height": 164,
+        "left": 174,
+        "right": 338,
+        "top": 195.5,
+        "width": 164,
+        "x": 174,
+        "y": 195.5
+      },
+      "loaded": true,
+      "state": "390-yuna-banner"
+    },
+    {
+      "discoveryHeight": 289.375,
+      "height": 1000,
+      "nav": {
+        "bottom": 89,
+        "height": 48,
+        "left": 195.75,
+        "right": 1235.671875,
+        "top": 41,
+        "width": 1039.921875,
+        "x": 195.75,
+        "y": 41
+      },
+      "railWidth": 1425,
+      "scrollWidth": 1425,
+      "state": "1440-home",
+      "width": 1440
+    },
+    {
+      "scrollWidth": 1425,
+      "state": "1440-teaware",
+      "width": 1440
+    },
+    {
+      "scrollWidth": 1425,
+      "state": "1440-gifts",
+      "width": 1440
+    },
+    {
+      "scrollWidth": 1425,
+      "state": "1440-journal",
+      "width": 1440
+    },
+    {
+      "hash": "#/journal/gongfu",
+      "scrollWidth": 1425,
+      "state": "1440-article",
+      "width": 1440
+    },
+    {
+      "image": {
+        "bottom": 343.375,
+        "height": 320,
+        "left": 974,
+        "right": 1294,
+        "top": 23.375,
+        "width": 320,
+        "x": 974,
+        "y": 23.375
+      },
+      "loaded": true,
+      "state": "1440-yuna-banner"
+    },
+    {
+      "image": {
+        "bottom": 643.5,
+        "height": 164,
+        "left": 174,
+        "right": 338,
+        "top": 479.5,
+        "width": 164,
+        "x": 174,
+        "y": 479.5
+      },
+      "loaded": true,
+      "state": "390-yuna-banner-restored-top"
+    }
+  ],
+  "console": {
+    "applicationErrors": [],
+    "excluded": "Only chrome-extension metadata errors were observed; no HTTPS staging application errors in checked console."
+  },
+  "scenarios": {
+    "primaryNavigation": "PASS",
+    "secondaryNavigation": "PASS",
+    "keyboardMenuAndEscape": "PASS",
+    "carouselArrowsDotsKeyboard": "PASS",
+    "physicalTouchSwipe": "BLOCKED — no touch driver; native overflow scroll-snap source reviewed",
+    "collectionSkus": [
+      "LIST-001",
+      "LIST-005",
+      "LIST-022"
+    ],
+    "puerShenSkus": [
+      "PHOTO-017",
+      "PHOTO-020",
+      "PHOTO-021",
+      "PHOTO-027"
+    ],
+    "puerShuCount": 21,
+    "pagination": [
+      12,
+      24
+    ],
+    "selection": "PASS — existing in-memory choice preserved between pages",
+    "realCart": "BLOCKED — static demo; backend paused",
+    "deepArticleRefresh": "PASS",
+    "sameHashNavigation": "PASS",
+    "noindex": "PASS"
+  },
+  "captureLimit": "Exact app CSS iframe viewports390x844 and1440x1000 measured. No top-level/device viewport emulation. 390 capture cropped without resize; desktop1341x921 captures visible portion of1440px frame. Full-page/clip API times out."
+}

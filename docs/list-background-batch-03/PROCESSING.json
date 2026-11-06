@@ -1,0 +1,492 @@
+{
+  "baseCommit": "0e04f80246441745077e788a357328c7a1848085",
+  "method": "Unmodified approved pilot recolour(); fresh q92 chosen after comparing q95, method6",
+  "pillow": "12.3.0",
+  "libwebp": "1.6.0",
+  "targetRGB": [
+    250,
+    249,
+    245
+  ],
+  "records": [
+    {
+      "sourceSku": "LIST-012",
+      "sourceBackgroundRGB": [
+        250,
+        247,
+        241
+      ],
+      "protectedSubjectPixels": 518264,
+      "unchangedProtectedPixels": true,
+      "sourceSha256": "7c4d2fc39abda66abdefddb9d0ea6319f978c9bbdd9669dffb007499b76c69cb",
+      "unchangedDarkForegroundPixels": 446496,
+      "exports": [
+        {
+          "path": "/creative/LIST-012.webp",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 249106,
+          "sha256": "fe7da07f4f22cda4bf08bf909db70d6334ff98e1d849c5fa2b2624a08845511a",
+          "quality": 92,
+          "method": 6,
+          "foregroundSSIM": 0.9958853518624915,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ],
+          "sourceSha256": "7c4d2fc39abda66abdefddb9d0ea6319f978c9bbdd9669dffb007499b76c69cb",
+          "sourceBytes": 293278,
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 249106,
+              "sha256": "fe7da07f4f22cda4bf08bf909db70d6334ff98e1d849c5fa2b2624a08845511a",
+              "foregroundSSIM": 0.9958853518624915
+            },
+            {
+              "quality": 95,
+              "bytes": 295342,
+              "sha256": "071c860545e001f2d08ea55e725ac31a3e1d8bcfce399614d8ff37090951534f",
+              "foregroundSSIM": 0.9980229249076304
+            }
+          ]
+        },
+        {
+          "path": "/creative/LIST-012-primary-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 55274,
+          "sha256": "f7a432a98249cad1061c12db04a082a25e7409662d0b99c1b16465b628075c74",
+          "quality": 92,
+          "method": 6,
+          "foregroundSSIM": 0.9968246497764537,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ],
+          "sourceSha256": "21e77de5720902046fde0cbfe5eeeb4b6210ada1da6c4b3fa7d5eb1e6346d6f0",
+          "sourceBytes": 55582,
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 55274,
+              "sha256": "f7a432a98249cad1061c12db04a082a25e7409662d0b99c1b16465b628075c74",
+              "foregroundSSIM": 0.9968246497764537
+            },
+            {
+              "quality": 95,
+              "bytes": 66010,
+              "sha256": "1fc136c0d586995ea2441df35e60adf8ae4f2d0ffbf3eb223cc5ae46560e7b2a",
+              "foregroundSSIM": 0.9982552666172333
+            }
+          ]
+        },
+        {
+          "path": "/creative/LIST-012-primary-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 130776,
+          "sha256": "8d0bdd91e1a5610ae529108485f6dce6ccc31312f54ea20924ff5c83ce594282",
+          "quality": 92,
+          "method": 6,
+          "foregroundSSIM": 0.995412639073649,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ],
+          "sourceSha256": "0b96729cf07bb373800e73f17b7e0de005ca8ebb1cc3633330e18ada81281a20",
+          "sourceBytes": 133494,
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 130776,
+              "sha256": "8d0bdd91e1a5610ae529108485f6dce6ccc31312f54ea20924ff5c83ce594282",
+              "foregroundSSIM": 0.995412639073649
+            },
+            {
+              "quality": 95,
+              "bytes": 159190,
+              "sha256": "d77fbad7bf8140fcc7a8d07cc1c98fa36a5c5fd5c9bd03d8da67faf9cbc1f735",
+              "foregroundSSIM": 0.9974526926738846
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-013",
+      "sourceBackgroundRGB": [
+        248,
+        244,
+        238
+      ],
+      "protectedSubjectPixels": 481293,
+      "unchangedProtectedPixels": true,
+      "sourceSha256": "9b704382aad617dc2379663fe896aeea81acddd31a00f9d7786a632646c97b08",
+      "unchangedDarkForegroundPixels": 393956,
+      "exports": [
+        {
+          "path": "/creative/LIST-013.webp",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 254470,
+          "sha256": "f57542d9a541f86e86faf99c2d3ced82d72d998f5fd89f4cd2de3e671a8df478",
+          "quality": 92,
+          "method": 6,
+          "foregroundSSIM": 0.9961083228740791,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ],
+          "sourceSha256": "9b704382aad617dc2379663fe896aeea81acddd31a00f9d7786a632646c97b08",
+          "sourceBytes": 296630,
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 254470,
+              "sha256": "f57542d9a541f86e86faf99c2d3ced82d72d998f5fd89f4cd2de3e671a8df478",
+              "foregroundSSIM": 0.9961083228740791
+            },
+            {
+              "quality": 95,
+              "bytes": 299966,
+              "sha256": "d145fc01346b040b339c630cc4681377ed3dee0f67c056c51ca85bff49e1f7bb",
+              "foregroundSSIM": 0.9979768496845312
+            }
+          ]
+        },
+        {
+          "path": "/creative/LIST-013-primary-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 51538,
+          "sha256": "3844018384974e76832ea9707e128fae2339f1f61ca237fa60a035ed095aa121",
+          "quality": 92,
+          "method": 6,
+          "foregroundSSIM": 0.9966151045776156,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ],
+          "sourceSha256": "216d84c4219aa1875ad7cc91f075955d29333668de500821a957b5adc843c7a0",
+          "sourceBytes": 52530,
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 51538,
+              "sha256": "3844018384974e76832ea9707e128fae2339f1f61ca237fa60a035ed095aa121",
+              "foregroundSSIM": 0.9966151045776156
+            },
+            {
+              "quality": 95,
+              "bytes": 61406,
+              "sha256": "98b14ad4b6dd07be1b8b16283dffcaf8928d2f955edd519012f1215cc8fec94b",
+              "foregroundSSIM": 0.998094123920649
+            }
+          ]
+        },
+        {
+          "path": "/creative/LIST-013-primary-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 130688,
+          "sha256": "79a80cf590bded05828b1d3d87feec36b38f8733301793e53823abaf4273c79b",
+          "quality": 92,
+          "method": 6,
+          "foregroundSSIM": 0.9955285258593629,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ],
+          "sourceSha256": "dec6d28b900633335e15c95be6c6a21b68756987e06ed3979703d21a82d71401",
+          "sourceBytes": 130156,
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 130688,
+              "sha256": "79a80cf590bded05828b1d3d87feec36b38f8733301793e53823abaf4273c79b",
+              "foregroundSSIM": 0.9955285258593629
+            },
+            {
+              "quality": 95,
+              "bytes": 156734,
+              "sha256": "f96bfbd79b6170350e5320e239dcbaa4b9db02f22bc61f46f2e31342d0184229",
+              "foregroundSSIM": 0.9973717503073966
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-015",
+      "sourceBackgroundRGB": [
+        252,
+        248,
+        242
+      ],
+      "protectedSubjectPixels": 691256,
+      "unchangedProtectedPixels": true,
+      "sourceSha256": "b4988d6b83afb2f503c996b74250cbe7fc991f48151e93fae557c0e84ed7bc00",
+      "unchangedDarkForegroundPixels": 632483,
+      "exports": [
+        {
+          "path": "/creative/LIST-015.webp",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 302414,
+          "sha256": "e2a98d3533db5a8f3571f27c9c515e64069880ea27c1f4ea500575959e56398c",
+          "quality": 92,
+          "method": 6,
+          "foregroundSSIM": 0.9949603329091906,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ],
+          "sourceSha256": "b4988d6b83afb2f503c996b74250cbe7fc991f48151e93fae557c0e84ed7bc00",
+          "sourceBytes": 363072,
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 302414,
+              "sha256": "e2a98d3533db5a8f3571f27c9c515e64069880ea27c1f4ea500575959e56398c",
+              "foregroundSSIM": 0.9949603329091906
+            },
+            {
+              "quality": 95,
+              "bytes": 360626,
+              "sha256": "77663955b97e5074edd600cc4c7b93b551788f71f9c4f47ad9d2b19322ccb008",
+              "foregroundSSIM": 0.9977858395715854
+            }
+          ]
+        },
+        {
+          "path": "/creative/LIST-015-primary-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 65568,
+          "sha256": "1e4c43a6de4da6f6579890e9c550c936bf09bb450ced83f1308d74b6d1364bab",
+          "quality": 92,
+          "method": 6,
+          "foregroundSSIM": 0.9960156708790551,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ],
+          "sourceSha256": "18ec335883d01f9aab7b8693cdad2465a007ca65a0af58635a982bd13f0fb58e",
+          "sourceBytes": 66370,
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 65568,
+              "sha256": "1e4c43a6de4da6f6579890e9c550c936bf09bb450ced83f1308d74b6d1364bab",
+              "foregroundSSIM": 0.9960156708790551
+            },
+            {
+              "quality": 95,
+              "bytes": 79090,
+              "sha256": "6f14414a5efa4cb87862bf79ae56e4db95d8bcf67ac727a1d796340b8f7e4036",
+              "foregroundSSIM": 0.9977715252085793
+            }
+          ]
+        },
+        {
+          "path": "/creative/LIST-015-primary-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 159178,
+          "sha256": "575c8cfcb8fe2ae3bf49b41c3461b64a179c2f260b1fa449583bbe3bb9f4dd54",
+          "quality": 92,
+          "method": 6,
+          "foregroundSSIM": 0.994505411853048,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ],
+          "sourceSha256": "b9d196dfe0573515fba8031cb1fc0c847c6dd137b457f0f5066cef90763c9bec",
+          "sourceBytes": 161782,
+          "candidates": [
+            {
+              "quality": 92,
+              "bytes": 159178,
+              "sha256": "575c8cfcb8fe2ae3bf49b41c3461b64a179c2f260b1fa449583bbe3bb9f4dd54",
+              "foregroundSSIM": 0.994505411853048
+            },
+            {
+              "quality": 95,
+              "bytes": 192376,
+              "sha256": "210571b9c9d00cccca15e9f6d810a0a3732c1edf14dd0594bab7f75fdcda389f",
+              "foregroundSSIM": 0.9967951019539332
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totalBytes": 1399012,
+  "preservedPilotSku": [
+    "LIST-014",
+    "LIST-016"
+  ]
+}

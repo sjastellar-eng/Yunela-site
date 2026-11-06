@@ -1,0 +1,104 @@
+{
+  "commit": "a75483efbea3d815b3e5cff026f31077b6d88df1",
+  "date": "2026-10-30 Europe/Kyiv",
+  "observations": [
+    {
+      "name": "390-teaware",
+      "brokenImages": 0,
+      "categoryIllustrations": 8,
+      "scrollWidth": 375,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/teaware",
+      "width": 390
+    },
+    {
+      "name": "390-chabani",
+      "brokenImages": 0,
+      "categoryIllustrations": 8,
+      "scrollWidth": 375,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/teaware",
+      "width": 390
+    },
+    {
+      "name": "390-accessories",
+      "brokenImages": 0,
+      "categoryIllustrations": 8,
+      "scrollWidth": 375,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/teaware",
+      "width": 390
+    },
+    {
+      "name": "390-gifts",
+      "brokenImages": 0,
+      "categoryIllustrations": 4,
+      "scrollWidth": 375,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/gifts",
+      "width": 390
+    },
+    {
+      "name": "390-gift-directions",
+      "brokenImages": 0,
+      "categoryIllustrations": 4,
+      "scrollWidth": 375,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/gifts",
+      "width": 390
+    },
+    {
+      "name": "1440-teaware",
+      "brokenImages": 0,
+      "categoryIllustrations": 8,
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/teaware",
+      "width": 1440
+    },
+    {
+      "name": "1440-chabani",
+      "brokenImages": 0,
+      "categoryIllustrations": 8,
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/teaware",
+      "width": 1440
+    },
+    {
+      "name": "1440-accessories",
+      "brokenImages": 0,
+      "categoryIllustrations": 8,
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/teaware",
+      "width": 1440
+    },
+    {
+      "name": "1440-gifts",
+      "brokenImages": 0,
+      "categoryIllustrations": 4,
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/gifts",
+      "width": 1440
+    },
+    {
+      "name": "1440-gift-directions",
+      "brokenImages": 0,
+      "categoryIllustrations": 4,
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/gifts",
+      "width": 1440
+    },
+    {
+      "name": "1440-home",
+      "brokenImages": 0,
+      "categoryIllustrations": 0,
+      "scrollWidth": 1425,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/catalog",
+      "width": 1440
+    },
+    {
+      "name": "390-teaware-directions",
+      "brokenImages": 0,
+      "categoryIllustrations": 8,
+      "scrollWidth": 375,
+      "url": "https://yunela-v92-demo.onrender.com/index.html#/teaware",
+      "width": 390
+    }
+  ],
+  "consoleErrors": [],
+  "nativeFull1440": "BLOCKED; browser exposes no viewport resize; visible portion of actual1440 CSS layout captured"
+}

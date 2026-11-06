@@ -1,0 +1,2358 @@
+{
+  "baselineCommit": "f50addfe01a4fcba739bce81d395344f8d5c3d04",
+  "parameters": {
+    "format": "WebP",
+    "method": 6,
+    "qualities": [
+      88,
+      92,
+      95,
+      98
+    ],
+    "lossless": false,
+    "resizing": false
+  },
+  "records": [
+    {
+      "sourceSku": "LIST-006",
+      "path": "public/creative/LIST-006.webp",
+      "width": 1200,
+      "height": 1200,
+      "baselineBytes": 1046436,
+      "baselineSha256": "d373813729c6d9d0c0130c3b8259bbbe0f9734e928373b4497bdfeb86bc1345b",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 213022,
+          "sha256": "60254bebcbc2c87b112dad89e64d3ac2a06fdbcf8c80e0ecdc07870b30c15114",
+          "ssim": 0.993505,
+          "foregroundSSIM": 0.989117,
+          "psnrDB": 40.236,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 274718,
+          "sha256": "80673f867291051e134e8761bca01dc75e159e9aed07ceed3858569d5e319f8c",
+          "ssim": 0.997108,
+          "foregroundSSIM": 0.995698,
+          "psnrDB": 43.014,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 322628,
+          "sha256": "7d17753998799f88fbe52f4d7cdc8be995d86c772fe31a62c32f560a02bf683b",
+          "ssim": 0.998155,
+          "foregroundSSIM": 0.997894,
+          "psnrDB": 45.097,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 376348,
+          "sha256": "61b082d120fa07607adb4b4fd8c9aa8ad279d306cf0861353f5cb8f9059d34b3",
+          "ssim": 0.998461,
+          "foregroundSSIM": 0.998528,
+          "psnrDB": 45.743,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-006",
+      "path": "public/creative/LIST-006-primary-480.webp",
+      "width": 480,
+      "height": 480,
+      "baselineBytes": 237490,
+      "baselineSha256": "ce579ac66c9ce067d16313bb8f00b2c929ca75c18fb3f0e3aca802a37d24726a",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 49126,
+          "sha256": "46a7801ecb2b942ba82ed32c9823154cefdaceae9bd3955164ffa2429e588ffb",
+          "ssim": 0.994264,
+          "foregroundSSIM": 0.994585,
+          "psnrDB": 36.422,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 59066,
+          "sha256": "99495043064c9999e339fe939b36a39194c4fed9fbe6df5a75977af86795c23b",
+          "ssim": 0.995508,
+          "foregroundSSIM": 0.996967,
+          "psnrDB": 37.507,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 69888,
+          "sha256": "714bdc0629f9c00e00b17bbfb8f7b75236dda1bf8a3c0ba56b26daae55768f31",
+          "ssim": 0.996347,
+          "foregroundSSIM": 0.998292,
+          "psnrDB": 38.203,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 85758,
+          "sha256": "7097a441c94f4c9faba2f4af036220e776904778249fe59de1e460962329614b",
+          "ssim": 0.99688,
+          "foregroundSSIM": 0.999107,
+          "psnrDB": 38.653,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-006",
+      "path": "public/creative/LIST-006-primary-800.webp",
+      "width": 800,
+      "height": 800,
+      "baselineBytes": 551710,
+      "baselineSha256": "6f5035a2aecc78625f7856d09b46d92c573b68c93fc9bd7bc71cad0dbc934e11",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 113812,
+          "sha256": "c195e52fd5b54d325071e3dbcc484e782ad97b0b9211e85c74ca9ba8610b5310",
+          "ssim": 0.99307,
+          "foregroundSSIM": 0.9913,
+          "psnrDB": 38.474,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 138366,
+          "sha256": "c9e6fffe94daf076ab3806d1143242ce12c8f973d91ab6253be84222a07fa897",
+          "ssim": 0.994971,
+          "foregroundSSIM": 0.995069,
+          "psnrDB": 39.838,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 169900,
+          "sha256": "32d6c7ef68c1a0a90ceaf489d0efff9566d6696a11884c5e7f8665ee0918f066",
+          "ssim": 0.99614,
+          "foregroundSSIM": 0.997259,
+          "psnrDB": 41.163,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 213368,
+          "sha256": "e3d78455b01369c97e632b60465759fa64b17813938dd8d7f48076ad32f9de35",
+          "ssim": 0.997098,
+          "foregroundSSIM": 0.99851,
+          "psnrDB": 42.145,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-014",
+      "path": "public/creative/LIST-014.webp",
+      "width": 1200,
+      "height": 1200,
+      "baselineBytes": 937954,
+      "baselineSha256": "7e825475937e954d6c9e20caf27d99c15f8b318e014c6e83fa7df4b2a99e192d",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 191528,
+          "sha256": "a0bf29381c6a45f1bb1e9de01377b39bf7e61f421beab899280ff9c70bf3b620",
+          "ssim": 0.993938,
+          "foregroundSSIM": 0.988238,
+          "psnrDB": 40.864,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 246906,
+          "sha256": "5bf247155dd1b42b234897e4eb2a87fdfd64ef9940b7ee19f0367df2bd72517a",
+          "ssim": 0.997186,
+          "foregroundSSIM": 0.995259,
+          "psnrDB": 43.541,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 297086,
+          "sha256": "fc7f7ac1ec651a772ffc71921b334ae0e36ff5572dc5f6d2102791e53de6fd06",
+          "ssim": 0.998259,
+          "foregroundSSIM": 0.99767,
+          "psnrDB": 46.234,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 340780,
+          "sha256": "55ec091bba5f5413a3b03f30c1f086daf461ad4dd8180313846b952053263b00",
+          "ssim": 0.998602,
+          "foregroundSSIM": 0.998378,
+          "psnrDB": 46.889,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-014",
+      "path": "public/creative/LIST-014-primary-480.webp",
+      "width": 480,
+      "height": 480,
+      "baselineBytes": 217432,
+      "baselineSha256": "e251e2fa17e17f9c52854f84b21763a5370e61361959dc51ef5e057c6381c64e",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 44836,
+          "sha256": "d9b1645b0941edbfdaf3cd7aac1aae8de8aea999dd46a7913b7d8f2eb7d870c8",
+          "ssim": 0.994641,
+          "foregroundSSIM": 0.993238,
+          "psnrDB": 38.365,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 55116,
+          "sha256": "eff67e4ea28447ed4cfd07f29120d68fd0588445aa9146e4b4a9c1691301a0b5",
+          "ssim": 0.996101,
+          "foregroundSSIM": 0.996298,
+          "psnrDB": 39.735,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              249,
+              250,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 66852,
+          "sha256": "e72ca3be80b89603a98d15f8f75ed0a66744add736ef44ae80023dae4c17baf0",
+          "ssim": 0.99701,
+          "foregroundSSIM": 0.997958,
+          "psnrDB": 41.089,
+          "cornerRGB": [
+            [
+              252,
+              250,
+              246
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 79632,
+          "sha256": "b20a36b65f432c27e2f4c190e9edf83a0662df2f3350fa3b5e35e2c456764bbe",
+          "ssim": 0.997574,
+          "foregroundSSIM": 0.998881,
+          "psnrDB": 41.634,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-014",
+      "path": "public/creative/LIST-014-primary-800.webp",
+      "width": 800,
+      "height": 800,
+      "baselineBytes": 502208,
+      "baselineSha256": "2112bd6a839469e46e6b9be183f56681022c908856579d8149cb9e5a13cf5662",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 104842,
+          "sha256": "8f9a045d8cdb4e35ac25ae67b0157a608baa5bd210309745a5cc0393d54dfc00",
+          "ssim": 0.993961,
+          "foregroundSSIM": 0.990466,
+          "psnrDB": 39.652,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 128930,
+          "sha256": "54903cbb7e450fa81f9e30b6aed47b9a43d07cbf01da2345fcc0ce7b38844f46",
+          "ssim": 0.995918,
+          "foregroundSSIM": 0.994644,
+          "psnrDB": 41.309,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 160780,
+          "sha256": "67452aabb5863dc943a0d94485e9659fe3901c150a3a0f1029555dd682e25232",
+          "ssim": 0.996984,
+          "foregroundSSIM": 0.99701,
+          "psnrDB": 43.036,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 192346,
+          "sha256": "0d1314dfc2fc4b52b823972224bfbb57d9fd74dff98497974c8a45fe300c5698",
+          "ssim": 0.997701,
+          "foregroundSSIM": 0.998279,
+          "psnrDB": 43.947,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-016",
+      "path": "public/creative/LIST-016.webp",
+      "width": 1200,
+      "height": 1200,
+      "baselineBytes": 1118458,
+      "baselineSha256": "d94cddd1e8d81da060b062d09e4c74aba361fa73e1800a10ca1daafa24e0df66",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 234198,
+          "sha256": "6d70ee3f564c0a37f3e64104f3c2c21d43a1adbab85029c4ef44fdd88a0aa70f",
+          "ssim": 0.992642,
+          "foregroundSSIM": 0.987352,
+          "psnrDB": 40.34,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 297666,
+          "sha256": "bd7079ccb84f679db0f161aeffeccfde80aac23ab648bc9288418f8caceefa9c",
+          "ssim": 0.996524,
+          "foregroundSSIM": 0.994623,
+          "psnrDB": 42.903,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 357112,
+          "sha256": "35316d988cd6865c4fc946f76a1f74366e46146a92b9f61fb16acd25d95974de",
+          "ssim": 0.998144,
+          "foregroundSSIM": 0.997682,
+          "psnrDB": 45.739,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 411514,
+          "sha256": "14d057283410fd9bb99d83334f79dc19f314099320f97e8ab01e5e5ab2983cf9",
+          "ssim": 0.99845,
+          "foregroundSSIM": 0.99823,
+          "psnrDB": 46.267,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-016",
+      "path": "public/creative/LIST-016-primary-480.webp",
+      "width": 480,
+      "height": 480,
+      "baselineBytes": 244052,
+      "baselineSha256": "1ea4ad59db7352c9640d4d9b541f88761d8a43cca20792e7e183e4bd28dacd99",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 51484,
+          "sha256": "63a16d50c2e2196408815f83ad9ae04b36230bf736ba3f3f8e3148f96b52c0da",
+          "ssim": 0.993698,
+          "foregroundSSIM": 0.991992,
+          "psnrDB": 37.477,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 62754,
+          "sha256": "bc3f1aad33218bb25da65f3d31e1f1a26c550acb3d0d8d429a76feeac8c07376",
+          "ssim": 0.995684,
+          "foregroundSSIM": 0.99563,
+          "psnrDB": 38.915,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 75240,
+          "sha256": "c55bebc65be47be50148c2a07262654ea4f793051ba589a39f734a66692f68fc",
+          "ssim": 0.99678,
+          "foregroundSSIM": 0.99758,
+          "psnrDB": 39.941,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 91672,
+          "sha256": "4af9501926c3e3395c352f2ccfc1fea12f25cf6cfbf300f79fc8133f0e975766",
+          "ssim": 0.997465,
+          "foregroundSSIM": 0.998721,
+          "psnrDB": 40.622,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-016",
+      "path": "public/creative/LIST-016-primary-800.webp",
+      "width": 800,
+      "height": 800,
+      "baselineBytes": 583836,
+      "baselineSha256": "cb9fc77fa2893c86ee72022583e9b5f78e484fd873c2f8971107ee9d37c9bc64",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 123730,
+          "sha256": "03ac305b8e95112714f32d3aeeedf3c22c7ea4e23ba5315a984136eb3e382b2c",
+          "ssim": 0.992771,
+          "foregroundSSIM": 0.989257,
+          "psnrDB": 38.914,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 150714,
+          "sha256": "cb4d0ab361ba1b1260409eb1aa3242222d048f1c33c6ccb39e689762f82d123d",
+          "ssim": 0.995095,
+          "foregroundSSIM": 0.993672,
+          "psnrDB": 40.489,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 184842,
+          "sha256": "6bd13839f874544991c661764e6aad8e9474a4c510875f58406dfba82afb19d9",
+          "ssim": 0.996541,
+          "foregroundSSIM": 0.996551,
+          "psnrDB": 41.992,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 226074,
+          "sha256": "78ff36f29fd1e24e0bbf9c36f1195927b881f3c60c8d75c396abbc519d535590",
+          "ssim": 0.997478,
+          "foregroundSSIM": 0.998093,
+          "psnrDB": 42.992,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-001",
+      "path": "public/creative/PHOTO-001.webp",
+      "width": 1254,
+      "height": 1254,
+      "baselineBytes": 831786,
+      "baselineSha256": "77550f85a26b92c64e4d58a64051116ea6a90bfc617d8306828cd05d15708bb5",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 175104,
+          "sha256": "dbb2319752e719b4fafe6543e00c6cef520e301b364239321bf4ef5734edba41",
+          "ssim": 0.993132,
+          "foregroundSSIM": 0.990343,
+          "psnrDB": 41.794,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 223298,
+          "sha256": "f20d7c10f6acc4415b11316f24a4716a7847c815507d2b992a129081bd268282",
+          "ssim": 0.997186,
+          "foregroundSSIM": 0.996225,
+          "psnrDB": 44.662,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 255764,
+          "sha256": "5856d9dd9ba391795aad61ba252fb7e47fc978c67fd55eb4b5cb0d9e5c6ba54d",
+          "ssim": 0.998695,
+          "foregroundSSIM": 0.998234,
+          "psnrDB": 46.903,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 297414,
+          "sha256": "f8d89e0644f37e3f014cafcb06f3ecadff24593a34feb03c2c36261a2b6bb8be",
+          "ssim": 0.998831,
+          "foregroundSSIM": 0.998546,
+          "psnrDB": 47.403,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-001",
+      "path": "public/creative/PHOTO-001-primary-480.webp",
+      "width": 480,
+      "height": 480,
+      "baselineBytes": 165176,
+      "baselineSha256": "487c69a6d9e7b233d4ea273e0d5e9f2fffc4bd453311f6d90f353dfdfc9e0d6e",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 39448,
+          "sha256": "08710df683ba4d4d479096bd3f1684d580b764775ca905cb0c0c11ac07a8bb2e",
+          "ssim": 0.993557,
+          "foregroundSSIM": 0.99448,
+          "psnrDB": 38.046,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 47670,
+          "sha256": "721900b410306f8e943820f66b0b307885aeb5c9c3885e7e3e8be7a07615b85b",
+          "ssim": 0.995701,
+          "foregroundSSIM": 0.996556,
+          "psnrDB": 39.139,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 57302,
+          "sha256": "ac6618691422bf0931c9151b07cd0899f0baab9951c43060ff277a3de3489b5e",
+          "ssim": 0.997086,
+          "foregroundSSIM": 0.99782,
+          "psnrDB": 39.992,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 69996,
+          "sha256": "427b3a7db01fd5f7d426ea9bbf163e1ae4fe757d4af52a8ca420639c37f60fcc",
+          "ssim": 0.997948,
+          "foregroundSSIM": 0.998566,
+          "psnrDB": 40.533,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-001",
+      "path": "public/creative/PHOTO-001-primary-800.webp",
+      "width": 800,
+      "height": 800,
+      "baselineBytes": 397048,
+      "baselineSha256": "470596fdfe4354d9c1cbff9e8a111f7f98ecabd8f95dff10c8c9264dc04da326",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 88892,
+          "sha256": "b2d75181a5c15d00cc1c04c4e5b801b6e70a9c5ea0333abbf9caca039a1ea558",
+          "ssim": 0.992634,
+          "foregroundSSIM": 0.99206,
+          "psnrDB": 39.823,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 110472,
+          "sha256": "00ff80ffe1f96e7a4077f9431c99371d17046d73a2eb096246923e1acd63a880",
+          "ssim": 0.995308,
+          "foregroundSSIM": 0.995237,
+          "psnrDB": 41.286,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 134682,
+          "sha256": "6bc6b588b3d6bcc99fc398771a12731389ddacccbc8e5f0eeb468bb13ff4fbf5",
+          "ssim": 0.996713,
+          "foregroundSSIM": 0.996992,
+          "psnrDB": 42.525,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 166538,
+          "sha256": "1227ec1ebe199f1f2bf5a8bd80745b7c7116bfb6d352722e9567cdbac9b39f4f",
+          "ssim": 0.99774,
+          "foregroundSSIM": 0.998081,
+          "psnrDB": 43.33,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-008",
+      "path": "public/creative/PHOTO-008.webp",
+      "width": 1254,
+      "height": 1254,
+      "baselineBytes": 739250,
+      "baselineSha256": "1ac76f2e9fa9401950cf95eade48e5e76699a21ad2b094e86a100fe074ada5ab",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 135916,
+          "sha256": "d1bf92de1d3d67122de155524903ace32819febaa86d354c0f23496403179a14",
+          "ssim": 0.984718,
+          "foregroundSSIM": 0.970645,
+          "psnrDB": 41.831,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 183020,
+          "sha256": "ed8de0ca160c186541658158aa835f0a1700cdc9b831a6118cfdc1f324eea13f",
+          "ssim": 0.994733,
+          "foregroundSSIM": 0.989927,
+          "psnrDB": 44.735,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 217886,
+          "sha256": "9f4b6636792ddba2fc350d57926f8e3f55dc16717bd1e88a87b9930f7318f672",
+          "ssim": 0.998051,
+          "foregroundSSIM": 0.996602,
+          "psnrDB": 47.639,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 257146,
+          "sha256": "6f981754ffe27d7999af4a0769d6e1ad9e6ebf618dcc24a614ede625d70eb452",
+          "ssim": 0.998096,
+          "foregroundSSIM": 0.996827,
+          "psnrDB": 47.871,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-008",
+      "path": "public/creative/PHOTO-008-primary-480.webp",
+      "width": 480,
+      "height": 480,
+      "baselineBytes": 144198,
+      "baselineSha256": "616ee43999420cefccfb6995f41b7612f54d01f3fddb18d98bcdff1ff65bf603",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 25522,
+          "sha256": "cbb9ccf3dc4b85963c5b607cce90fd15693145fc0c9f6f827a9d861d13297cbd",
+          "ssim": 0.986757,
+          "foregroundSSIM": 0.978787,
+          "psnrDB": 38.439,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 32658,
+          "sha256": "442d05e8ff095cdf5690437d09d8fcf08846cfad2ac8ad18be1617e4cc560a8e",
+          "ssim": 0.991567,
+          "foregroundSSIM": 0.988017,
+          "psnrDB": 39.491,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 41774,
+          "sha256": "dfd8bfe7a901424e5bd248ba6deaa0d91069d7d81dd81985c5450589716f86e8",
+          "ssim": 0.994957,
+          "foregroundSSIM": 0.993381,
+          "psnrDB": 40.248,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 52314,
+          "sha256": "f03e9ecde3340f4e87a165d541126c384581ab4d19e2015775ed6c92a6f8ff28",
+          "ssim": 0.996725,
+          "foregroundSSIM": 0.996191,
+          "psnrDB": 40.717,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-008",
+      "path": "public/creative/PHOTO-008-primary-800.webp",
+      "width": 800,
+      "height": 800,
+      "baselineBytes": 345908,
+      "baselineSha256": "8ef5b4d8b3dd58a5899cdb0280c8f15b8583cba2265dbcf74f66ac2e6e974de4",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 62284,
+          "sha256": "22d0cdf29fa02c8e01dcc00c8a0a93edf34264864b709e35118fea553a71db28",
+          "ssim": 0.985764,
+          "foregroundSSIM": 0.974975,
+          "psnrDB": 40.413,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 79424,
+          "sha256": "dd8f382e0ca5ca3a574c8ef9007a0b796ba17b76d3e7c24630f6945d25eee554",
+          "ssim": 0.990833,
+          "foregroundSSIM": 0.985218,
+          "psnrDB": 41.689,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 104134,
+          "sha256": "0657125c53d650f098611c931afd90c7767b69b94834df96dda4ae18809e43d0",
+          "ssim": 0.994712,
+          "foregroundSSIM": 0.992127,
+          "psnrDB": 42.977,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 130768,
+          "sha256": "c719f52df121f635690046cf76d2881c9986c5d882061dd5b6b13743008ece51",
+          "ssim": 0.996684,
+          "foregroundSSIM": 0.995669,
+          "psnrDB": 43.742,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-010",
+      "path": "public/creative/PHOTO-010.webp",
+      "width": 1254,
+      "height": 1254,
+      "baselineBytes": 645252,
+      "baselineSha256": "1ebfecea35282ff520d8a748682154156681bf4d1fa28e538e97d6ad1909a590",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 108444,
+          "sha256": "f61402231dbb7b99abd05675b2ac10ab5ebdefc1bb514c089ed04fd14a267690",
+          "ssim": 0.986891,
+          "foregroundSSIM": 0.963476,
+          "psnrDB": 42.488,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 151994,
+          "sha256": "9c75ef8f9bd9b814fb11bfbb0c6cb983b36cc8588b4bdf5ac3b8649520f679ee",
+          "ssim": 0.993956,
+          "foregroundSSIM": 0.983049,
+          "psnrDB": 44.605,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 181488,
+          "sha256": "8c4a0fdf9576a7ac5622147b2d1c184207aa52401c8354ff5fe480ce5c61543b",
+          "ssim": 0.99658,
+          "foregroundSSIM": 0.990555,
+          "psnrDB": 46.259,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 225840,
+          "sha256": "78e9314b55558dbfde48d396d3a79bbb72b2313daeb2fcb60601dfbf35ed9348",
+          "ssim": 0.997749,
+          "foregroundSSIM": 0.994006,
+          "psnrDB": 46.772,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-010",
+      "path": "public/creative/PHOTO-010-primary-480.webp",
+      "width": 480,
+      "height": 480,
+      "baselineBytes": 125808,
+      "baselineSha256": "aa2659fa25d3f651d4feff09d391f751209f730cb9f85ba2ced8ddd169a57646",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 21632,
+          "sha256": "548a5fab3d1eaa6619b51fa396e0f810806406a9c892930efe43e8edd4c56f33",
+          "ssim": 0.989389,
+          "foregroundSSIM": 0.97235,
+          "psnrDB": 38.077,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 27212,
+          "sha256": "56cf4bcb47be1e82ec91e9245836f33f117a38d7cc5aa2b0f2a6e4147dbcc533",
+          "ssim": 0.992237,
+          "foregroundSSIM": 0.980409,
+          "psnrDB": 38.753,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 34358,
+          "sha256": "f925f67c951be1bd40010a40cf0b430751752e77fbd173552ef3a925936b1ff8",
+          "ssim": 0.994723,
+          "foregroundSSIM": 0.987624,
+          "psnrDB": 39.157,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 43598,
+          "sha256": "484daea5039bc9097861362e54891ab516da88f8a96214821d78b476b55a9593",
+          "ssim": 0.996391,
+          "foregroundSSIM": 0.992119,
+          "psnrDB": 39.466,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-010",
+      "path": "public/creative/PHOTO-010-primary-800.webp",
+      "width": 800,
+      "height": 800,
+      "baselineBytes": 301796,
+      "baselineSha256": "7bfe7904f0203dfa1760c71859c3b95b598cfb8a44a5d4b86b3af08fa5066b7d",
+      "candidates": [
+        {
+          "quality": 88,
+          "bytes": 51440,
+          "sha256": "df3be15d9af00a03e84b61048854bd2ba61dc04e20bff63f5d33a7e02832034d",
+          "ssim": 0.987759,
+          "foregroundSSIM": 0.966866,
+          "psnrDB": 40.073,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 92,
+          "bytes": 65476,
+          "sha256": "ca7ac30b9edc533b6b8928fc3bf89feedd660cfb821b74ff140f62299dbd3c1a",
+          "ssim": 0.991114,
+          "foregroundSSIM": 0.976562,
+          "psnrDB": 40.964,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 95,
+          "bytes": 85272,
+          "sha256": "d9718e194388ca075771a90a29ba650033a1f1575ced93c87017bff29ec59bfc",
+          "ssim": 0.994513,
+          "foregroundSSIM": 0.986537,
+          "psnrDB": 41.651,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "quality": 98,
+          "bytes": 108976,
+          "sha256": "d1d7173ca615243cdbb4257d8d72fcfffa1626166170468cccdda6b93fd18ccb",
+          "ssim": 0.996359,
+          "foregroundSSIM": 0.991647,
+          "psnrDB": 42.14,
+          "cornerRGB": [
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ],
+            [
+              251,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "selectedQuality": 98
+}

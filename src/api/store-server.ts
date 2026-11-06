@@ -98,7 +98,7 @@ export function createStoreServer(options: Options) {
       customer(req);rateLimit(req);
       if(!options.yunaProvider)return send({error:{code:'YUNA_NOT_CONFIGURED',message:'Генеративний AI не підключено. Скористайся деморежимом за правилами.'}},503);
       let input:ReturnType<typeof validateYunaInput>;
-      try{input=validateYunaInput(await body(req,8192));}catch{return send({error:{code:'VALIDATION_ERROR',message:'Некоректний запит YUNA'}},400);}
+      try{input=validateYunaInput(await body(req,8192));}catch{return send({error:{code:'VALIDATION_ERROR',message:'Некоректний запит YUN'}},400);}
       try{return send(await requestYunaIntent(options.yunaProvider,input));}catch{return send({error:{code:'YUNA_UNAVAILABLE',message:'AI тимчасово недоступний. Доступний деморежим за правилами.'}},502);}
     }
     if (path === '/health' && req.method === 'GET') return send({status:'ok',paymentMode:'offline-test',partnerDispatch:'disabled'});
@@ -234,7 +234,7 @@ export function createStoreServer(options: Options) {
       const root=resolve(options.staticDir), file=resolve(root,'.'+decodeURIComponent(path==='/'?'/index.html':path));
       if(file!==root && !file.startsWith(root+sep))throw new ApplicationError('FORBIDDEN','Невірний шлях');
       if(existsSync(file) && extname(file)) {
-        const types:Record<string,string>={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'text/css','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml'};
+        const types:Record<string,string>={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'text/css','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml','.webp':'image/webp','.json':'application/json; charset=utf-8','.txt':'text/plain; charset=utf-8'};
         res.writeHead(200,{'content-type':types[extname(file)]??'application/octet-stream','x-content-type-options':'nosniff'});res.end(readFileSync(file));return;
       }
     }

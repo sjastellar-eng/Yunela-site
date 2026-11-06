@@ -1,0 +1,20 @@
+{
+  "base": "72af4eb347254f17ecb577755c67faab1758c94d",
+  "published": "a75483efbea3d815b3e5cff026f31077b6d88df1",
+  "unchanged": [
+    "public",
+    "src/storefront.tsx",
+    "src/data",
+    "src/application",
+    "src/api",
+    "src/yuna",
+    "package.json",
+    "package-lock.json",
+    "render.yaml",
+    "content/journal"
+  ],
+  "publicProcurementFields": false,
+  "confirmedOrderableTeaware": 0,
+  "confirmedOwnStockTeaware": 0,
+  "task16": "PAUSED"
+}

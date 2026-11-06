@@ -1,0 +1,175 @@
+{
+  "baseCommit": "f6ddcb149b7cc9b0b57f1d5a107b52f028f25020",
+  "records": [
+    {
+      "sourceSku": "LIST-017",
+      "path": "/creative/LIST-017.webp",
+      "format": "WEBP",
+      "mode": "RGB",
+      "size": [
+        1200,
+        1200
+      ],
+      "hasAlpha": false,
+      "cornerRGB": [
+        [
+          252,
+          250,
+          246
+        ],
+        [
+          252,
+          246,
+          239
+        ],
+        [
+          253,
+          251,
+          247
+        ],
+        [
+          249,
+          245,
+          240
+        ]
+      ],
+      "sha256": "2ec4eb195b1fee72ffdc6c5fdd136d6cb46c7aa7dbc0e904f5861f3fdb7e9f16"
+    },
+    {
+      "sourceSku": "LIST-018",
+      "path": "/creative/LIST-018.webp",
+      "format": "WEBP",
+      "mode": "RGB",
+      "size": [
+        1200,
+        1200
+      ],
+      "hasAlpha": false,
+      "cornerRGB": [
+        [
+          254,
+          250,
+          244
+        ],
+        [
+          252,
+          249,
+          241
+        ],
+        [
+          255,
+          251,
+          245
+        ],
+        [
+          251,
+          248,
+          240
+        ]
+      ],
+      "sha256": "f5f05ec154706868b84172f5e57e1dea536e6921fed368e40f97522a8918ab66"
+    },
+    {
+      "sourceSku": "LIST-019",
+      "path": "/creative/LIST-019.webp",
+      "format": "WEBP",
+      "mode": "RGB",
+      "size": [
+        1200,
+        1200
+      ],
+      "hasAlpha": false,
+      "cornerRGB": [
+        [
+          255,
+          251,
+          245
+        ],
+        [
+          252,
+          249,
+          241
+        ],
+        [
+          253,
+          252,
+          245
+        ],
+        [
+          252,
+          249,
+          241
+        ]
+      ],
+      "sha256": "134cfb553302e096e29b414765e35bfdedee87e577b85b792face608c3675e03"
+    },
+    {
+      "sourceSku": "LIST-020",
+      "path": "/creative/LIST-020.webp",
+      "format": "WEBP",
+      "mode": "RGB",
+      "size": [
+        1200,
+        1200
+      ],
+      "hasAlpha": false,
+      "cornerRGB": [
+        [
+          255,
+          251,
+          245
+        ],
+        [
+          248,
+          244,
+          238
+        ],
+        [
+          251,
+          248,
+          242
+        ],
+        [
+          249,
+          245,
+          240
+        ]
+      ],
+      "sha256": "d3465d8ce3b50deea775043fc3ad18f57c801f588b95a9f5b83281fb58f60a82"
+    },
+    {
+      "sourceSku": "LIST-021",
+      "path": "/creative/LIST-021.webp",
+      "format": "WEBP",
+      "mode": "RGB",
+      "size": [
+        1200,
+        1200
+      ],
+      "hasAlpha": false,
+      "cornerRGB": [
+        [
+          252,
+          249,
+          243
+        ],
+        [
+          250,
+          245,
+          238
+        ],
+        [
+          254,
+          250,
+          244
+        ],
+        [
+          249,
+          244,
+          234
+        ]
+      ],
+      "sha256": "32da1a398778f010c06bc8c727dba0e480b5cb92bb11c94b54332213b0a129b2"
+    }
+  ]
+}

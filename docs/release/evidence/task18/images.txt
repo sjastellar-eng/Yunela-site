@@ -1,0 +1,7 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> yunela-site@0.2.1 validate:images
+> node scripts/check-creative-images.mjs
+
+{"status":"PASS","catalog":56,"creativeImages":56,"pending":0}
+{"status":"PASS","galleryProducts":56,"masterAndResponsiveFiles":347}

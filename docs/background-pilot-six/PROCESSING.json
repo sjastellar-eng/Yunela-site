@@ -1,0 +1,619 @@
+{
+  "sourceCommit": "3d514d24ab8b9249b8d4e6960591026d3699118d",
+  "targetHex": "#FAF9F5",
+  "targetRGB": [
+    250,
+    249,
+    245
+  ],
+  "scope": "Six primary images and their 12 adaptive variants only",
+  "method": "Spatial backdrop correction, enclosed wrapper protection, retained source shadows, no generative model, lossless WebP",
+  "records": [
+    {
+      "sourceSku": "LIST-006",
+      "sourceSha256": "4a9f082b0d06d17fd4ee36d38ea5a5a5c763816fdd8a70706eeb9fb9f7fc77b0",
+      "sourceBackgroundRGB": [
+        250,
+        243,
+        232
+      ],
+      "protectedSubjectPixels": 561046,
+      "unchangedProtectedPixels": true,
+      "changedPixelFraction": 0.609158,
+      "exports": [
+        {
+          "path": "/creative/LIST-006.webp",
+          "width": 1200,
+          "height": 1200,
+          "sha256": "d373813729c6d9d0c0130c3b8259bbbe0f9734e928373b4497bdfeb86bc1345b",
+          "bytes": 1046436,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "path": "/creative/LIST-006-primary-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "ce579ac66c9ce067d16313bb8f00b2c929ca75c18fb3f0e3aca802a37d24726a",
+          "bytes": 237490,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "path": "/creative/LIST-006-primary-800.webp",
+          "width": 800,
+          "height": 800,
+          "sha256": "6f5035a2aecc78625f7856d09b46d92c573b68c93fc9bd7bc71cad0dbc934e11",
+          "bytes": 551710,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-014",
+      "sourceSha256": "967f5fca0608ad1dcf773fc7de8a80be707d339d6b63a3a7eb1715fb222d61a4",
+      "sourceBackgroundRGB": [
+        248,
+        243,
+        235
+      ],
+      "protectedSubjectPixels": 547419,
+      "unchangedProtectedPixels": true,
+      "changedPixelFraction": 0.617774,
+      "exports": [
+        {
+          "path": "/creative/LIST-014.webp",
+          "width": 1200,
+          "height": 1200,
+          "sha256": "7e825475937e954d6c9e20caf27d99c15f8b318e014c6e83fa7df4b2a99e192d",
+          "bytes": 937954,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "path": "/creative/LIST-014-primary-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "e251e2fa17e17f9c52854f84b21763a5370e61361959dc51ef5e057c6381c64e",
+          "bytes": 217432,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "path": "/creative/LIST-014-primary-800.webp",
+          "width": 800,
+          "height": 800,
+          "sha256": "2112bd6a839469e46e6b9be183f56681022c908856579d8149cb9e5a13cf5662",
+          "bytes": 502208,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "LIST-016",
+      "sourceSha256": "26c9db7e961a40af7fe0961b61a0c530baf39fdaccf81f0289508893221ab1c7",
+      "sourceBackgroundRGB": [
+        252,
+        250,
+        246
+      ],
+      "protectedSubjectPixels": 652452,
+      "unchangedProtectedPixels": true,
+      "changedPixelFraction": 0.541768,
+      "exports": [
+        {
+          "path": "/creative/LIST-016.webp",
+          "width": 1200,
+          "height": 1200,
+          "sha256": "d94cddd1e8d81da060b062d09e4c74aba361fa73e1800a10ca1daafa24e0df66",
+          "bytes": 1118458,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "path": "/creative/LIST-016-primary-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "1ea4ad59db7352c9640d4d9b541f88761d8a43cca20792e7e183e4bd28dacd99",
+          "bytes": 244052,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "path": "/creative/LIST-016-primary-800.webp",
+          "width": 800,
+          "height": 800,
+          "sha256": "cb9fc77fa2893c86ee72022583e9b5f78e484fd873c2f8971107ee9d37c9bc64",
+          "bytes": 583836,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-001",
+      "sourceSha256": "763f7675d9a9042988d10ce3f7ee0e3b5e5b2e524c80335ffff036987d45dede",
+      "sourceBackgroundRGB": [
+        254,
+        254,
+        254
+      ],
+      "protectedSubjectPixels": 297645,
+      "unchangedProtectedPixels": true,
+      "changedPixelFraction": 0.597589,
+      "exports": [
+        {
+          "path": "/creative/PHOTO-001.webp",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "77550f85a26b92c64e4d58a64051116ea6a90bfc617d8306828cd05d15708bb5",
+          "bytes": 831786,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "path": "/creative/PHOTO-001-primary-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "487c69a6d9e7b233d4ea273e0d5e9f2fffc4bd453311f6d90f353dfdfc9e0d6e",
+          "bytes": 165176,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "path": "/creative/PHOTO-001-primary-800.webp",
+          "width": 800,
+          "height": 800,
+          "sha256": "470596fdfe4354d9c1cbff9e8a111f7f98ecabd8f95dff10c8c9264dc04da326",
+          "bytes": 397048,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-008",
+      "sourceSha256": "0758ca319b811affb7951a0ec0127ba1083e8d7fd9522d2757c0cf5a2160e829",
+      "sourceBackgroundRGB": [
+        254,
+        254,
+        254
+      ],
+      "protectedSubjectPixels": 330950,
+      "unchangedProtectedPixels": true,
+      "changedPixelFraction": 0.620714,
+      "exports": [
+        {
+          "path": "/creative/PHOTO-008.webp",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "1ac76f2e9fa9401950cf95eade48e5e76699a21ad2b094e86a100fe074ada5ab",
+          "bytes": 739250,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "path": "/creative/PHOTO-008-primary-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "616ee43999420cefccfb6995f41b7612f54d01f3fddb18d98bcdff1ff65bf603",
+          "bytes": 144198,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "path": "/creative/PHOTO-008-primary-800.webp",
+          "width": 800,
+          "height": 800,
+          "sha256": "8ef5b4d8b3dd58a5899cdb0280c8f15b8583cba2265dbcf74f66ac2e6e974de4",
+          "bytes": 345908,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "sourceSku": "PHOTO-010",
+      "sourceSha256": "38708dfbdb73e10642d3387b24639f2d1279fd2c297772856c65267237740aee",
+      "sourceBackgroundRGB": [
+        254,
+        254,
+        254
+      ],
+      "protectedSubjectPixels": 525510,
+      "unchangedProtectedPixels": true,
+      "changedPixelFraction": 0.651522,
+      "exports": [
+        {
+          "path": "/creative/PHOTO-010.webp",
+          "width": 1254,
+          "height": 1254,
+          "sha256": "1ebfecea35282ff520d8a748682154156681bf4d1fa28e538e97d6ad1909a590",
+          "bytes": 645252,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "path": "/creative/PHOTO-010-primary-480.webp",
+          "width": 480,
+          "height": 480,
+          "sha256": "aa2659fa25d3f651d4feff09d391f751209f730cb9f85ba2ced8ddd169a57646",
+          "bytes": 125808,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        },
+        {
+          "path": "/creative/PHOTO-010-primary-800.webp",
+          "width": 800,
+          "height": 800,
+          "sha256": "7bfe7904f0203dfa1760c71859c3b95b598cfb8a44a5d4b86b3af08fa5066b7d",
+          "bytes": 301796,
+          "cornerRGB": [
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ],
+            [
+              250,
+              249,
+              245
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

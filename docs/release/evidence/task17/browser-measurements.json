@@ -1,0 +1,106 @@
+{
+  "commit": "3ea70d9bb04bbf82f2eb2431df6373cafddf3949",
+  "method": "Actual same-origin iframe CSS viewports 390x844 and 1440x1000. Mobile screenshots cropped to the 390x844 frame without resizing. Desktop screenshots show the browser-visible portion of the 1440px frame (capture1341x921); full-page screenshot API timed out. No claim of full-width 1440px screenshot or hardware device emulation.",
+  "observations": [
+    {
+      "button": {
+        "bottom": 541.453125,
+        "height": 226,
+        "left": 89.5,
+        "right": 285.5,
+        "top": 315.453125,
+        "width": 196,
+        "x": 89.5,
+        "y": 315.453125
+      },
+      "caption": {
+        "bottom": 531.453125,
+        "height": 18,
+        "left": 121.890625,
+        "right": 253.109375,
+        "top": 513.453125,
+        "width": 131.21875,
+        "x": 121.890625,
+        "y": 513.453125
+      },
+      "complete": true,
+      "height": 844,
+      "image": {
+        "bottom": 501.453125,
+        "height": 176,
+        "left": 99.5,
+        "right": 275.5,
+        "top": 325.453125,
+        "width": 176,
+        "x": 99.5,
+        "y": 325.453125
+      },
+      "scrollWidth": 375,
+      "state": "390-entry",
+      "width": 390
+    },
+    {
+      "button": {
+        "bottom": 668.28125,
+        "height": 337.5,
+        "left": 916.703125,
+        "right": 1216.703125,
+        "top": 330.78125,
+        "width": 300,
+        "x": 916.703125,
+        "y": 330.78125
+      },
+      "caption": {
+        "bottom": 658.28125,
+        "height": 19.5,
+        "left": 995.625,
+        "right": 1137.78125,
+        "top": 638.78125,
+        "width": 142.15625,
+        "x": 995.625,
+        "y": 638.78125
+      },
+      "complete": true,
+      "height": 1000,
+      "image": {
+        "bottom": 620.78125,
+        "height": 280,
+        "left": 926.703125,
+        "right": 1206.703125,
+        "top": 340.78125,
+        "width": 280,
+        "x": 926.703125,
+        "y": 340.78125
+      },
+      "scrollWidth": 1425,
+      "state": "1440-entry",
+      "width": 1440
+    },
+    {
+      "height": 1000,
+      "image": {
+        "bottom": 506.1875,
+        "height": 48,
+        "left": 71.25,
+        "right": 119.25,
+        "top": 458.1875,
+        "width": 48,
+        "x": 71.25,
+        "y": 458.1875
+      },
+      "loaded": true,
+      "scrollWidth": 1425,
+      "state": "1440-open",
+      "width": 1440
+    }
+  ],
+  "mobile_open": {
+    "width": 390,
+    "height": 844,
+    "avatarWidth": 48,
+    "avatarHeight": 48,
+    "loaded": true
+  },
+  "console": "No errors from HTTPS staging app. Earlier HTTP preview crypto.randomUUID error and chrome-extension metadata errors excluded as unrelated.",
+  "main_url_bundle": "/assets/index-CdHn5gKo.js"
+}

@@ -1,0 +1,47 @@
+{
+  "scope": "15 selected primary + 480/800 WebP; corresponding manifest SHA-256 only; other51SKU unchanged",
+  "base": "cbab997b42bab081f4c6c7f55972c00a21a1ef8d",
+  "selectedQuality": 92,
+  "method": 6,
+  "beforeBytes": 2502686,
+  "afterBytes": 2255900,
+  "savingPercent": 9.86,
+  "q95Bytes": 2706642,
+  "rows": [
+    {
+      "sourceSku": "LIST-007",
+      "beforeBytes": 463226,
+      "q92Bytes": 411786,
+      "q95Bytes": 502704
+    },
+    {
+      "sourceSku": "LIST-008",
+      "beforeBytes": 552798,
+      "q92Bytes": 500476,
+      "q95Bytes": 594244
+    },
+    {
+      "sourceSku": "LIST-009",
+      "beforeBytes": 412652,
+      "q92Bytes": 372932,
+      "q95Bytes": 442878
+    },
+    {
+      "sourceSku": "LIST-010",
+      "beforeBytes": 507582,
+      "q92Bytes": 458436,
+      "q95Bytes": 556634
+    },
+    {
+      "sourceSku": "LIST-011",
+      "beforeBytes": 566428,
+      "q92Bytes": 512270,
+      "q95Bytes": 610182
+    }
+  ],
+  "checks": "All decode/dimensions/SHA checks passed; non-hash manifest fields and every non-target record unchanged",
+  "minimumForegroundSSIM": 0.9940769923672583,
+  "tests": "260 tests /38 files PASS",
+  "build": "TypeScript, image validator56primary/347files, frontend/server production build PASS",
+  "lint": "PASS"
+}

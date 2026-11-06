@@ -7,3 +7,9 @@ import './storefront-v2.css';
 import './experience-v9.css';
 import './ux-v9-1.css';
 createRoot(document.getElementById('root')!).render(import.meta.env.VITE_STATIC_DEMO !== '1' && location.hash === '#/lab' ? <DiscoveryPrototype /> : <Storefront />);
+
+import './catalog/gallery.css';
+
+import './editorial/editorial.css';
+
+import './editorial/visual-polish.css';

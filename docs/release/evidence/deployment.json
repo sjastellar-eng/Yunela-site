@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-29T21:26:00+02:00",
+  "serviceId": "srv-dbej0rjncjis73edf2h0",
+  "workspaceId": "tea-d3r4s556ubrc738e1j5g",
+  "deployId": "dep-dbhpqmg8v5cc73944i4g",
+  "status": "live",
+  "commit": "592756bd1c9bb124574388bb1d9c2bcc14004e73",
+  "testedTree": "650caef57b62dd0e6ef5ff90134a8b73764816f1",
+  "liveAt": "2026-10-29T19:24:43.326152Z",
+  "url": "https://yunela-v92-demo.onrender.com/",
+  "serviceType": "static_site",
+  "fullOrderOnStaging": "BLOCKED",
+  "isolatedHttpSuite": "PASS",
+  "browserViewport": {
+    "width": 1363,
+    "height": 936
+  },
+  "exact390And1440": "BLOCKED",
+  "browserChecks": [
+    "home/catalog 56",
+    "PHOTO-010 card visually verified",
+    "order/operator unavailable",
+    "noindex preserved"
+  ],
+  "staticBundle": "/assets/index-D0BJhH3y.js"
+}

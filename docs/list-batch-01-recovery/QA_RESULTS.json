@@ -1,0 +1,11 @@
+{
+  "tests": "260 PASS / 38 files",
+  "lint": "PASS",
+  "productionBuild": "PASS frontend/server and TypeScript",
+  "imageValidator": "PASS 56 primaries / 347 exports",
+  "scope": "15 WebP only; other 51 SKU and every secondary/texture unchanged",
+  "manifests": "Only selected primary/adaptive hashes changed; all non-hash fields identical",
+  "byteIdentity": "No old per-file hashes: not claimed",
+  "approvedBytes": 1869850,
+  "reproducedBytes": 1869850
+}

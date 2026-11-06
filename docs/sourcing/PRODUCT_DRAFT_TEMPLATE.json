@@ -1,0 +1,13 @@
+{
+  "publicationStatus": "DRAFT_INTERNAL",
+  "purchaseSource": {"sellerName": null, "country": null, "sourceUrl": null},
+  "model": null,
+  "category": null,
+  "material": null,
+  "volumeMl": null,
+  "dimensionsMm": {"length": null, "width": null, "height": null},
+  "contents": [],
+  "purchasePrice": {"amount": null, "currency": null},
+  "availability": {"status": "UNVERIFIED", "checkedAt": null, "evidenceRef": null, "ownedQuantity": null},
+  "photoRights": {"status": "UNVERIFIED", "owner": null, "permissionEvidenceRef": null, "files": []}
+}
