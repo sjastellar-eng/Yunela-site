@@ -14,19 +14,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Заводська упаковка на білому фоні: Шу пуер «Ґу Юнь Мяо Сян». Не підтверджує поточну партію.",
-          "sha256": "f8d89e0644f37e3f014cafcb06f3ecadff24593a34feb03c2c36261a2b6bb8be",
+          "sha256": "763f7675d9a9042988d10ce3f7ee0e3b5e5b2e524c80335ffff036987d45dede",
           "width": 1254,
           "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-001-primary-480.webp",
               "width": 480,
-              "sha256": "427b3a7db01fd5f7d426ea9bbf163e1ae4fe757d4af52a8ca420639c37f60fcc"
+              "sha256": "dc2070c1091fd83d62eff33286551c8ecb0d99ed510c4238d80bc293b07a51f0"
             },
             {
               "path": "/creative/PHOTO-001-primary-800.webp",
               "width": 800,
-              "sha256": "1227ec1ebe199f1f2bf5a8bd80745b7c7116bfb6d352722e9567cdbac9b39f4f"
+              "sha256": "d81bfb989d8a2ae934f16e53e8924ab0f23f32e82ebd351612e82c1cbf477856"
             }
           ],
           "documentary": false,
@@ -434,19 +434,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Заводська упаковка на білому фоні: «Бай Чжень Цзінь Лянь». Не підтверджує поточну партію.",
-          "sha256": "6f981754ffe27d7999af4a0769d6e1ad9e6ebf618dcc24a614ede625d70eb452",
+          "sha256": "0758ca319b811affb7951a0ec0127ba1083e8d7fd9522d2757c0cf5a2160e829",
           "width": 1254,
           "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-008-primary-480.webp",
               "width": 480,
-              "sha256": "f03e9ecde3340f4e87a165d541126c384581ab4d19e2015775ed6c92a6f8ff28"
+              "sha256": "f5ec52a84a93e26ccbd98730e5ddbeb23e710ed6d7b37d9310a854809a3405ee"
             },
             {
               "path": "/creative/PHOTO-008-primary-800.webp",
               "width": 800,
-              "sha256": "c719f52df121f635690046cf76d2881c9986c5d882061dd5b6b13743008ece51"
+              "sha256": "ed551adeeebac5745233adbc36587580e2a05014bb1a7c1ce30ea8707729ac59"
             }
           ],
           "documentary": false,
@@ -561,19 +561,19 @@
           "assignmentStatus": "APPROVED_FOR_SKU",
           "publicationAllowed": true,
           "alt": "Заводська упаковка на білому фоні: Шу пуер «Юй Хуа Нун». Не підтверджує поточну партію.",
-          "sha256": "78e9314b55558dbfde48d396d3a79bbb72b2313daeb2fcb60601dfbf35ed9348",
+          "sha256": "38708dfbdb73e10642d3387b24639f2d1279fd2c297772856c65267237740aee",
           "width": 1254,
           "height": 1254,
           "variants": [
             {
               "path": "/creative/PHOTO-010-primary-480.webp",
               "width": 480,
-              "sha256": "484daea5039bc9097861362e54891ab516da88f8a96214821d78b476b55a9593"
+              "sha256": "93ae72ccfa3fe75f3a9a99f92558338a91765c08bb2b97e59c56707bac8cbd6b"
             },
             {
               "path": "/creative/PHOTO-010-primary-800.webp",
               "width": 800,
-              "sha256": "d1d7173ca615243cdbb4257d8d72fcfffa1626166170468cccdda6b93fd18ccb"
+              "sha256": "7343d244901415a4b671554c1fa178caa622218c6e6e0e6334ffd183499c39f2"
             }
           ],
           "documentary": false,
