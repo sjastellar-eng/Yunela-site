@@ -16,7 +16,7 @@ export function withCreativeImages<T extends ImageProduct>(items:T[],data:{image
   if(counts.get(p.sku)!==1||!approvedCreative(img,p.sku))return{...p,image:null,creativeImage:undefined,...(p.contentV2?{contentV2:{...p.contentV2,image:{...p.contentV2.image,path:undefined,publicationAllowed:false}}}:{})};
   return{...p,image:img.path,creativeImage:img,...(p.contentV2?{contentV2:{...p.contentV2,image:{...img,kind:img.kind!,alt:img.alt!,path:img.path!}}}:{})};});
 }
-const versioned=(p:string,s:string)=>p+'?v='+s.slice(0,16);
+const versioned=(p:string,s:string)=>p+'?v='+s.slice(0,16)+(/^\/creative\/PHOTO-(001|008|010)(-primary-(480|800))?\.webp$/.test(p)?'&release=ca57948':'');
 export function imageView(img:GalleryImage,sku:string){
  const valid=approvedCreative(img,sku),variants=valid?img.variants.filter(v=>v.path!==img.path&&Number.isInteger(v.width)&&v.width>0&&v.width<img.width&&approvedCreative({...img,path:v.path,sha256:v.sha256},sku)):[];
  return{src:valid?versioned(img.path,img.sha256):null,alt:img.alt??sku,illustrative:['ILLUSTRATIVE','EDITORIAL_ILLUSTRATION'].includes(img.kind??''),srcSet:variants.length?[...variants,{path:img.path,sha256:img.sha256,width:img.width}].sort((a,b)=>a.width-b.width).map(v=>`${versioned(v.path,v.sha256)} ${v.width}w`).join(', '):undefined};
