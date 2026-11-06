@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import {ArrowLeft,ArrowUpRight,Check,Plus} from 'lucide-react';
 import type {DiscoveryProduct} from '../yuna/discovery';
-import {previewOffer,previewPrice,weightPrice} from './previewPrice';
+import {isPressedTea,previewOffer,previewPrice,weightPrice} from './previewPrice';
 import ProductImage from './ProductImage';
 import ProductGallery from './ProductGallery';
 import {displayName,productShort,identityNote,needsBrewingConfirmation} from './presentation';
@@ -15,14 +15,14 @@ function ProductPrice({sku}: {sku: string}) {
  if (!offer || offer.retailUah===null || !basePrice) return null;
  if (offer.grams===null) return <p><strong>{basePrice}</strong></p>;
 
- const wholeCake=sku.startsWith('PHOTO-') || sku==='LIST-012';
+ const wholeCake=isPressedTea(sku);
  return <div className="product-weight-price">
   <p>{basePrice}</p>
   <label>Вага чаю <select value={grams} onChange={event=>setGrams(Number(event.target.value))}>
-   {weights.map(weight=><option key={weight} value={weight}>{weight===1000?'1 кг':`${weight} г`}</option>)}
+   {weights.map(weight=><option key={weight} value={weight}>{wholeCake&&weight===offer.grams?`Цілий млинець · ${weight} г`:weight===1000?'1 кг':`${weight} г`}</option>)}
    {wholeCake&&!weights.includes(offer.grams)&&<option value={offer.grams}>Цілий млинець · {offer.grams} г</option>}
   </select></label>
-  <p aria-live="polite"><strong>{weightPrice(offer.retailUah,offer.grams,grams)}</strong></p>
+  <p aria-live="polite"><strong>{weightPrice(sku,offer.retailUah,offer.grams,grams)}</strong></p>
   <p className="preview-note">Доступність вибраної ваги уточнюється.</p>
  </div>;
 }
